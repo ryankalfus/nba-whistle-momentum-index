@@ -4,6 +4,19 @@ import pandas as pd
 
 GAME_ID = "0022500789"
 OUT_PATH = "possessions_step2_sample.csv"
+LIVE_BALL_ACTIONS = {
+    "jumpball",
+    "2pt",
+    "3pt",
+    "heave",
+    "rebound",
+    "turnover",
+    "steal",
+    "foul",
+    "freethrow",
+    "violation",
+}
+EXCLUDED_DEF_FOUL_SUBTYPES = {"offensive", "technical", "double technical"}
 
 
 def clock_to_seconds(clock_str):
@@ -24,6 +37,10 @@ def is_team_value(value):
 
 def parse_possessions(pbp_df):
     df = pbp_df.copy().sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
+    df = df[df["game_seconds_elapsed"].notna()].copy()
+    df["event_seq_same_clock"] = df.groupby("game_seconds_elapsed").cumcount()
+    # Tiny sequence offset preserves event order when multiple events share the same clock time.
+    df["timeline_time"] = df["game_seconds_elapsed"] + (df["event_seq_same_clock"] * 0.001)
 
     team_rows = df[df["teamTricode"].apply(is_team_value)][["teamId", "teamTricode"]].dropna().drop_duplicates()
     team_id_to_tricode = {int(r.teamId): r.teamTricode for _, r in team_rows.iterrows()}
@@ -43,48 +60,53 @@ def parse_possessions(pbp_df):
         offense_team_id = int(grp["possession"].iloc[0])
         offense_team = team_id_to_tricode[offense_team_id]
         defense_team = team_id_to_tricode[opponent_id[offense_team_id]]
+        defense_team_id = opponent_id[offense_team_id]
 
-        # Count defensive fouls committed by the defending team during this possession.
+        grp_live = grp[grp["actionType"].isin(LIVE_BALL_ACTIONS)]
+        start_time = float(grp_live["timeline_time"].min()) if not grp_live.empty else float(grp["timeline_time"].min())
+        last_event_time = float(grp_live["timeline_time"].max()) if not grp_live.empty else float(grp["timeline_time"].max())
+
+        # Count only true defensive fouls by defense team (exclude offensive/technical types).
+        subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
         def_fouls = grp[
             (grp["actionType"] == "foul")
-            & (grp["subType"].astype(str).str.lower() != "offensive")
-            & (grp["teamId"] == opponent_id[offense_team_id])
+            & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
+            & (grp["teamId"] == defense_team_id)
         ]
 
-        foul_teams = (
-            def_fouls["teamTricode"]
-            .dropna()
-            .astype(str)
-            .unique()
-            .tolist()
-        )
+        foul_teams = def_fouls["teamTricode"].dropna().astype(str).unique().tolist()
 
         possession_chunks.append(
             {
                 "game_id": GAME_ID,
                 "offense_team": offense_team,
                 "defense_team": defense_team,
-                "start_time": float(grp["game_seconds_elapsed"].min()),
-                "last_event_time": float(grp["game_seconds_elapsed"].max()),
+                "start_time": start_time,
+                "last_event_time": last_event_time,
                 "defensive_foul_count": int(len(def_fouls)),
                 "defensive_foul_teams": "|".join(foul_teams),
             }
         )
 
-    # Use next possession start as end_time for realistic possession windows.
+    # End each possession at its own final live-ball event.
+    # Start each possession from prior possession end to create continuous game time.
     possessions = []
     for i, row in enumerate(possession_chunks):
-        next_start = None
-        if i + 1 < len(possession_chunks):
-            next_start = possession_chunks[i + 1]["start_time"]
-        end_time = next_start if next_start is not None else row["last_event_time"]
+        end_time = row["last_event_time"]
+        if i == 0:
+            start_time = row["start_time"]
+        else:
+            start_time = possessions[i - 1]["end_time"]
+
+        if end_time < start_time:
+            end_time = start_time
         possessions.append(
             {
                 "game_id": row["game_id"],
                 "offense_team": row["offense_team"],
                 "defense_team": row["defense_team"],
-                "start_time": row["start_time"],
-                "end_time": float(end_time),
+                "start_time": round(float(start_time), 3),
+                "end_time": round(float(end_time), 3),
                 "defensive_foul_count": row["defensive_foul_count"],
                 "defensive_foul_teams": row["defensive_foul_teams"],
             }
@@ -114,7 +136,6 @@ def main():
     pbp_df = pd.DataFrame(response.json()["game"]["actions"])
     pbp_df["seconds_remaining_in_period"] = pbp_df["clock"].apply(clock_to_seconds)
     pbp_df["game_seconds_elapsed"] = (pbp_df["period"] - 1) * 720 + (720 - pbp_df["seconds_remaining_in_period"])
-    pbp_df["is_def_foul"] = (pbp_df["actionType"] == "foul") & (pbp_df["subType"] != "offensive")
 
     possession_df = parse_possessions(pbp_df)
     possession_df.to_csv(OUT_PATH, index=False)

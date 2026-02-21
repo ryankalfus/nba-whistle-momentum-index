@@ -15,3 +15,8 @@
 - 02.21.2026: Changed log format to bullet-only list using `mm.dd.yyyy: change`.
 - 02.21.2026: Rebuilt parser to use NBA `possession` field for possession ownership (instead of inferred transitions).
 - 02.21.2026: Updated possession time logic so `end_time` is next possession `start_time`, reducing zero-second artifacts.
+- 02.21.2026: Completely rewrote possession definitions to a film-aligned v2 model (live-ball control based, clear dead-ball rules).
+- 02.21.2026: Updated parser v2 to use first live-ball event as possession start, next possession start as end, and +0.001 sequence offsets for same-clock events.
+- 02.21.2026: Rewrote definitions to explicitly enforce: offensive fouls end possessions but are excluded from defensive foul project counts.
+- 02.21.2026: Changed possession `end_time` logic to use each possession's own final live-ball event (fixes possession 2 ending at 55 instead of offensive foul at 37).
+- 02.21.2026: Scaled timing fix to all possessions by chaining each possession `start_time` to prior possession `end_time` (including offensive-foul transitions).
