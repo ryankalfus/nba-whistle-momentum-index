@@ -6,6 +6,8 @@
 - 21.02.2026: Removed blank `2026-02-19` entry and added a full `2026-02-21` progress entry.
 - 21.02.2026: Standardized Change History format to `- dd.mm.yyyy: change`.
 - 21.02.2026: Converted `Definitions for NBA Analytics Research Log - Ryan Kalfus (2026).pdf` and `Plan for NBA Analytics Research Log - Ryan Kalfus (2026).pdf` to Markdown and deleted the PDFs.
+- 21.02.2026: Updated possession parser to count defensive fouls per possession instead of only a boolean end flag.
+- 21.02.2026: Updated `possessions_step2_sample.csv` schema to include `defensive_foul_count` and `defensive_foul_teams`.
 
 ## Log Entries
 
@@ -70,6 +72,9 @@ Keep the research log organized and keep building possession-level data for the 
 - Added a running Change History section so every change is recorded.
 - Built/updated step 2 possession code in `step2_build_possessions.py`.
 - Generated sample possession output in `possessions_step2_sample.csv`.
+- Changed possession foul output from `ended_in_def_foul` to:
+  - `defensive_foul_count`
+  - `defensive_foul_teams`
 
 **Key Idea Learned:**
 Clean possession boundaries are required before calculating any whistle momentum metric. If boundaries are wrong, the metric will be noisy.
@@ -80,6 +85,7 @@ Clean possession boundaries are required before calculating any whistle momentum
   - `step2_build_possessions.py`
   - `possessions_step2_sample.csv`
 - Research log is now in Markdown for easier tracking and updates.
+- Possession output now tracks how many defensive fouls happened in each possession and which team committed them.
 
 **Problems / confusion:**
 - Possession parsing still has edge cases around fouls and dead-ball events.

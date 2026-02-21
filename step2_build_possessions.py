@@ -75,7 +75,8 @@ def parse_possessions(pbp_df):
                 "defense_team": None,
                 "start_time": row.get("game_seconds_elapsed"),
                 "end_time": None,
-                "ended_in_def_foul": False,
+                "defensive_foul_count": 0,
+                "defensive_foul_teams": [],
             }
 
         if current is None:
@@ -83,7 +84,9 @@ def parse_possessions(pbp_df):
 
         # Defensive foul during this possession: foul by non-offense team.
         if action_type == "foul" and subtype != "offensive" and has_team and team != current["offense_team"]:
-            current["ended_in_def_foul"] = True
+            current["defensive_foul_count"] += 1
+            if team not in current["defensive_foul_teams"]:
+                current["defensive_foul_teams"].append(team)
 
         end_now = False
         if action_type in ("2pt", "3pt"):
@@ -134,7 +137,8 @@ def parse_possessions(pbp_df):
             "defense_team",
             "start_time",
             "end_time",
-            "ended_in_def_foul",
+            "defensive_foul_count",
+            "defensive_foul_teams",
         ]
     ]
 
@@ -150,12 +154,16 @@ def parse_possessions(pbp_df):
         prev = collapsed[-1]
         if record["offense_team"] == prev["offense_team"]:
             prev["end_time"] = record["end_time"]
-            prev["ended_in_def_foul"] = bool(prev["ended_in_def_foul"] or record["ended_in_def_foul"])
+            prev["defensive_foul_count"] += record["defensive_foul_count"]
+            for foul_team in record["defensive_foul_teams"]:
+                if foul_team not in prev["defensive_foul_teams"]:
+                    prev["defensive_foul_teams"].append(foul_team)
         else:
             collapsed.append(record)
 
     collapsed_df = pd.DataFrame(collapsed)
     collapsed_df["possession_number"] = range(1, len(collapsed_df) + 1)
+    collapsed_df["defensive_foul_teams"] = collapsed_df["defensive_foul_teams"].apply(lambda teams: "|".join(teams))
     return collapsed_df
 
 

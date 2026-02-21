@@ -29,25 +29,26 @@ Exceptions:
 - Missed shots followed by an offensive rebound do NOT end possession.
 - Loose-ball fouls that do not change possession do NOT end possession.​
 ​
-Possession Outcome—Ended in Defensive Foul:​
-A possession is classified as “ended in defensive foul” if:
-- The final live-ball event of the possession is a defensive foul committed by the defending team.
-- The foul is not classified as offensive.
-- The foul results in free throws or stoppage.
-Offensive fouls are explicitly excluded from this classification.
+Possession Outcome—Defensive Fouls in Possession:
+For each possession, track:
+- `defensive_foul_count`: number of defensive fouls committed by the defending team during that possession.
+- `defensive_foul_teams`: team code(s) of the team(s) that committed those defensive fouls.
+Rules:
+- Include fouls where `actionType = foul` and subtype is not `offensive`.
+- Offensive fouls are explicitly excluded.
+- A possession can have zero, one, or multiple defensive fouls.
 
 
 Relevant Prior Possessions:
 For each possession Pt, we consider the two most recent possessions where:
 - The opposing team was on offense.
 - Those possessions were completed prior to Pt
-- We examine whether either of those two possessions ended in a defensive foul committed against that -
-team.
+- We examine whether either of those two possessions had at least one defensive foul (`defensive_foul_count > 0`) committed against that team.
 Offensive fouls are ignored entirely.
 Indicator Variable—Prior Opposite-End Foul:
 For each possession Pt:
 PriorOppEndFoult = 1
-if at least one of the previous two opposing-team possessions ended in a defensive foul.​
+if at least one of the previous two opposing-team possessions had `defensive_foul_count > 0`.​
 Otherwise:
 PriorOppEndFoult = 0
 
