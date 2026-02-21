@@ -28,6 +28,11 @@ After a:​
 Exceptions:
 - Missed shots followed by an offensive rebound do NOT end possession.
 - Loose-ball fouls that do not change possession do NOT end possession.​
+
+Implementation note in code:
+- Possession ownership is taken from NBA live feed field `possession`.
+- A possession row starts when this field switches to a team.
+- `end_time` is set to the next possession's `start_time` (or last event time for final possession).
 ​
 Possession Outcome—Defensive Fouls in Possession:
 For each possession, track:

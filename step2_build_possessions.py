@@ -14,7 +14,8 @@ def clock_to_seconds(clock_str):
         return None
     minutes = int(match.group(1))
     seconds = int(match.group(2))
-    return minutes * 60 + seconds
+    hundredths = int(match.group(3))
+    return minutes * 60 + seconds + (hundredths / 100.0)
 
 
 def is_team_value(value):
@@ -22,114 +23,76 @@ def is_team_value(value):
 
 
 def parse_possessions(pbp_df):
-    possessions = []
-    current = None
-    possession_number = 0
-    last_closed = None
+    df = pbp_df.copy().sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
 
-    # Dead-ball events should not start a new possession.
-    live_ball_actions = {"2pt", "3pt", "turnover", "rebound", "steal", "foul", "jumpball", "freethrow"}
+    team_rows = df[df["teamTricode"].apply(is_team_value)][["teamId", "teamTricode"]].dropna().drop_duplicates()
+    team_id_to_tricode = {int(r.teamId): r.teamTricode for _, r in team_rows.iterrows()}
+    team_ids = sorted(team_id_to_tricode.keys())
+    if len(team_ids) != 2:
+        raise ValueError("Expected exactly 2 team IDs in game data.")
 
-    teams = [t for t in pbp_df["teamTricode"].dropna().unique().tolist() if isinstance(t, str)]
-    opponent = {}
-    if len(teams) == 2:
-        opponent = {teams[0]: teams[1], teams[1]: teams[0]}
+    opponent_id = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
 
-    def infer_offense_team(row):
-        action_type = row.get("actionType")
-        subtype = str(row.get("subType", "")).lower()
-        team = row.get("teamTricode")
+    # Keep only events where possession points to an actual team.
+    valid = df[df["possession"].isin(team_ids)].copy()
+    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
+    valid["possession_group"] = valid["is_new_possession"].cumsum()
 
-        if not is_team_value(team):
-            return None
+    possession_chunks = []
+    for _, grp in valid.groupby("possession_group", sort=True):
+        offense_team_id = int(grp["possession"].iloc[0])
+        offense_team = team_id_to_tricode[offense_team_id]
+        defense_team = team_id_to_tricode[opponent_id[offense_team_id]]
 
-        # Defensive events: team on row is defense, offense is opponent.
-        if action_type == "foul" and subtype != "offensive" and team in opponent:
-            return opponent[team]
-        if action_type == "steal" and team in opponent:
-            return opponent[team]
+        # Count defensive fouls committed by the defending team during this possession.
+        def_fouls = grp[
+            (grp["actionType"] == "foul")
+            & (grp["subType"].astype(str).str.lower() != "offensive")
+            & (grp["teamId"] == opponent_id[offense_team_id])
+        ]
 
-        # Offensive events or possession-gain events.
-        return team
+        foul_teams = (
+            def_fouls["teamTricode"]
+            .dropna()
+            .astype(str)
+            .unique()
+            .tolist()
+        )
 
-    for _, row in pbp_df.iterrows():
-        action_type = row.get("actionType")
-        subtype = str(row.get("subType", "")).lower()
-        team = row.get("teamTricode")
-        has_team = is_team_value(team)
-
-        # Start possession only on live-ball team events.
-        if (
-            current is None
-            and has_team
-            and action_type in live_ball_actions
-            and not (action_type == "rebound" and subtype == "offensive")
-        ):
-            offense_team = infer_offense_team(row)
-            if not is_team_value(offense_team):
-                continue
-            current = {
+        possession_chunks.append(
+            {
                 "game_id": GAME_ID,
-                "possession_number": None,
                 "offense_team": offense_team,
-                "defense_team": None,
-                "start_time": row.get("game_seconds_elapsed"),
-                "end_time": None,
-                "defensive_foul_count": 0,
-                "defensive_foul_teams": [],
+                "defense_team": defense_team,
+                "start_time": float(grp["game_seconds_elapsed"].min()),
+                "last_event_time": float(grp["game_seconds_elapsed"].max()),
+                "defensive_foul_count": int(len(def_fouls)),
+                "defensive_foul_teams": "|".join(foul_teams),
             }
+        )
 
-        if current is None:
-            continue
-
-        # Defensive foul during this possession: foul by non-offense team.
-        if action_type == "foul" and subtype != "offensive" and has_team and team != current["offense_team"]:
-            current["defensive_foul_count"] += 1
-            if team not in current["defensive_foul_teams"]:
-                current["defensive_foul_teams"].append(team)
-
-        end_now = False
-        if action_type in ("2pt", "3pt"):
-            if str(row.get("shotResult", "")).lower() == "made":
-                end_now = True
-        elif action_type == "rebound" and subtype == "defensive":
-            end_now = True
-        elif action_type == "turnover":
-            end_now = True
-        elif action_type == "period" and subtype == "end":
-            end_now = True
-
-        if end_now:
-            # Protect against duplicate closing rows at same moment for same offense team.
-            # Common case: offensive foul + offensive foul turnover sequence.
-            moment = (
-                current.get("offense_team"),
-                row.get("game_seconds_elapsed"),
-                row.get("period"),
-            )
-            if last_closed == moment:
-                current = None
-                continue
-
-            current["end_time"] = row.get("game_seconds_elapsed")
-            possession_number += 1
-            current["possession_number"] = possession_number
-            possessions.append(current)
-            last_closed = moment
-            current = None
-
-    # If a possession is still open at end of file, close it at its own start time.
-    if current is not None:
-        possession_number += 1
-        current["possession_number"] = possession_number
-        current["end_time"] = current["start_time"]
-        possessions.append(current)
+    # Use next possession start as end_time for realistic possession windows.
+    possessions = []
+    for i, row in enumerate(possession_chunks):
+        next_start = None
+        if i + 1 < len(possession_chunks):
+            next_start = possession_chunks[i + 1]["start_time"]
+        end_time = next_start if next_start is not None else row["last_event_time"]
+        possessions.append(
+            {
+                "game_id": row["game_id"],
+                "offense_team": row["offense_team"],
+                "defense_team": row["defense_team"],
+                "start_time": row["start_time"],
+                "end_time": float(end_time),
+                "defensive_foul_count": row["defensive_foul_count"],
+                "defensive_foul_teams": row["defensive_foul_teams"],
+            }
+        )
 
     possession_df = pd.DataFrame(possessions)
-    if len(teams) == 2:
-        possession_df["defense_team"] = possession_df["offense_team"].map({teams[0]: teams[1], teams[1]: teams[0]})
-
-    possession_df = possession_df[
+    possession_df["possession_number"] = range(1, len(possession_df) + 1)
+    return possession_df[
         [
             "game_id",
             "possession_number",
@@ -141,30 +104,6 @@ def parse_possessions(pbp_df):
             "defensive_foul_teams",
         ]
     ]
-
-    # Cleanup: merge adjacent rows with the same offense team.
-    # NBA logs can split a single possession into several micro segments around fouls.
-    collapsed = []
-    for _, row in possession_df.iterrows():
-        record = row.to_dict()
-        if not collapsed:
-            collapsed.append(record)
-            continue
-
-        prev = collapsed[-1]
-        if record["offense_team"] == prev["offense_team"]:
-            prev["end_time"] = record["end_time"]
-            prev["defensive_foul_count"] += record["defensive_foul_count"]
-            for foul_team in record["defensive_foul_teams"]:
-                if foul_team not in prev["defensive_foul_teams"]:
-                    prev["defensive_foul_teams"].append(foul_team)
-        else:
-            collapsed.append(record)
-
-    collapsed_df = pd.DataFrame(collapsed)
-    collapsed_df["possession_number"] = range(1, len(collapsed_df) + 1)
-    collapsed_df["defensive_foul_teams"] = collapsed_df["defensive_foul_teams"].apply(lambda teams: "|".join(teams))
-    return collapsed_df
 
 
 def main():
