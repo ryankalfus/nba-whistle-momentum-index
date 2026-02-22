@@ -51,3 +51,25 @@ Count only fouls where:
 - `end_time`: final live-ball event in that same possession segment.
 - This means after an offensive foul ends possession `t`, possession `t+1` starts immediately at that foul sequence time.
 - If multiple events share same clock timestamp, parser adds `+0.001` sequence offsets to preserve event order.
+
+## Current Step Output (Defensive Foul Context Rows)
+- File: `def_foul_context_okc_mil.csv`
+- Each row is one defensive foul event.
+- 02.22.2026: CSV output was refreshed by re-running `categorize_defensive_fouls_okc_mil.py`.
+- Columns:
+  - `def_foul_num`: sequential defensive foul event number in game order.
+  - `offense_team`: offensive team tricode on the foul event row.
+  - `defense_team`: defensive team tricode (team committing the defensive foul).
+  - `seconds_left_in_game`: game seconds remaining at that foul event.
+  - `score_difference`: offensive team score minus defensive team score at that foul event.
+  - `def_foul_called_in_last2_defensive_team_possessions`: `1` if in either of the last two possessions where current defensive team was on offense, a defensive foul was called on them; else `0`.
+  - `def_foul_called_in_next2_defensive_team_possessions`: `1` if in either of the next two possessions where current defensive team is on offense, a defensive foul is called on them; else `0`.
+
+## Z-Score Layer (Planned Diagnostic)
+- Keep possession-level WMI as the primary metric.
+- For each game, compute game-level WMI from possessions in that game.
+- Across all games, compute:
+  - `mean_game_wmi`
+  - `std_game_wmi`
+  - `wmi_z_score = (game_wmi - mean_game_wmi) / std_game_wmi`
+- Use `wmi_z_score` only as an outlier/flagging metric, not standalone proof of ref bias.

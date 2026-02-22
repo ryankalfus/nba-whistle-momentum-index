@@ -20,3 +20,10 @@
 - 02.21.2026: Rewrote definitions to explicitly enforce: offensive fouls end possessions but are excluded from defensive foul project counts.
 - 02.21.2026: Changed possession `end_time` logic to use each possession's own final live-ball event (fixes possession 2 ending at 55 instead of offensive foul at 37).
 - 02.21.2026: Scaled timing fix to all possessions by chaining each possession `start_time` to prior possession `end_time` (including offensive-foul transitions).
+- 02.22.2026: Reset branch workspace and removed all uncommitted/untracked changes.
+- 02.22.2026: Added `categorize_defensive_fouls_okc_mil.py` to create the defensive-foul context table for OKC vs MIL.
+- 02.22.2026: Generated `def_foul_context_okc_mil.csv` with columns: `def_foul_num`, `seconds_left_in_game`, `score_difference`, `def_foul_called_in_last2_defensive_team_possessions`, `def_foul_called_in_next2_defensive_team_possessions`.
+- 02.22.2026: Re-ran `step2_build_possessions.py` and refreshed `possessions_step2_sample.csv`.
+- 02.22.2026: Re-ran `categorize_defensive_fouls_okc_mil.py` and refreshed `def_foul_context_okc_mil.csv`.
+- 02.22.2026: Updated categorizing output to include `offense_team` and `defense_team` columns in `def_foul_context_okc_mil.csv`.
+- 02.22.2026: Added next-step idea to use game-level WMI z-scores as an outlier flag (diagnostic), while keeping possession-level WMI as the main analysis level.
