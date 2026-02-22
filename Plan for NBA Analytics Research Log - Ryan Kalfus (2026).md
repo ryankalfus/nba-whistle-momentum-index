@@ -101,11 +101,3 @@ Core Structure of the Analysis
 
     7.​   Extend with regression analysis to control for score margin, quarter, and other game context variables.
 
-
-## Progress Bullets
-- 02.22.2026: Completed a first event-level categorization step for one game (OKC vs MIL) focused on defensive foul context rows.
-- 02.22.2026: Built columns for game-setting and local possession memory (`seconds_left_in_game`, `score_difference`, last-2 and next-2 defensive-team possession foul indicators).
-- 02.22.2026: Output file created: `def_foul_context_okc_mil.csv`.
-- 02.22.2026: Re-ran current CSV generators to refresh possession and defensive-foul context outputs.
-- 02.22.2026: Added team context columns (`offense_team`, `defense_team`) to the categorization output.
-- 02.22.2026: Next planned layer is game-level WMI z-score ranking to identify outlier games after possession-level WMI is calculated at scale.
