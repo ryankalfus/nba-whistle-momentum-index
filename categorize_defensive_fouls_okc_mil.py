@@ -166,8 +166,8 @@ def build_def_foul_context(game_id):
                 "defense_team": team_id_to_tricode.get(defense_team_id),
                 "seconds_left_in_game": round(total_game_seconds - float(row["game_seconds_elapsed"]), 3),
                 "score_difference": score_difference,
-                "df_last2_dt_possessions": called_in_last2,
-                "df_next2_dt_possessions": called_in_next2,
+                "def_foul_called_in_last2_defensive_team_possessions": called_in_last2,
+                "def_foul_called_in_next2_defensive_team_possessions": called_in_next2,
             }
         )
 

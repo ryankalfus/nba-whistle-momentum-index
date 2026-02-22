@@ -100,3 +100,8 @@ Core Structure of the Analysis
 
 
     7.​   Extend with regression analysis to control for score margin, quarter, and other game context variables.
+
+## Progress Bullets
+- 02.22.2026: Built one-game defensive-foul context output file `def_foul_context_okc_mil.csv`.
+- 02.22.2026: Added team context fields (`offense_team`, `defense_team`) to the categorization output.
+- 02.22.2026: Corrected categorization column names to final full schema (`def_foul_called_in_last2_defensive_team_possessions`, `def_foul_called_in_next2_defensive_team_possessions`).

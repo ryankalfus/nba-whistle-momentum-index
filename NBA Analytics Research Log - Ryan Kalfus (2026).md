@@ -26,4 +26,5 @@
 - 02.22.2026: Re-ran `step2_build_possessions.py` and refreshed `possessions_step2_sample.csv`.
 - 02.22.2026: Re-ran `categorize_defensive_fouls_okc_mil.py` and refreshed `def_foul_context_okc_mil.csv`.
 - 02.22.2026: Updated categorizing output to include `offense_team` and `defense_team` columns in `def_foul_context_okc_mil.csv`.
+- 02.22.2026: Fixed categorizing output column-name mismatch by replacing short names with full names: `def_foul_called_in_last2_defensive_team_possessions` and `def_foul_called_in_next2_defensive_team_possessions`.
 - 02.22.2026: Added next-step idea to use game-level WMI z-scores as an outlier flag (diagnostic), while keeping possession-level WMI as the main analysis level.

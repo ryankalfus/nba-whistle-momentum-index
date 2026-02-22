@@ -56,6 +56,7 @@ Count only fouls where:
 - File: `def_foul_context_okc_mil.csv`
 - Each row is one defensive foul event.
 - 02.22.2026: CSV output was refreshed by re-running `categorize_defensive_fouls_okc_mil.py`.
+- 02.22.2026: Column names were standardized to full project names (removed shortened `df_*` variants).
 - Columns:
   - `def_foul_num`: sequential defensive foul event number in game order.
   - `offense_team`: offensive team tricode on the foul event row.
