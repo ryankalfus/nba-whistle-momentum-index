@@ -100,12 +100,21 @@ Core Structure of the Analysis
 
 
     7.​   Extend with regression analysis to control for score margin, quarter, and other game context variables.
-<<<<<<< HEAD
+
+## WMI Framework (Current)
+- Primary metric: possession-level WMI.
+- Raw WMI:
+  - `WMI_raw = P(def_foul | trigger=1) / P(def_foul | trigger=0)`
+- Controlled WMI (logistic):
+  - `logit(P(def_foul_t=1)) = a + b*trigger_t + controls`
+  - `WMI_controlled = exp(b)`
+- Game-level WMI z-score:
+  - Compute one game-level WMI per game.
+  - `z = (game_wmi - mean_game_wmi) / std_game_wmi`
+  - Use z-score as outlier flag, not proof by itself.
 
 ## Progress Bullets
 - 02.22.2026: Built one-game defensive-foul context output file `def_foul_context_okc_mil.csv`.
 - 02.22.2026: Added team context fields (`offense_team`, `defense_team`) to the categorization output.
 - 02.22.2026: Corrected categorization column names to final full schema (`def_foul_called_in_last2_defensive_team_possessions`, `def_foul_called_in_next2_defensive_team_possessions`).
-=======
-
->>>>>>> b6fb66e9bad4f4f25ca0f7e18c570f27723f65a0
+- 02.22.2026: Removed unresolved merge-conflict markers from this plan file and aligned plan text to current WMI approach.

@@ -74,3 +74,11 @@ Count only fouls where:
   - `std_game_wmi`
   - `wmi_z_score = (game_wmi - mean_game_wmi) / std_game_wmi`
 - Use `wmi_z_score` only as an outlier/flagging metric, not standalone proof of ref bias.
+
+## Controlled WMI Note
+- In logistic form: `logit(P(def_foul_t=1)) = a + b*trigger_t + controls`.
+- `b` is the isolated trigger effect after controls.
+- `exp(b)` is the controlled WMI multiplier:
+  - `exp(b) = 1.00` means no trigger effect after controls.
+  - `exp(b) > 1.00` means higher foul odds with trigger.
+  - `exp(b) < 1.00` means lower foul odds with trigger.
