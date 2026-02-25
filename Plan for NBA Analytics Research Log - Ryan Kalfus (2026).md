@@ -118,3 +118,5 @@ Core Structure of the Analysis
 - 02.22.2026: Added team context fields (`offense_team`, `defense_team`) to the categorization output.
 - 02.22.2026: Corrected categorization column names to final full schema (`def_foul_called_in_last2_defensive_team_possessions`, `def_foul_called_in_next2_defensive_team_possessions`).
 - 02.22.2026: Removed unresolved merge-conflict markers from this plan file and aligned plan text to current WMI approach.
+- 02.22.2026: Built an all-possession modeling table (`possession_model_table_okc_mil.csv`) to support valid denominators for WMI.
+- 02.22.2026: Added `foul_next2_state` (0/1/2) to separate non-fouls from fouls with/without follow-through momentum.

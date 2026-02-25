@@ -82,3 +82,17 @@ Count only fouls where:
   - `exp(b) = 1.00` means no trigger effect after controls.
   - `exp(b) > 1.00` means higher foul odds with trigger.
   - `exp(b) < 1.00` means lower foul odds with trigger.
+
+## All-Possession Modeling Table (Current)
+- File: `possession_model_table_okc_mil.csv`
+- Each row is one possession.
+- Core columns:
+  - `foul_called_this_possession` (0/1)
+  - `trigger_last2_opp_possessions` (0/1)
+  - `seconds_left_in_game`
+  - `score_difference`
+  - `offense_team`, `defense_team`
+- Momentum summary label:
+  - `foul_next2_state = 0` if no foul on current possession
+  - `foul_next2_state = 1` if foul now and no foul in next two target possessions
+  - `foul_next2_state = 2` if foul now and at least one foul in next two target possessions
