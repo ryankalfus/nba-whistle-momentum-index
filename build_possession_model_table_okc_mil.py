@@ -131,26 +131,23 @@ def build_table(game_id):
     out = pd.DataFrame(rows).sort_values("possession_group").reset_index(drop=True)
     out["possession_number"] = range(1, len(out) + 1)
 
-    trigger_last2 = []
-    next2_any = []
-    for i, row in out.iterrows():
-        defense_team_id = int(row["defense_team_id"])
-        prior = out.iloc[:i]
-        prior_def_on_offense = prior[prior["offense_team_id"] == defense_team_id].tail(2)
-        trigger_last2.append(int((prior_def_on_offense["foul_called_this_possession"] == 1).any()))
+    # Global (team-agnostic) last2/next2 foul context.
+    # L_t: foul in last 2 possessions.
+    # F_t: foul on current possession.
+    # N_t: foul in next 2 possessions.
+    # M_t = F_t + F_t*N_t, so values are 0/1/2.
+    l_vals = []
+    n_vals = []
+    for i, _ in out.iterrows():
+        prior = out.iloc[max(0, i - 2) : i]
+        next_rows = out.iloc[i + 1 : i + 3]
+        l_vals.append(int((prior["foul_called_this_possession"] == 1).any()))
+        n_vals.append(int((next_rows["foul_called_this_possession"] == 1).any()))
 
-        future = out.iloc[i + 1 :]
-        future_def_on_offense = future[future["offense_team_id"] == defense_team_id].head(2)
-        next2_any.append(int((future_def_on_offense["foul_called_this_possession"] == 1).any()))
-
-    out["trigger_last2_opp_possessions"] = trigger_last2
-    out["def_foul_called_in_next2_defensive_team_possessions"] = next2_any
-    out["foul_next2_state"] = out.apply(
-        lambda r: 0
-        if r["foul_called_this_possession"] == 0
-        else (2 if r["def_foul_called_in_next2_defensive_team_possessions"] == 1 else 1),
-        axis=1,
-    )
+    out["L_t"] = l_vals
+    out["F_t"] = out["foul_called_this_possession"].astype(int)
+    out["N_t"] = n_vals
+    out["M_t"] = out["F_t"] + (out["F_t"] * out["N_t"])
 
     return out[
         [
@@ -160,10 +157,10 @@ def build_table(game_id):
             "defense_team",
             "seconds_left_in_game",
             "score_difference",
-            "foul_called_this_possession",
-            "trigger_last2_opp_possessions",
-            "def_foul_called_in_next2_defensive_team_possessions",
-            "foul_next2_state",
+            "L_t",
+            "F_t",
+            "N_t",
+            "M_t",
         ]
     ]
 

@@ -55,16 +55,21 @@ Count only fouls where:
 ## Current Step Output (Defensive Foul Context Rows)
 - File: `def_foul_context_okc_mil.csv`
 - Each row is one defensive foul event.
-- 02.22.2026: CSV output was refreshed by re-running `categorize_defensive_fouls_okc_mil.py`.
-- 02.22.2026: Column names were standardized to full project names (removed shortened `df_*` variants).
+- `last2` / `next2` are global possession windows (team-agnostic):
+  - `last2` = previous two possessions in game order.
+  - `next2` = next two possessions in game order.
 - Columns:
   - `def_foul_num`: sequential defensive foul event number in game order.
   - `offense_team`: offensive team tricode on the foul event row.
   - `defense_team`: defensive team tricode (team committing the defensive foul).
   - `seconds_left_in_game`: game seconds remaining at that foul event.
   - `score_difference`: offensive team score minus defensive team score at that foul event.
-  - `def_foul_called_in_last2_defensive_team_possessions`: `1` if in either of the last two possessions where current defensive team was on offense, a defensive foul was called on them; else `0`.
-  - `def_foul_called_in_next2_defensive_team_possessions`: `1` if in either of the next two possessions where current defensive team is on offense, a defensive foul is called on them; else `0`.
+  - `def_foul_called_in_last2_possessions`: `1` if at least one of the previous two possessions had a defensive foul.
+  - `def_foul_called_in_next2_possessions`: `1` if at least one of the next two possessions has a defensive foul.
+  - `L_t`: same value as `def_foul_called_in_last2_possessions`.
+  - `F_t`: always `1` in this file (because each row is a defensive foul event).
+  - `N_t`: same value as `def_foul_called_in_next2_possessions`.
+  - `M_t = F_t + F_t*N_t` (in this file this equals `1 + N_t`, so values are `1` or `2`).
 
 ## Z-Score Layer (Planned Diagnostic)
 - Keep possession-level WMI as the primary metric.
@@ -86,13 +91,23 @@ Count only fouls where:
 ## All-Possession Modeling Table (Current)
 - File: `possession_model_table_okc_mil.csv`
 - Each row is one possession.
-- Core columns:
-  - `foul_called_this_possession` (0/1)
-  - `trigger_last2_opp_possessions` (0/1)
+- Variables:
+  - `L_t`: foul in the last 2 possessions (0/1)
+  - `F_t`: foul on current possession (0/1)
+  - `N_t`: foul in the next 2 possessions (0/1)
+  - `M_t = F_t + F_t*N_t` (values 0/1/2)
+- Additional context columns:
   - `seconds_left_in_game`
   - `score_difference`
   - `offense_team`, `defense_team`
-- Momentum summary label:
-  - `foul_next2_state = 0` if no foul on current possession
-  - `foul_next2_state = 1` if foul now and no foul in next two target possessions
-  - `foul_next2_state = 2` if foul now and at least one foul in next two target possessions
+
+## WMI Raw Game Formula (Current)
+Use this exact formula:
+WMI_rawgame = [ (1 / n1) * ∑_(t: L_t=1) M_t ] / [ (1 / n0) * ∑_(t: L_t=0) M_t ]
+
+Notes:
+- This is one whole-game value.
+- This is currently raw WMI only (no controls yet).
+- `n1` = count of possessions with `L_t = 1`.
+- `n0` = count of possessions with `L_t = 0`.
+- Current definition supersedes older relevant-team last2/next2 definitions.

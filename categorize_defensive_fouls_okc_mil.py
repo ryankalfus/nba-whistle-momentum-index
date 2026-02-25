@@ -145,19 +145,12 @@ def build_def_foul_context(game_id):
         if offense_score is not None and defense_score is not None:
             score_difference = offense_score - defense_score
 
-        # Last two times current defensive team had offense BEFORE this foul.
-        prior_def_team_possessions = possession_summary[
-            (possession_summary["offense_team_id"] == defense_team_id)
-            & (possession_summary["possession_group"] < foul_group)
-        ].tail(2)
-        called_in_last2 = int((prior_def_team_possessions["has_def_foul"] == 1).any())
+        # Global (team-agnostic) last2/next2 possession foul context.
+        prior2 = possession_summary[possession_summary["possession_group"] < foul_group].tail(2)
+        called_in_last2 = int((prior2["has_def_foul"] == 1).any())
 
-        # Next two times current defensive team has offense AFTER this foul.
-        next_def_team_possessions = possession_summary[
-            (possession_summary["offense_team_id"] == defense_team_id)
-            & (possession_summary["possession_group"] > foul_group)
-        ].head(2)
-        called_in_next2 = int((next_def_team_possessions["has_def_foul"] == 1).any())
+        next2 = possession_summary[possession_summary["possession_group"] > foul_group].head(2)
+        called_in_next2 = int((next2["has_def_foul"] == 1).any())
 
         rows.append(
             {
@@ -166,8 +159,12 @@ def build_def_foul_context(game_id):
                 "defense_team": team_id_to_tricode.get(defense_team_id),
                 "seconds_left_in_game": round(total_game_seconds - float(row["game_seconds_elapsed"]), 3),
                 "score_difference": score_difference,
-                "def_foul_called_in_last2_defensive_team_possessions": called_in_last2,
-                "def_foul_called_in_next2_defensive_team_possessions": called_in_next2,
+                "def_foul_called_in_last2_possessions": called_in_last2,
+                "def_foul_called_in_next2_possessions": called_in_next2,
+                "L_t": called_in_last2,
+                "F_t": 1,
+                "N_t": called_in_next2,
+                "M_t": 1 + called_in_next2,
             }
         )
 

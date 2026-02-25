@@ -22,12 +22,34 @@
 - 02.21.2026: Scaled timing fix to all possessions by chaining each possession `start_time` to prior possession `end_time` (including offensive-foul transitions).
 - 02.22.2026: Reset branch workspace and removed all uncommitted/untracked changes.
 - 02.22.2026: Added `categorize_defensive_fouls_okc_mil.py` to create the defensive-foul context table for OKC vs MIL.
-- 02.22.2026: Generated `def_foul_context_okc_mil.csv` with columns: `def_foul_num`, `seconds_left_in_game`, `score_difference`, `def_foul_called_in_last2_defensive_team_possessions`, `def_foul_called_in_next2_defensive_team_possessions`.
+- 02.22.2026: Generated early `def_foul_context_okc_mil.csv` with defensive-foul context columns (later standardized to global last2/next2 names).
 - 02.22.2026: Re-ran `step2_build_possessions.py` and refreshed `possessions_step2_sample.csv`.
 - 02.22.2026: Re-ran `categorize_defensive_fouls_okc_mil.py` and refreshed `def_foul_context_okc_mil.csv`.
 - 02.22.2026: Updated categorizing output to include `offense_team` and `defense_team` columns in `def_foul_context_okc_mil.csv`.
-- 02.22.2026: Fixed categorizing output column-name mismatch by replacing short names with full names: `def_foul_called_in_last2_defensive_team_possessions` and `def_foul_called_in_next2_defensive_team_possessions`.
+- 02.22.2026: Fixed a categorizing output column-name mismatch in `def_foul_context_okc_mil.csv`.
 - 02.22.2026: Added next-step idea to use game-level WMI z-scores as an outlier flag (diagnostic), while keeping possession-level WMI as the main analysis level.
-- 02.22.2026: Found and fixed an unresolved merge conflict in `Plan for NBA Analytics Research Log - Ryan Kalfus (2026).md` and aligned the plan to raw + controlled WMI definitions.
-- 02.22.2026: Added `build_possession_model_table_okc_mil.py` to generate an all-possession modeling table (not only foul rows).
-- 02.22.2026: Generated `possession_model_table_okc_mil.csv` with possession-level trigger/foul context and `foul_next2_state` (0/1/2) summary.
+- 02.22.2026: Found and fixed an unresolved plan-file merge conflict and aligned plan text to raw + controlled WMI definitions.
+- 02.24.2026: Added `build_possession_model_table_okc_mil.py` to generate an all-possession modeling table (not only foul rows).
+- 02.24.2026: Generated `possession_model_table_okc_mil.csv` with possession-level context columns `L_t`, `F_t`, `N_t`, `M_t`.
+- 02.24.2026: (Earlier attempt) redefined last2/next2 as global possession windows; later replaced by relevant defensive-team possession windows.
+- 02.24.2026: Updated `Plan for WMI - Ryan Kalfus (2026).md` to center the goal on true whistle momentum and note current stage is raw WMI only.
+- 02.24.2026: Updated definitions with all current variables (`L_t`, `F_t`, `N_t`, `M_t`) as project formula evolved.
+- 02.24.2026: Added `calculate_wmi_rawgame_okc_mil.py` with full WMI breakdown and exact raw formula implementation.
+- 02.24.2026: Calculated `WMI_rawgame = 72.916667` for OKC vs MIL and saved breakdown in `wmi_rawgame_breakdown_okc_mil.csv`.
+- 02.24.2026: (Earlier attempt) re-defined `last2` and `next2` as global possession windows; later replaced by relevant defensive-team windows.
+- 02.24.2026: Updated `Plan for WMI - Ryan Kalfus (2026).md` to emphasize goal = true whistle momentum, current phase = raw WMI only.
+- 02.24.2026: Re-audited scripts, CSV outputs, and docs for `L_t`, `F_t`, `N_t`, `M_t` consistency.
+- 02.24.2026: Expanded definitions with full variable mapping for both all-possession and defensive-foul context files.
+- 02.24.2026: Re-ran `build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, and `calculate_wmi_rawgame_okc_mil.py` for an earlier global-window version.
+- 02.24.2026: (Earlier version result) `WMI_rawgame = 72.916667`; later superseded.
+- 02.24.2026: (Earlier attempt) re-defined `L_t` and `N_t` to use relevant defensive-team possessions; later reverted to global windows.
+- 02.24.2026: Updated raw WMI equation to unified mean-ratio form: `WMI_rawgame = [ (1 / n1) * ∑_(t: L_t=1) M_t ] / [ (1 / n0) * ∑_(t: L_t=0) M_t ]`.
+- 02.24.2026: (Earlier attempt) updated `build_possession_model_table_okc_mil.py` and `categorize_defensive_fouls_okc_mil.py` for relevant-possession logic; later reverted to global windows.
+- 02.24.2026: Updated `calculate_wmi_rawgame_okc_mil.py` to compute `n1`, `n0`, group means of `M_t`, and unified `WMI_rawgame`.
+- 02.24.2026: (Earlier attempt) updated definitions + plan markdown files for relevant-possession rules; later replaced by global window definitions.
+- 02.24.2026: Re-ran all outputs after formula/logic update and got `WMI_rawgame = 0.952381` for OKC vs MIL (supersedes prior 72.916667 run).
+- 02.24.2026: Consolidated plan markdowns into one file (`Plan for WMI - Ryan Kalfus (2026).md`) and removed the old plan file.
+- 02.24.2026: Re-defined `last2` / `next2` (and `L_t`, `F_t`, `N_t`, `M_t` usage) back to global possession windows with no offense/defense team filtering.
+- 02.24.2026: Updated all relevant markdown files (definitions, plan, log) to reflect global last2/next2 definitions.
+- 02.24.2026: Removed the plan-file bottom log section and removed the “what’s next” section so plan stays as full project overview.
+- 02.24.2026: Re-ran all scripts after restoring global last2/next2 logic and recalculated `WMI_rawgame = 3.035185` for OKC vs MIL.

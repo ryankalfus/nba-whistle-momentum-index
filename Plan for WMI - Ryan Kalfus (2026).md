@@ -1,0 +1,65 @@
+# Plan for WMI - Ryan Kalfus (2026)
+
+_Overview file (single source of truth for project plan)._ 
+
+## Goal
+- Measure whether NBA whistles show short-term momentum across possessions.
+- Build a clear possession-level framework that avoids overlap/double-counting.
+- Current stage: raw WMI first, controlled model second.
+
+## Core Question
+- If there is a defensive foul on a possession, how does that connect to nearby foul patterns?
+- Is there measurable whistle dependence across possessions?
+
+## Scope
+- Season target: 2025-26 regular season.
+- Current implementation: one-game prototype (OKC vs MIL), then scale.
+- Unit of analysis: possession.
+
+## Data and Tools
+### Data Source
+- Official NBA live play-by-play JSON (NBA CDN).
+
+### Tools
+- Python
+- pandas
+- NumPy
+- statsmodels (planned for controlled stage)
+
+## Possession Workflow
+1. Build possession-level rows from play-by-play.
+2. Identify defensive foul occurrence by possession.
+3. Create WMI variables `L_t`, `F_t`, `N_t`, `M_t`.
+4. Compute game-level raw WMI.
+5. Later add controlled model and compare raw vs controlled.
+
+## Variable Definitions (Current)
+- `L_t = 1`: at least one defensive foul in the last 2 possessions, else `0`.
+- `F_t = 1`: defensive foul on current possession, else `0`.
+- `N_t = 1`: at least one defensive foul in the next 2 possessions, else `0`.
+- `M_t = F_t(1 + N_t)`.
+
+## Last/Next Window Rule (Current)
+- `last2` and `next2` are global possession windows.
+- No offense/defense-team filtering for these windows.
+- Windows are based only on game possession order.
+
+## Unified Raw WMI Equation
+- `WMI_rawgame = [ (1 / n1) * ∑_(t: L_t=1) M_t ] / [ (1 / n0) * ∑_(t: L_t=0) M_t ]`
+- `n1`: number of possessions where `L_t = 1`.
+- `n0`: number of possessions where `L_t = 0`.
+
+## Controlled WMI (Planned)
+- Logistic form: `logit(P(def_foul_t=1)) = a + b*trigger_t + controls`.
+- Controlled index: `WMI_controlled = exp(b)`.
+- Planned controls include game context (time left, score difference, etc.).
+
+## Diagnostic Layer (Planned)
+- Compute one game-level WMI value per game.
+- Across games, compute z-scores to flag outlier games.
+- Use z-scores as diagnostics, not stand-alone proof.
+
+## Current Output Files
+- `possession_model_table_okc_mil.csv`
+- `def_foul_context_okc_mil.csv`
+- `wmi_rawgame_breakdown_okc_mil.csv`
