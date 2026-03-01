@@ -53,3 +53,17 @@
 - 02.24.2026: Updated all relevant markdown files (definitions, plan, log) to reflect global last2/next2 definitions.
 - 02.24.2026: Removed the plan-file bottom log section and removed the “what’s next” section so plan stays as full project overview.
 - 02.24.2026: Re-ran all scripts after restoring global last2/next2 logic and recalculated `WMI_rawgame = 3.035185` for OKC vs MIL.
+
+- 03.01.2026: Renamed project folder from `nba_whistle_project` to `nba-whistle-project` and verified filesystem path sync.
+- 03.01.2026: Updated Codex local project/workspace links so this project now points to `/Users/ryankalfus/Downloads/nba-whistle-project`.
+- 03.01.2026: Restored all recoverable NBA/whistle threads from local Codex state and confirmed each now maps to `/Users/ryankalfus/Downloads/nba-whistle-project`.
+- 03.01.2026: Removed stale deleted thread IDs from Codex local UI state to stop ghost chats from appearing and then disappearing with path errors.
+- 03.01.2026: Verified active NBA thread records have valid rollout session files and loadable thread IDs.
+- 03.01.2026: Fixed thread session metadata (`~/.codex/sessions/*.jsonl`) so recoverable NBA threads now use `cwd=/Users/ryankalfus/Downloads/nba-whistle-project` instead of the old underscore path.
+- 03.01.2026: Updated Codex global state so active workspace root is `nba-whistle-project` and pinned all NBA thread IDs to the top of sidebar thread order.
+- 03.01.2026: Created local safety backups before state edits: `~/.codex/.codex-global-state.json.pre_whistle_cleanup_20260301` and `~/.codex/.codex-global-state.json.pre_workspace_fix_20260301`.
+- 03.01.2026: Moved project folder to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` and created a symlink at `/Users/ryankalfus/Downloads/nba-whistle-project` to keep current Codex thread/project path resolution active.
+- 03.01.2026: Restored whistle project chat visibility by remapping thread/workspace metadata from `/Users/ryankalfus/Downloads/nba-whistle-project` to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` in `~/.codex/state_5.sqlite`, `~/.codex/.codex-global-state.json`, and session `.jsonl` metadata.
+- 03.01.2026: Final restore pass confirmed all `nba-whistle-project` threads now point to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` by updating `threads.cwd` in `~/.codex/state_5.sqlite` and workspace roots in `~/.codex/.codex-global-state.json`.
+- 03.01.2026: Created final pre-fix backups before this restore pass: `~/.codex/.codex-global-state.json.pre_restore_move_fix_20260301_171034` and `~/.codex/state_5.sqlite.pre_restore_move_fix_20260301_171034`.
+- 03.01.2026: Final compatibility alignment set all 7 whistle thread `cwd` values to `/Users/ryankalfus/Downloads/nba-whistle-project` (Codex project root string), which is a symlink to the moved real folder at `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.

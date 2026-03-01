@@ -63,3 +63,16 @@ _Overview file (single source of truth for project plan)._
 - `possession_model_table_okc_mil.csv`
 - `def_foul_context_okc_mil.csv`
 - `wmi_rawgame_breakdown_okc_mil.csv`
+
+## Project Naming Update
+- 03.01.2026: Project folder renamed to `nba-whistle-project` and path checks passed.
+- 03.01.2026: Codex project path mapping was updated to the renamed folder `/Users/ryankalfus/Downloads/nba-whistle-project`.
+- 03.01.2026: Recoverable NBA/whistle chats were re-mapped to this folder path in local Codex state.
+- 03.01.2026: Local ghost thread references (deleted IDs) were cleaned so only real loadable threads remain in the sidebar state.
+- 03.01.2026: Recoverable NBA thread session files were patched so their embedded `cwd` points to this folder path (hyphen version).
+- 03.01.2026: Codex active workspace root and thread ordering state were reset to prioritize this project and its recoverable thread IDs.
+- 03.01.2026: Project folder moved to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` and old path `/Users/ryankalfus/Downloads/nba-whistle-project` kept as a symlink so existing Codex threads remain attached to this project path.
+- 03.01.2026: Re-ran chat-restore metadata sync so whistle project thread records, workspace roots, and recoverable session metadata all resolve to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
+- 03.01.2026: Final restore pass updated Codex local workspace roots and remaining thread `cwd` values so all whistle threads resolve to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
+- 03.01.2026: Final restore pass safety backups were created first: `~/.codex/.codex-global-state.json.pre_restore_move_fix_20260301_171034` and `~/.codex/state_5.sqlite.pre_restore_move_fix_20260301_171034`.
+- 03.01.2026: Final compatibility alignment set all whistle thread `cwd` values to Codex’s current project-root string `/Users/ryankalfus/Downloads/nba-whistle-project` (symlink target remains `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`).

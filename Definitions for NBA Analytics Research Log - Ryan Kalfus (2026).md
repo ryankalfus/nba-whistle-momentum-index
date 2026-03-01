@@ -111,3 +111,15 @@ Notes:
 - `n1` = count of possessions with `L_t = 1`.
 - `n0` = count of possessions with `L_t = 0`.
 - Current definition supersedes older relevant-team last2/next2 definitions.
+## Project Naming Update
+- 03.01.2026: Folder path is now `/Users/ryankalfus/Downloads/nba-whistle-project` (renamed from `nba_whistle_project`).
+- 03.01.2026: Codex workspace root for this project was re-linked to `/Users/ryankalfus/Downloads/nba-whistle-project`.
+- 03.01.2026: Recoverable NBA/whistle thread records were normalized to this exact path so they resolve under the current project.
+- 03.01.2026: Stale deleted thread IDs were removed from local Codex UI state to prevent false “directory moved or deleted” ghost entries.
+- 03.01.2026: Session `.jsonl` metadata for recoverable NBA threads was path-normalized so stored `cwd` now matches this project path.
+- 03.01.2026: Codex workspace-state metadata was normalized so the active workspace root is this folder and NBA thread order is prioritized in sidebar state.
+- 03.01.2026: Physical project location moved to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`, while `/Users/ryankalfus/Downloads/nba-whistle-project` is now a symlink to preserve existing Codex thread/project path expectations.
+- 03.01.2026: Current restore pass re-confirmed metadata normalization to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` across thread DB rows, workspace root state, and session metadata for recoverable NBA threads.
+- 03.01.2026: Final restore pass updated remaining old-path thread metadata in `~/.codex/state_5.sqlite` and workspace roots in `~/.codex/.codex-global-state.json` so all project threads resolve to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
+- 03.01.2026: Final restore pass used fresh safety backups first: `~/.codex/.codex-global-state.json.pre_restore_move_fix_20260301_171034` and `~/.codex/state_5.sqlite.pre_restore_move_fix_20260301_171034`.
+- 03.01.2026: Final compatibility alignment set all project thread `cwd` values to `/Users/ryankalfus/Downloads/nba-whistle-project` (the current Codex project-root string), while that path remains a symlink to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
