@@ -1,6 +1,8 @@
 # Definitions for NBA Analytics Research - Ryan Kalfus (2026)
 
-## ***Defined rules/terms for this project go here. Add to / change / remove when a something is defined, variable or anything is redefined, or something else happens that should inquire a formal definition***
+## ***Defined rules/terms/variables/statistics/indexes for this project go here. Add to / change / remove when a something is defined, variable or anything is redefined, or something else happens that should inquire a formal definition***
+
+## *If a variable/stat/anything has a defined formula/equation, make sure to write it in its definition, while also explaining what it means, and any subterms inside such equations must be defined.*
 
 ## Core Possession Rule
 - One possession = one team controls the ball in live play.
