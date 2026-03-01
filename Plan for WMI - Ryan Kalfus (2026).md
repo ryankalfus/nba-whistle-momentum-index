@@ -1,7 +1,5 @@
 # Plan for WMI - Ryan Kalfus (2026)
 
-_Overview file (single source of truth for project plan)._ 
-
 ## Goal
 - Measure whether NBA whistles show short-term momentum across possessions.
 - Build a clear possession-level framework that avoids overlap/double-counting.
