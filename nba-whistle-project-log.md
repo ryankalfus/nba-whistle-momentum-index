@@ -1,5 +1,7 @@
 # NBA Whistle Project Log
 
+Log all changes here. Short, summarized.
+
 - 02.17.2026: Chose project idea for Whistle Momentum Index (WMI) focused on whether foul calls have short-term memory.
 - 02.17.2026: Defined early model inputs (time, score margin, recent foul history, timeouts/challenges/momentum shifts).
 - 02.18.2026: Set up Anaconda and Jupyter notebook environment.

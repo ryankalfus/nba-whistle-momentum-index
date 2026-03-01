@@ -1,5 +1,7 @@
 # Definitions for NBA Analytics Research - Ryan Kalfus (2026)
 
+## ***Defined rules/terms for this project go here. Add to / change / remove when a something is defined, variable or anything is redefined, or something else happens that should inquire a formal definition***
+
 ## Core Possession Rule
 - One possession = one team controls the ball in live play.
 - A possession ends when control changes to the other team, or the period ends.
