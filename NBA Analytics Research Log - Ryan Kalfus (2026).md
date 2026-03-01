@@ -67,3 +67,9 @@
 - 03.01.2026: Final restore pass confirmed all `nba-whistle-project` threads now point to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` by updating `threads.cwd` in `~/.codex/state_5.sqlite` and workspace roots in `~/.codex/.codex-global-state.json`.
 - 03.01.2026: Created final pre-fix backups before this restore pass: `~/.codex/.codex-global-state.json.pre_restore_move_fix_20260301_171034` and `~/.codex/state_5.sqlite.pre_restore_move_fix_20260301_171034`.
 - 03.01.2026: Final compatibility alignment set all 7 whistle thread `cwd` values to `/Users/ryankalfus/Downloads/nba-whistle-project` (Codex project root string), which is a symlink to the moved real folder at `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
+- 03.01.2026: Added `calculate_wmi_rawseason_2024_25.py` to compute pooled raw WMI for the full 2024-25 regular season using game IDs `0022400001` through `0022401230`.
+- 03.01.2026: Generated `wmi_rawseason_2024_25_summary.csv` with `games_succeeded=1230`, `games_failed=0`, and `WMI_rawseason_pooled=0.978645`.
+- 03.01.2026: Added `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv` with pooled 2025-26 result `WMI_rawseason_pooled=0.949847` (`896/896` completed regular-season games as of 03.01.2026).
+- 03.01.2026: Added `wmi-calculations.md` as a compact WMI stats tracker listing OKC vs MIL, 2025-26 season (as of 03.01.2026), and 2024-25 season values with output file references.
+- 03.01.2026: Renamed compact tracker file to `wmi-calculations-log.md` and removed duplicate `wmi-calculations.md`.
+- 03.01.2026: Clarified terminology in project markdowns: `WMI_raw` is the current equation-based metric; `WMI` is future controlled/logistic-regression based and equation is still TBD.

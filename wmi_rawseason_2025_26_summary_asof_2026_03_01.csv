@@ -1,0 +1,2 @@
+season,as_of_utc_date,games_requested,games_succeeded,games_failed,n1_count_L_t_eq_1,n0_count_L_t_eq_0,mean_M_t_where_L_t_eq_1,mean_M_t_where_L_t_eq_0,WMI_rawseason_pooled
+2025-26,2026-03-01,896,896,0,57136,122474,0.21965135816297957,0.2312490814376929,0.9498474839224899
