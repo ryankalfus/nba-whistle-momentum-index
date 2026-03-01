@@ -1,4 +1,4 @@
-# Definitions for NBA Analytics Research Log - Ryan Kalfus (2026)
+# Definitions for NBA Analytics Research - Ryan Kalfus (2026)
 
 ## Core Possession Rule
 - One possession = one team controls the ball in live play.
@@ -116,21 +116,7 @@ Notes:
 
 ## Season-Level WMI_raw (Pooled)
 - Same formula as game-level raw WMI, but computed on one combined possession table across all season games.
-- 03.01.2026: Added 2024-25 season calculator script `calculate_wmi_rawseason_2024_25.py`.
-- 03.01.2026: Latest 2024-25 pooled result: `WMI_rawseason_pooled = 0.978645` using `1230` regular-season games.
-- 03.01.2026: Added 2025-26 as-of summary file `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv` with `WMI_rawseason_pooled = 0.949847` using `896` completed regular-season games as of 03.01.2026.
-- 03.01.2026: Renamed compact tracker file to `wmi-calculations-log.md` for top-line `WMI_raw` values and output-file mapping.
-- 03.01.2026: Clarified `WMI_raw` vs future `WMI` distinction in this definitions file.
-
-## Project Naming Update
-- 03.01.2026: Folder path is now `/Users/ryankalfus/Downloads/nba-whistle-project` (renamed from `nba_whistle_project`).
-- 03.01.2026: Codex workspace root for this project was re-linked to `/Users/ryankalfus/Downloads/nba-whistle-project`.
-- 03.01.2026: Recoverable NBA/whistle thread records were normalized to this exact path so they resolve under the current project.
-- 03.01.2026: Stale deleted thread IDs were removed from local Codex UI state to prevent false “directory moved or deleted” ghost entries.
-- 03.01.2026: Session `.jsonl` metadata for recoverable NBA threads was path-normalized so stored `cwd` now matches this project path.
-- 03.01.2026: Codex workspace-state metadata was normalized so the active workspace root is this folder and NBA thread order is prioritized in sidebar state.
-- 03.01.2026: Physical project location moved to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`, while `/Users/ryankalfus/Downloads/nba-whistle-project` is now a symlink to preserve existing Codex thread/project path expectations.
-- 03.01.2026: Current restore pass re-confirmed metadata normalization to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` across thread DB rows, workspace root state, and session metadata for recoverable NBA threads.
-- 03.01.2026: Final restore pass updated remaining old-path thread metadata in `~/.codex/state_5.sqlite` and workspace roots in `~/.codex/.codex-global-state.json` so all project threads resolve to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
-- 03.01.2026: Final restore pass used fresh safety backups first: `~/.codex/.codex-global-state.json.pre_restore_move_fix_20260301_171034` and `~/.codex/state_5.sqlite.pre_restore_move_fix_20260301_171034`.
-- 03.01.2026: Final compatibility alignment set all project thread `cwd` values to `/Users/ryankalfus/Downloads/nba-whistle-project` (the current Codex project-root string), while that path remains a symlink to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
+- Current season summary outputs:
+  - `wmi_rawseason_2024_25_summary.csv` with `WMI_rawseason_pooled = 0.978645`.
+  - `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv` with `WMI_rawseason_pooled = 0.949847`.
+  - `wmi-calculations-log.md` for top-line `WMI_raw` values.

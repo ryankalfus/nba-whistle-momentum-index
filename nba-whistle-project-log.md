@@ -1,4 +1,4 @@
-# NBA Analytics Research Log - Ryan Kalfus (2026)
+# NBA Whistle Project Log
 
 - 02.17.2026: Chose project idea for Whistle Momentum Index (WMI) focused on whether foul calls have short-term memory.
 - 02.17.2026: Defined early model inputs (time, score margin, recent foul history, timeouts/challenges/momentum shifts).
@@ -73,3 +73,6 @@
 - 03.01.2026: Added `wmi-calculations.md` as a compact WMI stats tracker listing OKC vs MIL, 2025-26 season (as of 03.01.2026), and 2024-25 season values with output file references.
 - 03.01.2026: Renamed compact tracker file to `wmi-calculations-log.md` and removed duplicate `wmi-calculations.md`.
 - 03.01.2026: Clarified terminology in project markdowns: `WMI_raw` is the current equation-based metric; `WMI` is future controlled/logistic-regression based and equation is still TBD.
+- 03.01.2026: Removed bottom log sections from `Plan for WMI - Ryan Kalfus (2026).md` and definitions file so logs are centralized in this project log.
+- 03.01.2026: Renamed `Definitions for NBA Analytics Research Log - Ryan Kalfus (2026).md` to `Definitions for NBA Analytics Research - Ryan Kalfus (2026).md`.
+- 03.01.2026: Renamed `NBA Analytics Research Log - Ryan Kalfus (2026).md` to `nba-whistle-project-log.md`.
