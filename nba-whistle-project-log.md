@@ -78,3 +78,18 @@ Log all changes here. Short, summarized.
 - 03.01.2026: Removed bottom log sections from `Plan for WMI - Ryan Kalfus (2026).md` and definitions file so logs are centralized in this project log.
 - 03.01.2026: Renamed `Definitions for NBA Analytics Research Log - Ryan Kalfus (2026).md` to `Definitions for NBA Analytics Research - Ryan Kalfus (2026).md`.
 - 03.01.2026: Renamed `NBA Analytics Research Log - Ryan Kalfus (2026).md` to `nba-whistle-project-log.md`.
+- 03.01.2026: Added `calculate_wmi_rawseason_2010_11_to_2023_24.py` to compute season-level `WMI_raw` from requested 2010-11 to 2023-24 range using the current NBA CDN play-by-play source.
+- 03.01.2026: Computed and saved season results to `wmi_rawseason_2010_11_to_2023_24.csv`.
+- 03.01.2026: In the current CDN play-by-play source, requested seasons 2010-11 through 2018-19 were unavailable (game IDs returned unavailable status), so oldest available season in-range was 2019-20.
+- 03.01.2026: Calculated `WMI_rawseason_pooled = 0.9884629883031074` for 2023-24 (`games_succeeded=1230`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI_rawseason_pooled = 0.9960930994135297` for 2022-23 (`games_succeeded=1230`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI_rawseason_pooled = 0.942689878530503` for 2021-22 (`games_succeeded=1230`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI_rawseason_pooled = 0.9874203265496059` for 2020-21 (`games_succeeded=1080`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI_rawseason_pooled = 0.9711871776595937` for 2019-20 (`games_succeeded=636`, `games_missing=31`).
+- 03.01.2026: Updated `wmi-calculations-log.md` so seasonal entries start at `3/` for 2023-24 and then go down to oldest available season in-range.
+- 03.01.2026: Updated `wmi-calculations-log.md` numbering so `3/` is `2024-25`, then `2023-24` down through `2019-20`.
+- 03.01.2026: Investigated 2019-20 short-count issue: in the current CDN source, game IDs `0021900668+` currently return unavailable status (for example `0021900668`, `0021900800`, `0021901059`), so this source cannot currently reproduce all `1059` played regular-season games for that season.
+- 03.01.2026: Ran broader 2019-20 recovery scan over game IDs `0021900001` to `0021901230`; current source recovered `718` games and `WMI_rawseason_pooled = 0.975320380560216`, saved to `wmi_rawseason_2019_20_recovery.csv`.
+- 03.01.2026: Corrected 2019-20 missing-count reporting to use played-game baseline (`1059`): `games_missing = 341` (`1059 - 718`) in the recovery file and calculations log line.
+- 03.02.2026: Updated `wmi_rawseason_2010_11_to_2023_24.csv` 2019-20 row to align with the played-game baseline correction (`games_succeeded=718`, `games_missing=341`, `WMI_rawseason_pooled=0.975320380560216`).
+- 03.02.2026: Documentation update rule set: log routine output/code/file changes in `nba-whistle-project-log.md` by default; update plan/definitions only when actual plan/workflow or term/definition/equation/rule changes.
