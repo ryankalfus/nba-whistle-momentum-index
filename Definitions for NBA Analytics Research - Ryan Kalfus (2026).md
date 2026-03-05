@@ -125,9 +125,6 @@ Notes:
 - Current season summary outputs:
   - `wmi_rawseason_2024_25_summary.csv` with `WMI_rawseason_pooled = 0.978645`.
   - `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv` with `WMI_rawseason_pooled = 0.949847`.
-  - `wmi_rawseason_2010_11_to_2023_24.csv` with pooled season values for available seasons in requested range (`2019-20` to `2023-24` in current source).
-  - `wmi_rawseason_2019_20_recovery.csv` with broader 2019-20 scan over full ID range `1..1230` (`games_succeeded=718`, `games_missing=341` using played-game baseline `1059`, `WMI_rawseason_pooled = 0.975320380560216`).
+  - `wmi_rawseason_2010_11_to_2023_24.csv` with pooled season values for available seasons in requested range (`2020-21` to `2023-24` in current source).
   - `wmi-calculations-log.md` for top-line `WMI_raw` values.
 - Requested seasons `2010-11` to `2018-19` are currently unavailable in this CDN play-by-play source used by this project run.
-- 2019-20 caveat in current source: many higher game IDs in that season currently return unavailable status (for example `0021900668+`), so this source under-covers known played-game totals for that season.
-- 03.02.2026 update: `wmi_rawseason_2010_11_to_2023_24.csv` 2019-20 row now uses the same played-game baseline reporting as the recovery file (`games_missing=341` with `games_succeeded=718`).

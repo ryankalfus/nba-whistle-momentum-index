@@ -71,13 +71,9 @@
 - `wmi_rawseason_2024_25_summary.csv`
 - `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv`
 - `wmi_rawseason_2010_11_to_2023_24.csv`
-- `wmi_rawseason_2019_20_recovery.csv`
 - `wmi-calculations-log.md`
 
 ## Historical Season Coverage (Current Source)
 - Requested historical range run: `2010-11` through `2023-24`.
-- Oldest available season in this current NBA CDN play-by-play source for that range: `2019-20`.
-- Computed seasons in that run: `2019-20`, `2020-21`, `2021-22`, `2022-23`, `2023-24`.
-- 2019-20 note: current CDN endpoint returns unavailable status for many higher game IDs (for example `0021900668+`), so this source currently under-covers known played-game totals for that season.
-- 2019-20 broader scan note: scanning full ID range `1..1230` in current source recovered `718` games; using played-game baseline `1059`, this is `games_missing = 341`.
-- 03.02.2026 update: `wmi_rawseason_2010_11_to_2023_24.csv` was aligned to this same 2019-20 baseline (`games_succeeded=718`, `games_missing=341`).
+- Oldest available season in this current NBA CDN play-by-play source for that range: `2020-21`.
+- Computed seasons in that run: `2020-21`, `2021-22`, `2022-23`, `2023-24`.

@@ -9,5 +9,4 @@
 5/ WMI_raw for 2022-23 season (output: wmi_rawseason_2010_11_to_2023_24.csv) = 0.9960930994135297
 6/ WMI_raw for 2021-22 season (output: wmi_rawseason_2010_11_to_2023_24.csv) = 0.942689878530503
 7/ WMI_raw for 2020-21 season (output: wmi_rawseason_2010_11_to_2023_24.csv) = 0.9874203265496059
-8/ WMI_raw for 2019-20 season (partial availability in current CDN play-by-play source; using played-game baseline of 1059, full 1..1230 ID scan currently recovers games_succeeded=718, games_missing=341; output: wmi_rawseason_2019_20_recovery.csv) = 0.975320380560216
-9/ WMI_raw for CLE vs. CHA (February 20, 2026; random 2025-26 game; game_id: 0022500802; computed with current definitions from NBA CDN play-by-play) = 0.7185909980430528
+8/ WMI_raw for CLE vs. CHA (February 20, 2026; random 2025-26 game; game_id: 0022500802; computed with current definitions from NBA CDN play-by-play) = 0.7185909980430528

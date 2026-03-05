@@ -1,2 +1,0 @@
-season,as_of_utc_date,id_scan_range,games_succeeded,games_missing,games_bad,n1_count_L_t_eq_1,n0_count_L_t_eq_0,mean_M_t_where_L_t_eq_1,mean_M_t_where_L_t_eq_0,WMI_rawseason_pooled
-2019-20,2026-03-02,1..1230 (missing uses played-game baseline 1059),718,341,0,45411,98373,0.22399859064984254,0.22966667683205758,0.975320380560216
