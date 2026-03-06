@@ -1,44 +1,58 @@
+from __future__ import annotations
+
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime
+from typing import Any, Mapping, Sequence
 
-import numpy as np
 import pandas as pd
 import requests
+
+from nba_pbp_utils import (
+    actions_to_dataframe,
+    build_valid_possessions,
+    calculate_context_flags,
+    count_defensive_fouls,
+    extract_team_context,
+    playbyplay_url,
+)
 
 START_PREFIX = 10  # 2010-11
 END_PREFIX = 23    # 2023-24
 MAX_GAME_NUMBER = 1300
 MAX_WORKERS = 8
 OUT_PATH = "wmi_rawseason_2010_11_to_2023_24.csv"
-EXCLUDED_DEF_FOUL_SUBTYPES = {"offensive", "technical", "double technical"}
+RETRYABLE_STATUS_CODES = {429, 500, 502, 503, 504}
 
 
-def season_label(prefix):
+def season_label(prefix: int) -> str:
     start_year = 2000 + prefix
     return f"{start_year}-{(start_year + 1) % 100:02d}"
 
 
-def game_id(prefix, number):
+def game_id(prefix: int, number: int) -> str:
     return f"002{prefix:02d}{number:05d}"
 
 
-def fetch_status(session, gid, timeout=30):
-    url = f"https://cdn.nba.com/static/json/liveData/playbyplay/playbyplay_{gid}.json"
-    response = session.get(url, timeout=timeout)
+def fetch_status(
+    session: requests.Session,
+    gid: str,
+    timeout: int = 30,
+) -> tuple[int, requests.Response]:
+    response = session.get(playbyplay_url(gid), timeout=timeout)
     return response.status_code, response
 
 
-def season_exists(session, prefix):
+def season_exists(session: requests.Session, prefix: int) -> bool:
     gid = game_id(prefix, 1)
     try:
         status, _ = fetch_status(session, gid, timeout=20)
         return status == 200
-    except Exception:
+    except requests.RequestException:
         return False
 
 
-def game_exists(session, prefix, number):
+def game_exists(session: requests.Session, prefix: int, number: int) -> bool:
     gid = game_id(prefix, number)
     for _ in range(2):
         try:
@@ -47,12 +61,12 @@ def game_exists(session, prefix, number):
                 return True
             if status in (403, 404):
                 return False
-        except Exception:
+        except requests.RequestException:
             time.sleep(0.4)
     return False
 
 
-def find_max_existing_game_number(session, prefix):
+def find_max_existing_game_number(session: requests.Session, prefix: int) -> int:
     if not game_exists(session, prefix, 1):
         return 0
 
@@ -66,7 +80,11 @@ def find_max_existing_game_number(session, prefix):
     return lo
 
 
-def fetch_game_json_with_retry(session, gid, tries=5):
+def fetch_game_json_with_retry(
+    session: requests.Session,
+    gid: str,
+    tries: int = 5,
+) -> tuple[str, dict[str, Any] | None]:
     for i in range(tries):
         try:
             status, response = fetch_status(session, gid, timeout=30)
@@ -76,84 +94,62 @@ def fetch_game_json_with_retry(session, gid, tries=5):
                 # Could be real missing OR temporary edge denial; retry a few times.
                 time.sleep(0.6 * (i + 1))
                 continue
-            if status in (429, 500, 502, 503, 504):
+            if status in RETRYABLE_STATUS_CODES:
                 time.sleep(0.6 * (i + 1))
                 continue
             return "missing", None
-        except Exception:
+        except requests.RequestException:
             time.sleep(0.6 * (i + 1))
     return "missing", None
 
 
-def build_foul_vector(actions):
+def build_foul_vector(actions: Sequence[Mapping[str, Any]]) -> list[int] | None:
     if not actions:
         return None
 
-    df = pd.DataFrame(actions)
-    needed = {"orderNumber", "actionNumber", "teamTricode", "teamId", "possession", "actionType", "subType"}
+    df = actions_to_dataframe(actions)
+    needed = {"teamTricode", "teamId", "possession", "actionType", "subType"}
     if not needed.issubset(df.columns):
         return None
-
-    df = df.sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
-    team_rows = df[df["teamTricode"].notna()][["teamId", "teamTricode"]].dropna().drop_duplicates()
-    if team_rows.empty:
+    if df.empty:
         return None
 
-    team_ids = sorted(int(row.teamId) for _, row in team_rows.iterrows())
-    if len(team_ids) != 2:
-        return None
-    opponent = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
-
-    valid = df[df["possession"].isin(team_ids)].copy()
+    _, opponent, team_ids = extract_team_context(df)
+    valid = build_valid_possessions(df, team_ids)
     if valid.empty:
         return None
-
-    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
-    valid["possession_group"] = valid["is_new_possession"].cumsum()
 
     f_vals = []
     for _, grp in valid.groupby("possession_group", sort=True):
         offense_team_id = int(grp["possession"].iloc[0])
         defense_team_id = opponent[offense_team_id]
-        subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
-
-        has_def_foul = (
-            (grp["actionType"] == "foul")
-            & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
-            & (grp["teamId"] == defense_team_id)
-        ).any()
-        f_vals.append(1 if has_def_foul else 0)
+        f_vals.append(int(count_defensive_fouls(grp, defense_team_id) > 0))
 
     if not f_vals:
         return None
-    return np.array(f_vals, dtype=np.int8)
+    return f_vals
 
 
-def game_wmi_components(actions):
+def game_wmi_components(
+    actions: Sequence[Mapping[str, Any]],
+) -> tuple[int, int, float, float] | None:
     f = build_foul_vector(actions)
     if f is None:
         return None
 
-    prev1 = np.concatenate(([0], f[:-1]))
-    prev2 = np.concatenate(([0, 0], f[:-2]))
-    l = ((prev1 + prev2) > 0).astype(np.int8)
+    l_vals, n_vals = calculate_context_flags(f)
+    m_vals = [f_val + (f_val * n_val) for f_val, n_val in zip(f, n_vals, strict=False)]
 
-    next1 = np.concatenate((f[1:], [0]))
-    next2 = np.concatenate((f[2:], [0, 0]))
-    n = ((next1 + next2) > 0).astype(np.int8)
-
-    m = f + (f * n)
-
-    mask_l1 = l == 1
-    mask_l0 = l == 0
-    n1 = int(mask_l1.sum())
-    n0 = int(mask_l0.sum())
-    sum_m_l1 = float(m[mask_l1].sum()) if n1 > 0 else 0.0
-    sum_m_l0 = float(m[mask_l0].sum()) if n0 > 0 else 0.0
+    group_l1 = [m_val for m_val, l_val in zip(m_vals, l_vals, strict=False) if l_val == 1]
+    group_l0 = [m_val for m_val, l_val in zip(m_vals, l_vals, strict=False) if l_val == 0]
+    n1 = len(group_l1)
+    n0 = len(group_l0)
+    sum_m_l1 = float(sum(group_l1)) if n1 > 0 else 0.0
+    sum_m_l0 = float(sum(group_l0)) if n0 > 0 else 0.0
     return n1, n0, sum_m_l1, sum_m_l0
 
 
-def process_game(session, gid):
+def process_game(session: requests.Session, gid: str) -> dict[str, Any]:
     status, payload = fetch_game_json_with_retry(session, gid)
     if status != "ok":
         return {"status": "missing", "game_id": gid}
@@ -174,7 +170,7 @@ def process_game(session, gid):
     }
 
 
-def compute_season(session, prefix):
+def compute_season(session: requests.Session, prefix: int) -> dict[str, Any]:
     season = season_label(prefix)
     max_num = find_max_existing_game_number(session, prefix)
     if max_num == 0:
@@ -252,7 +248,7 @@ def compute_season(session, prefix):
     }
 
 
-def main():
+def main() -> None:
     session = requests.Session()
 
     requested = [season_label(p) for p in range(START_PREFIX, END_PREFIX + 1)]

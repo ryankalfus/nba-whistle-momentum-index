@@ -1,59 +1,34 @@
-import re
-import requests
+from __future__ import annotations
+
 import pandas as pd
 
-GAME_ID = "0022500789"
+from nba_pbp_utils import (
+    DEFAULT_SINGLE_GAME_ID,
+    EXCLUDED_DEF_FOUL_SUBTYPES,
+    LIVE_BALL_ACTIONS,
+    build_valid_possessions,
+    count_defensive_fouls,
+    extract_team_context,
+    format_output_preview,
+    load_game_dataframe,
+)
+
 OUT_PATH = "possessions_step2_sample.csv"
-LIVE_BALL_ACTIONS = {
-    "jumpball",
-    "2pt",
-    "3pt",
-    "heave",
-    "rebound",
-    "turnover",
-    "steal",
-    "foul",
-    "freethrow",
-    "violation",
-}
-EXCLUDED_DEF_FOUL_SUBTYPES = {"offensive", "technical", "double technical"}
 
 
-def clock_to_seconds(clock_str):
-    if pd.isna(clock_str):
-        return None
-    match = re.match(r"PT(\d+)M(\d+)\.(\d+)S", str(clock_str))
-    if not match:
-        return None
-    minutes = int(match.group(1))
-    seconds = int(match.group(2))
-    hundredths = int(match.group(3))
-    return minutes * 60 + seconds + (hundredths / 100.0)
-
-
-def is_team_value(value):
+def is_team_value(value: object) -> bool:
     return pd.notna(value) and str(value).strip() != ""
 
 
-def parse_possessions(pbp_df):
+def parse_possessions(pbp_df: pd.DataFrame, game_id: str = DEFAULT_SINGLE_GAME_ID) -> pd.DataFrame:
     df = pbp_df.copy().sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
     df = df[df["game_seconds_elapsed"].notna()].copy()
     df["event_seq_same_clock"] = df.groupby("game_seconds_elapsed").cumcount()
     # Tiny sequence offset preserves event order when multiple events share the same clock time.
     df["timeline_time"] = df["game_seconds_elapsed"] + (df["event_seq_same_clock"] * 0.001)
 
-    team_rows = df[df["teamTricode"].apply(is_team_value)][["teamId", "teamTricode"]].dropna().drop_duplicates()
-    team_id_to_tricode = {int(r.teamId): r.teamTricode for _, r in team_rows.iterrows()}
-    team_ids = sorted(team_id_to_tricode.keys())
-    if len(team_ids) != 2:
-        raise ValueError("Expected exactly 2 team IDs in game data.")
-
-    opponent_id = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
-
-    # Keep only events where possession points to an actual team.
-    valid = df[df["possession"].isin(team_ids)].copy()
-    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
-    valid["possession_group"] = valid["is_new_possession"].cumsum()
+    team_id_to_tricode, opponent_id, team_ids = extract_team_context(df[df["teamTricode"].apply(is_team_value)].copy())
+    valid = build_valid_possessions(df, team_ids)
 
     possession_chunks = []
     for _, grp in valid.groupby("possession_group", sort=True):
@@ -67,23 +42,24 @@ def parse_possessions(pbp_df):
         last_event_time = float(grp_live["timeline_time"].max()) if not grp_live.empty else float(grp["timeline_time"].max())
 
         # Count only true defensive fouls by defense team (exclude offensive/technical types).
+        def_foul_count = count_defensive_fouls(grp, defense_team_id)
         subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
         def_fouls = grp[
             (grp["actionType"] == "foul")
-            & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
             & (grp["teamId"] == defense_team_id)
+            & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
         ]
 
         foul_teams = def_fouls["teamTricode"].dropna().astype(str).unique().tolist()
 
         possession_chunks.append(
             {
-                "game_id": GAME_ID,
+                "game_id": game_id,
                 "offense_team": offense_team,
                 "defense_team": defense_team,
                 "start_time": start_time,
                 "last_event_time": last_event_time,
-                "defensive_foul_count": int(len(def_fouls)),
+                "defensive_foul_count": def_foul_count,
                 "defensive_foul_teams": "|".join(foul_teams),
             }
         )
@@ -128,23 +104,11 @@ def parse_possessions(pbp_df):
     ]
 
 
-def main():
-    url = f"https://cdn.nba.com/static/json/liveData/playbyplay/playbyplay_{GAME_ID}.json"
-    response = requests.get(url, timeout=30)
-    response.raise_for_status()
-
-    pbp_df = pd.DataFrame(response.json()["game"]["actions"])
-    pbp_df["seconds_remaining_in_period"] = pbp_df["clock"].apply(clock_to_seconds)
-    pbp_df["game_seconds_elapsed"] = (pbp_df["period"] - 1) * 720 + (720 - pbp_df["seconds_remaining_in_period"])
-
-    possession_df = parse_possessions(pbp_df)
+def main() -> None:
+    pbp_df = load_game_dataframe(DEFAULT_SINGLE_GAME_ID)
+    possession_df = parse_possessions(pbp_df, game_id=DEFAULT_SINGLE_GAME_ID)
     possession_df.to_csv(OUT_PATH, index=False)
-
-    print("OK")
-    print("game_id", GAME_ID)
-    print("rows", len(possession_df))
-    print(possession_df.head(10).to_string(index=False))
-    print("saved", OUT_PATH)
+    print(format_output_preview(DEFAULT_SINGLE_GAME_ID, OUT_PATH, possession_df, preview_rows=10))
 
 
 if __name__ == "__main__":

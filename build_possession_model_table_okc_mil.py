@@ -1,88 +1,26 @@
-import re
-import requests
+from __future__ import annotations
+
 import pandas as pd
 
-GAME_ID = "0022500789"
+from nba_pbp_utils import (
+    DEFAULT_SINGLE_GAME_ID,
+    build_valid_possessions,
+    calculate_context_flags,
+    count_defensive_fouls,
+    extract_team_context,
+    format_output_preview,
+    infer_team_score_side,
+    load_game_dataframe,
+    parse_int,
+)
+
 OUT_PATH = "possession_model_table_okc_mil.csv"
-EXCLUDED_DEF_FOUL_SUBTYPES = {"offensive", "technical", "double technical"}
 
 
-def clock_to_seconds(clock_str):
-    if pd.isna(clock_str):
-        return None
-    match = re.match(r"PT(\d+)M(\d+)\.(\d+)S", str(clock_str))
-    if not match:
-        return None
-    minutes = int(match.group(1))
-    seconds = int(match.group(2))
-    hundredths = int(match.group(3))
-    return minutes * 60 + seconds + (hundredths / 100.0)
-
-
-def parse_int(value):
-    if pd.isna(value):
-        return None
-    try:
-        return int(value)
-    except Exception:
-        return None
-
-
-def infer_team_score_side(df, team_ids):
-    mapping = {}
-    prev_home = None
-    prev_away = None
-
-    for _, row in df.iterrows():
-        home = parse_int(row.get("scoreHome"))
-        away = parse_int(row.get("scoreAway"))
-        team_id = parse_int(row.get("teamId"))
-
-        if home is None or away is None:
-            continue
-
-        if prev_home is not None and prev_away is not None and team_id in team_ids:
-            home_changed = home != prev_home
-            away_changed = away != prev_away
-            if home_changed ^ away_changed:
-                side = "home" if home_changed else "away"
-                if team_id not in mapping:
-                    mapping[team_id] = side
-                if len(mapping) == 1:
-                    known = next(iter(mapping.keys()))
-                    other = [tid for tid in team_ids if tid != known][0]
-                    mapping[other] = "away" if mapping[known] == "home" else "home"
-                    break
-
-        prev_home = home
-        prev_away = away
-
-    return mapping
-
-
-def build_table(game_id):
-    url = f"https://cdn.nba.com/static/json/liveData/playbyplay/playbyplay_{game_id}.json"
-    response = requests.get(url, timeout=30)
-    response.raise_for_status()
-    payload = response.json()
-
-    df = pd.DataFrame(payload["game"]["actions"]).sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
-    df["seconds_remaining_in_period"] = df["clock"].apply(clock_to_seconds)
-    df["game_seconds_elapsed"] = (df["period"] - 1) * 720 + (720 - df["seconds_remaining_in_period"])
-    df = df[df["game_seconds_elapsed"].notna()].copy()
-    df["event_seq_same_clock"] = df.groupby("game_seconds_elapsed").cumcount()
-    df["timeline_time"] = df["game_seconds_elapsed"] + (df["event_seq_same_clock"] * 0.001)
-
-    team_rows = df[df["teamTricode"].notna()][["teamId", "teamTricode"]].dropna().drop_duplicates()
-    team_id_to_tricode = {int(r.teamId): r.teamTricode for _, r in team_rows.iterrows()}
-    team_ids = sorted(team_id_to_tricode.keys())
-    if len(team_ids) != 2:
-        raise ValueError("Expected exactly 2 teams in game.")
-
-    opponent_id = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
-    valid = df[df["possession"].isin(team_ids)].copy()
-    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
-    valid["possession_group"] = valid["is_new_possession"].cumsum()
+def build_table(game_id: str) -> pd.DataFrame:
+    df = load_game_dataframe(game_id)
+    team_id_to_tricode, opponent_id, team_ids = extract_team_context(df)
+    valid = build_valid_possessions(df, team_ids)
     total_game_seconds = float(valid["game_seconds_elapsed"].max())
     score_side = infer_team_score_side(valid, team_ids)
 
@@ -90,15 +28,7 @@ def build_table(game_id):
     for group_id, grp in valid.groupby("possession_group", sort=True):
         offense_team_id = int(grp["possession"].iloc[0])
         defense_team_id = opponent_id[offense_team_id]
-
-        subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
-        def_foul_count = int(
-            (
-                (grp["actionType"] == "foul")
-                & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
-                & (grp["teamId"] == defense_team_id)
-            ).sum()
-        )
+        def_foul_count = count_defensive_fouls(grp, defense_team_id)
         has_def_foul = int(def_foul_count > 0)
 
         end_time = float(grp["timeline_time"].max())
@@ -131,18 +61,7 @@ def build_table(game_id):
     out = pd.DataFrame(rows).sort_values("possession_group").reset_index(drop=True)
     out["possession_number"] = range(1, len(out) + 1)
 
-    # Global (team-agnostic) last2/next2 foul context.
-    # L_t: foul in last 2 possessions.
-    # F_t: foul on current possession.
-    # N_t: foul in next 2 possessions.
-    # M_t = F_t + F_t*N_t, so values are 0/1/2.
-    l_vals = []
-    n_vals = []
-    for i, _ in out.iterrows():
-        prior = out.iloc[max(0, i - 2) : i]
-        next_rows = out.iloc[i + 1 : i + 3]
-        l_vals.append(int((prior["foul_called_this_possession"] == 1).any()))
-        n_vals.append(int((next_rows["foul_called_this_possession"] == 1).any()))
+    l_vals, n_vals = calculate_context_flags(out["foul_called_this_possession"].tolist())
 
     out["L_t"] = l_vals
     out["F_t"] = out["foul_called_this_possession"].astype(int)
@@ -165,14 +84,10 @@ def build_table(game_id):
     ]
 
 
-def main():
-    out_df = build_table(GAME_ID)
+def main() -> None:
+    out_df = build_table(DEFAULT_SINGLE_GAME_ID)
     out_df.to_csv(OUT_PATH, index=False)
-    print("OK")
-    print("game_id", GAME_ID)
-    print("rows", len(out_df))
-    print(out_df.head(20).to_string(index=False))
-    print("saved", OUT_PATH)
+    print(format_output_preview(DEFAULT_SINGLE_GAME_ID, OUT_PATH, out_df))
 
 
 if __name__ == "__main__":
