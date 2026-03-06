@@ -1,4 +1,5 @@
-import re
+from __future__ import annotations
+
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import UTC, datetime
@@ -6,93 +7,65 @@ from datetime import UTC, datetime
 import pandas as pd
 import requests
 
+from nba_pbp_utils import (
+    RETRYABLE_PIPELINE_ERRORS,
+    build_valid_possessions,
+    calculate_context_flags,
+    count_defensive_fouls,
+    extract_team_context,
+    load_game_dataframe,
+)
+
 SEASON = "2024-25"
 SEASON_GAME_ID_PREFIX = "00224"
 REGULAR_SEASON_GAME_COUNT = 1230
 OUT_PATH = "wmi_rawseason_2024_25_summary.csv"
-EXCLUDED_DEF_FOUL_SUBTYPES = {"offensive", "technical", "double technical"}
 MAX_WORKERS = 10
 
 
-def clock_to_seconds(clock_str):
-    if pd.isna(clock_str):
-        return None
-    match = re.match(r"PT(\d+)M(\d+)\.(\d+)S", str(clock_str))
-    if not match:
-        return None
-    minutes = int(match.group(1))
-    seconds = int(match.group(2))
-    hundredths = int(match.group(3))
-    return minutes * 60 + seconds + (hundredths / 100.0)
-
-
-def fetch_json_with_retry(session, url, timeout=30, tries=4):
-    last_error = None
+def load_game_dataframe_with_retry(
+    session: requests.Session,
+    game_id: str,
+    timeout: int = 30,
+    tries: int = 4,
+) -> pd.DataFrame:
+    last_error: Exception | None = None
     for i in range(tries):
         try:
-            response = session.get(url, timeout=timeout)
-            response.raise_for_status()
-            return response.json()
-        except Exception as error:
+            return load_game_dataframe(game_id, session=session, timeout=timeout)
+        except RETRYABLE_PIPELINE_ERRORS as error:
             last_error = error
             time.sleep(0.6 * (i + 1))
+    if last_error is None:
+        raise RuntimeError(f"Failed to load game {game_id}.")
     raise last_error
 
 
-def build_possession_table_for_game(session, game_id):
-    url = f"https://cdn.nba.com/static/json/liveData/playbyplay/playbyplay_{game_id}.json"
-    payload = fetch_json_with_retry(session, url, timeout=30, tries=4)
-    actions = payload.get("game", {}).get("actions", [])
-    if not actions:
-        return None
-
-    df = pd.DataFrame(actions).sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
-    df["seconds_remaining_in_period"] = df["clock"].apply(clock_to_seconds)
-    df["game_seconds_elapsed"] = (df["period"] - 1) * 720 + (720 - df["seconds_remaining_in_period"])
-    df = df[df["game_seconds_elapsed"].notna()].copy()
+def build_possession_table_for_game(
+    session: requests.Session,
+    game_id: str,
+) -> pd.DataFrame | None:
+    df = load_game_dataframe_with_retry(session, game_id, timeout=30, tries=4)
     if df.empty:
         return None
 
-    team_rows = df[df["teamTricode"].notna()][["teamId", "teamTricode"]].dropna().drop_duplicates()
-    team_ids = sorted(int(row.teamId) for _, row in team_rows.iterrows())
-    if len(team_ids) != 2:
-        return None
-
-    opponent_id = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
-    valid = df[df["possession"].isin(team_ids)].copy()
+    _, opponent_id, team_ids = extract_team_context(df)
+    valid = build_valid_possessions(df, team_ids)
     if valid.empty:
         return None
-
-    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
-    valid["possession_group"] = valid["is_new_possession"].cumsum()
 
     rows = []
     for group_id, grp in valid.groupby("possession_group", sort=True):
         offense_team_id = int(grp["possession"].iloc[0])
         defense_team_id = opponent_id[offense_team_id]
-
-        subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
-        def_foul_count = int(
-            (
-                (grp["actionType"] == "foul")
-                & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
-                & (grp["teamId"] == defense_team_id)
-            ).sum()
-        )
+        def_foul_count = count_defensive_fouls(grp, defense_team_id)
         rows.append({"game_id": game_id, "possession_group": int(group_id), "F_t": int(def_foul_count > 0)})
 
     out = pd.DataFrame(rows).sort_values("possession_group").reset_index(drop=True)
     if out.empty:
         return None
 
-    l_vals = []
-    n_vals = []
-    for i in range(len(out)):
-        prior = out.iloc[max(0, i - 2) : i]
-        next_rows = out.iloc[i + 1 : i + 3]
-        l_vals.append(int((prior["F_t"] == 1).any()))
-        n_vals.append(int((next_rows["F_t"] == 1).any()))
-
+    l_vals, n_vals = calculate_context_flags(out["F_t"].tolist())
     out["L_t"] = l_vals
     out["N_t"] = n_vals
     out["M_t"] = out["F_t"] + (out["F_t"] * out["N_t"])
@@ -100,20 +73,25 @@ def build_possession_table_for_game(session, game_id):
     return out[["game_id", "L_t", "F_t", "N_t", "M_t"]]
 
 
-def get_completed_regular_season_game_ids():
+def get_completed_regular_season_game_ids() -> list[str]:
     # NBA regular-season IDs for 2024-25 are sequential: 0022400001 ... 0022401230.
     return [f"{SEASON_GAME_ID_PREFIX}{i:05d}" for i in range(1, REGULAR_SEASON_GAME_COUNT + 1)]
 
 
-def main():
-    session = requests.Session()
-    game_ids = get_completed_regular_season_game_ids()
-    if not game_ids:
-        raise RuntimeError("No completed regular-season games found for this season.")
+def collect_game_tables(
+    session: requests.Session,
+    game_ids: list[str],
+) -> tuple[list[pd.DataFrame], list[str]]:
+    tables, failed_ids = collect_parallel_tables(session, game_ids)
+    if failed_ids:
+        failed_ids = retry_failed_tables(session, failed_ids, tables)
+    return tables, failed_ids
 
-    print("season", SEASON)
-    print("completed_regular_season_games", len(game_ids))
 
+def collect_parallel_tables(
+    session: requests.Session,
+    game_ids: list[str],
+) -> tuple[list[pd.DataFrame], list[str]]:
     tables = []
     failed_ids = []
 
@@ -134,25 +112,38 @@ def main():
                     failed_ids.append(game_id)
                 else:
                     tables.append(table)
-            except Exception:
+            except RETRYABLE_PIPELINE_ERRORS:
                 failed_ids.append(game_id)
 
             if done % 100 == 0 or done == total:
                 print(f"progress {done}/{total} ok={len(tables)} failed={len(failed_ids)}")
 
-    if failed_ids:
-        retry_failed = []
-        for game_id in failed_ids:
-            try:
-                table = build_possession_table_for_game(session, game_id)
-                if table is None or table.empty:
-                    retry_failed.append(game_id)
-                else:
-                    tables.append(table)
-            except Exception:
-                retry_failed.append(game_id)
-        failed_ids = retry_failed
+    return tables, failed_ids
 
+
+def retry_failed_tables(
+    session: requests.Session,
+    failed_ids: list[str],
+    tables: list[pd.DataFrame],
+) -> list[str]:
+    retry_failed = []
+    for game_id in failed_ids:
+        try:
+            table = build_possession_table_for_game(session, game_id)
+            if table is None or table.empty:
+                retry_failed.append(game_id)
+            else:
+                tables.append(table)
+        except RETRYABLE_PIPELINE_ERRORS:
+            retry_failed.append(game_id)
+    return retry_failed
+
+
+def build_summary(
+    game_ids: list[str],
+    tables: list[pd.DataFrame],
+    failed_ids: list[str],
+) -> pd.DataFrame:
     if not tables:
         raise RuntimeError("No possession tables were built.")
 
@@ -187,6 +178,20 @@ def main():
             }
         ]
     )
+    return summary
+
+
+def main() -> None:
+    session = requests.Session()
+    game_ids = get_completed_regular_season_game_ids()
+    if not game_ids:
+        raise RuntimeError("No completed regular-season games found for this season.")
+
+    print("season", SEASON)
+    print("completed_regular_season_games", len(game_ids))
+
+    tables, failed_ids = collect_game_tables(session, game_ids)
+    summary = build_summary(game_ids, tables, failed_ids)
     summary.to_csv(OUT_PATH, index=False)
 
     print("saved", OUT_PATH)

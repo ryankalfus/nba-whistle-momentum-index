@@ -1,10 +1,12 @@
+from __future__ import annotations
+
 import pandas as pd
 
 IN_PATH = "possession_model_table_okc_mil.csv"
 OUT_PATH = "wmi_rawgame_breakdown_okc_mil.csv"
 
 
-def calculate_wmi_rawgame(df):
+def calculate_wmi_rawgame(df: pd.DataFrame) -> dict[str, float | int | None]:
     # Definition formula:
     # M_t = F_t(1 + N_t) = F_t + F_t*N_t
     # WMI_rawgame = [ (1 / n1) * sum_{t: L_t=1} M_t ] / [ (1 / n0) * sum_{t: L_t=0} M_t ]
@@ -44,7 +46,7 @@ def calculate_wmi_rawgame(df):
     }
 
 
-def main():
+def main() -> None:
     df = pd.read_csv(IN_PATH)
     required = {"L_t", "F_t", "N_t"}
     missing = sorted(list(required - set(df.columns)))

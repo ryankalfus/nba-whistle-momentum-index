@@ -1,0 +1,7 @@
+.DS_Store
+.desloppify/
+.ipynb_checkpoints/
+.pytest_cache/
+__pycache__/
+.ruff_cache/
+scorecard.png
