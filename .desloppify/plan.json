@@ -1,0 +1,3107 @@
+{
+  "version": 8,
+  "created": "2026-03-06T16:29:19+00:00",
+  "updated": "2026-03-06T17:11:03+00:00",
+  "queue_order": [
+    "triage::observe",
+    "triage::reflect",
+    "triage::organize",
+    "triage::commit",
+    "workflow::score-checkpoint",
+    "workflow::create-plan",
+    "review::.::holistic::abstraction_fitness::generic_helper_sink::6a548489",
+    "review::.::holistic::abstraction_fitness::rederived_possession_pipeline::d48efdec",
+    "review::.::holistic::ai_generated_debt::ceremonial_wrapper_layers::e8dc5424",
+    "review::.::holistic::ai_generated_debt::restating_comments_in_analysis_scripts::c29a14f7",
+    "review::.::holistic::api_surface_coherence::pipeline_steps_take_mixed_input_shapes::0709ae0d",
+    "review::.::holistic::api_surface_coherence::season_pipeline_error_contract_drift::8408d4c7",
+    "review::.::holistic::api_surface_coherence::tuple_based_team_context_api::2a0b3beb",
+    "review::.::holistic::contract_coherence::completed_game_ids_not_actually_verified::6956fe7d",
+    "review::.::holistic::contract_coherence::missing_status_hides_fetch_failures::c93f0d78",
+    "review::.::holistic::contract_coherence::none_return_overloads_empty_and_failed::09692b84",
+    "review::.::holistic::convention_outlier::mixed_sample_and_library_roles::083a0a42",
+    "review::.::holistic::convention_outlier::sibling_rawseason_protocol_drift::6cf526c7",
+    "review::.::holistic::convention_outlier::top_level_script_naming_drift::8903c233",
+    "review::.::holistic::cross_module_architecture::domain_boundary_reimplemented_in_scripts::58729509",
+    "review::.::holistic::cross_module_architecture::hub_utils_module_blurs_boundaries::24522f66",
+    "review::.::holistic::cross_module_architecture::season_pipelines_have_diverged::4ac85f57",
+    "review::.::holistic::dependency_health::unpinned_runtime_requirements::663b4eba",
+    "review::.::holistic::design_coherence::duplicated_possession_feature_pipeline::7ba52d0f",
+    "review::.::holistic::design_coherence::parse_possessions_has_multiple_transformation_stages::7475fb47",
+    "review::.::holistic::design_coherence::season_wmi_script_mixes_transport_and_analytics::92818133",
+    "review::.::holistic::error_consistency::historical_season_missing_masks_transport_failures::3b921a3f",
+    "review::.::holistic::error_consistency::retry_bucket_mixes_transient_and_data_errors::8608dd93",
+    "review::.::holistic::error_consistency::sibling_scripts_expose_different_failure_protocols::c345eb7d",
+    "review::.::holistic::high_level_elegance::catch_all_utils_owns_multiple_layers::3acea273",
+    "review::.::holistic::high_level_elegance::docs_and_outputs_do_not_map_to_clear_entrypoints::23b725e8",
+    "review::.::holistic::high_level_elegance::pipeline_logic_scattered_across_entry_scripts::1a9bbc8a",
+    "review::.::holistic::incomplete_migration::season_wmi_scripts_use_split_generation_apis::f86967f5",
+    "review::.::holistic::incomplete_migration::stale_step2_pipeline_still_looks_current::b046dd9e",
+    "review::.::holistic::initialization_coupling::fixed_file_pipeline_order::71abd730",
+    "review::.::holistic::initialization_coupling::import_time_default_config_capture::74521e00",
+    "review::.::holistic::logic_clarity::score_side_fallback_defaults_to_away::b52d6fac",
+    "review::.::holistic::logic_clarity::season_fetch_status_conflates_missing_and_failed::feffc312",
+    "review::.::holistic::low_level_elegance::duplicated_score_resolution_branches::3d772cc9",
+    "review::.::holistic::low_level_elegance::two_stage_possession_row_assembly::3fb93192",
+    "review::.::holistic::mid_level_elegance::duplicated_possession_translation_seams::baebc346",
+    "review::.::holistic::mid_level_elegance::season_pipelines_use_incompatible_handoff_contracts::fdce92ed",
+    "review::.::holistic::mid_level_elegance::utility_boundary_has_hidden_input_preconditions::c106b741",
+    "review::.::holistic::naming_quality::mixed_domain_and_formula_vocab_causes_convention_drift::a38eb751",
+    "review::.::holistic::naming_quality::non_math_abbreviations_reduce_script_readability::0301ae4a",
+    "review::.::holistic::naming_quality::symbolic_metric_locals_hide_wmi_intent::44329bed",
+    "review::.::holistic::package_organization::root_pipeline_scripts_left_flat::e2d11fd3",
+    "review::.::holistic::package_organization::workflow_boundaries_not_encoded_in_layout::2d5c1259",
+    "review::.::holistic::test_strategy::critical_season_pipeline_paths_untested::ccce25a9",
+    "review::.::holistic::test_strategy::no_real_cross_module_fixture_coverage::02310d37",
+    "review::.::holistic::test_strategy::tests_mock_internal_seams::93d800af",
+    "review::.::holistic::type_safety::dict_any_status_protocol::60d30ae7",
+    "review::.::holistic::type_safety::score_side_should_be_literal::1c9283d8",
+    "review::.::holistic::type_safety::untyped_playbyplay_payload_contract::e19fa6c1"
+  ],
+  "deferred": [],
+  "skipped": {},
+  "active_cluster": null,
+  "overrides": {
+    "orphaned::calculate_wmi_rawseason_2010_11_to_2023_24.py": {
+      "issue_id": "orphaned::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "orphaned::calculate_wmi_rawseason_2024_25.py": {
+      "issue_id": "orphaned::calculate_wmi_rawseason_2024_25.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "orphaned::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py": {
+      "issue_id": "orphaned::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "orphaned::categorize_defensive_fouls_okc_mil.py": {
+      "issue_id": "orphaned::categorize_defensive_fouls_okc_mil.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "orphaned::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py": {
+      "issue_id": "orphaned::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "orphaned::build_possession_model_table_okc_mil.py": {
+      "issue_id": "orphaned::build_possession_model_table_okc_mil.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "orphaned::.ipynb_checkpoints/step2_build_possessions-checkpoint.py": {
+      "issue_id": "orphaned::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "orphaned::step2_build_possessions.py": {
+      "issue_id": "orphaned::step2_build_possessions.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "orphaned::calculate_wmi_rawgame_okc_mil.py": {
+      "issue_id": "orphaned::calculate_wmi_rawgame_okc_mil.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "test_coverage::calculate_wmi_rawseason_2010_11_to_2023_24.py": {
+      "issue_id": "test_coverage::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "test_coverage::calculate_wmi_rawseason_2024_25.py": {
+      "issue_id": "test_coverage::calculate_wmi_rawseason_2024_25.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "test_coverage::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py": {
+      "issue_id": "test_coverage::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "test_coverage::categorize_defensive_fouls_okc_mil.py": {
+      "issue_id": "test_coverage::categorize_defensive_fouls_okc_mil.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "test_coverage::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py": {
+      "issue_id": "test_coverage::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "test_coverage::build_possession_model_table_okc_mil.py": {
+      "issue_id": "test_coverage::build_possession_model_table_okc_mil.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "test_coverage::.ipynb_checkpoints/step2_build_possessions-checkpoint.py": {
+      "issue_id": "test_coverage::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "test_coverage::step2_build_possessions.py": {
+      "issue_id": "test_coverage::step2_build_possessions.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "test_coverage::calculate_wmi_rawgame_okc_mil.py": {
+      "issue_id": "test_coverage::calculate_wmi_rawgame_okc_mil.py",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::annotation_quality": {
+      "issue_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::annotation_quality": {
+      "issue_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::annotation_quality": {
+      "issue_id": "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::build_possession_model_table_okc_mil.py::annotation_quality": {
+      "issue_id": "smells::build_possession_model_table_okc_mil.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::calculate_wmi_rawgame_okc_mil.py::annotation_quality": {
+      "issue_id": "smells::calculate_wmi_rawgame_okc_mil.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::annotation_quality": {
+      "issue_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::annotation_quality": {
+      "issue_id": "smells::calculate_wmi_rawseason_2024_25.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::annotation_quality": {
+      "issue_id": "smells::categorize_defensive_fouls_okc_mil.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::step2_build_possessions.py::annotation_quality": {
+      "issue_id": "smells::step2_build_possessions.py::annotation_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::duplicate_constant": {
+      "issue_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::duplicate_constant": {
+      "issue_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::duplicate_constant": {
+      "issue_id": "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::build_possession_model_table_okc_mil.py::duplicate_constant": {
+      "issue_id": "smells::build_possession_model_table_okc_mil.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:58:25+00:00"
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant": {
+      "issue_id": "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:58:25+00:00"
+    },
+    "smells::step2_build_possessions.py::duplicate_constant": {
+      "issue_id": "smells::step2_build_possessions.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:58:25+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant": {
+      "issue_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:58:25+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant": {
+      "issue_id": "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:58:25+00:00"
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::hardcoded_url": {
+      "issue_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::hardcoded_url": {
+      "issue_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::hardcoded_url": {
+      "issue_id": "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::build_possession_model_table_okc_mil.py::hardcoded_url": {
+      "issue_id": "smells::build_possession_model_table_okc_mil.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::hardcoded_url": {
+      "issue_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::hardcoded_url": {
+      "issue_id": "smells::calculate_wmi_rawseason_2024_25.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::hardcoded_url": {
+      "issue_id": "smells::categorize_defensive_fouls_okc_mil.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::step2_build_possessions.py::hardcoded_url": {
+      "issue_id": "smells::step2_build_possessions.py::hardcoded_url",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::broad_except": {
+      "issue_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::broad_except",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::broad_except": {
+      "issue_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::broad_except",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::build_possession_model_table_okc_mil.py::broad_except": {
+      "issue_id": "smells::build_possession_model_table_okc_mil.py::broad_except",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::broad_except": {
+      "issue_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::broad_except",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::broad_except": {
+      "issue_id": "smells::calculate_wmi_rawseason_2024_25.py::broad_except",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::broad_except": {
+      "issue_id": "smells::categorize_defensive_fouls_okc_mil.py::broad_except",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "subjective_review::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::unreviewed": {
+      "issue_id": "subjective_review::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::unreviewed": {
+      "issue_id": "subjective_review::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::unreviewed": {
+      "issue_id": "subjective_review::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::build_possession_model_table_okc_mil.py::unreviewed": {
+      "issue_id": "subjective_review::build_possession_model_table_okc_mil.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::calculate_wmi_rawgame_okc_mil.py::unreviewed": {
+      "issue_id": "subjective_review::calculate_wmi_rawgame_okc_mil.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::unreviewed": {
+      "issue_id": "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::calculate_wmi_rawseason_2024_25.py::unreviewed": {
+      "issue_id": "subjective_review::calculate_wmi_rawseason_2024_25.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::categorize_defensive_fouls_okc_mil.py::unreviewed": {
+      "issue_id": "subjective_review::categorize_defensive_fouls_okc_mil.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::step2_build_possessions.py::unreviewed": {
+      "issue_id": "subjective_review::step2_build_possessions.py::unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "subjective_review::.::holistic_unreviewed": {
+      "issue_id": "subjective_review::.::holistic_unreviewed",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:43:32+00:00"
+    },
+    "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::clock_to_seconds::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::clock_to_seconds": {
+      "issue_id": "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::clock_to_seconds::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::clock_to_seconds",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::infer_team_score_side::build_possession_model_table_okc_mil.py::infer_team_score_side": {
+      "issue_id": "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::infer_team_score_side::build_possession_model_table_okc_mil.py::infer_team_score_side",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "dupes::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::infer_team_score_side::categorize_defensive_fouls_okc_mil.py::infer_team_score_side": {
+      "issue_id": "dupes::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::infer_team_score_side::categorize_defensive_fouls_okc_mil.py::infer_team_score_side",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::parse_possessions::step2_build_possessions.py::parse_possessions": {
+      "issue_id": "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::parse_possessions::step2_build_possessions.py::parse_possessions",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::main::step2_build_possessions.py::main": {
+      "issue_id": "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::main::step2_build_possessions.py::main",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "subjective::abstraction_fitness": {
+      "issue_id": "subjective::abstraction_fitness",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::ai_generated_debt": {
+      "issue_id": "subjective::ai_generated_debt",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::api_surface_coherence": {
+      "issue_id": "subjective::api_surface_coherence",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::authorization_consistency": {
+      "issue_id": "subjective::authorization_consistency",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::contract_coherence": {
+      "issue_id": "subjective::contract_coherence",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::convention_outlier": {
+      "issue_id": "subjective::convention_outlier",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::cross_module_architecture": {
+      "issue_id": "subjective::cross_module_architecture",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::dependency_health": {
+      "issue_id": "subjective::dependency_health",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::design_coherence": {
+      "issue_id": "subjective::design_coherence",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::error_consistency": {
+      "issue_id": "subjective::error_consistency",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::high_level_elegance": {
+      "issue_id": "subjective::high_level_elegance",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::incomplete_migration": {
+      "issue_id": "subjective::incomplete_migration",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::initialization_coupling": {
+      "issue_id": "subjective::initialization_coupling",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::logic_clarity": {
+      "issue_id": "subjective::logic_clarity",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::low_level_elegance": {
+      "issue_id": "subjective::low_level_elegance",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::mid_level_elegance": {
+      "issue_id": "subjective::mid_level_elegance",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::naming_quality": {
+      "issue_id": "subjective::naming_quality",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::package_organization": {
+      "issue_id": "subjective::package_organization",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::test_strategy": {
+      "issue_id": "subjective::test_strategy",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "subjective::type_safety": {
+      "issue_id": "subjective::type_safety",
+      "created_at": "2026-03-06T16:29:19+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T17:11:03+00:00"
+    },
+    "review::.::holistic::high_level_elegance::root_mixes_pipeline_code_docs_and_artifacts::6636b670": {
+      "issue_id": "review::.::holistic::high_level_elegance::root_mixes_pipeline_code_docs_and_artifacts::6636b670",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-high_level_elegance",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::high_level_elegance::workflow_is_split_by_one_off_scripts_not_domain_modules::1eb62956": {
+      "issue_id": "review::.::holistic::high_level_elegance::workflow_is_split_by_one_off_scripts_not_domain_modules::1eb62956",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-high_level_elegance",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::high_level_elegance::project_docs_do_not_define_a_single_trustworthy_public_surface::e0060a9e": {
+      "issue_id": "review::.::holistic::high_level_elegance::project_docs_do_not_define_a_single_trustworthy_public_surface::e0060a9e",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-high_level_elegance",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::convention_outlier::checkpoint_style_island::8b2e44b3": {
+      "issue_id": "review::.::holistic::convention_outlier::checkpoint_style_island::8b2e44b3",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-convention_outlier",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::convention_outlier::season_script_protocol_drift::0e83333e": {
+      "issue_id": "review::.::holistic::convention_outlier::season_script_protocol_drift::0e83333e",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-convention_outlier",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::error_consistency::season_jobs_swallow_root_errors::7bcce77c": {
+      "issue_id": "review::.::holistic::error_consistency::season_jobs_swallow_root_errors::7bcce77c",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::error_consistency::same_boundary_different_error_policy::839c6021": {
+      "issue_id": "review::.::holistic::error_consistency::same_boundary_different_error_policy::839c6021",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::error_consistency::parse_helpers_silently_hide_bad_values::06315d15": {
+      "issue_id": "review::.::holistic::error_consistency::parse_helpers_silently_hide_bad_values::06315d15",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::naming_quality::formula_aliases_hide_wmi_meaning::f3ef3e48": {
+      "issue_id": "review::.::holistic::naming_quality::formula_aliases_hide_wmi_meaning::f3ef3e48",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-naming_quality",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::naming_quality::season_script_uses_terse_batch_ids::d2979c47": {
+      "issue_id": "review::.::holistic::naming_quality::season_script_uses_terse_batch_ids::d2979c47",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-naming_quality",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::mid_level_elegance::duplicated_pbp_to_possession_seam::a4a8c81e": {
+      "issue_id": "review::.::holistic::mid_level_elegance::duplicated_pbp_to_possession_seam::a4a8c81e",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::mid_level_elegance::incompatible_wmi_pipeline_contracts::63bbda32": {
+      "issue_id": "review::.::holistic::mid_level_elegance::incompatible_wmi_pipeline_contracts::63bbda32",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::mid_level_elegance::inconsistent_failure_protocols_between_runners::27b3d96b": {
+      "issue_id": "review::.::holistic::mid_level_elegance::inconsistent_failure_protocols_between_runners::27b3d96b",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::package_organization::root_workflow_scripts_not_grouped::f06a0d58": {
+      "issue_id": "review::.::holistic::package_organization::root_workflow_scripts_not_grouped::f06a0d58",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-package_organization",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::package_organization::checkpoint_artifacts_occupy_production_space::30ba7f78": {
+      "issue_id": "review::.::holistic::package_organization::checkpoint_artifacts_occupy_production_space::30ba7f78",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-package_organization",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::design_coherence::duplicated_possession_pipeline::8fcf068c": {
+      "issue_id": "review::.::holistic::design_coherence::duplicated_possession_pipeline::8fcf068c",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::design_coherence::season_script_mixes_orchestration_and_domain_logic::c55c36ca": {
+      "issue_id": "review::.::holistic::design_coherence::season_script_mixes_orchestration_and_domain_logic::c55c36ca",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::design_coherence::stale_checkpoint_variants_keep_old_design_alive::f6ec11fd": {
+      "issue_id": "review::.::holistic::design_coherence::stale_checkpoint_variants_keep_old_design_alive::f6ec11fd",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::logic_clarity::unreachable_completed_games_guard::938818a1": {
+      "issue_id": "review::.::holistic::logic_clarity::unreachable_completed_games_guard::938818a1",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-logic_clarity",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::logic_clarity::premature_score_side_inference::65c927c9": {
+      "issue_id": "review::.::holistic::logic_clarity::premature_score_side_inference::65c927c9",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-logic_clarity",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::type_safety::missing_public_type_annotations::9edc4b51": {
+      "issue_id": "review::.::holistic::type_safety::missing_public_type_annotations::9edc4b51",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::type_safety::ad_hoc_status_payloads_need_named_types::9efc9c43": {
+      "issue_id": "review::.::holistic::type_safety::ad_hoc_status_payloads_need_named_types::9efc9c43",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::type_safety::nullable_helper_returns_are_implicit::58e47a35": {
+      "issue_id": "review::.::holistic::type_safety::nullable_helper_returns_are_implicit::58e47a35",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::contract_coherence::exists_helpers_hide_request_failures::0058e605": {
+      "issue_id": "review::.::holistic::contract_coherence::exists_helpers_hide_request_failures::0058e605",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::contract_coherence::missing_status_collapses_fetch_failures::6450d32f": {
+      "issue_id": "review::.::holistic::contract_coherence::missing_status_collapses_fetch_failures::6450d32f",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::contract_coherence::similar_builders_use_inconsistent_failure_contracts::fb056549": {
+      "issue_id": "review::.::holistic::contract_coherence::similar_builders_use_inconsistent_failure_contracts::fb056549",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::abstraction_fitness::duplicated_pbp_domain_pipeline::a0cd7806": {
+      "issue_id": "review::.::holistic::abstraction_fitness::duplicated_pbp_domain_pipeline::a0cd7806",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::abstraction_fitness::single_game_scripts_rebuild_same_ingestion_stack::c9366730": {
+      "issue_id": "review::.::holistic::abstraction_fitness::single_game_scripts_rebuild_same_ingestion_stack::c9366730",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::ai_generated_debt::copied_pbp_helper_blocks::eda4eb7e": {
+      "issue_id": "review::.::holistic::ai_generated_debt::copied_pbp_helper_blocks::eda4eb7e",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-ai_generated_debt",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::ai_generated_debt::restating_comment_bloat::e914c61b": {
+      "issue_id": "review::.::holistic::ai_generated_debt::restating_comment_bloat::e914c61b",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-ai_generated_debt",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::ai_generated_debt::repeated_script_output_ceremony::f4110eaf": {
+      "issue_id": "review::.::holistic::ai_generated_debt::repeated_script_output_ceremony::f4110eaf",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-ai_generated_debt",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::low_level_elegance::repeated_possession_internals::705082d8": {
+      "issue_id": "review::.::holistic::low_level_elegance::repeated_possession_internals::705082d8",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::low_level_elegance::per_event_dataframe_rescans::a60b3998": {
+      "issue_id": "review::.::holistic::low_level_elegance::per_event_dataframe_rescans::a60b3998",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::low_level_elegance::context_logic_style_drift::74be1d5f": {
+      "issue_id": "review::.::holistic::low_level_elegance::context_logic_style_drift::74be1d5f",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::cross_module_architecture::duplicate_wmi_pipeline_logic::394ecd95": {
+      "issue_id": "review::.::holistic::cross_module_architecture::duplicate_wmi_pipeline_logic::394ecd95",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::cross_module_architecture::csv_contracts_replace_module_boundaries::6130785d": {
+      "issue_id": "review::.::holistic::cross_module_architecture::csv_contracts_replace_module_boundaries::6130785d",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::cross_module_architecture::stale_checkpoint_logic_blurs_boundaries::ec356397": {
+      "issue_id": "review::.::holistic::cross_module_architecture::stale_checkpoint_logic_blurs_boundaries::ec356397",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::cross_module_architecture::parallel_possession_builders_without_owner::1dc18229": {
+      "issue_id": "review::.::holistic::cross_module_architecture::parallel_possession_builders_without_owner::1dc18229",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::dependency_health::missing_runtime_dependency_manifest::86b969b7": {
+      "issue_id": "review::.::holistic::dependency_health::missing_runtime_dependency_manifest::86b969b7",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::dependency_health::numpy_used_for_small_vector_math::fd4e0721": {
+      "issue_id": "review::.::holistic::dependency_health::numpy_used_for_small_vector_math::fd4e0721",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::test_strategy::no_automated_coverage_for_core_metrics::035f6795": {
+      "issue_id": "review::.::holistic::test_strategy::no_automated_coverage_for_core_metrics::035f6795",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::test_strategy::no_integration_tests_for_network_to_summary_pipeline::6b96d612": {
+      "issue_id": "review::.::holistic::test_strategy::no_integration_tests_for_network_to_summary_pipeline::6b96d612",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::test_strategy::logic_is_hard_to_test_due_to_io_coupling::10a7c678": {
+      "issue_id": "review::.::holistic::test_strategy::logic_is_hard_to_test_due_to_io_coupling::10a7c678",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::test_strategy::manual_script_runs_are_the_only_regression_check::b4151868": {
+      "issue_id": "review::.::holistic::test_strategy::manual_script_runs_are_the_only_regression_check::b4151868",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "tests-and-contracts",
+      "updated_at": "2026-03-06T16:45:07+00:00"
+    },
+    "review::.::holistic::api_surface_coherence::inconsistent_game_fetch_api_shapes::c728f891": {
+      "issue_id": "review::.::holistic::api_surface_coherence::inconsistent_game_fetch_api_shapes::c728f891",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::api_surface_coherence::mixed_failure_contracts_across_builders::d139415b": {
+      "issue_id": "review::.::holistic::api_surface_coherence::mixed_failure_contracts_across_builders::d139415b",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::api_surface_coherence::similar_build_functions_hide_different_inputs::e6a63c2d": {
+      "issue_id": "review::.::holistic::api_surface_coherence::similar_build_functions_hide_different_inputs::e6a63c2d",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "shared-pbp",
+      "updated_at": "2026-03-06T16:45:21+00:00"
+    },
+    "review::.::holistic::incomplete_migration::stale_checkpoint_logic_keeps_old_wmi_schema::cbf3895d": {
+      "issue_id": "review::.::holistic::incomplete_migration::stale_checkpoint_logic_keeps_old_wmi_schema::cbf3895d",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-incomplete_migration",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::incomplete_migration::season_wmi_has_two_competing_implementations::2c325fc5": {
+      "issue_id": "review::.::holistic::incomplete_migration::season_wmi_has_two_competing_implementations::2c325fc5",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-incomplete_migration",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "review::.::holistic::incomplete_migration::old_step2_parser_coexists_with_direct_raw_action_pipeline::4801b174": {
+      "issue_id": "review::.::holistic::incomplete_migration::old_step2_parser_coexists_with_direct_raw_action_pipeline::4801b174",
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "cluster": "auto/review-incomplete_migration",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::df07f8a2bf14839b": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::df07f8a2bf14839b",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::07dc9bf1ab3f003e": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::07dc9bf1ab3f003e",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1d1900a870bac68a": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1d1900a870bac68a",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1e6f7906108f90e3": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1e6f7906108f90e3",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::4372af8647d0e378": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::4372af8647d0e378",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::5c298cd09e264184": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::5c298cd09e264184",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::72687ac144f1c85b": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::72687ac144f1c85b",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::7a86369fa58ec754": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::7a86369fa58ec754",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::8ea0a8e8488153ea": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::8ea0a8e8488153ea",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9003ce45fd7ee70e": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9003ce45fd7ee70e",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9c35f2c2008b4348": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9c35f2c2008b4348",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::9e1c3a86c6f35fb6": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::9e1c3a86c6f35fb6",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::abe1fd3fdc63f957": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::abe1fd3fdc63f957",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::e29bca28aeb6254b": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::e29bca28aeb6254b",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::e61bde6e73def5a2": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::e61bde6e73def5a2",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::f30dc16f516cd0b6": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::f30dc16f516cd0b6",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::fb37288d8f6e506a": {
+      "issue_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::fb37288d8f6e506a",
+      "created_at": "2026-03-06T16:45:07+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:47:58+00:00"
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity": {
+      "issue_id": "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity",
+      "created_at": "2026-03-06T16:45:21+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:58:25+00:00"
+    },
+    "boilerplate_duplication::calculate_wmi_rawseason_2010_11_to_2023_24.py::153e78254e73193d": {
+      "issue_id": "boilerplate_duplication::calculate_wmi_rawseason_2010_11_to_2023_24.py::153e78254e73193d",
+      "created_at": "2026-03-06T16:45:21+00:00",
+      "cluster": null,
+      "updated_at": "2026-03-06T16:54:56+00:00"
+    },
+    "subjective_review::.::holistic_stale": {
+      "issue_id": "subjective_review::.::holistic_stale",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "subjective_review::build_possession_model_table_okc_mil.py::changed": {
+      "issue_id": "subjective_review::build_possession_model_table_okc_mil.py::changed",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "subjective_review::calculate_wmi_rawgame_okc_mil.py::changed": {
+      "issue_id": "subjective_review::calculate_wmi_rawgame_okc_mil.py::changed",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::changed": {
+      "issue_id": "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::changed",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "subjective_review::calculate_wmi_rawseason_2024_25.py::changed": {
+      "issue_id": "subjective_review::calculate_wmi_rawseason_2024_25.py::changed",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "subjective_review::categorize_defensive_fouls_okc_mil.py::changed": {
+      "issue_id": "subjective_review::categorize_defensive_fouls_okc_mil.py::changed",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "subjective_review::nba_pbp_utils.py::unreviewed": {
+      "issue_id": "subjective_review::nba_pbp_utils.py::unreviewed",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    },
+    "subjective_review::step2_build_possessions.py::changed": {
+      "issue_id": "subjective_review::step2_build_possessions.py::changed",
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "cluster": "auto/subjective_review",
+      "updated_at": "2026-03-06T17:00:28+00:00"
+    }
+  },
+  "clusters": {
+    "auto/review-high_level_elegance": {
+      "name": "auto/review-high_level_elegance",
+      "description": "Address 3 high_level_elegance review issues",
+      "issue_ids": [
+        "review::.::holistic::high_level_elegance::root_mixes_pipeline_code_docs_and_artifacts::6636b670",
+        "review::.::holistic::high_level_elegance::workflow_is_split_by_one_off_scripts_not_domain_modules::1eb62956",
+        "review::.::holistic::high_level_elegance::project_docs_do_not_define_a_single_trustworthy_public_surface::e0060a9e"
+      ],
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "updated_at": "2026-03-06T16:43:32+00:00",
+      "auto": true,
+      "cluster_key": "review::high_level_elegance",
+      "action": "address design quality issues from AI code review",
+      "user_modified": false
+    },
+    "auto/review-convention_outlier": {
+      "name": "auto/review-convention_outlier",
+      "description": "Address 2 convention_outlier review issues",
+      "issue_ids": [
+        "review::.::holistic::convention_outlier::checkpoint_style_island::8b2e44b3",
+        "review::.::holistic::convention_outlier::season_script_protocol_drift::0e83333e"
+      ],
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "updated_at": "2026-03-06T16:43:32+00:00",
+      "auto": true,
+      "cluster_key": "review::convention_outlier",
+      "action": "address design quality issues from AI code review",
+      "user_modified": false
+    },
+    "auto/review-naming_quality": {
+      "name": "auto/review-naming_quality",
+      "description": "Address 2 naming_quality review issues",
+      "issue_ids": [
+        "review::.::holistic::naming_quality::formula_aliases_hide_wmi_meaning::f3ef3e48",
+        "review::.::holistic::naming_quality::season_script_uses_terse_batch_ids::d2979c47"
+      ],
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "updated_at": "2026-03-06T16:43:32+00:00",
+      "auto": true,
+      "cluster_key": "review::naming_quality",
+      "action": "address design quality issues from AI code review",
+      "user_modified": false
+    },
+    "auto/review-package_organization": {
+      "name": "auto/review-package_organization",
+      "description": "Address 2 package_organization review issues",
+      "issue_ids": [
+        "review::.::holistic::package_organization::root_workflow_scripts_not_grouped::f06a0d58",
+        "review::.::holistic::package_organization::checkpoint_artifacts_occupy_production_space::30ba7f78"
+      ],
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "updated_at": "2026-03-06T16:43:32+00:00",
+      "auto": true,
+      "cluster_key": "review::package_organization",
+      "action": "address design quality issues from AI code review",
+      "user_modified": false
+    },
+    "auto/review-logic_clarity": {
+      "name": "auto/review-logic_clarity",
+      "description": "Address 2 logic_clarity review issues",
+      "issue_ids": [
+        "review::.::holistic::logic_clarity::unreachable_completed_games_guard::938818a1",
+        "review::.::holistic::logic_clarity::premature_score_side_inference::65c927c9"
+      ],
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "updated_at": "2026-03-06T16:43:32+00:00",
+      "auto": true,
+      "cluster_key": "review::logic_clarity",
+      "action": "address design quality issues from AI code review",
+      "user_modified": false
+    },
+    "auto/review-ai_generated_debt": {
+      "name": "auto/review-ai_generated_debt",
+      "description": "Address 3 ai_generated_debt review issues",
+      "issue_ids": [
+        "review::.::holistic::ai_generated_debt::copied_pbp_helper_blocks::eda4eb7e",
+        "review::.::holistic::ai_generated_debt::restating_comment_bloat::e914c61b",
+        "review::.::holistic::ai_generated_debt::repeated_script_output_ceremony::f4110eaf"
+      ],
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "updated_at": "2026-03-06T16:43:32+00:00",
+      "auto": true,
+      "cluster_key": "review::ai_generated_debt",
+      "action": "address design quality issues from AI code review",
+      "user_modified": false
+    },
+    "auto/review-incomplete_migration": {
+      "name": "auto/review-incomplete_migration",
+      "description": "Address 3 incomplete_migration review issues",
+      "issue_ids": [
+        "review::.::holistic::incomplete_migration::stale_checkpoint_logic_keeps_old_wmi_schema::cbf3895d",
+        "review::.::holistic::incomplete_migration::season_wmi_has_two_competing_implementations::2c325fc5",
+        "review::.::holistic::incomplete_migration::old_step2_parser_coexists_with_direct_raw_action_pipeline::4801b174"
+      ],
+      "created_at": "2026-03-06T16:43:32+00:00",
+      "updated_at": "2026-03-06T16:43:32+00:00",
+      "auto": true,
+      "cluster_key": "review::incomplete_migration",
+      "action": "address design quality issues from AI code review",
+      "user_modified": false
+    },
+    "checkpoints-cleanup": {
+      "name": "checkpoints-cleanup",
+      "description": "Remove notebook checkpoint copies from production scope so duplicate, orphaned, and stale-architecture issues stop dominating the queue.",
+      "issue_ids": [],
+      "created_at": "2026-03-06T16:44:45+00:00",
+      "updated_at": "2026-03-06T16:45:28+00:00",
+      "auto": false,
+      "cluster_key": "",
+      "action": null,
+      "user_modified": true,
+      "priority": 1,
+      "action_steps": [
+        {
+          "title": "Delete or exclude .ipynb_checkpoints Python copies from scored production scope"
+        },
+        {
+          "title": "Keep one canonical script for each workflow step"
+        },
+        {
+          "title": "Rescan after cleanup to let duplicate/orphaned findings collapse"
+        }
+      ]
+    },
+    "tests-and-contracts": {
+      "name": "tests-and-contracts",
+      "description": "Add stable contracts and lightweight tests around the pure WMI and possession code so future cleanup stops depending on manual reruns.",
+      "issue_ids": [
+        "review::.::holistic::test_strategy::no_automated_coverage_for_core_metrics::035f6795",
+        "review::.::holistic::test_strategy::no_integration_tests_for_network_to_summary_pipeline::6b96d612",
+        "review::.::holistic::test_strategy::logic_is_hard_to_test_due_to_io_coupling::10a7c678",
+        "review::.::holistic::test_strategy::manual_script_runs_are_the_only_regression_check::b4151868",
+        "review::.::holistic::type_safety::missing_public_type_annotations::9edc4b51",
+        "review::.::holistic::type_safety::ad_hoc_status_payloads_need_named_types::9efc9c43",
+        "review::.::holistic::type_safety::nullable_helper_returns_are_implicit::58e47a35",
+        "review::.::holistic::contract_coherence::exists_helpers_hide_request_failures::0058e605",
+        "review::.::holistic::contract_coherence::missing_status_collapses_fetch_failures::6450d32f",
+        "review::.::holistic::contract_coherence::similar_builders_use_inconsistent_failure_contracts::fb056549"
+      ],
+      "created_at": "2026-03-06T16:44:51+00:00",
+      "updated_at": "2026-03-06T16:45:28+00:00",
+      "auto": false,
+      "cluster_key": "",
+      "action": null,
+      "user_modified": true,
+      "priority": 3,
+      "action_steps": [
+        {
+          "title": "Annotate public helpers and replace ad-hoc status payloads with named return types"
+        },
+        {
+          "title": "Add focused tests for clock parsing, possession grouping, and WMI math"
+        },
+        {
+          "title": "Separate pure logic from live HTTP/file I/O where practical"
+        }
+      ]
+    },
+    "shared-pbp": {
+      "name": "shared-pbp",
+      "description": "Extract shared play-by-play fetching, clock parsing, possession grouping, and foul logic so the workflow stops reimplementing the same domain rules in each script.",
+      "issue_ids": [
+        "review::.::holistic::cross_module_architecture::duplicate_wmi_pipeline_logic::394ecd95",
+        "review::.::holistic::cross_module_architecture::csv_contracts_replace_module_boundaries::6130785d",
+        "review::.::holistic::cross_module_architecture::stale_checkpoint_logic_blurs_boundaries::ec356397",
+        "review::.::holistic::cross_module_architecture::parallel_possession_builders_without_owner::1dc18229",
+        "review::.::holistic::abstraction_fitness::duplicated_pbp_domain_pipeline::a0cd7806",
+        "review::.::holistic::abstraction_fitness::single_game_scripts_rebuild_same_ingestion_stack::c9366730",
+        "review::.::holistic::design_coherence::duplicated_possession_pipeline::8fcf068c",
+        "review::.::holistic::design_coherence::season_script_mixes_orchestration_and_domain_logic::c55c36ca",
+        "review::.::holistic::design_coherence::stale_checkpoint_variants_keep_old_design_alive::f6ec11fd",
+        "review::.::holistic::mid_level_elegance::duplicated_pbp_to_possession_seam::a4a8c81e",
+        "review::.::holistic::mid_level_elegance::incompatible_wmi_pipeline_contracts::63bbda32",
+        "review::.::holistic::mid_level_elegance::inconsistent_failure_protocols_between_runners::27b3d96b",
+        "review::.::holistic::low_level_elegance::repeated_possession_internals::705082d8",
+        "review::.::holistic::low_level_elegance::per_event_dataframe_rescans::a60b3998",
+        "review::.::holistic::low_level_elegance::context_logic_style_drift::74be1d5f",
+        "review::.::holistic::api_surface_coherence::inconsistent_game_fetch_api_shapes::c728f891",
+        "review::.::holistic::api_surface_coherence::mixed_failure_contracts_across_builders::d139415b",
+        "review::.::holistic::api_surface_coherence::similar_build_functions_hide_different_inputs::e6a63c2d",
+        "review::.::holistic::error_consistency::season_jobs_swallow_root_errors::7bcce77c",
+        "review::.::holistic::error_consistency::same_boundary_different_error_policy::839c6021",
+        "review::.::holistic::error_consistency::parse_helpers_silently_hide_bad_values::06315d15",
+        "review::.::holistic::dependency_health::missing_runtime_dependency_manifest::86b969b7",
+        "review::.::holistic::dependency_health::numpy_used_for_small_vector_math::fd4e0721"
+      ],
+      "created_at": "2026-03-06T16:45:15+00:00",
+      "updated_at": "2026-03-06T16:45:52+00:00",
+      "auto": false,
+      "cluster_key": "",
+      "action": null,
+      "user_modified": true,
+      "action_steps": [
+        {
+          "title": "Create one shared module for network fetch and possession/foul helpers"
+        },
+        {
+          "title": "Refactor single-game and season scripts to call the shared helpers"
+        },
+        {
+          "title": "Normalize builder return/error contracts and add a dependency manifest"
+        }
+      ]
+    },
+    "auto/stale-review": {
+      "name": "auto/stale-review",
+      "description": "Re-review 3 stale subjective dimensions",
+      "issue_ids": [],
+      "created_at": "2026-03-06T16:47:58+00:00",
+      "updated_at": "2026-03-06T16:47:58+00:00",
+      "auto": true,
+      "cluster_key": "subjective::stale",
+      "action": "desloppify review --prepare --dimensions convention_outlier,design_coherence,error_consistency",
+      "user_modified": false
+    },
+    "auto/subjective_review": {
+      "name": "auto/subjective_review",
+      "description": "Address 8 subjective_review review issues",
+      "issue_ids": [
+        "subjective_review::.::holistic_stale",
+        "subjective_review::build_possession_model_table_okc_mil.py::changed",
+        "subjective_review::calculate_wmi_rawgame_okc_mil.py::changed",
+        "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::changed",
+        "subjective_review::calculate_wmi_rawseason_2024_25.py::changed",
+        "subjective_review::categorize_defensive_fouls_okc_mil.py::changed",
+        "subjective_review::nba_pbp_utils.py::unreviewed",
+        "subjective_review::step2_build_possessions.py::changed"
+      ],
+      "created_at": "2026-03-06T16:54:56+00:00",
+      "updated_at": "2026-03-06T16:54:56+00:00",
+      "auto": true,
+      "cluster_key": "detector::subjective_review",
+      "action": "run `desloppify review --prepare` to evaluate files against quality dimensions",
+      "user_modified": false
+    },
+    "auto/under-target-review": {
+      "name": "auto/under-target-review",
+      "description": "Consider re-reviewing 17 dimensions under target score",
+      "issue_ids": [],
+      "created_at": "2026-03-06T17:00:28+00:00",
+      "updated_at": "2026-03-06T17:00:28+00:00",
+      "auto": true,
+      "cluster_key": "subjective::under-target",
+      "action": "desloppify review --prepare --dimensions abstraction_fitness,ai_generated_debt,api_surface_coherence,authorization_consistency,contract_coherence,cross_module_architecture,dependency_health,high_level_elegance,incomplete_migration,initialization_coupling,logic_clarity,low_level_elegance,mid_level_elegance,naming_quality,package_organization,test_strategy,type_safety",
+      "user_modified": false,
+      "optional": true
+    }
+  },
+  "superseded": {
+    "subjective_review::.::holistic_unreviewed": {
+      "original_id": "subjective_review::.::holistic_unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": ".",
+      "original_summary": "No holistic codebase review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::unreviewed": {
+      "original_id": "subjective_review::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::unreviewed": {
+      "original_id": "subjective_review::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::unreviewed": {
+      "original_id": "subjective_review::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::build_possession_model_table_okc_mil.py::unreviewed": {
+      "original_id": "subjective_review::build_possession_model_table_okc_mil.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": "build_possession_model_table_okc_mil.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::calculate_wmi_rawgame_okc_mil.py::unreviewed": {
+      "original_id": "subjective_review::calculate_wmi_rawgame_okc_mil.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": "calculate_wmi_rawgame_okc_mil.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::unreviewed": {
+      "original_id": "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::calculate_wmi_rawseason_2024_25.py::unreviewed": {
+      "original_id": "subjective_review::calculate_wmi_rawseason_2024_25.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::categorize_defensive_fouls_okc_mil.py::unreviewed": {
+      "original_id": "subjective_review::categorize_defensive_fouls_okc_mil.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": "categorize_defensive_fouls_okc_mil.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "subjective_review::step2_build_possessions.py::unreviewed": {
+      "original_id": "subjective_review::step2_build_possessions.py::unreviewed",
+      "original_detector": "subjective_review",
+      "original_file": "step2_build_possessions.py",
+      "original_summary": "No design review on record \u2014 run `desloppify review --prepare`",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:43:32+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::07dc9bf1ab3f003e": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::07dc9bf1ab3f003e",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 10 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:63, .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:66",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::4372af8647d0e378": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::4372af8647d0e378",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 134 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:1, build_possession_model_table_okc_mil.py:1",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::7a86369fa58ec754": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::7a86369fa58ec754",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 16 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:32, .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:33",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::9e1c3a86c6f35fb6": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::9e1c3a86c6f35fb6",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 16 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:87, calculate_wmi_rawseason_2024_25.py:67",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::abe1fd3fdc63f957": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::abe1fd3fdc63f957",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 11 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:72, .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:74",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::df07f8a2bf14839b": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::df07f8a2bf14839b",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 3 files (window 16 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:7, .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:7, .ipynb_checkpoints/step2_build_possessions-checkpoint.py:19",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::e61bde6e73def5a2": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::e61bde6e73def5a2",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 17 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:166, build_possession_model_table_okc_mil.py:163",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::f30dc16f516cd0b6": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::f30dc16f516cd0b6",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 7 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:89, .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:92",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::fb37288d8f6e506a": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::fb37288d8f6e506a",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 11 lines): .ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:172, .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:176",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1d1900a870bac68a": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1d1900a870bac68a",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 5 lines): .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:72, calculate_wmi_rawseason_2024_25.py:49",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1e6f7906108f90e3": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1e6f7906108f90e3",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 19 lines): .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:168, categorize_defensive_fouls_okc_mil.py:167",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::5c298cd09e264184": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::5c298cd09e264184",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 5 lines): .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:78, .ipynb_checkpoints/step2_build_possessions-checkpoint.py:45",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::8ea0a8e8488153ea": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::8ea0a8e8488153ea",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 9 lines): .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:95, calculate_wmi_rawseason_2010_11_to_2023_24.py:117",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9003ce45fd7ee70e": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9003ce45fd7ee70e",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 148 lines): .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:1, categorize_defensive_fouls_okc_mil.py:1",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9c35f2c2008b4348": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9c35f2c2008b4348",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 5 lines): .ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:85, .ipynb_checkpoints/step2_build_possessions-checkpoint.py:54",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::72687ac144f1c85b": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::72687ac144f1c85b",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 151 lines): .ipynb_checkpoints/step2_build_possessions-checkpoint.py:1, step2_build_possessions.py:1",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::e29bca28aeb6254b": {
+      "original_id": "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::e29bca28aeb6254b",
+      "original_detector": "boilerplate_duplication",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 13 lines): .ipynb_checkpoints/step2_build_possessions-checkpoint.py:22, calculate_wmi_rawseason_2024_25.py:17",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::clock_to_seconds::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::clock_to_seconds": {
+      "original_id": "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::clock_to_seconds::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::clock_to_seconds",
+      "original_detector": "dupes",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Exact dupe cluster (7 functions, 100% similar): clock_to_seconds (.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:10), clock_to_seconds (.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:10), ...",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::infer_team_score_side::build_possession_model_table_okc_mil.py::infer_team_score_side": {
+      "original_id": "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::infer_team_score_side::build_possession_model_table_okc_mil.py::infer_team_score_side",
+      "original_detector": "dupes",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Exact dupe: infer_team_score_side (.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py:31) <-> infer_team_score_side (build_possession_model_table_okc_mil.py:31) [100%]",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "dupes::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::infer_team_score_side::categorize_defensive_fouls_okc_mil.py::infer_team_score_side": {
+      "original_id": "dupes::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::infer_team_score_side::categorize_defensive_fouls_okc_mil.py::infer_team_score_side",
+      "original_detector": "dupes",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Exact dupe: infer_team_score_side (.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py:31) <-> infer_team_score_side (categorize_defensive_fouls_okc_mil.py:31) [100%]",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::main::step2_build_possessions.py::main": {
+      "original_id": "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::main::step2_build_possessions.py::main",
+      "original_detector": "dupes",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "Exact dupe: main (.ipynb_checkpoints/step2_build_possessions-checkpoint.py:131) <-> main (step2_build_possessions.py:131) [100%]",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::parse_possessions::step2_build_possessions.py::parse_possessions": {
+      "original_id": "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::parse_possessions::step2_build_possessions.py::parse_possessions",
+      "original_detector": "dupes",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "Exact dupe: parse_possessions (.ipynb_checkpoints/step2_build_possessions-checkpoint.py:38) <-> parse_possessions (step2_build_possessions.py:38) [100%]",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py": {
+      "original_id": "orphaned::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_detector": "orphaned",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Orphaned file (182 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py": {
+      "original_id": "orphaned::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_detector": "orphaned",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Orphaned file (186 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::.ipynb_checkpoints/step2_build_possessions-checkpoint.py": {
+      "original_id": "orphaned::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_detector": "orphaned",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "Orphaned file (151 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::annotation_quality": {
+      "original_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "3x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::broad_except": {
+      "original_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::broad_except",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "1x Broad except \u2014 check library exceptions before narrowing",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::duplicate_constant": {
+      "original_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "3x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::hardcoded_url": {
+      "original_id": "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::annotation_quality": {
+      "original_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "3x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::broad_except": {
+      "original_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::broad_except",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "1x Broad except \u2014 check library exceptions before narrowing",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::duplicate_constant": {
+      "original_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "3x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::hardcoded_url": {
+      "original_id": "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::annotation_quality": {
+      "original_id": "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "3x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::duplicate_constant": {
+      "original_id": "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "4x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::hardcoded_url": {
+      "original_id": "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py": {
+      "original_id": "test_coverage::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_detector": "test_coverage",
+      "original_file": ".ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+      "original_summary": "Untested module (182 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py": {
+      "original_id": "test_coverage::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_detector": "test_coverage",
+      "original_file": ".ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+      "original_summary": "Untested module (186 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::.ipynb_checkpoints/step2_build_possessions-checkpoint.py": {
+      "original_id": "test_coverage::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_detector": "test_coverage",
+      "original_file": ".ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+      "original_summary": "Untested module (151 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:47:58+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "boilerplate_duplication::calculate_wmi_rawseason_2010_11_to_2023_24.py::153e78254e73193d": {
+      "original_id": "boilerplate_duplication::calculate_wmi_rawseason_2010_11_to_2023_24.py::153e78254e73193d",
+      "original_detector": "boilerplate_duplication",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "Boilerplate block repeated across 2 files (window 10 lines): calculate_wmi_rawseason_2010_11_to_2023_24.py:105, calculate_wmi_rawseason_2024_25.py:61",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::build_possession_model_table_okc_mil.py": {
+      "original_id": "orphaned::build_possession_model_table_okc_mil.py",
+      "original_detector": "orphaned",
+      "original_file": "build_possession_model_table_okc_mil.py",
+      "original_summary": "Orphaned file (179 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::calculate_wmi_rawgame_okc_mil.py": {
+      "original_id": "orphaned::calculate_wmi_rawgame_okc_mil.py",
+      "original_detector": "orphaned",
+      "original_file": "calculate_wmi_rawgame_okc_mil.py",
+      "original_summary": "Orphaned file (65 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::calculate_wmi_rawseason_2010_11_to_2023_24.py": {
+      "original_id": "orphaned::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_detector": "orphaned",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "Orphaned file (280 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::calculate_wmi_rawseason_2024_25.py": {
+      "original_id": "orphaned::calculate_wmi_rawseason_2024_25.py",
+      "original_detector": "orphaned",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "Orphaned file (199 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::categorize_defensive_fouls_okc_mil.py": {
+      "original_id": "orphaned::categorize_defensive_fouls_okc_mil.py",
+      "original_detector": "orphaned",
+      "original_file": "categorize_defensive_fouls_okc_mil.py",
+      "original_summary": "Orphaned file (185 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "orphaned::step2_build_possessions.py": {
+      "original_id": "orphaned::step2_build_possessions.py",
+      "original_detector": "orphaned",
+      "original_file": "step2_build_possessions.py",
+      "original_summary": "Orphaned file (151 LOC): zero importers, not an entry point",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::build_possession_model_table_okc_mil.py::annotation_quality": {
+      "original_id": "smells::build_possession_model_table_okc_mil.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": "build_possession_model_table_okc_mil.py",
+      "original_summary": "3x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::build_possession_model_table_okc_mil.py::duplicate_constant"
+      ]
+    },
+    "smells::build_possession_model_table_okc_mil.py::broad_except": {
+      "original_id": "smells::build_possession_model_table_okc_mil.py::broad_except",
+      "original_detector": "smells",
+      "original_file": "build_possession_model_table_okc_mil.py",
+      "original_summary": "1x Broad except \u2014 check library exceptions before narrowing",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::build_possession_model_table_okc_mil.py::duplicate_constant"
+      ]
+    },
+    "smells::build_possession_model_table_okc_mil.py::hardcoded_url": {
+      "original_id": "smells::build_possession_model_table_okc_mil.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": "build_possession_model_table_okc_mil.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::build_possession_model_table_okc_mil.py::duplicate_constant"
+      ]
+    },
+    "smells::calculate_wmi_rawgame_okc_mil.py::annotation_quality": {
+      "original_id": "smells::calculate_wmi_rawgame_okc_mil.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawgame_okc_mil.py",
+      "original_summary": "2x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::annotation_quality": {
+      "original_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "8x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant"
+      ]
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::broad_except": {
+      "original_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::broad_except",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "3x Broad except \u2014 check library exceptions before narrowing",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant"
+      ]
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::hardcoded_url": {
+      "original_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant"
+      ]
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::annotation_quality": {
+      "original_id": "smells::calculate_wmi_rawseason_2024_25.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "4x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity"
+      ]
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::broad_except": {
+      "original_id": "smells::calculate_wmi_rawseason_2024_25.py::broad_except",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "3x Broad except \u2014 check library exceptions before narrowing",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity"
+      ]
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::hardcoded_url": {
+      "original_id": "smells::calculate_wmi_rawseason_2024_25.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity"
+      ]
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::annotation_quality": {
+      "original_id": "smells::categorize_defensive_fouls_okc_mil.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": "categorize_defensive_fouls_okc_mil.py",
+      "original_summary": "3x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant"
+      ]
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::broad_except": {
+      "original_id": "smells::categorize_defensive_fouls_okc_mil.py::broad_except",
+      "original_detector": "smells",
+      "original_file": "categorize_defensive_fouls_okc_mil.py",
+      "original_summary": "1x Broad except \u2014 check library exceptions before narrowing",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant"
+      ]
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::hardcoded_url": {
+      "original_id": "smells::categorize_defensive_fouls_okc_mil.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": "categorize_defensive_fouls_okc_mil.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant"
+      ]
+    },
+    "smells::step2_build_possessions.py::annotation_quality": {
+      "original_id": "smells::step2_build_possessions.py::annotation_quality",
+      "original_detector": "smells",
+      "original_file": "step2_build_possessions.py",
+      "original_summary": "3x Loose type annotation \u2014 use specific types",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::step2_build_possessions.py::duplicate_constant"
+      ]
+    },
+    "smells::step2_build_possessions.py::hardcoded_url": {
+      "original_id": "smells::step2_build_possessions.py::hardcoded_url",
+      "original_detector": "smells",
+      "original_file": "step2_build_possessions.py",
+      "original_summary": "1x Hardcoded URL in source code",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": [
+        "smells::step2_build_possessions.py::duplicate_constant"
+      ]
+    },
+    "test_coverage::build_possession_model_table_okc_mil.py": {
+      "original_id": "test_coverage::build_possession_model_table_okc_mil.py",
+      "original_detector": "test_coverage",
+      "original_file": "build_possession_model_table_okc_mil.py",
+      "original_summary": "Untested module (179 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::calculate_wmi_rawgame_okc_mil.py": {
+      "original_id": "test_coverage::calculate_wmi_rawgame_okc_mil.py",
+      "original_detector": "test_coverage",
+      "original_file": "calculate_wmi_rawgame_okc_mil.py",
+      "original_summary": "Untested module (65 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::calculate_wmi_rawseason_2010_11_to_2023_24.py": {
+      "original_id": "test_coverage::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_detector": "test_coverage",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "Untested module (280 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::calculate_wmi_rawseason_2024_25.py": {
+      "original_id": "test_coverage::calculate_wmi_rawseason_2024_25.py",
+      "original_detector": "test_coverage",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "Untested module (199 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::categorize_defensive_fouls_okc_mil.py": {
+      "original_id": "test_coverage::categorize_defensive_fouls_okc_mil.py",
+      "original_detector": "test_coverage",
+      "original_file": "categorize_defensive_fouls_okc_mil.py",
+      "original_summary": "Untested module (185 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "test_coverage::step2_build_possessions.py": {
+      "original_id": "test_coverage::step2_build_possessions.py",
+      "original_detector": "test_coverage",
+      "original_file": "step2_build_possessions.py",
+      "original_summary": "Untested module (151 LOC, 0 importers) \u2014 no test files found",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:54:56+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::build_possession_model_table_okc_mil.py::duplicate_constant": {
+      "original_id": "smells::build_possession_model_table_okc_mil.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": "build_possession_model_table_okc_mil.py",
+      "original_summary": "1x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:58:25+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant": {
+      "original_id": "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+      "original_summary": "1x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:58:25+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant": {
+      "original_id": "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "1x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:58:25+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity": {
+      "original_id": "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity",
+      "original_detector": "smells",
+      "original_file": "calculate_wmi_rawseason_2024_25.py",
+      "original_summary": "1x High cyclomatic complexity (>12 decision points)",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:58:25+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant": {
+      "original_id": "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": "categorize_defensive_fouls_okc_mil.py",
+      "original_summary": "1x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:58:25+00:00",
+      "remapped_to": null,
+      "candidates": []
+    },
+    "smells::step2_build_possessions.py::duplicate_constant": {
+      "original_id": "smells::step2_build_possessions.py::duplicate_constant",
+      "original_detector": "smells",
+      "original_file": "step2_build_possessions.py",
+      "original_summary": "1x Constant defined identically in multiple modules",
+      "status": "superseded",
+      "superseded_at": "2026-03-06T16:58:25+00:00",
+      "remapped_to": null,
+      "candidates": []
+    }
+  },
+  "promoted_ids": [],
+  "plan_start_scores": {
+    "strict": 69.6,
+    "overall": 69.6,
+    "objective": 97.7,
+    "verified": 97.7
+  },
+  "execution_log": [
+    {
+      "timestamp": "2026-03-06T16:29:19+00:00",
+      "action": "sync_unscored",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:29:19+00:00",
+      "action": "auto_cluster",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:29:19+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:30:35+00:00",
+      "action": "clear_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:43:32+00:00",
+      "action": "cluster_done",
+      "issue_ids": [],
+      "cluster_name": "auto/subjective_review",
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "reason": "all issues resolved by scan"
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:43:32+00:00",
+      "action": "reconcile",
+      "issue_ids": [
+        "subjective_review::.::holistic_unreviewed",
+        "subjective_review::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::unreviewed",
+        "subjective_review::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::unreviewed",
+        "subjective_review::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::unreviewed",
+        "subjective_review::build_possession_model_table_okc_mil.py::unreviewed",
+        "subjective_review::calculate_wmi_rawgame_okc_mil.py::unreviewed",
+        "subjective_review::calculate_wmi_rawseason_2010_11_to_2023_24.py::unreviewed",
+        "subjective_review::calculate_wmi_rawseason_2024_25.py::unreviewed",
+        "subjective_review::categorize_defensive_fouls_okc_mil.py::unreviewed",
+        "subjective_review::step2_build_possessions.py::unreviewed"
+      ],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "superseded_count": 10,
+        "pruned_count": 0,
+        "resurfaced_count": 0,
+        "clusters_completed_count": 1
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:43:32+00:00",
+      "action": "sync_stale",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:43:32+00:00",
+      "action": "auto_cluster",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:43:32+00:00",
+      "action": "sync_triage",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "injected": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:43:32+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:44:10+00:00",
+      "action": "triage_observe",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "issue_count": 51,
+        "cited_ids": [],
+        "reuse": false
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:44:19+00:00",
+      "action": "triage_confirm_observe",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "attestation": "I have thoroughly reviewed the files. The strongest root causes are in cross_module_architecture, test_strategy, api_surface_coherence, and contract_coherence, driven by duplicated pipeline code, stale checkpoint copies, and mixed fetch/error behavior."
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:44:23+00:00",
+      "action": "triage_reflect",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "issue_count": 51,
+        "reuse": false,
+        "recurring_dims": []
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:44:26+00:00",
+      "action": "triage_confirm_reflect",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "attestation": "I reviewed the contradictions and the best path is to address cross_module_architecture and test_strategy through shared helpers, removal of checkpoint duplicates from production scope, and focused tests before wider refactors."
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:44:45+00:00",
+      "action": "cluster_create",
+      "issue_ids": [],
+      "cluster_name": "checkpoints-cleanup",
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "description": null,
+        "action": null
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:44:51+00:00",
+      "action": "cluster_create",
+      "issue_ids": [],
+      "cluster_name": "tests-and-contracts",
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "description": null,
+        "action": null
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:45:07+00:00",
+      "action": "cluster_add",
+      "issue_ids": [
+        "orphaned::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+        "orphaned::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+        "orphaned::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+        "test_coverage::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+        "test_coverage::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+        "test_coverage::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::annotation_quality",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::annotation_quality",
+        "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::annotation_quality",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::duplicate_constant",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::duplicate_constant",
+        "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::duplicate_constant",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::hardcoded_url",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::hardcoded_url",
+        "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::hardcoded_url",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::broad_except",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::broad_except",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::df07f8a2bf14839b",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::07dc9bf1ab3f003e",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1d1900a870bac68a",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1e6f7906108f90e3",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::4372af8647d0e378",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::5c298cd09e264184",
+        "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::72687ac144f1c85b",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::7a86369fa58ec754",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::8ea0a8e8488153ea",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9003ce45fd7ee70e",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9c35f2c2008b4348",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::9e1c3a86c6f35fb6",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::abe1fd3fdc63f957",
+        "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::e29bca28aeb6254b",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::e61bde6e73def5a2",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::f30dc16f516cd0b6",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::fb37288d8f6e506a",
+        "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::clock_to_seconds::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::clock_to_seconds",
+        "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::infer_team_score_side::build_possession_model_table_okc_mil.py::infer_team_score_side",
+        "dupes::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::infer_team_score_side::categorize_defensive_fouls_okc_mil.py::infer_team_score_side",
+        "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::parse_possessions::step2_build_possessions.py::parse_possessions",
+        "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::main::step2_build_possessions.py::main"
+      ],
+      "cluster_name": "checkpoints-cleanup",
+      "actor": "user",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:45:07+00:00",
+      "action": "cluster_add",
+      "issue_ids": [
+        "test_coverage::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "test_coverage::calculate_wmi_rawseason_2024_25.py",
+        "test_coverage::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+        "test_coverage::categorize_defensive_fouls_okc_mil.py",
+        "test_coverage::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+        "test_coverage::build_possession_model_table_okc_mil.py",
+        "test_coverage::step2_build_possessions.py",
+        "test_coverage::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+        "test_coverage::calculate_wmi_rawgame_okc_mil.py",
+        "review::.::holistic::test_strategy::no_automated_coverage_for_core_metrics::035f6795",
+        "review::.::holistic::test_strategy::no_integration_tests_for_network_to_summary_pipeline::6b96d612",
+        "review::.::holistic::test_strategy::logic_is_hard_to_test_due_to_io_coupling::10a7c678",
+        "review::.::holistic::test_strategy::manual_script_runs_are_the_only_regression_check::b4151868",
+        "review::.::holistic::type_safety::missing_public_type_annotations::9edc4b51",
+        "review::.::holistic::type_safety::ad_hoc_status_payloads_need_named_types::9efc9c43",
+        "review::.::holistic::type_safety::nullable_helper_returns_are_implicit::58e47a35",
+        "review::.::holistic::contract_coherence::exists_helpers_hide_request_failures::0058e605",
+        "review::.::holistic::contract_coherence::missing_status_collapses_fetch_failures::6450d32f",
+        "review::.::holistic::contract_coherence::similar_builders_use_inconsistent_failure_contracts::fb056549"
+      ],
+      "cluster_name": "tests-and-contracts",
+      "actor": "user",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:45:15+00:00",
+      "action": "cluster_create",
+      "issue_ids": [],
+      "cluster_name": "shared-pbp",
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "description": null,
+        "action": null
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:45:21+00:00",
+      "action": "cluster_add",
+      "issue_ids": [
+        "orphaned::build_possession_model_table_okc_mil.py",
+        "test_coverage::build_possession_model_table_okc_mil.py",
+        "smells::build_possession_model_table_okc_mil.py::annotation_quality",
+        "smells::build_possession_model_table_okc_mil.py::duplicate_constant",
+        "smells::build_possession_model_table_okc_mil.py::hardcoded_url",
+        "smells::build_possession_model_table_okc_mil.py::broad_except",
+        "orphaned::categorize_defensive_fouls_okc_mil.py",
+        "test_coverage::categorize_defensive_fouls_okc_mil.py",
+        "smells::categorize_defensive_fouls_okc_mil.py::annotation_quality",
+        "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant",
+        "smells::categorize_defensive_fouls_okc_mil.py::hardcoded_url",
+        "smells::categorize_defensive_fouls_okc_mil.py::broad_except",
+        "orphaned::step2_build_possessions.py",
+        "test_coverage::step2_build_possessions.py",
+        "smells::step2_build_possessions.py::annotation_quality",
+        "smells::step2_build_possessions.py::duplicate_constant",
+        "smells::step2_build_possessions.py::hardcoded_url",
+        "orphaned::calculate_wmi_rawseason_2024_25.py",
+        "test_coverage::calculate_wmi_rawseason_2024_25.py",
+        "smells::calculate_wmi_rawseason_2024_25.py::annotation_quality",
+        "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2024_25.py::hardcoded_url",
+        "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity",
+        "smells::calculate_wmi_rawseason_2024_25.py::broad_except",
+        "orphaned::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "test_coverage::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::annotation_quality",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::hardcoded_url",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::broad_except",
+        "boilerplate_duplication::calculate_wmi_rawseason_2010_11_to_2023_24.py::153e78254e73193d",
+        "review::.::holistic::cross_module_architecture::duplicate_wmi_pipeline_logic::394ecd95",
+        "review::.::holistic::cross_module_architecture::csv_contracts_replace_module_boundaries::6130785d",
+        "review::.::holistic::cross_module_architecture::stale_checkpoint_logic_blurs_boundaries::ec356397",
+        "review::.::holistic::cross_module_architecture::parallel_possession_builders_without_owner::1dc18229",
+        "review::.::holistic::abstraction_fitness::duplicated_pbp_domain_pipeline::a0cd7806",
+        "review::.::holistic::abstraction_fitness::single_game_scripts_rebuild_same_ingestion_stack::c9366730",
+        "review::.::holistic::design_coherence::duplicated_possession_pipeline::8fcf068c",
+        "review::.::holistic::design_coherence::season_script_mixes_orchestration_and_domain_logic::c55c36ca",
+        "review::.::holistic::design_coherence::stale_checkpoint_variants_keep_old_design_alive::f6ec11fd",
+        "review::.::holistic::mid_level_elegance::duplicated_pbp_to_possession_seam::a4a8c81e",
+        "review::.::holistic::mid_level_elegance::incompatible_wmi_pipeline_contracts::63bbda32",
+        "review::.::holistic::mid_level_elegance::inconsistent_failure_protocols_between_runners::27b3d96b",
+        "review::.::holistic::low_level_elegance::repeated_possession_internals::705082d8",
+        "review::.::holistic::low_level_elegance::per_event_dataframe_rescans::a60b3998",
+        "review::.::holistic::low_level_elegance::context_logic_style_drift::74be1d5f",
+        "review::.::holistic::api_surface_coherence::inconsistent_game_fetch_api_shapes::c728f891",
+        "review::.::holistic::api_surface_coherence::mixed_failure_contracts_across_builders::d139415b",
+        "review::.::holistic::api_surface_coherence::similar_build_functions_hide_different_inputs::e6a63c2d",
+        "review::.::holistic::error_consistency::season_jobs_swallow_root_errors::7bcce77c",
+        "review::.::holistic::error_consistency::same_boundary_different_error_policy::839c6021",
+        "review::.::holistic::error_consistency::parse_helpers_silently_hide_bad_values::06315d15",
+        "review::.::holistic::dependency_health::missing_runtime_dependency_manifest::86b969b7",
+        "review::.::holistic::dependency_health::numpy_used_for_small_vector_math::fd4e0721"
+      ],
+      "cluster_name": "shared-pbp",
+      "actor": "user",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:45:28+00:00",
+      "action": "cluster_update",
+      "issue_ids": [],
+      "cluster_name": "checkpoints-cleanup",
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "description": "Remove notebook checkpoint copies from production scope so duplicate, orphaned, and stale-architecture issues stop dominating the queue."
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:45:28+00:00",
+      "action": "cluster_update",
+      "issue_ids": [],
+      "cluster_name": "tests-and-contracts",
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "description": "Add stable contracts and lightweight tests around the pure WMI and possession code so future cleanup stops depending on manual reruns."
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:45:39+00:00",
+      "action": "cluster_update",
+      "issue_ids": [],
+      "cluster_name": "shared-pbp",
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "description": "Extract shared play-by-play fetching, clock parsing, possession grouping, and foul logic so the workflow stops reimplementing the same domain rules in each script."
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:45:52+00:00",
+      "action": "cluster_update",
+      "issue_ids": [],
+      "cluster_name": "shared-pbp",
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "description": null
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:45:58+00:00",
+      "action": "triage_organize",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "cluster_count": 3,
+        "reuse": false
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:46:01+00:00",
+      "action": "triage_confirm_organize",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "attestation": "The execution order is clear: checkpoints-cleanup first, shared-pbp second, and tests-and-contracts third. Each cluster now has concrete steps tied to cross_module_architecture, test_strategy, and contract_coherence problems surfaced in review.",
+        "coverage": "50/51"
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:46:05+00:00",
+      "action": "triage_complete",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "user",
+      "note": null,
+      "detail": {
+        "strategy_len": 334,
+        "coverage": "50/51"
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:47:58+00:00",
+      "action": "cluster_done",
+      "issue_ids": [],
+      "cluster_name": "auto/dupes-exact",
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "reason": "all issues resolved by scan"
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:47:58+00:00",
+      "action": "cluster_done",
+      "issue_ids": [],
+      "cluster_name": "checkpoints-cleanup",
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "reason": "all issues resolved by scan"
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:47:58+00:00",
+      "action": "reconcile",
+      "issue_ids": [
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::07dc9bf1ab3f003e",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::4372af8647d0e378",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::7a86369fa58ec754",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::9e1c3a86c6f35fb6",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::abe1fd3fdc63f957",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::df07f8a2bf14839b",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::e61bde6e73def5a2",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::f30dc16f516cd0b6",
+        "boilerplate_duplication::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::fb37288d8f6e506a",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1d1900a870bac68a",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::1e6f7906108f90e3",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::5c298cd09e264184",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::8ea0a8e8488153ea",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9003ce45fd7ee70e",
+        "boilerplate_duplication::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::9c35f2c2008b4348",
+        "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::72687ac144f1c85b",
+        "boilerplate_duplication::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::e29bca28aeb6254b",
+        "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::clock_to_seconds::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::clock_to_seconds",
+        "dupes::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::infer_team_score_side::build_possession_model_table_okc_mil.py::infer_team_score_side",
+        "dupes::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::infer_team_score_side::categorize_defensive_fouls_okc_mil.py::infer_team_score_side",
+        "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::main::step2_build_possessions.py::main",
+        "dupes::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::parse_possessions::step2_build_possessions.py::parse_possessions",
+        "orphaned::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+        "orphaned::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+        "orphaned::.ipynb_checkpoints/step2_build_possessions-checkpoint.py",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::annotation_quality",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::broad_except",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::duplicate_constant",
+        "smells::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py::hardcoded_url",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::annotation_quality",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::broad_except",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::duplicate_constant",
+        "smells::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py::hardcoded_url",
+        "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::annotation_quality",
+        "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::duplicate_constant",
+        "smells::.ipynb_checkpoints/step2_build_possessions-checkpoint.py::hardcoded_url",
+        "test_coverage::.ipynb_checkpoints/build_possession_model_table_okc_mil-checkpoint.py",
+        "test_coverage::.ipynb_checkpoints/categorize_defensive_fouls_okc_mil-checkpoint.py",
+        "test_coverage::.ipynb_checkpoints/step2_build_possessions-checkpoint.py"
+      ],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "superseded_count": 39,
+        "pruned_count": 0,
+        "resurfaced_count": 0,
+        "clusters_completed_count": 2
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:47:58+00:00",
+      "action": "sync_unscored",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:47:58+00:00",
+      "action": "sync_stale",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:47:58+00:00",
+      "action": "auto_cluster",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:47:58+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:54:56+00:00",
+      "action": "reconcile",
+      "issue_ids": [
+        "boilerplate_duplication::calculate_wmi_rawseason_2010_11_to_2023_24.py::153e78254e73193d",
+        "orphaned::build_possession_model_table_okc_mil.py",
+        "orphaned::calculate_wmi_rawgame_okc_mil.py",
+        "orphaned::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "orphaned::calculate_wmi_rawseason_2024_25.py",
+        "orphaned::categorize_defensive_fouls_okc_mil.py",
+        "orphaned::step2_build_possessions.py",
+        "smells::build_possession_model_table_okc_mil.py::annotation_quality",
+        "smells::build_possession_model_table_okc_mil.py::broad_except",
+        "smells::build_possession_model_table_okc_mil.py::hardcoded_url",
+        "smells::calculate_wmi_rawgame_okc_mil.py::annotation_quality",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::annotation_quality",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::broad_except",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::hardcoded_url",
+        "smells::calculate_wmi_rawseason_2024_25.py::annotation_quality",
+        "smells::calculate_wmi_rawseason_2024_25.py::broad_except",
+        "smells::calculate_wmi_rawseason_2024_25.py::hardcoded_url",
+        "smells::categorize_defensive_fouls_okc_mil.py::annotation_quality",
+        "smells::categorize_defensive_fouls_okc_mil.py::broad_except",
+        "smells::categorize_defensive_fouls_okc_mil.py::hardcoded_url",
+        "smells::step2_build_possessions.py::annotation_quality",
+        "smells::step2_build_possessions.py::hardcoded_url",
+        "test_coverage::build_possession_model_table_okc_mil.py",
+        "test_coverage::calculate_wmi_rawgame_okc_mil.py",
+        "test_coverage::calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "test_coverage::calculate_wmi_rawseason_2024_25.py",
+        "test_coverage::categorize_defensive_fouls_okc_mil.py",
+        "test_coverage::step2_build_possessions.py"
+      ],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "superseded_count": 28,
+        "pruned_count": 0,
+        "resurfaced_count": 0,
+        "clusters_completed_count": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:54:56+00:00",
+      "action": "sync_unscored",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:54:56+00:00",
+      "action": "sync_stale",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:54:56+00:00",
+      "action": "auto_cluster",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:54:56+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T16:58:25+00:00",
+      "action": "reconcile",
+      "issue_ids": [
+        "smells::build_possession_model_table_okc_mil.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2010_11_to_2023_24.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2024_25.py::duplicate_constant",
+        "smells::calculate_wmi_rawseason_2024_25.py::high_cyclomatic_complexity",
+        "smells::categorize_defensive_fouls_okc_mil.py::duplicate_constant",
+        "smells::step2_build_possessions.py::duplicate_constant"
+      ],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "superseded_count": 6,
+        "pruned_count": 0,
+        "resurfaced_count": 0,
+        "clusters_completed_count": 0
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:58:25+00:00",
+      "action": "sync_unscored",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:58:25+00:00",
+      "action": "sync_stale",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T16:58:25+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T17:00:28+00:00",
+      "action": "sync_unscored",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T17:00:28+00:00",
+      "action": "sync_stale",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T17:00:28+00:00",
+      "action": "auto_cluster",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "changes": true
+      }
+    },
+    {
+      "timestamp": "2026-03-06T17:00:28+00:00",
+      "action": "seed_start_scores",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {}
+    },
+    {
+      "timestamp": "2026-03-06T17:11:03+00:00",
+      "action": "review_import_sync",
+      "issue_ids": [],
+      "cluster_name": null,
+      "actor": "system",
+      "note": null,
+      "detail": {
+        "trigger": "review_import",
+        "new_ids": [
+          "review::.::holistic::abstraction_fitness::generic_helper_sink::6a548489",
+          "review::.::holistic::abstraction_fitness::rederived_possession_pipeline::d48efdec",
+          "review::.::holistic::ai_generated_debt::ceremonial_wrapper_layers::e8dc5424",
+          "review::.::holistic::ai_generated_debt::restating_comments_in_analysis_scripts::c29a14f7",
+          "review::.::holistic::api_surface_coherence::pipeline_steps_take_mixed_input_shapes::0709ae0d",
+          "review::.::holistic::api_surface_coherence::season_pipeline_error_contract_drift::8408d4c7",
+          "review::.::holistic::api_surface_coherence::tuple_based_team_context_api::2a0b3beb",
+          "review::.::holistic::contract_coherence::completed_game_ids_not_actually_verified::6956fe7d",
+          "review::.::holistic::contract_coherence::missing_status_hides_fetch_failures::c93f0d78",
+          "review::.::holistic::contract_coherence::none_return_overloads_empty_and_failed::09692b84",
+          "review::.::holistic::convention_outlier::mixed_sample_and_library_roles::083a0a42",
+          "review::.::holistic::convention_outlier::sibling_rawseason_protocol_drift::6cf526c7",
+          "review::.::holistic::convention_outlier::top_level_script_naming_drift::8903c233",
+          "review::.::holistic::cross_module_architecture::domain_boundary_reimplemented_in_scripts::58729509",
+          "review::.::holistic::cross_module_architecture::hub_utils_module_blurs_boundaries::24522f66",
+          "review::.::holistic::cross_module_architecture::season_pipelines_have_diverged::4ac85f57",
+          "review::.::holistic::dependency_health::unpinned_runtime_requirements::663b4eba",
+          "review::.::holistic::design_coherence::duplicated_possession_feature_pipeline::7ba52d0f",
+          "review::.::holistic::design_coherence::parse_possessions_has_multiple_transformation_stages::7475fb47",
+          "review::.::holistic::design_coherence::season_wmi_script_mixes_transport_and_analytics::92818133",
+          "review::.::holistic::error_consistency::historical_season_missing_masks_transport_failures::3b921a3f",
+          "review::.::holistic::error_consistency::retry_bucket_mixes_transient_and_data_errors::8608dd93",
+          "review::.::holistic::error_consistency::sibling_scripts_expose_different_failure_protocols::c345eb7d",
+          "review::.::holistic::high_level_elegance::catch_all_utils_owns_multiple_layers::3acea273",
+          "review::.::holistic::high_level_elegance::docs_and_outputs_do_not_map_to_clear_entrypoints::23b725e8",
+          "review::.::holistic::high_level_elegance::pipeline_logic_scattered_across_entry_scripts::1a9bbc8a",
+          "review::.::holistic::incomplete_migration::season_wmi_scripts_use_split_generation_apis::f86967f5",
+          "review::.::holistic::incomplete_migration::stale_step2_pipeline_still_looks_current::b046dd9e",
+          "review::.::holistic::initialization_coupling::fixed_file_pipeline_order::71abd730",
+          "review::.::holistic::initialization_coupling::import_time_default_config_capture::74521e00",
+          "review::.::holistic::logic_clarity::score_side_fallback_defaults_to_away::b52d6fac",
+          "review::.::holistic::logic_clarity::season_fetch_status_conflates_missing_and_failed::feffc312",
+          "review::.::holistic::low_level_elegance::duplicated_score_resolution_branches::3d772cc9",
+          "review::.::holistic::low_level_elegance::two_stage_possession_row_assembly::3fb93192",
+          "review::.::holistic::mid_level_elegance::duplicated_possession_translation_seams::baebc346",
+          "review::.::holistic::mid_level_elegance::season_pipelines_use_incompatible_handoff_contracts::fdce92ed",
+          "review::.::holistic::mid_level_elegance::utility_boundary_has_hidden_input_preconditions::c106b741",
+          "review::.::holistic::naming_quality::mixed_domain_and_formula_vocab_causes_convention_drift::a38eb751",
+          "review::.::holistic::naming_quality::non_math_abbreviations_reduce_script_readability::0301ae4a",
+          "review::.::holistic::naming_quality::symbolic_metric_locals_hide_wmi_intent::44329bed",
+          "review::.::holistic::package_organization::root_pipeline_scripts_left_flat::e2d11fd3",
+          "review::.::holistic::package_organization::workflow_boundaries_not_encoded_in_layout::2d5c1259",
+          "review::.::holistic::test_strategy::critical_season_pipeline_paths_untested::ccce25a9",
+          "review::.::holistic::test_strategy::no_real_cross_module_fixture_coverage::02310d37",
+          "review::.::holistic::test_strategy::tests_mock_internal_seams::93d800af",
+          "review::.::holistic::type_safety::dict_any_status_protocol::60d30ae7",
+          "review::.::holistic::type_safety::score_side_should_be_literal::1c9283d8",
+          "review::.::holistic::type_safety::untyped_playbyplay_payload_contract::e19fa6c1"
+        ],
+        "added_to_queue": [
+          "review::.::holistic::abstraction_fitness::generic_helper_sink::6a548489",
+          "review::.::holistic::abstraction_fitness::rederived_possession_pipeline::d48efdec",
+          "review::.::holistic::ai_generated_debt::ceremonial_wrapper_layers::e8dc5424",
+          "review::.::holistic::ai_generated_debt::restating_comments_in_analysis_scripts::c29a14f7",
+          "review::.::holistic::api_surface_coherence::pipeline_steps_take_mixed_input_shapes::0709ae0d",
+          "review::.::holistic::api_surface_coherence::season_pipeline_error_contract_drift::8408d4c7",
+          "review::.::holistic::api_surface_coherence::tuple_based_team_context_api::2a0b3beb",
+          "review::.::holistic::contract_coherence::completed_game_ids_not_actually_verified::6956fe7d",
+          "review::.::holistic::contract_coherence::missing_status_hides_fetch_failures::c93f0d78",
+          "review::.::holistic::contract_coherence::none_return_overloads_empty_and_failed::09692b84",
+          "review::.::holistic::convention_outlier::mixed_sample_and_library_roles::083a0a42",
+          "review::.::holistic::convention_outlier::sibling_rawseason_protocol_drift::6cf526c7",
+          "review::.::holistic::convention_outlier::top_level_script_naming_drift::8903c233",
+          "review::.::holistic::cross_module_architecture::domain_boundary_reimplemented_in_scripts::58729509",
+          "review::.::holistic::cross_module_architecture::hub_utils_module_blurs_boundaries::24522f66",
+          "review::.::holistic::cross_module_architecture::season_pipelines_have_diverged::4ac85f57",
+          "review::.::holistic::dependency_health::unpinned_runtime_requirements::663b4eba",
+          "review::.::holistic::design_coherence::duplicated_possession_feature_pipeline::7ba52d0f",
+          "review::.::holistic::design_coherence::parse_possessions_has_multiple_transformation_stages::7475fb47",
+          "review::.::holistic::design_coherence::season_wmi_script_mixes_transport_and_analytics::92818133",
+          "review::.::holistic::error_consistency::historical_season_missing_masks_transport_failures::3b921a3f",
+          "review::.::holistic::error_consistency::retry_bucket_mixes_transient_and_data_errors::8608dd93",
+          "review::.::holistic::error_consistency::sibling_scripts_expose_different_failure_protocols::c345eb7d",
+          "review::.::holistic::high_level_elegance::catch_all_utils_owns_multiple_layers::3acea273",
+          "review::.::holistic::high_level_elegance::docs_and_outputs_do_not_map_to_clear_entrypoints::23b725e8",
+          "review::.::holistic::high_level_elegance::pipeline_logic_scattered_across_entry_scripts::1a9bbc8a",
+          "review::.::holistic::incomplete_migration::season_wmi_scripts_use_split_generation_apis::f86967f5",
+          "review::.::holistic::incomplete_migration::stale_step2_pipeline_still_looks_current::b046dd9e",
+          "review::.::holistic::initialization_coupling::fixed_file_pipeline_order::71abd730",
+          "review::.::holistic::initialization_coupling::import_time_default_config_capture::74521e00",
+          "review::.::holistic::logic_clarity::score_side_fallback_defaults_to_away::b52d6fac",
+          "review::.::holistic::logic_clarity::season_fetch_status_conflates_missing_and_failed::feffc312",
+          "review::.::holistic::low_level_elegance::duplicated_score_resolution_branches::3d772cc9",
+          "review::.::holistic::low_level_elegance::two_stage_possession_row_assembly::3fb93192",
+          "review::.::holistic::mid_level_elegance::duplicated_possession_translation_seams::baebc346",
+          "review::.::holistic::mid_level_elegance::season_pipelines_use_incompatible_handoff_contracts::fdce92ed",
+          "review::.::holistic::mid_level_elegance::utility_boundary_has_hidden_input_preconditions::c106b741",
+          "review::.::holistic::naming_quality::mixed_domain_and_formula_vocab_causes_convention_drift::a38eb751",
+          "review::.::holistic::naming_quality::non_math_abbreviations_reduce_script_readability::0301ae4a",
+          "review::.::holistic::naming_quality::symbolic_metric_locals_hide_wmi_intent::44329bed",
+          "review::.::holistic::package_organization::root_pipeline_scripts_left_flat::e2d11fd3",
+          "review::.::holistic::package_organization::workflow_boundaries_not_encoded_in_layout::2d5c1259",
+          "review::.::holistic::test_strategy::critical_season_pipeline_paths_untested::ccce25a9",
+          "review::.::holistic::test_strategy::no_real_cross_module_fixture_coverage::02310d37",
+          "review::.::holistic::test_strategy::tests_mock_internal_seams::93d800af",
+          "review::.::holistic::type_safety::dict_any_status_protocol::60d30ae7",
+          "review::.::holistic::type_safety::score_side_should_be_literal::1c9283d8",
+          "review::.::holistic::type_safety::untyped_playbyplay_payload_contract::e19fa6c1"
+        ],
+        "diff_new": 48,
+        "diff_reopened": 0,
+        "covered_subjective": [
+          "subjective::convention_outlier",
+          "subjective::design_coherence",
+          "subjective::error_consistency",
+          "subjective::abstraction_fitness",
+          "subjective::ai_generated_debt",
+          "subjective::api_surface_coherence",
+          "subjective::authorization_consistency",
+          "subjective::contract_coherence",
+          "subjective::cross_module_architecture",
+          "subjective::dependency_health",
+          "subjective::high_level_elegance",
+          "subjective::incomplete_migration",
+          "subjective::initialization_coupling",
+          "subjective::logic_clarity",
+          "subjective::low_level_elegance",
+          "subjective::mid_level_elegance",
+          "subjective::naming_quality",
+          "subjective::package_organization",
+          "subjective::test_strategy",
+          "subjective::type_safety"
+        ]
+      }
+    }
+  ],
+  "epic_triage_meta": {
+    "triage_stages": {},
+    "issue_snapshot_hash": "7ddd3b1d6d66a09e",
+    "triaged_ids": [
+      "review::.::holistic::abstraction_fitness::duplicated_pbp_domain_pipeline::a0cd7806",
+      "review::.::holistic::abstraction_fitness::single_game_scripts_rebuild_same_ingestion_stack::c9366730",
+      "review::.::holistic::ai_generated_debt::copied_pbp_helper_blocks::eda4eb7e",
+      "review::.::holistic::ai_generated_debt::repeated_script_output_ceremony::f4110eaf",
+      "review::.::holistic::ai_generated_debt::restating_comment_bloat::e914c61b",
+      "review::.::holistic::api_surface_coherence::inconsistent_game_fetch_api_shapes::c728f891",
+      "review::.::holistic::api_surface_coherence::mixed_failure_contracts_across_builders::d139415b",
+      "review::.::holistic::api_surface_coherence::similar_build_functions_hide_different_inputs::e6a63c2d",
+      "review::.::holistic::contract_coherence::exists_helpers_hide_request_failures::0058e605",
+      "review::.::holistic::contract_coherence::missing_status_collapses_fetch_failures::6450d32f",
+      "review::.::holistic::contract_coherence::similar_builders_use_inconsistent_failure_contracts::fb056549",
+      "review::.::holistic::convention_outlier::checkpoint_style_island::8b2e44b3",
+      "review::.::holistic::convention_outlier::season_script_protocol_drift::0e83333e",
+      "review::.::holistic::cross_module_architecture::csv_contracts_replace_module_boundaries::6130785d",
+      "review::.::holistic::cross_module_architecture::duplicate_wmi_pipeline_logic::394ecd95",
+      "review::.::holistic::cross_module_architecture::parallel_possession_builders_without_owner::1dc18229",
+      "review::.::holistic::cross_module_architecture::stale_checkpoint_logic_blurs_boundaries::ec356397",
+      "review::.::holistic::dependency_health::missing_runtime_dependency_manifest::86b969b7",
+      "review::.::holistic::dependency_health::numpy_used_for_small_vector_math::fd4e0721",
+      "review::.::holistic::design_coherence::duplicated_possession_pipeline::8fcf068c",
+      "review::.::holistic::design_coherence::season_script_mixes_orchestration_and_domain_logic::c55c36ca",
+      "review::.::holistic::design_coherence::stale_checkpoint_variants_keep_old_design_alive::f6ec11fd",
+      "review::.::holistic::error_consistency::parse_helpers_silently_hide_bad_values::06315d15",
+      "review::.::holistic::error_consistency::same_boundary_different_error_policy::839c6021",
+      "review::.::holistic::error_consistency::season_jobs_swallow_root_errors::7bcce77c",
+      "review::.::holistic::high_level_elegance::project_docs_do_not_define_a_single_trustworthy_public_surface::e0060a9e",
+      "review::.::holistic::high_level_elegance::root_mixes_pipeline_code_docs_and_artifacts::6636b670",
+      "review::.::holistic::high_level_elegance::workflow_is_split_by_one_off_scripts_not_domain_modules::1eb62956",
+      "review::.::holistic::incomplete_migration::old_step2_parser_coexists_with_direct_raw_action_pipeline::4801b174",
+      "review::.::holistic::incomplete_migration::season_wmi_has_two_competing_implementations::2c325fc5",
+      "review::.::holistic::incomplete_migration::stale_checkpoint_logic_keeps_old_wmi_schema::cbf3895d",
+      "review::.::holistic::initialization_coupling::parse_possessions_closes_over_game_id::b910f976",
+      "review::.::holistic::logic_clarity::premature_score_side_inference::65c927c9",
+      "review::.::holistic::logic_clarity::unreachable_completed_games_guard::938818a1",
+      "review::.::holistic::low_level_elegance::context_logic_style_drift::74be1d5f",
+      "review::.::holistic::low_level_elegance::per_event_dataframe_rescans::a60b3998",
+      "review::.::holistic::low_level_elegance::repeated_possession_internals::705082d8",
+      "review::.::holistic::mid_level_elegance::duplicated_pbp_to_possession_seam::a4a8c81e",
+      "review::.::holistic::mid_level_elegance::incompatible_wmi_pipeline_contracts::63bbda32",
+      "review::.::holistic::mid_level_elegance::inconsistent_failure_protocols_between_runners::27b3d96b",
+      "review::.::holistic::naming_quality::formula_aliases_hide_wmi_meaning::f3ef3e48",
+      "review::.::holistic::naming_quality::season_script_uses_terse_batch_ids::d2979c47",
+      "review::.::holistic::package_organization::checkpoint_artifacts_occupy_production_space::30ba7f78",
+      "review::.::holistic::package_organization::root_workflow_scripts_not_grouped::f06a0d58",
+      "review::.::holistic::test_strategy::logic_is_hard_to_test_due_to_io_coupling::10a7c678",
+      "review::.::holistic::test_strategy::manual_script_runs_are_the_only_regression_check::b4151868",
+      "review::.::holistic::test_strategy::no_automated_coverage_for_core_metrics::035f6795",
+      "review::.::holistic::test_strategy::no_integration_tests_for_network_to_summary_pipeline::6b96d612",
+      "review::.::holistic::type_safety::ad_hoc_status_payloads_need_named_types::9efc9c43",
+      "review::.::holistic::type_safety::missing_public_type_annotations::9edc4b51",
+      "review::.::holistic::type_safety::nullable_helper_returns_are_implicit::58e47a35"
+    ],
+    "strategy_summary": "1) remove or exclude checkpoint Python copies so stale duplicate code stops dominating the queue, 2) extract one shared play-by-play/domain helper layer and refactor the active scripts onto it, 3) add dependency metadata, public annotations, and focused tests for the pure possession and WMI logic, then rescan and continue the queue.",
+    "trigger": "manual_triage",
+    "last_completed_at": "2026-03-06T16:46:05+00:00",
+    "last_triage": {
+      "completed_at": "2026-03-06T16:46:05+00:00",
+      "stages": {
+        "observe": {
+          "stage": "observe",
+          "report": "Root causes: repeated NBA play-by-play fetch/parse logic across flat top-level scripts, checkpoint copies treated as production code, mixed failure contracts (None/bool/dict) around network work, and almost no isolated seams for testing or reuse.",
+          "cited_ids": [],
+          "timestamp": "2026-03-06T16:44:10+00:00",
+          "issue_count": 51,
+          "confirmed_at": "2026-03-06T16:44:19+00:00",
+          "confirmed_text": "I have thoroughly reviewed the files. The strongest root causes are in cross_module_architecture, test_strategy, api_surface_coherence, and contract_coherence, driven by duplicated pipeline code, stale checkpoint copies, and mixed fetch/error behavior."
+        },
+        "reflect": {
+          "stage": "reflect",
+          "report": "The review shows the current pain is mostly architectural, not isolated syntax cleanup. Highest leverage comes from deleting or excluding checkpoint duplicates, extracting one shared play-by-play/domain layer, and adding small tests around pure WMI and possession helpers before deeper season-script rewrites.",
+          "cited_ids": [],
+          "timestamp": "2026-03-06T16:44:23+00:00",
+          "issue_count": 51,
+          "recurring_dims": [],
+          "confirmed_at": "2026-03-06T16:44:26+00:00",
+          "confirmed_text": "I reviewed the contradictions and the best path is to address cross_module_architecture and test_strategy through shared helpers, removal of checkpoint duplicates from production scope, and focused tests before wider refactors."
+        },
+        "organize": {
+          "stage": "organize",
+          "report": "I grouped the work into three execution batches: checkpoints-cleanup first to remove stale duplicate modules from production scope, shared-pbp second to centralize repeated play-by-play logic and normalize fetch/error behavior, and tests-and-contracts third to add annotations and regression checks around the new seams.",
+          "cited_ids": [],
+          "timestamp": "2026-03-06T16:45:58+00:00",
+          "issue_count": 3,
+          "confirmed_at": "2026-03-06T16:46:01+00:00",
+          "confirmed_text": "The execution order is clear: checkpoints-cleanup first, shared-pbp second, and tests-and-contracts third. Each cluster now has concrete steps tied to cross_module_architecture, test_strategy, and contract_coherence problems surfaced in review."
+        }
+      },
+      "strategy": "1) remove or exclude checkpoint Python copies so stale duplicate code stops dominating the queue, 2) extract one shared play-by-play/domain helper layer and refactor the active scripts onto it, 3) add dependency metadata, public annotations, and focused tests for the pure possession and WMI logic, then rescan and continue the queue."
+    }
+  },
+  "commit_log": [],
+  "uncommitted_issues": [],
+  "commit_tracking_branch": null,
+  "scan_count_at_plan_start": 7
+}

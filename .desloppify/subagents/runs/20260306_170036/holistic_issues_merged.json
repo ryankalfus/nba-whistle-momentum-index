@@ -1,0 +1,1363 @@
+{
+  "assessments": {
+    "abstraction_fitness": {
+      "score": 56.7,
+      "components": [
+        "Abstraction Leverage",
+        "Indirection Cost",
+        "Interface Honesty",
+        "Delegation Density",
+        "Definition Directness",
+        "Type Discipline"
+      ],
+      "component_scores": {
+        "Abstraction Leverage": 68.0,
+        "Indirection Cost": 83.0,
+        "Interface Honesty": 82.0,
+        "Delegation Density": 96.0,
+        "Definition Directness": 52.0,
+        "Type Discipline": 89.0
+      }
+    },
+    "ai_generated_debt": 79.6,
+    "api_surface_coherence": 55.6,
+    "authorization_consistency": 94.0,
+    "contract_coherence": 60.6,
+    "convention_outlier": 52.6,
+    "cross_module_architecture": 50.8,
+    "dependency_health": 80.7,
+    "design_coherence": 55.0,
+    "error_consistency": 53.8,
+    "high_level_elegance": 44.4,
+    "incomplete_migration": 62.2,
+    "initialization_coupling": 74.6,
+    "logic_clarity": 71.5,
+    "low_level_elegance": 74.5,
+    "mid_level_elegance": 57.7,
+    "naming_quality": 63.6,
+    "package_organization": 49.2,
+    "test_strategy": 48.3,
+    "type_safety": 65.3
+  },
+  "dimension_notes": {
+    "cross_module_architecture": {
+      "evidence": [
+        "`nba_pbp_utils.py` is the shared dependency for every production script (`step2_build_possessions.py`, `build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, `calculate_wmi_rawseason_2010_11_to_2023_24.py`, `calculate_wmi_rawseason_2024_25.py`) and mixes HTTP fetching, play-by-play normalization, possession helpers, score inference, constants, and CLI preview formatting in one module.",
+        "The two season-summary entrypoints implement overlapping orchestration in different layers: `calculate_wmi_rawseason_2010_11_to_2023_24.py` computes WMI from raw action payloads via `actions_to_dataframe`, while `calculate_wmi_rawseason_2024_25.py` computes it from possession tables via `load_game_dataframe` and `build_possession_table_for_game`, so the same cross-module workflow now has two incompatible seams to maintain.",
+        "Single-game scripts repeatedly rebuild the same boundary crossing sequence (`load_game_dataframe` -> `extract_team_context` -> `build_valid_possessions` -> possession grouping) inside each script instead of depending on a single domain-level API, so common changes to possession semantics ripple across multiple top-level modules."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "high_level_elegance": {
+      "evidence": [
+        "The production code is organized as a flat set of peer scripts at repository root (`build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, `calculate_wmi_rawgame_okc_mil.py`, `calculate_wmi_rawseason_2024_25.py`, `calculate_wmi_rawseason_2010_11_to_2023_24.py`) rather than around stable domain areas such as ingestion, possession modeling, and WMI computation.",
+        "`nba_pbp_utils.py` is the de facto shared boundary for unrelated concerns: network fetch (`fetch_playbyplay_payload`, lines 54-64), dataframe normalization (`actions_to_dataframe`, lines 67-80), possession/domain rules (`build_valid_possessions`, `count_defensive_fouls`, `infer_team_score_side`, lines 104-165), and CLI/output formatting (`format_output_preview`, lines 168-183).",
+        "Top-level scripts re-own the pipeline in slightly different ways instead of calling one shared application layer: `build_possession_model_table_okc_mil.py` builds possession rows and WMI flags directly (lines 20-84), `calculate_wmi_rawseason_2024_25.py` rebuilds possession tables per game (lines 44-73), and `calculate_wmi_rawseason_2010_11_to_2023_24.py` computes a separate foul-vector path from raw actions (lines 106-149).",
+        "Project contracts are not trustworthy from the top level: `README.md` only documents the possession builder status (lines 3-12), while the plan and definitions describe a much larger active WMI pipeline and list current outputs such as `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv` (`Plan for WMI - Ryan Kalfus (2026).md`, lines 67-74; `Definitions for NBA Analytics Research - Ryan Kalfus (2026).md`, lines 123-129).",
+        "The documentation/logs record a 2025-26 season output as current project state (`nba-whistle-project-log.md`, lines 72-76), but there is no corresponding `calculate_wmi_rawseason_2025_26.py` or equivalent production entrypoint in the repository, so ownership of that result is unclear."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "abstraction_fitness": {
+      "evidence": [
+        "`nba_pbp_utils.py` combines unrelated concerns in one project-wide helper surface: HTTP fetching (`fetch_playbyplay_payload`, lines 54-64), dataframe normalization (`actions_to_dataframe`, lines 67-80), possession grouping (`build_valid_possessions`, lines 104-111), foul counting (`count_defensive_fouls`, lines 114-122), score-side inference (`infer_team_score_side`, lines 125-153), and CLI-style output formatting (`format_output_preview`, lines 168-183). Most production scripts import directly from this single module instead of from bounded domain modules.",
+        "The seed scripts are thin orchestration layers over that generic helper module rather than consumers of a domain API. `build_possession_model_table_okc_mil.py` pulls eight names from `nba_pbp_utils` (lines 5-15) and then reconstructs possession-table logic inline in `build_table` (lines 20-84). `categorize_defensive_fouls_okc_mil.py` does the same with nine imported names (lines 5-16) and its own possession/event assembly (lines 21-104).",
+        "The same possession-to-foul pipeline is re-derived in multiple places instead of being named once and reused through an explicit domain abstraction: `build_table` groups `valid` by `possession_group` and computes foul flags in `build_possession_model_table_okc_mil.py` lines 27-59; `build_possession_table_for_game` repeats the same pattern in `calculate_wmi_rawseason_2024_25.py` lines 57-73; `build_foul_vector` repeats it again in `calculate_wmi_rawseason_2010_11_to_2023_24.py` lines 106-130; `parse_possessions` repeats related grouping and defensive-foul extraction in `step2_build_possessions.py` lines 33-65.",
+        "There is little classic indirection overhead: no delegation-heavy classes, no one-implementation base classes, and no parameter-bag APIs showed up in the production files reviewed. The main abstraction weakness is low definition directness at the module boundary, not wrapper chains or type-erasing interfaces."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": "",
+      "sub_axes": {
+        "abstraction_leverage": 68.0,
+        "indirection_cost": 83.0,
+        "interface_honesty": 82.0,
+        "delegation_density": 96.0,
+        "definition_directness": 52.0,
+        "type_discipline": 89.0
+      }
+    },
+    "dependency_health": {
+      "evidence": [
+        "The production dependency set is very small: `requirements.txt` declares only `pandas` and `requests`, and those are the only non-stdlib runtime libraries imported across production files (`nba_pbp_utils.py`, `build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, `calculate_wmi_rawseason_2024_25.py`, `calculate_wmi_rawseason_2010_11_to_2023_24.py`).",
+        "I did not find overlapping libraries for the same purpose, extra package managers, or visible import cycles tied to third-party packages.",
+        "`requirements.txt` leaves both runtime dependencies completely unversioned (`pandas`, `requests`) even though the code relies on pandas dataframe semantics and requests session/exception behavior throughout the production pipeline."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "single_edit",
+      "confidence": "high",
+      "issues_preventing_higher_score": "Runtime dependencies are lean and purposeful, but the lack of version constraints makes the environment harder to reproduce and raises upgrade risk for the whole pipeline."
+    },
+    "low_level_elegance": {
+      "evidence": [
+        "`categorize_defensive_fouls_okc_mil.py` keeps the main flow readable, but the per-row score-side resolution is expanded inline with four branch checks and a second `score_difference` guard, so the core loop mixes domain work with repeated score-parsing mechanics.",
+        "`build_possession_model_table_okc_mil.py` repeats the same offense/defense score resolution pattern with slightly different local variables (`sh`/`sa`, `score_row`, conditional assignments), so related modules make developers re-parse similar low-level logic instead of relying on one precise helper.",
+        "`step2_build_possessions.py` stages possession assembly through `possession_chunks` and then a second `possessions` loop that copies fields forward and recomputes `start_time` from the prior result, which adds avoidable local indirection inside one function."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "mid_level_elegance": {
+      "evidence": [
+        "`nba_pbp_utils.py` exposes low-level primitives like `extract_team_context`, `build_valid_possessions`, `count_defensive_fouls`, and `calculate_context_flags`, but each consumer script rebuilds its own possession-to-metric table shape on top of them rather than crossing the boundary through one shared translator (`build_possession_model_table_okc_mil.py:20-84`, `calculate_wmi_rawseason_2024_25.py:44-73`, `calculate_wmi_rawseason_2010_11_to_2023_24.py:106-149`, `categorize_defensive_fouls_okc_mil.py:21-104`).",
+        "`step2_build_possessions.py:23-31` recomputes `timeline_time` and also filters `teamTricode` before calling `extract_team_context`, while other scripts call `load_game_dataframe()` and pass the raw frame directly. That means callers must know different hidden preconditions for the same utility seam.",
+        "The two season pipelines expose different boundary contracts for the same workflow. `calculate_wmi_rawseason_2010_11_to_2023_24.py:152-170` returns dicts with a string `status` discriminator and aggregate components, while `calculate_wmi_rawseason_2024_25.py:44-139` treats the same stage as `DataFrame | None` plus a side-channel `failed_ids` list, so orchestration and retry logic cannot be reused across the scripts.",
+        "Error/lifecycle propagation is inconsistent across those season seams: the 2010-24 path converts network and parse problems into `'missing'` or `'error'` statuses (`calculate_wmi_rawseason_2010_11_to_2023_24.py:83-103`, `152-160`), but the 2024-25 path catches only `RETRYABLE_PIPELINE_ERRORS` during fan-out and otherwise lets failures escape future resolution (`calculate_wmi_rawseason_2024_25.py:109-116`, `131-138`). A developer changing fetch/parse behavior has to inspect each orchestration path separately."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "package_organization": {
+      "evidence": [
+        "`holistic_context.structure.directory_profiles` shows the entire production codebase lives in `.`: 7 production files, 1053 LOC, with no subpackages to separate data loading, possession-building, and WMI calculation responsibilities.",
+        "`holistic_context.structure.root_files` marks 6 of the 7 root production files as `peripheral` with fan_in=1 (`build_possession_model_table_okc_mil.py`, `calculate_wmi_rawgame_okc_mil.py`, `calculate_wmi_rawseason_2010_11_to_2023_24.py`, `calculate_wmi_rawseason_2024_25.py`, `categorize_defensive_fouls_okc_mil.py`, `step2_build_possessions.py`), so they are root stragglers rather than shared entry points.",
+        "The seed scripts all depend on the same root helper module `nba_pbp_utils.py`, but they split into at least three distinct concerns: possession parsing (`step2_build_possessions.py`), single-game analysis/output (`categorize_defensive_fouls_okc_mil.py`, `build_possession_model_table_okc_mil.py`, `calculate_wmi_rawgame_okc_mil.py`), and season aggregation/network collection (`calculate_wmi_rawseason_2010_11_to_2023_24.py`, `calculate_wmi_rawseason_2024_25.py`).",
+        "Tests mirror the flat root names directly (`tests/test_step2_build_possessions.py`, `tests/test_build_possession_model_table_okc_mil.py`, `tests/test_calculate_wmi_rawseason_2024_25.py`), and `tests/conftest.py` manually inserts the repository root into `sys.path`, which is a sign the code is organized as loose top-level scripts instead of an importable package with clear ownership boundaries."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "contract_coherence": {
+      "evidence": [
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.fetch_game_json_with_retry()` returns `(\"missing\", None)` both for real missing games and for exhausted `RequestException` retries, so its status value does not honestly describe the outcome.",
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.process_game()` turns every non-`\"ok\"` result into `{\"status\": \"missing\"}`, which further hides the difference between unavailable data and transport failure from callers.",
+        "`calculate_wmi_rawseason_2024_25.get_completed_regular_season_game_ids()` claims to return completed games, but it only generates the full `0022400001..0022401230` sequence from constants and never checks completion state.",
+        "`calculate_wmi_rawseason_2024_25.build_possession_table_for_game()` uses `None` for several different outcomes (`df.empty`, `valid.empty`, and indirectly upstream fetch failures), while collection code interprets `None` as a failed game ID."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "logic_clarity": {
+      "evidence": [
+        "In build_possession_model_table_okc_mil.py lines 41-42, score selection uses ternaries with a plain else branch, so any team whose side mapping is absent is silently treated as the away team instead of leaving the score unknown.",
+        "categorize_defensive_fouls_okc_mil.py lines 71-78 handles the same home/away mapping with explicit if/elif checks, which shows the score-side logic is not implemented consistently across the codebase.",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py lines 93-103 retries 403/404 and request failures, but after exhaustion always returns \"missing\"; process_game on lines 153-155 then converts every non-ok outcome into the same missing status, collapsing transient fetch failures and real missing games into one path."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "type_safety": {
+      "evidence": [
+        "The two seed scripts are annotated, but they depend on shared helpers that cross the JSON boundary with `dict[str, Any]` and `Sequence[Mapping[str, Any]]`, so the type layer stops before the most failure-prone data shape is validated (`nba_pbp_utils.py:54-90`, `calculate_wmi_rawseason_2010_11_to_2023_24.py:83-158`).",
+        "`process_game()` and `compute_season()` use a string-tagged result protocol through `dict[str, Any]`, then index keys like `result[\"n1\"]` and `result[\"sum_m_l1\"]` only on the `'ok'` branch; runtime behavior depends on a discriminant that the type hints do not model (`calculate_wmi_rawseason_2010_11_to_2023_24.py:152-248`).",
+        "Score-side values are returned as plain `str` even though only `'home'` and `'away'` are valid, and multiple callers branch on those literals; the annotation is broader than the runtime contract (`nba_pbp_utils.py:125-153`, `build_possession_model_table_okc_mil.py:31-38`, `categorize_defensive_fouls_okc_mil.py:62-69`)."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "medium",
+      "issues_preventing_higher_score": ""
+    },
+    "naming_quality": {
+      "evidence": [
+        "Most helper and domain names are readable (`extract_team_context`, `count_defensive_fouls`, `build_valid_possessions`), but the WMI calculation scripts repeatedly switch to single-letter names like `l`, `f`, `n`, `m`, `n1`, and `n0`, so a reader has to keep the formula comment in mind to know what each value represents (`calculate_wmi_rawgame_okc_mil.py:9-45`, `calculate_wmi_rawseason_2010_11_to_2023_24.py:133-149`).",
+        "The season-processing scripts also rely on terse abbreviations for non-math concepts such as `gid`, `grp`, `comps`, and `max_num`, which makes control flow readable only after tracing nearby code (`calculate_wmi_rawseason_2010_11_to_2023_24.py:37-42`, `calculate_wmi_rawseason_2010_11_to_2023_24.py:152-175`, `build_possession_model_table_okc_mil.py:28-40`, `step2_build_possessions.py:34-47`).",
+        "There is some vocabulary drift between explicit business names and symbolic column names: one file exposes `foul_called_this_possession` then immediately maps it into `F_t`, `L_t`, `N_t`, `M_t`, while another works only in the symbolic form, so the naming standard is not consistent across related scripts (`build_possession_model_table_okc_mil.py:56-69`, `calculate_wmi_rawseason_2024_25.py:57-73`)."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "error_consistency": {
+      "evidence": [
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` uses a string-status contract (`\"ok\"`, `\"missing\"`, `\"error\"`) for game processing, but `fetch_game_json_with_retry()` returns `\"missing\"` both for true 403/404 misses and for exhausted `RequestException` retries, so callers cannot tell absent data from transport failure.",
+        "`calculate_wmi_rawseason_2024_25.py` uses exception-based flow for the same play-by-play load path, but its retry tuple `RETRYABLE_PIPELINE_ERRORS` comes from `nba_pbp_utils.py` and includes `ValueError`, `TypeError`, and `KeyError`, so parse/schema failures are retried and then downgraded into `failed_ids` the same way as network outages.",
+        "The single-game scripts `build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, and `step2_build_possessions.py` call `load_game_dataframe()` directly with no boundary handling, while the season scripts add retries and status remapping around the same function, so identical fetch/parse problems surface differently depending on which sibling script is run."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "ai_generated_debt": {
+      "evidence": [
+        "Most modules are short and logic-first, but the season pipelines add a few ceremony-heavy helpers that mostly shuttle arguments and status values instead of adding domain meaning, such as `collect_game_tables()` in `calculate_wmi_rawseason_2024_25.py` and `fetch_status()`/`process_game()` in `calculate_wmi_rawseason_2010_11_to_2023_24.py`.",
+        "Several comments narrate what the next lines already say in code rather than documenting a hidden constraint, including the formula banner in `calculate_wmi_rawgame_okc_mil.py` and step-by-step labels in `categorize_defensive_fouls_okc_mil.py`.",
+        "I did not find broad docstring bloat, full-object debug dumps, or pervasive null-check boilerplate; the noise is present but localized to a few scripts rather than the whole repository."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "single_edit",
+      "confidence": "high",
+      "issues_preventing_higher_score": "A few wrapper layers and restating comments create avoidable ceremony in otherwise direct analysis scripts."
+    },
+    "initialization_coupling": {
+      "evidence": [
+        "The reviewed Python modules are generally import-safe: network calls, CSV reads, and `requests.Session()` creation all happen inside `main()` or helper functions rather than at module scope (`nba_pbp_utils.py`, `calculate_wmi_rawseason_2024_25.py`, `calculate_wmi_rawseason_2010_11_to_2023_24.py`, `calculate_wmi_rawgame_okc_mil.py`).",
+        "There is still workflow-level initialization coupling through module constants: `build_possession_model_table_okc_mil.py` writes to a fixed `OUT_PATH` (`possession_model_table_okc_mil.csv`), while `calculate_wmi_rawgame_okc_mil.py` later reads a fixed `IN_PATH` with the same filename, so correctness depends on having run the matching producer first.",
+        "`step2_build_possessions.parse_possessions` binds `game_id=DEFAULT_SINGLE_GAME_ID` in the function signature, which captures shared configuration at import time instead of resolving it when called; sibling scripts also import the same shared `DEFAULT_SINGLE_GAME_ID` for their `main()` entrypoints."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "medium",
+      "issues_preventing_higher_score": "The code avoids true import-time side effects, but several scripts still depend on shared module constants and fixed file handoffs, so pipeline setup is more order-sensitive than it needs to be."
+    },
+    "convention_outlier": {
+      "evidence": [
+        "The repository keeps all production scripts at the top level, but the naming scheme splits into several unrelated patterns: reusable utility module `nba_pbp_utils.py`, pipeline-step name `step2_build_possessions.py`, season calculators `calculate_wmi_rawseason_2010_11_to_2023_24.py` and `calculate_wmi_rawseason_2024_25.py`, and several `_okc_mil` sample scripts beside them. A developer cannot infer from the filename alone whether a file is generic pipeline code, a one-off sample, or season-specific production logic.",
+        "Sibling season calculators solve the same problem with different internal module conventions. `calculate_wmi_rawseason_2010_11_to_2023_24.py` centers on `build_foul_vector`, `game_wmi_components`, and `process_game`, while `calculate_wmi_rawseason_2024_25.py` centers on `build_possession_table_for_game`, `collect_parallel_tables`, `retry_failed_tables`, and `build_summary`. The shared job boundary is the same, but helper naming and decomposition change enough that patterns learned in one file do not transfer cleanly to the other.",
+        "The single-game scripts also follow mixed behavioral/file conventions. `build_possession_model_table_okc_mil.py` and `categorize_defensive_fouls_okc_mil.py` are generic functions wrapped around `DEFAULT_SINGLE_GAME_ID`, while `calculate_wmi_rawgame_okc_mil.py` does not use shared fetch/build helpers and instead assumes a CSV generated by another script. `step2_build_possessions.py` uses a numbered workflow filename instead of the output-oriented naming used by its siblings."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "test_strategy": {
+      "evidence": [
+        "Every production module in this batch has a matching unit test file, but the tests are limited to tiny handcrafted DataFrames or action lists and do not exercise the full fetch -> transform -> summarize flow in any end-to-end path.",
+        "The highest-risk code paths in the season scripts are retry/concurrency/failure handling (`fetch_game_json_with_retry`, `game_exists`, `compute_season`, `collect_parallel_tables`, `retry_failed_tables`), yet the tests only cover simple helpers like `game_wmi_components`, `get_completed_regular_season_game_ids`, and one happy-path `build_possession_table_for_game` case.",
+        "Several tests are coupled to internal implementation seams instead of behavior at module boundaries, for example patching `calculate_wmi_rawseason_2024_25.load_game_dataframe_with_retry` in `tests/test_calculate_wmi_rawseason_2024_25.py` and patching `nba_pbp_utils.requests.get` in `tests/test_build_possession_model_table_okc_mil.py`, which means refactors to request plumbing can break tests without changing user-visible behavior."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "api_surface_coherence": {
+      "evidence": [
+        "The shared helper layer in nba_pbp_utils.py mixes several API styles: fetch_playbyplay_payload() raises HTTP/JSON exceptions on failure, load_game_dataframe() forwards those exceptions, extract_team_context() raises ValueError for malformed game data, while actions_to_dataframe() and build_valid_possessions() return empty DataFrames for missing/invalid input instead of failing fast.",
+        "The two season pipelines expose the same workflow through different public contracts. calculate_wmi_rawseason_2010_11_to_2023_24.py uses fetch_game_json_with_retry() and process_game() with string status tags like \"ok\"/\"missing\" and dict payloads, but calculate_wmi_rawseason_2024_25.py uses load_game_dataframe_with_retry() and build_possession_table_for_game() with exceptions plus None return values for non-usable games.",
+        "extract_team_context() returns an unnamed 3-tuple whose elements are consumed positionally in several shapes across callers, such as team_id_to_tricode, opponent_id, team_ids in build_possession_model_table_okc_mil.py and _, opponent_id, team_ids in calculate_wmi_rawseason_2024_25.py, so callers must remember tuple order instead of relying on a named result type.",
+        "Similar public entry points also accept different input forms for the same domain step: parse_possessions() expects a prebuilt play-by-play DataFrame plus an optional game_id, build_table() and build_def_foul_context() accept a game_id and fetch internally, and calculate_wmi_rawgame() accepts an already-shaped possession table DataFrame. That makes the pipeline hard to compose consistently without reading each implementation."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "authorization_consistency": {
+      "evidence": [
+        "The repository structure is limited to standalone Python analytics scripts and tests (`nba_pbp_utils.py`, `step2_build_possessions.py`, `build_possession_model_table_okc_mil.py`, `calculate_wmi_rawseason_2024_25.py`, `calculate_wmi_rawseason_2010_11_to_2023_24.py`) with no route handlers, auth decorators, middleware, user/session models, or database access layers to apply inconsistent authorization against.",
+        "Network access in the reviewed production files is only outbound `requests` calls to the public NBA play-by-play CDN (`fetch_playbyplay_payload` in `nba_pbp_utils.py`, `fetch_status` in `calculate_wmi_rawseason_2010_11_to_2023_24.py`), and the scripts write local CSV outputs rather than exposing protected resources.",
+        "A repository-wide search across production files and tests did not reveal sibling endpoints, permission literals, admin/service-role code paths, Supabase/RLS usage, or other protected-resource surfaces where auth coverage could drift; the repo reads as a local data pipeline rather than an application with mixed trust boundaries.",
+        "Because authorization concerns are mostly absent rather than actively designed here, a developer can rely on there being no meaningful auth surface in the current codebase, but there is also little explicit documentation saying these scripts are intended to stay unauthenticated and local-only."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "single_edit",
+      "confidence": "high",
+      "issues_preventing_higher_score": "The score stops short of 100 because the repo has almost no authorization surface to evaluate, and the local-only/public-data trust boundary is implicit rather than documented in code or README."
+    },
+    "incomplete_migration": {
+      "evidence": [
+        "The repo keeps two possession-building paths alive at once: `step2_build_possessions.py` still exports the older possession sample format (`start_time`, `end_time`, `defensive_foul_count`) while `build_possession_model_table_okc_mil.py` builds the newer modeling table with `L_t`, `F_t`, `N_t`, and `M_t` for the same OKC/MIL workflow.",
+        "`README.md` still says the current possession builder is `step2_build_possessions.py`, but the project log later records `build_possession_model_table_okc_mil.py` as the script used for the current raw-WMI pipeline, so a developer sees both an old and a new canonical entry point.",
+        "The seasonal WMI scripts use different generations of the data-loading API for the same job: `calculate_wmi_rawseason_2024_25.py` goes through shared `load_game_dataframe`, while `calculate_wmi_rawseason_2010_11_to_2023_24.py` keeps its own lower-level `fetch_status` / `fetch_game_json_with_retry` path and then rebuilds the dataframe from raw actions.",
+        "The older possession path is not merely archived: `tests/test_step2_build_possessions.py` still exercises it, which keeps the legacy interface looking supported even though downstream current scripts consume the newer possession-model table instead."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    },
+    "design_coherence": {
+      "evidence": [
+        "The same possession-to-foul-to-context pipeline is rebuilt in several places instead of being owned by one domain function: `step2_build_possessions.py:23-104`, `build_possession_model_table_okc_mil.py:20-84`, `categorize_defensive_fouls_okc_mil.py:21-104`, `calculate_wmi_rawseason_2024_25.py:44-73`, and `calculate_wmi_rawseason_2010_11_to_2023_24.py:106-149` all loop over `valid.groupby(\"possession_group\")`, derive defensive foul flags, then compute `L_t/N_t/M_t` or close variants.",
+        "`step2_build_possessions.py:23-104` mixes timeline normalization, team-context extraction, live-ball boundary selection, foul-event filtering, and interval stitching in one function, so changing possession boundary rules requires editing multiple stages of logic in one body.",
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` combines HTTP probing (`fetch_status`, `season_exists`, `game_exists`, `find_max_existing_game_number`, `fetch_game_json_with_retry`), play-by-play feature extraction (`build_foul_vector`, `game_wmi_components`), and threaded season aggregation/output (`compute_season`, `main`) in one script, while `calculate_wmi_rawseason_2024_25.py` implements a second, different orchestration path for a closely related job."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor",
+      "confidence": "high",
+      "issues_preventing_higher_score": ""
+    }
+  },
+  "issues": [
+    {
+      "dimension": "cross_module_architecture",
+      "identifier": "hub_utils_module_blurs_boundaries",
+      "summary": "`nba_pbp_utils.py` acts as a catch-all hub across transport, domain logic, and CLI helpers",
+      "confidence": "high",
+      "suggestion": "Split `nba_pbp_utils.py` into narrower modules such as `pbp_client.py` for HTTP loading, `pbp_frame.py` for dataframe normalization, and `wmi_domain.py` for possession/foul/context logic; keep CLI printing helpers out of the shared core so scripts depend on one domain API instead of a grab bag.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "step2_build_possessions.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "`nba_pbp_utils.py` contains network access (`fetch_playbyplay_payload`, `load_game_dataframe`), dataframe normalization (`actions_to_dataframe`), domain helpers (`build_valid_possessions`, `count_defensive_fouls`, `infer_team_score_side`), constants, and output rendering (`format_output_preview`).",
+        "Every production script imports from this module, so changing fetch behavior, dataframe columns, or helper signatures has codebase-wide blast radius.",
+        "Because the module crosses infra, domain, and presentation concerns, script boundaries are thin wrappers over a shared internal blob rather than explicit layer contracts."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change"
+    },
+    {
+      "dimension": "cross_module_architecture",
+      "identifier": "season_pipelines_have_diverged",
+      "summary": "The two season calculators maintain parallel architectures for the same WMI workflow",
+      "confidence": "high",
+      "suggestion": "Extract one reusable season pipeline module that owns game loading, possession-table construction, and WMI aggregation; make both season scripts thin configuration wrappers over that pipeline so season-specific differences live in parameters, not duplicated orchestration stacks.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` uses `fetch_status`, `fetch_game_json_with_retry`, `build_foul_vector`, and `game_wmi_components` directly from raw action payloads.",
+        "`calculate_wmi_rawseason_2024_25.py` instead routes through `load_game_dataframe_with_retry`, `build_possession_table_for_game`, `collect_parallel_tables`, and `build_summary` using possession tables as the seam.",
+        "Both scripts ultimately calculate the same WMI aggregates, but because their module boundaries differ, fixes to retry rules, possession semantics, or summary rules have to be reasoned about in two different architectures."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "architectural_change"
+    },
+    {
+      "dimension": "cross_module_architecture",
+      "identifier": "domain_boundary_reimplemented_in_scripts",
+      "summary": "Core possession-building flow is duplicated across multiple top-level scripts",
+      "confidence": "high",
+      "suggestion": "Introduce a single possession-domain builder that returns a canonical possession-level table or iterator, then have the reporting scripts transform that stable output into CSV-specific shapes. That reduces peer-to-peer knowledge of raw dataframe structure.",
+      "related_files": [
+        "step2_build_possessions.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "Each script independently performs some version of `extract_team_context`, `build_valid_possessions`, grouped possession iteration, and defensive foul counting.",
+        "`step2_build_possessions.py`, `build_possession_model_table_okc_mil.py`, and `categorize_defensive_fouls_okc_mil.py` all reassemble possession-level rows for different outputs instead of calling a shared possession-domain module.",
+        "This creates a cross-module coordination problem: a change to how possessions are filtered or grouped requires edits in several peer scripts rather than one owned boundary."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "high_level_elegance",
+      "identifier": "catch_all_utils_owns_multiple_layers",
+      "summary": "One shared utils module mixes transport, domain rules, and presentation concerns",
+      "confidence": "high",
+      "suggestion": "Split `nba_pbp_utils.py` into a small package with explicit modules such as `data_source.py`, `pbp_transform.py`, `possession_model.py`, and `reporting.py`, then make scripts depend on those narrower modules or a thin public pipeline API.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`nba_pbp_utils.py` contains HTTP access (`fetch_playbyplay_payload`), dataframe construction (`actions_to_dataframe`), possession/domain helpers (`build_valid_possessions`, `count_defensive_fouls`, `infer_team_score_side`), and output formatting (`format_output_preview`) in one module.",
+        "Each top-level script imports a different slice of that same module as its main dependency, so developers have to treat `nba_pbp_utils.py` as a catch-all ownership boundary rather than a domain-specific API."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change"
+    },
+    {
+      "dimension": "high_level_elegance",
+      "identifier": "pipeline_logic_scattered_across_entry_scripts",
+      "summary": "Core WMI pipeline is reimplemented across peer scripts instead of owned by one subsystem",
+      "confidence": "high",
+      "suggestion": "Create a dedicated pipeline package that owns the stages explicitly, for example `pipeline/ingest.py`, `pipeline/possessions.py`, `pipeline/wmi_inputs.py`, and `pipeline/aggregations.py`, then reduce the current scripts to thin CLI wrappers over that shared flow.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "step2_build_possessions.py"
+      ],
+      "evidence": [
+        "`build_possession_model_table_okc_mil.py` computes possession rows, score context, foul flags, and WMI variables directly in one script.",
+        "`calculate_wmi_rawseason_2024_25.py` separately rebuilds possession tables and WMI variables for a season, while `calculate_wmi_rawseason_2010_11_to_2023_24.py` uses a different path that skips possession tables and derives a foul vector from raw actions.",
+        "Because these scripts are peers at the repo root, the top-level structure suggests each file owns its own version of the workflow instead of exposing one predictable subsystem for 'build possessions', 'derive WMI inputs', and 'aggregate results'."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "architectural_change"
+    },
+    {
+      "dimension": "high_level_elegance",
+      "identifier": "docs_and_outputs_do_not_map_to_clear_entrypoints",
+      "summary": "Top-level docs describe outputs and stages that the repository cannot clearly regenerate",
+      "confidence": "high",
+      "suggestion": "Add a real top-level project map in `README.md` that names the authoritative pipeline stages and entrypoints, and either add the missing 2025-26 producer script or move generated outputs under a documented `outputs/` area with metadata showing which script produced each file.",
+      "related_files": [
+        "README.md",
+        "Plan for WMI - Ryan Kalfus (2026).md",
+        "Definitions for NBA Analytics Research - Ryan Kalfus (2026).md",
+        "nba-whistle-project-log.md"
+      ],
+      "evidence": [
+        "`README.md` only describes the possession builder's current status, so it does not tell a new developer where the broader WMI pipeline lives or which scripts are authoritative.",
+        "The plan and definitions list current outputs including `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv`, but the repository has no matching production script for 2025-26 generation; only 2024-25 and 2010-11-to-2023-24 season scripts exist.",
+        "`nba-whistle-project-log.md` records the 2025-26 summary as a project artifact, which makes the absence of a clear owning entrypoint more confusing rather than clarifying ownership."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "abstraction_fitness",
+      "identifier": "generic_helper_sink",
+      "summary": "`nba_pbp_utils.py` has become a catch-all helper module instead of a bounded domain API.",
+      "confidence": "high",
+      "suggestion": "Split `nba_pbp_utils.py` into bounded modules such as `pbp_fetch.py`, `pbp_frames.py`, `possession_model.py`, and `reporting.py`, then have scripts import a small number of explicit domain functions like `build_possession_table(...)` or `extract_defensive_foul_events(...)` instead of assembling workflows from generic helpers.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "step2_build_possessions.py"
+      ],
+      "evidence": [
+        "`nba_pbp_utils.py` mixes transport (`fetch_playbyplay_payload`, lines 54-64), parsing (`actions_to_dataframe`, lines 67-80), domain derivation (`build_valid_possessions`, lines 104-111; `count_defensive_fouls`, lines 114-122; `infer_team_score_side`, lines 125-153), constants, and presentation (`format_output_preview`, lines 168-183) in one module.",
+        "Every main production script imports several unrelated names from that same module, for example `build_possession_model_table_okc_mil.py` lines 5-15 and `categorize_defensive_fouls_okc_mil.py` lines 5-16, which makes the helper module the de facto project API rather than a set of explicit domain packages."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change"
+    },
+    {
+      "dimension": "abstraction_fitness",
+      "identifier": "rederived_possession_pipeline",
+      "summary": "Possession-to-foul logic is reimplemented across scripts instead of being captured once behind a direct domain abstraction.",
+      "confidence": "high",
+      "suggestion": "Extract one shared domain-level function that returns a possession-level representation from play-by-play data, then layer specialized outputs on top of that shared result instead of rebuilding grouping and foul classification in each script.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "step2_build_possessions.py",
+        "categorize_defensive_fouls_okc_mil.py"
+      ],
+      "evidence": [
+        "`build_possession_model_table_okc_mil.py` lines 27-59 groups possessions and computes defensive foul counts to build table rows.",
+        "`calculate_wmi_rawseason_2024_25.py` lines 57-73 repeats the same grouping and foul-flag construction for season aggregation.",
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` lines 106-130 again rebuilds the same flow as `build_foul_vector`, while `step2_build_possessions.py` lines 33-65 performs a closely related possession walk with its own derived outputs.",
+        "Because the core workflow lives as copy-and-adjust logic in scripts, developers have to know several helper functions and reconstruct the same concept repeatedly rather than call one well-named domain function."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "dependency_health",
+      "identifier": "unpinned_runtime_requirements",
+      "summary": "Runtime dependencies are unpinned, making the data pipeline harder to reproduce safely",
+      "confidence": "high",
+      "suggestion": "Add at least tested version ranges for runtime packages in `requirements.txt` (for example compatible-release pins or upper/lower bounds), and refresh them intentionally when validating against the current scripts and tests.",
+      "related_files": [
+        "requirements.txt",
+        "nba_pbp_utils.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`requirements.txt` lists bare package names `pandas` and `requests` with no version bounds.",
+        "`nba_pbp_utils.py` depends directly on `requests` APIs such as `requests.get`, `requests.Session`, and `requests.RequestException`.",
+        "The season scripts and seed scripts build their core logic on pandas DataFrame behavior, so silent major-version upgrades would affect most production flows."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "single_edit"
+    },
+    {
+      "dimension": "low_level_elegance",
+      "identifier": "duplicated_score_resolution_branches",
+      "summary": "Related scripts inline the same score-resolution branches instead of using one helper",
+      "confidence": "high",
+      "suggestion": "Extract a single helper in `nba_pbp_utils.py` that takes the score fields plus offense/defense team ids and returns `score_difference`, then replace both inline branch blocks with that helper so each loop focuses only on possession/event assembly.",
+      "related_files": [
+        "categorize_defensive_fouls_okc_mil.py",
+        "build_possession_model_table_okc_mil.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`categorize_defensive_fouls_okc_mil.py` resolves `offense_score` and `defense_score` with four `if`/`elif` branches based on `team_score_side`, then separately guards the subtraction.",
+        "`build_possession_model_table_okc_mil.py` performs the same home/away resolution again with a different local shape (`sh`/`sa`, `score_row`, ternary assignments), so the same low-level rule now has two implementations.",
+        "Because both scripts operate on the same possession/foul domain, this inconsistency is local craft debt rather than a package-boundary problem: readers must inspect each function body to confirm the branches still mean the same thing."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "low_level_elegance",
+      "identifier": "two_stage_possession_row_assembly",
+      "summary": "`parse_possessions` uses an unnecessary two-pass staging structure that obscures the final row logic",
+      "confidence": "high",
+      "suggestion": "Collapse the two loops into one output-building pass with a `previous_end_time` variable, or extract a small helper that computes the live-ball timing tuple for a grouped possession before appending the final row once.",
+      "related_files": [
+        "step2_build_possessions.py"
+      ],
+      "evidence": [
+        "`parse_possessions` first builds `possession_chunks` dictionaries with `start_time` and `last_event_time`, then immediately loops over that list to build a second `possessions` list with renamed fields and carry-forward state.",
+        "The second pass depends on `possessions[i - 1][\"end_time\"]` to derive the next row's start, so understanding one output row requires tracking two mutable lists and two nearly identical dict shapes.",
+        "This is not a high-level ownership problem; it is local indirection inside one function that makes the control flow less direct than the underlying calculation."
+      ],
+      "impact_scope": "local",
+      "fix_scope": "single_edit"
+    },
+    {
+      "dimension": "mid_level_elegance",
+      "identifier": "duplicated_possession_translation_seams",
+      "summary": "Multiple scripts rebuild the same play-by-play to possession-context translation by hand",
+      "confidence": "high",
+      "suggestion": "Promote one shared boundary API in `nba_pbp_utils.py` that converts a game frame or action list into a canonical possession-context table, then let script modules only select columns or aggregate that table for their specific output. This keeps domain translation in one place and makes downstream orchestration composition-based instead of mapper-heavy.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`build_possession_model_table_okc_mil.py:20-69` derives possession rows, defensive foul flags, and `L_t/F_t/N_t/M_t` from the shared utilities.",
+        "`calculate_wmi_rawseason_2024_25.py:44-73` repeats nearly the same possession grouping and context-flag derivation, but emits a different table shape.",
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py:106-149` repeats the same translation again, but this time collapses it into tuple aggregates instead of a table.",
+        "`categorize_defensive_fouls_okc_mil.py:26-100` performs another custom pass over possession groups and then maps event rows back into possession-level context with its own index map.",
+        "Because the module boundary stops at tiny helpers in `nba_pbp_utils.py`, every script owns its own mapper and output contract, so a rule change in foul classification or context windows would require synchronized edits across several orchestration files."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "mid_level_elegance",
+      "identifier": "season_pipelines_use_incompatible_handoff_contracts",
+      "summary": "The two season calculators hand off per-game results through incompatible result shapes and failure channels",
+      "confidence": "high",
+      "suggestion": "Define a single per-game result object or typed dict for seasonal processing, with explicit fields for `game_id`, normalized payload/table, and a stable error category. Use that contract in both season scripts so retry, aggregation, and reporting code can share one predictable seam.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "In `calculate_wmi_rawseason_2010_11_to_2023_24.py:152-170`, `process_game()` returns dicts tagged with `status` and numeric fields, and `compute_season()` switches on that discriminator at `209-225`.",
+        "In `calculate_wmi_rawseason_2024_25.py:44-139`, the equivalent stage returns `pd.DataFrame | None`, while failures are tracked separately in mutable `failed_ids` lists inside `collect_parallel_tables()` and `retry_failed_tables()`.",
+        "These are the same integration seam conceptually: fetch one game, translate it, and report success or failure. But callers must understand two unrelated protocols, which prevents reuse of retry/orchestration behavior and makes cross-season changes higher risk."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "mid_level_elegance",
+      "identifier": "utility_boundary_has_hidden_input_preconditions",
+      "summary": "Callers must know extra preprocessing rules before shared utility functions are safe to use",
+      "confidence": "medium",
+      "suggestion": "Move the required normalization steps into a single utility entry point, such as a `prepare_game_frame()` or `build_possession_context()` function, and document that as the supported seam. Callers should not decide independently whether they must sort, filter teams, or synthesize `timeline_time` before using downstream helpers.",
+      "related_files": [
+        "step2_build_possessions.py",
+        "nba_pbp_utils.py",
+        "build_possession_model_table_okc_mil.py"
+      ],
+      "evidence": [
+        "`nba_pbp_utils.extract_team_context()` assumes the incoming frame already has exactly two valid non-null team IDs (`nba_pbp_utils.py:93-101`).",
+        "`step2_build_possessions.py:24-31` sorts the frame, drops null `game_seconds_elapsed`, recomputes `timeline_time`, and filters `teamTricode` with `is_team_value()` before calling `extract_team_context()`, which signals the raw utility seam is not self-sufficient.",
+        "`build_possession_model_table_okc_mil.py:21-25` calls `load_game_dataframe()` and then `extract_team_context()` directly, relying on a different preparation path. The correct preprocessing steps therefore live in callers' heads instead of in one obvious boundary layer."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "package_organization",
+      "identifier": "root_pipeline_scripts_left_flat",
+      "summary": "Six low-fan-in pipeline scripts sit at repo root instead of inside workflow-focused packages.",
+      "confidence": "high",
+      "suggestion": "Stage the reorg in this order: 1. Create `src/nba_whistle/core/` and move `nba_pbp_utils.py` to `src/nba_whistle/core/pbp.py`. 2. Create `src/nba_whistle/pipelines/single_game/` and move `step2_build_possessions.py`, `categorize_defensive_fouls_okc_mil.py`, `build_possession_model_table_okc_mil.py`, and `calculate_wmi_rawgame_okc_mil.py` there. 3. Create `src/nba_whistle/pipelines/season/` and move `calculate_wmi_rawseason_2010_11_to_2023_24.py` and `calculate_wmi_rawseason_2024_25.py` there. 4. Update imports and test imports to package paths, then validate with `pytest -q` and `python -m src.nba_whistle.pipelines.single_game.step2_build_possessions` / `python -m src.nba_whistle.pipelines.season.calculate_wmi_rawseason_2024_25`.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawgame_okc_mil.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "step2_build_possessions.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`holistic_context.structure.root_files` shows these six files are all root-level `peripheral` modules with fan_in=1, which matches the rubric's root-straggler threshold rather than a justified shared-core placement.",
+        "The files are not independent utilities: every seed script imports `nba_pbp_utils.py`, and their names show a single NBA whistle analysis workflow spread across unrelated root filenames instead of navigable folders.",
+        "A new developer cannot infer where to add another single-game pipeline step versus a season aggregation step because both live side by side at the root with no package boundary to signal ownership."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change"
+    },
+    {
+      "dimension": "package_organization",
+      "identifier": "workflow_boundaries_not_encoded_in_layout",
+      "summary": "Single-game and season-scale jobs are mixed in one layer, hiding change boundaries.",
+      "confidence": "high",
+      "suggestion": "Encode boundaries explicitly. Move reusable functions out of the season scripts into `src/nba_whistle/season/collection.py` and `src/nba_whistle/season/metrics.py`, keep only thin CLI entrypoints under `scripts/` or `src/nba_whistle/pipelines/`, and move generated CSV artifacts under `outputs/`. Apply the moves in this order: reusable helpers first, then season entrypoints, then single-game entrypoints, then artifact relocation. After import updates, validate with `pytest -q`, `python -m src.nba_whistle.pipelines.season.calculate_wmi_rawseason_2010_11_to_2023_24 --help` if you add CLI wrappers, and `python -m compileall src tests`.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "step2_build_possessions.py",
+        "tests/conftest.py"
+      ],
+      "evidence": [
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` and `calculate_wmi_rawseason_2024_25.py` own network retries, concurrency, and season aggregation, while `step2_build_possessions.py`, `categorize_defensive_fouls_okc_mil.py`, and `build_possession_model_table_okc_mil.py` are single-game transformation scripts; these are different operational domains but the directory structure does not reflect that split.",
+        "Because everything lives at root, tests import modules by filename and `tests/conftest.py` patches `sys.path` to make that work, which increases coupling to the flat layout and makes re-homing code harder.",
+        "The root listing combines executable scripts, data outputs, docs, and notebooks in the same top-level namespace, so file placement does not communicate whether a name is reusable library code, a one-off pipeline stage, or an artifact."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "architectural_change"
+    },
+    {
+      "dimension": "contract_coherence",
+      "identifier": "missing_status_hides_fetch_failures",
+      "summary": "Season fetch helper reports transient request failures as \"missing\" games.",
+      "confidence": "high",
+      "suggestion": "Split the status contract into distinct outcomes such as `ok`, `missing`, and `failed`, or raise on exhausted request errors so callers can count network failures separately from absent games.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`fetch_game_json_with_retry()` retries `RequestException` and then returns `(\"missing\", None)` after exhausting retries at lines 83-103.",
+        "`process_game()` treats every non-`\"ok\"` result as `{\"status\": \"missing\"}` at lines 152-160, so downstream season totals count transport failures as missing games."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "contract_coherence",
+      "identifier": "completed_game_ids_not_actually_verified",
+      "summary": "`get_completed_regular_season_game_ids` promises completed games but returns a fixed full schedule.",
+      "confidence": "medium",
+      "suggestion": "Rename the function to something like `get_regular_season_game_ids()` if fixed schedule IDs are intended, or add a real completion filter before advertising the result as completed games.",
+      "related_files": [
+        "calculate_wmi_rawseason_2024_25.py",
+        "tests/test_calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "`get_completed_regular_season_game_ids()` at lines 76-78 only formats `1..1230` with `SEASON_GAME_ID_PREFIX`; it performs no completion check.",
+        "The test `test_get_completed_regular_season_game_ids_spans_full_schedule()` asserts only the fixed range and length, reinforcing that the function contract is schedule generation rather than completion detection."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "single_edit"
+    },
+    {
+      "dimension": "contract_coherence",
+      "identifier": "none_return_overloads_empty_and_failed",
+      "summary": "Optional table builder return mixes empty-data and failure outcomes into one `None` contract.",
+      "confidence": "high",
+      "suggestion": "Return a small result object or explicit status enum alongside the table so callers can separately handle fetch failure, unusable game data, and successful empty results.",
+      "related_files": [
+        "calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "`build_possession_table_for_game()` returns `None` when the loaded frame is empty and again when filtered possessions are empty at lines 44-73.",
+        "`collect_parallel_tables()` and `retry_failed_tables()` treat `None` or an empty table as a failed game ID at lines 91-119 and 128-141, so the caller cannot distinguish \"game had no usable possessions\" from \"game fetch/build failed\"."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "logic_clarity",
+      "identifier": "score_side_fallback_defaults_to_away",
+      "summary": "Missing score-side mapping is silently treated as away in possession scoring",
+      "confidence": "high",
+      "suggestion": "Extract one shared helper for score lookup by team side and have it return None when the team is not mapped to home or away; use that helper in both scripts so unknown mappings never fall through to the away score.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py"
+      ],
+      "evidence": [
+        "build_possession_model_table_okc_mil.py lines 41-42 set offense_score and defense_score with `... == \"home\" else sa`, so when `infer_team_score_side()` returns no entry for a team, the code still assigns the away score.",
+        "The sibling script categorize_defensive_fouls_okc_mil.py lines 71-78 uses explicit `if`/`elif` branches and leaves scores as None when no mapping exists, which avoids manufacturing a score difference from an unknown mapping."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "logic_clarity",
+      "identifier": "season_fetch_status_conflates_missing_and_failed",
+      "summary": "Season fetch flow collapses transient failures into the same \"missing\" branch",
+      "confidence": "high",
+      "suggestion": "Return distinct terminal statuses such as `missing` and `failed`, preserve them in `process_game()`, and let `compute_season()` count each case separately so the summary matches what actually happened.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "fetch_game_json_with_retry() lines 93-103 retries 403/404, retryable HTTP codes, and request exceptions, but after all retries it always returns `(\\\"missing\\\", None)` rather than distinguishing a confirmed missing game from a failed fetch.",
+        "process_game() lines 153-155 then maps every non-`ok` result to `{\"status\": \"missing\"}`, so downstream counts can report network/server failures as missing games instead of failed games."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "single_edit"
+    },
+    {
+      "dimension": "type_safety",
+      "identifier": "untyped_playbyplay_payload_contract",
+      "summary": "Network payloads are typed as generic dict/Any instead of the JSON shape the code relies on",
+      "confidence": "high",
+      "suggestion": "Define TypedDicts for the NBA payload (`PlayByPlayPayload`, `GameNode`, `ActionRecord`) and change the fetch/load helpers to return those concrete types. Validate or narrow the JSON once at the boundary, then keep downstream functions typed against the validated shape instead of `Any`.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`fetch_playbyplay_payload()` returns `dict[str, Any]`, and `load_game_dataframe()` immediately assumes a nested `game -> actions` structure via chained `.get()` calls (`nba_pbp_utils.py:54-90`).",
+        "The historical-season path repeats the same pattern: `fetch_game_json_with_retry()` returns `tuple[str, dict[str, Any] | None]`, then `process_game()` pulls `payload.get(\"game\", {}).get(\"actions\", [])` and passes it onward as if it were the expected action sequence (`calculate_wmi_rawseason_2010_11_to_2023_24.py:83-158`).",
+        "Because the payload and action records stay as `Any`/`Mapping[str, Any]`, type checking cannot catch missing fields like `orderNumber`, `actionNumber`, `teamId`, or `possession` before pandas operations rely on them."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "type_safety",
+      "identifier": "dict_any_status_protocol",
+      "summary": "Tagged result objects use dict[str, Any], so the status-dependent key contract is invisible to types",
+      "confidence": "high",
+      "suggestion": "Replace `dict[str, Any]` with a discriminated union of TypedDicts or dataclasses, for example `OkGameResult`, `MissingGameResult`, and `ErrorGameResult`, keyed by a `Literal` status field. That keeps the existing control flow but makes key availability checkable after the status branch.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`process_game()` returns `dict[str, Any]` with three runtime variants: `{\"status\": \"missing\", ...}`, `{\"status\": \"error\", ...}`, and an `'ok'` shape that also includes `n1`, `n0`, `sum_m_l1`, and `sum_m_l0` (`calculate_wmi_rawseason_2010_11_to_2023_24.py:152-170`).",
+        "`compute_season()` reads `result[\"status\"]` and then indexes `result[\"n1\"]`, `result[\"n0\"]`, `result[\"sum_m_l1\"]`, and `result[\"sum_m_l0\"]` on the `'ok'` branch (`calculate_wmi_rawseason_2010_11_to_2023_24.py:209-218`).",
+        "The code is relying on a discriminated union, but the annotation collapses everything to `Any`, so a misspelled key or incomplete `'ok'` result would not be caught by static checking."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "type_safety",
+      "identifier": "score_side_should_be_literal",
+      "summary": "Score-side helpers expose plain str even though only 'home' and 'away' are valid",
+      "confidence": "medium",
+      "suggestion": "Introduce a narrow alias such as `type ScoreSide = Literal[\"home\", \"away\"]` or a small enum, and use it in `infer_team_score_side()` and its callers so the valid domain is enforced consistently.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py"
+      ],
+      "evidence": [
+        "`infer_team_score_side()` returns `dict[int, str]`, but it only ever writes `'home'` or `'away'` (`nba_pbp_utils.py:125-153`).",
+        "The seed scripts branch on those exact sentinel values with repeated raw-string comparisons, for example `score_side.get(offense_team_id) == \"home\"` and `team_score_side.get(defense_team_id) == \"away\"` (`build_possession_model_table_okc_mil.py:31-38`, `categorize_defensive_fouls_okc_mil.py:62-69`).",
+        "Because the helper advertises plain `str`, type checking cannot catch a typo like `'hme'` or a third impossible value introduced later."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "naming_quality",
+      "identifier": "symbolic_metric_locals_hide_wmi_intent",
+      "summary": "Single-letter WMI locals force readers to decode the formula instead of the code",
+      "confidence": "high",
+      "suggestion": "Rename local variables to intent-bearing names such as `prior_foul_flags`, `current_foul_flags`, `next_foul_flags`, `weighted_foul_values`, `prior_window_count`, and `outside_window_count`; keep the symbolic column names only at the final dataframe boundary if they are required by the metric definition.",
+      "related_files": [
+        "calculate_wmi_rawgame_okc_mil.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "`calculate_wmi_rawgame` stores the core series as `l`, `f`, `n`, and `m`, then derives `n1` and `n0`, even though these values mean prior-foul flag, foul flag, next-foul flag, and weighted foul metric (`calculate_wmi_rawgame_okc_mil.py:9-45`).",
+        "`game_wmi_components` and `build_possession_table_for_game` repeat the same symbolic naming style with `f`, `l_vals`, `n_vals`, `m_vals`, and output columns `F_t`, `L_t`, `N_t`, `M_t`, so the same concept is only understandable if the reader already knows the paper notation (`calculate_wmi_rawseason_2010_11_to_2023_24.py:133-149`, `calculate_wmi_rawseason_2024_25.py:57-73`)."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "naming_quality",
+      "identifier": "non_math_abbreviations_reduce_script_readability",
+      "summary": "Terse abbreviations like `gid`, `grp`, `sr`, and `max_num` weaken otherwise descriptive scripts",
+      "confidence": "high",
+      "suggestion": "Expand repeated abbreviations to full domain names such as `game_id`, `possession_group_df`, `score_row`, `score_home`, `score_away`, and `max_game_number` so readers can skim the scripts without translating shorthand.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "step2_build_possessions.py"
+      ],
+      "evidence": [
+        "The season crawler uses `gid` for game IDs in `fetch_status`, `fetch_game_json_with_retry`, `process_game`, and the futures map; that abbreviation is repeated often enough that it becomes local jargon instead of a one-off short name (`calculate_wmi_rawseason_2010_11_to_2023_24.py:37-42`, `calculate_wmi_rawseason_2010_11_to_2023_24.py:83-103`, `calculate_wmi_rawseason_2010_11_to_2023_24.py:152-170`).",
+        "`build_possession_model_table_okc_mil.py` uses `grp`, `sr`, `sh`, and `sa` inside score extraction, even though nearby names are much clearer like `offense_team_id` and `score_difference` (`build_possession_model_table_okc_mil.py:28-44`).",
+        "Other scripts continue the same pattern with `grp` for grouped possessions, so the abbreviated naming is a subsystem habit rather than a single local exception (`categorize_defensive_fouls_okc_mil.py:28-31`, `step2_build_possessions.py:34-47`)."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "naming_quality",
+      "identifier": "mixed_domain_and_formula_vocab_causes_convention_drift",
+      "summary": "Related scripts alternate between descriptive foul names and formula symbols without a stable naming boundary",
+      "confidence": "medium",
+      "suggestion": "Pick one naming boundary for the metric: use descriptive internal names everywhere and translate to `L_t`/`F_t`/`N_t`/`M_t` only in final CSV columns, or adopt a shared helper that makes the symbolic mapping explicit across all scripts.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "categorize_defensive_fouls_okc_mil.py"
+      ],
+      "evidence": [
+        "`build_possession_model_table_okc_mil.py` computes `has_def_foul` and stores it as `foul_called_this_possession`, then immediately mirrors it into `F_t`; the same concept gets two naming schemes in one function (`build_possession_model_table_okc_mil.py:31-32`, `build_possession_model_table_okc_mil.py:56-69`).",
+        "`categorize_defensive_fouls_okc_mil.py` uses descriptive names like `called_in_last2` and `called_in_next2` alongside `L_t`, `F_t`, `N_t`, `M_t`, while `calculate_wmi_rawseason_2024_25.py` skips the descriptive layer and uses only symbolic names in the produced table (`categorize_defensive_fouls_okc_mil.py:84-100`, `calculate_wmi_rawseason_2024_25.py:62-73`)."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "error_consistency",
+      "identifier": "historical_season_missing_masks_transport_failures",
+      "summary": "Historical season pipeline reports transport failures as missing games and drops the cause.",
+      "confidence": "high",
+      "suggestion": "Use a typed result or richer status object that separates `missing`, `retry_exhausted`, and `invalid_payload`, and carry the original HTTP status or exception message through to `process_game()` and the season summary.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "In `fetch_game_json_with_retry()` lines 88-103, repeated `RequestException` failures and non-200/non-retryable statuses both end by returning `(\"missing\", None)`.",
+        "`process_game()` lines 152-160 maps every non-`ok` result to `{\"status\": \"missing\"}`, so downstream totals cannot distinguish real absent games from download failures.",
+        "This loses the original exception/status context entirely, making seasonal error counts unreliable and harder to debug."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "error_consistency",
+      "identifier": "retry_bucket_mixes_transient_and_data_errors",
+      "summary": "The 2024-25 pipeline retries and suppresses parse errors as if they were transient I/O failures.",
+      "confidence": "high",
+      "suggestion": "Split transient fetch exceptions from deterministic parse/schema exceptions. Retry only request-layer failures, and surface parse errors with explicit context such as game id and failing field so callers can report them separately.",
+      "related_files": [
+        "calculate_wmi_rawseason_2024_25.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`nba_pbp_utils.py` defines `RETRYABLE_PIPELINE_ERRORS` as `(requests.RequestException, ValueError, TypeError, KeyError)` at line 26.",
+        "`load_game_dataframe_with_retry()` in `calculate_wmi_rawseason_2024_25.py` catches that whole tuple on lines 33-41, so malformed payloads or missing fields are retried instead of failing fast with context.",
+        "`collect_parallel_tables()` and `retry_failed_tables()` then catch the same broad tuple on lines 109-116 and 131-138 and only append the game id to `failed_ids`, masking which failures were network problems versus code/data defects."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "error_consistency",
+      "identifier": "sibling_scripts_expose_different_failure_protocols",
+      "summary": "Sibling CLI scripts use different error protocols for the same play-by-play load boundary.",
+      "confidence": "medium",
+      "suggestion": "Define one shared script-level failure policy for play-by-play loads, such as a common wrapper returning a structured `LoadResult` with explicit categories, and use it across both one-off and seasonal scripts.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "step2_build_possessions.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, and `step2_build_possessions.py` call `load_game_dataframe()` directly, so request failures and `extract_team_context()` `ValueError`s escape as raw exceptions.",
+        "The seasonal scripts wrap the same fetch path with retries and then translate failures into status dictionaries or `failed_ids` lists instead of raising.",
+        "Because these are sibling data-processing scripts rather than clearly separate layers, a developer cannot predict whether the play-by-play boundary will raise, return `None`, or quietly classify the game as failed/missing."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "ai_generated_debt",
+      "identifier": "ceremonial_wrapper_layers",
+      "summary": "Season scripts use thin orchestration helpers that add indirection without much domain value",
+      "confidence": "high",
+      "suggestion": "Inline the one-hop helpers or merge them into a smaller number of domain-named functions. Keep separate helpers only where they own real policy, such as retry rules or season aggregation.",
+      "related_files": [
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`collect_game_tables()` in `calculate_wmi_rawseason_2024_25.py` only calls `collect_parallel_tables()` and then conditionally calls `retry_failed_tables()`, adding one more hop without introducing a reusable abstraction.",
+        "`fetch_status()` in `calculate_wmi_rawseason_2010_11_to_2023_24.py` is a pass-through around `session.get(playbyplay_url(...))`, and `process_game()` mainly repackages `game_wmi_components()` into string-status dictionaries for its caller.",
+        "These helpers make the reader bounce between small functions to recover a simple control flow that could fit directly in the calling routine."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "single_edit"
+    },
+    {
+      "dimension": "ai_generated_debt",
+      "identifier": "restating_comments_in_analysis_scripts",
+      "summary": "Several comments restate nearby code instead of documenting why the behavior matters",
+      "confidence": "medium",
+      "suggestion": "Delete comments that only paraphrase the next statement, or replace them with why-level notes about edge cases or research assumptions that are not obvious from the code itself.",
+      "related_files": [
+        "calculate_wmi_rawgame_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py"
+      ],
+      "evidence": [
+        "The three-line comment in `calculate_wmi_rawgame_okc_mil.py` repeats the exact `M_t` and `WMI_rawgame` math that the next assignments immediately implement.",
+        "`categorize_defensive_fouls_okc_mil.py` uses section comments like `Defensive foul events only.` and `score_difference = offensive score - defensive score at foul moment.` that mostly paraphrase the next few lines instead of preserving a non-obvious business rule.",
+        "These comments add reading surface area without reducing ambiguity, which is a common generated-code smell in otherwise straightforward scripts."
+      ],
+      "impact_scope": "local",
+      "fix_scope": "single_edit"
+    },
+    {
+      "dimension": "initialization_coupling",
+      "identifier": "fixed_file_pipeline_order",
+      "summary": "Pipeline steps are coupled through fixed input/output filenames and implicit run order",
+      "confidence": "medium",
+      "suggestion": "Replace fixed module-level handoff paths with explicit CLI arguments or a small pipeline config object passed into `main()`. At minimum, validate that the input file's `game_id` matches the requested run before computing the downstream summary.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawgame_okc_mil.py"
+      ],
+      "evidence": [
+        "`build_possession_model_table_okc_mil.py` writes its result to module constant `OUT_PATH = \"possession_model_table_okc_mil.csv\"` and `main()` always emits that file.",
+        "`calculate_wmi_rawgame_okc_mil.py` reads module constant `IN_PATH = \"possession_model_table_okc_mil.csv\"` inside `main()`, so it silently depends on the producer script having already run with matching assumptions."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "initialization_coupling",
+      "identifier": "import_time_default_config_capture",
+      "summary": "Shared default game configuration is captured at import time instead of passed explicitly",
+      "confidence": "medium",
+      "suggestion": "Stop baking shared defaults into function signatures and script entrypoints. Use `game_id: str | None = None` and resolve it inside `main()` or from CLI args/environment, so each run is configured explicitly and does not depend on imported module state.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "step2_build_possessions.py"
+      ],
+      "evidence": [
+        "`nba_pbp_utils.py` defines module-global `DEFAULT_SINGLE_GAME_ID = \"0022500789\"`, and multiple scripts import that value for their entrypoints.",
+        "`step2_build_possessions.py` defines `parse_possessions(pbp_df, game_id: str = DEFAULT_SINGLE_GAME_ID)`, which freezes the default in the function signature when the module is imported rather than when the function is called.",
+        "`build_possession_model_table_okc_mil.py` and `categorize_defensive_fouls_okc_mil.py` also rely on the same imported default in `main()`, so reusing the scripts for another game depends on shared global configuration rather than explicit parameters."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "convention_outlier",
+      "identifier": "top_level_script_naming_drift",
+      "summary": "Top-level production scripts use conflicting naming schemes for similar roles",
+      "confidence": "high",
+      "suggestion": "Adopt one naming scheme for pipeline modules, for example `build_*`/`calculate_*` for generic production steps and a separate `samples/` or `scripts/` namespace for single-game demo entrypoints. Rename numbered and team-suffixed files so filenames describe responsibility rather than historical workflow order or one sample matchup.",
+      "related_files": [
+        "step2_build_possessions.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawgame_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`step2_build_possessions.py` uses a numbered workflow-step name, while sibling modules use `build_*` or `calculate_*` names for related pipeline stages.",
+        "Several files are suffixed with `_okc_mil`, but their core functions (`build_table`, `build_def_foul_context`) are generic and driven by `DEFAULT_SINGLE_GAME_ID`, so the team-specific suffix describes sample usage rather than module responsibility.",
+        "Season-wide calculators sit beside one-game sample scripts in the same directory with no filename convention that distinguishes reusable library code from sample or analysis entrypoints."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "convention_outlier",
+      "identifier": "sibling_rawseason_protocol_drift",
+      "summary": "The two raw-season calculators use different internal protocols for the same task",
+      "confidence": "high",
+      "suggestion": "Choose one internal protocol for season calculators: either shared possession-table builders plus a common summary function, or shared per-game component builders plus one retry/status wrapper. Extract the common path into a shared module and make both season entrypoints thin wrappers over that convention.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` computes season output from `actions` via `build_foul_vector` and `game_wmi_components`, returning status dictionaries from `process_game`.",
+        "`calculate_wmi_rawseason_2024_25.py` computes the same metric through possession tables, with helpers like `collect_parallel_tables`, `retry_failed_tables`, and `build_summary`, and uses a different failure protocol based on table emptiness and retry lists.",
+        "Because these sibling modules expose different helper layers and status conventions for the same domain operation, a developer extending 'raw season WMI' has to relearn the local style instead of following one shared pattern."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "convention_outlier",
+      "identifier": "mixed_sample_and_library_roles",
+      "summary": "Sibling single-game modules mix reusable logic and sample-specific workflow assumptions",
+      "confidence": "high",
+      "suggestion": "Separate reusable modules from demo CLI entrypoints. Keep generic builders in neutrally named modules, and move matchup-specific `main()` wrappers or CSV handoff scripts into a dedicated sample/script layer with consistent names.",
+      "related_files": [
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawgame_okc_mil.py",
+        "step2_build_possessions.py"
+      ],
+      "evidence": [
+        "`build_possession_model_table_okc_mil.py` and `categorize_defensive_fouls_okc_mil.py` define reusable data-building functions but package them in matchup-specific filenames.",
+        "`calculate_wmi_rawgame_okc_mil.py` is coupled to `possession_model_table_okc_mil.csv` rather than calling shared builders directly, so this sibling module follows a file-based handoff protocol instead of the in-memory helper style used elsewhere.",
+        "`step2_build_possessions.py` exposes another reusable function, `parse_possessions`, but its filename reflects a notebook-style sequence step rather than the same domain/output naming used by the other single-game modules."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "test_strategy",
+      "identifier": "critical_season_pipeline_paths_untested",
+      "summary": "Season aggregation scripts leave retry, missing-game, and parallel collection paths effectively untested",
+      "confidence": "high",
+      "suggestion": "Add behavior-focused tests for the season scripts that simulate retryable HTTP failures, 403/404 handling, empty tables, partial failures, and multi-game aggregation. Cover `compute_season`, `collect_game_tables`, and `build_summary` with stub sessions or patched helpers so the full control flow is validated.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "tests/test_calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "tests/test_calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` contains core control flow for `game_exists`, `find_max_existing_game_number`, `fetch_game_json_with_retry`, `process_game`, and `compute_season`, but its test file only asserts `season_label`, `game_id`, and one `game_wmi_components` example.",
+        "`calculate_wmi_rawseason_2024_25.py` contains the production logic for `load_game_dataframe_with_retry`, `collect_parallel_tables`, `retry_failed_tables`, and `build_summary`, but `tests/test_calculate_wmi_rawseason_2024_25.py` only checks schedule length and one happy-path table build.",
+        "These untested paths decide whether games are counted as success, missing, or failed, so regressions in network retry or aggregation logic would bypass the current suite."
+      ],
+      "impact_scope": "codebase",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "test_strategy",
+      "identifier": "tests_mock_internal_seams",
+      "summary": "Several tests are tied to internal plumbing rather than stable module behavior",
+      "confidence": "medium",
+      "suggestion": "Move tests up to clearer seams: patch `load_game_dataframe`/`fetch_playbyplay_payload` or pass fake sessions where the public API already supports it, and assert returned tables and summaries instead of patching nested internals.",
+      "related_files": [
+        "tests/test_calculate_wmi_rawseason_2024_25.py",
+        "tests/test_build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "build_possession_model_table_okc_mil.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`tests/test_calculate_wmi_rawseason_2024_25.py` patches `calculate_wmi_rawseason_2024_25.load_game_dataframe_with_retry` directly, so extracting or renaming that helper would break the test even if `build_possession_table_for_game` still behaves correctly.",
+        "`tests/test_build_possession_model_table_okc_mil.py` patches `nba_pbp_utils.requests.get`, which reaches through the module under test into a lower-level implementation detail instead of stubbing a stable boundary such as `load_game_dataframe` or `fetch_playbyplay_payload`.",
+        "This style verifies current call structure more than observable outputs, making the suite more fragile during normal refactors."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "test_strategy",
+      "identifier": "no_real_cross_module_fixture_coverage",
+      "summary": "The suite lacks realistic cross-module tests using representative play-by-play payloads",
+      "confidence": "high",
+      "suggestion": "Introduce one or two realistic fixture payloads or CSV snapshots of raw play-by-play data and add cross-module tests that run them through the shared pipeline, asserting consistent possession counts, foul flags, and derived WMI inputs across modules.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "step2_build_possessions.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "build_possession_model_table_okc_mil.py",
+        "tests/test_nba_pbp_utils.py",
+        "tests/test_step2_build_possessions.py",
+        "tests/test_categorize_defensive_fouls_okc_mil.py",
+        "tests/test_build_possession_model_table_okc_mil.py"
+      ],
+      "evidence": [
+        "The batch\u2019s production modules share parsing and possession logic through `nba_pbp_utils.py`, but the tests mostly feed two- or three-row synthetic fixtures that do not resemble full play-by-play event sequences.",
+        "`step2_build_possessions.py`, `categorize_defensive_fouls_okc_mil.py`, and `build_possession_model_table_okc_mil.py` all depend on ordering, possession grouping, score inference, and foul filtering across multiple helpers, yet there is no integration test that runs the same representative payload through those modules and checks the outputs stay consistent with each other.",
+        "Because the fixtures are so minimal, edge cases around shared clocks, missing scores, excluded foul subtypes, and possession boundaries can drift between modules without the suite noticing."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "api_surface_coherence",
+      "identifier": "season_pipeline_error_contract_drift",
+      "summary": "The two season pipelines expose incompatible fetch/error contracts for the same workflow.",
+      "confidence": "high",
+      "suggestion": "Pick one public contract for game loading across the pipeline, such as a typed result object or a single exception-based API, and route both season scripts through that shared boundary so callers do not have to remember different failure shapes.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py:83-103 returns (status, payload) from fetch_game_json_with_retry(), using string sentinels like \"ok\" and \"missing\".",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py:152-170 wraps that again in a dict with another \"status\" field, so callers branch on status strings.",
+        "calculate_wmi_rawseason_2024_25.py:26-41 instead retries load_game_dataframe() by catching RETRYABLE_PIPELINE_ERRORS and re-raising on exhaustion.",
+        "calculate_wmi_rawseason_2024_25.py:44-73 then uses None as the signal for a non-usable game, while collect_parallel_tables() also catches exceptions separately at lines 109-116."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "api_surface_coherence",
+      "identifier": "tuple_based_team_context_api",
+      "summary": "extract_team_context() exposes a positional tuple that makes callers rely on argument order.",
+      "confidence": "high",
+      "suggestion": "Replace the raw tuple with a small named result type, such as a dataclass or NamedTuple with fields like team_id_to_tricode, opponent_id, and team_ids, so callers can access only the fields they need by name.",
+      "related_files": [
+        "nba_pbp_utils.py",
+        "step2_build_possessions.py",
+        "build_possession_model_table_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "nba_pbp_utils.py:93-101 returns tuple[dict[int, str], dict[int, int], list[int]] with no named fields.",
+        "step2_build_possessions.py:30 unpacks all three values positionally into team_id_to_tricode, opponent_id, team_ids.",
+        "calculate_wmi_rawseason_2024_25.py:52 discards the first item with _, opponent_id, team_ids, showing that callers only need parts of the tuple but still must remember its order.",
+        "build_possession_model_table_okc_mil.py:22 and categorize_defensive_fouls_okc_mil.py:23 repeat the same positional unpacking pattern, so a changed return order would silently break multiple modules."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "api_surface_coherence",
+      "identifier": "pipeline_steps_take_mixed_input_shapes",
+      "summary": "Similar pipeline steps alternate between raw game IDs and prebuilt DataFrames as public inputs.",
+      "confidence": "medium",
+      "suggestion": "Define one composable pipeline convention for public helpers, for example pure transformation functions that take DataFrames plus thin CLI wrappers that fetch/load files, and apply it consistently across these scripts.",
+      "related_files": [
+        "step2_build_possessions.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawgame_okc_mil.py"
+      ],
+      "evidence": [
+        "step2_build_possessions.py:23-104 defines parse_possessions(pbp_df, game_id=...) and expects the caller to provide a play-by-play DataFrame.",
+        "build_possession_model_table_okc_mil.py:20-84 defines build_table(game_id) and performs its own fetch internally for a nearby transformation step.",
+        "categorize_defensive_fouls_okc_mil.py:21-104 follows the same game_id-based style, while calculate_wmi_rawgame_okc_mil.py:9-46 switches again to calculate_wmi_rawgame(df) over an already-shaped possession table.",
+        "Because these functions sit on adjacent pipeline stages but expose different boundary shapes, a developer cannot predict whether a helper wants identifiers, raw actions, or DataFrames without opening the file."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "incomplete_migration",
+      "identifier": "stale_step2_pipeline_still_looks_current",
+      "summary": "The older `step2` possession pipeline still looks like the current path beside the newer model-table flow.",
+      "confidence": "high",
+      "suggestion": "Pick one canonical possession pipeline. If `build_possession_model_table_okc_mil.py` is the intended replacement, remove or archive `step2_build_possessions.py`, drop its test, and update `README.md` so developers are not sent into the legacy path first.",
+      "related_files": [
+        "README.md",
+        "step2_build_possessions.py",
+        "build_possession_model_table_okc_mil.py",
+        "tests/test_step2_build_possessions.py",
+        "nba-whistle-project-log.md"
+      ],
+      "evidence": [
+        "`README.md` lines 3-12 call `step2_build_possessions.py` the current possession builder and point to `possessions_step2_sample.csv` as current output.",
+        "`step2_build_possessions.py` lines 16-104 still produces a possession sample with `start_time`, `end_time`, `defensive_foul_count`, and `defensive_foul_teams`.",
+        "`build_possession_model_table_okc_mil.py` lines 17-84 builds a different possession table for the same game workflow, with `seconds_left_in_game`, `score_difference`, `L_t`, `F_t`, `N_t`, and `M_t`, and `calculate_wmi_rawgame_okc_mil.py` consumes that newer table.",
+        "`tests/test_step2_build_possessions.py` lines 3-18 still keep the older `parse_possessions` interface under test, so the legacy path appears actively supported rather than clearly retired.",
+        "`nba-whistle-project-log.md` lines 34-35 and 91 record the newer model-table script as the active raw-WMI path after the earlier step-2 parser was introduced in lines 12-24."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "incomplete_migration",
+      "identifier": "season_wmi_scripts_use_split_generation_apis",
+      "summary": "Season-level WMI calculation still uses two different loading/retry pipelines for the same computation.",
+      "confidence": "high",
+      "suggestion": "Refactor the season scripts onto one shared loading pipeline and one shared season runner shape. Keep any season-specific logic limited to game-ID discovery, and move retry/network behavior into `nba_pbp_utils.py` so both season calculators follow the same API.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "nba_pbp_utils.py"
+      ],
+      "evidence": [
+        "`calculate_wmi_rawseason_2024_25.py` lines 26-41 defines `load_game_dataframe_with_retry`, which wraps the shared `nba_pbp_utils.load_game_dataframe` API and then builds possession tables from that normalized dataframe in lines 44-73.",
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py` lines 37-103 bypasses the shared loader and keeps its own `fetch_status`, `game_exists`, `find_max_existing_game_number`, and `fetch_game_json_with_retry` helpers, then reconstructs the dataframe with `actions_to_dataframe` in lines 106-130.",
+        "Both scripts are active season calculators for the same WMI metric, but one operates on the newer shared dataframe-loading path while the other keeps an older raw-response path alive, so networking, retry, and payload-shape fixes have to be maintained in two places."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "design_coherence",
+      "identifier": "duplicated_possession_feature_pipeline",
+      "summary": "Multiple scripts reimplement the same possession feature pipeline with small variations.",
+      "confidence": "high",
+      "suggestion": "Extract one domain-level possession summary builder that returns a canonical possession table with foul flags and optional score/timing fields, then have the single-game and season scripts only choose output columns or aggregation level. That would remove the repeated `groupby(\"possession_group\")` logic and keep rule changes in one place.",
+      "related_files": [
+        "step2_build_possessions.py",
+        "build_possession_model_table_okc_mil.py",
+        "categorize_defensive_fouls_okc_mil.py",
+        "calculate_wmi_rawseason_2024_25.py",
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py"
+      ],
+      "evidence": [
+        "`step2_build_possessions.py:33-89` groups possessions, computes foul information, and then post-processes timing windows.",
+        "`build_possession_model_table_okc_mil.py:27-69` repeats the possession grouping and foul counting, then adds context flags and score features.",
+        "`categorize_defensive_fouls_okc_mil.py:27-100` builds another possession summary table, recomputes context flags, and then projects event-level rows.",
+        "`calculate_wmi_rawseason_2024_25.py:57-73` and `calculate_wmi_rawseason_2010_11_to_2023_24.py:122-149` rebuild the same `F_t -> L_t/N_t/M_t` derivation again for season jobs."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    },
+    {
+      "dimension": "design_coherence",
+      "identifier": "parse_possessions_has_multiple_transformation_stages",
+      "summary": "`parse_possessions` bundles several separate transformations into one opaque function.",
+      "confidence": "high",
+      "suggestion": "Split `parse_possessions` into small focused helpers such as timeline normalization, possession chunk summarization, and interval stitching. Keep `parse_possessions` as a thin composition layer so boundary-rule changes do not require editing one long mixed-responsibility body.",
+      "related_files": [
+        "step2_build_possessions.py"
+      ],
+      "evidence": [
+        "`step2_build_possessions.py:24-31` re-sorts the frame, rebuilds sequence offsets, and recalculates timeline columns even though `nba_pbp_utils.actions_to_dataframe` already creates those fields.",
+        "`step2_build_possessions.py:33-65` then switches to possession summarization with live-ball filtering and defensive foul extraction.",
+        "`step2_build_possessions.py:67-103` performs a third stage that stitches adjacent possession intervals into continuous time windows."
+      ],
+      "impact_scope": "module",
+      "fix_scope": "single_edit"
+    },
+    {
+      "dimension": "design_coherence",
+      "identifier": "season_wmi_script_mixes_transport_and_analytics",
+      "summary": "The historical season script mixes crawler concerns and WMI domain logic in one module.",
+      "confidence": "high",
+      "suggestion": "Separate this workflow into at least two layers: a shared game-loading/orchestration module for retry, discovery, and parallel collection, and a WMI analytics module for possession features and aggregate formulas. Then let each season script be a thin configuration wrapper around those pieces.",
+      "related_files": [
+        "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+        "calculate_wmi_rawseason_2024_25.py"
+      ],
+      "evidence": [
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py:37-103` implements low-level request/retry/game-existence probing.",
+        "`calculate_wmi_rawseason_2010_11_to_2023_24.py:106-149` defines the WMI feature extraction math, and `:173-272` adds threaded season aggregation and CSV/report output in the same file.",
+        "`calculate_wmi_rawseason_2024_25.py:26-139` reintroduces a different retry/parallel collection structure instead of reusing a shared game-loading and season-aggregation layer, which shows the responsibilities are not cleanly separated."
+      ],
+      "impact_scope": "subsystem",
+      "fix_scope": "multi_file_refactor"
+    }
+  ],
+  "review_quality": {
+    "batch_count": 20,
+    "dimension_coverage": 1.0,
+    "evidence_density": 1.583,
+    "high_score_missing_issue_note": 0,
+    "issue_pressure": 119.092,
+    "dimensions_with_issues": 19
+  },
+  "review_scope": {
+    "reviewed_files_count": 7,
+    "successful_batch_count": 20,
+    "full_sweep_included": false,
+    "total_files": 7,
+    "imported_dimensions": [
+      "abstraction_fitness",
+      "ai_generated_debt",
+      "api_surface_coherence",
+      "authorization_consistency",
+      "contract_coherence",
+      "convention_outlier",
+      "cross_module_architecture",
+      "dependency_health",
+      "design_coherence",
+      "error_consistency",
+      "high_level_elegance",
+      "incomplete_migration",
+      "initialization_coupling",
+      "logic_clarity",
+      "low_level_elegance",
+      "mid_level_elegance",
+      "naming_quality",
+      "package_organization",
+      "test_strategy",
+      "type_safety"
+    ]
+  },
+  "reviewed_files": [
+    "nba_pbp_utils.py",
+    "calculate_wmi_rawseason_2010_11_to_2023_24.py",
+    "calculate_wmi_rawseason_2024_25.py",
+    "build_possession_model_table_okc_mil.py",
+    "calculate_wmi_rawgame_okc_mil.py",
+    "categorize_defensive_fouls_okc_mil.py",
+    "step2_build_possessions.py"
+  ],
+  "provenance": {
+    "kind": "blind_review_batch_import",
+    "blind": true,
+    "runner": "codex",
+    "run_stamp": "20260306_170036",
+    "created_at": "2026-03-06T17:11:03+00:00",
+    "batch_count": 20,
+    "batch_indexes": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "packet_path": "/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project/.desloppify/review_packet_blind.json",
+    "packet_sha256": "79f6f92ff17f416eb49b9a494d86a4f11796572b7ff81a270718f2372efdbe8c"
+  },
+  "assessment_coverage": {
+    "scored_dimensions": [
+      "naming_quality",
+      "logic_clarity",
+      "type_safety",
+      "contract_coherence",
+      "error_consistency",
+      "abstraction_fitness",
+      "ai_generated_debt",
+      "high_level_elegance",
+      "mid_level_elegance",
+      "low_level_elegance",
+      "cross_module_architecture",
+      "initialization_coupling",
+      "convention_outlier",
+      "dependency_health",
+      "test_strategy",
+      "api_surface_coherence",
+      "authorization_consistency",
+      "incomplete_migration",
+      "package_organization",
+      "design_coherence"
+    ],
+    "selected_dimensions": [
+      "naming_quality",
+      "logic_clarity",
+      "type_safety",
+      "contract_coherence",
+      "error_consistency",
+      "abstraction_fitness",
+      "ai_generated_debt",
+      "high_level_elegance",
+      "mid_level_elegance",
+      "low_level_elegance",
+      "cross_module_architecture",
+      "initialization_coupling",
+      "convention_outlier",
+      "dependency_health",
+      "test_strategy",
+      "api_surface_coherence",
+      "authorization_consistency",
+      "incomplete_migration",
+      "package_organization",
+      "design_coherence"
+    ],
+    "imported_dimensions": [
+      "abstraction_fitness",
+      "ai_generated_debt",
+      "api_surface_coherence",
+      "authorization_consistency",
+      "contract_coherence",
+      "convention_outlier",
+      "cross_module_architecture",
+      "dependency_health",
+      "design_coherence",
+      "error_consistency",
+      "high_level_elegance",
+      "incomplete_migration",
+      "initialization_coupling",
+      "logic_clarity",
+      "low_level_elegance",
+      "mid_level_elegance",
+      "naming_quality",
+      "package_organization",
+      "test_strategy",
+      "type_safety"
+    ],
+    "missing_dimensions": []
+  }
+}
