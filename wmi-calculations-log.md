@@ -10,3 +10,5 @@
 6/ WMI_raw for 2021-22 season (output: wmi_rawseason_2010_11_to_2023_24.csv) = 0.942689878530503
 7/ WMI_raw for 2020-21 season (output: wmi_rawseason_2010_11_to_2023_24.csv) = 0.9874203265496059
 8/ WMI_raw for CLE vs. CHA (February 20, 2026; random 2025-26 game; game_id: 0022500802; computed with current definitions from NBA CDN play-by-play) = 0.7185909980430528
+9/ WMI_rawgame list for completed 2025-26 regular-season games (as of March 23, 2026; output: wmi_rawgames_2025_26_asof_2026_03_23.csv) has `games_succeeded = 1034`, `games_failed = 2` (current NBA CDN `403` responses on `0022500652` and `0022501003`), `mean_game_wmi_raw = 0.9344508632517702`, and `std_game_wmi_raw = 0.35882259210043344`
+10/ WMI for 2025-26 season (controlled logistic model; as of March 23, 2026; output: wmi_controlled_2025_26_summary_asof_2026_03_23.csv) has `games_succeeded = 1034`, `games_failed = 2`, `rows_excluded_intentional = 720`, `beta_trigger = -0.10327505778698004`, and `odds_ratio_trigger = 0.9018788705555008` for trigger `L_count_t`

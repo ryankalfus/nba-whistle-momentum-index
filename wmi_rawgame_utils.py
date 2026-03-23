@@ -1,5 +1,6 @@
 import re
 
+import numpy as np
 import pandas as pd
 import requests
 
@@ -80,10 +81,42 @@ def fetch_game_actions(game_id, session=None, timeout=30):
     return actions
 
 
-def build_possession_model_table_from_actions(actions, game_id):
+def add_recent_foul_columns(df, foul_col="foul_called_this_possession"):
+    if foul_col not in df.columns:
+        raise ValueError(f"Missing required foul column: {foul_col}")
+
+    out = df.copy().reset_index(drop=True)
+    if out.empty:
+        out["L_t"] = pd.Series(dtype=int)
+        out["L_count_t"] = pd.Series(dtype=int)
+        out["F_t"] = pd.Series(dtype=int)
+        out["N_t"] = pd.Series(dtype=int)
+        out["M_t"] = pd.Series(dtype=int)
+        return out
+
+    f = out[foul_col].fillna(0).astype(int).to_numpy(dtype=np.int16)
+
+    prev1 = np.concatenate((np.array([0], dtype=np.int16), f[:-1]))
+    prev2 = np.concatenate((np.array([0, 0], dtype=np.int16), f[:-2]))
+    l_count = prev1 + prev2
+    l_vals = (l_count > 0).astype(np.int16)
+
+    next1 = np.concatenate((f[1:], np.array([0], dtype=np.int16)))
+    next2 = np.concatenate((f[2:], np.array([0, 0], dtype=np.int16)))
+    n_vals = ((next1 + next2) > 0).astype(np.int16)
+
+    out["L_t"] = l_vals.astype(int)
+    out["L_count_t"] = l_count.astype(int)
+    out["F_t"] = f.astype(int)
+    out["N_t"] = n_vals.astype(int)
+    out["M_t"] = out["F_t"] + (out["F_t"] * out["N_t"])
+    return out
+
+
+def build_possession_summary_from_actions(actions, game_id):
     df = pd.DataFrame(actions).sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
     if df.empty:
-        raise ValueError(f"No actions available to build possession table for game_id {game_id}.")
+        raise ValueError(f"No actions available to build possession summary for game_id {game_id}.")
 
     df["seconds_remaining_in_period"] = df["clock"].apply(clock_to_seconds)
     df["game_seconds_elapsed"] = (df["period"] - 1) * 720 + (720 - df["seconds_remaining_in_period"])
@@ -141,6 +174,7 @@ def build_possession_model_table_from_actions(actions, game_id):
             {
                 "game_id": game_id,
                 "possession_group": int(group_id),
+                "period": int(grp["period"].iloc[-1]),
                 "offense_team_id": offense_team_id,
                 "defense_team_id": defense_team_id,
                 "offense_team": team_id_to_tricode[offense_team_id],
@@ -152,21 +186,13 @@ def build_possession_model_table_from_actions(actions, game_id):
             }
         )
 
-    out = pd.DataFrame(rows).sort_values("possession_group").reset_index(drop=True)
+    return pd.DataFrame(rows).sort_values("possession_group").reset_index(drop=True)
+
+
+def build_possession_model_table_from_actions(actions, game_id):
+    out = build_possession_summary_from_actions(actions=actions, game_id=game_id)
+    out = add_recent_foul_columns(out, foul_col="foul_called_this_possession")
     out["possession_number"] = range(1, len(out) + 1)
-
-    l_vals = []
-    n_vals = []
-    for i, _ in out.iterrows():
-        prior = out.iloc[max(0, i - 2) : i]
-        next_rows = out.iloc[i + 1 : i + 3]
-        l_vals.append(int((prior["foul_called_this_possession"] == 1).any()))
-        n_vals.append(int((next_rows["foul_called_this_possession"] == 1).any()))
-
-    out["L_t"] = l_vals
-    out["F_t"] = out["foul_called_this_possession"].astype(int)
-    out["N_t"] = n_vals
-    out["M_t"] = out["F_t"] + (out["F_t"] * out["N_t"])
 
     return out[
         [
@@ -224,4 +250,3 @@ def calculate_wmi_rawgame(df):
         "mean_M_t_where_L_t_eq_0": mean_m_l0,
         "WMI_rawgame": wmi_rawgame,
     }
-

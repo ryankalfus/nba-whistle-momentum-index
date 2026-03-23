@@ -5,7 +5,7 @@
 ## Goal
 - Measure whether NBA whistles show short-term momentum across possessions.
 - Build a clear possession-level framework that avoids overlap/double-counting.
-- Current stage: `WMI_raw` first, future `WMI` (controlled logistic-regression version) second.
+- Current stage: `WMI_raw` plus controlled `WMI` v1.
 
 ## Core Question
 - If there is a defensive foul on a possession, how does that connect to nearby foul patterns?
@@ -31,7 +31,8 @@
 2. Identify defensive foul occurrence by possession.
 3. Create `WMI_raw` variables `L_t`, `F_t`, `N_t`, `M_t`.
 4. Compute game-level `WMI_rawgame`.
-5. Later add controlled model and compare raw vs controlled.
+5. Build pooled controlled possession rows for the season.
+6. Fit the headline controlled model and compare raw vs controlled.
 
 ## Variable Definitions (Current)
 - `L_t = 1`: at least one defensive foul in the last 2 possessions, else `0`.
@@ -51,15 +52,18 @@
 
 ## Metric Naming (Important)
 - `WMI_raw` = current implemented metric (equation above).
-- `WMI` = future controlled metric from logistic regression; exact final equation is not defined yet.
+- `WMI` = current controlled metric from logistic regression.
 
-## Controlled WMI (Planned)
-- Future `WMI` will come from a logistic-regression model with trigger + controls.
-- Interpretation gist: higher than `1` means higher adjusted foul odds, lower than `1` means lower adjusted foul odds.
-- Final exact `WMI` equation is still TBD.
-- Planned controls include game context (time left, score difference, etc.).
+## Controlled WMI (Current v1)
+- Headline controlled trigger: `L_count_t`.
+- Headline model:
+  - `F_t ~ L_count_t + seconds_left_in_game + score_difference + C(period_bucket) + C(offense_team) + C(defense_team)`
+- Headline reported controlled value:
+  - `odds_ratio_trigger = exp(beta_L_count_t)`
+- Main intentional-foul exclusion rule:
+  - exclude rows where `F_t == 1`, `period_bucket` is `4` or `OT`, `seconds_left_in_game <= 45`, and `score_difference >= 3`
 
-## Diagnostic Layer (Planned)
+## Diagnostic Layer (Current)
 - Compute one game-level `WMI_rawgame` value per game.
 - Across games, compute z-scores to flag outlier games.
 - Use z-scores as diagnostics, not stand-alone proof.
@@ -70,6 +74,9 @@
 - `wmi_rawgame_breakdown_okc_mil.csv`
 - `wmi_rawseason_2024_25_summary.csv`
 - `wmi_rawseason_2025_26_summary_asof_2026_03_01.csv`
+- `wmi_rawgames_2025_26_asof_2026_03_23.csv`
+- `wmi_controlled_table_2025_26_asof_2026_03_23.csv`
+- `wmi_controlled_2025_26_summary_asof_2026_03_23.csv`
 - `wmi_rawseason_2010_11_to_2023_24.csv`
 - `wmi-calculations-log.md`
 

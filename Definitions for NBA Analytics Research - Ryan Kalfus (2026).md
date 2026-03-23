@@ -77,7 +77,7 @@ Count only fouls where:
   - `N_t`: same value as `def_foul_called_in_next2_possessions`.
   - `M_t = F_t + F_t*N_t` (in this file this equals `1 + N_t`, so values are `1` or `2`).
 
-## Z-Score Layer (Planned Diagnostic)
+## Z-Score Layer (Current Diagnostic)
 - Keep possession-level `WMI_raw` as the primary current metric.
 - For each game, compute game-level `WMI_rawgame` from possessions in that game.
 - Across all games, compute:
@@ -85,12 +85,15 @@ Count only fouls where:
   - `std_game_wmi_raw`
   - `wmi_raw_z_score = (game_wmi_raw - mean_game_wmi_raw) / std_game_wmi_raw`
 - Use `wmi_raw_z_score` only as an outlier/flagging metric, not standalone proof of ref bias.
+- Current game-list output:
+  - `wmi_rawgames_2025_26_asof_2026_03_23.csv` with one row per completed 2025-26 regular-season game so far, including `WMI_rawgame` and `wmi_rawgame_z_score`.
 
 ## Controlled WMI Note
-- Future `WMI` will be controlled (regression-based), not raw.
-- Gist: it will adjust for context variables and isolate trigger effect.
-- Interpretation target: above `1` means higher adjusted foul odds, below `1` means lower adjusted foul odds.
-- Exact final `WMI` equation is not defined yet.
+- Current headline controlled model is regression-based `WMI`, separate from `WMI_raw`.
+- Main current controlled trigger: `L_count_t`.
+- Main current interpretation target:
+  - odds ratio above `1` = higher adjusted odds of a defensive foul on the current possession
+  - odds ratio below `1` = lower adjusted odds of a defensive foul on the current possession
 
 ## All-Possession Modeling Table (Current)
 - File: `possession_model_table_okc_mil.csv`
@@ -105,6 +108,41 @@ Count only fouls where:
   - `score_difference`
   - `offense_team`, `defense_team`
 
+## Controlled Modeling Table (Current)
+- File: `wmi_controlled_table_2025_26_asof_2026_03_23.csv`
+- Each row is one possession from a completed 2025-26 regular-season game.
+- Current columns:
+  - `game_id`
+  - `game_date_et`
+  - `offense_team`
+  - `defense_team`
+  - `period`
+  - `period_bucket`
+  - `seconds_left_in_game`
+  - `score_difference`
+  - `L_t`
+  - `L_count_t`
+  - `F_t`
+  - `N_t`
+  - `M_t`
+  - `intentional_foul_excluded_t`
+
+## Controlled Variable Definitions (Current)
+- `L_count_t`:
+  - count of possessions with a defensive foul in the last 2 possessions
+  - possible values: `0`, `1`, `2`
+- `period_bucket`:
+  - periods `1`, `2`, `3`, `4` stay as their own buckets
+  - periods `5+` are grouped as `OT`
+- `intentional_foul_excluded_t`:
+  - equals `1` when the possession is excluded from the headline controlled model
+  - current rule:
+    - `F_t == 1`
+    - `period_bucket` is `4` or `OT`
+    - `seconds_left_in_game <= 45`
+    - `score_difference >= 3`
+  - otherwise equals `0`
+
 ## WMI_raw Game Formula (Current)
 Use this exact formula:
 WMI_rawgame = [ (1 / n1) * ∑_(t: L_t=1) M_t ] / [ (1 / n0) * ∑_(t: L_t=0) M_t ]
@@ -118,7 +156,15 @@ Notes:
 
 ## Metric Naming (Current vs Future)
 - `WMI_raw` = current implemented metric (equation above).
-- `WMI` = future controlled metric from logistic regression, with final equation still TBD.
+- `WMI` = current controlled metric from logistic regression.
+
+## Controlled WMI Formula (Current v1)
+- Main model formula:
+  - `F_t ~ L_count_t + seconds_left_in_game + score_difference + C(period_bucket) + C(offense_team) + C(defense_team)`
+- Headline reported controlled value:
+  - `odds_ratio_trigger = exp(beta_L_count_t)`
+- Interpretation:
+  - each `+1` increase in `L_count_t` changes the odds of `F_t = 1` by the multiplier `odds_ratio_trigger`, holding listed controls fixed
 
 ## Season-Level WMI_raw (Pooled)
 - Same formula as game-level raw WMI, but computed on one combined possession table across all season games.
