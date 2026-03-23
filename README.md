@@ -10,3 +10,10 @@
 - Possession foul fields now are:
   - `defensive_foul_count`
   - `defensive_foul_teams`
+
+## Reusable Single-Game WMI_raw Scripts
+- Build any-game possession table:
+  - `python build_possession_model_table_game.py --game-id 0022500802`
+- Build + calculate any-game raw WMI:
+  - `python calculate_wmi_rawgame_any_game.py --game-id 0022500802`
+- Old fixed-game OKC/MIL scripts are still kept as wrappers for the saved example outputs.

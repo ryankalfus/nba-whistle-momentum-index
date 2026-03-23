@@ -13,7 +13,7 @@
 
 ## Scope
 - Season target: 2025-26 regular season.
-- Current implementation: one-game prototype (OKC vs MIL), then scale.
+- Current implementation: reusable single-game raw-WMI pipeline for any NBA game, with OKC vs MIL kept as the saved example.
 - Unit of analysis: possession.
 
 ## Data and Tools
