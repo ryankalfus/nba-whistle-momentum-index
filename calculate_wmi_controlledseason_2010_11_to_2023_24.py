@@ -3,7 +3,6 @@ import time
 import pandas as pd
 import requests
 
-from calculate_wmi_rawseason_2010_11_to_2023_24 import MAX_GAME_NUMBER
 from calculate_wmi_rawseason_2010_11_to_2023_24 import find_max_existing_game_number
 from calculate_wmi_rawseason_2010_11_to_2023_24 import season_exists
 from wmi_controlled_run_utils import compute_controlled_summary_for_game_ids

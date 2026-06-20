@@ -136,7 +136,7 @@ def game_wmi_components(actions):
 
     prev1 = np.concatenate(([0], f[:-1]))
     prev2 = np.concatenate(([0, 0], f[:-2]))
-    l = ((prev1 + prev2) > 0).astype(np.int8)
+    recent_foul = ((prev1 + prev2) > 0).astype(np.int8)
 
     next1 = np.concatenate((f[1:], [0]))
     next2 = np.concatenate((f[2:], [0, 0]))
@@ -144,8 +144,8 @@ def game_wmi_components(actions):
 
     m = f + (f * n)
 
-    mask_l1 = l == 1
-    mask_l0 = l == 0
+    mask_l1 = recent_foul == 1
+    mask_l0 = recent_foul == 0
     n1 = int(mask_l1.sum())
     n0 = int(mask_l0.sum())
     sum_m_l1 = float(m[mask_l1].sum()) if n1 > 0 else 0.0

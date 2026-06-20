@@ -219,13 +219,13 @@ def calculate_wmi_rawgame(df):
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
 
-    l = df["L_t"].astype(float)
+    recent_foul = df["L_t"].astype(float)
     f = df["F_t"].astype(float)
     n = df["N_t"].astype(float)
     m = f + (f * n)
 
-    group_l1 = m[l == 1.0]
-    group_l0 = m[l == 0.0]
+    group_l1 = m[recent_foul == 1.0]
+    group_l0 = m[recent_foul == 0.0]
 
     n1 = int(group_l1.shape[0])
     n0 = int(group_l0.shape[0])
