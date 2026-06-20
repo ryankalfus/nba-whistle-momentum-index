@@ -53,7 +53,7 @@ Log all changes here. Short, summarized.
 - 02.24.2026: Consolidated plan markdowns into one file (`Plan for WMI - Ryan Kalfus (2026).md`) and removed the old plan file.
 - 02.24.2026: Re-defined `last2` / `next2` (and `L_t`, `F_t`, `N_t`, `M_t` usage) back to global possession windows with no offense/defense team filtering.
 - 02.24.2026: Updated all relevant markdown files (definitions, plan, log) to reflect global last2/next2 definitions.
-- 02.24.2026: Removed the plan-file bottom log section and removed the “what’s next” section so plan stays as full project overview.
+- 02.24.2026: Removed the plan-file bottom log section and removed the "what's next" section so plan stays as full project overview.
 - 02.24.2026: Re-ran all scripts after restoring global last2/next2 logic and recalculated `WMI_rawgame = 3.035185` for OKC vs MIL.
 
 - 03.01.2026: Renamed project folder from `nba_whistle_project` to `nba-whistle-project` and verified filesystem path sync.
@@ -98,3 +98,14 @@ Log all changes here. Short, summarized.
 - 03.23.2026: Added `tests/test_wmi_controlled_utils.py` covering `L_count_t`, `period_bucket`, intentional-foul exclusions, and controlled-model summary output.
 - 03.23.2026: Ran `pytest -q` after the controlled-WMI implementation and got `12 passed`.
 - 03.23.2026: Generated `wmi_controlled_table_2025_26_asof_2026_03_23.csv` and `wmi_controlled_2025_26_summary_asof_2026_03_23.csv` for completed 2025-26 regular-season games; current controlled run has `games_succeeded=1034`, `games_failed=2`, `rows_excluded_intentional=720`, and `odds_ratio_trigger=0.9018788705555008` for `L_count_t`.
+- 03.23.2026: Changed controlled `L_count_t` back to binary `0/1`, added blowout exclusions for `abs(score_difference) > 16`, and updated controlled output columns to include `score_margin_excluded_t` and `controlled_model_excluded_t`.
+- 03.23.2026: Re-ran `pytest -q` after the binary-trigger and blowout-exclusion update and got `13 passed`.
+- 03.23.2026: Re-generated `wmi_controlled_table_2025_26_asof_2026_03_23.csv` and `wmi_controlled_2025_26_summary_asof_2026_03_23.csv`; current run has `games_succeeded=1034`, `games_failed=2`, `rows_excluded_intentional=720`, `rows_excluded_score_margin=32438`, `rows_excluded_total=33109`, and `odds_ratio_trigger=0.8879823164811339`.
+- 03.23.2026: Added `wmi_raw_calculations.md`, `wmi_controlled_calcuations.md`, and `CODEX.md`.
+- 03.23.2026: Reintroduced the current controlled-WMI pipeline around the raw momentum target `M_t` with new files `wmi_controlled_utils.py`, `wmi_controlled_run_utils.py`, `calculate_wmi_controlledgame_any_game.py`, `calculate_wmi_controlledgames_2025_26.py`, `calculate_wmi_controlledseason_2025_26.py`, `calculate_wmi_controlledseason_2024_25.py`, and `calculate_wmi_controlledseason_2010_11_to_2023_24.py`.
+- 03.23.2026: Defined the current controlled exclusions as `abs(score_difference) >= 15` plus late likely-intentional fouls in 4th quarter/overtime, while keeping the raw `L_t`, `F_t`, `N_t`, and `M_t` definitions unchanged.
+- 03.23.2026: Generated current controlled example outputs `possession_model_table_controlled_okc_mil.csv`, `wmi_controlledgame_breakdown_okc_mil.csv`, `possession_model_table_controlled_0022500802.csv`, and `wmi_controlledgame_breakdown_0022500802.csv`.
+- 03.23.2026: Generated pooled controlled season outputs `wmi_controlledseason_2025_26_summary_asof_2026_03_01.csv`, `wmi_controlledseason_2025_26_table_asof_2026_03_01.csv`, `wmi_controlledseason_2024_25_summary.csv`, `wmi_controlledseason_2024_25_table.csv`, and `wmi_controlledseason_2010_11_to_2023_24.csv`.
+- 03.23.2026: Generated controlled completed-game list outputs `wmi_controlledgames_2025_26_asof_2026_03_24.csv` and the raw-scope mirror `wmi_controlledgames_2025_26_asof_2026_03_23.csv`.
+- 03.23.2026: Added `wmi_controlled_calcuations.md`, restored controlled sections in README/definitions/plan/CODEX, and expanded `wmi-calculations-log.md` with the new controlled calculation lines.
+- 04.16.2026: Cleaned `PROJECT/Definitions for NBA Analytics Research - Ryan Kalfus (2026).md` into a formal definitions-only reference, separated `WMI_raw` from `WMI_controlled`, removed project output/file references, and removed the locked controlled-model definition while keeping controlled notes and required context definitions.

@@ -88,7 +88,6 @@ def add_recent_foul_columns(df, foul_col="foul_called_this_possession"):
     out = df.copy().reset_index(drop=True)
     if out.empty:
         out["L_t"] = pd.Series(dtype=int)
-        out["L_count_t"] = pd.Series(dtype=int)
         out["F_t"] = pd.Series(dtype=int)
         out["N_t"] = pd.Series(dtype=int)
         out["M_t"] = pd.Series(dtype=int)
@@ -106,7 +105,6 @@ def add_recent_foul_columns(df, foul_col="foul_called_this_possession"):
     n_vals = ((next1 + next2) > 0).astype(np.int16)
 
     out["L_t"] = l_vals.astype(int)
-    out["L_count_t"] = l_count.astype(int)
     out["F_t"] = f.astype(int)
     out["N_t"] = n_vals.astype(int)
     out["M_t"] = out["F_t"] + (out["F_t"] * out["N_t"])
