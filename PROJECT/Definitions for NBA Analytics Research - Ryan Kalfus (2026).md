@@ -14,10 +14,9 @@
 - `last2` and `next2` do not filter by offense team or defense team.
 
 ## Metric Map
-- `WMI_raw`: the direct ratio formula using `M_t`.
-- `WMI_controlled`: the controlled version of the same whistle-momentum idea.
-- `WMI_controlled` should use the same core variables as `WMI_raw`, but should account for game context such as score margin, time left, period, offense team, defense team, and intentional-foul situations.
-- This definitions file does not lock `WMI_controlled` to one statistical model. A specific model should be defined separately only when the project intentionally chooses one as final.
+- `WMI`: the direct ratio formula using `M_t`.
+- WMI is presented game-by-game.
+- Completed-game comparison sets may be used for game percentiles and distribution context.
 
 ## Possession Definition
 - A possession starts when a team gains live-ball control.
@@ -136,90 +135,46 @@ Meaning:
 ### `defense_team`
 - Team defending on the current possession.
 
-## WMI_raw
+## WMI
 
 ### Definition
-- `WMI_raw` is the direct, unadjusted Whistle Momentum Index.
+- `WMI` is the direct, unadjusted Whistle Momentum Index.
 - It compares average `M_t` after recent foul history to average `M_t` without recent foul history.
 
 ### Formula
 Use this exact formula:
 
-`WMI_rawgame = [(1 / n1) * sum(M_t where L_t = 1)] / [(1 / n0) * sum(M_t where L_t = 0)]`
+`WMI_game = [(1 / n1) * sum(M_t where L_t = 1)] / [(1 / n0) * sum(M_t where L_t = 0)]`
 
 Equivalent wording:
 - numerator = average `M_t` for possessions where `L_t = 1`
 - denominator = average `M_t` for possessions where `L_t = 0`
-- `WMI_rawgame = numerator / denominator`
+- `WMI_game = numerator / denominator`
 
 ### Interpretation
-- `WMI_rawgame > 1`: more whistle momentum after recent fouls.
-- `WMI_rawgame = 1`: no raw difference.
-- `WMI_rawgame < 1`: less whistle momentum after recent fouls.
+- `WMI_game > 1`: more whistle momentum after recent fouls.
+- `WMI_game = 1`: no WMI difference.
+- `WMI_game < 1`: less whistle momentum after recent fouls.
 
 ### Important Notes
-- `WMI_raw` does not adjust for score, time, period, team, or intentional-foul situations.
-- `WMI_raw` is useful as a simple first look.
-- `WMI_raw` should not be treated as proof by itself.
-
-## WMI_controlled
-
-### Definition
-- `WMI_controlled` is the context-aware version of Whistle Momentum Index.
-- It should keep the same whistle-momentum idea as `WMI_raw`.
-- It should account for game context that can affect foul patterns.
-
-### Required Core Variables
-Any `WMI_controlled` version should keep these raw variables:
-- `L_t`
-- `F_t`
-- `N_t`
-- `M_t`
-
-### Required Context Variables
-Any `WMI_controlled` version should consider:
-- `seconds_left_in_game`
-- `score_difference`
-- `period_bucket`
-- `offense_team`
-- `defense_team`
-
-### Score-Margin Exclusion
-- Possessions with `score_margin >= 15` should be excluded from controlled WMI.
-- Reason: large-margin situations can change how teams play and how fouls happen.
-
-### Intentional-Foul Exclusion
-A foul should be treated as likely intentional and excluded from controlled WMI when:
-- `F_t = 1`
-- the possession is in period 4 or overtime
-- and either of these is true:
-  - `seconds_left_in_game <= 35` and `score_difference > 3`
-  - `seconds_left_in_game <= 15` and `score_difference >= 1`
-
-Meaning:
-- late-game fouls by a trailing defense can be strategy, not normal whistle momentum.
-
-### Controlled-WMI Notes
-- `WMI_controlled` should not be changed just to make it closer to `WMI_raw`.
-- If `WMI_controlled` is lower than `WMI_raw`, that can mean some raw pattern was explained by game context.
-- If the final controlled method uses a model, that model should be documented clearly where the project records implementation choices.
-- This file defines what controlled WMI must account for, but it does not require one final model type.
+- `WMI` does not adjust for score, time, period, team, or intentional-foul situations.
+- `WMI` is useful as a simple first look.
+- `WMI` should not be treated as proof by itself.
 
 ## Diagnostic Terms
 
-### Game-Level WMI
+### Game WMI
 - A game-level WMI value is one WMI value calculated from possessions in one game.
-  - Raw WMI: WMI_rawgame
-  - Controlled WMI: WMI_controlledgame
+- Current active game WMI: `WMI_game`
 
-### Season-Level WMI
-- A season-level WMI value is one WMI value calculated from possessions across a season or season sample.
-  - Raw WMI: WMI_rawseason
-  - Controlled WMI: WMI_controlledseason
+### Game Comparison Terms
+- A completed-game comparison set is a table with one WMI value per completed game.
+- `WMI_game_percentile` ranks one game's WMI within the completed-game WMI distribution.
+- Comparison sets are support context for game interpretation.
+- Comparison sets are not a separate pooled season-level WMI edition.
 
 ## Interpretation Guardrails
 - WMI measures whistle-pattern behavior, not referee intent.
 - WMI can suggest patterns that deserve review.
 - WMI cannot prove bias by itself.
-- Raw and controlled WMI answer related but different questions.
 - Definitions should stay stable unless the project intentionally changes the metric.

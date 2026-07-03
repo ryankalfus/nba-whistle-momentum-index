@@ -1,0 +1,2 @@
+generated_at_utc,seasons,raw_seasons,controlled_seasons,raw_games,raw_games_with_wmi,raw_mean,raw_median,controlled_games,controlled_games_with_wmi,controlled_mean,controlled_median,failures,raw_sources,controlled_sources
+2026-06-29T19:58:58.082317+00:00,2020-21 through 2025-26,2020-21 to 2025-26,2020-21 to 2024-25,6727,6727,0.9606188408129459,0.9091796875,5693,5693,0.8067525912954654,0.7634032814321692,1733,data.nba.com mobile_teams v2015 play-by-play; local wmi_games_2025_26_asof_2026_03_23.csv,data.nba.com mobile_teams v2015 play-by-play

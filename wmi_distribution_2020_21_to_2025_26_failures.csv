@@ -1,0 +1,504 @@
+season,game_id,status,error_message,dataset
+2021-22,22100430,failed,No mobile play-by-play rows found for game_id 0022100430.,
+2021-22,22100458,failed,No mobile play-by-play rows found for game_id 0022100458.,
+2021-22,22100464,failed,No mobile play-by-play rows found for game_id 0022100464.,
+2021-22,22100521,failed,No mobile play-by-play rows found for game_id 0022100521.,
+2021-22,22100528,failed,No mobile play-by-play rows found for game_id 0022100528.,
+2021-22,22100710,failed,No mobile play-by-play rows found for game_id 0022100710.,
+2021-22,22100726,failed,No mobile play-by-play rows found for game_id 0022100726.,
+2021-22,22100773,failed,No mobile play-by-play rows found for game_id 0022100773.,
+2021-22,22100775,failed,No mobile play-by-play rows found for game_id 0022100775.,
+2021-22,22100774,failed,No mobile play-by-play rows found for game_id 0022100774.,
+2021-22,22100776,failed,No mobile play-by-play rows found for game_id 0022100776.,
+2021-22,22100777,failed,No mobile play-by-play rows found for game_id 0022100777.,
+2021-22,22100779,failed,No mobile play-by-play rows found for game_id 0022100779.,
+2021-22,22100778,failed,No mobile play-by-play rows found for game_id 0022100778.,
+2021-22,22100780,failed,No mobile play-by-play rows found for game_id 0022100780.,
+2021-22,22100781,failed,No mobile play-by-play rows found for game_id 0022100781.,
+2021-22,22100782,failed,No mobile play-by-play rows found for game_id 0022100782.,
+2021-22,22100783,failed,No mobile play-by-play rows found for game_id 0022100783.,
+2021-22,22100785,failed,No mobile play-by-play rows found for game_id 0022100785.,
+2021-22,22100787,failed,No mobile play-by-play rows found for game_id 0022100787.,
+2021-22,22100786,failed,No mobile play-by-play rows found for game_id 0022100786.,
+2021-22,22100788,failed,No mobile play-by-play rows found for game_id 0022100788.,
+2021-22,22100789,failed,No mobile play-by-play rows found for game_id 0022100789.,
+2021-22,22100790,failed,No mobile play-by-play rows found for game_id 0022100790.,
+2021-22,22100791,failed,No mobile play-by-play rows found for game_id 0022100791.,
+2021-22,22100792,failed,No mobile play-by-play rows found for game_id 0022100792.,
+2021-22,22100793,failed,No mobile play-by-play rows found for game_id 0022100793.,
+2021-22,22100795,failed,No mobile play-by-play rows found for game_id 0022100795.,
+2021-22,22100794,failed,No mobile play-by-play rows found for game_id 0022100794.,
+2021-22,22100796,failed,No mobile play-by-play rows found for game_id 0022100796.,
+2021-22,22100797,failed,No mobile play-by-play rows found for game_id 0022100797.,
+2021-22,22100800,failed,No mobile play-by-play rows found for game_id 0022100800.,
+2021-22,22100798,failed,No mobile play-by-play rows found for game_id 0022100798.,
+2021-22,22100799,failed,No mobile play-by-play rows found for game_id 0022100799.,
+2021-22,22100801,failed,No mobile play-by-play rows found for game_id 0022100801.,
+2021-22,22100802,failed,No mobile play-by-play rows found for game_id 0022100802.,
+2021-22,22100804,failed,No mobile play-by-play rows found for game_id 0022100804.,
+2021-22,22100803,failed,No mobile play-by-play rows found for game_id 0022100803.,
+2021-22,22100805,failed,No mobile play-by-play rows found for game_id 0022100805.,
+2021-22,22100806,failed,No mobile play-by-play rows found for game_id 0022100806.,
+2021-22,22100808,failed,No mobile play-by-play rows found for game_id 0022100808.,
+2021-22,22100807,failed,No mobile play-by-play rows found for game_id 0022100807.,
+2021-22,22100809,failed,No mobile play-by-play rows found for game_id 0022100809.,
+2021-22,22100810,failed,No mobile play-by-play rows found for game_id 0022100810.,
+2021-22,22100812,failed,No mobile play-by-play rows found for game_id 0022100812.,
+2021-22,22100811,failed,No mobile play-by-play rows found for game_id 0022100811.,
+2021-22,22100813,failed,No mobile play-by-play rows found for game_id 0022100813.,
+2021-22,22100814,failed,No mobile play-by-play rows found for game_id 0022100814.,
+2021-22,22100815,failed,No mobile play-by-play rows found for game_id 0022100815.,
+2021-22,22100816,failed,No mobile play-by-play rows found for game_id 0022100816.,
+2021-22,22100817,failed,No mobile play-by-play rows found for game_id 0022100817.,
+2021-22,22100818,failed,No mobile play-by-play rows found for game_id 0022100818.,
+2021-22,22100820,failed,No mobile play-by-play rows found for game_id 0022100820.,
+2021-22,22100819,failed,No mobile play-by-play rows found for game_id 0022100819.,
+2021-22,22100821,failed,No mobile play-by-play rows found for game_id 0022100821.,
+2021-22,22100822,failed,No mobile play-by-play rows found for game_id 0022100822.,
+2021-22,22100823,failed,No mobile play-by-play rows found for game_id 0022100823.,
+2021-22,22100824,failed,No mobile play-by-play rows found for game_id 0022100824.,
+2021-22,22100825,failed,No mobile play-by-play rows found for game_id 0022100825.,
+2021-22,22100826,failed,No mobile play-by-play rows found for game_id 0022100826.,
+2021-22,22100827,failed,No mobile play-by-play rows found for game_id 0022100827.,
+2021-22,22100828,failed,No mobile play-by-play rows found for game_id 0022100828.,
+2021-22,22100829,failed,No mobile play-by-play rows found for game_id 0022100829.,
+2021-22,22100830,failed,No mobile play-by-play rows found for game_id 0022100830.,
+2021-22,22100831,failed,No mobile play-by-play rows found for game_id 0022100831.,
+2021-22,22100832,failed,No mobile play-by-play rows found for game_id 0022100832.,
+2021-22,22100833,failed,No mobile play-by-play rows found for game_id 0022100833.,
+2021-22,22100834,failed,No mobile play-by-play rows found for game_id 0022100834.,
+2021-22,22100835,failed,No mobile play-by-play rows found for game_id 0022100835.,
+2021-22,22100836,failed,No mobile play-by-play rows found for game_id 0022100836.,
+2021-22,22100837,failed,No mobile play-by-play rows found for game_id 0022100837.,
+2021-22,22100838,failed,No mobile play-by-play rows found for game_id 0022100838.,
+2021-22,22100839,failed,No mobile play-by-play rows found for game_id 0022100839.,
+2021-22,22100840,failed,No mobile play-by-play rows found for game_id 0022100840.,
+2021-22,22100841,failed,No mobile play-by-play rows found for game_id 0022100841.,
+2021-22,22100842,failed,No mobile play-by-play rows found for game_id 0022100842.,
+2021-22,22100843,failed,No mobile play-by-play rows found for game_id 0022100843.,
+2021-22,22100844,failed,No mobile play-by-play rows found for game_id 0022100844.,
+2021-22,22100845,failed,No mobile play-by-play rows found for game_id 0022100845.,
+2021-22,22100846,failed,No mobile play-by-play rows found for game_id 0022100846.,
+2021-22,22100847,failed,No mobile play-by-play rows found for game_id 0022100847.,
+2021-22,22100848,failed,No mobile play-by-play rows found for game_id 0022100848.,
+2021-22,22100849,failed,No mobile play-by-play rows found for game_id 0022100849.,
+2021-22,22100850,failed,No mobile play-by-play rows found for game_id 0022100850.,
+2021-22,22100851,failed,No mobile play-by-play rows found for game_id 0022100851.,
+2021-22,22100852,failed,No mobile play-by-play rows found for game_id 0022100852.,
+2021-22,22100853,failed,No mobile play-by-play rows found for game_id 0022100853.,
+2021-22,22100854,failed,No mobile play-by-play rows found for game_id 0022100854.,
+2021-22,22100855,failed,No mobile play-by-play rows found for game_id 0022100855.,
+2021-22,22100856,failed,No mobile play-by-play rows found for game_id 0022100856.,
+2021-22,22100857,failed,No mobile play-by-play rows found for game_id 0022100857.,
+2021-22,22100858,failed,No mobile play-by-play rows found for game_id 0022100858.,
+2021-22,22100859,failed,No mobile play-by-play rows found for game_id 0022100859.,
+2021-22,22100860,failed,No mobile play-by-play rows found for game_id 0022100860.,
+2021-22,22100861,failed,No mobile play-by-play rows found for game_id 0022100861.,
+2021-22,22100862,failed,No mobile play-by-play rows found for game_id 0022100862.,
+2021-22,22100864,failed,No mobile play-by-play rows found for game_id 0022100864.,
+2021-22,22100863,failed,No mobile play-by-play rows found for game_id 0022100863.,
+2021-22,22100865,failed,No mobile play-by-play rows found for game_id 0022100865.,
+2021-22,22100866,failed,No mobile play-by-play rows found for game_id 0022100866.,
+2021-22,22100867,failed,No mobile play-by-play rows found for game_id 0022100867.,
+2021-22,22100868,failed,No mobile play-by-play rows found for game_id 0022100868.,
+2021-22,22100869,failed,No mobile play-by-play rows found for game_id 0022100869.,
+2021-22,22100870,failed,No mobile play-by-play rows found for game_id 0022100870.,
+2021-22,22100871,failed,No mobile play-by-play rows found for game_id 0022100871.,
+2021-22,22100872,failed,No mobile play-by-play rows found for game_id 0022100872.,
+2021-22,22100873,failed,No mobile play-by-play rows found for game_id 0022100873.,
+2021-22,22100874,failed,No mobile play-by-play rows found for game_id 0022100874.,
+2021-22,22100875,failed,No mobile play-by-play rows found for game_id 0022100875.,
+2021-22,22100876,failed,No mobile play-by-play rows found for game_id 0022100876.,
+2021-22,22100877,failed,No mobile play-by-play rows found for game_id 0022100877.,
+2021-22,22100878,failed,No mobile play-by-play rows found for game_id 0022100878.,
+2021-22,22100879,failed,No mobile play-by-play rows found for game_id 0022100879.,
+2021-22,22100880,failed,No mobile play-by-play rows found for game_id 0022100880.,
+2021-22,22100881,failed,No mobile play-by-play rows found for game_id 0022100881.,
+2021-22,22100882,failed,No mobile play-by-play rows found for game_id 0022100882.,
+2021-22,22100883,failed,No mobile play-by-play rows found for game_id 0022100883.,
+2021-22,22100884,failed,No mobile play-by-play rows found for game_id 0022100884.,
+2021-22,22100885,failed,No mobile play-by-play rows found for game_id 0022100885.,
+2021-22,22100887,failed,No mobile play-by-play rows found for game_id 0022100887.,
+2021-22,22100886,failed,No mobile play-by-play rows found for game_id 0022100886.,
+2021-22,22100888,failed,No mobile play-by-play rows found for game_id 0022100888.,
+2021-22,22100889,failed,No mobile play-by-play rows found for game_id 0022100889.,
+2021-22,22100892,failed,No mobile play-by-play rows found for game_id 0022100892.,
+2021-22,22100890,failed,No mobile play-by-play rows found for game_id 0022100890.,
+2021-22,22100891,failed,No mobile play-by-play rows found for game_id 0022100891.,
+2021-22,22100893,failed,No mobile play-by-play rows found for game_id 0022100893.,
+2021-22,22100894,failed,No mobile play-by-play rows found for game_id 0022100894.,
+2021-22,22100895,failed,No mobile play-by-play rows found for game_id 0022100895.,
+2021-22,22100896,failed,No mobile play-by-play rows found for game_id 0022100896.,
+2021-22,22100897,failed,No mobile play-by-play rows found for game_id 0022100897.,
+2021-22,22100899,failed,No mobile play-by-play rows found for game_id 0022100899.,
+2021-22,22100900,failed,No mobile play-by-play rows found for game_id 0022100900.,
+2021-22,22100898,failed,No mobile play-by-play rows found for game_id 0022100898.,
+2021-22,22100901,failed,No mobile play-by-play rows found for game_id 0022100901.,
+2021-22,22100902,failed,No mobile play-by-play rows found for game_id 0022100902.,
+2021-22,22100903,failed,No mobile play-by-play rows found for game_id 0022100903.,
+2021-22,22100904,failed,No mobile play-by-play rows found for game_id 0022100904.,
+2021-22,22100905,failed,No mobile play-by-play rows found for game_id 0022100905.,
+2021-22,22100906,failed,No mobile play-by-play rows found for game_id 0022100906.,
+2021-22,22100907,failed,No mobile play-by-play rows found for game_id 0022100907.,
+2021-22,22100908,failed,No mobile play-by-play rows found for game_id 0022100908.,
+2021-22,22100909,failed,No mobile play-by-play rows found for game_id 0022100909.,
+2021-22,22100910,failed,No mobile play-by-play rows found for game_id 0022100910.,
+2021-22,22100911,failed,No mobile play-by-play rows found for game_id 0022100911.,
+2021-22,22100912,failed,No mobile play-by-play rows found for game_id 0022100912.,
+2021-22,22100913,failed,No mobile play-by-play rows found for game_id 0022100913.,
+2021-22,22100914,failed,No mobile play-by-play rows found for game_id 0022100914.,
+2021-22,22100915,failed,No mobile play-by-play rows found for game_id 0022100915.,
+2021-22,22100916,failed,No mobile play-by-play rows found for game_id 0022100916.,
+2021-22,22100917,failed,No mobile play-by-play rows found for game_id 0022100917.,
+2021-22,22100918,failed,No mobile play-by-play rows found for game_id 0022100918.,
+2021-22,22100920,failed,No mobile play-by-play rows found for game_id 0022100920.,
+2021-22,22100919,failed,No mobile play-by-play rows found for game_id 0022100919.,
+2021-22,22100921,failed,No mobile play-by-play rows found for game_id 0022100921.,
+2021-22,22100922,failed,No mobile play-by-play rows found for game_id 0022100922.,
+2021-22,22100923,failed,No mobile play-by-play rows found for game_id 0022100923.,
+2021-22,22100924,failed,No mobile play-by-play rows found for game_id 0022100924.,
+2021-22,22100925,failed,No mobile play-by-play rows found for game_id 0022100925.,
+2021-22,22100926,failed,No mobile play-by-play rows found for game_id 0022100926.,
+2021-22,22100928,failed,No mobile play-by-play rows found for game_id 0022100928.,
+2021-22,22100927,failed,No mobile play-by-play rows found for game_id 0022100927.,
+2021-22,22100929,failed,No mobile play-by-play rows found for game_id 0022100929.,
+2021-22,22100930,failed,No mobile play-by-play rows found for game_id 0022100930.,
+2021-22,22100931,failed,No mobile play-by-play rows found for game_id 0022100931.,
+2021-22,22100932,failed,No mobile play-by-play rows found for game_id 0022100932.,
+2021-22,22100933,failed,No mobile play-by-play rows found for game_id 0022100933.,
+2021-22,22100935,failed,No mobile play-by-play rows found for game_id 0022100935.,
+2021-22,22100936,failed,No mobile play-by-play rows found for game_id 0022100936.,
+2021-22,22100934,failed,No mobile play-by-play rows found for game_id 0022100934.,
+2021-22,22100937,failed,No mobile play-by-play rows found for game_id 0022100937.,
+2021-22,22100938,failed,No mobile play-by-play rows found for game_id 0022100938.,
+2021-22,22100939,failed,No mobile play-by-play rows found for game_id 0022100939.,
+2021-22,22100940,failed,No mobile play-by-play rows found for game_id 0022100940.,
+2021-22,22100941,failed,No mobile play-by-play rows found for game_id 0022100941.,
+2021-22,22100942,failed,No mobile play-by-play rows found for game_id 0022100942.,
+2021-22,22100943,failed,No mobile play-by-play rows found for game_id 0022100943.,
+2021-22,22100944,failed,No mobile play-by-play rows found for game_id 0022100944.,
+2021-22,22100945,failed,No mobile play-by-play rows found for game_id 0022100945.,
+2021-22,22100948,failed,No mobile play-by-play rows found for game_id 0022100948.,
+2021-22,22100946,failed,No mobile play-by-play rows found for game_id 0022100946.,
+2021-22,22100947,failed,No mobile play-by-play rows found for game_id 0022100947.,
+2021-22,22100949,failed,No mobile play-by-play rows found for game_id 0022100949.,
+2021-22,22100950,failed,No mobile play-by-play rows found for game_id 0022100950.,
+2021-22,22100952,failed,No mobile play-by-play rows found for game_id 0022100952.,
+2021-22,22100951,failed,No mobile play-by-play rows found for game_id 0022100951.,
+2021-22,22100953,failed,No mobile play-by-play rows found for game_id 0022100953.,
+2021-22,22100955,failed,No mobile play-by-play rows found for game_id 0022100955.,
+2021-22,22100954,failed,No mobile play-by-play rows found for game_id 0022100954.,
+2021-22,22100956,failed,No mobile play-by-play rows found for game_id 0022100956.,
+2021-22,22100957,failed,No mobile play-by-play rows found for game_id 0022100957.,
+2021-22,22100959,failed,No mobile play-by-play rows found for game_id 0022100959.,
+2021-22,22100958,failed,No mobile play-by-play rows found for game_id 0022100958.,
+2021-22,22100960,failed,No mobile play-by-play rows found for game_id 0022100960.,
+2021-22,22100961,failed,No mobile play-by-play rows found for game_id 0022100961.,
+2021-22,22100963,failed,No mobile play-by-play rows found for game_id 0022100963.,
+2021-22,22100964,failed,No mobile play-by-play rows found for game_id 0022100964.,
+2021-22,22100962,failed,No mobile play-by-play rows found for game_id 0022100962.,
+2021-22,22100965,failed,No mobile play-by-play rows found for game_id 0022100965.,
+2021-22,22100966,failed,No mobile play-by-play rows found for game_id 0022100966.,
+2021-22,22100968,failed,No mobile play-by-play rows found for game_id 0022100968.,
+2021-22,22100967,failed,No mobile play-by-play rows found for game_id 0022100967.,
+2021-22,22100969,failed,No mobile play-by-play rows found for game_id 0022100969.,
+2021-22,22100970,failed,No mobile play-by-play rows found for game_id 0022100970.,
+2021-22,22100971,failed,No mobile play-by-play rows found for game_id 0022100971.,
+2021-22,22100972,failed,No mobile play-by-play rows found for game_id 0022100972.,
+2021-22,22100973,failed,No mobile play-by-play rows found for game_id 0022100973.,
+2021-22,22100976,failed,No mobile play-by-play rows found for game_id 0022100976.,
+2021-22,22100975,failed,No mobile play-by-play rows found for game_id 0022100975.,
+2021-22,22100974,failed,No mobile play-by-play rows found for game_id 0022100974.,
+2021-22,22100977,failed,No mobile play-by-play rows found for game_id 0022100977.,
+2021-22,22100978,failed,No mobile play-by-play rows found for game_id 0022100978.,
+2021-22,22100980,failed,No mobile play-by-play rows found for game_id 0022100980.,
+2021-22,22100979,failed,No mobile play-by-play rows found for game_id 0022100979.,
+2021-22,22100981,failed,No mobile play-by-play rows found for game_id 0022100981.,
+2021-22,22100982,failed,No mobile play-by-play rows found for game_id 0022100982.,
+2021-22,22100984,failed,No mobile play-by-play rows found for game_id 0022100984.,
+2021-22,22100983,failed,No mobile play-by-play rows found for game_id 0022100983.,
+2021-22,22100985,failed,No mobile play-by-play rows found for game_id 0022100985.,
+2021-22,22100986,failed,No mobile play-by-play rows found for game_id 0022100986.,
+2021-22,22100988,failed,No mobile play-by-play rows found for game_id 0022100988.,
+2021-22,22100987,failed,No mobile play-by-play rows found for game_id 0022100987.,
+2021-22,22100989,failed,No mobile play-by-play rows found for game_id 0022100989.,
+2021-22,22100990,failed,No mobile play-by-play rows found for game_id 0022100990.,
+2021-22,22100991,failed,No mobile play-by-play rows found for game_id 0022100991.,
+2021-22,22100992,failed,No mobile play-by-play rows found for game_id 0022100992.,
+2021-22,22100993,failed,No mobile play-by-play rows found for game_id 0022100993.,
+2021-22,22100996,failed,No mobile play-by-play rows found for game_id 0022100996.,
+2021-22,22100994,failed,No mobile play-by-play rows found for game_id 0022100994.,
+2021-22,22100995,failed,No mobile play-by-play rows found for game_id 0022100995.,
+2021-22,22100997,failed,No mobile play-by-play rows found for game_id 0022100997.,
+2021-22,22101000,failed,No mobile play-by-play rows found for game_id 0022101000.,
+2021-22,22100999,failed,No mobile play-by-play rows found for game_id 0022100999.,
+2021-22,22100998,failed,No mobile play-by-play rows found for game_id 0022100998.,
+2021-22,22101001,failed,No mobile play-by-play rows found for game_id 0022101001.,
+2021-22,22101003,failed,No mobile play-by-play rows found for game_id 0022101003.,
+2021-22,22101004,failed,No mobile play-by-play rows found for game_id 0022101004.,
+2021-22,22101002,failed,No mobile play-by-play rows found for game_id 0022101002.,
+2021-22,22101005,failed,No mobile play-by-play rows found for game_id 0022101005.,
+2021-22,22101007,failed,No mobile play-by-play rows found for game_id 0022101007.,
+2021-22,22101008,failed,No mobile play-by-play rows found for game_id 0022101008.,
+2021-22,22101006,failed,No mobile play-by-play rows found for game_id 0022101006.,
+2021-22,22101009,failed,No mobile play-by-play rows found for game_id 0022101009.,
+2021-22,22101011,failed,No mobile play-by-play rows found for game_id 0022101011.,
+2021-22,22101012,failed,No mobile play-by-play rows found for game_id 0022101012.,
+2021-22,22101010,failed,No mobile play-by-play rows found for game_id 0022101010.,
+2021-22,22101013,failed,No mobile play-by-play rows found for game_id 0022101013.,
+2021-22,22101014,failed,No mobile play-by-play rows found for game_id 0022101014.,
+2021-22,22101016,failed,No mobile play-by-play rows found for game_id 0022101016.,
+2021-22,22101015,failed,No mobile play-by-play rows found for game_id 0022101015.,
+2021-22,22101017,failed,No mobile play-by-play rows found for game_id 0022101017.,
+2021-22,22101020,failed,No mobile play-by-play rows found for game_id 0022101020.,
+2021-22,22101019,failed,No mobile play-by-play rows found for game_id 0022101019.,
+2021-22,22101018,failed,No mobile play-by-play rows found for game_id 0022101018.,
+2021-22,22101021,failed,No mobile play-by-play rows found for game_id 0022101021.,
+2021-22,22101022,failed,No mobile play-by-play rows found for game_id 0022101022.,
+2021-22,22101023,failed,No mobile play-by-play rows found for game_id 0022101023.,
+2021-22,22101024,failed,No mobile play-by-play rows found for game_id 0022101024.,
+2021-22,22101025,failed,No mobile play-by-play rows found for game_id 0022101025.,
+2021-22,22101026,failed,No mobile play-by-play rows found for game_id 0022101026.,
+2021-22,22101028,failed,No mobile play-by-play rows found for game_id 0022101028.,
+2021-22,22101027,failed,No mobile play-by-play rows found for game_id 0022101027.,
+2021-22,22101029,failed,No mobile play-by-play rows found for game_id 0022101029.,
+2021-22,22101031,failed,No mobile play-by-play rows found for game_id 0022101031.,
+2021-22,22101032,failed,No mobile play-by-play rows found for game_id 0022101032.,
+2021-22,22101034,failed,No mobile play-by-play rows found for game_id 0022101034.,
+2021-22,22101035,failed,No mobile play-by-play rows found for game_id 0022101035.,
+2021-22,22101036,failed,No mobile play-by-play rows found for game_id 0022101036.,
+2021-22,22101037,failed,No mobile play-by-play rows found for game_id 0022101037.,
+2021-22,22101038,failed,No mobile play-by-play rows found for game_id 0022101038.,
+2021-22,22101040,failed,No mobile play-by-play rows found for game_id 0022101040.,
+2021-22,22101041,failed,No mobile play-by-play rows found for game_id 0022101041.,
+2021-22,22101042,failed,No mobile play-by-play rows found for game_id 0022101042.,
+2021-22,22101043,failed,No mobile play-by-play rows found for game_id 0022101043.,
+2021-22,22101044,failed,No mobile play-by-play rows found for game_id 0022101044.,
+2021-22,22101045,failed,No mobile play-by-play rows found for game_id 0022101045.,
+2021-22,22101046,failed,No mobile play-by-play rows found for game_id 0022101046.,
+2021-22,22101047,failed,No mobile play-by-play rows found for game_id 0022101047.,
+2021-22,22101048,failed,No mobile play-by-play rows found for game_id 0022101048.,
+2021-22,22101050,failed,No mobile play-by-play rows found for game_id 0022101050.,
+2021-22,22101049,failed,No mobile play-by-play rows found for game_id 0022101049.,
+2021-22,22101051,failed,No mobile play-by-play rows found for game_id 0022101051.,
+2021-22,22101052,failed,No mobile play-by-play rows found for game_id 0022101052.,
+2021-22,22101054,failed,No mobile play-by-play rows found for game_id 0022101054.,
+2021-22,22101053,failed,No mobile play-by-play rows found for game_id 0022101053.,
+2021-22,22101055,failed,No mobile play-by-play rows found for game_id 0022101055.,
+2021-22,22101056,failed,No mobile play-by-play rows found for game_id 0022101056.,
+2021-22,22101057,failed,No mobile play-by-play rows found for game_id 0022101057.,
+2021-22,22101058,failed,No mobile play-by-play rows found for game_id 0022101058.,
+2021-22,22101059,failed,No mobile play-by-play rows found for game_id 0022101059.,
+2021-22,22101060,failed,No mobile play-by-play rows found for game_id 0022101060.,
+2021-22,22101061,failed,No mobile play-by-play rows found for game_id 0022101061.,
+2021-22,22101063,failed,No mobile play-by-play rows found for game_id 0022101063.,
+2021-22,22101064,failed,No mobile play-by-play rows found for game_id 0022101064.,
+2021-22,22101065,failed,No mobile play-by-play rows found for game_id 0022101065.,
+2021-22,22101066,failed,No mobile play-by-play rows found for game_id 0022101066.,
+2021-22,22101067,failed,No mobile play-by-play rows found for game_id 0022101067.,
+2021-22,22101068,failed,No mobile play-by-play rows found for game_id 0022101068.,
+2021-22,22101069,failed,No mobile play-by-play rows found for game_id 0022101069.,
+2021-22,22101070,failed,No mobile play-by-play rows found for game_id 0022101070.,
+2021-22,22101071,failed,No mobile play-by-play rows found for game_id 0022101071.,
+2021-22,22101073,failed,No mobile play-by-play rows found for game_id 0022101073.,
+2021-22,22101074,failed,No mobile play-by-play rows found for game_id 0022101074.,
+2021-22,22101075,failed,No mobile play-by-play rows found for game_id 0022101075.,
+2021-22,22101076,failed,No mobile play-by-play rows found for game_id 0022101076.,
+2021-22,22101077,failed,No mobile play-by-play rows found for game_id 0022101077.,
+2021-22,22101078,failed,No mobile play-by-play rows found for game_id 0022101078.,
+2025-26,22500652,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501003,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501037,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501038,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501039,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501040,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501041,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501042,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501043,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501044,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501045,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501046,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501047,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501048,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501049,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501050,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501051,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501052,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501053,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501054,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501055,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501056,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501057,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501058,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501059,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501060,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501061,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501062,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501063,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501064,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501065,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501066,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501067,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501068,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501069,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501070,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501071,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501072,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501073,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501074,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501075,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501076,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501077,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501078,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501079,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501080,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501081,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501082,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501083,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501084,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501085,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501086,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501087,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501088,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501089,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501090,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501091,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501092,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501093,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501094,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501095,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501096,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501097,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501098,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501099,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501100,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501101,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501102,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501103,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501104,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501105,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501106,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501107,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501108,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501109,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501110,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501111,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501112,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501113,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501114,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501115,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501116,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501117,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501118,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501119,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501120,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501121,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501122,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501123,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501124,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501125,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501126,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501127,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501128,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501129,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501130,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501131,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501132,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501133,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501134,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501135,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501136,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501137,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501138,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501139,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501140,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501141,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501142,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501143,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501144,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501145,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501146,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501147,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501148,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501149,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501150,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501151,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501152,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501153,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501154,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501155,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501156,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501157,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501158,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501159,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501160,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501161,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501162,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501163,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501164,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501165,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501166,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501167,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501168,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501169,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501170,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501171,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501172,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501173,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501174,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501175,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501176,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501177,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501178,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501179,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501180,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501181,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501182,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501183,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501184,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501185,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501186,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501187,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501188,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501189,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501190,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501191,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501192,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501193,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501194,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501195,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501196,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501197,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501198,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501199,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501200,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501201,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501202,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501203,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501204,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501205,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501206,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501207,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501208,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501209,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501210,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501211,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501212,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501213,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501214,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501215,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501216,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501217,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501218,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501219,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501220,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501221,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501222,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501223,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501224,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501225,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501226,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501227,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501228,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501229,not_in_local_2025_26_snapshot,,wmi
+2025-26,22501230,not_in_local_2025_26_snapshot,,wmi

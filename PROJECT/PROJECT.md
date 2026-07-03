@@ -19,15 +19,17 @@
 ## Current Scope
 - The project studies whether NBA defensive foul calls show short-term whistle momentum.
 - The unit of analysis is a possession.
-- The core question is whether recent defensive fouls connect to current and near-future foul patterns.
-- The project separates raw WMI from controlled WMI.
-- Raw WMI is the direct first-look metric.
-- Controlled WMI is the context-aware version of the same whistle-momentum idea.
+- The user-facing unit is one NBA game.
+- The core question is whether recent defensive fouls inside a game connect to current and near-future foul patterns.
+- The active project uses WMI only.
+- Completed-game lists are only comparison context for percentiles and distribution plots.
+- The project no longer has a separate pooled season-level edition.
 - WMI should show whistle-pattern behavior. It should not be presented as proof of referee intent by itself.
 
 ## Current Project Stage
-- Current stage: `WMI_raw` plus `WMI_controlled`.
-- Current work includes game-level and season-level versions of both raw and controlled WMI.
+- Current stage: game-level `WMI`.
+- Current work centers on game-level WMI.
+- League-wide completed-game outputs support game comparison, not pooled season claims.
 - Current documentation priority: keep definitions, project guidance, and logs organized and separate.
 
 ## Core Project Rules
@@ -35,7 +37,6 @@
 - Offensive fouls do not count as defensive fouls for this project.
 - Last-two and next-two windows use global possession order.
 - Last-two and next-two windows are not filtered by team.
-- Raw and controlled WMI must stay clearly separated.
 
 ## Key Variables
 - `L_t`: equals `1` when at least one of the previous two possessions had a counted defensive foul.
@@ -50,61 +51,29 @@
 - `defense_team`: team defending.
 
 ## Metric Names
-- `WMI_raw`: direct, unadjusted Whistle Momentum Index.
-- `WMI_controlled`: context-aware Whistle Momentum Index.
-- `WMI_rawgame`: one raw WMI value for one game.
-- `WMI_controlledgame`: one controlled WMI value for one game.
-- `WMI_rawseason`: one raw WMI value across a season or season sample.
-- `WMI_controlledseason`: one controlled WMI value across a season or season sample.
+- `WMI`: direct, unadjusted Whistle Momentum Index.
+- `WMI_game`: one WMI value for one game.
+- `WMI_game_percentile`: where one WMI game score ranks versus the completed-game comparison set.
 
-## WMI_raw
-- `WMI_raw` uses the direct ratio formula from the definitions document.
+## WMI
+- `WMI` uses the direct ratio formula from the definitions document.
 - It compares average `M_t` when `L_t = 1` to average `M_t` when `L_t = 0`.
 - It does not adjust for score, time, teams, period, or intentional-foul situations.
 - It is useful as a simple first look.
 - It should not be treated as proof by itself.
 
-## WMI_rawgame
-- `WMI_rawgame` is `WMI_raw` calculated on possessions from one game.
-- It uses the same formula as `WMI_raw`.
-- It should be labeled as game-level raw WMI.
-
-## WMI_rawseason
-- `WMI_rawseason` is `WMI_raw` calculated on possessions across a season or season sample.
-- It uses the same formula as `WMI_raw`.
-- It should be labeled as season-level raw WMI.
-
-## WMI_controlled
-- `WMI_controlled` keeps the same whistle-momentum idea as `WMI_raw`.
-- It should account for game context that can affect foul patterns.
-- It should consider score difference, score margin, time left, period, offense team, defense team, and intentional-foul situations.
-- It should not be changed only to make it closer to `WMI_raw`.
-- If controlled WMI is lower than raw WMI, that can mean some raw pattern was explained by game context.
-- The definitions document currently defines the controlled concept and exclusions, but it does not lock the project to one final statistical model forever.
-
-## WMI_controlledgame
-- `WMI_controlledgame` is `WMI_controlled` calculated for one game.
-- It should be labeled as game-level controlled WMI.
-- It should be kept separate from `WMI_rawgame`.
-
-## WMI_controlledseason
-- `WMI_controlledseason` is `WMI_controlled` calculated across a season or season sample.
-- It should be labeled as season-level controlled WMI.
-- It should be kept separate from `WMI_rawseason`.
-
-## Controlled Exclusions
-- Controlled WMI should exclude large-margin situations as defined in the definitions document.
-- Controlled WMI should exclude likely intentional late-game fouls as defined in the definitions document.
-- Do not change exclusion rules unless the user clearly asks.
-- If an exclusion rule changes, update the definitions document and this file.
+## WMI_game
+- `WMI_game` is `WMI` calculated on possessions from one game.
+- It uses the same formula as `WMI`.
+- It should be labeled as game-level WMI.
 
 ## Interpretation Rules
 - A WMI value above `1` means more whistle momentum after recent fouls.
 - A WMI value near `1` means little or no difference.
 - A WMI value below `1` means less whistle momentum after recent fouls.
-- Raw and controlled WMI answer related but different questions.
-- Raw WMI is easier to explain.
-- Controlled WMI is more careful about game context.
+- WMI is easier to explain.
+- Percentiles and distribution plots compare one game against other completed games.
+- Completed-game comparison outputs should not be presented as a separate season-level WMI edition.
 
 ## Files In The `PROJECT` Folder
 - `PROJECT.md`: main formal guide, current scope, workflow, metric naming, and documentation rules.
@@ -131,7 +100,6 @@
 - Edit the definitions document when a term is added, removed, or redefined.
 - Edit the definitions document when a formula changes.
 - Edit the definitions document when a variable changes meaning.
-- Edit the definitions document when a controlled exclusion rule changes.
 - Edit the definitions document when interpretation guardrails change.
 - Do not use the definitions document as a routine log.
 
@@ -176,12 +144,11 @@
 - Do not put detailed calculation results in the definitions document.
 - Add a short note to the project log only if the run changes project history or status.
 - Keep detailed calculation tracking outside this `PROJECT` folder unless the user asks otherwise.
+- Completed-game comparison runs may be logged as comparison context.
 
 ## Guardrails
-- Do not change `WMI_raw` unless the user clearly asks.
-- Do not change controlled assumptions or exclusions unless the user clearly asks.
+- Do not change `WMI` unless the user clearly asks.
 - Do not edit definitions just to match a result.
-- Do not force controlled WMI to look closer to raw WMI.
 - If a result does not match the current definitions, say that clearly.
 
 ## Starting From Scratch With Only This Folder
@@ -190,4 +157,5 @@
 3. Read `nba-whistle-project-log.md`.
 4. Use the definitions document as the source of truth for formulas and variable meanings.
 5. Use `PROJECT.md` as the source of truth for workflow and documentation rules.
-6. Keep raw and controlled WMI separate in all notes, results, and explanations.
+6. Keep the active product WMI-only unless the project intentionally reopens adjusted modeling.
+7. Keep the main presentation game-by-game; use league-wide completed-game outputs only as comparison context.
