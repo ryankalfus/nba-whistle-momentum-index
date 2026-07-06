@@ -5,9 +5,9 @@ import pandas as pd
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
 
-from wmi_game_utils import build_possession_summary_from_actions
-from wmi_game_utils import fetch_game_actions
-from wmi_game_utils import add_recent_foul_columns
+from wmi_utils import build_possession_summary_from_actions
+from wmi_utils import fetch_game_actions
+from wmi_utils import add_recent_foul_columns
 
 
 DEFAULT_CONTROLLED_FORMULA = (
