@@ -7,7 +7,7 @@
 ## Current Direction
 - The project studies NBA whistle momentum at the possession level.
 - The current active scope is WMI only.
-- The game-level metric is named `WMI_game`.
+- The game-level metric is named `WMI`.
 - Completed-game lists are used only to compare one game against other games.
 - The project no longer maintains a separate pooled season-level edition.
 - Use `PROJECT.md` for the full current plan and workflow.

@@ -1,7 +1,7 @@
 import argparse
 
-from wmi_game_utils import build_possession_model_table
-from wmi_game_utils import default_possession_table_out_path
+from wmi_utils import build_possession_model_table
+from wmi_utils import default_possession_table_out_path
 
 
 def parse_args():

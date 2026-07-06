@@ -1,4 +1,4 @@
-season,game_id,game_date_et,away_team,home_team,matchup,source,possessions,n1_count_L_t_eq_1,n0_count_L_t_eq_0,mean_M_t_where_L_t_eq_1,mean_M_t_where_L_t_eq_0,WMI_game,as_of_utc_date,game_status,game_status_text,wmi_game_percentile
+season,game_id,game_date_et,away_team,home_team,matchup,source,possessions,n1_count_L_t_eq_1,n0_count_L_t_eq_0,mean_M_t_where_L_t_eq_1,mean_M_t_where_L_t_eq_0,WMI,as_of_utc_date,game_status,game_status_text,wmi_percentile
 2020-21,22000001,20201222,GSW,BKN,GSW @ BKN,data.nba.com mobile_teams v2015 play-by-play,221,70,151,0.2142857142857142,0.2317880794701986,0.9244897959183672,,,,51.806154303552844
 2020-21,22000002,20201222,LAC,LAL,LAC @ LAL,data.nba.com mobile_teams v2015 play-by-play,208,72,136,0.2361111111111111,0.2647058823529412,0.8919753086419753,,,,48.03032555373867
 2020-21,22000003,20201223,MIL,BOS,MIL @ BOS,data.nba.com mobile_teams v2015 play-by-play,199,54,145,0.2407407407407407,0.193103448275862,1.2466931216931216,,,,79.66404043407165

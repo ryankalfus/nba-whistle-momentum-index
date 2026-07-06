@@ -18,14 +18,14 @@ def latest_input_path():
 
 def output_path_for(input_path):
     stamp = input_path.stem.replace("wmi_games_2025_26_asof_", "")
-    return Path(f"wmi_game_distribution_2025_26_asof_{stamp}.png")
+    return Path(f"wmi_distribution_2025_26_asof_{stamp}.png")
 
 
 def gaussian_kde_curve(values, grid_points=400):
     values = np.asarray(values, dtype=float)
     values = values[np.isfinite(values)]
     if values.size == 0:
-        raise ValueError("No finite WMI_game values found.")
+        raise ValueError("No finite WMI values found.")
 
     std = np.std(values, ddof=1) if values.size > 1 else 0.0
     if values.size == 1 or std == 0.0:
@@ -50,9 +50,9 @@ def gaussian_kde_curve(values, grid_points=400):
 
 def build_plot(input_path, output_path):
     df = pd.read_csv(input_path)
-    values = df["WMI_game"].dropna().astype(float).to_numpy()
+    values = df["WMI"].dropna().astype(float).to_numpy()
     if values.size == 0:
-        raise ValueError(f"No WMI_game values found in {input_path}")
+        raise ValueError(f"No WMI values found in {input_path}")
 
     x_grid, density = gaussian_kde_curve(values)
 
@@ -77,8 +77,8 @@ def build_plot(input_path, output_path):
     ax.axvline(mean_wmi, color="#1d3557", linestyle="--", linewidth=2, label=f"Mean = {mean_wmi:.3f}")
     ax.axvline(median_wmi, color="#2a9d8f", linestyle=":", linewidth=2, label=f"Median = {median_wmi:.3f}")
 
-    ax.set_title("2025-26 WMI_game Distribution", fontsize=17, pad=14)
-    ax.set_xlabel("WMI_game", fontsize=12)
+    ax.set_title("2025-26 WMI Distribution", fontsize=17, pad=14)
+    ax.set_xlabel("WMI", fontsize=12)
     ax.set_ylabel("Density", fontsize=12)
     ax.text(
         0.99,
@@ -98,10 +98,10 @@ def build_plot(input_path, output_path):
 
     return {
         "count": count,
-        "mean_wmi_game": mean_wmi,
-        "median_wmi_game": median_wmi,
-        "min_wmi_game": float(values.min()),
-        "max_wmi_game": float(values.max()),
+        "mean_wmi": mean_wmi,
+        "median_wmi": median_wmi,
+        "min_wmi": float(values.min()),
+        "max_wmi": float(values.max()),
         "as_of_utc_date": as_of_date,
     }
 
@@ -116,10 +116,10 @@ def main():
     print("output_path", output_path)
     print("as_of_utc_date", stats["as_of_utc_date"])
     print("games", stats["count"])
-    print("mean_wmi_game", stats["mean_wmi_game"])
-    print("median_wmi_game", stats["median_wmi_game"])
-    print("min_wmi_game", stats["min_wmi_game"])
-    print("max_wmi_game", stats["max_wmi_game"])
+    print("mean_wmi", stats["mean_wmi"])
+    print("median_wmi", stats["median_wmi"])
+    print("min_wmi", stats["min_wmi"])
+    print("max_wmi", stats["max_wmi"])
 
 
 if __name__ == "__main__":

@@ -5,8 +5,8 @@ from datetime import UTC, datetime
 import pandas as pd
 import requests
 
-from wmi_game_utils import build_possession_model_table
-from wmi_game_utils import calculate_wmi_game
+from wmi_utils import build_possession_model_table
+from wmi_utils import calculate_wmi
 
 
 SEASON = "2025-26"
@@ -77,7 +77,7 @@ def build_game_row(session, gid):
         return {"status": "skip_not_final", "game_id": gid}
 
     table_df = build_possession_model_table(gid, session=session)
-    result = calculate_wmi_game(table_df)
+    result = calculate_wmi(table_df)
 
     away_team = game.get("awayTeam", {}).get("teamTricode")
     home_team = game.get("homeTeam", {}).get("teamTricode")
@@ -100,22 +100,22 @@ def build_game_row(session, gid):
         "n0_count_L_t_eq_0": result["n0_count_L_t_eq_0"],
         "mean_M_t_where_L_t_eq_1": result["mean_M_t_where_L_t_eq_1"],
         "mean_M_t_where_L_t_eq_0": result["mean_M_t_where_L_t_eq_0"],
-        "WMI_game": result["WMI_game"],
+        "WMI": result["WMI"],
     }
 
 
 def add_percentiles(df):
     out = df.copy()
     if out.empty:
-        out["wmi_game_percentile"] = pd.Series(dtype=float)
+        out["wmi_percentile"] = pd.Series(dtype=float)
         return out, None, None
 
-    mean_wmi = float(out["WMI_game"].mean())
-    std_wmi = float(out["WMI_game"].std(ddof=0))
+    mean_wmi = float(out["WMI"].mean())
+    std_wmi = float(out["WMI"].std(ddof=0))
     if std_wmi == 0.0 or len(out) == 1:
-        out["wmi_game_percentile"] = 50.0
+        out["wmi_percentile"] = 50.0
     else:
-        out["wmi_game_percentile"] = out["WMI_game"].rank(method="average", pct=True) * 100.0
+        out["wmi_percentile"] = out["WMI"].rank(method="average", pct=True) * 100.0
     return out, mean_wmi, std_wmi
 
 
@@ -191,8 +191,8 @@ def main():
     print("games_succeeded", len(out_df))
     print("games_not_final", len(set(skipped_not_final)))
     print("games_failed", len(set(failed_ids)))
-    print("mean_game_wmi", mean_wmi)
-    print("std_game_wmi", std_wmi)
+    print("mean_wmi", mean_wmi)
+    print("std_wmi", std_wmi)
     print(out_df.head(10).to_string(index=False))
     if failed_ids:
         print("failed_game_ids_sample", sorted(set(failed_ids))[:20])

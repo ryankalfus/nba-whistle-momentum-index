@@ -52,8 +52,7 @@
 
 ## Metric Names
 - `WMI`: direct, unadjusted Whistle Momentum Index.
-- `WMI_game`: one WMI value for one game.
-- `WMI_game_percentile`: where one WMI game score ranks versus the completed-game comparison set.
+- `wmi_percentile`: where one game’s WMI ranks versus the completed-game comparison set.
 
 ## WMI
 - `WMI` uses the direct ratio formula from the definitions document.
@@ -62,10 +61,10 @@
 - It is useful as a simple first look.
 - It should not be treated as proof by itself.
 
-## WMI_game
-- `WMI_game` is `WMI` calculated on possessions from one game.
-- It uses the same formula as `WMI`.
-- It should be labeled as game-level WMI.
+## Game-Level Use
+- Each game gets one `WMI` value calculated from that game’s possessions.
+- Completed-game datasets provide percentile and distribution context.
+- Public labels should call the metric `WMI`.
 
 ## Interpretation Rules
 - A WMI value above `1` means more whistle momentum after recent fouls.

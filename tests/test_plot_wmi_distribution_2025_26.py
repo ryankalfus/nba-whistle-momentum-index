@@ -5,13 +5,13 @@ import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from plot_wmi_game_distribution_2025_26 import gaussian_kde_curve
-from plot_wmi_game_distribution_2025_26 import output_path_for
+from plot_wmi_distribution_2025_26 import gaussian_kde_curve
+from plot_wmi_distribution_2025_26 import output_path_for
 
 
 def test_output_path_for_uses_matching_stamp():
     input_path = Path("wmi_games_2025_26_asof_2026_03_23.csv")
-    assert str(output_path_for(input_path)) == "wmi_game_distribution_2025_26_asof_2026_03_23.png"
+    assert str(output_path_for(input_path)) == "wmi_distribution_2025_26_asof_2026_03_23.png"
 
 
 def test_gaussian_kde_curve_returns_nonnegative_density():

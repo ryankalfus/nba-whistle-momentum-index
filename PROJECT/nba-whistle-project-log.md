@@ -36,25 +36,25 @@ Log all changes here. Short, summarized.
 - 02.24.2026: (Earlier attempt) redefined last2/next2 as global possession windows; later replaced by relevant defensive-team possession windows.
 - 02.24.2026: Updated `Plan for WMI - Ryan Kalfus (2026).md` to center the goal on true whistle momentum and note current stage is WMI only.
 - 02.24.2026: Updated definitions with all current variables (`L_t`, `F_t`, `N_t`, `M_t`) as project formula evolved.
-- 02.24.2026: Added `calculate_wmi_game_okc_mil.py` with full WMI breakdown and exact WMI formula implementation.
-- 02.24.2026: Calculated `WMI_game = 72.916667` for OKC vs MIL and saved breakdown in `wmi_game_breakdown_okc_mil.csv`.
+- 02.24.2026: Added `calculate_wmi_okc_mil.py` with full WMI breakdown and exact WMI formula implementation.
+- 02.24.2026: Calculated `WMI = 72.916667` for OKC vs MIL and saved breakdown in `wmi_breakdown_okc_mil.csv`.
 - 02.24.2026: (Earlier attempt) re-defined `last2` and `next2` as global possession windows; later replaced by relevant defensive-team windows.
 - 02.24.2026: Updated `Plan for WMI - Ryan Kalfus (2026).md` to emphasize goal = true whistle momentum, current phase = WMI only.
 - 02.24.2026: Re-audited scripts, CSV outputs, and docs for `L_t`, `F_t`, `N_t`, `M_t` consistency.
 - 02.24.2026: Expanded definitions with full variable mapping for both all-possession and defensive-foul context files.
-- 02.24.2026: Re-ran `build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, and `calculate_wmi_game_okc_mil.py` for an earlier global-window version.
-- 02.24.2026: (Earlier version result) `WMI_game = 72.916667`; later superseded.
+- 02.24.2026: Re-ran `build_possession_model_table_okc_mil.py`, `categorize_defensive_fouls_okc_mil.py`, and `calculate_wmi_okc_mil.py` for an earlier global-window version.
+- 02.24.2026: (Earlier version result) `WMI = 72.916667`; later superseded.
 - 02.24.2026: (Earlier attempt) re-defined `L_t` and `N_t` to use relevant defensive-team possessions; later reverted to global windows.
-- 02.24.2026: Updated WMI equation to unified mean-ratio form: `WMI_game = [ (1 / n1) * ∑_(t: L_t=1) M_t ] / [ (1 / n0) * ∑_(t: L_t=0) M_t ]`.
+- 02.24.2026: Updated WMI equation to unified mean-ratio form: `WMI = [ (1 / n1) * ∑_(t: L_t=1) M_t ] / [ (1 / n0) * ∑_(t: L_t=0) M_t ]`.
 - 02.24.2026: (Earlier attempt) updated `build_possession_model_table_okc_mil.py` and `categorize_defensive_fouls_okc_mil.py` for relevant-possession logic; later reverted to global windows.
-- 02.24.2026: Updated `calculate_wmi_game_okc_mil.py` to compute `n1`, `n0`, group means of `M_t`, and unified `WMI_game`.
+- 02.24.2026: Updated `calculate_wmi_okc_mil.py` to compute `n1`, `n0`, group means of `M_t`, and unified `WMI`.
 - 02.24.2026: (Earlier attempt) updated definitions + plan markdown files for relevant-possession rules; later replaced by global window definitions.
-- 02.24.2026: Re-ran all outputs after formula/logic update and got `WMI_game = 0.952381` for OKC vs MIL (supersedes prior 72.916667 run).
+- 02.24.2026: Re-ran all outputs after formula/logic update and got `WMI = 0.952381` for OKC vs MIL (supersedes prior 72.916667 run).
 - 02.24.2026: Consolidated plan markdowns into one file (`Plan for WMI - Ryan Kalfus (2026).md`) and removed the old plan file.
 - 02.24.2026: Re-defined `last2` / `next2` (and `L_t`, `F_t`, `N_t`, `M_t` usage) back to global possession windows with no offense/defense team filtering.
 - 02.24.2026: Updated all relevant markdown files (definitions, plan, log) to reflect global last2/next2 definitions.
 - 02.24.2026: Removed the plan-file bottom log section and removed the "what's next" section so plan stays as full project overview.
-- 02.24.2026: Re-ran all scripts after restoring global last2/next2 logic and recalculated `WMI_game = 3.035185` for OKC vs MIL.
+- 02.24.2026: Re-ran all scripts after restoring global last2/next2 logic and recalculated `WMI = 3.035185` for OKC vs MIL.
 
 - 03.01.2026: Renamed project folder from `nba_whistle_project` to `nba-whistle-project` and verified filesystem path sync.
 - 03.01.2026: Updated Codex local project/workspace links so this project now points to `/Users/ryankalfus/Downloads/nba-whistle-project`.
@@ -69,32 +69,32 @@ Log all changes here. Short, summarized.
 - 03.01.2026: Final restore pass confirmed all `nba-whistle-project` threads now point to `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project` by updating `threads.cwd` in `~/.codex/state_5.sqlite` and workspace roots in `~/.codex/.codex-global-state.json`.
 - 03.01.2026: Created final pre-fix backups before this restore pass: `~/.codex/.codex-global-state.json.pre_restore_move_fix_20260301_171034` and `~/.codex/state_5.sqlite.pre_restore_move_fix_20260301_171034`.
 - 03.01.2026: Final compatibility alignment set all 7 whistle thread `cwd` values to `/Users/ryankalfus/Downloads/nba-whistle-project` (Codex project root string), which is a symlink to the moved real folder at `/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project`.
-- 03.01.2026: Added `calculate_wmi_season_2024_25.py` to compute pooled WMI for the full 2024-25 regular season using game IDs `0022400001` through `0022401230`.
-- 03.01.2026: Generated `wmi_season_2024_25_summary.csv` with `games_succeeded=1230`, `games_failed=0`, and `WMI_season_pooled=0.978645`.
-- 03.01.2026: Added `wmi_season_2025_26_summary_asof_2026_03_01.csv` with pooled 2025-26 result `WMI_season_pooled=0.949847` (`896/896` completed regular-season games as of 03.01.2026).
+- 03.01.2026: Added `calculate_wmi_2024_25.py` to compute pooled WMI for the full 2024-25 regular season using game IDs `0022400001` through `0022401230`.
+- 03.01.2026: Generated `wmi_2024_25_summary.csv` with `games_succeeded=1230`, `games_failed=0`, and `WMI=0.978645`.
+- 03.01.2026: Added `wmi_2025_26_summary_asof_2026_03_01.csv` with pooled 2025-26 result `WMI=0.949847` (`896/896` completed regular-season games as of 03.01.2026).
 - 03.01.2026: Added `wmi-calculations.md` as a compact WMI stats tracker listing OKC vs MIL, 2025-26 season (as of 03.01.2026), and 2024-25 season values with output file references.
 - 03.01.2026: Renamed compact tracker file to `wmi-calculations-log.md` and removed duplicate `wmi-calculations.md`.
 - 03.01.2026: Clarified terminology in project markdowns: `WMI` is the current equation-based metric; `WMI` is future controlled/logistic-regression based and equation is still TBD.
 - 03.01.2026: Removed bottom log sections from `Plan for WMI - Ryan Kalfus (2026).md` and definitions file so logs are centralized in this project log.
 - 03.01.2026: Renamed `Definitions for NBA Analytics Research Log - Ryan Kalfus (2026).md` to `Definitions for NBA Analytics Research - Ryan Kalfus (2026).md`.
 - 03.01.2026: Renamed `NBA Analytics Research Log - Ryan Kalfus (2026).md` to `nba-whistle-project-log.md`.
-- 03.01.2026: Added `calculate_wmi_season_2010_11_to_2023_24.py` to compute season-level `WMI` from requested 2010-11 to 2023-24 range using the current NBA CDN play-by-play source.
-- 03.01.2026: Computed and saved season results to `wmi_season_2010_11_to_2023_24.csv`.
+- 03.01.2026: Added `calculate_wmi_2010_11_to_2023_24.py` to compute season-level `WMI` from requested 2010-11 to 2023-24 range using the current NBA CDN play-by-play source.
+- 03.01.2026: Computed and saved season results to `wmi_2010_11_to_2023_24.csv`.
 - 03.01.2026: In the current CDN play-by-play source, requested seasons 2010-11 through 2018-19 were unavailable (game IDs returned unavailable status).
-- 03.01.2026: Calculated `WMI_season_pooled = 0.9884629883031074` for 2023-24 (`games_succeeded=1230`, `games_missing=0`).
-- 03.01.2026: Calculated `WMI_season_pooled = 0.9960930994135297` for 2022-23 (`games_succeeded=1230`, `games_missing=0`).
-- 03.01.2026: Calculated `WMI_season_pooled = 0.942689878530503` for 2021-22 (`games_succeeded=1230`, `games_missing=0`).
-- 03.01.2026: Calculated `WMI_season_pooled = 0.9874203265496059` for 2020-21 (`games_succeeded=1080`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI = 0.9884629883031074` for 2023-24 (`games_succeeded=1230`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI = 0.9960930994135297` for 2022-23 (`games_succeeded=1230`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI = 0.942689878530503` for 2021-22 (`games_succeeded=1230`, `games_missing=0`).
+- 03.01.2026: Calculated `WMI = 0.9874203265496059` for 2020-21 (`games_succeeded=1080`, `games_missing=0`).
 - 03.01.2026: Updated `wmi-calculations-log.md` so seasonal entries start at `3/` for 2023-24 and then go down to oldest available season in-range.
 - 03.01.2026: Updated `wmi-calculations-log.md` numbering so `3/` is `2024-25`, then `2023-24` down through `2020-21`.
 - 03.02.2026: Documentation update rule set: log routine output/code/file changes in `nba-whistle-project-log.md` by default; update plan/definitions only when actual plan/workflow or term/definition/equation/rule changes.
-- 03.02.2026: Re-calculated OKC vs MIL `WMI` using the definitions formula (`M_t = F_t + F_t*N_t`, then mean-ratio by `L_t`) via `build_possession_model_table_okc_mil.py` + updated `calculate_wmi_game_okc_mil.py`; result in `wmi_game_breakdown_okc_mil.csv` is `0.9523809523809524` and line `1/` in `wmi-calculations-log.md` was updated from `3.0351851851851857`.
+- 03.02.2026: Re-calculated OKC vs MIL `WMI` using the definitions formula (`M_t = F_t + F_t*N_t`, then mean-ratio by `L_t`) via `build_possession_model_table_okc_mil.py` + updated `calculate_wmi_okc_mil.py`; result in `wmi_breakdown_okc_mil.csv` is `0.9523809523809524` and line `1/` in `wmi-calculations-log.md` was updated from `3.0351851851851857`.
 - 03.02.2026: Calculated random 2025-26 game `WMI` for CLE @ CHA (`game_id=0022500802`, date `2026-02-20`) using current definitions (`M_t = F_t + F_t*N_t`, mean-ratio by `L_t`); result `0.7185909980430528`, and added it as line `8/` in `wmi-calculations-log.md`.
-- 03.23.2026: Completed step 1 only: generalized the single-game WMI workflow so any NBA `game_id` can be run through new scripts `build_possession_model_table_game.py` and `calculate_wmi_game_any_game.py`; kept `build_possession_model_table_okc_mil.py` and `calculate_wmi_game_okc_mil.py` as fixed-example wrappers, added shared logic in `wmi_game_utils.py`, updated README/plan wording, and did not do step 2 (all-game z-scores) or step 3 (controlled WMI).
-- 03.23.2026: Completed step 2: added `calculate_wmi_games_2025_26.py`, generated `wmi_games_2025_26_asof_2026_03_23.csv` with one row per completed 2025-26 regular-season game so far plus `wmi_game_z_score`, and updated README/plan/definitions so the diagnostic layer is now current.
+- 03.23.2026: Completed step 1 only: generalized the single-game WMI workflow so any NBA `game_id` can be run through new scripts `build_possession_model_table_game.py` and `calculate_wmi_any_game.py`; kept `build_possession_model_table_okc_mil.py` and `calculate_wmi_okc_mil.py` as fixed-example wrappers, added shared logic in `wmi_utils.py`, updated README/plan wording, and did not do step 2 (all-game z-scores) or step 3 (controlled WMI).
+- 03.23.2026: Completed step 2: added `calculate_wmi_games_2025_26.py`, generated `wmi_games_2025_26_asof_2026_03_23.csv` with one row per completed 2025-26 regular-season game so far plus comparison statistics, and updated README/plan/definitions so the diagnostic layer is now current.
 - 03.23.2026: Logged the new 2025-26 game-list result in `wmi-calculations-log.md` line `9/`; current output has `games_succeeded=1034`, `games_failed=2` because game IDs `0022500652` and `0022501003` returned NBA CDN `403` responses during this run.
-- 03.23.2026: Added `plot_wmi_game_distribution_2025_26.py`, generated `wmi_game_distribution_2025_26_asof_2026_03_23.png` from `wmi_games_2025_26_asof_2026_03_23.csv`, and added a small plot test file for the season `WMI_game` distribution curve output.
-- 03.23.2026: Added controlled-WMI helpers in `wmi_controlled_utils.py`, added season runner `calculate_wmi_controlled_2025_26.py`, and refactored `wmi_game_utils.py` so WMI and controlled workflows share the same possession summary base.
+- 03.23.2026: Added `plot_wmi_distribution_2025_26.py`, generated `wmi_distribution_2025_26_asof_2026_03_23.png` from `wmi_games_2025_26_asof_2026_03_23.csv`, and added a small plot test file for the season `WMI` distribution curve output.
+- 03.23.2026: Added controlled-WMI helpers in `wmi_controlled_utils.py`, added season runner `calculate_wmi_controlled_2025_26.py`, and refactored `wmi_utils.py` so WMI and controlled workflows share the same possession summary base.
 - 03.23.2026: Added `tests/test_wmi_controlled_utils.py` covering `L_count_t`, `period_bucket`, intentional-foul exclusions, and controlled-model summary output.
 - 03.23.2026: Ran `pytest -q` after the controlled-WMI implementation and got `12 passed`.
 - 03.23.2026: Generated `wmi_controlled_table_2025_26_asof_2026_03_23.csv` and `wmi_controlled_2025_26_summary_asof_2026_03_23.csv` for completed 2025-26 regular-season games; current controlled run has `games_succeeded=1034`, `games_failed=2`, `rows_excluded_intentional=720`, and `odds_ratio_trigger=0.9018788705555008` for `L_count_t`.
@@ -113,7 +113,7 @@ Log all changes here. Short, summarized.
 - 06.20.2026: Changed the active project scope to game-by-game WMI, kept completed-game lists only as comparison context, removed pooled season-level scripts/outputs from the active tree, and updated current documentation/calculation trackers.
 - 06.20.2026: Reframed completed-game comparison outputs from z-scores to percentiles for simpler game interpretation.
 - 06.20.2026: Built the 2020-21 through 2025-26 game-level WMI distribution artifacts with `build_wmi_distribution_2020_2026.py`: generated WMI and controlled CSV datasets, summary/failure CSVs, and WMI/controlled distribution PNGs. The 2020-21 through 2024-25 rows use `data.nba.com` mobile play-by-play; 2025-26 uses the existing local March 2026 snapshots, with missing coverage logged explicitly in the failures CSV.
-- 06.29.2026: Renamed the active metric to `WMI` / `WMI_game` across active code, docs, tests, and outputs.
+- 06.29.2026: Renamed the active metric to `WMI` / `WMI` across active code, docs, tests, and outputs.
 - 06.29.2026: Changed active `WMI_controlled` from a per-game Poisson GLM adjusted ratio to a context-filtered mean ratio: calculate the same `M_t` by `L_t` ratio as WMI after excluding controlled possessions. Regenerated controlled example breakdowns and the controlled distribution for 2020-21 through 2024-25; the old 2025-26 controlled snapshot is no longer mixed into the active controlled distribution because it used the previous GLM method.
 - 06.29.2026: Changed active `WMI_controlled` again to a regression-controlled version of the WMI setup: Poisson GLM on `M_t` with `L_t` as the main effect and score/time/period/offense/defense controls. Regenerated controlled example breakdowns and the 2020-21 through 2024-25 controlled distribution; current controlled distribution mean is `0.806753` and median is `0.763403`.
 - 06.29.2026: Paused controlled WMI and removed it from the active project surface. The current product is WMI game-by-game WMI with completed-game percentile/distribution context; controlled experiments were archived for possible future research.

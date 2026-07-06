@@ -1,4 +1,4 @@
-from wmi_game_utils import build_possession_model_table
+from wmi_utils import build_possession_model_table
 
 GAME_ID = "0022500789"
 OUT_PATH = "possession_model_table_okc_mil.csv"

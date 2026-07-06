@@ -2,14 +2,14 @@ import argparse
 
 import pandas as pd
 
-from wmi_game_utils import build_possession_model_table
-from wmi_game_utils import calculate_wmi_game
-from wmi_game_utils import default_possession_table_out_path
-from wmi_game_utils import default_wmi_breakdown_out_path
+from wmi_utils import build_possession_model_table
+from wmi_utils import calculate_wmi
+from wmi_utils import default_possession_table_out_path
+from wmi_utils import default_wmi_breakdown_out_path
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Build and calculate WMI_game for any NBA game.")
+    parser = argparse.ArgumentParser(description="Build and calculate WMI for any NBA game.")
     parser.add_argument("--game-id", required=True, help="NBA game ID, for example 0022500802")
     parser.add_argument(
         "--table-out-path",
@@ -17,7 +17,7 @@ def parse_args():
     )
     parser.add_argument(
         "--breakdown-out-path",
-        help="CSV output path for the WMI breakdown. Default: wmi_game_breakdown_<game_id>.csv",
+        help="CSV output path for the WMI breakdown. Default: wmi_breakdown_<game_id>.csv",
     )
     parser.add_argument(
         "--skip-table-save",
@@ -33,7 +33,7 @@ def main():
     breakdown_out_path = args.breakdown_out_path or default_wmi_breakdown_out_path(args.game_id)
 
     table_df = build_possession_model_table(args.game_id)
-    result = calculate_wmi_game(table_df)
+    result = calculate_wmi(table_df)
     out_df = pd.DataFrame([result])
 
     if not args.skip_table_save:

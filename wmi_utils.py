@@ -13,7 +13,7 @@ def default_possession_table_out_path(game_id):
 
 
 def default_wmi_breakdown_out_path(game_id):
-    return f"wmi_game_breakdown_{game_id}.csv"
+    return f"wmi_breakdown_{game_id}.csv"
 
 
 def clock_to_seconds(clock_str):
@@ -213,7 +213,7 @@ def build_possession_model_table(game_id, session=None, timeout=30):
     return build_possession_model_table_from_actions(actions=actions, game_id=game_id)
 
 
-def calculate_wmi_game(df):
+def calculate_wmi(df):
     required = {"L_t", "F_t", "N_t"}
     missing = sorted(list(required - set(df.columns)))
     if missing:
@@ -235,9 +235,9 @@ def calculate_wmi_game(df):
     mean_m_l1 = float(sum_m_l1 / n1) if n1 > 0 else None
     mean_m_l0 = float(sum_m_l0 / n0) if n0 > 0 else None
 
-    wmi_game = None
+    wmi = None
     if mean_m_l1 is not None and mean_m_l0 not in (None, 0.0):
-        wmi_game = float(mean_m_l1 / mean_m_l0)
+        wmi = float(mean_m_l1 / mean_m_l0)
 
     return {
         "n1_count_L_t_eq_1": n1,
@@ -246,5 +246,5 @@ def calculate_wmi_game(df):
         "sum_M_t_where_L_t_eq_0": sum_m_l0,
         "mean_M_t_where_L_t_eq_1": mean_m_l1,
         "mean_M_t_where_L_t_eq_0": mean_m_l0,
-        "WMI_game": wmi_game,
+        "WMI": wmi,
     }

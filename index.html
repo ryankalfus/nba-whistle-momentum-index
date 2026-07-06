@@ -39,10 +39,10 @@
 
         <figure class="chart-panel">
           <img
-            src="wmi_game_distribution_2020_21_to_2025_26.png"
-            alt="Distribution chart of NBA WMI game scores from 2020-21 through 2025-26"
+            src="wmi_distribution_2020_21_to_2025_26.png"
+            alt="Distribution chart of NBA WMI values from 2020-21 through 2025-26"
           />
-          <figcaption>WMI game distribution, 2020-21 through available 2025-26 games.</figcaption>
+          <figcaption>WMI distribution, 2020-21 through available 2025-26 games.</figcaption>
         </figure>
       </section>
 
@@ -63,11 +63,11 @@
           </div>
           <div class="stat">
             <span class="stat-value">0.961</span>
-            <span class="stat-label">mean WMI_game</span>
+            <span class="stat-label">mean WMI</span>
           </div>
           <div class="stat">
             <span class="stat-value">0.909</span>
-            <span class="stat-label">median WMI_game</span>
+            <span class="stat-label">median WMI</span>
           </div>
           <div class="stat">
             <span class="stat-value">503</span>
@@ -80,15 +80,15 @@
             <h3>How to read a game</h3>
             <dl class="thresholds">
               <div>
-                <dt>WMI_game &gt; 1</dt>
+                <dt>WMI &gt; 1</dt>
                 <dd>More whistle momentum after recent defensive fouls.</dd>
               </div>
               <div>
-                <dt>WMI_game ~= 1</dt>
+                <dt>WMI ~= 1</dt>
                 <dd>Little or no difference in the short-term pattern.</dd>
               </div>
               <div>
-                <dt>WMI_game &lt; 1</dt>
+                <dt>WMI &lt; 1</dt>
                 <dd>Less whistle momentum after recent defensive fouls.</dd>
               </div>
             </dl>
@@ -98,10 +98,10 @@
             <h3>Worked example</h3>
             <p>
               OKC vs. MIL on February 12, 2026 has
-              <strong>WMI_game = 0.9523809524</strong>. The score is close to 1, which points to
+              <strong>WMI = 0.9523809524</strong>. The score is close to 1, which points to
               little difference in this game.
             </p>
-            <a href="wmi_game_breakdown_okc_mil.csv">Open the game breakdown</a>
+            <a href="wmi_breakdown_okc_mil.csv">Open the game breakdown</a>
           </article>
         </div>
       </section>
@@ -118,7 +118,7 @@
 
         <div class="formula-card">
           <div class="formula">
-            WMI_game = average(M_t where L_t = 1) / average(M_t where L_t = 0)
+            WMI = average(M_t where L_t = 1) / average(M_t where L_t = 0)
           </div>
           <ul class="variable-list">
             <li><strong>L_t</strong> equals 1 when one of the previous two possessions had a counted defensive foul.</li>

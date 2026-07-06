@@ -9,8 +9,8 @@ import numpy as np
 import pandas as pd
 import requests
 
-from wmi_game_utils import build_possession_model_table_from_actions
-from wmi_game_utils import calculate_wmi_game
+from wmi_utils import build_possession_model_table_from_actions
+from wmi_utils import calculate_wmi
 
 
 SEASON_CONFIGS = [
@@ -25,7 +25,7 @@ DATE_STAMP = "2020_21_to_2025_26"
 WMI_OUT_PATH = Path(f"wmi_games_{DATE_STAMP}.csv")
 SUMMARY_OUT_PATH = Path(f"wmi_distribution_{DATE_STAMP}_summary.csv")
 FAILURES_OUT_PATH = Path(f"wmi_distribution_{DATE_STAMP}_failures.csv")
-WMI_PLOT_OUT_PATH = Path(f"wmi_game_distribution_{DATE_STAMP}.png")
+WMI_PLOT_OUT_PATH = Path(f"wmi_distribution_{DATE_STAMP}.png")
 LOCAL_2025_WMI_PATH = Path("wmi_games_2025_26_asof_2026_03_23.csv")
 CHECKPOINT_EVERY = 50
 
@@ -171,7 +171,7 @@ def build_mobile_wmi_table(season, gid):
 def build_game_row(season, gid):
     try:
         table_df, meta = build_mobile_wmi_table(season, gid)
-        wmi_result = calculate_wmi_game(table_df)
+        wmi_result = calculate_wmi(table_df)
 
         away_team = meta.get("away_team")
         home_team = meta.get("home_team")
@@ -190,7 +190,7 @@ def build_game_row(season, gid):
                 "n0_count_L_t_eq_0": wmi_result["n0_count_L_t_eq_0"],
                 "mean_M_t_where_L_t_eq_1": wmi_result["mean_M_t_where_L_t_eq_1"],
                 "mean_M_t_where_L_t_eq_0": wmi_result["mean_M_t_where_L_t_eq_0"],
-                "WMI_game": wmi_result["WMI_game"],
+                "WMI": wmi_result["WMI"],
             },
             None,
         )
@@ -207,7 +207,7 @@ def load_local_2025_rows():
     wmi_df = wmi_df.copy()
     wmi_df["game_id"] = wmi_df["game_id"].map(normalize_game_id)
     wmi_df["source"] = f"local {LOCAL_2025_WMI_PATH.name}"
-    wmi_df = wmi_df.drop(columns=["wmi_game_percentile"], errors="ignore")
+    wmi_df = wmi_df.drop(columns=["wmi_percentile"], errors="ignore")
     return wmi_df.to_dict("records")
 
 
@@ -307,17 +307,17 @@ def build_distribution_plot(df, value_col, title, output_path):
 
 
 def build_summary(wmi_df, failures):
-    wmi_values = pd.to_numeric(wmi_df["WMI_game"], errors="coerce").dropna()
+    wmi_values = pd.to_numeric(wmi_df["WMI"], errors="coerce").dropna()
     return pd.DataFrame(
         [
             {
                 "generated_at_utc": datetime.now(UTC).isoformat(),
                 "seasons": "2020-21 through 2025-26",
-                "wmi_seasons": season_label(wmi_df),
-                "wmi_games": int(len(wmi_df)),
-                "wmi_games_with_wmi": int(len(wmi_values)),
-                "wmi_mean": float(wmi_values.mean()) if not wmi_values.empty else None,
-                "wmi_median": float(wmi_values.median()) if not wmi_values.empty else None,
+                "comparison_seasons": season_label(wmi_df),
+                "games": int(len(wmi_df)),
+                "games_with_wmi": int(len(wmi_values)),
+                "mean_wmi": float(wmi_values.mean()) if not wmi_values.empty else None,
+                "median_wmi": float(wmi_values.median()) if not wmi_values.empty else None,
                 "failures": int(len(failures)),
                 "wmi_sources": "; ".join(sorted(wmi_df["source"].dropna().unique())),
             }
@@ -329,7 +329,7 @@ def finalize_dataframe(wmi_rows):
     wmi_df = pd.DataFrame(wmi_rows)
     if not wmi_df.empty:
         wmi_df = wmi_df.sort_values(["season", "game_id"]).reset_index(drop=True)
-        wmi_df = add_percentiles(wmi_df, "WMI_game", "wmi_game_percentile")
+        wmi_df = add_percentiles(wmi_df, "WMI", "wmi_percentile")
     return wmi_df
 
 
@@ -343,8 +343,8 @@ def save_outputs(wmi_rows, failures, write_plot=False):
     if write_plot:
         build_distribution_plot(
             wmi_df,
-            "WMI_game",
-            "NBA WMI_game Distribution (2020-21 to 2025-26)",
+            "WMI",
+            "NBA WMI Distribution (2020-21 to 2025-26)",
             WMI_PLOT_OUT_PATH,
         )
 

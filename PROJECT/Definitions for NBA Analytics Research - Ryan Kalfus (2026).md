@@ -144,17 +144,17 @@ Meaning:
 ### Formula
 Use this exact formula:
 
-`WMI_game = [(1 / n1) * sum(M_t where L_t = 1)] / [(1 / n0) * sum(M_t where L_t = 0)]`
+`WMI = [(1 / n1) * sum(M_t where L_t = 1)] / [(1 / n0) * sum(M_t where L_t = 0)]`
 
 Equivalent wording:
 - numerator = average `M_t` for possessions where `L_t = 1`
 - denominator = average `M_t` for possessions where `L_t = 0`
-- `WMI_game = numerator / denominator`
+- `WMI = numerator / denominator`
 
 ### Interpretation
-- `WMI_game > 1`: more whistle momentum after recent fouls.
-- `WMI_game = 1`: no WMI difference.
-- `WMI_game < 1`: less whistle momentum after recent fouls.
+- `WMI > 1`: more whistle momentum after recent fouls.
+- `WMI = 1`: no WMI difference.
+- `WMI < 1`: less whistle momentum after recent fouls.
 
 ### Important Notes
 - `WMI` does not adjust for score, time, period, team, or intentional-foul situations.
@@ -163,13 +163,13 @@ Equivalent wording:
 
 ## Diagnostic Terms
 
-### Game WMI
-- A game-level WMI value is one WMI value calculated from possessions in one game.
-- Current active game WMI: `WMI_game`
+### Game-Level WMI
+- A game-level WMI value is one `WMI` value calculated from possessions in one game.
+- Public labels should call the metric `WMI`.
 
 ### Game Comparison Terms
 - A completed-game comparison set is a table with one WMI value per completed game.
-- `WMI_game_percentile` ranks one game's WMI within the completed-game WMI distribution.
+- `wmi_percentile` ranks one game's WMI within the completed-game WMI distribution.
 - Comparison sets are support context for game interpretation.
 - Comparison sets are not a separate pooled season-level WMI edition.
 

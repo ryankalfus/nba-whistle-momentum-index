@@ -1,4 +1,4 @@
-season,as_of_utc_date,game_id,game_date_et,game_status,game_status_text,away_team,home_team,matchup,possessions,n1_count_L_t_eq_1,n0_count_L_t_eq_0,mean_M_t_where_L_t_eq_1,mean_M_t_where_L_t_eq_0,WMI_game,wmi_game_percentile
+season,as_of_utc_date,game_id,game_date_et,game_status,game_status_text,away_team,home_team,matchup,possessions,n1_count_L_t_eq_1,n0_count_L_t_eq_0,mean_M_t_where_L_t_eq_1,mean_M_t_where_L_t_eq_0,WMI,wmi_percentile
 2025-26,2026-03-23,22500001,2025-10-21T19:30:00-04:00,3,Final,HOU,OKC,HOU @ OKC,225,82,143,0.3048780487804878,0.2517482517482518,1.2110433604336042,79.88394584139265
 2025-26,2026-03-23,22500002,2025-10-21T22:00:00-04:00,3,Final,GSW,LAL,GSW @ LAL,201,70,131,0.1714285714285714,0.2595419847328244,0.6605042016806723,21.953578336557054
 2025-26,2026-03-23,22500003,2025-10-22T19:00:00-04:00,3,Final,CLE,NYK,CLE @ NYK,208,69,139,0.3333333333333333,0.2302158273381295,1.4479166666666663,91.48936170212764

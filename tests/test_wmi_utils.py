@@ -7,10 +7,10 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from wmi_game_utils import build_possession_model_table_from_actions
-from wmi_game_utils import calculate_wmi_game
-from wmi_game_utils import default_possession_table_out_path
-from wmi_game_utils import default_wmi_breakdown_out_path
+from wmi_utils import build_possession_model_table_from_actions
+from wmi_utils import calculate_wmi
+from wmi_utils import default_possession_table_out_path
+from wmi_utils import default_wmi_breakdown_out_path
 
 
 def test_build_possession_model_table_from_actions_builds_expected_values():
@@ -120,7 +120,7 @@ def test_build_possession_model_table_from_actions_builds_expected_values():
     assert list(out["M_t"]) == [2, 0, 1, 0]
 
 
-def test_calculate_wmi_game_returns_expected_ratio():
+def test_calculate_wmi_returns_expected_ratio():
     df = pd.DataFrame(
         {
             "L_t": [0, 0, 1, 1],
@@ -129,7 +129,7 @@ def test_calculate_wmi_game_returns_expected_ratio():
         }
     )
 
-    result = calculate_wmi_game(df)
+    result = calculate_wmi(df)
 
     assert result["n1_count_L_t_eq_1"] == 2
     assert result["n0_count_L_t_eq_0"] == 2
@@ -137,14 +137,14 @@ def test_calculate_wmi_game_returns_expected_ratio():
     assert math.isclose(result["sum_M_t_where_L_t_eq_0"], 2.0)
     assert math.isclose(result["mean_M_t_where_L_t_eq_1"], 0.5)
     assert math.isclose(result["mean_M_t_where_L_t_eq_0"], 1.0)
-    assert math.isclose(result["WMI_game"], 0.5)
+    assert math.isclose(result["WMI"], 0.5)
 
 
-def test_calculate_wmi_game_requires_expected_columns():
+def test_calculate_wmi_requires_expected_columns():
     with pytest.raises(ValueError, match="Missing required columns"):
-        calculate_wmi_game(pd.DataFrame({"L_t": [0], "F_t": [1]}))
+        calculate_wmi(pd.DataFrame({"L_t": [0], "F_t": [1]}))
 
 
 def test_default_output_paths_use_game_id():
     assert default_possession_table_out_path("0022500802") == "possession_model_table_0022500802.csv"
-    assert default_wmi_breakdown_out_path("0022500802") == "wmi_game_breakdown_0022500802.csv"
+    assert default_wmi_breakdown_out_path("0022500802") == "wmi_breakdown_0022500802.csv"
