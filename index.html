@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="NBA Whistle Momentum Index, a game-by-game metric for short-term foul-call momentum."
+    />
+    <title>NBA Whistle Momentum Index</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="NBA Whistle Momentum Index home">WMI</a>
+      <nav aria-label="Primary navigation">
+        <a href="#results">Results</a>
+        <a href="#method">Method</a>
+        <a href="#data">Data</a>
+        <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">NBA analytics research</p>
+          <h1>Whistle Momentum Index</h1>
+          <p class="lede">
+            A game-by-game metric for whether recent defensive foul calls are followed by short-term
+            changes in foul-call momentum.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#results">View results</a>
+            <a class="button secondary" href="wmi_games_2020_21_to_2025_26.csv">Download CSV</a>
+          </div>
+        </div>
+
+        <figure class="chart-panel">
+          <img
+            src="wmi_game_distribution_2020_21_to_2025_26.png"
+            alt="Distribution chart of NBA WMI game scores from 2020-21 through 2025-26"
+          />
+          <figcaption>WMI game distribution, 2020-21 through available 2025-26 games.</figcaption>
+        </figure>
+      </section>
+
+      <section id="results" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Current release</p>
+          <h2>WMI v1 snapshot</h2>
+          <p>
+            The comparison set is built from completed games. Percentiles tell where a single game
+            lands relative to the rest of the dataset.
+          </p>
+        </div>
+
+        <div class="stat-grid" aria-label="WMI summary statistics">
+          <div class="stat">
+            <span class="stat-value">6,727</span>
+            <span class="stat-label">games with WMI</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0.961</span>
+            <span class="stat-label">mean WMI_game</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0.909</span>
+            <span class="stat-label">median WMI_game</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">503</span>
+            <span class="stat-label">logged data gaps</span>
+          </div>
+        </div>
+
+        <div class="result-layout">
+          <article class="callout">
+            <h3>How to read a game</h3>
+            <dl class="thresholds">
+              <div>
+                <dt>WMI_game &gt; 1</dt>
+                <dd>More whistle momentum after recent defensive fouls.</dd>
+              </div>
+              <div>
+                <dt>WMI_game ~= 1</dt>
+                <dd>Little or no difference in the short-term pattern.</dd>
+              </div>
+              <div>
+                <dt>WMI_game &lt; 1</dt>
+                <dd>Less whistle momentum after recent defensive fouls.</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article class="callout muted">
+            <h3>Worked example</h3>
+            <p>
+              OKC vs. MIL on February 12, 2026 has
+              <strong>WMI_game = 0.9523809524</strong>. The score is close to 1, which points to
+              little difference in this game.
+            </p>
+            <a href="wmi_game_breakdown_okc_mil.csv">Open the game breakdown</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="method" class="section band">
+        <div class="section-heading">
+          <p class="eyebrow">Method</p>
+          <h2>One formula, one active metric</h2>
+          <p>
+            WMI uses possession windows. It does not adjust for score, teams, period, or late-game
+            strategy in v1.
+          </p>
+        </div>
+
+        <div class="formula-card">
+          <div class="formula">
+            WMI_game = average(M_t where L_t = 1) / average(M_t where L_t = 0)
+          </div>
+          <ul class="variable-list">
+            <li><strong>L_t</strong> equals 1 when one of the previous two possessions had a counted defensive foul.</li>
+            <li><strong>F_t</strong> equals 1 when the current possession had a counted defensive foul.</li>
+            <li><strong>N_t</strong> equals 1 when one of the next two possessions had a counted defensive foul.</li>
+            <li><strong>M_t</strong> equals F_t + F_t*N_t.</li>
+          </ul>
+        </div>
+
+        <p class="note">
+          WMI is a pattern metric. It can flag games worth reviewing, but it is not proof of referee
+          intent, bias, or misconduct.
+        </p>
+      </section>
+
+      <section id="data" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Artifacts</p>
+          <h2>Data and code</h2>
+          <p>Download the release files or inspect the scripts that generate them.</p>
+        </div>
+
+        <div class="artifact-grid">
+          <a class="artifact" href="wmi_games_2020_21_to_2025_26.csv">
+            <span>Full WMI dataset</span>
+            <strong>wmi_games_2020_21_to_2025_26.csv</strong>
+          </a>
+          <a class="artifact" href="wmi_distribution_2020_21_to_2025_26_summary.csv">
+            <span>Distribution summary</span>
+            <strong>wmi_distribution_2020_21_to_2025_26_summary.csv</strong>
+          </a>
+          <a class="artifact" href="wmi_distribution_2020_21_to_2025_26_failures.csv">
+            <span>Logged data gaps</span>
+            <strong>wmi_distribution_2020_21_to_2025_26_failures.csv</strong>
+          </a>
+          <a class="artifact" href="build_wmi_distribution_2020_2026.py">
+            <span>Distribution builder</span>
+            <strong>build_wmi_distribution_2020_2026.py</strong>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>NBA Whistle Momentum Index v1. Built as research context, not proof of referee intent.</p>
+      <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">View on GitHub</a>
+    </footer>
+  </body>
+</html>

@@ -83,6 +83,16 @@ Plot the 2025-26 snapshot:
 python plot_wmi_game_distribution_2025_26.py
 ```
 
+## MVP Website
+
+The static MVP website is in `index.html` and `styles.css`. It is designed to run directly from the repository root and can be served by GitHub Pages.
+
+Preview locally:
+
+```bash
+python -m http.server 8000
+```
+
 ## Project Structure
 
 - `wmi_game_utils.py`: shared possession parsing and WMI calculation logic.
@@ -90,6 +100,7 @@ python plot_wmi_game_distribution_2025_26.py
 - `calculate_wmi_games_2025_26.py`: 2025-26 completed-game runner.
 - `build_wmi_distribution_2020_2026.py`: multi-season WMI distribution builder.
 - `tests/`: active test suite.
+- `index.html` and `styles.css`: static MVP website.
 - `PROJECT/`: formal definitions, project guide, and project history.
 - `archive/controlled_experiments/`: paused controlled-WMI experiments, kept only as research history.
 
