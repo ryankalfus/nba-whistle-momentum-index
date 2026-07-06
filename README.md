@@ -46,6 +46,8 @@ The active comparison dataset covers 2020-21 through the available 2025-26 snaps
 Main outputs:
 
 - `wmi_games_2020_21_to_2025_26.csv`
+- `wmi_search_games_2019_2026.csv`
+- `wmi_search_games_2019_2026_failures.csv`
 - `wmi_distribution_2020_21_to_2025_26_summary.csv`
 - `wmi_distribution_2020_21_to_2025_26_failures.csv`
 - `wmi_distribution_2020_21_to_2025_26.png`
@@ -83,6 +85,12 @@ Plot the 2025-26 snapshot:
 python plot_wmi_distribution_2025_26.py
 ```
 
+Build the website search dataset:
+
+```bash
+python build_wmi_search_dataset.py
+```
+
 ## MVP Website
 
 The static MVP website is in `index.html` and `styles.css`. It is designed to run directly from the repository root and can be served by GitHub Pages.
@@ -99,8 +107,9 @@ python -m http.server 8000
 - `calculate_wmi_any_game.py`: one-game WMI runner.
 - `calculate_wmi_games_2025_26.py`: 2025-26 completed-game runner.
 - `build_wmi_distribution_2020_2026.py`: multi-season WMI distribution builder.
+- `build_wmi_search_dataset.py`: static website search dataset builder.
 - `tests/`: active test suite.
-- `index.html` and `styles.css`: static MVP website.
+- `index.html`, `styles.css`, and `site.js`: static MVP website.
 - `PROJECT/`: formal definitions, project guide, and project history.
 - `archive/controlled_experiments/`: paused controlled-WMI experiments, kept only as research history.
 
@@ -109,6 +118,8 @@ python -m http.server 8000
 The project uses publicly available NBA play-by-play data endpoints. Some game IDs are unavailable or incomplete through those endpoints; failures are logged explicitly in `wmi_distribution_2020_21_to_2025_26_failures.csv`.
 
 The active product is game-by-game WMI. Completed-game lists are comparison context for percentiles and distribution plots, not a separate pooled season edition.
+
+The website search dataset covers 2019-20 through the available 2025-26 snapshot, including regular season, playoffs, and play-in games where source play-by-play data is available. Unavailable source rows are logged in `wmi_search_games_2019_2026_failures.csv`.
 
 ## Status
 

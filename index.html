@@ -16,6 +16,7 @@
       <a class="brand" href="#top" aria-label="NBA Whistle Momentum Index home">WMI</a>
       <nav aria-label="Primary navigation">
         <a href="#results">Results</a>
+        <a href="#search">WMI Search</a>
         <a href="#method">Method</a>
         <a href="#data">Data</a>
         <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">GitHub</a>
@@ -106,6 +107,61 @@
         </div>
       </section>
 
+      <section id="search" class="section search-section">
+        <div class="section-heading">
+          <p class="eyebrow">WMI Search</p>
+          <h2>Look up a game</h2>
+          <p>
+            Search the static WMI dataset by team, date, matchup, or game ID. Results include
+            regular season, playoffs, and play-in games from 2019-20 through the available
+            2025-26 snapshot where possession-level data is available.
+          </p>
+        </div>
+
+        <div class="search-tool" aria-live="polite">
+          <form class="search-controls" id="wmi-search-form">
+            <label class="field">
+              <span>Search</span>
+              <input
+                id="wmi-search-input"
+                name="q"
+                type="search"
+                autocomplete="off"
+                placeholder="Try Lakers, 2024-05, OKC @ DAL, or 0042300312"
+              />
+            </label>
+            <label class="field">
+              <span>Season</span>
+              <select id="wmi-season-filter" name="season">
+                <option value="">All seasons</option>
+              </select>
+            </label>
+            <label class="field">
+              <span>Type</span>
+              <select id="wmi-type-filter" name="type">
+                <option value="">All types</option>
+                <option value="Regular Season">Regular season</option>
+                <option value="Playoffs">Playoffs</option>
+                <option value="Play-In">Play-In</option>
+              </select>
+            </label>
+          </form>
+
+          <div class="search-meta" id="wmi-search-meta">Loading WMI search data...</div>
+
+          <div class="search-layout">
+            <div class="result-list" id="wmi-result-list" aria-label="WMI search results"></div>
+            <article class="selected-game" id="wmi-selected-game">
+              <p class="eyebrow">Selected game</p>
+              <h3>Pick a game to see its WMI</h3>
+              <p class="muted-text">
+                The lookup is instant because the WMI values are precomputed into a static CSV.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="method" class="section band">
         <div class="section-heading">
           <p class="eyebrow">Method</p>
@@ -154,6 +210,14 @@
             <span>Logged data gaps</span>
             <strong>wmi_distribution_2020_21_to_2025_26_failures.csv</strong>
           </a>
+          <a class="artifact" href="wmi_search_games_2019_2026.csv">
+            <span>Search dataset</span>
+            <strong>wmi_search_games_2019_2026.csv</strong>
+          </a>
+          <a class="artifact" href="wmi_search_games_2019_2026_failures.csv">
+            <span>Search source gaps</span>
+            <strong>wmi_search_games_2019_2026_failures.csv</strong>
+          </a>
           <a class="artifact" href="build_wmi_distribution_2020_2026.py">
             <span>Distribution builder</span>
             <strong>build_wmi_distribution_2020_2026.py</strong>
@@ -166,5 +230,6 @@
       <p>NBA Whistle Momentum Index v1. Built as research context, not proof of referee intent.</p>
       <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">View on GitHub</a>
     </footer>
+    <script src="site.js"></script>
   </body>
 </html>
