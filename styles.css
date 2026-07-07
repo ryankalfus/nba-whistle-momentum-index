@@ -378,30 +378,6 @@ h3 {
   font-size: 1.35rem;
 }
 
-.game-breakdown {
-  display: grid;
-  gap: 10px;
-  margin: 18px 0 0;
-}
-
-.game-breakdown div {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-  padding-top: 10px;
-  border-top: 1px solid #cde1da;
-}
-
-.game-breakdown dt {
-  color: var(--muted);
-}
-
-.game-breakdown dd {
-  margin: 0;
-  font-weight: 800;
-  text-align: right;
-}
-
 .empty-state {
   margin: 0;
   padding: 18px;
@@ -469,42 +445,6 @@ h3 {
   color: var(--muted);
 }
 
-.note {
-  max-width: 760px;
-  margin: 24px 0 0;
-  color: var(--warning);
-  font-weight: 700;
-}
-
-.artifact-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 14px;
-}
-
-.artifact {
-  display: grid;
-  gap: 8px;
-  min-height: 116px;
-  padding: 22px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  text-decoration: none;
-}
-
-.artifact:hover {
-  border-color: var(--accent);
-}
-
-.artifact span {
-  color: var(--muted);
-}
-
-.artifact strong {
-  overflow-wrap: anywhere;
-}
-
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -531,8 +471,7 @@ h3 {
   .stat-grid,
   .result-layout,
   .search-controls,
-  .search-layout,
-  .artifact-grid {
+  .search-layout {
     grid-template-columns: 1fr;
   }
 

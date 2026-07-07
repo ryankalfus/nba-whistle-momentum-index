@@ -240,11 +240,6 @@ function renderSelectedGame(game) {
       </div>
     </div>
     <p>${interpretation(game.WMI)}</p>
-    <dl class="game-breakdown">
-      <div><dt>After recent fouls</dt><dd>${formatNumber(game.mean_M_t_where_L_t_eq_1, 4)}</dd></div>
-      <div><dt>No recent foul history</dt><dd>${formatNumber(game.mean_M_t_where_L_t_eq_0, 4)}</dd></div>
-      <div><dt>Game ID</dt><dd>${game.game_id}</dd></div>
-    </dl>
   `;
 }
 
