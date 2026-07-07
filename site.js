@@ -18,6 +18,39 @@ const els = {
   selected: document.querySelector("#wmi-selected-game"),
 };
 
+const TEAM_ALIASES = {
+  ATL: ["atlanta", "hawks", "atlanta hawks"],
+  BOS: ["boston", "celtics", "boston celtics"],
+  BKN: ["brooklyn", "nets", "brooklyn nets", "new jersey nets"],
+  CHA: ["charlotte", "hornets", "charlotte hornets", "bobcats", "charlotte bobcats"],
+  CHI: ["chicago", "bulls", "chicago bulls"],
+  CLE: ["cleveland", "cavaliers", "cavs", "cleveland cavaliers"],
+  DAL: ["dallas", "mavericks", "mavs", "dallas mavericks"],
+  DEN: ["denver", "nuggets", "denver nuggets"],
+  DET: ["detroit", "pistons", "detroit pistons"],
+  GSW: ["golden state", "warriors", "golden state warriors"],
+  HOU: ["houston", "rockets", "houston rockets"],
+  IND: ["indiana", "pacers", "indiana pacers"],
+  LAC: ["la clippers", "los angeles clippers", "clippers"],
+  LAL: ["la lakers", "los angeles lakers", "lakers"],
+  MEM: ["memphis", "grizzlies", "memphis grizzlies"],
+  MIA: ["miami", "heat", "miami heat"],
+  MIL: ["milwaukee", "bucks", "milwaukee bucks"],
+  MIN: ["minnesota", "timberwolves", "wolves", "minnesota timberwolves"],
+  NOP: ["new orleans", "pelicans", "pels", "new orleans pelicans"],
+  NYK: ["new york", "knicks", "new york knicks", "ny knicks"],
+  OKC: ["oklahoma city", "thunder", "okc thunder", "oklahoma city thunder"],
+  ORL: ["orlando", "magic", "orlando magic"],
+  PHI: ["philadelphia", "sixers", "76ers", "philadelphia 76ers", "philadelphia sixers"],
+  PHX: ["phoenix", "suns", "phoenix suns"],
+  POR: ["portland", "trail blazers", "blazers", "portland trail blazers"],
+  SAC: ["sacramento", "kings", "sacramento kings"],
+  SAS: ["san antonio", "spurs", "san antonio spurs"],
+  TOR: ["toronto", "raptors", "toronto raptors"],
+  UTA: ["utah", "jazz", "utah jazz"],
+  WAS: ["washington", "wizards", "washington wizards", "bullets", "washington bullets"],
+};
+
 function parseCsv(text) {
   const rows = [];
   let row = [];
@@ -90,6 +123,10 @@ function gameLabel(game) {
   return `${compactDate(game.game_date_et)} | ${game.matchup || game.game_id}${score}`;
 }
 
+function teamAliases(code) {
+  return TEAM_ALIASES[code] || [];
+}
+
 function searchableText(game) {
   return [
     game.season,
@@ -99,6 +136,8 @@ function searchableText(game) {
     game.away_team,
     game.home_team,
     game.matchup,
+    ...teamAliases(game.away_team),
+    ...teamAliases(game.home_team),
   ]
     .join(" ")
     .toLowerCase();
