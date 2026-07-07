@@ -167,6 +167,10 @@ h3 {
   background: transparent;
 }
 
+.wide-button {
+  min-width: min(100%, 340px);
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 30px;
@@ -504,6 +508,10 @@ h3 {
   .site-footer {
     flex-direction: column;
     padding-inline: 18px;
+  }
+
+  .wide-button {
+    width: 100%;
   }
 
   .formula {
