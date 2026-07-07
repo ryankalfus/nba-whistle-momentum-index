@@ -1,10 +1,11 @@
 const DATA_URL = "wmi_search_games_2019_2026.csv";
-const MAX_RESULTS = 40;
+const RESULT_BATCH_SIZE = 60;
 
 const state = {
   games: [],
   filtered: [],
   selected: null,
+  visibleCount: RESULT_BATCH_SIZE,
 };
 
 const els = {
@@ -144,6 +145,7 @@ function applyFilters() {
     }
     return true;
   });
+  state.visibleCount = RESULT_BATCH_SIZE;
 
   if (!state.filtered.length) {
     state.selected = null;
@@ -158,18 +160,28 @@ function applyFilters() {
 
 function renderResults() {
   const total = state.filtered.length;
-  const shown = state.filtered.slice(0, MAX_RESULTS);
-  els.meta.textContent = `${total.toLocaleString()} matching games. Showing ${shown.length.toLocaleString()}.`;
   els.list.replaceChildren();
 
-  if (!shown.length) {
+  if (!total) {
     const empty = document.createElement("p");
     empty.className = "empty-state";
     empty.textContent = "No games match that search.";
     els.list.appendChild(empty);
+    updateMeta();
     return;
   }
 
+  appendResultBatch(0, Math.min(state.visibleCount, total));
+  updateMeta();
+}
+
+function appendResultBatch(start, end) {
+  const existingMore = els.list.querySelector(".load-more-state");
+  if (existingMore) {
+    existingMore.remove();
+  }
+
+  const shown = state.filtered.slice(start, end);
   for (const game of shown) {
     const button = document.createElement("button");
     button.type = "button";
@@ -187,6 +199,19 @@ function renderResults() {
     button.addEventListener("click", () => selectGame(game));
     els.list.appendChild(button);
   }
+
+  if (end < state.filtered.length) {
+    const more = document.createElement("p");
+    more.className = "load-more-state";
+    more.textContent = "Scroll for more games";
+    els.list.appendChild(more);
+  }
+}
+
+function updateMeta() {
+  const total = state.filtered.length;
+  const shown = Math.min(state.visibleCount, total);
+  els.meta.textContent = `${total.toLocaleString()} matching games. Showing ${shown.toLocaleString()}.`;
 }
 
 function selectGame(game) {
@@ -260,5 +285,15 @@ async function loadSearchData() {
 if (els.form) {
   els.form.addEventListener("input", applyFilters);
   els.form.addEventListener("submit", (event) => event.preventDefault());
+  els.list.addEventListener("scroll", () => {
+    const nearBottom = els.list.scrollTop + els.list.clientHeight >= els.list.scrollHeight - 80;
+    if (nearBottom && state.visibleCount < state.filtered.length) {
+      const previousCount = state.visibleCount;
+      state.visibleCount += RESULT_BATCH_SIZE;
+      const nextCount = Math.min(state.visibleCount, state.filtered.length);
+      appendResultBatch(previousCount, nextCount);
+      updateMeta();
+    }
+  });
   loadSearchData();
 }

@@ -84,14 +84,17 @@ nav a:hover {
 }
 
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 0.78fr) minmax(420px, 1.22fr);
-  gap: 40px;
+  max-width: none;
+  min-height: 560px;
+  display: flex;
   align-items: center;
+  padding-inline: max(24px, calc((100vw - 1180px) / 2));
+  background: var(--paper);
+  border-bottom: 1px solid var(--line);
 }
 
 .hero-copy {
-  max-width: 560px;
+  max-width: 860px;
 }
 
 .eyebrow {
@@ -162,28 +165,6 @@ h3 {
 .button.secondary {
   color: var(--ink);
   background: transparent;
-}
-
-.chart-panel {
-  margin: 0;
-  padding: 14px;
-  background: var(--paper);
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  box-shadow: var(--shadow);
-}
-
-.chart-panel img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-}
-
-.chart-panel figcaption {
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 0.9rem;
 }
 
 .section-heading {
@@ -430,6 +411,14 @@ h3 {
   border-radius: 8px;
 }
 
+.load-more-state {
+  margin: 4px 0 0;
+  padding: 10px 12px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  text-align: center;
+}
+
 .thresholds {
   display: grid;
   gap: 16px;
@@ -536,12 +525,7 @@ h3 {
 
 @media (max-width: 900px) {
   .hero {
-    grid-template-columns: 1fr;
     padding-top: 48px;
-  }
-
-  .chart-panel {
-    order: -1;
   }
 
   .stat-grid,
