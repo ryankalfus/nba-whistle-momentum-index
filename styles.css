@@ -168,7 +168,11 @@ h3 {
 }
 
 .wide-button {
-  min-width: min(100%, 340px);
+  min-width: min(100%, 520px);
+  min-height: 72px;
+  padding: 0 44px;
+  font-size: 1.35rem;
+  font-weight: 850;
 }
 
 .section-heading {
