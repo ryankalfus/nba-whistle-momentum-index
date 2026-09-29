@@ -3,7 +3,7 @@ numpy
 pandas
 pytest
 requests
-ruff
+ruff==0.12.0
 statsmodels
 
 scikit-learn
