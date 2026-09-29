@@ -1,0 +1,62 @@
+[
+  {
+    "file": "cdnnba_2020.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2020.tar.xz",
+    "bytes": 15548680,
+    "sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2"
+  },
+  {
+    "file": "cdnnba_2021.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2021.tar.xz",
+    "bytes": 17660924,
+    "sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f"
+  },
+  {
+    "file": "cdnnba_2022.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2022.tar.xz",
+    "bytes": 18705272,
+    "sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f"
+  },
+  {
+    "file": "cdnnba_2023.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2023.tar.xz",
+    "bytes": 18598380,
+    "sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b"
+  },
+  {
+    "file": "cdnnba_2024.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2024.tar.xz",
+    "bytes": 18886652,
+    "sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1"
+  },
+  {
+    "file": "cdnnba_po_2024.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_po_2024.tar.xz",
+    "bytes": 1255524,
+    "sha256": "065798b27908f9e16d8f9b6f19f429d0a798d98ce67aad116c9c9b7786f801f7"
+  },
+  {
+    "file": "datanba_2024.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2024.tar.xz",
+    "bytes": 11344636,
+    "sha256": "79f698e66439e3e43bdb6299eb4da7897b5e007985193350da280c8a4ec76e60"
+  },
+  {
+    "file": "box.csv",
+    "url": "https://raw.githubusercontent.com/atlhawksfanatic/L2M/330ab64acf052fbfd7b4b111294e4b835f26799e/0-data/stats_nba/stats_nba_box.csv",
+    "bytes": 28207265,
+    "sha256": "36a46aecb09e0c29d294c99753038cf9ac893155103e71757803ac6b62f4c165"
+  },
+  {
+    "file": "attendance.csv",
+    "url": "https://raw.githubusercontent.com/atlhawksfanatic/L2M/330ab64acf052fbfd7b4b111294e4b835f26799e/0-data/bkref/bkref_box.csv",
+    "bytes": 11304909,
+    "sha256": "577de12b00cb1f6933b4f994a8a837480327ac3e74f3be172e81b8719cda5099"
+  },
+  {
+    "file": "assignments.csv",
+    "url": "https://raw.githubusercontent.com/atlhawksfanatic/L2M/330ab64acf052fbfd7b4b111294e4b835f26799e/0-data/official_nba/nba_referee_assignments.csv",
+    "bytes": 3396656,
+    "sha256": "1c09dbb32d07dd9e8003e1d6dca78565312668d6e4941ed552e2daa91d197c72"
+  }
+]

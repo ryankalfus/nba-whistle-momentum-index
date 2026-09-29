@@ -518,3 +518,20 @@ h3 {
     white-space: normal;
   }
 }
+
+.version-label { display: inline-block; border: 1px solid #9bbfb4; border-radius: 4px; padding: 4px 8px; font-size: .85rem; }
+.reference-note, .support-note { font-size: .9rem; color: var(--muted); }
+.diagnostic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+.diagnostic-grid div { padding: 12px; background: white; border-radius: 6px; }
+.diagnostic-grid span { display: block; font-size: .8rem; color: var(--muted); }
+.diagnostic-grid strong { font-size: 1.15rem; }
+summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
+.foul-timeline { max-height: 360px; overflow-y: auto; padding-left: 24px; font-size: .9rem; }
+.foul-timeline li { padding: 8px 0; border-bottom: 1px solid var(--line); }
+@media (max-width: 640px) { .diagnostic-grid { grid-template-columns: 1fr; } }
+
+.table-scroll { overflow-x: auto; margin: 20px 0; }
+.validation-table { width: 100%; border-collapse: collapse; font-size: .9rem; text-align: left; }
+.validation-table caption { text-align: left; font-weight: 700; padding-bottom: 12px; }
+.validation-table th, .validation-table td { padding: 12px; border-bottom: 1px solid var(--line); }
+.validation-table th { background: var(--soft); }

@@ -1,5 +1,3 @@
-import re
-
 import numpy as np
 import pandas as pd
 import requests
@@ -17,15 +15,8 @@ def default_wmi_breakdown_out_path(game_id):
 
 
 def clock_to_seconds(clock_str):
-    if pd.isna(clock_str):
-        return None
-    match = re.match(r"PT(\d+)M(\d+)\.(\d+)S", str(clock_str))
-    if not match:
-        return None
-    minutes = int(match.group(1))
-    seconds = int(match.group(2))
-    hundredths = int(match.group(3))
-    return minutes * 60 + seconds + (hundredths / 100.0)
+    from wmi_possessions import clock_seconds
+    return clock_seconds(clock_str)
 
 
 def parse_int(value):
@@ -95,14 +86,12 @@ def add_recent_foul_columns(df, foul_col="foul_called_this_possession"):
 
     f = out[foul_col].fillna(0).astype(int).to_numpy(dtype=np.int16)
 
-    prev1 = np.concatenate((np.array([0], dtype=np.int16), f[:-1]))
-    prev2 = np.concatenate((np.array([0, 0], dtype=np.int16), f[:-2]))
-    l_count = prev1 + prev2
-    l_vals = (l_count > 0).astype(np.int16)
-
-    next1 = np.concatenate((f[1:], np.array([0], dtype=np.int16)))
-    next2 = np.concatenate((f[2:], np.array([0, 0], dtype=np.int16)))
-    n_vals = ((next1 + next2) > 0).astype(np.int16)
+    l_vals = np.zeros(len(f), dtype=np.int16)
+    n_vals = np.zeros(len(f), dtype=np.int16)
+    for distance in (1, 2):
+        if distance < len(f):
+            l_vals[distance:] |= (f[:-distance] > 0)
+            n_vals[:-distance] |= (f[distance:] > 0)
 
     out["L_t"] = l_vals.astype(int)
     out["F_t"] = f.astype(int)
@@ -112,79 +101,8 @@ def add_recent_foul_columns(df, foul_col="foul_called_this_possession"):
 
 
 def build_possession_summary_from_actions(actions, game_id):
-    df = pd.DataFrame(actions).sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
-    if df.empty:
-        raise ValueError(f"No actions available to build possession summary for game_id {game_id}.")
-
-    df["seconds_remaining_in_period"] = df["clock"].apply(clock_to_seconds)
-    df["game_seconds_elapsed"] = (df["period"] - 1) * 720 + (720 - df["seconds_remaining_in_period"])
-    df = df[df["game_seconds_elapsed"].notna()].copy()
-    if df.empty:
-        raise ValueError(f"No valid timed actions found for game_id {game_id}.")
-
-    df["event_seq_same_clock"] = df.groupby("game_seconds_elapsed").cumcount()
-    df["timeline_time"] = df["game_seconds_elapsed"] + (df["event_seq_same_clock"] * 0.001)
-
-    team_rows = df[df["teamTricode"].notna()][["teamId", "teamTricode"]].dropna().drop_duplicates()
-    team_id_to_tricode = {int(r.teamId): r.teamTricode for _, r in team_rows.iterrows()}
-    team_ids = sorted(team_id_to_tricode.keys())
-    if len(team_ids) != 2:
-        raise ValueError(f"Expected exactly 2 teams in game_id {game_id}.")
-
-    opponent_id = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
-    valid = df[df["possession"].isin(team_ids)].copy()
-    if valid.empty:
-        raise ValueError(f"No valid possession rows found for game_id {game_id}.")
-
-    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
-    valid["possession_group"] = valid["is_new_possession"].cumsum()
-    total_game_seconds = float(valid["game_seconds_elapsed"].max())
-    score_side = infer_team_score_side(valid, team_ids)
-
-    rows = []
-    for group_id, grp in valid.groupby("possession_group", sort=True):
-        offense_team_id = int(grp["possession"].iloc[0])
-        defense_team_id = opponent_id[offense_team_id]
-
-        subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
-        def_foul_count = int(
-            (
-                (grp["actionType"] == "foul")
-                & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
-                & (grp["teamId"] == defense_team_id)
-            ).sum()
-        )
-        has_def_foul = int(def_foul_count > 0)
-
-        end_time = float(grp["timeline_time"].max())
-        score_row = grp[grp["scoreHome"].notna() & grp["scoreAway"].notna()].tail(1)
-        score_difference = None
-        if len(score_row) == 1:
-            sr = score_row.iloc[0]
-            sh = parse_int(sr.get("scoreHome"))
-            sa = parse_int(sr.get("scoreAway"))
-            offense_score = sh if score_side.get(offense_team_id) == "home" else sa
-            defense_score = sh if score_side.get(defense_team_id) == "home" else sa
-            if offense_score is not None and defense_score is not None:
-                score_difference = offense_score - defense_score
-
-        rows.append(
-            {
-                "game_id": game_id,
-                "possession_group": int(group_id),
-                "period": int(grp["period"].iloc[-1]),
-                "offense_team_id": offense_team_id,
-                "defense_team_id": defense_team_id,
-                "offense_team": team_id_to_tricode[offense_team_id],
-                "defense_team": team_id_to_tricode[defense_team_id],
-                "seconds_left_in_game": round(total_game_seconds - end_time, 3),
-                "score_difference": score_difference,
-                "foul_called_this_possession": has_def_foul,
-                "defensive_foul_count": def_foul_count,
-            }
-        )
-
-    return pd.DataFrame(rows).sort_values("possession_group").reset_index(drop=True)
+    from wmi_possessions import reconstruct
+    return reconstruct(actions, game_id)
 
 
 def build_possession_model_table_from_actions(actions, game_id):

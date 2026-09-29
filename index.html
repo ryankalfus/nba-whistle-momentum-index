@@ -18,6 +18,7 @@
         <a href="#results">Results</a>
         <a href="#search">WMI Search</a>
         <a href="#method">Method</a>
+        <a href="#validation">Validation</a>
         <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">GitHub</a>
       </nav>
     </header>
@@ -40,10 +41,9 @@
       <section id="results" class="section">
         <div class="section-heading">
           <p class="eyebrow">Current release</p>
-          <h2>WMI v1 snapshot</h2>
+          <h2>Original WMI snapshot</h2>
           <p>
-            The comparison set is built from completed games. Percentiles tell where a single game
-            lands relative to the rest of the dataset.
+            These archived statistics describe 6,727 regular-season games from 2020–21 through March 2026. Search includes additional seasons and game types. Each selected game names its own percentile reference set.
           </p>
         </div>
 
@@ -75,8 +75,8 @@
                 <dd>More whistle momentum after recent defensive fouls.</dd>
               </div>
               <div>
-                <dt>WMI ~= 1</dt>
-                <dd>Little or no difference in the short-term pattern.</dd>
+                <dt>WMI near 1</dt>
+                <dd>A small observed ratio difference; uncertainty may still be substantial.</dd>
               </div>
               <div>
                 <dt>WMI &lt; 1</dt>
@@ -89,8 +89,7 @@
             <h3>Worked example</h3>
             <p>
               OKC vs. MIL on February 12, 2026 has
-              <strong>WMI = 0.9523809524</strong>. The score is close to 1, which points to
-              little difference in this game.
+              <strong>WMI = 0.952</strong> in the original snapshot. This ratio is numerically close to 1; it does not establish statistical equivalence.
             </p>
             <a href="wmi_breakdown_okc_mil.csv">Open the game breakdown</a>
           </article>
@@ -102,7 +101,7 @@
           <p class="eyebrow">WMI Search</p>
           <h2>Look up a game</h2>
           <p>
-            Search the static WMI dataset by team, date, matchup, or game ID. Results include
+            Search by team, date, matchup, or game ID. Recalculated games include explanatory components and foul timelines. Each result is labeled with its parser version. Results include
             regular season, playoffs, and play-in games from 2019-20 through the available
             2025-26 snapshot where possession-level data is available.
           </p>
@@ -152,13 +151,26 @@
         </div>
       </section>
 
+      <section id="validation" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Research validation</p>
+          <h2>Does foul history add information?</h2>
+          <p id="validation-status">The validation study compares the same basketball-context model with and without recent foul history, holding out later seasons and resampling whole games for uncertainty.</p>
+        </div>
+        <div class="callout">
+          <p>Period boundaries and prediction timing were corrected. Reconstructed start-state features include score, clock, team fouls and bonus eligibility. Current-possession outcomes are excluded from predictors.</p>
+          <p id="validation-result">Results and the expansion decision are documented in the validation report.</p>
+          <p><a href="research/validation_2026_09_12/report.md">Read the validation report (Markdown)</a> · <a href="research/validation_2026_09_12/prediction_results.csv">Download model comparisons</a> · <a href="research/validation_2026_09_12/interval_validation.md">Interval coverage study</a> · <a href="site-data/audited_games.csv">Download recalculated game summaries</a></p>
+          <p class="muted-text">These are associations in final recorded play-by-play. They do not establish call correctness, referee intent or causal makeup calls. A bootstrap coverage stress test found inconsistent coverage; per-game intervals remain withheld.</p>
+        </div>
+      </section>
+
       <section id="method" class="section band">
         <div class="section-heading">
           <p class="eyebrow">Method</p>
           <h2>One formula, one active metric</h2>
           <p>
-            WMI uses possession windows. It does not adjust for score, teams, period, or late-game
-            strategy in v1.
+            WMI uses global possession windows. Its formula is unchanged. It is retrospective because the next-two-possession term uses future events. WMI does not adjust for basketball context; the separate prediction study tests whether history adds information beyond context.
           </p>
         </div>
 

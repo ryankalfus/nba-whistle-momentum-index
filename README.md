@@ -4,7 +4,7 @@ NBA Whistle Momentum Index is a possession-level basketball analytics project th
 
 > After recent defensive foul calls, do NBA games show short-term changes in foul-call momentum?
 
-The current public version is intentionally narrow. It uses one active metric, `WMI`, calculated game by game.
+The public headline metric is `WMI`, calculated game by game. A separate validation study audits possession reconstruction and tests whether recent foul history improves prediction beyond basketball context.
 
 ![WMI distribution](wmi_distribution_2020_21_to_2025_26.png)
 
@@ -29,7 +29,7 @@ average(M_t where L_t = 1) / average(M_t where L_t = 0)
 Interpretation:
 
 - `WMI > 1`: more whistle momentum after recent fouls.
-- `WMI ~= 1`: little or no difference.
+- `WMI ~= 1`: a small observed ratio difference; statistical equivalence is not established.
 - `WMI < 1`: less whistle momentum after recent fouls.
 
 WMI is a pattern metric. It is not proof of referee intent, bias, or misconduct.
@@ -124,3 +124,23 @@ The website search dataset covers 2019-20 through the available 2025-26 snapshot
 ## Status
 
 This is a v1 research release. The metric is intentionally simple, explainable, and scoped to completed games.
+
+## Audited validation release
+
+The shared parser now splits at period changes, ignores administrative ownership changes when starting possessions, and reconstructs time without using future overtime. The WMI formula and global windows are unchanged. Existing CSV snapshots remain archived release data; `site-data/audited_games.csv` overlays recalculated games in search. Each row names its parser version and percentile reference cohort.
+
+Run the reproducible offline study:
+
+```bash
+python validate_wmi.py
+python forecast_foul_sequences.py
+python validate_wmi_intervals.py
+python -m pytest -q
+node tests/test_site.cjs
+```
+
+The conditional sequence runner executes only when the replication gate passes. The main study needs the commit-pinned inputs listed in `research/hypotheses_2026_09_12/source_manifest.json`; the existing fetch helper acquires those inputs. It verifies SHA256 hashes before use. `python validate_wmi.py --evaluate-only` uses the saved possession partitions. Development builds require `--max-games N --output /tmp/wmi-smoke` so release artifacts are protected.
+
+Outputs live in `research/validation_2026_09_12/`: protocol, report, source/partition manifest, environment versions, parser and source comparisons, held-out predictions, calibration, residuals, and the expansion decision. Compressed possession partitions include model inputs and separately named outcomes. Current-possession shots/free throws are never prediction features. Missing shot-zone coverage is explicit.
+
+The August expansion report is historical; its prediction claims are superseded by the matched context/history validation. A coverage stress test of circular block intervals found inconsistent coverage, so per-game confidence intervals remain withheld. The website shows sample counts and denominator diagnostics without asserting significance.

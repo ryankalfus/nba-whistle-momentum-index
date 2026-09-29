@@ -23,3 +23,10 @@ jobs:
 
       - name: Test
         run: pytest -q
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Website unit checks
+        run: node tests/test_site.cjs

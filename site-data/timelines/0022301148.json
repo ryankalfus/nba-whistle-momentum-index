@@ -1,0 +1,126 @@
+{
+  "game_id": "0022301148",
+  "possessions": 178,
+  "events": [
+    {
+      "possession": 49,
+      "action": 131,
+      "period": 1,
+      "clock": 19.0,
+      "team": "BOS",
+      "player_id": 1628436,
+      "drawn_player_id": 203507,
+      "subtype": "personal",
+      "descriptor": "shooting",
+      "description": "L. Kornet shooting personal FOUL (1 PF) (Antetokounmpo 2 FT)"
+    },
+    {
+      "possession": 66,
+      "action": 193,
+      "period": 2,
+      "clock": 450.0,
+      "team": "BOS",
+      "player_id": 1630214,
+      "drawn_player_id": 203507,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "X. Tillman personal FOUL (1 PF)"
+    },
+    {
+      "possession": 76,
+      "action": 246,
+      "period": 2,
+      "clock": 292.0,
+      "team": "BOS",
+      "player_id": 1627759,
+      "drawn_player_id": 203507,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "J. Brown personal FOUL (2 PF)"
+    },
+    {
+      "possession": 93,
+      "action": 285,
+      "period": 2,
+      "clock": 50.0,
+      "team": "MIL",
+      "player_id": 203507,
+      "drawn_player_id": 1628369,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "G. Antetokounmpo personal FOUL (1 PF)"
+    },
+    {
+      "possession": 97,
+      "action": 304,
+      "period": 3,
+      "clock": 678.0,
+      "team": "BOS",
+      "player_id": 1628369,
+      "drawn_player_id": 201572,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "J. Tatum personal FOUL (1 PF)"
+    },
+    {
+      "possession": 112,
+      "action": 347,
+      "period": 3,
+      "clock": 430.0,
+      "team": "MIL",
+      "player_id": 203114,
+      "drawn_player_id": 1628369,
+      "subtype": "personal",
+      "descriptor": "take",
+      "description": "K. Middleton take personal FOUL (1 PF)"
+    },
+    {
+      "possession": 119,
+      "action": 371,
+      "period": 3,
+      "clock": 288.0,
+      "team": "BOS",
+      "player_id": 1628401,
+      "drawn_player_id": 203081,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "D. White personal FOUL (1 PF)"
+    },
+    {
+      "possession": 130,
+      "action": 407,
+      "period": 3,
+      "clock": 81.0,
+      "team": "MIL",
+      "player_id": 1626171,
+      "drawn_player_id": 201950,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "B. Portis personal FOUL (1 PF)"
+    },
+    {
+      "possession": 154,
+      "action": 470,
+      "period": 4,
+      "clock": 434.0,
+      "team": "MIL",
+      "player_id": 203114,
+      "drawn_player_id": 1628369,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "K. Middleton personal FOUL (2 PF)"
+    },
+    {
+      "possession": 171,
+      "action": 522,
+      "period": 4,
+      "clock": 140.0,
+      "team": "BOS",
+      "player_id": 1629052,
+      "drawn_player_id": 203081,
+      "subtype": "personal",
+      "descriptor": "",
+      "description": "O. Brissett personal FOUL (1 PF)"
+    }
+  ]
+}

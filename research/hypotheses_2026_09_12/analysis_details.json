@@ -1,0 +1,310 @@
+{
+  "1": [
+    {
+      "model": "context_adjusted",
+      "formula": "F_t ~ L2 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 248456,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "model": "exclude_all_late_strategy_possessions",
+      "formula": "F_t ~ L2 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 246832,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "within_game_control": "Demeaned linear probability model removes fixed game and assigned-crew levels; not a mixed-effects logistic or lineup-adjusted fit."
+    }
+  ],
+  "2": [
+    {
+      "factorization_max_error": 8.881784197001252e-16,
+      "valid_game_decompositions": 1229
+    }
+  ],
+  "3": [
+    {
+      "model": "distance_specific",
+      "formula": "F_t ~ lag1 + lag2 + lag3 + lag4 + lag5 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 248456,
+      "games": 1230,
+      "converged": true
+    }
+  ],
+  "4": [
+    {
+      "model": "opportunity_conditioned_direction",
+      "formula": "F_t ~ same_defense_as_last_foul + C(since_foul) + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 200810,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "permutations_per_game": 500,
+      "baseline": "Shuffle foul indicators only among the same team's actual defensive opportunities, preserving each team's game foul total. This is not full play-style adjustment.",
+      "lag_caution": "Defense alternates on most possessions; the lag-conditioned directional coefficient relies on deviations from strict alternation and cannot identify makeup intent."
+    }
+  ],
+  "5": [
+    {
+      "model": "margin_interaction",
+      "formula": "F_t ~ L2*close + L2*blowout + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 248456,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "model": "margin_interaction_without_late_strategy",
+      "formula": "F_t ~ L2*close + L2*blowout + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 246832,
+      "games": 1230,
+      "converged": true
+    }
+  ],
+  "6": [
+    {
+      "model": "bonus_interaction",
+      "formula": "F_t ~ L2*bonus + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 248456,
+      "games": 1230,
+      "converged": true
+    }
+  ],
+  "7": [
+    {
+      "model": "playoff_interaction",
+      "formula": "F_t ~ L2*postseason + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 264883,
+      "games": 1314,
+      "converged": true
+    },
+    {
+      "model": "shooting_foul_playoff_interaction",
+      "formula": "shooting_foul ~ L2*postseason + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 264883,
+      "games": 1314,
+      "converged": true
+    },
+    {
+      "model": "nonshooting_only_playoff_interaction",
+      "formula": "nonshooting_only ~ L2*postseason + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 264883,
+      "games": 1314,
+      "converged": true
+    },
+    {
+      "model": "direction_playoff_interaction",
+      "formula": "F_t ~ same_defense_as_last_foul*postseason + C(since_foul) + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 214764,
+      "games": 1314,
+      "converged": true
+    },
+    {
+      "model": "close_game_playoff_sequence_interaction",
+      "formula": "F_t ~ L2*postseason*close + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 264883,
+      "games": 1314,
+      "converged": true
+    }
+  ],
+  "8": [
+    {
+      "model": "home_direction_interaction",
+      "formula": "F_t ~ L2*home_offense + close + postseason + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 264883,
+      "games": 1314,
+      "converged": true
+    },
+    {
+      "model": "home_in_close_games",
+      "formula": "F_t ~ L2*home_offense + postseason + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 111974,
+      "games": 1314,
+      "converged": true
+    }
+  ],
+  "9": [
+    {
+      "model": "bubble_same_season_regular_games",
+      "formula": "WMI ~ bubble + C(offense) + C(defense)",
+      "rows": 1059,
+      "games": 1059,
+      "converged": true
+    },
+    {
+      "model": "recorded_attendance_selected_close_game_archive",
+      "formula": "WMI ~ attendance_10k + C(season) + C(season_type)",
+      "rows": 2111,
+      "games": 2111,
+      "converged": true
+    },
+    {
+      "bubble_games": 88,
+      "pre_bubble_games": 971,
+      "attendance_sample_games": 2111,
+      "zero_recorded_attendance": 0,
+      "selection": "The attendance/box-score archive emphasizes L2M qualifying close games; missing attendance is not assumed to mean zero."
+    }
+  ],
+  "10": [
+    {
+      "model": "substitution_after_third_vs_second_early_foul",
+      "formula": "benched ~ threshold + own_margin + margin + time_scaled + C(period)",
+      "rows": 388,
+      "games": 301,
+      "converged": true
+    }
+  ],
+  "11": [
+    {
+      "model": "observational_keep_vs_bench",
+      "formula": "net_next5 ~ keep + own_margin + margin + time_scaled + C(pf) + C(period) + C(player)",
+      "rows": 245,
+      "games": 169,
+      "converged": true
+    },
+    {
+      "kept_events": 115,
+      "benched_events": 130,
+      "identification": "Unmeasured matchup, player health, coach knowledge and lineup quality can drive selection. The keep coefficient does not identify an optimal substitution policy."
+    }
+  ],
+  "12": [
+    {
+      "all_draw_events": 38296,
+      "events_with_shots_before_and_after": 12604,
+      "selection": "Shot-mix tests condition on the player shooting in both windows. No video-level drives, contact legality or noncall labels are inferred."
+    }
+  ],
+  "13": [
+    {
+      "post_rule": 0,
+      "games": 1230,
+      "take_events": 1961,
+      "rate_per_1000_possessions": 7.958313210962262
+    },
+    {
+      "post_rule": 1,
+      "games": 1230,
+      "take_events": 358,
+      "rate_per_1000_possessions": 1.4349905202441888
+    },
+    {
+      "segmented_formula": "Poisson count ~ post * months_from_rule; offset log(possessions); HC1 game-level uncertainty",
+      "identification": "Two seasons, with an offseason interruption and no unaffected control group. Changes in labels, rules and strategy can confound policy attribution."
+    }
+  ],
+  "14": [
+    {
+      "model": "successful_vs_unsuccessful_challenges",
+      "formula": "difference_in_differences ~ success + margin + remaining + C(period)",
+      "rows": 1213,
+      "games": 870,
+      "converged": true
+    },
+    {
+      "labeled_challenges": 1651,
+      "labeled_successes": 1090,
+      "matched_challenges": 1213,
+      "matched_successes": 809,
+      "scope": "All challenged call types, including out-of-bounds; original foul-call-only identification is not validated."
+    }
+  ],
+  "15": [
+    {
+      "matched_crew_year_pairs": 176,
+      "distinct_repeated_crews": 172,
+      "minimum_games_per_crew_per_year": 1,
+      "pairs_with_at_least_two_games_in_each_year": 0,
+      "coverage_adaptation": "A three-game minimum produced no pairs. This all-repeat sensitivity was chosen after inspecting coverage and is exploratory; it cannot measure latent crew reliability precisely.",
+      "selection": "Exact crews recur sparsely. No official is assigned another member\u2019s calls and no inference about intent is made."
+    }
+  ],
+  "16": [
+    {
+      "model": "future_net5",
+      "formula": "future_net5 ~ L2 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 242306,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "model": "future_fta5",
+      "formula": "future_fta5 ~ L2 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 242306,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "model": "future_turnovers5",
+      "formula": "future_turnovers5 ~ L2 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 242306,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "model": "future_rim5",
+      "formula": "future_rim5 ~ L2 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 242306,
+      "games": 1230,
+      "converged": true
+    },
+    {
+      "model": "future_clock_seconds5",
+      "formula": "future_clock_seconds5 ~ L2 + score_diff + margin + time_scaled + C(period_bucket) + C(offense) + C(defense) + home_offense + bonus + prior_rim_attempts + prior_three_attempts + prior_fta",
+      "rows": 242306,
+      "games": 1230,
+      "converged": true
+    }
+  ],
+  "17": [
+    {
+      "train_seasons": "2020-21 to 2022-23",
+      "validation_season": "2023-24",
+      "test_season": "2024-25",
+      "test_games": 1230,
+      "snapshots": 19680,
+      "snapshots_per_game_max": 16,
+      "state_features": [
+        "home_margin",
+        "lead_scaled",
+        "lead_time",
+        "time_fraction",
+        "elo_diff",
+        "home_offense"
+      ],
+      "extra_features": [
+        "L2",
+        "recent_count",
+        "live_log_wmi",
+        "bonus",
+        "team_pf"
+      ],
+      "metrics": [
+        {
+          "model": "state_and_strength",
+          "C": 1,
+          "validation_log_loss": 0.4668378158033411,
+          "roc_auc": 0.8472763338842128,
+          "average_precision": 0.8722617554329297,
+          "brier": 0.1584726790453362,
+          "log_loss": 0.4713620539929194,
+          "ece_10_fixed_bins": 0.01249612437568628
+        },
+        {
+          "model": "state_strength_and_fouls",
+          "C": 1,
+          "validation_log_loss": 0.4668760149184441,
+          "roc_auc": 0.8472406653584114,
+          "average_precision": 0.8722070665619965,
+          "brier": 0.15849368336592617,
+          "log_loss": 0.4714249800361658,
+          "ece_10_fixed_bins": 0.012304892892665134
+        }
+      ],
+      "elo": "Initial 1500; K=20; home advantage=65; 25% offseason shrinkage, updated only after earlier games."
+    }
+  ]
+}

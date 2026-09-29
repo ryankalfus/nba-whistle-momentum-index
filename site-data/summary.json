@@ -1,0 +1,8 @@
+{
+  "audited_games": 6084,
+  "comparison_games": 6000,
+  "mean_wmi": 0.9666742924141299,
+  "median_wmi": 0.9178522061906906,
+  "parser_version": "period_start_v2",
+  "failures": 0
+}

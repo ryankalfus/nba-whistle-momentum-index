@@ -97,7 +97,7 @@ Meaning:
 ## Context Variables
 
 ### `seconds_left_in_game`
-- Seconds remaining in the game at the possession reference point.
+- Known remaining time at the possession reference point: remaining regulation time for periods 1–4, or time left in the current overtime. Future overtime is never included.
 - Larger values mean earlier in the game.
 - Smaller values mean later in the game.
 
@@ -178,3 +178,19 @@ Equivalent wording:
 - WMI can suggest patterns that deserve review.
 - WMI cannot prove bias by itself.
 - Definitions should stay stable unless the project intentionally changes the metric.
+
+## Validated Reconstruction and Research Diagnostics
+
+- Possession ownership follows the feed, with a mandatory new group at every period change. Administrative events cannot create possessions; ownership changes are recognized on live-event rows. Technical-only ownership segments are removed. A returning same-team segment rejoins its prior segment only when the prior segment did not end in a terminal live play. This is a feed reconstruction; unusual retained-ball and administrative events may need adjudication.
+- Prediction start state uses the prior recorded event's score and clock, or the new period's start clock. Current-possession shot outcomes, free throws, fouls and final-game duration are never predictors.
+- The final-game WMI is retrospective because N_t uses future possessions. Global windows continue across period boundaries and truncate at game edges.
+- `p_l = P(F_t=1 | L_t=l)`; `q_l = P(N_t=1 | F_t=1,L_t=l)`.
+- Immediate component: `p_1 / p_0`.
+- Continuation component: `(1+q_1)/(1+q_0)`.
+- Their product equals WMI where both components are defined. A component with no qualifying observations is missing, never zero-filled.
+- Same-team and opposite-team transitions count consecutive foul possessions by the defending team. They do not establish makeup calls.
+- Team foul counts exclude offensive, technical and double fouls; special personal fouls remain included. Bonus eligibility for the next common foul occurs after four counted team fouls in regulation or three in overtime, or after one counted team foul in the last two minutes. This state is reconstructed from source labels and may miss rare exceptions.
+- Late-strategy sensitivity removes all possessions beginning in period 4 or overtime with (clock <=35 and offense lead >3) or (clock <=15 and offense lead >=1), irrespective of the current outcome.
+- Percentiles explicitly name their parser version and reference cohort. They are descriptive rankings, not significance tests.
+- Group counts and small-denominator notices describe support. Per-game inferential intervals are withheld until coverage is validated. An interval containing one would not establish equivalence.
+- Context residual: observed foul possessions minus the sum of held-out context-model probabilities. This is a volume residual, not a new WMI formula or a measure of call correctness.

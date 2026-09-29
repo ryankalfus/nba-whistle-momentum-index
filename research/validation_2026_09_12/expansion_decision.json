@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "rule": "Both final regular-season evaluations have paired log-loss CI below zero and no worse Brier.",
+  "decision": "Proceed to directional forecasting",
+  "sequence_followup_status": "completed",
+  "sequence_conclusion": "Small time-to-foul gains; next-team loss intervals include zero in both seasons. Advanced model expansion remains deferred pending richer opportunity controls and prospective validation."
+}

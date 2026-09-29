@@ -21,16 +21,16 @@
 - The unit of analysis is a possession.
 - The user-facing unit is one NBA game.
 - The core question is whether recent defensive fouls inside a game connect to current and near-future foul patterns.
-- The active project uses WMI only.
+- The public headline metric remains WMI; explanatory components and a separate validation study are authorized.
 - Completed-game lists are only comparison context for percentiles and distribution plots.
 - The project no longer has a separate pooled season-level edition.
 - WMI should show whistle-pattern behavior. It should not be presented as proof of referee intent by itself.
 
 ## Current Project Stage
-- Current stage: game-level `WMI`.
+- Current stage: game-level `WMI` with a separate audited multi-season validation and prediction study.
 - Current work centers on game-level WMI.
 - League-wide completed-game outputs support game comparison, not pooled season claims.
-- Current documentation priority: keep definitions, project guidance, and logs organized and separate.
+- Current priority: audit reconstruction, expose descriptive components, and compare context-only prediction with context plus foul history on later seasons.
 
 ## Core Project Rules
 - Offensive fouls end possessions.
@@ -68,7 +68,7 @@
 
 ## Interpretation Rules
 - A WMI value above `1` means more whistle momentum after recent fouls.
-- A WMI value near `1` means little or no difference.
+- A WMI value numerically near `1` has a small observed ratio difference; this alone does not establish statistical equivalence.
 - A WMI value below `1` means less whistle momentum after recent fouls.
 - WMI is easier to explain.
 - Percentiles and distribution plots compare one game against other completed games.

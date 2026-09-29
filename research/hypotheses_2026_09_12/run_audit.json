@@ -1,0 +1,67 @@
+{
+  "checks": {
+    "all_six_source_schedules_complete": true,
+    "all_clock_anomaly_games_quarantined": true,
+    "all_18_sections_have_results": true,
+    "no_analysis_failures": true,
+    "unique_possession_keys": true,
+    "scores_reconcile_every_game": true,
+    "no_negative_scoring_deltas": true,
+    "no_negative_possession_durations": true,
+    "known_project_scores_match": true,
+    "project_home_away_match": true,
+    "finite_tested_estimates_and_intervals": true
+  },
+  "games": 6080,
+  "source_games": 6084,
+  "quarantined_games": [
+    "0022000181",
+    "0022000254",
+    "0022000925",
+    "0022301177"
+  ],
+  "possessions": 1225902,
+  "known_project_scores_compared": 84,
+  "source_schedule_scores_missing": 5689,
+  "period_boundaries_added_vs_ownership_only": 18029,
+  "local_schedule_sha256": "ae3d48e552e008c212f1a52025d1f25b513f708d96c9c4e1be5b8c58b499e73d",
+  "runner_sha256": "c4195ce946feaa047095d38f5346fb5f6a775a385fe4ba12aab68984473c00fa",
+  "coverage": [
+    {
+      "season": "2020-21",
+      "type": "Regular season",
+      "games": 1080,
+      "retained_games": 1077
+    },
+    {
+      "season": "2021-22",
+      "type": "Regular season",
+      "games": 1230,
+      "retained_games": 1230
+    },
+    {
+      "season": "2022-23",
+      "type": "Regular season",
+      "games": 1230,
+      "retained_games": 1230
+    },
+    {
+      "season": "2023-24",
+      "type": "Regular season",
+      "games": 1230,
+      "retained_games": 1229
+    },
+    {
+      "season": "2024-25",
+      "type": "Regular season",
+      "games": 1230,
+      "retained_games": 1230
+    },
+    {
+      "season": "2024-25",
+      "type": "Playoffs",
+      "games": 84,
+      "retained_games": 84
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "analysis_runner_sha256": "c4195ce946feaa047095d38f5346fb5f6a775a385fe4ba12aab68984473c00fa",
+  "report_generator_sha256": "ddd56a0828c752afc1232f6ae38a8f64d5df277329554b8a3646dff2d4966143",
+  "result_table_sha256": "c18c5a8c97c54db2b43b911021dfb854af3661bff92ec55b46174a6aee8b33f7",
+  "note": "Report-only edits clarify wording and units; no fitted estimates are changed."
+}

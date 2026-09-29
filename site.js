@@ -96,6 +96,7 @@ function parseCsv(text) {
 }
 
 function numberValue(value) {
+  if (value === null || value === undefined || String(value).trim() === "") return null;
   const parsed = Number(value);
   return Number.isFinite(parsed) ? parsed : null;
 }
@@ -107,14 +108,14 @@ function formatNumber(value, digits = 3) {
 
 function formatPercentile(value) {
   const parsed = numberValue(value);
-  return parsed === null ? "N/A" : `${parsed.toFixed(1)}th`;
+  return parsed === null ? "N/A" : `${parsed.toFixed(1)}%`;
 }
 
 function compactDate(value) {
   if (!value) {
     return "Unknown date";
   }
-  return value.slice(0, 10);
+  return /^\d{8}$/.test(value) ? `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}` : value.slice(0, 10);
 }
 
 function gameLabel(game) {
@@ -132,7 +133,7 @@ function searchableText(game) {
     game.season,
     game.season_type,
     game.game_id,
-    game.game_date_et,
+    compactDate(game.game_date_et),
     game.away_team,
     game.home_team,
     game.matchup,
@@ -148,13 +149,9 @@ function interpretation(wmi) {
   if (value === null) {
     return "This game did not have enough valid possession groups to compute WMI.";
   }
-  if (value > 1.05) {
-    return "More whistle momentum after recent defensive fouls.";
-  }
-  if (value < 0.95) {
-    return "Less whistle momentum after recent defensive fouls.";
-  }
-  return "Close to neutral short-term whistle momentum.";
+  if (value > 1) return "The observed WMI ratio is above 1. This is a descriptive difference, not evidence of statistical significance or referee intent.";
+  if (value < 1) return "The observed WMI ratio is below 1. This is a descriptive difference, not evidence of statistical significance or referee intent.";
+  return "The two observed group means are equal. This alone does not establish statistical equivalence.";
 }
 
 function populateFilters() {
@@ -260,26 +257,69 @@ function selectGame(game) {
 }
 
 function renderSelectedGame(game) {
+  const audited = game.parser_version === "period_start_v2";
+  const reference = audited
+    ? "Recalculated regular-season games, 2020–21 through 2024–25 (period-boundary parser v2)."
+    : "Original search snapshot: regular season, playoffs and play-in, 2019–20 through the March 2026 snapshot (original parser).";
+  const stat = (label, value) => `<div><span>${label}</span><strong>${value}</strong></div>`;
+  const denominator = numberValue(game.mean_M_t_where_L_t_eq_0);
+  const support = Math.min(numberValue(game.n1_count_L_t_eq_1) ?? Infinity, numberValue(game.n0_count_L_t_eq_0) ?? Infinity);
   els.selected.innerHTML = `
     <p class="eyebrow">${game.season} | ${game.season_type}</p>
     <h3>${game.matchup || game.game_id}</h3>
     <p class="game-date">${gameLabel(game)}</p>
+    <p class="version-label">${audited ? "Recalculated · parser v2" : "Original snapshot · awaiting recalculation"}</p>
     <div class="selected-stats">
-      <div>
-        <span>WMI</span>
-        <strong>${formatNumber(game.WMI, 4)}</strong>
-      </div>
-      <div>
-        <span>Percentile</span>
-        <strong>${formatPercentile(game.wmi_percentile)}</strong>
-      </div>
-      <div>
-        <span>Possessions</span>
-        <strong>${game.possessions || "N/A"}</strong>
-      </div>
+      ${stat("WMI", formatNumber(game.WMI))}
+      ${stat("Percentile", formatPercentile(game.wmi_percentile))}
+      ${stat("Possessions", game.possessions || "N/A")}
     </div>
+    <p class="reference-note"><strong>Percentile reference:</strong> ${reference}</p>
     <p>${interpretation(game.WMI)}</p>
+    <details open><summary>Why this game received this score</summary>
+      <div class="diagnostic-grid">
+        ${stat("Recent-foul possessions (n1)", game.n1_count_L_t_eq_1 || "N/A")}
+        ${stat("Other possessions (n0)", game.n0_count_L_t_eq_0 || "N/A")}
+        ${stat("Numerator · mean M after recent fouls", formatNumber(game.mean_M_t_where_L_t_eq_1))}
+        ${stat("Denominator · mean M without recent fouls", formatNumber(game.mean_M_t_where_L_t_eq_0))}
+        ${stat("Immediate foul ratio", formatNumber(game.immediate_ratio))}
+        ${stat("Continuation ratio", formatNumber(game.continuation_ratio))}
+      </div>
+      <p class="muted-text">WMI divides the numerator by the denominator. Where defined, immediate ratio × continuation ratio gives the same WMI.</p>
+      ${audited ? `<p>Consecutive foul possessions: <strong>${game.same_team_transitions}</strong> same-team transitions; <strong>${game.opposite_team_transitions}</strong> opposite-team transitions. These counts do not identify makeup calls.</p>` : "<p>Components and timelines require reprocessing the source events. They are unavailable for this original snapshot row.</p>"}
+    </details>
+    <p class="support-note">${denominator === 0 ? "WMI is undefined because its denominator is zero. " : ""}${support !== null && support < 30 ? "Fewer than 30 possessions in at least one comparison group; interpret the ratio cautiously. This is a sample-size notice, not a validated reliability threshold. " : ""}Per-game confidence intervals are not displayed: the tested bootstrap method did not achieve consistent coverage across simulated scenarios.</p>
+    ${audited ? '<details><summary>Foul timeline · team and subtype</summary><div id="foul-timeline" aria-live="polite">Loading foul events…</div></details>' : ""}
   `;
+  if (audited) loadTimeline(game.game_id);
+}
+
+async function loadTimeline(gameId) {
+  try {
+    const response = await fetch(`site-data/timelines/${gameId}.json`);
+    if (!response.ok) throw new Error("Timeline unavailable");
+    const data = await response.json();
+    if (state.selected?.game_id !== gameId) return;
+    const container = document.querySelector("#foul-timeline");
+    if (!container) return;
+    container.replaceChildren();
+    const list = document.createElement("ol");
+    list.className = "foul-timeline";
+    for (const event of data.events) {
+      const item = document.createElement("li");
+      const seconds = event.clock % 60;
+      const clock = `${Math.floor(event.clock / 60)}:${(Number.isInteger(seconds) ? String(seconds).padStart(2, "0") : seconds.toFixed(1).padStart(4, "0"))}`;
+      item.textContent = `Possession ${event.possession} · Q${event.period} ${clock} · ${event.team} · ${event.descriptor || event.subtype}: ${event.description}`;
+      list.appendChild(item);
+    }
+    container.appendChild(list);
+    if (!data.events.length) container.textContent = "No counted defensive fouls.";
+  } catch {
+    if (state.selected?.game_id === gameId) {
+      const container = document.querySelector("#foul-timeline");
+      if (container) container.textContent = "Foul timeline could not be loaded. The game summary remains available.";
+    }
+  }
 }
 
 function renderEmptySelection() {
@@ -297,14 +337,26 @@ async function loadSearchData() {
       throw new Error(`Could not load ${DATA_URL}`);
     }
     const text = await response.text();
-    state.games = parseCsv(text).map((game) => ({
+    let merged = parseCsv(text).map(game => ({...game, game_id: game.game_id.padStart(10, "0")}));
+    try {
+      const auditedResponse = await fetch("site-data/audited_games.csv");
+      if (!auditedResponse.ok) throw new Error("Recalculated data unavailable");
+      const audited = parseCsv(await auditedResponse.text());
+      const gamesById = new Map(merged.map(game => [game.game_id, game]));
+      audited.forEach(game => gamesById.set(game.game_id, {...gamesById.get(game.game_id), ...game}));
+      merged = [...gamesById.values()];
+    } catch {
+      document.querySelector("#validation-status").textContent = "Recalculated data could not be loaded. Search is showing the original snapshot.";
+    }
+    merged.sort((a,b) => compactDate(b.game_date_et).localeCompare(compactDate(a.game_date_et)) || b.game_id.localeCompare(a.game_id));
+    state.games = merged.map((game) => ({
       ...game,
       searchText: searchableText(game),
     }));
     state.filtered = state.games;
     populateFilters();
     applyFilters();
-    selectGame(state.games[0]);
+    if (state.games.length) selectGame(state.games[0]);
   } catch (error) {
     els.meta.textContent = "WMI search data could not be loaded.";
     els.list.replaceChildren();
@@ -330,4 +382,38 @@ if (els.form) {
     }
   });
   loadSearchData();
+  loadValidation();
+}
+
+async function loadValidation() {
+  try {
+    const response = await fetch("research/validation_2026_09_12/prediction_results.csv");
+    if (!response.ok) return;
+    const rows = parseCsv(await response.text()).filter(row => row.scope === "All possessions");
+    const result = document.querySelector("#validation-result");
+    const final = rows.find(row => row.season === "2024-25" && row.game_type === "Regular Season");
+    if (final) result.textContent = `Recent foul history added a small amount of predictive information. In ${final.season} regular-season testing, log loss changed by ${formatNumber(final.delta_log_loss,6)}. This supports further research, not a strong forecasting claim.`;
+    const table = document.createElement("table");
+    table.className = "validation-table";
+    const caption = document.createElement("caption");
+    caption.textContent = "Matched model comparison · lower log loss is better";
+    table.appendChild(caption);
+    const head = document.createElement("thead");
+    const header = document.createElement("tr");
+    for (const label of ["Test season", "Context", "+ Foul history", "Change · 95% interval"]) {
+      const cell = document.createElement("th"); cell.scope = "col"; cell.textContent = label; header.appendChild(cell);
+    }
+    head.appendChild(header); table.appendChild(head);
+    const body = document.createElement("tbody");
+    for (const row of rows) {
+      const tr = document.createElement("tr");
+      for (const value of [`${row.season} ${row.game_type}`, formatNumber(row.context_log_loss,6), formatNumber(row.history_log_loss,6), `${formatNumber(row.delta_log_loss,6)} (${formatNumber(row.ci_low,6)}, ${formatNumber(row.ci_high,6)})`]) {
+        const cell = document.createElement("td"); cell.textContent = value; tr.appendChild(cell);
+      }
+      body.appendChild(tr);
+    }
+    table.appendChild(body);
+    const wrapper = document.createElement("div"); wrapper.className = "table-scroll"; wrapper.appendChild(table);
+    result.after(wrapper);
+  } catch { /* The report link remains available if the optional summary fails. */ }
 }

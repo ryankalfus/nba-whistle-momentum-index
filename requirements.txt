@@ -6,3 +6,5 @@ requests
 ruff
 statsmodels
 
+scikit-learn
+scipy

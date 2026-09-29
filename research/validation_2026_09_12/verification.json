@@ -1,0 +1,28 @@
+{
+  "python_tests": "38 passed",
+  "lint": "ruff check . passed",
+  "diff_whitespace": "git diff --check passed",
+  "website_unit_checks": "passed",
+  "browser": "Chromium via Playwright",
+  "browser_console_errors": 0,
+  "viewports_checked": [
+    [
+      1440,
+      1000
+    ],
+    [
+      390,
+      844
+    ]
+  ],
+  "flows_checked": [
+    "game search",
+    "original missing WMI displays N/A",
+    "version and percentile reference labels",
+    "recalculated components",
+    "team/subtype timeline",
+    "prediction comparison table",
+    "mobile overflow"
+  ],
+  "audit_limits": "Event-level spot checks and invariants; not full film review."
+}
