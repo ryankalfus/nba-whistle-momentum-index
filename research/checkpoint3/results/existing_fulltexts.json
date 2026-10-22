@@ -1,0 +1,133 @@
+{
+  "sources": [
+    {
+      "id": "Pelechrinis-2023",
+      "apa_citation": "Pelechrinis, K. (2023). Quantifying implicit biases in refereeing using NBA referees as a testbed. Scientific Reports, 13, Article 4664. https://doi.org/10.1038/s41598-023-31799-y",
+      "primary_url": "https://doi.org/10.1038/s41598-023-31799-y",
+      "full_text_access": "Full PDF methods, results and discussion analyzed; not abstract-only",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Pelechrinis-2023.pdf",
+      "evidence_locations": [
+        "PDF pp. 2–3: L2M selection, CNC problems, simulation design",
+        "PDF pp. 5–7: Table 2, player and technical-foul results",
+        "PDF pp. 7–9: interpretation and limitations"
+      ],
+      "method_and_sample": "NBA L2M reports covering 2015–2022; Monte Carlo null distributions for net whistle gain using violation-specific CC/IC/INC base rates; 106 players with at least 100 calls/noncalls; separate analysis of 5,419 personal technical fouls with exposure minutes and referee/player race.",
+      "actual_findings": [
+        "Combined-season home net whistle gain exceeded simulated expectation by 145.55 (Table 2, p < .01); regular-season estimate 107.7, p=.03; playoff estimate 47.86, p<.01.",
+        "2020–2022 combined-period test was nonsignificant (p=.49). Twelve players had positive nominally significant gain; binomial meta-test probability approximately .007. No aggregate evidence for negative player or team bias after that meta-test.",
+        "Opposite-minus-same-race technical rate difference was .0022 per 48 minutes, simulation p=.33."
+      ],
+      "limitations": [
+        "L2M is selected close-game final-two-minute evidence; do not generalize to every NBA possession.",
+        "CNC inclusion changes over seasons (6.4/game in 2015 versus almost 14 in 2022), so the analysis excludes that inconsistent denominator.",
+        "Small-category base rates can be noisy; meta-test assumes uncorrelated player tests; pandemic-period association cannot isolate crowd absence from other changes."
+      ],
+      "relevance_to_wmi": "Provides the strongest justification for distinguishing recorded foul frequency from correctness: WMI has calls, not CC/IC/INC labels. Use pre-possession home/away and game-context controls; L2M should be a separate selected-sample validation rather than a ground-truth label for the full season.",
+      "indigo_annotation": "Pelechrinis uses NBA Last Two Minute reports and Monte Carlo simulations to evaluate home, player, team, and racial patterns in officiating, finding aggregate home benefit and positive benefit for some players but no aggregate evidence of team or technical-foul racial bias. The study shows that call frequency alone cannot establish bias because actual violations, missed calls, and sample selection matter. I will use it to frame WMI as descriptive foul sequencing and to distinguish next-possession prediction from an accusation of incorrect officiating."
+    },
+    {
+      "id": "Morgulev-2018",
+      "apa_citation": "Morgulev, E., Azar, O. H., Lidor, R., Sabag, E., & Bar-Eli, M. (2018). Searching for judgment biases among elite basketball referees. Frontiers in Psychology, 9, Article 2637. https://doi.org/10.3389/fpsyg.2018.02637",
+      "primary_url": "https://doi.org/10.3389/fpsyg.2018.02637",
+      "full_text_access": "Full PDF methods, results and discussion analyzed; not abstract-only",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Morgulev-2018.pdf",
+      "evidence_locations": [
+        "PDF p. 3: sample, coding and procedure",
+        "PDF pp. 4–5: chi-square comparisons and logistic regression Table 6",
+        "PDF pp. 5–6: sample and sequential-effect limitations"
+      ],
+      "method_and_sample": "Observational video-coded subset of 250 attacking-player/defender collisions with defender falling, from a parent set of 501 incidents in the 2009/10 Israeli Basketball Super League; chi-square comparisons plus logistic regression for home status, player reputation, team reputation and relative size.",
+      "actual_findings": [
+        "48 of 250 incidents (19.2%) produced an offensive-foul call.",
+        "Home/away chi-square p=.902; team-status p=.912; size p=.410; logistic regression corroborated no statistically significant predictor among tested factors.",
+        "Authors explicitly say rarity and small sample made it challenging to look for sequential effects."
+      ],
+      "limitations": [
+        "Offensive fouls with defender falls are a narrow event class, and this is Israeli league evidence rather than NBA defensive-foul evidence.",
+        "Only 250 selected incidents and uneven groups (e.g., 15 defending-player-favorite cases) limit precision; nonsignificance does not prove no bias.",
+        "The current analysis concerns call patterns and contextual proxies, not comprehensive independent correctness labeling or a causal identification design."
+      ],
+      "relevance_to_wmi": "Useful counterevidence against assuming every refereeing study finds bias. Supports cautious interpretation of null results, sufficient exposure counts, and an explicit distinction between offensive-collision findings and WMI defensive-foul outcomes.",
+      "indigo_annotation": "Morgulev and colleagues analyze 250 potential offensive-foul collisions from an Israeli professional season using group comparisons and logistic regression. They find no statistically significant home, reputation, or size effect and identify the small, narrow sample as a limitation for studying sequential calls. This source will help me explain why WMI must report uncertainty and cannot treat an absence of significance or a pattern in a different foul category as definitive NBA evidence."
+    },
+    {
+      "id": "Sors-2019",
+      "apa_citation": "Sors, F., Tomé Lourido, D., Parisi, V., Santoro, I., Galmonte, A., Agostini, T., & Murgia, M. (2019). Pressing crowd noise impairs the ability of anxious basketball referees to discriminate fouls. Frontiers in Psychology, 10, Article 2380. https://doi.org/10.3389/fpsyg.2019.02380",
+      "primary_url": "https://doi.org/10.3389/fpsyg.2019.02380",
+      "full_text_access": "Full PDF methods, results and discussion analyzed; not abstract-only",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Sors-2019.pdf",
+      "evidence_locations": [
+        "PDF pp. 2–3: participants, stimuli and procedure",
+        "PDF p. 4: signal-detection analysis and results",
+        "PDF pp. 5–6: generalizability and implications"
+      ],
+      "method_and_sample": "Laboratory repeated-measures calm versus pressing crowd audio, with 30 male active referees (Italian youth leagues through national second division), median-split into 15 low/15 high competitive-anxiety participants; 20 expert-consensus clips each paired with both sounds, 40 trials; signal-detection d-prime analyzed with 2×2 mixed ANOVA.",
+      "actual_findings": [
+        "No main effect of crowd sound (p=.97) or anxiety (p=.69), but interaction F(1,28)=7.33, p<.05, partial eta-squared=.21.",
+        "High-anxiety referees had lower discrimination under pressing sound (d-prime 1.04 calm versus .73 pressing; paired t(14)=2.24, p<.05, d=.64).",
+        "Low-anxiety within-participant difference was nonsignificant (p=.11); the study did not identify home/away teams to participants."
+      ],
+      "limitations": [
+        "Small, all-male non-NBA sample; median split is sample-dependent rather than a validated anxiety cutoff.",
+        "Video/headphone task and two particular sound tracks limit ecological generalization; tracks differ qualitatively and quantitatively.",
+        "Experimental sound manipulation supports a task-specific effect but does not establish that NBA foul sequences are caused by crowd pressure."
+      ],
+      "relevance_to_wmi": "Supplies a plausible contextual moderator and warns against interpreting pooled effects as universal. WMI cannot claim to measure referee anxiety/crowd mechanism without such variables; home context can be a control but is not a substitute for measured pressure.",
+      "indigo_annotation": "Sors and colleagues manipulate crowd sound while 30 basketball referees classify expert-labeled contact videos and measure competitive anxiety. Pressing sound reduces discrimination in the high-anxiety group, while the overall sound effect is nonsignificant, showing that contextual effects can differ across officials. I will use this study as a possible mechanism and limitation rather than evidence that WMI directly detects crowd pressure or referee bias."
+    },
+    {
+      "id": "Cervone-2016-preprint",
+      "apa_citation": "Cervone, D., D’Amour, A., Bornn, L., & Goldsberry, K. (2016). A multiresolution stochastic process model for predicting basketball possession outcomes. Journal of the American Statistical Association, 111(514), 585–599. https://doi.org/10.1080/01621459.2016.1141685",
+      "primary_url": "https://doi.org/10.1080/01621459.2016.1141685",
+      "full_text_access": "Full PDF methods, results and discussion analyzed; not abstract-only",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Cervone-2016-preprint.pdf",
+      "evidence_locations": [
+        "Analyzed version: arXiv:1408.0777v3, February 25, 2016",
+        "PDF p. 5 (printed p. 4): EPV definition, foul exclusion and footnote",
+        "PDF pp. 19–20 (printed pp. 18–19): 90/10 split and Table 1",
+        "PDF pp. 24–25 (printed pp. 23–24): discussion and model assumptions"
+      ],
+      "method_and_sample": "Multiresolution stochastic process for 25 Hz NBA optical tracking from 2013–14; micro-level player motion combined with macro-level passes, shots, turnovers and possession-end states, with hierarchical spatial sharing across 461 ballcarriers. Fits 90% of data and compares held-out transition log likelihood on the remaining 10%.",
+      "actual_findings": [
+        "Full hierarchical model outperformed the simpler models for every transition class in Table 1; e.g., shot attempt held-out log likelihood improved from -48.9 thousand (player-only) to -40.7 thousand (full).",
+        "Spatial effects without hierarchical shrinkage could hurt prediction; pass4 model without shrinkage scored -24.5 thousand versus -20.4 thousand player-only and -18.9 thousand full.",
+        "Illustrates EPV paths and derived player summaries, rather than a foul-history effect."
+      ],
+      "limitations": [
+        "Explicitly excludes possessions containing fouls because foul type/circumstances are insufficiently annotated.",
+        "Semi-Markov coarsening can miss coordinated multi-action plays; rebounds simplified to constant team probability and turnover types aggregated.",
+        "Tracking still omits limb positions and other relevant information; computation and proprietary data access constrain replication."
+      ],
+      "relevance_to_wmi": "Provides a principled template for defining prediction as conditional on information available by time t and for comparing nested context models out of sample. Its foul exclusion means it cannot be cited as evidence that prior fouls predict future fouls; WMI uses a coarser and more accessible information set.",
+      "indigo_annotation": "Cervone and colleagues model basketball possessions with continuous player movements and discrete transitions to estimate expected possession value from information available at each moment. Their hierarchical model improves held-out transition likelihood over simpler alternatives, but the analysis explicitly excludes possessions with fouls. I will use its conditional-information framework and model-comparison logic to design WMI prediction tests while identifying foul modeling as an important difference."
+    },
+    {
+      "id": "Sicilia-2019",
+      "apa_citation": "Sicilia, A., Pelechrinis, K., & Goldsberry, K. (2019). DeepHoops: Evaluating micro-actions in basketball using deep feature representations of spatio-temporal data [Preprint]. arXiv. https://arxiv.org/abs/1902.08081",
+      "primary_url": "https://arxiv.org/abs/1902.08081",
+      "full_text_access": "Full PDF methods, results and discussion analyzed; not abstract-only",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Sicilia-2019.pdf",
+      "evidence_locations": [
+        "Analyzed version: arXiv:1902.08081v1, February 21, 2019; ignore manuscript placeholder DOI",
+        "PDF pp. 6–7: 750 games, windows, labels and blind spot",
+        "PDF pp. 11–13: evaluation split, Brier scores and reliability",
+        "PDF pp. 13–15: pass comparison, examples and discussion"
+      ],
+      "method_and_sample": "Tracking from 750 NBA 2016–17 games and over 134,000 possessions; stacked three-layer LSTM with learned player embeddings; roughly five-second windows with a 16-frame (~.64-second) blind spot before terminal action. Classifies shot, shooting foul, nonshooting foul, turnover, or null; downsamples null class with K sampled windows per possession; 75/10/15 training/validation/test split.",
+      "actual_findings": [
+        "At K=2, multiclass Brier score .3598 versus climatology .4920 and Brier skill score .2686; authors report best relative skill among K=1–4.",
+        "Reliability diagrams broadly track predicted probabilities, including shooting/nonshooting foul labels; tail bin for turnovers contains just one estimate.",
+        "For 512 assists versus 512 randomly sampled passes, over 72% of assists increased estimated points; distributions differed at .1% level."
+      ],
+      "limitations": [
+        "This PDF is a working preprint with a placeholder DOI; cite arXiv rather than the placeholder.",
+        "Evaluation uses a downsampling scheme with altered class prevalence; the reported scores cannot be transferred directly to natural-prevalence WMI possession predictions.",
+        "Method does not clearly document a chronological game-grouped split; do not infer proof of future-season generalization.",
+        "League-average terminal-action point values omit lineup-specific payoff; micro-action before/after valuation is not a randomized causal effect."
+      ],
+      "relevance_to_wmi": "Demonstrates that shooting and nonshooting fouls can be probabilistic outcome classes using pre-event context. Its blind spot motivates explicit feature cutoff; WMI should group held-out games chronologically, retain natural test prevalence, and compare Brier/log loss for context-only versus added history rather than reproduce tracking architecture.",
+      "indigo_annotation": "Sicilia and colleagues use an LSTM and player embeddings to estimate possession terminal-action probabilities, including shooting and nonshooting fouls, from optical tracking windows. DeepHoops beats a frequency baseline on reported Brier scores and illustrates micro-action valuation, although downsampling and the preprint evaluation design limit direct comparison to WMI. I will use its outcome definitions, pre-event cutoff, and probability-evaluation ideas to test whether past fouls add information beyond game context."
+    }
+  ],
+  "uncertain": []
+}

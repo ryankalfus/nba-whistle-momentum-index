@@ -1,0 +1,861 @@
+ Officiating Bias: The Effect of Foul Differential on
+           Foul Calls in NCAA Basketball
+
+
+
+
+                                   January, 2009
+
+
+
+
+Kyle J. Anderson
+Visiting Assistant Professor
+Kelley School of Business
+Indiana University
+Indianapolis, IN
+
+David A. Pierce
+Assistant Professor of Sport Administration
+School of Physical Education, Sport, and Exercise Science
+Ball State University
+Muncie, IN
+Abstract
+
+This study examines the pattern of foul calls exhibited during 365 NCAA basketball games
+during the 2004-2005 season. Results of the analysis indicate that officials are more likely to
+call fouls on the team with the fewest fouls, making it likely that the number of fouls will
+tend to even out during the game. This increased probability increases as the foul differential
+increases. In addition, there is a significant bias toward officials calling more fouls on the
+visiting team, and a bias toward foul calls on the team that is leading in score. The result is
+that the probability of the next foul being called on the visiting team can reach as high as .70
+during some game circumstances. Finally, implications of this officiating bias are explored,
+including the fact that basketball teams have an incentive to play more aggressively, leading
+to more physical play over time.
+Introduction
+
+       During a 2005 Final Four men’s basketball semi-final game, the University of Illinois
+
+matched up with the University of Louisville to determine which team would advance to the
+
+championship game. Illinois, a team known for its aggressive defensive play, was whistled
+
+for the first seven fouls in the game. Subsequently, five of the next six fouls were called on
+
+Louisville. By the end of the game, Louisville was called for one more foul than Illinois (13-
+
+12), a dramatic turnaround given that the first seven fouls all went against Illinois.
+
+       The extent to which past events can predict a future outcomes in sport has been
+
+analyzed by researchers conducting “hot hand” research (see Dr. Alan Reifman’s website,
+
+http://thehothand.blogspot.com for a survey). Scholars examining streakiness within
+
+basketball analyze seemingly non-random events, such as an individual player making
+
+consecutive baskets. They typically conclude, however, that such an event is random,
+
+meaning that an individual is not more likely to make the next shot if the previous shot was
+
+made (Gilovich, Vallone & Tversky, 1985). Rather than examining previous baskets made
+
+by individual players, this research examines the pattern of foul calls in men’s intercollegiate
+
+basketball and evaluates whether they are influenced by previous events. In the case of the
+
+Illinois-Louisville game, is it just as likely that Illinois would have been called for five of the
+
+next six fouls after being called for the first seven fouls in the game? More broadly, is
+
+officiating behavior independent of prior actions? If it is not, are there discernible patterns of
+
+officiating behavior, and what are the implications of these patterns to the overall sport? The
+
+first section of the paper reviews existing research on biases in sports officiating. The second
+
+section uses a data set of 365 National Collegiate Athletic Association (NCAA) basketball
+games to identify patterns in the sequence of officiating decisions. The final section
+
+addresses the implications of these patterns for the game of basketball.
+
+Theoretical Background
+
+        According to Askins (1978), “the behavior of officials demonstrates an attempt to be
+
+fair rather than objective” (p. 20). Not only do officials attempt to officiate as fairly as
+
+possible, but they also seek to be perceived as fair by external agents such as players,
+
+coaches, and fans. However, in their attempt to be perceived as fair, officials may not
+
+necessarily be objective. Askins (1978) noted that it is impossible for officials to be purely
+
+objective, or “transcend the influences of the moment and adopt a stance, which is neutral
+
+and unbiased” (p. 19).
+
+        Clearly, fairness and objectivity are not perfectly aligned. For example, basketball
+
+officiating is very subjective, with high variance among officials as to what is or is not a foul.
+
+Given this fact, one way to measure the “fairness” of officials is to examine the number of
+
+fouls called on each team. Officials concerned with being perceived as fair have an incentive
+
+to keep track of the number of fouls called on each team, and they may have a propensity to
+
+call fouls with greater frequency on the team with fewer fouls. External agents may perceive
+
+the officiating crew as fair, but this approach to decision making is certainly not objective.
+
+Conversely, officials unconcerned about perception are more likely to ignore prior fouls and
+
+call each subsequent infraction “as they see it.”
+
+        While calling an approximately equal number of fouls on each team may give the
+
+perception of an unbiased official, it may actually be quite unfair and lead to unintended
+
+consequences. Take the example of one team that is significantly more aggressive than
+
+another team. An officiating crew that actively tries to keep the number of fouls called on
+each team approximately equal is actually giving an advantage to the more aggressive team
+
+by either ignoring physical play by the aggressive team, or by being quick to whistle a foul
+
+by the less aggressive team. As one NCAA coach remarked, “We’ll play against a team that
+
+comes in and blatantly pushes our post players, and grabs and holds on defense, and the
+
+officials will call it the first time, and maybe the second. But eventually, they stop calling it
+
+and by the end of the game, we have just as many fouls even though they are the far more
+
+physical team.” If an officiating crew shows a consistent bias toward keeping the number of
+
+fouls equal, coaches may encourage their teams to play more aggressively. An unintended
+
+consequence is that as all coaches consistently pursue this strategy, and the overall
+
+aggressiveness and physical nature of the sport may increase.
+
+       In fact, American college basketball has become much more physical over the last 25
+
+years. According to the NCAA, the primary governing body of American intercollegiate
+
+sports, “Physical play and illegal contact have inhibited the game of skill that James
+
+Naismith envisioned” (NCAA, 2000; NCAA, 2004). Over the past eleven years, the NCAA
+
+has made reducing the rough play and physical contact a point of emphasis for officials and
+
+coaches (NCAA, 2007). However, these directives have been ineffective at reducing physical
+
+play. One possible explanation for this is the advantage gained by aggressive teams when
+
+officials actively try to keep an even number of fouls on each team.
+
+Literature Review
+
+       Scholarly research from a variety of academic disciplines has indicated that officials
+
+exhibit bias in their decision making. A review of related literature revealed three broad
+
+categories of bias in officiating. Home field bias research attempts to demonstrate that
+
+officials favor the home team, game circumstance bias research attempts to demonstrate that
+officials take into account the score of the game, and previous decision bias research attempts
+
+to demonstrate that officials take into consideration previous decisions in an attempt to even
+
+out the calls.
+
+        The most frequently studied bias is the propensity for officials to favor the home team
+
+(Nevill & Holder, 1999). Greer (1983) found that referee judgment differed in favor of the
+
+home team after prolonged periods of fan booing. Nevill, Balmer & Williams (2002)
+
+examined English Premier League football and found that crowd noise influenced referee
+
+decisions in favor of the home team. Likewise, Garicano, Palacios-Huerta & Prendergast
+
+(2005) examined the Spanish Premera Division and found that referees gave more penalty
+
+time at the end of games when the home team was trailing by one goal than when the home
+
+team was ahead by one goal. Similarly, Balmer, Nevill & Lane (2005) found that a home
+
+officiating bias occurred in European Championship Boxing when referees were required to
+
+make scoring decisions. Finally, Sutter & Kocher (2004) and Dohmen (2005) both identified
+
+a systematic home bias in soccer officials in the German Bundesliga.
+
+        Second, game circumstance bias attempts to identify whether or not officials attempt
+
+to take into account the score of the game in their decision making. The score differential and
+
+other external factors, such as keeping a nationally televised game close in score for the
+
+benefit of network television, has been empirically assessed. Thu et al. (2002) concluded that
+
+in nationally televised games, basketball officials had a tendency to call more fouls on the
+
+team that was leading the game. In this way, officials were giving an advantage to the trailing
+
+team and thereby keeping the score of the game closer than it otherwise would be. They
+
+found that this effect was more pronounced for nationally televised games than games that
+
+are only televised locally.
+           Finally, the notion that officials either consciously or subconsciously consider
+
+previous officiating decisions in determining future calls was put forth by Plessner & Betsch
+
+(2001), who analyzed sequential effects of penalty-kick calls in soccer. They found that
+
+“important referee decisions, such as awarding a penalty in a given situation, are influenced
+
+by previous decisions in similar situations” (p. 258). They identified three trends in referee
+
+decision making: the probability of awarding a penalty-kick increased if a penalty had not
+
+been awarded to the same team previously; officials were less likely to award a penalty kick
+
+when they had previously awarded a penalty-kick to the same team; and awarding a penalty-
+
+kick to one team increased the probability of giving a penalty-kick to the opposing team
+
+(Plessner & Betsch, 2001). However, their study was critiqued by Mascarenhas, Collins &
+
+Mortimer (2002) in part for relying on results using video-taped scenarios in a laboratory
+
+setting.
+
+           This study builds on the Plessner & Betsch (2001) research by using actual foul call
+
+data from NCAA basketball games rather than experimental results. While previous research
+
+has examined home field advantage, score differential, and prior decisions, this research
+
+analyzes the influence that the net difference in fouls has on referee decision making.
+
+           The basic hypothesis of this paper is that an officiating crew which has called a
+
+significantly higher number of fouls on one team will tend to feel pressure to equalize the
+
+foul count. This pressure may come from the home crowd (Glamser, 1990; Greer, 1983;
+
+Lehman & Reifman, 1987; Nevill, Balmer & Williams, 2002; Wright & House, 1989),
+
+network television (Thu et al., 2002), coaches and players (Askins, 1979; Smith, 1982), and
+
+may also be internal (Askins, 1979). According to Askins (1978),
+       Contrary to what most officials claim publicly, the various audiences have an impact
+
+       upon their work….To suggest that officials are not influenced by audiences is to
+
+       suggest they are not aware of their presence and this is not the case. During the course
+
+       of any contest there are many incidents which appear ambiguous, even to veteran
+
+       officials. When this occurs, officials do basically what all humans do in such
+
+       situations, i.e., they seek clarification through any means available at the time. Crowd
+
+       reaction may sometimes provide the cue, which prompts their decision. This could
+
+       become a part of the so-called homecourt advantage (p. 18).
+
+       In summary, the work of the officiating crew is constantly being scrutinized by an
+
+external audience. Foul counts are posted in real-time for the fans, coaches, and players to
+
+scrutinize and voice their concerns when the foul differential is large, applying pressure on
+
+the officials to equalize the foul count.
+
+       This study examines two main hypotheses. First, the foul differential at the end of a
+
+period will be smaller than would be expected if officiating crews ignored previous calls.
+
+Since officials have a bias toward calling an approximately even number of fouls on each
+
+team, the foul differential at the end of the half or game will not be as high as would be
+
+expected if no bias occurred. Second, when a discrepancy in the number of fouls called on
+
+each team occurs, it is more likely that the next foul will be called on the team with fewer
+
+fouls, and that this likelihood increases as the foul discrepancy increases. In examining these
+
+results, home-court advantage and score differential will be controlled for.
+
+Methods
+
+       Data on the number and sequence of fouls called during 365 NCAA men’s college
+
+basketball games played during the 2004-2005 basketball season were collected from the
+game box scores posted on www.espn.com. The games examined include all intra-
+
+conference games in the Big Ten, Big East, and ACC, as well as the NCAA tournament
+
+games. Intra-conference games are examined so that the officiating crews are selected by the
+
+conference rather than one of the universities. These three conferences were chosen as
+
+representative conferences of major college basketball in the United States. While they are
+
+three of the premier conferences in NCAA men’s basketball, there are some differences in
+
+style of play across the conferences. Specifically, the Big East has a reputation as a league
+
+with a more physical style of play than the other two conferences. NCAA tournament games
+
+were included to examine officiating patterns during games played at neutral venues.
+
+         In total, 272 regular season games pitting a visiting team against a home team, 30
+
+neutral court conference tournament games, and 63 neutral court NCAA tournament games
+
+were examined. To avoid the difficulty of trailing teams intentionally fouling toward the end
+
+of games, only fouls called in the first half were included in the analysis. The entire data set
+
+included 5,529 personal fouls called during 365 games, for an average of 15.1 fouls called in
+
+the first half. Flagrant fouls were included as personal fouls, but technical fouls which are
+
+not very common, were not included in the analysis. The data contain the team committing
+
+the foul, the time the foul was called, and the current score.
+
+       Several tests are used to analyze the hypotheses. First, the foul differential at the end
+
+of the half is examined for the 272 regular season games. If foul calls are independent, then
+
+the distribution of the foul differential at the end of each half should approximate a binomial
+
+distribution. A comparison of the standard deviations of the distribution of the empirical foul
+
+differential with what would be expected with a binomial distribution is used to test the
+
+assumption of independence. If the standard deviation is significantly smaller than the
+expected standard deviation, it suggests that foul calls are not independent. An F-test is used
+
+to compare the empirical standard deviation with the expected. In addition, the mean foul
+
+differential is tested against the hypothesis of zero. A negative foul differential indicates
+
+fewer fouls called on the home team, and is an indication of home bias.
+
+        Secondly, a logistic regression model is used to test the how the likelihood of a foul is
+
+affected by which team is the home team, the foul differential, and the score differential. In
+
+the model, the binary dependent variable is foulhome, which takes the value 1 if the foul is on
+
+the home team, and 0 if the foul is on the visiting team. Independent variables include
+
+netfouls, which is the net difference of the number of fouls called on the home team less the
+
+number of fouls called on the visiting team prior to the current foul call. It is a positive
+
+number if the number of fouls on the home team exceeds the fouls on the visiting team. The
+
+score is incorporated in two variables. Hmlead is a dummy variable that is 1 if the home
+
+team is winning and 0 otherwise, and scorenet is the point difference between the home team
+
+and the visiting team. In addition, dummy variables are used for the Big Ten and ACC
+
+conferences, while the dummy for Big East was omitted. The model is applied to 4142 foul
+
+calls from the 272 games played at one team’s home court. The model is listed as equation 1:
+
+           𝑃𝑃ℎ
+   𝐿𝐿𝐿𝐿 �        � = 𝛽𝛽0 + 𝛽𝛽1 𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛𝑛 + 𝛽𝛽2 𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻𝐻 + 𝛽𝛽3 𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠𝑠 + 𝛽𝛽4 𝐴𝐴𝐴𝐴𝐴𝐴 + 𝛽𝛽5 𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵𝐵
+         1 − 𝑃𝑃ℎ
+
+        Since home advantage has been extensively documented to influence officiating
+
+decisions, an analysis of games played on a neutral court is a valuable way to isolate some of
+
+the suggested officiating patterns. Therefore a second logistic regression is employed with
+
+slight modification and used on the 93 neutral court games (30 conference tournament games
+
+and 63 NCAA tournament games) from the sample. The model specification is the same as
+
+in equation 1, with the exception that the “home” team is the team with the better seed, as the
+game is played at a neutral venue. This allows for comparison of effects without home bias,
+
+and also allows for a measure of team quality, since the better seed is generally a team of
+
+better quality. Both logistic regressions were run using the Stata software package. The
+
+logistic regression was run under several specifications, including robust standard errors, and
+
+using clustered observation standard errors, with each game as a cluster. This is done as an
+
+attempt to adjust for the fact that observations may not be independent as required under the
+
+logistic specification. The significance level for all of the variables does not change under
+
+any of the standard error specifications, and therefore the results of these models were not
+
+included.
+
+Results
+
+       The first test compares the foul differential at the end of the half with the expected
+
+foul differential under the assumption of independence. Figure 1 illustrates the empirical and
+
+expected differential. The mean and variance of the foul differential (home team fouls less
+
+visiting team fouls) for the 272 regular season games are -.960 and 7.40. Taking the number
+
+of foul calls as constant and assuming an equal probability of a foul call on each team, the
+
+expected mean and standard deviation of foul calls are 0 and 19.89. Using a chi-squared test
+
+to compare the ratio of the actual and expected variances, the variance of the actual foul
+
+distribution is lower than the expected [χ2 (df, N=272) = 100.72, P<.001)]. A T test is used
+
+to compare the sample mean of -.960 with the expected mean of zero. Consistent with a
+
+finding of home bias, the foul differential is significantly less than zero [T (N=272) = 5.819,
+
+P<.001] indicating that significantly more fouls are called on the visiting team.
+
+                                [Insert Figure 1 about here]
+           These findings are consistent with the first hypothesis that the foul differential at the
+
+end of a set period is smaller than expected under statistical independence. The median foul
+
+differential is -1 (one more foul call on the visitor than the home), and in 63.2% of games the
+
+foul differential fell between a -3 and 1, compared to an expectation of 46.7% under the
+
+assumption of independence.
+
+           The second hypothesis states that the probability of a foul called on a team increases
+
+as the foul differential increases in that team’s favor. Figure 2 shows the probability of a foul
+
+on the home team as a function of the foul differential. As hypothesized, the probability of a
+
+foul on the home team increases as the foul differential is in the home team’s favor, and
+
+declines when the foul differential is in the visiting team’s favor.
+
+                                  [Insert Figure 2 about here]
+
+           The results of the first logistic regression are presented in Table 1. As hypothesized,
+
+the coefficient for net fouls is negative and significant. The more fouls that the home team
+
+has relative to the visiting team, the less likely it is that the next foul will be called on the
+
+home team. The coefficient for the dummy variable for a home lead is positive and
+
+significant, but the net score variable is not significant. This suggests that the team with the
+
+lead is more likely to get the next foul call, but that the magnitude of the lead does not
+
+significantly influence this probability. The conference dummy variables have no significant
+
+effects.
+
+                                     [Insert Table 1 about here]
+
+           To understand the significance of the factors, it is useful to examine some of the
+
+marginal effects of the regression. For each additional foul against the home team, the
+
+probability that the next foul will be called against the home team drops by .0295.
+Comparing the case where the home team has three fewer fouls called on it with the case
+
+when it has three more fouls called, the probability of the next foul being called on the home
+
+team declines from .571 to .396. A similar comparison shows that the home team having the
+
+lead increases the probability that the next foul will be called on them by .063.
+
+       The second logistic regression examines only neutral court games, with the results
+
+presented in Table 2. Again, the net fouls are significant and negative, indicating that foul
+
+differential has a significant impact on the probability of the next foul. The dummy variable
+
+for lead is significant; however, the net score variable is not significant, suggesting that the
+
+magnitude of the lead does not matter. Conference dummy variables are again not
+
+significant. Both regression models have a low pseudo R2 of less than .02.
+
+                                  [Insert Table 2 about here]
+
+Discussion
+
+       The results show a clear pattern of an increased probability of a foul on the team with
+
+fewer fouls, the visiting team, and the team that is leading. Home advantage, including
+
+officiating bias, has been studied extensively in sport literature (Smith, 2005). Results in this
+
+study suggest that the probability of a foul being called on the visiting team is about 7%
+
+higher than on the home team under similar circumstances. It should be noted that in all of
+
+the games, the officials are assigned by the respective conferences or the NCAA, and
+
+therefore, should not have any allegiance to the home school.
+
+       The increased proportion of fouls called on the trailing team is a phenomenon that has
+
+only been recently identified in the literature (Thu et al, 2002). An interesting finding is that
+
+the magnitude of the lead had no significant bearing on the proportion of fouls called. When
+the home team is leading, the probability of the next foul being called on them is about 6.3
+
+percentage points higher than when the home team is trailing.
+
+       The finding that the foul differential significantly and dramatically impacts the
+
+proportion of fouls called against the two teams is an important result. This is evidence of
+
+officials actively tracking the foul differential and changing behavior to focus on equality of
+
+outcomes, rather than striving for objectivity. Such a clear and convincing pattern of
+
+behavior is likely to have a significant impact on the outcome of games, and therefore on the
+
+strategy that coaches and players employ during competition. However, it is important to
+
+note that the pseudo-R is low, indicating that the action on the court is the primary
+
+determinant of foul calls, while the significance of the other factors indicates a clear bias that
+
+underlies these decisions.
+
+       Before discussing the implications of these findings, it is acknowledged that several
+
+possible alternative explanations other than officiating bias exist for the phenomenon
+
+discussed in this paper. The most plausible alternate explanation is that teams and coaches
+
+react to foul calls by changing the behavior or strategy of the team. A team with few fouls
+
+may play more aggressively because it has not been penalized, while a team that has been
+
+called for several fouls may respond by playing less aggressively. Mcguire et. al (1992)
+
+found that player behavior changes depending on the game situation. However, we are
+
+unaware of coaches or captains intentionally modifying their style of play or level of
+
+aggression during a game except in the case of an individual player having foul trouble.
+
+Therefore, this does not appear to provide a complete explanation for the documented
+
+phenomenon. One might expect the opposite effect, that experienced players would
+
+recognize that fewer fouls have been called on their team and know that their actions will be
+more closely scrutinized going forward. Additionally, the fact that this pattern appears even
+
+when the foul differential is small makes it unlikely that it is due to players modifying their
+
+behavior during the game.
+
+       It is also interesting to ponder the underlying causes of the behavior patterns of the
+
+officials. It is possible that they are responding to external factors such as the crowd, the
+
+coaches, and the players. The practice of “working the officials” (lobbying or complaining in
+
+hopes of influencing future calls) is a common and accepted part of game strategy (Smith,
+
+2005). Inherent in this strategy is the belief that external agents can influence officiating
+
+calls, in part based on reaction to previous calls. It is also likely that there are some internal
+
+processes affecting the way individuals perceive fairness of outcomes that influence the
+
+behavior of the referee. While the crowd may put pressure on the officials when the home
+
+team is at a disadvantage, we find that the sequence effects work against the home team as
+
+well. That is, when the home team has 3 or 4 fewer fouls than the visitor, the probability that
+
+the next foul will be on the home team is approximately 55%. It is unlikely that the home
+
+crowd influences the officials to an increased probability of making foul calls on the home
+
+team. In addition, Plessner & Betsch (2001) found that previous penalty kick calls have an
+
+effect on subsequent calls, even when the referees are watching calls on videotape.
+
+Presumably, these are conditions in which subjects are responding to an internal desire for
+
+fairness rather than external agents such as coaches or fans. Unfortunately, it is beyond the
+
+scope of this paper to analyze all of these issues, and it is hoped that future researchers will
+
+provide greater insight to the causes of these behaviors.
+
+       The results of this study have strategic competitive implications for coaches and
+
+players. One may wonder whether this officiating pattern is harmless or even beneficial.
+Coaches, players, fans, and officials may benefit from the perception that the game is being
+
+called fairly by having an approximately equal number of fouls called on each team.
+
+However, this pattern of behavior has negative consequences, as well. The effect of the
+
+pattern is to mitigate the harm of a foul called. When a team commits a foul, it incurs a
+
+penalty in the form of lost possession or giving the other team foul shots. However, this
+
+penalty is mitigated if the referee is then more inclined to call a subsequent foul on the
+
+opposing team. Players determine their aggressiveness by balancing the harm of aggressive
+
+play (the expected probability of a foul times the level of the penalty) with the benefit of
+
+aggressive play (generally a lower probability that the opponent will score). An officiating
+
+pattern that reduces the penalty of a foul call will encourage teams to increase aggressive
+
+play. From a strategic perspective, each coach will want to have the more aggressive and
+
+physical team, as the benefits of physical play will tend to outweigh the cost of incurring one
+
+or two more fouls per half of play.
+
+       These theoretical results match up well with the observed behavior of NCAA
+
+basketball teams over the last 20 years. Play has become increasingly aggressive, and the
+
+NCAA has made fruitless efforts to reduce the level of aggression (NCAA, 2000; NCAA,
+
+2004). The model addressed in this study suggests that the underlying problems may be
+
+greater than the NCAA appreciates. To truly reduce the level of aggression, the NCAA
+
+would have to enact policies and rule changes that reward teams that play less physically.
+
+This could include educating officials about officiating biases and encouraging them to call
+
+fouls without regard to foul differential, or to possibly increase the penalty for a foul.
+
+       This study uses only one sport, but the underlying phenomenon is generalizable not
+
+only to most sporting situations involving officials, but to other fields as well. There are
+several conditions which can create an environment in which officials will likely be
+
+influenced by previous rulings. First, there must be sufficient subjectivity and ambiguity in
+
+the decision and decision-making process that the official can credibly side with either party
+
+without making a blatant error. For example, tennis is a sport with a very low level of
+
+subjectivity in the refereeing, and presumably there is no pattern of officiating that is
+
+predicated on prior calls. One of the appeals of using basketball for the basis of this study is
+
+precisely that many of the calls are very subjective. However, football (soccer), American
+
+football, and many other sports are sufficiently subjective to notice patterns. Second, there
+
+must be a sufficient number of decisions so that the referee may in fact exhibit a bias on
+
+subsequent decisions. Given these two officiating criteria, a pattern is likely to appear in
+
+which officials explicitly attempt to balance the outcome of an event rather than strictly
+
+adjudicating each event independently. This pattern can have harmful effects to the integrity
+
+of the process.
+                                         Works Cited
+
+Askins, R.L. (1978). The official reacting to pressure. Referee, 3, 17-20.
+
+Askins, R.L. (1979). The official interacting. Referee, 4, 9-13.
+
+Balmer, N., Nevill, A. & Lane, A. (2005). Do judges enhance home advantage in European
+      championship boxing? Journal of Sport Science, 23, 409-416.
+
+Dohmen, T.J. (2005). Social pressure influences decisions of individuals: Evidence from the
+     behavior of football referees. Discussion Paper No. 1595. Bonn, Germany: Institute
+     for the Study of Labor.
+
+Garicano, L., Palacios-Huerta, I. & Prendergast, C. (2005). Favoritism under social pressure.
+       The Review of Economics and Statistics, 87, 208-216.
+
+Gilovich, T., Vallone, R. & Tversky, A. (1985). The hot hand in basketball: On the
+       misconception of random sequences. Cognitive Psychology, 17, 295-314.
+
+Glamser, F.D. (1990). Contest location, player misconduct, and race: A case from English
+      soccer. Journal of Sport Behavior, 13, 41-49.
+
+Greer, D.L. (1983). Spectator booing and the home advantage: A study of social influence in
+       the basketball arena. Social Psychology Quarterly 46(3), 252-261.
+
+Lehman, D.R. & Reifman, A. (1987). Spectator influence on basketball officiating. The
+     Journal of Social Psychology 127(6), 673-675.
+
+Mascarenhas, D., Collins, D. & Mortimer, P. (2002). The art of reasons versus the exactness
+      of science in elite refereeing: Comments on Plessner and Betsch (2001). Journal of
+      Sport and Exercise Psychology, 24, 328-333.
+
+Mcguire, E.J., Courneya, K.S., Widmeyer, W.N. & Carron, A. (1992). Aggression as a
+      potential mediator of the home advantage in professional ice hockey. Journal of
+      Sport and Exercise Psychology, 14, 148-158.
+
+Nevill, A., Balmer, N. & Williams, A. (2002). The influence of crowd noise and experience
+        upon refereeing decisions in football. Psychology of Sport and Exercise, 3, 261-272.
+
+Nevill, A. & Holder, R.L. (1999). Home advantage in sport: An overview of studies on the
+        advantage of playing at home. Sports Med 28(4), 221-236.
+
+NCAA (2000). Eliminating rough play in men’s college basketball is number-one priority for
+     this season. Retrieved November 15, 2005, from www.ncaa.org.
+NCAA (2004). NCAA basketball rules committees announce recommendations. Retrieved
+     November 15, 2005, from www.ncaa.org.
+
+NCAA (2007). NCAA Basketball 2008 men’s and women’s rules and interpretations.
+     Retrieved July 23, 2008, from www.ncaa.org.
+
+Plessner, H. & Betsch, T. (2001). Sequential effects in important referee decisions: The case
+       of penalties in soccer. Journal of Sport and Exercise Psychology, 23, 254-259.
+
+Smith, C.W. (1982). Performances and negotiations: A case study of a wrestling referee.
+       Qualitative Sociology 5(1), 33-46.
+
+Smith, D.R. (2005). Disconnects between popular discourse and home advantage research:
+       What can fans and media tell us about the home advantage phenomenon? Journal of
+       Sports Sciences, 23, 351-364.
+
+Sutter, M. & Kocher, M.G. (2004). Favoritism of agents – The case of referees; home bias.
+        Journal of Economic Psychology 25(4), 461-469.
+
+Thu, K., Hattman, K., Hutchinson, V., Lueken, S., Davis, N. & Linboom, E. (2002). Keeping
+       the game close: “Fair play” among men’s college basketball referees. Human
+       Organization, 61, 1-8.
+
+Wright, C.R. & House, T. (1989). The Diamond Appraised. New York: Simon and Schuster.
+                                                                     Figure 1 - End of Half Foul Differential
+
+
+                       0.18
+
+
+                       0.16
+
+
+                       0.14
+
+
+                       0.12
+
+
+
+
+Percentage Frequency
+                       0.10
+                                                                                                                                                Expected
+                                                                                                                                                Actual
+                       0.08
+
+
+                       0.06
+
+
+                       0.04
+
+
+                       0.02
+
+
+                       0.00
+                              -12 -11 -10   -9   -8   -7   -6   -5   -4   -3   -2   -1   0   1   2   3   4   5   6   7   8   9   10   11   12
+                                                                       Foul Differential (Home minus Away)
+                                                                               Figure 2 - Proportion of Fouls on Home Team
+                                        0.700
+
+
+                                                     0.640
+
+                                        0.600
+                                                                  0.555    0.552
+                                                                                          0.531
+                                                                                                   0.499
+
+
+
+
+Probability of Next foul on Home Team
+                                        0.500
+
+                                                                                                                0.438
+                                                                                                                            0.406       0.415
+                                        0.400
+                                                                                                                                                    0.387
+                                                                                                                                                                0.333
+                                                                                                                                                                        0.310
+                                        0.300
+
+
+
+
+                                        0.200
+
+
+
+
+                                        0.100
+
+
+
+
+                                        0.000
+                                                -5           -4           -3         -2           -1        0           1           2           3           4           5
+                                                                                      Current Foul Differential (Home minus Visitor)
+Table 1 ‐ Logistic Regression results for Regular Season Games
+                         Coefficient       Std. Error      P          Marg. Effect
+Net fouls                      ‐0.1180           0.0153    0.000 **       ‐0.0295
+Lead home                       0.2543           0.0957    0.008 **        0.0634
+Score net                       0.0093           0.0064    0.151           0.0023
+Big Ten                         0.0212           0.0798    0.790           0.0053
+ACC                            ‐0.0144           0.0753    0.848          ‐0.0036
+Constant                       ‐0.3333           0.0722    0.000 **
+
+
+N                               4142
+Likelihood Ratio χ2            96.03
+Pseudo R2                     0.0168
+
+*Significant at 5% level
+**Significant at 1% level
+Table 2 ‐ Logistic Regression results for Neutral Court Games
+                         Coefficient       Std. Error      P          Marg. Effect
+Net fouls                      ‐0.1469           0.0281    0.000 **       ‐0.0366
+Lead seed                       0.4506           0.1735    0.009 **        0.1051
+Score net                      ‐0.0141           0.0126    0.262          ‐0.0035
+Big Ten                         0.1898           0.1901    0.185           0.0467
+ACC                            ‐0.2241           0.1691    0.318          ‐0.0559
+Big East                        0.0539           0.1899    0.777           0.0134
+Constant                       ‐0.2657           0.1088    0.015 *
+
+N                               1386
+Likelihood Ratio χ2            38.19
+Pseudo R2                     0.0199
+
+*Significant at 5% level
+**Significant at 1% level
+

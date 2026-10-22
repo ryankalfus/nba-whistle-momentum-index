@@ -1,0 +1,462 @@
+                                                                                                                                             ORIGINAL RESEARCH
+                                                                                                                                       published: 20 December 2018
+                                                                                                                                      doi: 10.3389/fpsyg.2018.02637
+
+
+
+
+                                            Searching for Judgment Biases
+                                            Among Elite Basketball Referees
+                                            Elia Morgulev 1,2* , Ofer H. Azar 3,4 , Ronnie Lidor 1 , Eran Sabag 1 and Michael Bar-Eli 1,3
+                                            1
+                                              The Academic College at Wingate, Wingate Institute, Netanya, Israel, 2 Kaye Academic College of Education, Beer-Sheva,
+                                            Israel, 3 Department of Business Administration, Guilford Glazer Faculty of Business and Management, Ben-Gurion University
+                                            of the Negev, Beer-Sheva, Israel, 4 Laboratory of Economic Behavior of the Center of Psycho-Economic Research,
+                                            Povolzhsky Institute of Management named after P.A. Stolypin, RANEPA, Saratov, Russia
+
+
+                                            An attacking basketball player initiating significant physical contact with a defender
+                                            who has already established a legal and stationary position, should be called with an
+                                            offensive foul. Offensive foul situations are particularly ambiguous and complex, making
+                                            the referee’s task a difficult one. In such conditions of complexity and constraints of
+                                            time, the referee is likely to be prone to systematic biases, as has been documented
+                                            by previous research in other sport settings. We analyzed the referees’ decisions in 250
+                                            instances of collisions between an attacking player and a defender. In these collisions
+                                            the defender fell, and potentially an offensive foul could be called. We found no evidence
+                                            of favoritism granted to the home team, to star players, or to high-reputation teams, or
+                                            of small players being tackled by significantly larger opponents. The findings suggest
+                        Edited by:
+                     John L. Perry,
+                                            that these biases are not very robust, and are sensitive to the context, and that proper
+    Mary Immaculate College, Ireland        training of referees and enhanced awareness can help to alleviate referees’ biases.
+                     Reviewed by:
+                                            Keywords: biases, judgment, decision making, sport referees, basketball
+                 Alexandra Pizzera,
+   German Sport University Cologne,
+                           Germany
+                Stewart T. Cotterill,
+                                            INTRODUCTION
+           University of Winchester,
+                    United Kingdom          Highly qualified managers and employees are often required to make important decisions under
+                                            severe time and information constraints. This is especially true in high-profile jobs such as surgeons,
+                 *Correspondence:
+                        Elia Morgulev
+                                            brokers, pilots, and sport referees (Dawson, 2012). Professional sport referees can be thought of as
+            eliamorgulev@yahoo.com          highly qualified agents, authorized to act on the court on behalf of stakeholders (principals) such as
+                                            FIFA, the NBA, the IOC, etc. These agents are expected to act in the best interest of their principals.
+                   Specialty section:       Consequently, a basic requirement for sport referees is to judge impartially, since unbiased referee
+         This article was submitted to      judgment is necessary for the accomplishment of the principal’s objective—namely, to secure the
+                Performance Science,        integrity and legitimacy of any professional sport competition.
+               a section of the journal        Agency theory literature typically emphasizes the role financial incentives play on agents,
+               Frontiers in Psychology
+                                            causing them to depart from honest behavior (e.g., bribes, promotions) (Garicano et al., 2005).
+          Received: 30 March 2018           This implies that the principal must align the referee’s interests with his/her own in order to secure
+      Accepted: 07 December 2018
+                                            the referee’s impartiality. Yet, Brand et al. (2006) argued that as long as a substantial gray area exists
+      Published: 20 December 2018
+                                            between legal and illegal contacts (e.g., fouls) in most sports, the interpretation of the contact by
+                            Citation:       the referee cannot be based solely on the written rule system (i.e., formal cues). In this context,
+       Morgulev E, Azar OH, Lidor R,
+                                            sociologists and social psychologists suggest that agents’ decisions are not solely determined by
+        Sabag E and Bar-Eli M (2018)
+      Searching for Judgment Biases
+                                            direct financial rewards, but are also driven by non-material payoffs that emerge in the agents’
+     Among Elite Basketball Referees.       social environment, in the form of social approval or social sanctions (Dohmen and Sauermann,
+               Front. Psychol. 9:2637.      2016). Dawson (2012) stated that in circumstances of time and information constraints, social
+      doi: 10.3389/fpsyg.2018.02637         pressure can lead to systematic biases in decision making, since individuals rely on heuristics
+
+
+Frontiers in Psychology | www.frontiersin.org                                     1                                          December 2018 | Volume 9 | Article 2637
+Morgulev et al.                                                                                                      Biases of Elite Basketball Referees
+
+
+
+and emotion in framing their decisions. In this regard, Garicano             teams in their calls. Yet, compared to football, the research on
+et al. (2005) indicated that aside from financial incentives, the role       home favoritism in basketball is scarce and inconclusive.
+of social forces in corrupting the behavior of individuals needed               Beginning March 2015, the NBA began to release play-by-play
+to be further examined. In this study, we turned to basketball               reports regarding all calls in close game situations with two or less
+to investigate referees’ decisions in offensive foul situations, to          minutes to play. Deutscher (2015) used these official reports to
+determine whether basketball referees are prone to various biases            analyze discrepancies between actual calls by the referees and the
+that have been reported by previous literature in other sport                judgment of these foul situations by the principal—the League.
+settings.                                                                    Analysis of 1,229 referees’ calls from 113 close games found no
+    Dohmen and Sauermann (2016) pointed out that referees in                 support for home team favoritism in the NBA. Deutscher stressed
+professional sports are a perfect object for empirical investigation         that such a comparative analysis has an advantage compared to
+of the existence of biases and their underlying social forces:               previous research that relied on analysis of statistical frequency of
+First, referees’ decisions are observable and publicly available for         calls, identified patterns, and interpreted these patterns in terms
+analysis; Second, professional referees are paid to be accurate and          of biased decision making. This had the potential result of mixing
+impartial, and their performance is monitored and evaluated.                 biased decision making with actual differences in the behavior of
+    A growing body of literature has addressed decision making               players and teams.
+processes and biases of sport referees. We will focus here on
+findings that are relevant to the aims of our study.                         Star-Player Favoritism and “Big Team”
+                                                                             Favoritism Bias
+Home Team Favoritism Bias                                                    Lehman and Reifman (1987) demonstrated that star players in the
+Nevill et al. (2002) used a laboratory setting to examine the                NBA had fewer fouls called (against them) at home than away,
+influence of noise generated by a crowd on officials’ decisions.             whereas non-stars were not subject to this pattern. The authors
+In their study, referees watched various challenges recorded on              concluded that player status creates additional pressure from the
+videotape under sound vs. no-sound conditions. It was found                  crowd on the referee when the “star” is playing at home. Findlay
+that the presence of crowd noise had a significant effect on                 and Ste-Marie (2004) found that a reputation bias does exist when
+the decisions made by the referees. A similar approach was                   judging figure skating, and that it is present during the evaluation
+adopted by Unkelbach and Memmert (2010) who used video                       phase of sport performance appraisal. Mills (2014) reported on
+clips from 56 different matches from the German Bundesliga.                  favoritism of referees toward players with a higher status in Major
+These researchers demonstrated that observers were more likely               League Baseball. Caudill et al. (2014) suggested that referees are
+to award yellow cards under noisy conditions.                                “protecting” the league’s star players, as they found that NBA
+    Relying on archived data, Sutter and Kocher (2004) examined              All-Star players were awarded with an additional 0.32 free throw
+referees’ decisions in awarding penalties and extra time at the              attempts per minute during the fourth quarter of NBA Playoff
+end of football matches of the German Bundesliga, and reported               games, the most critical games of any season for players, coaches,
+on the existence of home bias. That is, football referees were               owners, and fans.
+much more likely to award penalties to the home team than to                     On the team level, Lago-Peñas and Gómez-López (2016)
+the visiting team. Referees were also found to add significantly             showed that football referees favor big teams (i.e., more famous
+more extra time in cases where the home team is behind by                    and higher-ranked teams) by shortening close games when the
+one goal than when it is ahead by one goal, or when there is a               big team is ahead and extending close games when the big team
+draw after 90 min of play. Garicano et al. (2005) extended the               is behind.
+finding on biased extra time allocation to behavior of Spain’s top-
+league referees. Dawson and Dobson (2010) analyzed data from                 Player’s Size Bias
+five seasons of European cup football matches and found that                 Van Quaquebeke and Giessner (2010) reported that height is one
+referees favor home teams when awarding yellow and red cards.                of the decision cues used by referees when judging tackles in
+Page and Page (2010) used a dataset which contains information               football (soccer), despite the fact that body composition is not
+from 37,830 individual matches; they concluded that the home                 part of the formal foul-related information that referees should
+advantage effect differs significantly among referees, and that this         take into consideration. The authors found that taller players are
+relationship is moderated by the size of the crowd.                          likely to be perceived as more aggressive; thus, they are identified
+    In other sports, Balmer et al. (2005) reported that judges               as foul perpetrators and their respectively smaller opponents as
+enhance home advantage in European championship boxing.                      foul victims. We speculate that in the situation of an offensive
+Crowd and noise were found to increase the scores of Muay                    foul in basketball, a collision initiated by a much bigger player
+Thai judges, resulting in an advantage to the home competitor                (who may be seen as more aggressive) may incline the referee in
+(Myers et al., 2012). In basketball, it was reported by Anderson             favor of the smaller player. In this regard, prior information about
+and Pierce (2009)—based on 365 NCAA games—that there is a                    players’ aggressiveness was found to influence referees’ decisions
+significant bias toward officials calling more fouls on the visiting         in football (Jones et al., 2002; Strauss and Pier, 2002).
+team. Price et al. (2012) analyzed play-by-play data for all NBA                 To this end, the literature contains a wealth of articles
+regular season and playoff games from the 2002–2003 through                  documenting home team favoritism in football. However, home
+2007–2008 seasons, and reported that referees favor the home                 team favoritism in basketball has remained less studied, and
+
+
+Frontiers in Psychology | www.frontiersin.org                            2                                     December 2018 | Volume 9 | Article 2637
+Morgulev et al.                                                                                                      Biases of Elite Basketball Referees
+
+
+
+the emerging picture is ambiguous. For instance, a comparative               offensive player and 251 incidents where the defender remained
+analysis of basketball calls performed by Deutscher (2015) elicited          standing after the contact.
+no evidence for home bias or favoritism toward superstar players.               These incidents were taken from games played in the 2009/10
+In the NBA, Gift and Rodenberg (2014) analyzed referees’                     season of the Israeli Basketball Super League. It should be
+decisions in 4,463 regular season games from 2008 to 2012,                   pointed out that Israeli basketball is at a high international level.
+and reported that more personal fouls were called when a                     For example, Maccabi Tel Aviv has won the FIBA European
+relatively shorter referee officiated the game. Yet, no evidence             Champions Cup several times, and one of its recent coaches,
+was found that the rate of foul calling varies with the players’             David Blatt, went on to be the head coach of the Cleveland
+height. Additionally, Pope et al. (2018) reported that awareness             Cavaliers, which he led to the 2015 NBA Finals. In the current
+of biases can mitigate their effects. Their analysis revealed that           study, we focused on the 250 cases where the defender fell.
+the widespread media attention highlighting racial bias among
+professional basketball referees led to the complete disappearance           Procedure
+of the bias.                                                                 We reviewed these 250 incidents and documented whether the
+    We aim in this study to implement a setting of an offensive              referee called an offensive foul, and whether the attacking team
+foul in order to determine if biases that were discussed in the              was the home or away (guest) team. For each player we recorded
+literature, mainly in football, also hold for referees in the game           three performance parameters from the official site of the Israel
+of basketball. Morgulev et al. (2014) used the setting of an                 Basketball Super League: (1) annual average scoring per game;
+offensive foul in basketball for assessing referees’ and players’            (2) minutes played per game; (3) overall “performance index
+decision making from a cost-benefit perspective. In their study,             rating” per game. An individual “performance index rating”
+501 collisions between attacking players and defenders were                  is calculated by the addition and subtraction of positive and
+analyzed by participating experts (elite-level basketball referees).         negative player’s actions (e.g., points made, rebounds, fouls
+The experts identified 65% of the falls in the sample as voluntary           drawn, missed field goals, fouls committed, etc.). Performance
+(flops), meaning that the defenders deceived by deliberately                 index rating is an official metric used to rate players in the
+falling in order to manipulate the referee.                                  “EuroLeague,” as well as in various European national leagues.
+    This implies that the setting of an offensive foul is a                     Incidents with at least a 10-unit difference between the
+challenging one for a referee. In such an ambiguous setting, the             attacking and defending players in all three of the parameters
+referee may succumb to non-formal but easily accessible cues.                were denoted as “attacking player favorite” or “defending player
+Size of the player appears to be a potential cue since the referee           favorite.” Namely, a defender who averaged at least 10 points
+may be inclined to identify the smaller player as a foul victim.             more per game, played at least 10 min more per game, and had
+Favoritism of star players was proposed by the literature as a               a performance index rating at least 10 units higher than the
+potential bias in basketball refereeing. Analogically, appeasing             attacking player, was denoted as the favorite in the given incident.
+the home crowd also seems as the natural thing to do when                       Ranks of the teams by the end of the 2009/10 season and the
+the situation is uncertain. On top of it, there are available data           end of the preceding season were used as a proxy for team status.
+on players’ sizes and positions, teams’ ranks, points scored,                Four teams stood out in both seasons and therefore were assigned
+and minutes played, enabling to construct the above-mentioned                with “big team” status. Games between one of the big teams and
+variables for analysis. We hypothesize that in offensive foul                any other team in the league were denoted as “attacking team
+situations, referees are inclined in favor of smaller players, players       favorite” or “defending team favorite” (the favorite being the big
+performing in front of their home crowd, players playing for                 team).
+bigger teams, or players with higher reputation.                                Additionally, we recorded the player’s position (e.g., small
+                                                                             forward, power forward, shooting guard, etc.) and the height
+                                                                             of both players in each incident—parameters that were used
+MATERIALS AND METHODS                                                        to evaluate the body size of the players. In cases of incidents
+                                                                             between players playing in fundamentally different positions
+The current research meets the requirements for a waiver from                (e.g., point guard vs. power forward, shooting guard vs. center,
+ethical approval, since it is based on information freely available          etc.) combined with at least a 10-cm height difference between
+in the public domain.                                                        the players, the cases were denoted as “smaller attacking player”
+                                                                             or “smaller defending player.” A summary of the four variables
+Materials                                                                    constructed for the analysis is presented in Table 1.
+A sample of offensive foul situations previously analyzed by
+Morgulev et al. (2014) was reviewed, and additional variables                Data Analysis
+were collected. Morgulev et al.’s sample consisted of incidents              Chi-square analyses were performed in order to indicate the
+between an attacking player and a defender that were identified              degree of the relationships between the referees’ calls and home
+by professional basketball coaches as incidents that had the                 team favoritism, players with higher reputation favoritism, bigger
+potential to meet the criteria of an offensive foul (an attacking            teams favoritism, and smaller defenders favoritism. As the
+player with the ball pushing or moving into an opponent’s torso              response variable in our study was binary (i.e., has two possible
+while the defender had already established a stationary position):           outcomes: foul vs. no foul), the assumptions necessary to conduct
+250 incidents where the defender fell after contact with the                 ANOVA were likely to be violated. Nevill et al. (2002) indicated
+
+
+Frontiers in Psychology | www.frontiersin.org                            3                                     December 2018 | Volume 9 | Article 2637
+Morgulev et al.                                                                                                                                 Biases of Elite Basketball Referees
+
+
+
+TABLE 1 | Variables used to test for officiating biases in offensive foul situations.
+
+                                         Criterion                                                   Criterion                                     Criterion
+
+Home advantage                           Defender playing at home
+Player reputation advantage              Defender scored at least 10 more points                     Defender played at least 10 more              Defender had at least 10 more
+                                         per game                                                    minutes per game                              positive actions per game
+Team reputation advantage                Four teams achieved the highest ranks in
+                                         2008/9 and 2009/10 seasons
+Body size advantage                      Point guard or shooting guard defending                     Defender at least 10 cm shorter
+                                         against power forward or center
+
+
+
+that logistic regression is a more appropriate technique in such                             be called in his/her favor). Table 3 presents the distribution of
+cases. This analysis will estimate the odds associated with the                              calls for offensive fouls by the difference in players’ reputation.
+two outcomes and how these will vary due to differences in the                                  We can see in Table 3 that the frequency of calls enjoyed by
+independent variables. Consequently, to verify the robustness of                             “stars” in our study is not much different from the frequency
+our results, we used a binary logistic regression model (Logit) and                          of calls awarded to their less renowned fellow players. Statistical
+assessed the explanatory power of the four mentioned variables                               analysis supports the conclusion that there are no significant
+on referee’s decision to call an offensive foul.                                             differences in the chances to get a call for offensive foul based
+                                                                                             on reputation. When we analyze the three categories in Table 3
+                                                                                             we obtain χ2 (2, N = 250) = 0.434, p = 0.805. When we
+RESULTS                                                                                      exclude the “similar reputation” category and compare only the
+                                                                                             cases where one player enjoys a higher reputation, we obtain
+Home Bias                                                                                    χ2 (1, N = 54) = 0.166, p = 0.684.
+As mentioned in the introduction, studies in various sports
+found a home bias, according to which the referee gives the                                  Teams’ Reputation Differences
+home team favorable treatment (e.g., Sutter and Kocher, 2004).                               Favoritism of “bigger” (more famous, higher-ranked, etc.)
+Because our sample consists of ambiguous situations in which                                 clubs by referees is another bias that was documented in the
+it is not clear if an offensive foul should be called or not, these                          literature (e.g., Lago-Peñas and Gómez-López, 2016). Using
+situations are relevant for the home bias to appear. Table 2                                 the league rankings in the 2008/09 and 2009/10 seasons, we
+presents the frequency of calls for an offensive foul for home vs.                           identified four clubs that clearly stood above the rest in
+away teams. We can see an almost equal distribution of offensive                             the Israeli Super League. If referees favor bigger teams as
+fouls awarded for defenders of the home and the guest teams.                                 reported in the literature, it should imply in our context
+A statistical test confirms that our data show no support for the                            that big clubs will enjoy more calls for an offensive foul
+home bias documented in other studies: χ2 (1, N = 250) = 0.015,                              against the opposite team. Table 4 presents the distribution
+p = 0.902.                                                                                   of calls for offensive fouls, divided by the teams’ reputation
+                                                                                             difference.
+Players’ Reputation Differences
+As mentioned earlier, the literature includes evidence for                                   TABLE 3 | Frequency of calls for an offensive foul by the players’ reputation
+favorable treatment that “stars” receive from referees (e.g.,                                differences.
+Lehman and Reifman, 1987). We described above the three
+                                                                                                                               No call for                  Call for
+criteria we used to measure reputation, and we required all three
+                                                                                                                             offensive foul            offensive foul        Total
+to have a large difference (over 10 units) between the two players
+in order to categorize the case as having reputation differences.                            Attacking player favorite       33         84.6%           6        15.4%         39
+Therefore, a reasonable conjecture based on the literature is                                Similar reputation             157         80.1%         39         19.9%        196
+that the higher-reputation player (when such a large reputation                              Defending player favorite       12         80.0%           3        20.0%         15
+difference exists) will enjoy favorable treatment from the referee                           Total                          202         80.8%         48         19.2%        250
+(i.e., fewer fouls will be called against him/her and more fouls will
+                                                                                             TABLE 4 | Frequency of calls for an offensive foul by the teams’ reputation
+                                                                                             differences.
+TABLE 2 | Frequency of calls for an offensive foul for home and away teams.
+                                                                                                                              No call for                   Call for
+                        No call for                      Call for                                                            offensive foul            offensive foul        Total
+                    offensive foul                    offensive foul             Total
+                                                                                             Attacking team favorite         68         81.0%         16         19.0%         84
+Away               99           80.5%            24            19.5%              123        Similar reputation              85         81.7%         19         18.3%        104
+Home              103           81.1%            24            18.9%              127        Defending team favorite         49         79.0%         13         21.0%         62
+Total             202           80.8%            48            19.2%              250        Total                         202          80.8%         48         19.2%        250
+
+
+
+
+Frontiers in Psychology | www.frontiersin.org                                            4                                              December 2018 | Volume 9 | Article 2637
+Morgulev et al.                                                                                                                        Biases of Elite Basketball Referees
+
+
+
+   Table 4 suggests that referees did not call more fouls in                         TABLE 6 | Logistic regression explaining the referee’s decision whether to call an
+favor of the “big teams,” χ2 (2, N = 250) = 0.184, p = 0.912.                        offensive foul.
+
+When we exclude the “similar reputation” category and compare                        Variable                                                 Coefficients       p-value
+only the cases where one team is more of a favorite, we obtain
+χ2 (1, N = 146) = 0.083, p = 0.774. It is worth mentioning                                                                                     B         SE
+that “big teams” are usually loaded with big names. As                               Defender is playing at home                            −0.018      0.163     0.912
+a result, players from such teams will often expose the                              Player’s reputation difference
+referee to the aggregated effect of a star player playing                            (reference category: defender’s reputation is lower)
+for a high-caliber team. Yet, similar to the case of the                             Similar reputation                                      0.325      0.492     0.509
+players’ reputation difference, as in the case of difference                         Defender’s reputation is higher                         0.380      0.817     0.642
+in teams’ reputations, we did not observe any referee bias                           Team’s reputation difference
+despite some of the literature showing such bias in other                            (reference category: defender’s team reputation)
+cases.                                                                                is lower)
+                                                                                     Similar reputation                                     −0.114      0.385     0.767
+                                                                                     Defender’s team reputation is higher                    0.053      0.437     0.903
+Body Composition Differences
+                                                                                     Body composition difference
+Van Quaquebeke and Giessner (2010) showed that referees
+                                                                                     (reference category: defender’s size is bigger)
+tend to treat physically larger players as foul perpetrators,
+                                                                                     Similar size                                            0.017      0.586     0.977
+whereas their respectively smaller opponents tend to be
+                                                                                     Defender’s size is smaller                              0.636      0.698     0.362
+viewed as foul victims. As explained in detail earlier,
+based on the players’ positions and players’ height we
+were able to identify collisions where the defender was                                 As a check of the robustness of our results, we analyze below
+significantly smaller. Therefore, according to the associated                        the simultaneous effects of these four factors, using a logistic
+refereeing bias suggested in the literature, in these cases                          regression in which the dependent binary variable is whether the
+the defender was expected to receive favorable treatment                             referee called an offensive foul, and the explanatory variables are
+from the referee. Table 5 presents the analysis of calls                             those which we explored above. Table 6 presents the results of
+for an offensive foul, divided by body composition                                   this regression.
+differences.                                                                            The results presented in Table 6 confirm our previous
+   Table 5 shows that body composition, as opposed to the                            analyses and suggest that home advantage, the players and team’s
+factors analyzed above, yielded some evidence for a bias as                          reputation, and body size do not affect the referee’s decision
+suggested in the literature. We can see a tendency in the referees                   whether or not to award an offensive foul.
+to award smaller defenders more calls for an offensive foul in
+their favor (28.6 vs. 18.0% with similar size and 18.2% with a
+smaller attacking player). However, this effect is not statistically                 DISCUSSION AND CONCLUSION
+significant: χ2 (2, N = 250) = 1.785, p = 0.410. When we
+exclude the “similar size” category and compare only the cases                       The situation of an offensive foul in basketball involves complex
+where one player is bigger, we obtain χ2 (1, N = 50) = 0.729,                        and uncertain circumstances, where a decision should be made
+p = 0.393. It is interesting to note that there is no meaningful                     very quickly. Such a setting should provide fertile ground for
+difference in the frequency of offensive fouls between the                           refereeing biases to take place. In this study, we examine whether
+cases of a smaller attacking player and cases of similar size                        biases documented in previous literature (mainly in football) will
+players.                                                                             also take place in the setting of an offensive foul in basketball.
+   All the four variables that were analyzed above were reported                         We analyzed referees’ calls in 250 such incidents, taken from
+in the literature as factors that may cause referee bias in sport,                   an entire season of the Israeli Basketball Super League, and we
+but in our data we find no evidence for such bias, especially in                     found no evidence for favoritism. That is to say, although the
+the cases of the home bias, or the reputation of the player or the                   situation of potential offensive fouls should be prone to refereeing
+team.                                                                                biases, in our sample the reputation of the players and the teams,
+                                                                                     the issue of home vs. away teams, and the players’ physical size
+                                                                                     did not significantly affect the frequency of calls for an offensive
+TABLE 5 | Frequency of calls for an offensive foul by body composition               foul. The data provides some limitations to be mentioned. First,
+differences.                                                                         there is information only on decisions in offensive foul situations.
+                                                                                     Referee bias could prevail in a multitude of other calls made
+                                  No call for             Call for
+                                                                                     by a basketball referee. Second, we focused on relatively rare
+                                offensive foul        offensive foul     Total
+                                                                                     instances of offensive foul situations that had to be identified
+Smaller attacking player        18        81.8%       4        18.2%       22        as such by experts, and we ended up with a relatively small
+Similar size                   164        82.0%      36        18.0%      200        sample of 250 cases—this after scanning through an entire season
+Smaller defending player        20        71.4%       8        28.6%       28        of games. The rarity of offensive fouls in basketball also made
+Total                          202        80.8%      48        19.2%      250        it challenging for us to look for sequential effects in referees’
+
+
+Frontiers in Psychology | www.frontiersin.org                                    5                                             December 2018 | Volume 9 | Article 2637
+Morgulev et al.                                                                                                                        Biases of Elite Basketball Referees
+
+
+
+decisions, phenomenon known as game management. We believe                               The Israeli Basketball Referees Union is presently managed
+that by using recent technological advances, a larger sample can                      (at the time of our study) by two former elite-level international
+be examined.                                                                          referees (e.g., officials at Olympic Games’ finals), who currently
+    The current null results are in line with those of Deutscher                      serve as commissioners and referees’ instructors for FIBA (the
+(2015), who found no evidence that referees’ decisions on fouls                       International Basketball Federation). They guide Israeli referees
+in the NBA are influenced by a player’s reputation or succumb to                      to avoid foul calls for marginal contact (regardless of the
+home favoritism. Additionally, Gift (2017) used detailed fighter                      players involved) and to maintain consistency in their decisions.
+performance statistics to investigate round-by-round judging                          Experience, evaluation, and feedback are known to be important
+decisions for major mixed martial arts (MMA) events. His                              factors in learning and improvement in decision making (Pizzera
+findings have not supported the claim that judges favor previous                      and Raab, 2012; Renden et al., 2014; Erev and Haruvy, 2016).
+titleholders. All this suggests that the refereeing biases previously                 Guidance of Israeli referees involves feedback to the individuals
+reported in the literature are not so ubiquitous as hitherto                          or teams of referees, with weekly video materials and letters
+believed.                                                                             being distributed after each round of games. This is consistent
+    The publication bias that has existed for a long time in many                     with findings on the ability to improve officials’ decision making
+fields has resulted in papers with null results not being published,                  by implementing video-based training routines (Mascarenhas
+and a literature containing studies with many results that have                       et al., 2005; Schweizer et al., 2011; Put et al., 2013; Put et al.,
+later been found to be non-replicable. The unwillingness of                           2016).
+referees and editors for many years to publish null results led                          In addition, The Israeli Basketball Referees Union could fear
+researchers to avoid attempts to replicate studies, and to shun                       “bad press” in case biased refereeing becomes publically known.
+writing and submitting papers with null results. Even when                            In this respect, Deutscher (2015) has already proposed that fear
+they did, these papers were usually not published in outlets                          of “bad press” is a possible mitigating factor. The lessons learned
+that are likely to get much attention. The resulting publication                      from the literature suggest that awareness and knowledge of bias
+bias has led to erroneous literature, where many effects were                         may lead to behavioral changes (e.g., Pope et al., 2018), and
+believed even though they were not real, because the results                          therefore, over the years, a growing awareness of biases among
+were reported when an effect was found but not when an                                referees could have alleviated favoritism. In our inquiry, since a
+effect was not found. The recent understanding of the danger                          number of biases were combined and studied, it was possible to
+that this type of publication bias creates has led to attempts                        adopt a context-specific approach, and to examine carefully the
+to make scholars more aware of this issue. Consistent with                            influence of these biases on processes of decision-making.
+this approach, our study attempted to extend prior results to a
+new context, and subsequently no support was found for these
+results.                                                                              AUTHOR CONTRIBUTIONS
+    A possible contributing factor to our findings that do
+not reveal refereeing biases is the training that the referees                        EM, OA, RL, ES and MB-E devised the project and interpreted
+receive. Samuel (2017) pointed out on the increasing level of                         the results. EM and OA performed the data analysis. EM collected
+professionalism and on the structured training programs for                           the data and drafted the manuscript. OA performed critical
+Israeli referees. The Israeli Basketball Referees Union indeed                        revision of the manuscript.
+works hard to train its referees, and has an organizational
+culture that promotes accurate and unbiased refereeing where
+the quality of referees’ nominations most often depend on their                       ACKNOWLEDGMENTS
+performance. Deutscher (2015) argues that if the organization
+punishes biased decision making, referees have an extra incentive                     OA gratefully acknowledges financial support of a grant
+for impartial behavior, whereas organizational culture is known                       from the Government of the Russian Federation (Research
+to be an important factor in determining employees’ performance                       Project “Cognitive-behavioral and cross-cultural foundations of
+(Ogbonna and Harris, 2000; Hogan and Coote, 2014).                                    economic policy”, Contract 14.W03.31.0027).
+
+
+REFERENCES                                                                            Caudill, S. B., Mixon, F. G. Jr., and Wallace, S. (2014). Life on the red carpet: star
+                                                                                        players and referee bias in the National Basketball Association. Int. J. Econ. Bus.
+Anderson, K. J., and Pierce, D. A. (2009). Officiating bias: the effect of foul         21, 245–253. doi: 10.1080/13571516.2014.903110
+   differential on foul calls in NCAA basketball. J. Sports Sci. 27, 687–694.         Dawson, P. M. (2012). Experience, social pressure and performance: the case
+   doi: 10.1080/02640410902729733                                                       of soccer officials. Appl. Econ. Lett. 19, 883–886. doi: 10.1080/13504851.2011.
+Balmer, N. J., Nevill, A. M., and Lane, A. M. (2005). Do judges enhance home            607118
+   advantage in European championship boxing? J. Sports Sci. 23, 409–416.             Dawson, P. M., and Dobson, S. (2010). The influence of social pressure and
+   doi: 10.1080/02640410400021583                                                       nationality on individual decisions: evidence from the behaviour of referees.
+Brand, R., Schmidt, G., and Schneeloch, Y. (2006). Sequential effects in elite          J. Econ. Psychol. 31, 181–191. doi: 10.1016/j.joep.2009.06.001
+   basketball referees’ foul decisions: an experimental study on the concept          Deutscher, C. (2015). No referee bias in the NBA: new evidence with
+   of game management. J. Sport Exerc. Psychol. 28, 93–99. doi: 10.1123/jsep.           leagues’ assessment data. J. Sports Anal. 1, 91–96. doi: 10.3233/JSA-
+   28.1.93                                                                              150012
+
+
+
+
+Frontiers in Psychology | www.frontiersin.org                                     6                                             December 2018 | Volume 9 | Article 2637
+Morgulev et al.                                                                                                                                 Biases of Elite Basketball Referees
+
+
+
+Dohmen, T., and Sauermann, J. (2016). Referee bias. J. Econ. Surv. 30, 679–695.                Pizzera, A., and Raab, M. (2012). Perceptual judgments of sports officials are
+   doi: 10.1111/joes.12106                                                                        influenced by their motor and visual experience. J. Appl. Sport Psychol. 24,
+Erev, I., and Haruvy, E. (2016). “Learning and the economics of small decisions,”                 59–72. doi: 10.1080/10413200.2011.608412
+   in The Handbook of Experimental Economics, Vol. 2., eds J. H. Kagel and A. E.               Pope, D. G., Price, J., and Wolfers, J. (2018). Awareness reduces racial bias. Manag.
+   Roth (Princeton, NJ: Princeton University Press.                                               Sci. 64, 4988–4995. doi: 10.1287/mnsc.2017.2901
+Findlay, L. C., and Ste-Marie, D. M. (2004). A reputation bias in figure skating               Price, J., Remer, M., and Stone, D. F. (2012). Subperfect game: profitable biases
+   judging. J. Sport Exerc. Psychol. 26, 154–166. doi: 10.1123/jsep.26.1.154                      of NBA referees. J. Econ. Manag. Strat. 21, 271–300. doi: 10.1111/j.1530-9134.
+Garicano, L., Palacios-Huerta, I., and Prendergast, C. (2005). Favoritism under                   2011.00325.x
+   social pressure. Rev. Econ. Stat. 87, 208–216. doi: 10.1162/0034653053970267                Put, K., Wagemans, J., Jaspers, A., and Helsen, W. F. (2013). Web-based training
+Gift, P. (2017). Performance evaluation and favoritism: evidence from mixed                       improves on-field offside decision-making performance. Psychol. Sport Exerc.
+   martial arts. J. Sports Econ. 19, 1147–1173. doi: 10.1177/152700251770                         14, 577–585. doi: 10.1016/j.psychsport.2013.03.005
+   2422                                                                                        Put, K., Wagemans, J., Spitz, J., Williams, A. M., and Helsen, W. F. (2016). Using
+Gift, P., and Rodenberg, R. M. (2014). Napoleon complex: height bias among                        web-based training to enhance perceptual-cognitive skills in complex dynamic
+   national basketball association referees. J. Sports Econ. 15, 541–558. doi: 10.                offside events. J. Sport Sci. 34, 181–189. doi: 10.1080/02640414.2015.1045926
+   1177/1527002514535168                                                                       Renden, P. G., Kerstens, S., Oudejans, R. R., and Cañal-Bruland, R. (2014). Foul
+Hogan, S. J., and Coote, L. V. (2014). Organizational culture, innovation, and                    or dive? Motor contributions to judging ambiguous foul situations in football.
+   performance: a test of Schein’s model. J. Bus. Res. 67, 1609–1621. doi: 10.1016/j.             Eur. J. Sport Sci. 14(suppl. 1), S221–S227. 10.1080/17461391.2012.683813
+   jbusres.2013.09.007                                                                            doi: 10.1080/17461391.2012.683813
+Jones, M. V., Paull, G. C., and Erskine, J. (2002). The impact of a team’s aggressive          Samuel, R. D. (2017). Training prospective soccer referees using a deliberate
+   reputation on the decisions of association football referees. J. Sports Sci. 20,               practice perspective: The Israeli Excellence Program. J. Sport Psychol. Action
+   991–1000. doi: 10.1080/026404102321011751                                                      8, 184–196. doi: 10.1080/21520704.2017.1287798
+Lago-Peñas, C., and Gómez-López, M. (2016). The influence of referee bias                      Schweizer, G., Plessner, H., Kahlert, D., and Brand, R. (2011). A video-based
+   on extra time in elite football matches. Percept. Mot. Skills 122, 666–677.                    training method for improving soccer referees’ intuitive decision-making skills.
+   doi: 10.1177/0031512516633342                                                                  J. Appl. Sport Psychol. 23, 429–442.? doi: 10.1080/10413200.2011.555346
+Lehman, D. R., and Reifman, A. (1987). Spectator influence on basketball                       Strauss, B., and Pier, M. (2002). Urteilsverzerrungen von Fußballschiedsrichtern. in
+   officiating. J. Soc. Psychol. 127, 673–675.                                                    Proceedings of the Vortrag auf dem 43. Kongress der Deutschen Gesellschaft für
+Mascarenhas, D. R. D., Collins, D., Mortimer, P., and Morris, R. L. (2005).                       Psychologie, Berlin.
+   A naturalistic approach to training accurate and coherent decision making in                Sutter, M., and Kocher, M. G. (2004). Favoritism of agents–the case of referees’
+   rugby union referees. Sport Psychol. 19, 131–147. doi: 10.1123/tsp.19.2.131                    home bias. J. Econ. Psychol. 25, 461–469. doi: 10.1016/S0167-4870(03)00013-8
+Mills, B. M. (2014). Social pressure at the plate: inequality aversion, status,                Unkelbach, C., and Memmert, D. (2010). Crowd noise as a cue in referee decisions
+   and mere exposure. Manag. Decis. Econ. 35, 387–403. doi: 10.1002/mde.                          contributes to the home advantage. J. Sport Exerc. Psychol. 32, 483–498.
+   2630                                                                                           doi: 10.1123/jsep.32.4.483
+Morgulev, E., Azar, O., Lidor, R., Sabag, E., and Bar-Eli, M. (2014). Deception and            Van Quaquebeke, N., and Giessner, S. R. (2010). How embodied cognitions affect
+   decision making in professional basketball: Is it beneficial to flop? J. Econ. Behav.          judgments: height-related attribution bias in football foul calls. J. Sport Exerc.
+   Org. 102, 108–118. doi: 10.1016/j.jebo.2014.03.022                                             Psychol. 32, 3–22. doi: 10.1123/jsep.32.1.3
+Myers, T., Nevill, A., and Al-Nakeeb, Y. (2012). The influence of crowd noise upon
+   judging decisions in Muay Thai. Adv. Phys. Educ. 2, 148–152. doi: 10.4236/ape.              Conflict of Interest Statement: The authors declare that the research was
+   2012.24026                                                                                  conducted in the absence of any commercial or financial relationships that could
+Nevill, A. M., Balmer, N. J., and Williams, A. M. (2002). The influence of crowd               be construed as a potential conflict of interest.
+   noise and experience upon refereeing decisions in football. Psychol. Sport Exerc.
+   3, 261–271. doi: 10.1016/S1469-0292(01)00033-4                                              Copyright © 2018 Morgulev, Azar, Lidor, Sabag and Bar-Eli. This is an open-access
+Ogbonna, E., and Harris, L. C. (2000). Leadership style, organizational culture and            article distributed under the terms of the Creative Commons Attribution License
+   performance: empirical evidence from UK companies. Int. J. Hum. Res. Manag.                 (CC BY). The use, distribution or reproduction in other forums is permitted, provided
+   11, 766–788. doi: 10.1080/09585190050075114                                                 the original author(s) and the copyright owner(s) are credited and that the original
+Page, K., and Page, L. (2010). Alone against the crowd: individual differences                 publication in this journal is cited, in accordance with accepted academic practice.
+   in referees’ ability to cope under pressure. J. Econ. Psychol. 31, 192–199.                 No use, distribution or reproduction is permitted which does not comply with these
+   doi: 10.1016/j.joep.2009.08.007                                                             terms.
+
+
+
+
+Frontiers in Psychology | www.frontiersin.org                                              7                                             December 2018 | Volume 9 | Article 2637
+

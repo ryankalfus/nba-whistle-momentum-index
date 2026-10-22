@@ -1,0 +1,788 @@
+                                                  RESEARCH ARTICLE
+
+                                                  Situational influences on officiating performance:
+                                                  An analysis of foul calls in the Chinese basketball
+                                                  association league (CBA)
+                                                  Fang Shu     1
+                                                                , Liqing Zhang1, Xiao Xu       2
+                                                                                                *, Ruohan Xu3
+
+                                                  1 Sports Coaching College, Beijing Sport University, Beijing, China, 2 College of Physical Education,
+                                                  Dalian University, Dalian, China, 3 School of Journalism and Communication, Beijing Sport University,
+                                                  Beijing, China
+
+                                                  * xxbsu2018@163.com
+
+
+
+                                                  Abstract
+                                                  The growing emphasis on situational variables has significantly advanced research
+                                                  in sports performance analysis, yet studies focusing on referees from this perspec-
+                                                  tive remain limited. This study examines how multiple situational variables influence
+                                                  foul calls metrics during the 2022–2023 Chinese Basketball Association League
+                                                  (CBA) season. Drawing on 18,519 foul events from 441 games, with the final analyt-
+   OPEN ACCESS                                    ical sample comprising 18,182 events from 439 games, independent-sample t-tests
+Citation: Shu F, Zhang L, Xu X, Xu R              were used to assess the effects of individual situational variables, and binary logis-
+(2026) Situational influences on officiating
+                                                  tic regression models were applied to examine their associations. The situational
+performance: An analysis of foul calls in the
+Chinese basketball association league (CBA).      variables analyzed included game system, game type, team quality difference, score
+PLoS One 21(2): e0342151. https://doi.            differential, and foul differential. Results show that while a clear home advantage
+org/10.1371/journal.pone.0342151
+                                                  emerges in home-and-away games, the overall foul number does not differ across
+Editor: Muhammad Shakaib, NED University of
+                                                  systems. Stronger teams were called more fouls in games with large team quality
+Engineering and Technology, PAKISTAN
+                                                  gap, particularly in the fourth quarter. Leading teams were consistently called for
+Received: October 1, 2025
+                                                  more fouls when score differential widened, and teams with fewer accumulated
+Accepted: January 19, 2026
+                                                  fouls were more likely to receive subsequent calls, suggesting a potential balancing
+Published: February 19, 2026                      tendency in officiating. Logistic regression showed that foul calls was significantly
+Copyright: © 2026 Shu et al. This is an open      associated with score differential, foul differential, and team quality difference,
+access article distributed under the terms of
+                                                  whereas the main effects of game type were limited. Importantly, several variables
+the Creative Commons Attribution License,
+which permits unrestricted use, distribution,     that were non-significant in single-factor tests emerged as significant in the multivari-
+and reproduction in any medium, provided the      able models, underscoring the situational nature of officiating. This study enriches
+original author and source are credited.
+                                                  understanding of officiating performance within the framework of sports performance
+Data availability statement: The dataset          analysis. These findings highlight that referees’ decisions are “context-sensitive”
+supporting the findings of this study is openly
+available in Science Data Bank at https://doi.    rather than random or rigid, meaning they vary across specific competitive situations.
+org/10.57760/sciencedb.27842.                     Such situational sensitivity may sustain competitive balance and game flow but also
+Funding: The author(s) received no specific       introduces risks of officiating bias. Recognizing this dual nature is valuable not only
+funding for this work.                            for referee evaluation, but also for leagues governance, as well as for teams seeking
+                                                  to anticipate officiating tendencies during games.
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                             1 / 19
+Competing interests: The authors have         1. Introduction
+declared that no competing interests exist.
+                                              Referees are indispensable participants in basketball games. Much like players,
+                                              their decisions directly shape game dynamics and can influence final outcomes.
+                                              The influence of referees derives from both the inherent complexity of basketball
+                                              and the discretionary nature of officiating [1–3]. In certain situations, officiating
+                                              decisions may become turning points within games and focal points in public
+                                              debate afterwards. Empirical evidence has demonstrated that specific officiating
+                                              interventions—such as technical fouls and disqualifications—can significantly affect
+                                              game results [4,5]. In addition, free-throw opportunities are frequently incorporated
+                                              into post-game analyses as indicators of strategic and tactical significance [6,7].
+                                              Accordingly, the central question of this study is how multiple situational variables,
+                                              when considered simultaneously, are associated with foul-calling patterns in pro-
+                                              fessional basketball. Using play-by-play data from the Chinese Basketball Asso-
+                                              ciation league (CBA), we examine both single-variable effects and multivariable
+                                              associations to provide an integrated account of situational influences on officiating
+                                              performance.
+                                                  Sports performance analysis provides systematic and scientific approaches to
+                                              observing and evaluating the performance of athletes, teams, and other participants.
+                                              Although basketball performance analysis has traditionally focused on players and
+                                              teams, the increasing transparency brought by the publication of officiating reports
+                                              has extended analytical interest to referees [8]. Within this framework, officiating can
+                                              be conceptualized as a form of performance that can be examined using similar prin-
+                                              ciples and methods to those applied to players and teams.
+                                                  Early research on officiating performance predominantly emerged from investiga-
+                                              tions of home advantage, a pervasive phenomenon in professional sport. In basket-
+                                              ball, the number of fouls called has frequently been treated as a key indicator of such
+                                              advantage [9]. Subsequent studies examined officiating behavior across different
+                                              contexts and discussed various forms of referee bias. For example, Nevill and Holder
+                                              suggested that referee bias may partly explain home advantage, whereas Thu et al.
+                                              reported that referees display systematic tendencies in nationally televised games,
+                                              particularly when score differentials are large [10,11]. Using NCAA data, Anderson
+                                              and Pierce further demonstrated that foul calls are influenced by foul differentials
+                                              and score differentials [12]. Price et al. introduced the distinction between discre-
+                                              tionary (DTO) and non-discretionary (NTO) calls, and identified bias about home
+                                              teams, trailing teams, and teams behind in playoff series [13]. More recent work has
+                                              explored the effects of flopping, offensive fouls, and technical fouls on subsequent
+                                              calls, as well as the role of video review in evaluating officiating accuracy [14–17].
+                                              Collectively, this body of research indicates that officiating performance is systemati-
+                                              cally associated with specific situational variables, such as home–away status, score
+                                              differentials, and accumulated foul differentials. However, because these factors are
+                                              most often examined in isolation, it remains unclear how multiple situational variables
+                                              operate concurrently within the same game context. This limitation underscores the
+                                              need for an integrated analytical framework that considers multiple situational dimen-
+                                              sions simultaneously when examining the foul-calling pattern.
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                        2 / 19
+   Within the broader framework of sports performance analysis, situational variables are widely recognized as critical
+determinants of game dynamics. Variables such as game systems, game type, team quality, and game conditions are
+essential for interpreting tactical choices and evaluating player performance [18–21]. Prior research has tended to exam-
+ine single situational variables in isolation, leaving the concurrent consideration of multiple situational variables within the
+same game context largely unexplored.
+   Building on this gap, the present study investigates how multiple situational variables jointly affect officiating decisions
+in professional basketball. Using data from the CBA 2022–2023 season—which provides a quasi-experimental context
+due to the coexistence of centralized non–home-and-away and traditional home-and-away competition systems under
+COVID-19–related constraints [22]—this setting offers a distinct analytical advantage. Specifically, the presence of two
+game systems within the same league and season allows comparisons of officiating behavior across different competi-
+tive formats while holding constant league rules, officiating standards, team composition, and seasonal conditions. This
+within-season, within-league variation reduces institutional and contextual confounding that often affects cross-league
+or cross-season analyses, thereby strengthening the internal validity of situational effect assessments. We analyze the
+effects of game systems, game type, team quality difference, and game conditions on foul calls by first examining the
+independent influence of each situational variable. We then incorporate all variables into unified binary logistic regression
+models to assess their combined associations under shared game contexts, thereby identifying which variables most
+strongly shape foul calls without specifying explicit interaction terms.
+   Guided by previous research and the specific focus of this study, we propose the following exploratory hypotheses.
+First, foul calls are expected to vary across individual situational variables: foul frequencies may differ between game sys-
+tems and between home and away teams, between regular-season and playoff games, and across different levels of team
+quality difference. In addition, foul calls are expected to vary under different game conditions, including varying score and
+foul differentials. These hypotheses address the independent associations of each situational variable. Second, beyond
+these single-variable influences, we further hypothesize, in an exploratory manner, that when multiple situational variables
+are considered simultaneously, their combined associations with foul calls may reveal situational influences that are not
+captured by isolated comparisons.
+   Despite extensive research on home advantage and specific forms of referee bias, foul calls have rarely been exam-
+ined within a single, integrated situational framework using event-level data from professional leagues. By jointly model-
+ing game systems, game type, team quality difference, score differential, and foul differential within the same analytical
+framework, the present study provides a concise and comprehensive account of how situational variables are associated
+with officiating performance in professional basketball.
+   This study contributes to existing knowledge by applying a quantitative, sports performance analysis-based method-
+ology to officiating research. Rather than centering on the question of “referee bias,” we focus on situational variables of
+officiating games. The findings enrich understanding of the role of situational variables in basketball officiating and contrib-
+ute to a more nuanced account of how contextual conditions influence referees’ decision making.
+
+2. Methods
+2.1. Dataset
+The dataset comprised foul calls and associated situational information from 441 games contested by 20 teams during
+the CBA 2022–2023 season. All data were obtained from the official CBA statistics website (www.cbaleague.com). Data
+extraction was conducted for research purposes between April and June 2024. Only publicly available, aggregated match
+statistics were used, no identifiable personal information about referees or players was accessed. Foul calls events
+and their corresponding contextual information were systematically collected, organized, and merged into the dataset.
+Because referee appointments vary across seasons in the CBA, restricting the sample to a single season helped ensure
+greater consistency in officiating standards and league policies. This design choice improves internal consistency and
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                  3 / 19
+reduces cross-season institutional variation, but it also limits the generalizability of the findings to other seasons. Accord-
+ingly, the present analysis prioritizes standardized situational comparisons within a single competitive context, while future
+research could extend this framework to multi-season data to assess robustness.
+    After data collection, a series of cleaning procedures were applied to enhance the reliability of the dataset. Games with
+excessively large score or foul differentials may produce abnormal competitive conditions, under which foul calls are not
+representative of typical officiating performance. Such games are also relatively rare, meaning that their foul data provide
+limited inferential value. To minimize the influence of these outliers, foul-call events associated with extreme score or foul
+differentials were excluded using the three-sigma (3σ) rule, a commonly applied statistical criterion in performance analy-
+sis to improve robustness of inference [23]. This trimming was conducted at the event level and applied within situational
+sub-samples defined by non-zero score or foul differentials, rather than by removing entire games. In addition, two games
+that were officially declared invalid by the CBA were removed.
+    Technical fouls and disqualifying fouls were excluded. These calls accounted for 337 of the 18,519 initial foul events
+(1.82%) and typically arose from non-contact incidents, off-court situations, or violent behavior. Because they primarily
+reflect disciplinary sanctions rather than normal competitive interactions, they were deemed unsuitable for evaluating
+overall officiating tendencies in general game situations. Furthermore, overtime periods were excluded because they
+occur infrequently and vary in length, resulting in limited and inconsistent foul data. Accordingly, only foul calls from
+regulation time (four quarters) were analyzed, and the final analytical sample retained only common personal fouls and
+unsportsmanlike fouls occurring during regular on-court play.
+    Following these cleaning and exclusion procedures, the final dataset comprised 18,182 valid foul calls records (98.18%
+of the original sample) from 439 games (99.55% of all recorded games). Each foul event retained key situational vari-
+ables, including game systems, game type, participating teams, game quarter and real-time score at the moment of the
+call. These situational variables served as explanatory factors, while the called team served as the response variable in
+the subsequent analyses.
+
+2.2. Variables
+In the regression models, the dependent variable was the team on which the foul was called under specific game situa-
+tions, specified in three comparative contexts: home versus away teams, leading versus trailing teams, and teams with
+more versus fewer accumulated fouls.
+    The situational variables examined in this study included: Game systems (XFmt): non-home-and-away (neutral, closed
+venues without spectators) vs. home-and-away (with designated home and away courts). Game type (XTyp): regular
+season vs. playoffs. Team quality difference (XQD): based on teams’ win percentages in the 2022–2023 season. Using
+K-means clustering, all 20 teams were classified into strong, medium, and weak categories (coded as 3, 2, and 1),
+and the differential in team codes between opponents was used to represent game quality difference (large difference,
+small difference, evenly matched)[24,25]. In the CBA, team rankings are determined by cumulative win–loss points, and
+ranking-­based classifications may separate teams with similar win percentages due to marginal differences in ranking
+order. Accordingly, K-means clustering was adopted to derive team quality categories by minimizing within-group variabil-
+ity while maximizing between-group differences. Score differential (XSD): real-time score margin between the two teams
+at the moment of the foul call. Foul differential (XFDG, XFDQ): cumulative foul differential between the two teams at the
+moment of the call, calculated at the game level (XFDG) and quarter level (XFDQ). Quarter (XQtr): the game period in
+which the foul occurred (Q1, Q2, Q3, or Q4). For statistical modeling, the situational variables were coded as follows:
+Game system (XFmt): 1 = home-and-away, 0 = non–home-and-away; Game type (XTyp): 1 = regular season, 0 = playoffs;
+Team quality difference (XQD): 2 = large difference, 1 = small difference, 0 = evenly matched; Quarter (XQtr): 1 = Q1, 2 = Q2,
+3 = Q3, 4 = Q4; Score differential (XSD) and foul differential (XFDG, XFDQ) were entered into the analyses as continuous
+variables in their original scales, with no transformation or centering applied.
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                 4 / 19
+   These situational variables were used both in single-factor analyses and as explanatory variables in multivariate mod-
+els, allowing us to examine how they influence foul calls across different game contexts.
+
+2.3. Data analysis
+Statistical analyses were conducted using SPSS 20.0 (IBM, Armonk, NY, USA). First, independent-sample t-tests were
+applied to examine differences in foul calls across single situational factors, including game system, game type, and team
+quality difference categories. Due to COVID-19-related restrictions in the 2022–2023 season, games were played under
+two competition formats: centralized non–home-and-away (n = 278) and traditional home-and-away (n = 161). Home-
+win rates under the two game systems were descriptively compared to provide contextual information about differences
+between centralized non-home-and-away and home-and-away formats, and were not intended as inferential evidence of
+home advantage or officiating effects [26–29]. For team quality difference, all t-tests compared foul calls on the stronger
+team versus the weaker team within each differential category, thereby preserving the directionality of team strength in the
+analysis (for evenly matched games, team comparisons were conducted between the home and away teams, as no direc-
+tional quality distinction existed). For game conditions variables, proportion and trend analyses were used to compare
+foul calls distributions difference between leading vs. trailing teams and between teams with more vs. fewer fouls, under
+varying score differential and foul differential (game-level and quarter-level).
+   Single-factor analyses were first conducted to provide descriptive and preliminary insights into the associations
+between individual situational variables and foul calls. To assess the combined influence of multiple situational variables,
+binary logistic regression models were constructed with game system (XFmt), game type (XTyp), quarter (XQtr), team
+quality difference (XQD), score difference (XSD), and foul differences (XFDG, XFDQ) as explanatory variables. The
+dependent variable was the called team in three comparative contexts: home vs. away, leading vs. trailing, and more vs.
+fewer fouls. Although explicit interaction terms were not included in the logistic regression model, this multivariate frame-
+work enables examination of the combined contextual influences of multiple situational variables on officiating perfor-
+mance [12,30]. In this context, “combined influence” denotes the simultaneous estimation of multiple situational variables
+within a single model, allowing their independent associations to be evaluated under multivariate control, rather than the
+testing of interaction or synergistic effects between variables. This design aligns with the study’s aim of exploring inte-
+grated situational effects. For logistic regression, the foul call outcome was coded as a binary variable in three compar-
+ative contexts: Home vs. away: 1 = foul called on the home team, 0 = foul on the away team. Leading vs. trailing: 1 = foul
+called on the leading team, 0 = foul called on the trailing team. More vs. fewer fouls: 1 = foul on the team with more accu-
+mulated fouls, 0 = foul on the team with fewer fouls. The model setup is as follows:
+
+                                Pi
+                         In          = β0 + β1 XFmt + β2 XTyp + β3 XQtr + β4 XQD + β5 XSD + β6 XFDG + β6 XFDQ
+                              1 – Pi
+
+
+Independent sample t-test was selected because it is suitable for comparing group means across categorical factors,
+while binary logistic regression was employed to model the likelihood of foul calls against specific teams under varying
+situational conditions, making it appropriate for binary officiating outcomes. Proportion and trend analyses were used to
+describe foul calls distributions difference under different score and foul differentials, thereby identifying status-based
+foul calls tendencies. The logistic regression models were used for explanatory rather than predictive purposes, and
+the estimated odds ratios (ORs) were interpreted as indicators of directional tendencies in foul calling. Specifically,
+ORs greater than 1 indicate a higher likelihood of a foul being called on the team coded as 1, ORs less than 1 indicate
+a lower likelihood, and an OR equal to 1 indicates no difference in foul-calling tendency between the compared teams.
+Table 1 summarizes the classifications of situational variable and the corresponding statistical methods used in the
+analysis.
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                               5 / 19
+Table 1. Classifications of situational variables and statistical methods.
+Situational Variable          Classifications                          Statistical Test/ Model      Comparison
+Game systems                  Non-home-and-away/ Home-and-away         t-test                       Home team vs. Away team
+Game type                     Regular season/ Playoffs                 t-test                       Regular season vs. Playoffs
+Game quality difference       Large/Small difference/ Evenly matched   t-test                       Large & Small difference: Stronger vs. Weaker;
+                                                                                                    Evenly matched: Home vs. Away
+Game conditions               Leading vs. Trailing/ More fouls vs.     Proportion and trend         Leading teams vs. Trailing teams;
+                              Fewer fouls                              calculation                  Teams with more foul vs. Team with fewer foul
+Quarters                      Q1/ Q2/ Q3/ Q4                           Binary logistic regression   Quarters included as model covariate
+Comprehensive Variables       Multiple explanatory variables           Binary logistic regression   Home vs. Away;
+                                                                                                    Leading vs. Trailing;
+                                                                                                    Teams with more foul vs. Team with fewer foul
+https://doi.org/10.1371/journal.pone.0342151.t001
+
+
+3. Results
+3.1. Comparative analysis of foul calls under different situations
+To address Hypothesis 1, this section presents a comparative analysis of foul calls across individual situational vari-
+ables and game conditions, including game systems, game type, team quality difference, and in-game score and foul
+differentials.
+    3.1.1. Game systems (non-home-and-away vs. home-and-away). During the 2022–2023 season, the CBA
+operated under two competition systems: centralized non–home-and-away games and traditional home-and-away
+games. Under the non-home-and-away format, home and away teams won at nearly the same rate (home: 50.72%;
+away: 49.28%), a minimal difference of 1.44%. By contrast, under the home-and-away format, home teams won
+65.22% of games while away teams won 34.78%, producing a much larger 30.43% difference. This comparison
+indicates that the two game systems constitute distinct competitive contexts: a clear home-court advantage is observed
+under the traditional home-and-away format, whereas such an advantage is not observed under the non-home-and-
+away format.
+    In terms of foul calls, however, no significant differences were found between the two systems in overall foul counts or
+in quarter-by-quarter comparisons (all p > 0.05; Fig 1). Within the subset of home-and-away games (Fig 2), home teams
+were called for slightly fewer fouls than away teams across the full game and in Q1–Q3, but these differences were not
+statistically significant (all p > 0.05).
+
+
+
+
+Fig 1. Comparison of foul calls between non-home-and-away and home-and-away systems. Bars show mean foul calls (± SD) for home teams
+(yellow) and away teams (blue) across the game and quarters. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+https://doi.org/10.1371/journal.pone.0342151.g001
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                            6 / 19
+Fig 2. Comparison of foul calls between home and away teams in the home-and-away system. Bars show mean foul calls (± SD) for home teams
+(yellow) and away teams (blue) across the game and quarters. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+https://doi.org/10.1371/journal.pone.0342151.g002
+
+
+   3.1.2. Game type (regular season vs. playoffs). Playoff games generally represent a higher intensity competitive
+context than regular season [31–33]. Despite this contrast, no significant differences in foul calls were observed between
+regular-season and playoff games, either at the game level or by quarter (all p > 0.05; Fig 3). At a descriptive level, playoff
+games tended to involve slightly more fouls overall, particularly in the first and fourth quarters, although these differences
+were not statistically significant.
+   Although foul counts did not differ significantly between regular season and playoffs, this finding should be interpreted
+with caution. The playoffs sample included far fewer games than the regular season sample, which may reduce statisti-
+cal power in detecting game type difference. Although the event level dataset remained sufficiently large for model esti-
+mation, the imbalance at the game level may limit sensitivity to small differences between regular season and playoffs
+context.
+   3.1.3. Team quality difference (large difference, small difference, evenly matched). Games were categorized into
+three levels of team quality difference: evenly matched, small difference, and large difference, based on the clustering
+procedure described in the Methods (Table 2). This approach has been shown to reflect competitive balance more
+accurately than rank metrics [34].
+   As shown in Fig 4, in games with a large quality difference, strong teams received significantly more foul calls than
+weak teams overall (20.61 vs. 18.72 fouls, p < 0.05), with the effect concentrated in the fourth quarter (5.13 vs. 4.00 fouls,
+p < 0.01). In games with a small quality difference, no overall game-level differences were observed, although stronger
+
+
+
+
+Fig 3. Comparison of foul calls between regular season and playoffs. Bars show mean foul calls (± SD) for regular season (yellow) and playoffs
+games (blue) across the game and quarters. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+https://doi.org/10.1371/journal.pone.0342151.g003
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                   7 / 19
+Table 2. Levels of games by quality difference.
+Games with Large Quality                    Games with Small Quality           Evenly Matched Games
+Difference (Differential of 2)              Difference (Differential of 1)     (Differential of 0)
+Weak vs. Strong (1 vs. 3)                   Weak vs. Medium (1 vs. 2)          Weak vs. Weak (1 vs. 1)
+Strong vs. Weak (3 vs. 1)                   Medium vs. Weak (2 vs. 1)          Medium vs. Medium (2 vs. 2)
+                                            Medium vs. Strong (2 vs. 3)        Strong vs. Strong (3 vs. 3)
+                                            Strong vs. Medium (3 vs. 2)
+https://doi.org/10.1371/journal.pone.0342151.t002
+
+
+
+
+Fig 4. Comparison of foul calls under different team quality difference. Bars show mean foul calls (± SD) for stronger teams (yellow) and weaker
+teams (blue) across the game and quarters, categorized by game quality differences (large and small). In evenly matched games, colors indicate home
+(yellow) and away (blue) teams. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+https://doi.org/10.1371/journal.pone.0342151.g004
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                      8 / 19
+teams received more fouls in the fourth quarter (p < 0.05). In evenly matched games, no significant foul calls differences
+between the two teams were found in any quarter or across the game as a whole (all p > 0.05).
+    Taken together, statistically significant difference in foul calls were mainly confined to games with larger team quality
+differences, particularly in the fourth quarter, while differences in other contexts were comparatively limited.
+    3.1.4. Game conditions. 3.1.4.1. Score Differential (leading vs. trailing teams): Real-time score difference is one
+of the most important descriptors of game conditions. As shown in Fig 5, when there is a score differential, referees
+consistently called more fouls on the leading team than on the trailing team across the entire game and in each quarter
+(all p < 0.05).
+    To further illustrate the dynamic relationship, a line chart was employed (Fig 6), as the score differential is a continuous
+variable that changes throughout the game, making trends clearer than tables alone. At the game level, the proportion of
+
+
+
+
+Fig 5. Comparison of foul calls between Leading and Trailing Teams. Bars show mean foul calls (± SD) for leading teams (yellow) and trailing
+teams (blue) across the game and quarters. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+https://doi.org/10.1371/journal.pone.0342151.g005
+
+
+
+
+Fig 6. Trend of Changes in Foul Call Proportion Differences under Score Differential. Line plots show foul calls proportion differentials (y-axis)
+across score differentials (x-axis) for the entire game (blue) and for each quarter: Q1 (green), Q2 (black), Q3 (red), and Q4 (yellow).
+
+https://doi.org/10.1371/journal.pone.0342151.g006
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                        9 / 19
+fouls called on leading teams increased as the score gap widened, reaching approximately 20% higher than for trailing
+teams when the differential exceeded 20 points. At the quarter level, this pattern was most pronounced in the first quarter
+when the score gap was 10–15 points (leading teams were called for 47% more fouls) and in the second quarter when the
+gap exceeded 15 points (differential > 20%). By contrast, the fourth quarter showed no marked discrepancy in foul calls
+proportions between leading and trailing teams. Overall, the tendency for leading teams to receive more fouls strength-
+ened as score differentials increased, particularly during the early and middle phases of games, while becoming less
+evident in the fourth quarter.
+   3.1.4.2 Foul Differential (more fouls vs. fewer fouls): Foul calls serve as a direct indicator of officiating decisions. Once
+a team was called more than four fouls in a quarter, all subsequent fouls (non-offensive foul) result in free throws for the
+opponent (bonus situation). Accordingly, foul differential was selected as a key variable to characterize game conditions,
+and was examined at both the game and quarter levels.
+   As shown in Fig 7, there were significant differences in foul counts between teams with more fouls and teams with
+fewer fouls across the entire game and in each quarter (all p < 0.05), with teams holding fewer accumulated fouls consis-
+tently receiving more subsequent foul calls than those with more fouls.
+   Fig 8 further demonstrates that this tendency intensified as foul differential widened. As the foul differential increased,
+the proportion of subsequent fouls called on the team with more fouls decreased, while the proportion called on the team
+with fewer fouls increased. This tendency was most evident in the first quarter, where a five foul gap corresponded to
+the team with fewer fouls being called for 39% more fouls than the team with more fouls. In contrast, the fourth quarter
+showed a similar but less pronounced proportional difference trend.
+   A quarter-level analysis yielded comparable findings (Figs 9 and 10). Across quarters, referees continued to call more
+fouls on teams with fewer fouls (all p < 0.05), with the difference most evident in the first quarter (4.06 vs. 3.21 fouls) and
+remaining significant in subsequent quarters. As the quarter-level foul gap increased, the difference in foul calls propor-
+tions between the two teams also increased: when the quarterly foul gap reached three or more fouls in the first three
+quarters, the team with fewer fouls was called for fouls more than 10% more than the team with more fouls. Although the
+fourth quarter showed a similar trend, the magnitude of the difference was smaller. When the quarter-level foul gap was
+between 1 and 4, the proportional differences between teams remained relatively small, only when the gap reached 5 did
+the team with fewer fouls receive a substantially higher proportion of fouls (21% more) than the team with more fouls.
+   Taken together, analyses of score and foul differentials reveal several consistent patterns across game conditions.
+First, when score differentials were present, fouls were more frequently called on leading teams, with this tendency
+generally intensifying as score gaps widened, particularly outside the fourth quarter. Second, across both game-level
+
+
+
+
+Fig 7. Comparison of foul calls between teams with more and fewer fouls (game). Bars show mean foul calls (± SD) for teams categorized as
+called more fouls (yellow) or fewer fouls (blue) across the game and quarters. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+https://doi.org/10.1371/journal.pone.0342151.g007
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                              10 / 19
+Fig 8. Trend of Changes in Foul Call Proportion Differences under Foul Differential (game). Line plots show foul calls proportion differentials
+(y-axis) across foul differentials within the foul differential in game (x-axis) for the entire game (blue) and for each quarter: Q1 (green), Q2 (black), Q3
+(red), and Q4 (yellow).
+
+https://doi.org/10.1371/journal.pone.0342151.g008
+
+
+
+
+Fig 9. Comparison of foul calls between teams with more and fewer fouls (Quarter). Bars show mean foul calls (± SD) for teams categorized as
+called more fouls (yellow) or fewer fouls (blue) across the game and quarters. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+https://doi.org/10.1371/journal.pone.0342151.g009
+
+
+and quarter-level analyses, teams with fewer accumulated fouls systematically received more subsequent foul calls
+than teams with more fouls, and this tendency strengthened as foul differentials increased. Third, these patterns were
+most pronounced in earlier quarters and under larger differentials, whereas fourth-quarter effects were comparatively
+attenuated.
+
+3.2. Logistic regression analysis of foul calls with multiple situational variables
+To address Hypothesis 2, this section examines the combined associations of multiple situational variables with foul calls
+using multivariate logistic regression models across three comparative contexts. Binary logistic regression was applied to
+estimate the simultaneous influence of situational variables on foul calls, within a multivariate explanatory framework. The
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                                11 / 19
+Fig 10. Trend of Changes in Foul Call Proportion Differences under Foul Differential (Quarter). Line plots show foul calls proportion differentials
+(y-axis) across foul differentials within the foul differential in quarters (x-axis) for the entire game (blue) and for each quarter: Q1 (green), Q2 (black), Q3
+(red), and Q4 (yellow).
+
+https://doi.org/10.1371/journal.pone.0342151.g010
+
+
+dependent variables were foul calls across three comparative contexts: home vs. away teams, leading vs. trailing teams,
+and teams with more vs. fewer fouls. These contexts were selected because they represent salient game situations and
+have been repeatedly identified in prior research as potential sources of referee bias.
+   3.2.1. Logistic regression analysis of foul calls: Home vs. Away Teams. Fig 11 presents the logistic regression
+results for foul calls on home versus away teams. The omnibus test of model coefficients indicated that the model was
+statistically significant (omnibus test, p < 0.05), and the Hosmer-Lemeshow test suggested acceptable model fit (p > 0.05).
+Among the explanatory variables, game systems XFmt (OR = 0.913, p < 0.05), team quality difference XQD (OR = 0.938,
+p < 0.05), score differential XSD (OR = 1.019, p < 0.05), game-level foul differential XFDG (OR = 0.986, p < 0.05), and
+quarter-level foul differential XFDQ (OR = 0.913, p < 0.05) were significant predictors of whether a foul was called on the
+home or away team. By contrast, game type XTyp and quarter XQtr were not significant (both p > 0.05).
+   It is noteworthy that although game systems was not significant in the single-factor analysis (Section 3.1.1), it emerged
+as significant in the regression model. This suggests that its effect may have been masked in simple comparisons but
+becomes evident when controlling for other situational variables.
+   3.2.2. Logistic regression analysis of foul calls: Leading vs. Trailing teams. The omnibus test again indicated
+that the overall model was statistically significant (p < 0.05), and the Hosmer-Lemeshow test supported good model fit
+(p > 0.05). Team quality differencel XQD, quarter XQtr, score differential XSD, game-level foul differential XFDG, and
+quarter-level foul differential XFDQ were all significant predictors (all p < 0.05), whereas game systems XFmt and game
+type XTyp were not significant (Fig 12).
+   3.2.3. Logistic regression analysis of foul calls: More vs. Fewer Fouls. Figs 13 and 14 present the regression results
+for foul calls on teams with more versus fewer fouls, based on game-level and quarter-level foul differentials, respectively.
+Both models were statistically significant (omnibus test, p < 0.05). The game-level model, however, showed signs of poor fit
+(Hosmer–Lemeshow test, p < 0.05), whereas the quarter-level model demonstrated acceptable fit (p > 0.05). In the game-level
+model, team quality difference XQD (OR = 0.938, p < 0.05), quarter XQtr (OR = 1.045, p < 0.05), score differential XSD (OR =
+1.017, p < 0.05), game-level foul differential XFDG (OR = 0.977, p < 0.05), and quarter-level foul differential XFDQ (OR = 0.923,
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                                 12 / 19
+Fig 11. Regression Results of Situational Variables on Foul Calls (Home vs. Away Teams). Forest plot shows odds ratios (OR) with 95% confi-
+dence intervals (CI) for predictors of foul calls in home vs. away teams. Squares represent OR estimates and horizontal lines indicate 95% CIs. *p < 0.05.
+
+https://doi.org/10.1371/journal.pone.0342151.g011
+
+
+
+
+Fig 12. Regression Results of Situational Variables on Foul Call (Leading vs. Trailing Teams). Forest plot shows odds ratios (OR) with 95%
+confidence intervals (CI) for predictors of foul calls in leading vs. trailing Teams. Squares represent OR estimates and horizontal lines indicate 95% CIs.
+*p < 0.05.
+
+https://doi.org/10.1371/journal.pone.0342151.g012
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                            13 / 19
+Fig 13. Regression Results of Situational Variables on Foul Call (More vs. Fewer Fouls in Game-Level). Forest plot shows odds ratios (OR) with
+95% confidence intervals (CI) for predictors of foul calls in teams with more versus fewer fouls in a game. Squares represent OR estimates and horizon-
+tal lines indicate 95% CIs. *p < 0.05.
+
+https://doi.org/10.1371/journal.pone.0342151.g013
+
+
+
+
+Fig 14. Regression Results of Situational Variables on Foul Call (More vs. Fewer Fouls in Quarter-level). Forest plot shows odds ratios (OR) with
+95% confidence intervals (CI) for predictors of foul calls in teams with more versus fewer fouls in quarters. Squares represent OR estimates and horizon-
+tal lines indicate 95% CIs. *p < 0.05.
+
+https://doi.org/10.1371/journal.pone.0342151.g014
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                         14 / 19
+p < 0.05) were significant variables, whereas game systems XFmt and game type XTyp were not. In the quarter-level model,
+game systems XFmt (OR = 1.108, p < 0.05), team-quality differential XQD (OR = 0.953, p < 0.05), score differential XSD (OR
+= 1.017, p < 0.05), and quarter-level foul differential XFDQ (OR = 0.893, p < 0.05) were significant, whereas game type XTyp,
+quarter XQtr, and game-level foul differential XFDG were not significant.
+   Across both models, team quality difference, score differential, and quarter-level foul differential consistently associated
+with foul calls. Stronger teams and leading team were more likely to be called, and teams with higher existing foul counts
+tended to receive relatively fewer additional fouls.
+   In all models, ORs indicate the direction of association between situational variables and the likelihood of a foul being
+called on the team coded as 1 in each comparative context. An OR greater than 1 reflects a higher likelihood of a foul being
+called on the home team, the leading team, or the team with more accumulated fouls, whereas an OR below 1 indicates a
+lower likelihood. Accordingly, the regression results are interpreted for explanatory rather than predictive purposes, with ORs
+serving as indicators of directional tendencies in foul calling rather than parameters intended to forecast foul-call outcomes.
+
+4. Discussion
+This study examined how multiple situational variables—including game systems, game type, team quality difference,
+score differential, and foul differential—shape foul calls in the CBA. Situated within the broader framework of sports perfor-
+mance analysis, the study extends the analytical focus from players and teams to referees, demonstrating that officiating
+performance can also be systematically evaluated through situational variables. Beyond documenting isolated effects, the
+present study explicitly examines how these situational factors operate when considered jointly, thereby providing a more
+comprehensive picture of how referees’ decisions are associated with contextual conditions. In contrast to prior research
+that has often isolated single factors, our analysis integrates both independent and combined associations within a uni-
+fied analytical framework, offering insights that cannot be derived from single-factor comparisons alone. In doing so, the
+present study complements earlier work that has focused primarily on home advantage [9,10,27–30] or on specific types
+of calls such as technical or unsportsmanlike fouls [4,5,15], by revealing how multiple situational variables jointly shape
+foul-calling patterns at the event level in a professional league context.
+    The logistic regression models revealed that several of these variables, including game systems, became signifi-
+cant once other factors were controlled for. This multivariate finding highlights a key insight of the integrated situational
+approach adopted in this study: the absence of differences in single-factor analyses does not imply that a variable is irrele-
+vant; rather, its effect may be masked by overlapping situational influences. Similar patterns have been reported in NCAA
+and NBA contexts [12,13]. By modeling situational variables simultaneously rather than in isolation, we show that foul calls
+are influenced by their simultaneous and overlapping effects, underscoring the importance of analyzing referees’ decisions
+within complex, dynamic game contexts.
+    One key result is the significant effect of the game systems once other variables are taken into account. Although the
+single-factor analysis did not reveal significant differences in foul counts between non–home-and-away and home-and-
+away formats, the logistic regression showed that the relative likelihood of fouls being called on home teams was reduced
+under the home-and-away format. This suggests that foul-calling patterns differed across game systems in more subtle
+ways that only become visible when contextual covariates are held constant. The CBA’s transition from centralized venues
+without spectators to traditional home-and-away games provides a natural experiment that is consistent with previous
+work on crowd effects and home advantage: when crowds are removed or attenuated, home bias tends to diminish,
+whereas the presence of spectators can introduce environmentally driven pressures on referees [22,35,36]. Our results
+extend these findings by showing that even when aggregate foul frequencies appear similar across systems, the proba-
+bility of fouls being called on home versus away teams still varies once other situational variables such as score and foul
+differentials are accounted for, suggesting that environmental context and game condition jointly shape officiating. While
+crowd effects provide a theoretically grounded explanation, game-system differences may also reflect broader structural
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                15 / 19
+characteristics of competition formats, including scheduling intensity, travel and recovery demands, referee assignment,
+and organizational constraints.
+     Another important finding concerns foul differential. Across both game-level and quarter-level analysis, referees tended
+to call fouls on teams with fewer accumulated fouls, especially when foul gaps were large and in the early quarters. This
+supports the concept of a “balancing tendency” in officiating. Anderson and Pierce showed that NCAA referees were more
+likely to call fouls on the team with fewer fouls when the foul differential was large, and Price et al. reported similar balanc-
+ing tendencies in the NBA [12,13]. Our results from CBA, showing that teams with fewer fouls became increasingly likely
+to be called as the foul gap widened—with differential in foul proportions exceeding 10–20% in some game and quarter
+contexts—are consistent in both direction and order of magnitude with these studies. Importantly, this tendency was not
+uniform across all game situations. Consistent effects were observed primarily when foul differentials were large and
+during the early and middle quarters, whereas the tendency was weaker in the fourth quarter and under smaller foul gaps,
+as reflected in both the single-factor analyses and the multivariate regression models. Taken together, these findings
+suggest that under comparable game conditions, foul balancing is not an idiosyncratic feature of a single competition, but
+a recurring pattern observed across different basketball cultures and governance systems [15].
+     The analysis of team quality differential and score differential showed that referees were more likely to call fouls against
+stronger or leading teams. This pattern should not be attributed solely to referees’ discretionary judgments, but also to
+teams’ tactical behaviors under specific game conditions. From a team perspective, stronger or leading teams often adopt
+situational strategies—such as increased defensive intensity, intentional fouling to stop fast breaks, or fouls taken to con-
+trol tempo and manage rotations—particularly when protecting a lead [37–40]. These strategies inherently increase expo-
+sure to foul situations and may partly account for the higher foul rates observed among stronger or leading teams. At the
+same time, referees may be more inclined to impose stricter calls on stronger or leading teams in order to sustain compet-
+itive balance and preserve outcome uncertainty, which are central features of professional sport [41–43]. These findings
+highlight that observed foul-calling tendencies likely reflect an interaction between referees’ discretionary judgments and
+teams’ strategic behaviors, rather than officiating bias alone.
+     Beyond the statistical results, the findings carry important implications for understanding basketball officiating per-
+formance under different situational contexts. Referees are expected to act as neutral arbiters. However, the evidence
+­suggests that their discretionary decisions are “context-sensitive” [44,45]. This raises the question of whether such ten-
+ dencies should be interpreted as bias or as a functional adjustment aimed at sustaining perceived fairness and competi-
+ tive balance. While balancing foul calls may reduce the appearance of unfairness, it could also inadvertently compromise
+ true impartiality. For teams, recognizing such tendencies may aid tactical preparation—for example, being more cautious
+ in foul-prone contexts or exploiting situations where referees tend to balance foul calls distributions.
+     Overall, the findings highlight that basketball officiating is situational rather than purely mechanical. Referees appear to
+ strive for consistency, yet their decisions were associated with situational variables such as game system, foul difference,
+ and score difference. For the CBA, this reveals both the professionalism of referees in maintaining stable standards and
+ the subtle influence of situational variables that may affect officiating outcomes. More broadly, by embedding officiating
+ within the sport performance analysis framework, the present study contributes to a growing body of work that treats ref-
+ erees as active performers whose decisions, like those of players and teams, are conditioned by dynamic game contexts.
+ This perspective not only enriches academic understanding of officiating, but also offers practical guidance for league
+ governance, referee training, and team strategy in professional basketball.
+
+5. Limitations
+This study has several limitations that should be acknowledged. First, foul calls arise primarily from players’ actual physi-
+cal and tactical behaviors, which situational variables cannot fully capture. Our models focus on situational variables that
+show significant associations with foul-calling tendencies and, by design, cannot account for all foul outcomes or their
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                  16 / 19
+fluctuations. Second, the analyses were based on situational variables commonly examined in sports performance anal-
+ysis research. Although these variables reflect key aspects of game context, officiating behavior may also be influenced
+by additional information—such as player interactions, bench behavior, or media pressures—that was not available in
+the present dataset. Third, the study draws on data from a single CBA season with a specific combination of centralized
+non–home-and-away and home-and-away formats. While this setting provides a valuable quasi-experimental comparison
+across game systems, it may limit the generalizability of the findings to other seasons or leagues. In addition, broader
+structural features associated with competition formats were not explicitly modeled and may also contribute to observed
+game systems differences. Finally, the study focuses on objective situational variables but does not incorporate referees’
+subjective judgment processes or potential sources of officiating bias. Future research could integrate psychological per-
+spectives to better understand how situational variables and subjective factors jointly shape officiating decisions.
+
+6. Conclusions and recommendations
+This study investigated foul calls in the 2022–2023 CBA season under multiple situational variables. The findings indicate
+that although referees generally maintain relatively consistent officiating standards, foul calls are not fully independent of
+game situations. Stronger and leading teams were more likely to be called, whereas teams with fewer accumulated fouls
+were more likely to receive additional fouls, reflecting a “balancing” tendency. Logistic regression further highlighted team
+quality difference, score differential, and foul differentials as key situational variables influencing foul calls, whereas game
+type and competition format demonstrated more limited or conditional effects, becoming evident only when other situa-
+tional variables were jointly considered.
+    The central contribution of this study is to show that referees’ decisions are systematically context-sensitive. These
+results underscore that officiating performance is inherently discretionary and shaped by situational variables. This situa-
+tional characteristic can help sustain competitive balance and smooth game flow, but it also raises the risk of implicit bias
+in foul-calling. Recognizing this dual nature is essential for both referee training and team preparation.
+    By embedding officiating within the sport performance analysis framework, this study provides a structured approach to
+evaluating officiating performance. The findings contribute to the academic understanding of basketball officiating and also
+carry broader practical implications [46]. For leagues, recognizing the situational nature of officiating can inform competi-
+tion management and policy-making, ensuring fairness and credibility in professional basketball. For referees, the results
+suggest that targeted training should focus on specific situations identified in this study—such as early-game contexts with
+large score or foul differentials—where balancing tendencies appear stronger. Scenario-based video review, structured
+feedback, and simulation training may help referees maintain consistency under these contextual pressures and mitigate
+unconscious bias [47–49]. For teams and coaches, understanding that foul-calling tendencies vary across game phases
+and differential magnitudes can support tactical preparation. In particular, teams may adopt more cautious defensive strat-
+egies when leading or anticipate balancing calls in games with large foul differentials. In training, players can be guided to
+better anticipate how situational factors may affect calls, helping them develop strategies to reduce unnecessary fouls or
+strategically use fouls when advantageous. Overall, the study enriches understanding of how situational variables shape
+refereeing and underscores their relevance not only for officiating evaluation, but also for league development, training
+design, and game strategy.
+
+Author contributions
+Conceptualization: Fang Shu, Xiao Xu, Ruohan Xu.
+Data curation: Fang Shu, Xiao Xu.
+Formal analysis: Fang Shu.
+Methodology: Fang Shu, Liqing Zhang, Xiao Xu.
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                 17 / 19
+Supervision: Liqing Zhang.
+Visualization: Ruohan Xu.
+Writing – original draft: Fang Shu.
+Writing – review & editing: Liqing Zhang, Xiao Xu, Ruohan Xu.
+
+
+References
+ 1.   Gençay OA, Aydın EE. The effects of teams, individual players and spectators on basketball officials’ decision-making processes. The Anthropolo-
+      gist. 2015;20(3):503–9.
+ 2.   Pelechrinis K. Quantifying implicit biases in refereeing using NBA referees as a testbed. Sci Rep. 2023;13(1):4664. https://doi.org/10.1038/s41598-
+      023-31799-y PMID: 36949168
+ 3.   Zhang F, Yi Q, Dong R, Yan J, Xu X. Inner pace: A dynamic exploration and analysis of basketball game pace. PLoS One. 2025;20(5):e0320284.
+      https://doi.org/10.1371/journal.pone.0320284 PMID: 40354446
+ 4.   Gómez M-Á, Avugos S, Ortega E, Bar-Eli M. Adverse effects of technical fouls in elite basketball performance. Biol Sport. 2019;36(2):155–61.
+      https://doi.org/10.5114/biolsport.2019.83505 PMID: 31223193
+ 5.   Gómez M-Á, Toro EO, Furley P. The influence of unsportsmanlike fouls on basketball teams’ performance according to context-related variables.
+      International Journal of Sports Physiology and Performance. 2016;11(5):664–70. https://doi.org/10.1123/ijspp.2015-0478
+ 6.   Ibáñez SJ, Sampaio J, Feu S, Lorenzo A, Gómez MA, Ortega E. Basketball game‐related statistics that discriminate between teams’ season‐long
+      success. European Journal of Sport Science. 2008;8(6):369–72. https://doi.org/10.1080/17461390802261470
+ 7.   Cabarkapa D, Deane MA, Fry AC, Jones GT, Cabarkapa DV, Philipp NM, et al. Game statistics that discriminate winning and losing at the NBA
+      level of basketball competition. PLoS One. 2022;17(8):e0273427. https://doi.org/10.1371/journal.pone.0273427 PMID: 35984813
+ 8.   National Basketball Association. NBA Last Two Minute Reports – Frequently Asked Questions. https://official.nba.com/nba-last-two-minute-reports-
+      frequently-asked-questions/. Accessed 2025 August 23.
+ 9.   Courneya KS, Carron AV. The Home Advantage In Sport Competitions: A Literature Review. Journal of Sport and Exercise Psychology.
+      1992;14(1):13–27. https://doi.org/10.1123/jsep.14.1.13
+10.   Nevill AM, Holder RL. Home advantage in sport: an overview of studies on the advantage of playing at home. Sports Med. 1999;28(4):221–36.
+      https://doi.org/10.2165/00007256-199928040-00001 PMID: 10565549
+11.   Thu KM, Hattman K, Hutchinson V, Lueken S, Davis N, Linboom E. Keeping the Game Close: “Fair Play” Among Men’s College Basketball Refer-
+      ees. Human Organization. 2002;61(1):1–8. https://doi.org/10.17730/humo.61.1.3hn68af24wahbvr3
+12.   Anderson KJ, Pierce DA. Officiating bias: the effect of foul differential on foul calls in NCAA basketball. J Sports Sci. 2009;27(7):687–94. https://doi.
+      org/10.1080/02640410902729733 PMID: 19424898
+13.   Price J, Remer M, Stone DF. Subperfect game: profitable biases of NBA referees. Economics Manag Strategy. 2012;21(1):271–300. https://doi.
+      org/10.1111/j.1530-9134.2011.00325.x
+14.   Morgulev E, Azar OH, Lidor R, Sabag E, Bar-Eli M. Deception and decision making in professional basketball: Is it beneficial to flop?. Journal of
+      Economic Behavior & Organization. 2014;102:108–18. https://doi.org/10.1016/j.jebo.2014.03.022
+15.   Morgulev E, Azar OH, Lidor R, Sabag E, Bar-Eli M. Searching for judgment biases among elite basketball referees. Front Psychol. 2018;9:2637.
+      https://doi.org/10.3389/fpsyg.2018.02637 PMID: 30619022
+16.   Spitz J, Wagemans J, Memmert D, Williams AM, Helsen WF. Video assistant referees (VAR): The impact of technology on decision making in
+      association football referees. J Sports Sci. 2021;39(2):147–53. https://doi.org/10.1080/02640414.2020.1809163 PMID: 32794432
+17.   Kittel A, Larkin P, Elsworthy N, Spittle M. Video-based testing in sporting officials: A systematic review. Psychology of Sport and Exercise.
+      2019;43:261–70. https://doi.org/10.1016/j.psychsport.2019.03.013
+18.   Sampaio J, Lago C, Casais L, Leite N. Effects of starting score‐line, game location, and quality of opposition in basketball quarter score. European
+      Journal of Sport Science. 2010;10(6):391–6. https://doi.org/10.1080/17461391003699104
+19.   Lago-Peñas C, Dellal A. Ball Possession Strategies in Elite Soccer According to the Evolution of the Match-Score: the Influence of Situational
+      Variables. Journal of Human Kinetics. 2010;25(2010):93–100. https://doi.org/10.2478/v10078-010-0036-z
+20.   Gómez MÁ, Lago-Peñas C, Pollard R, McGarry T, O’Donoghue P, Sampaio J. Routledge handbook of sports performance analysis. London: Rout-
+      ledge. 2013.
+21.   Sarmento H, Anguera MT, Pereira A, Araújo D. Talent Identification and Development in Male Football: A Systematic Review. Sports Med.
+      2018;48(4):907–31. https://doi.org/10.1007/s40279-017-0851-7 PMID: 29299878
+22.   Gong H. The effect of the crowd on home bias: evidence from NBA games during the COVID-19 pandemic. J Sports Econom. 2022;23(7):950–75.
+      https://doi.org/10.1177/15270025211073337 PMID: 36199618
+23.   Zanin M, Lóczi R, Zanin A. “Outlier detection: Underused in sport science despite outliers’ impact on inference and prediction”. J Sports Sci.
+      2024;42(24):2495–505. https://doi.org/10.1080/02640414.2024.2443313 PMID: 39719854
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                               18 / 19
+24.   Bilek G, Ulas E. Predicting match outcome according to the quality of opponent in the English premier league using situational variables and team
+      performance indicators. Int J Performance Analysis in Sport. 2019;19(6):930–41. https://doi.org/10.1080/24748668.2019.1684773
+25.   Qiu M, Zhang S, Yi Q, Zhou C, Zhang M. The influence of “momentum” on the game outcome while controlling for game types in basketball. Front
+      Psychol. 2024;15:1412840. https://doi.org/10.3389/fpsyg.2024.1412840 PMID: 38947912
+26.   García J, Sáez J, Ibáñez SJ, Parejo I, Cañadas M. Home advantage analysis in ACB League in season 2007-2008. Revista de Psicología del
+      Deporte. 2009;18(3):331–5.
+27.   Jamieson JP. The home field advantage in athletics: a meta‐analysis. J Applied Social Pyschol. 2010;40(7):1819–48. https://doi.
+      org/10.1111/j.1559-1816.2010.00641.x
+28.   Pollard R, Gómez MÁ. Variations in home advantage in the national basketball leagues of Europe. Revista de Psicología del Deporte.
+      2013;22(1):263–9.
+29.   Ribeiro HV, Mukherjee S, Zeng XHT. The advantage of playing home in nba: microscopic, team-specific and evolving features. PLoS One.
+      2016;11(3):e0152440. https://doi.org/10.1371/journal.pone.0152440 PMID: 27015636
+30.   Morgulev E, Azar OH, Lidor R. Sports analytics and the big-data era. Int J Data Sci Anal. 2018;5(4):213–22. https://doi.org/10.1007/
+      s41060-017-0093-7
+31.   Ferioli D, Scanlan AT, Conte D, Tibiletti E, Rampinini E. The business end of the season: a comparison between playoff and regular-season work-
+      loads in professional basketball players. Int J Sports Physiol Perform. 2021;16(5):655–62. https://doi.org/10.1123/ijspp.2020-0405 PMID: 33561821
+32.   Petway AJ, Freitas TT, Calleja-González J, Medina Leal D, Alcaraz PE. Training load and match-play demands in basketball based on competition
+      level: a systematic review. PLoS One. 2020;15(3):e0229212. https://doi.org/10.1371/journal.pone.0229212 PMID: 32134965
+33.   Palmer JA, Bini R, Wundersitz D, Kingsley M. Training and match demands differ between the regular season and finals in semi-professional bas-
+      ketball. Front Sports Act Living. 2022;4:970455. https://doi.org/10.3389/fspor.2022.970455 PMID: 36091868
+34.   López-García A, Alonso-Pérez-Chao E, Navarro Barragán RM, Jiménez-Sáiz SL. Home-court advantage and home win percentage in the nba: an
+      in-depth investigation by conference and team ability. Appl Sci. 2024;14(21):9989. https://doi.org/10.3390/app14219989
+35.   Nevill AM, Balmer NJ, Mark Williams A. The influence of crowd noise and experience upon refereeing decisions in football. Psychol Sport and
+      Exercise. 2002;3(4):261–72. https://doi.org/10.1016/s1469-0292(01)00033-4
+36.   Sors F, Grassi M, Agostini T, Murgia M. The sound of silence in association football: Home advantage and referee bias decrease in matches played
+      without spectators. Eur J Sport Sci. 2021;21(12):1597–605. https://doi.org/10.1080/17461391.2020.1845814 PMID: 33131429
+37.   Duvinage C, Jost P-J. The Role of Referees in Professional Sports Contests. J Sports Economics. 2019;20(8):1014–50. https://doi.
+      org/10.1177/1527002519851145
+38.   Maymin A, Maymin P, Shen E. How Much Trouble is Early Foul Trouble? Strategically Idling Resources in the NBA. Int J Sport Finance.
+      2012;7(4):324–39. https://doi.org/10.1177/155862351200700404
+39.   McFarlane P. Evaluating NBA end-of-game decision-making. Journal of Sports Analytics. 2018;5(1):17–22. https://doi.org/10.3233/jsa-180231
+40.   Tenenbaum G, Maymon YK, Ben-Zion T, Lev A. The effect of technical fouls on momentum change in basketball: a comparison of regular season
+      vs. playoffs in the NBA. Information. 2025;16(4):307. https://doi.org/10.3390/info16040307
+41.   Duvinage C, Jost P-J. The role of referees in professional sports contests. J Sports Econ. 2019;20(8):1014–50. https://doi.
+      org/10.1177/1527002519851145
+42.   Manasis V, Ntzoufras I, Reade JJ. Competitive balance measures and the uncertainty of outcome hypothesis in European football. IMA J Manag
+      Mathematics. 2021;33(1):19–52. https://doi.org/10.1093/imaman/dpab027
+43.   Noecker CA, Roback P. New insights on the tendency of NCAA basketball officials to even out foul calls. J Quantitative Analysis in Sports.
+      2012;8(3). https://doi.org/10.1515/1559-0410.1402
+44.   Tversky A, Kahneman D. The framing of decisions and the psychology of choice. Science. 1981;211(4481):453–8. https://doi.org/10.1126/sci-
+      ence.7455683 PMID: 7455683
+45.   Bruza PD, Fell L, Hoyte P, Dehdashti S, Obeid A, Gibson A, et al. Contextuality and context-sensitivity in probabilistic models of cognition. Cogn
+      Psychol. 2023;140:101529. https://doi.org/10.1016/j.cogpsych.2022.101529 PMID: 36476378
+46.   García-Santos D, Gómez-Ruano MA, Vaquera A, Ibáñez SJ. Systematic review of basketball referees’ performances. Int J Performance Anal
+      Sport. 2020;20(3):495–533. https://doi.org/10.1080/24748668.2020.1758437
+47.   Farrow D, Baker J, MacMahon C. Developing sport expertise: Researchers and coaches put theory into practice. London: Routledge. 2013.
+48.   Plessner H, Haar T. Sports performance judgments from a social cognitive perspective. Psychology of Sport and Exercise. 2006;7(6):555–75.
+      https://doi.org/10.1016/j.psychsport.2006.03.007
+49.   Put K, Wagemans J, Spitz J, Williams AM, Helsen WF. Using web-based training to enhance perceptual-cognitive skills in complex dynamic offside
+      events. J Sports Sci. 2016;34(2):181–9. https://doi.org/10.1080/02640414.2015.1045926 PMID: 25972094
+
+
+
+
+PLOS One | https://doi.org/10.1371/journal.pone.0342151 February 19, 2026                                                                           19 / 19
+

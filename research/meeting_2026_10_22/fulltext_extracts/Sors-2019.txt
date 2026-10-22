@@ -1,0 +1,468 @@
+                                                                                                                                                     ORIGINAL RESEARCH
+                                                                                                                                                  published: 21 October 2019
+                                                                                                                                              doi: 10.3389/fpsyg.2019.02380
+
+
+
+
+                                                Pressing Crowd Noise Impairs the
+                                                Ability of Anxious Basketball
+                                                Referees to Discriminate Fouls
+                                                Fabrizio Sors 1,2,3 , David Tomé Lourido 4 , Vittoria Parisi 3 , Ilaria Santoro 2,3 ,
+                                                Alessandra Galmonte 1 , Tiziano Agostini 2 and Mauro Murgia 2*
+                                                1
+                                                 Department of Medicine, Surgery and Health Sciences, University of Trieste, Trieste, Italy, 2 Department of Life Sciences,
+                                                University of Trieste, Trieste, Italy, 3 Department of Medical Area, University of Udine, Udine, Italy, 4 Department of
+                                                Psycho-Socio-Educational Analysis and Intervention, University of Vigo, Vigo, Spain
+
+
+
+                                                The decision-making processes of referees in sports are affected by many factors,
+                                                including the pressure of spectators. While the home/visitor bias has been previously
+                                                investigated, the role of crowd noise has been less studied. In the present study, we
+                                                investigated how the crowd noise (calm vs. pressing) influence the decisions of basketball
+                                                referees, when examining videos of potential fouls. In doing so, we also considered
+                                                the level of competitive anxiety of referees (low vs. high anxiety), as factor potentially
+                                                interacting with the pressure exerted by the spectators. A 2 × 2 ANOVA (Crowd noise
+                                                x Anxiety) revealed a significant interaction [F (1,28) = 7.33; p < 0.05; η2p = 0.21; power
+                            Edited by:          = 0.74], with the highly anxious referees showing poorer performances in the pressing
+                Donatella Di Corrado,
+          Kore University of Enna, Italy        crowd condition [t(14) = 2.24; p < 0.05; d = 0.64]. The results indicate that the
+                        Reviewed by:            crowd noise does not seem to affect the referees’ decisions, unless we consider the
+                     Selenia Di Fronso,         anxiety. The present findings suggest that the decisions of referees with high anxiety
+  Università degli Studi G. d’Annunzio
+                Chieti e Pescara, Italy
+                                                might be more easily influenced by external factors like crowd noise. Based on these
+                           Matej Tusak,         results, referees’ federations should consider the possibility to develop training protocols
+      University of Ljubljana, Slovenia         dedicated to highly anxious referees, to avoid their decisions from being biased by
+                  *Correspondence:              spectators’ pressure.
+                       Mauro Murgia
+                    mmurgia@units.it            Keywords: referees, basketball, crowd noise, anxiety, fouls, sport, sound
+
+
+                   Specialty section:
+         This article was submitted to          INTRODUCTION
+        Movement Science and Sport
+                           Psychology,          Within the context of sport psychology research, the different elements that can influence the
+               a section of the journal         decisions of a judge or referee have been widely investigated (for a recent review, see Aragao-Pina
+               Frontiers in Psychology
+                                                et al., 2018). In fact, most of the studies that evaluate judgments or identification tasks in sports are
+      Received: 17 September 2019               related to decisions made by the referees (Plessner and Haar, 2006).
+        Accepted: 07 October 2019                   The process of decision-making in referees can be considered as a sequence of social information
+       Published: 21 October 2019
+                                                processing, since the referee is in constant interaction with the athletes and the coaches, and
+                             Citation:          s/he can also be influenced by the people attending the competition, that is, the supporters.
+     Sors F, Tomé Lourido D, Parisi V,
+                                                The effects of various individual and social phenomena on referees’ performance have been
+Santoro I, Galmonte A, Agostini T and
+    Murgia M (2019) Pressing Crowd
+                                                studied, namely: the anxiety they experience when performing in competitions (Johansen and
+  Noise Impairs the Ability of Anxious          Haugen, 2013); their sports and academic training (MacMahon et al., 2007); the coping of stressful
+  Basketball Referees to Discriminate           situations (Wolfson and Neave, 2007; Page and Page, 2010); the verbalizations of the athletes
+      Fouls. Front. Psychol. 10:2380.           (Lex et al., 2015) and of the coaches (Souchon et al., 2013); the nationality of the athletes
+     doi: 10.3389/fpsyg.2019.02380              (Dawson and Dobson, 2010; Pope and Pope, 2015); the attentional biases (Pazzona et al., 2018);
+
+
+Frontiers in Psychology | www.frontiersin.org                                           1                                            October 2019 | Volume 10 | Article 2380
+Sors et al.                                                                                              Crowd Noise Influences Referees’ Decisions
+
+
+
+the order of events that take place during the competition                 proposed by Asch (1951) and Milgram (1963). However, this
+(Plessner and Betsch, 2001; Unkelbach and Memmert, 2008;                   interpretation is not sufficient, according to explanations based
+Buraimo et al., 2010); the result during matches (Lago-Peñas               on cognitive social theory (Plessner and Haar, 2006; Plessner
+and Gómez-López, 2016); the condition of playing at home                   et al., 2009). Considering the cognitive social theory, social
+(Pollard, 1986; Boyko et al., 2007; Dawson et al., 2007); the              knowledge and the cognitive processing of information are
+importance of the supporters (Garicano et al., 2005). Altogether,          involved when individuals construct their subjective reality (Di
+the results of these studies indicate that the task of referees            Corrado et al., 2011), which in the case of the present study
+is quite complex and can be affected by various phenomena;                 corresponds to the refereeing decisions. These decisions would be
+among the factors constituting the complexity of refereeing,               similar to those made in a categorization task, where the existence
+the psychological factors play an important role and can affect            or not of an infraction must be determined.
+referee’s performances to a significant extent.                               Within the framework of cognitive research with sports
+    Regarding the supporters, most studies have focused on the             referees, cue learning emerges (Plessner et al., 2009; Unkelbach
+influence that various factors exert on arbitration decisions,             and Memmert, 2010). This learning is due to the nature of the
+such as the number of spectators (Downward and Jones, 2007;                game in sports such as basketball or soccer, where it is continuous
+Pettersson-Lidbom and Priks, 2010; Picazo-Tadeo et al., 2016),             and dynamic, so referees often need to make quick decisions
+the composition of the crowd, depending on whether they are                with limited information (Morris and Lewis, 2010). The latter
+local or visitors (Dohmen, 2008; Ponzo and Scoppa, 2014), the              authors point out that referees use temporary contiguity cues
+distance between the field and the stand (Scoppa, 2008; Buraimo            as additional sources of information, which are used for the
+et al., 2012), and the noise produced by the spectators (Unkelbach         decision-making process. When judging actions such as fouls,
+and Memmert, 2010). Although the relevant effect of noise on               not all information is accessible at the same time (for example,
+arbitration decisions was already highlighted by Greer (1983),             limited visual information due to perspective), so concurrent
+few studies have evaluated this phenomenon experimentally                  cues such as noise from the crowd can be used (Plessner
+(Nevill et al., 2002, 2017; Balmer et al., 2007; Unkelbach and             et al., 2009). Referees can exploit that cue because they learn
+Memmert, 2010; Myers et al., 2012).                                        the correlation between crowd noise and specific criteria in a
+    Balmer et al. (2007) investigated the association between the          given situation (Unkelbach and Memmert, 2010). Therefore, the
+bias of favoring local football teams by referees with an increase         prior experience of the referees with the environmental pressure
+in anxiety and activation in the presence (vs. absence) of crowd           will influence the signaling or not of an infraction, allowing
+noise. The results of the research indicated that, when the crowd          them to improve the decision making through specific training
+noise was present, a bias in favor of the local teams emerged,             (Webb et al., 2018). In addition, the signaling or not of an
+as well as significant relationships between this bias and the             infraction may be conditioned by the anxiety levels of the referees
+increase of cognitive anxiety and perception of mental effort.             (Balmer et al., 2007).
+The authors suggested that crowd noise is associated with an                  In the present study, rather than analyzing the effect of the
+increase of anxiety and a perception of mental effort, which leads         home crowd or the compliance with an arbitration decision
+the referees facing this anxiety to take more popular decisions            based on crowd noise, the aim was to investigate the influence
+in favor of the local team. Thus, it seems that the referees face          of a calm vs. pressing crowd noise on the ability of basketball
+a double commitment: on the one hand, to be impartial due to               referees to discriminate contact situations as regular or not; in
+their institutional position; on the other hand, to please the crowd       particular, in doing so the competitive anxiety characterizing
+(Sutter and Kocher, 2004). According to Balmer et al. (2007), as           the referees themselves was also considered. On the basis of the
+the crowd has a more immediate influence, there is a bias in favor         aforementioned studies, and considering that participants were
+of the team playing at home. Sometimes, arbitral inconsistencies           not informed about the condition of “local” and “visiting” teams,
+can be explained by an avoidance coping strategy. Specifically,            the research hypotheses were the following: (1) independently
+when facing difficult situations, referees simply avoid making             from anxiety levels, the ability to correctly discriminate between
+unpopular decisions by ordering players to continue playing                fouls and non-fouls would be lower in the pressing crowd
+(Nevill et al., 2017).                                                     condition than in the calm crowd condition; (2) considering
+    The explanations related to favoring one team or another               anxiety levels, the discrimination ability of referees with high
+are marked by a strong motivational character, which would                 anxiety would be more impaired than that of referees with low
+also allow the opposite outcome. Indeed, referees could                    anxiety in the pressing crowd condition, while no differences
+show reactance to local supporters because they feel harassed              would emerge in the calm crowd condition.
+(Unkelbach and Memmert, 2010). For this reason, other types of
+explanatory theories of the crowd noise influence on arbitration           MATERIALS AND METHODS
+decisions have also been proposed, ranging from Bayesian
+decision-making models that consider some of the previously                Participants
+mentioned indicators (e.g., playing at home, composition and               Thirty male basketball referees voluntarily participated in the
+size of the crowd, number of penalties assigned; Constantinou              experiment. Their age ranged between 18 and 60 years (M = 27.8;
+et al., 2014), to the theory of social influence (Di Corrado et al.,       SD = 11.8). They were all active at the time of experimentation,
+2011). According to the latter theory, referees are governed by the        serving as referees from youth leagues to the Italian national
+traditional models of conformity with the majority and obedience           second division; their experience ranged between 3 and 35 years
+
+
+Frontiers in Psychology | www.frontiersin.org                          2                                     October 2019 | Volume 10 | Article 2380
+Sors et al.                                                                                                      Crowd Noise Influences Referees’ Decisions
+
+
+
+(M = 10.3; SD = 9). Participants were divided in two equally               crowd; 10 fouls with the pressing crowd; 10 non-fouls with the
+numerous groups—low vs. high anxiety (N = 15 each)—on the                  calm crowd; 10 non-fouls with the pressing crowd. An example
+basis of the sample’s anxiety median score; the two resulting              of each can be found in the Supplementary Material.
+groups were comparable in terms of age (low anxiety: M = 29.3
+years; SD = 12.3; high anxiety: M = 26.3 years; SD = 11.1) and             Questionnaire
+experience (low anxiety: M = 11 years; SD = 9.3; high anxiety: M           To measure participants’ competitive anxiety, the Sport Anxiety
+= 9.7 years; SD = 8.9).                                                    Scale (SAS; Smith et al., 1990) was used. This questionnaire
+   All participants had normal or corrected-to-normal vision,              consists of 21 items in the form of statements describing thoughts
+and reported no hearing disturbances. Written informed consent             and feelings that can be commonly experienced before and
+was obtained from each participant prior to the beginning of the           during sport competitions. With respect to the original version,
+experiment, in accordance with the Declaration of Helsinki. The            in the instructions the three occurrences of the term “athletes”
+experimental protocol was approved by the Ethics Committee of              were replaced with the term “referees.” The answer to each item
+the University of Trieste, and the experiment was carried out in           is to be given on a four-point Likert scale, ranging from “not at
+accordance with its recommendations.                                       all” (1) to “very much so” (4).
+                                                                               The items compose two subscales, i.e., somatic anxiety and
+Materials                                                                  cognitive anxiety; the latter can be further divided in two
+Instruments                                                                sub-subscales, i.e., worry and concentration disruption. A total
+The software iMovie and Adobe Audition 3.0 were used to                    competitive anxiety score can also be calculated by adding all
+edit video and audio materials, respectively. A laptop computer            the items together. In the present study, we used this total
+Dell Inspiron 5559 with a 15.6” LED display was used to test               competitive anxiety score, in order to create two groups of
+participants. Sennheiser HD 205 II circumaural headphones                  participants (low vs. high anxiety).
+were used to convey the auditory stimuli. The experiment
+was programmed with the software E-prime Professional 2.0.
+The statistical software SPSS 25.0 for Windows was used for                Procedure and Task
+data analysis.                                                             Participants were tested individually in a quiet room. Upon their
+                                                                           arrival, they were asked to seat in front of a laptop computer
+Stimuli
+                                                                           and to wear the headphones; then, the experimenter launched
+The stimuli used for the present experiment were videos of
+                                                                           the experimental session. Participants were instructed that their
+basketball actions containing contact situations; the original
+                                                                           task was to judge whether each contact was a foul or a non-
+audio was removed and replaced with that of a calm crowd and
+                                                                           foul, by pressing one of two keys on the laptop keyboard, namely
+that of a pressing crowd.
+                                                                           “A” or “L”1 ; in the instructions, no reference was made to the
+    The videos suitable for the experiment were selected from an
+                                                                           crowd noise.
+archive of videos used by referee instructors during technical
+                                                                              The experimental session consisted of two blocks, each
+meetings. In particular, three instructors were requested to
+                                                                           composed of 20 trials, for a total of 40 trials (corresponding to
+independently view about 80 of such videos, and to judge whether
+                                                                           the 40 stimuli). In each block there were five fouls with the calm
+the specific contact situations were to be considered as fouls or
+                                                                           crowd, five fouls with the pressing crowd, five non-fouls with
+non-fouls; this independent evaluation yielded 17 unanimous
+                                                                           the calm crowd, and five non-fouls with the pressing crowd. The
+fouls and 15 unanimous non-fouls. Out of these, the three
+                                                                           stimuli were presented in a randomized order within each block;
+instructors were requested to collectively select 10 fouls and 10
+                                                                           moreover, within each block the same action was never presented
+non-fouls, by discarding the most evident cases for each category,
+                                                                           twice (e.g., foul “A” with the calm crowd was presented in the first
+to avoid the experimental task from being too easy. Then, these 20
+                                                                           block, while the same foul “A” but with the pressing crowd was
+videos were edited so that all of them lasted 5 s, being temporally
+                                                                           presented in the second block). After each response, there was an
+occluded immediately after the contact to be judged.
+                                                                           interval of 1 s before the beginning of the subsequent stimulus;
+    As concerns the audio, the same three instructors as above
+                                                                           instead, the interval between the two blocks was of 5 min, to
+were asked to evaluate some tracks extrapolated from videos
+                                                                           provide participants with an appropriate rest.
+of basketball matches found online. In Figure 1 there are the
+                                                                              Once the experimental session was completed, participants
+waveforms of the two selected tracks. Beyond the quantitative
+                                                                           were administered the SAS. The choice to administer it at the
+differences that can be seen in the figure, the two tracks were also
+                                                                           end of the protocol rather than at its beginning was made to
+qualitatively different. Indeed, the calm crowd track consisted
+                                                                           avoid a possible “triggering” of anxiety-related thoughts/feelings
+of a continuous background noise of some voices, above which
+                                                                           before performing the task, which could have led (some)
+the ball bounces and the players’ footsteps were clearly audible.
+                                                                           participants to explicitly focus on the crowd noise as a potential
+Instead, the pressing crowd track started with a drum noise
+                                                                           anxiogenic stimulus.
+lasting about 3 s, and then, after few audible footsteps, the crowd
+started to scream (right after the contacts to be judged by
+participants). These two tracks were used to replace the original          1 The correspondence between the keys and the answer associated to them was
+audio of each of the 20 selected videos; as a consequence, the             inverted between the two blocks, in order to keep under control any potential effect
+final set of stimuli consisted of 40 videos: 10 fouls with the calm        of the dominant hand.
+
+
+
+Frontiers in Psychology | www.frontiersin.org                          3                                             October 2019 | Volume 10 | Article 2380
+Sors et al.                                                                                                             Crowd Noise Influences Referees’ Decisions
+
+
+
+
+ FIGURE 1 | The waveforms of the audio tracks characterizing the calm crowd condition (A) and the pressing crowd condition (B).
+
+
+
+Statistical Analyses                                                                anxiety: M = 1.04, SD = 0.49]; instead, in the pressing crowd
+First of all, the d’ scores for each participant in each condition—                 condition a marginally significant difference between the two
+calm crowd and pressing crowd—were calculated, as measures of                       groups emerged [t(28) = 1.59; p = 0.063; d = 0.58; low anxiety:
+response accuracy. Subsequently, the competitive anxiety score                      M = 1.14, SD = 0.86; high anxiety: M = 0.73, SD = 0.51]. The
+for each participant was calculated. Then, participants were                        set of paired samples t-tests highlighted a significant difference in
+divided in two equally numerous groups—low vs. high anxiety (N                      the two conditions for referees with high anxiety, showing lower
+= 15 each)—on the basis of the sample’s median score. To test the                   discrimination ability in the pressing crowd condition [t(14) =
+research hypotheses, a 2 × 2 mixed ANOVA was conducted, with                        2.24; p < 0.05; d = 0.64]; instead, no difference emerged for
+crowd noise (calm vs. pressing) as within-subjects variable, and                    referees with low anxiety between the calm and pressing crowd
+anxiety (low vs. high) as between-subjects variable. Moreover,                      conditions [t(14) = 1.69; p = 0.11].
+we conducted planned comparisons between the two groups,
+in each of the two crowd noise conditions, as well as within                        DISCUSSION
+each group in the two crowd noise conditions, by means of a
+set of independent samples t-tests, and paired samples t-tests,                     The aim of the present study was to investigate the influence of
+respectively. For the ANOVA, the sphericity assumption was                          crowd noise on the ability of basketball referees to discriminate
+evaluated using the Mauchly test; Greenhouse-Geisser correction                     contact situations as regular or not, also on the basis of their
+for degrees of freedom was applied in case of non-sphericity.                       competitive anxiety. Unlike previous studies on similar issues,
+The effect sizes were calculated using the partial eta square                       here the manipulation did not simply consist in the presence
+(η2p ) (Lakens, 2013), with 0.01, 0.06, and 0.14 considered small,                  vs. absence of crowd noise (e.g., Balmer et al., 2007) or in
+medium, and large effects, respectively. In the case of t-tests,                    the variation of its volume (e.g., Unkelbach and Memmert,
+effect sizes were calculated using the Cohen’s d (Cohen, 1988),                     2010); instead, to be more realistic, two different tracks were
+for which 0.20, 0.50, and 0.80 are considered small, medium, and                    used—one of a calm crowd and one of a pressing crowd—with
+large effects, respectively.                                                        both quantitative and, most importantly, qualitative differences
+                                                                                    between them. Moreover, the condition of “local” and “visiting”
+RESULTS                                                                             teams was intentionally not specified to participants, as the
+                                                                                    phenomenon under investigation was different—more general—
+The mixed ANOVA did not reveal a significant main effect either                     than the home bias itself. With these premises, and on the basis of
+for crowd noise [F(1, 28) = 0.01; p = 0.97] or for anxiety                          previous research mentioned in the introduction, two hypotheses
+[F(1, 28) = 0.16; p = 0.69]; however, a significant interaction                     were tested: (1) independently from anxiety levels, the ability
+emerged [F(1, 28) = 7.33; p < 0.05; η2p = 0.21; power = 0.74]                       to correctly discriminate between fouls and non-fouls would be
+(Figure 2). The set of independent samples t-tests revealed no                      lower in the pressing crowd condition than in the calm crowd
+difference between the two groups in the calm crowd condition                       condition; (2) considering anxiety levels, the discrimination
+[t(28) = 0.81; p = 0.43; low anxiety: M = 0.83, SD = 0.93; high                     ability of referees with high anxiety would be more impaired than
+
+
+Frontiers in Psychology | www.frontiersin.org                                   4                                           October 2019 | Volume 10 | Article 2380
+Sors et al.                                                                                                               Crowd Noise Influences Referees’ Decisions
+
+
+
+
+ FIGURE 2 | The d’ scores of referees with low and high anxiety in the calm and pressing crowd conditions. Error bars show the standard error of the mean.
+
+
+
+
+that of referees with low anxiety in the pressing crowd condition,                   is reasonably due to the higher variability with respect to the
+while no differences would emerge in the calm crowd condition.                       high anxiety group. Anyway, it appears that the discrimination
+    The results of the experiment seem not to support the                            ability of at least some referees with low anxiety was higher
+first hypothesis, as no difference in fouls discrimination                           in the pressing crowd condition than in the calm crowd
+ability emerged between the calm and pressing conditions.                            condition; this observation is in line with the phenomenon of
+The explanation of this outcome can be easily found in                               clutch performances, that is, a performance increase in pressing
+the significant interaction between crowd noise and anxiety                          situations (Otten, 2009), and deserves further investigation to
+levels; thus, the overall apparent null effect of crowd noise                        be clarified.
+was actually due to its different impact on participants on                              In the present experiment, participants were divided in
+the basis of their competitive anxiety. Such an interaction,                         two groups—referees with low and high anxiety—on the basis
+together with the decreased discrimination ability of referees                       of the sample’s median score. In future studies investigating
+with high anxiety in the pressing crowd condition, as well as                        similar issues, it would be interesting to use questionnaires/scales
+the absence of difference between the two groups in the calm                         with cut-off values, so that participants can be divided in two
+crowd condition, seems to support the second hypothesis. A                           (or more) groups on more grounded bases. However, existing
+reasonable explanation of this outcome refers to cue learning,                       questionnaires with these characteristics might not suit a specific
+with highly anxious referees being more prone than lowly                             population like referees, so an alternative solution to make
+anxious ones to rely on a salient concurrent cue (like pressing                      the results more generalizable can be that of expanding the
+crowd noise), when judging contact situations. However, such                         sample size. Another aspect to consider in order to foster the
+a cue can often be misleading or at least ambiguous, thus                            generalizability of the results of future studies is the use of
+leading to a poorer performance. Another possible explanation                        the latest advances in technology, such as virtual reality and/or
+refers to the phenomenon of choking under pressure, with                             3D displays (also for auditory stimuli), as they allow for more
+more anxious people/athletes being more prone to experience                          ecological experimental settings (Craig, 2013).
+performance decrements in pressing situations (e.g., Otten,                              Interestingly, the present study significantly adds not only
+2009). It is also possible to hypothesize a combination of these                     to the literature concerning referees’ decision making, but also
+two explanations: an anxious referee could be performing poorly                      to the line of research that in recent years is revealing the
+during a pressing competition, and becoming aware of this s/he                       relevant role of ecological sounds in sports (for a recent review,
+could try to improve her/his performance by basing her/his                           see Schaffert et al., 2019). Indeed, previous studies highlighted
+decisions also on crowd reactions, which in most cases would                         that ecological auditory information can be used by athletes to
+further negatively affect the performance itself. Further studies                    perceive different features of sport gestures (Murgia et al., 2012;
+are needed to deepen the understanding of the mechanisms                             Kennel et al., 2014; Sors et al., 2017), to predict the outcome of
+underpinning the processes that led to the outcomes observed in                      opponents’ actions (Allerdissen et al., 2017; Camponogara et al.,
+the present experiment.                                                              2017; Cañal-Bruland et al., 2018; Sors et al., 2018), and to improve
+    An interesting result of the present experiment is the                           performances (Agostini et al., 2004; Sors et al., 2015; Pizzera
+marginally significant difference between referees with high                         et al., 2017). The present study indicates that the ecological
+and low anxiety in the pressing crowd condition. Looking at                          auditory information is somehow important not only for athletes,
+Figure 2, it appears quite evident that the trend of referees                        but also for referees, as it provides them with an additional
+with low anxiety is opposite to that of referees with high                           source of information. Independently from the fact that this
+anxiety (as confirmed by the significant interaction). However,                      information can be useful or misleading, our findings indicate
+for the low anxiety group the comparison between the two                             that crowd noise can affect the referees’ decisional processes and,
+crowd noise conditions revealed no significant difference; this                      consequently, their behavior.
+
+
+Frontiers in Psychology | www.frontiersin.org                                    5                                           October 2019 | Volume 10 | Article 2380
+Sors et al.                                                                                                                        Crowd Noise Influences Referees’ Decisions
+
+
+
+   From an applied perspective, the results of the present                                  ETHICS STATEMENT
+experiment highlight the importance of referees’ competitive
+anxiety levels in relation with crowd noise. Indeed, while the                              The studies involving human participants were reviewed and
+ability of referees with low anxiety to discriminate fouls does                             approved by Ethics Committee of the University of Trieste. The
+not significantly change with a calm crowd or a pressing                                    patients/participants provided their written informed consent to
+one, for referees with high anxiety such ability significantly                              participate in this study.
+decreases with a pressing crowd noise, thus determining
+poorer refereeing performances. Referees’ federations should be                             AUTHOR CONTRIBUTIONS
+aware of this phenomenon, as it may influence competitions’
+results to a significant extent. This does not mean that                                    FS, IS, and MM conceived the idea. FS, DT, VP, IS, AG, TA, and
+highly anxious referees should be relegated only to less                                    MM designed the study. FS and VP prepared the stimuli. FS, IS,
+important matches (where smaller/calmer crowds are expected);                               and AG programmed the experiment. FS, DT, and VP collected
+rather, federations should consider the possibility to develop                              the data. FS, MM, and TA analyzed the data. FS, DT and MM
+dedicated training protocols and/or to include in their staff                               wrote the first draft of the manuscript. VP, IS, AG, and TA revised
+the figure of the sport psychologist, who could provide                                     the manuscript.
+specific interventions.
+   To sum up, the present study highlighted that pressing                                   ACKNOWLEDGMENTS
+crowd noise impairs the ability of basketball referees with high
+anxiety to discriminate fouls. Further research is needed to                                We would like to thank the referees who took part in our
+better understand why this is the case (e.g., which factors cause                           experiment for their availability and their suggestions.
+this bias), as well as whether it replicates also in other sports.
+Findings should raise the awareness of referees’ federations on                             SUPPLEMENTARY MATERIAL
+this and related phenomena, in order to adopt appropriate
+intervention strategies to avoid competitions’ results from being                           The Supplementary Material for this article can be found
+biased by them.                                                                             online at: https://www.frontiersin.org/articles/10.3389/fpsyg.
+                                                                                            2019.02380/full#supplementary-material
+DATA AVAILABILITY STATEMENT                                                                 Video S1 | Example of foul with calm crowd noise.
+
+                                                                                            Video S2 | Example of foul with pressing crowd noise.
+The raw data supporting the conclusions of this manuscript will
+                                                                                            Video S3 | Example of non-foul with calm crowd noise.
+be made available by the authors, without undue reservation, to
+any qualified researcher.                                                                   Video S4 | Example of non-foul with pressing crowd noise.
+
+
+
+
+REFERENCES                                                                                     and the UEFA champions league. Contemp. Econ. Policy 30, 329–343.
+                                                                                               doi: 10.1111/j.1465-7287.2011.00295.x
+Agostini, T., Righi, G., Galmonte, A., and Bruno, P. (2004). “The relevance                 Camponogara, I., Rodger, M., Craig, C., and Cesari, P. (2017). Expert players
+   of auditory information in optimizing hammer throwers performance,”                         accurately detect an opponent’s movement intentions through sound alone. J.
+   in Biomechanics and Sports, ed P. B. Pascolo (Vienna: Springer), 67–74.                     Exp. Psychol. 43, 348–359. doi: 10.1037/xhp0000316
+   doi: 10.1007/978-3-7091-2760-5_9                                                         Cañal-Bruland, R., Müller, F., Lach, B., and Spence, C. (2018). Auditory
+Allerdissen, M., Güldenpenning, I., Schack, T., and Bläsing, B. (2017). Recognizing            contributions to visual anticipation in tennis. Psychol. Sport Exerc. 36, 100–103.
+   fencing attacks from auditory and visual information: a comparison                          doi: 10.1016/j.psychsport.2018.02.001
+   between expert fencers and novices. Psychol. Sport Exerc. 31, 123–130.                   Cohen, J. (1988). Statistical Power Analysis for the Behavioral Sciences. New York,
+   doi: 10.1016/j.psychsport.2017.04.009                                                       NY: Routledge Academic
+Aragao-Pina, J. A., Passos, A., Araújo, D., and Maynard, M. T. (2018).                      Constantinou, A. C., Fenton, N. E., and Pollock, L. J. H. (2014). Bayesian
+   Football refereeing: an integrative review. Psychol. Sport Exerc. 35, 10–26.                networks for unbiased assessment of referee bias in Association Football.
+   doi: 10.1016/j.psychsport.2017.10.006                                                       Psychol. Sport Exerc. 15, 538–547. doi: 10.1016/j.psychsport.2014.
+Asch, S. E. (1951). “Effects of group pressure upon the modification and distortion            05.009
+   of judgment,” in Groups, Leadership and Men, ed H. Guetzkow (Pittsburgh, PA:             Craig, C. (2013). Understanding perception and action in sport: how
+   Carnegie Press), 177–190.                                                                   can virtual reality technology help? Sports Technol. 6, 161–169.
+Balmer, N. J., Nevill, A. M., Lane, A. M., Ward, P., Williams, A. M., and Fairclough,          doi: 10.1080/19346182.2013.855224
+   S. H. (2007). Influence of crowd noise on soccer refereeing consistency in               Dawson, P., and Dobson, S. (2010). The influence of social pressure and nationality
+   soccer. J. Sport Behav. 30, 130–145.                                                        on individual decisions: Evidence from the behaviour of referees. J. Econ.
+Boyko, R. H., Boyko, A. R., and Boyko, M. G. (2007). Referee bias contributes to               Psychol. 31, 181–191. doi: 10.1016/j.joep.2009.06.001
+   home advantage in English Premiership football. J. Sports Sci. 25, 1185–1194.            Dawson, P., Dobson, S., Goddard, J., and Wilson, J. (2007). Are football referees
+   doi: 10.1080/02640410601038576                                                              really biased and inconsistent?: evidence on the incidence of disciplinary
+Buraimo, B., Forrest, D., and Simmons, R. (2010). The 12th man?: refereeing                    sanction in the English Premier League. J. R. Stat. Soc. 170, 231–250.
+   bias in English and German soccer. J. R. Stat. Soc. 173, 431–449.                           doi: 10.1111/j.1467-985X.2006.00451.x
+   doi: 10.1111/j.1467-985X.2009.00604.x                                                    Di Corrado, D., Pellarin, E., and Agostini, T. A. (2011). The phenomenon of social
+Buraimo, B., Simmons, R., and Maciaszczyk, M. (2012). Favoritism and                           influence on the football pitch: Social pressure from the crowd on referees’
+   referee bias in European soccer: evidence from the Spanish league                           decisions. Rev. Psychol. 18, 33–36.
+
+
+
+
+Frontiers in Psychology | www.frontiersin.org                                           6                                              October 2019 | Volume 10 | Article 2380
+Sors et al.                                                                                                                         Crowd Noise Influences Referees’ Decisions
+
+
+
+Dohmen, T. J. (2008). The influence of social forces: evidence from                         Plessner, H., and Haar, T. (2006). Sports performance judgments from
+   the behavior of football referees. Econ. Inquiry 46, 411–424.                               a social cognitive perspective. Psychol. Sport Exerc. 7, 555–575.
+   doi: 10.1111/j.1465-7295.2007.00112.x                                                       doi: 10.1016/j.psychsport.2006.03.007
+Downward, P., and Jones, M. (2007). Effects of crowd size on referee                        Plessner, H., Schweizer, G., Brand, R., and O’Hare, D. (2009). A multiple-
+   decisions: analysis of the FA Cup. J. Sports Sci. 25, 1541–1545.                            cue learning approach as the basis for understanding and improving
+   doi: 10.1080/02640410701275193                                                              soccer referees’ decision making. Progr. Brain Res. 174, 151–158.
+Garicano, L., Palacios-Huerta, I., and Prendergast, C. (2005). Favoritism under                doi: 10.1016/S0079-6123(09)01313-2
+   social pressure. Rev. Econ. Stat. 87, 208–216. doi: 10.1162/0034653053970267             Pollard, R. (1986). Home advantage in soccer: a retrospective analysis. J. Sports Sci.
+Greer, D. L. (1983). Spectator booing and the home advantage: a study of                       4, 237–248. doi: 10.1080/02640418608732122
+   social influence in the basketball arena. Soc. Psychol. Q. 46, 252–261.                  Ponzo, M., and Scoppa, V. (2014). Does the home advantage depend on crowd
+   doi: 10.2307/3033796                                                                        support? Evidence from same-stadium derbies. J. Sports Econ. 19, 562–582.
+Johansen, B. T., and Haugen, T. (2013). Anxiety level and decision-making among                doi: 10.1177/1527002516665794
+   Norwegian top-class soccer referees. Int. J. Sport Exerc. Psychol. 11, 215–226.          Pope, B. R., and Pope, N. G. (2015). Own-nationality bias: evidence from
+   doi: 10.1080/1612197X.2013.773665                                                           UEFA champions league football referees. Econ. Inquiry 53, 1292–1304.
+Kennel, C., Pizzera, A., Hohmann, T., Schubotz, R. I., Murgia, M., Agostini, T.,               doi: 10.1111/ecin.12180
+   et al. (2014). The perception of natural and modulated movement sounds.                  Schaffert, N., Janzen, T. B., Mattes, K., and Thaut, M. H. (2019). A review on the
+   Perception 43, 796–804. doi: 10.1068/p7643                                                  relationship between sound and movement in sports and rehabilitation. Front.
+Lago-Peñas, C., and Gómez-López, M. (2016). The influence of referee bias                      Psychol. 10:244. doi: 10.3389/fpsyg.2019.00244
+   on extra time in elite soccer matches. Percep. Motor Skills 122, 666–677.                Scoppa, V. (2008). Are subjective evaluations biased by social factors or
+   doi: 10.1177/0031512516633342                                                               connections? An econometric analysis of soccer referee decisions. Empirical
+Lakens, D. (2013). Calculating and reporting effect sizes to facilitate cumulative             Econ. 35, 123–140. doi: 10.1007/s00181-007-0146-1
+   science: a practical primer for t-tests and ANOVAs. Front. Psychol. 4:863.               Smith, R. E., Smoll, F. L., and Schutz, R. W. (1990). Measurement and correlates of
+   doi: 10.3389/fpsyg.2013.00863                                                               sport-specific cognitive and somatic trait anxiety: the sport anxiety scale. Anx.
+Lex, H., Pizzera, A., Kurtes, M., and Schack, T. (2015). Influence of players’                 Res. 2, 263–280. doi: 10.1080/08917779008248733
+   vocalisations on soccer referees’ decisions. Eur. J. Sport Sci. 15, 424–428.             Sors, F., Lath, F., Bader, A., Santoro, I., Galmonte, A., Agostini, T., et al.
+   doi: 10.1080/17461391.2014.962620                                                           (2018). Predicting the length of volleyball serves: the role of early auditory
+MacMahon, C., Helsen, W. F., Starkes, J. L., and Weston, M. (2007). Decision-                  and visual information. PLoS ONE 13:e0208174. doi: 10.1371/journal.pone.02
+   making skills and deliberate practice in elite association football referees. J.            08174
+   Sports Sci. 25, 65–78. doi: 10.1080/02640410600718640                                    Sors, F., Murgia, M., Santoro, I., and Agostini, T. (2015). Audio-
+Milgram, S. (1963). Behavioral study of obedience. J. Abnorm. Soc. Psychol. 67,                based interventions in sport. Open Psychol. J. 8, 212–219.
+   371–378. doi: 10.1037/h0040525                                                              doi: 10.2174/1874350101508010212
+Morris, P. H., and Lewis, D. (2010). Tackling diving: the perception of deceptive           Sors, F., Murgia, M., Santoro, I., Prpic, V., Galmonte, A., and Agostini, T.
+   intentions in association football (soccer). J. Nonverb. Behav. 34, 1–13.                   (2017). The contribution of early auditory and visual information to the
+   doi: 10.1007/s10919-009-0075-0                                                              discrimination of shot power in ball sports. Psychol. Sport Exerc. 31, 44–51.
+Murgia, M., Hohmann, T., Galmonte, A., Raab, M., and Agostini, T. (2012).                      doi: 10.1016/j.psychsport.2017.04.005
+   Recognising one’s own motor actions through sound: the role of temporal                  Souchon, N., Fontayne, P., Livingstone, A., Maio, G. R., Mellac, N., and Genolini,
+   factors. Perception 41, 976–987. doi: 10.1068/p7227                                         C. (2013). External influences on referees’ decisions in judo: the effects of
+Myers, T., Nevill, A., and Al-Nakeeb, Y. (2012). The influence of crowd                        coaches’ exclamations during throw situations. J. Appl. Sport Psychol. 25,
+   noise upon judging decisions in Muay Thai. Adv. Phys. Educ. 2, 148–152.                     223–233. doi: 10.1080/10413200.2012.713440
+   doi: 10.4236/ape.2012.24026                                                              Sutter, M., and Kocher, M. G. (2004). Favoritism of agents–the case of referees’
+Nevill, A. M., Balmer, N. J., and Williams, A. M. (2002). The influence of crowd               home bias. J. Econ. Psychol. 25, 461–469. doi: 10.1016/S0167-4870(03)00
+   noise and experience upon refereeing decisions in football. Psychol. Sport Exerc.           013-8
+   3, 261–272. doi: 10.1016/S1469-0292(01)00033-4                                           Unkelbach, C., and Memmert, D. (2008). Game management, context effects, and
+Nevill, A. M., Hemingway, A., Greaves, R., Dallaway, A., and Devonport, T. J.                  calibration: the case of yellow cards in soccer. J. Sport Exerc. Psychol. 30, 95–109.
+   (2017). Inconsistency of decision-making, the Achilles heel of referees. J. Sports          doi: 10.1123/jsep.30.1.95
+   Sci. 35, 2257–2261. doi: 10.1080/02640414.2016.1265143                                   Unkelbach, C., and Memmert, D. (2010). Crowd noise as a cue in referee decisions
+Otten, M. (2009). Choking vs. clutch performance: a study of sport performance                 contributes to the home advantage. J. Sport Exerc. Psychol. 32, 483–498.
+   under pressure. J. Sport Exerc. Psychol. 31, 583–601. doi: 10.1123/jsep.31.5.583            doi: 10.1123/jsep.32.4.483
+Page, K., and Page, L. (2010). Alone against the crowd: individual differences              Webb, T., Dicks, M., Thelwell, R., and Nevill, A. (2018). The impact of referee
+   in referees’ ability to cope under pressure. J. Econ. Psychol. 31, 192–199.                 training: reflections on the reduction of home advantage in association football.
+   doi: 10.1016/j.joep.2009.08.007                                                             Soccer Soc. 19, 1024–1037. doi: 10.1080/14660970.2016.1267626
+Pazzona, R., Guicciardi, M., and Murgia, M. (2018). The inattentional                       Wolfson, S., and Neave, N. (2007). Coping under pressure: Cognitive
+   blindness in soccer referees. Medicina dello Sport 71, 216–225.                             strategies for maintaining confidence among soccer referees. J. Sport Behav.
+   doi: 10.23736/S0025-7826.18.03209-X                                                         30:232.
+Pettersson-Lidbom, P., and Priks, M. (2010). Behavior under social pressure:
+   empty Italian stadiums and referee bias. Econ. Lett. 108, 212–214.                       Conflict of Interest: The authors declare that the research was conducted in the
+   doi: 10.1016/j.econlet.2010.04.023                                                       absence of any commercial or financial relationships that could be construed as a
+Picazo-Tadeo, A. J., González-Gómez, F., and Guardiola, J. (2016). Does the crowd           potential conflict of interest.
+   matter in refereeing decisions? Evidence from Spanish soccer. Int. J. Sport
+   Exerc. Psychol. 15, 447–459. doi: 10.1080/1612197X.2015.1126852                          Copyright © 2019 Sors, Tomé Lourido, Parisi, Santoro, Galmonte, Agostini and
+Pizzera, A., Hohmann, T., Streese, L., Habbig, A., and Raab, M. (2017). Long-term           Murgia. This is an open-access article distributed under the terms of the Creative
+   effects of acoustic reafference training (ART). Eur. J. Sport Sci. 17, 1279–1288.        Commons Attribution License (CC BY). The use, distribution or reproduction in
+   doi: 10.1080/17461391.2017.1381767                                                       other forums is permitted, provided the original author(s) and the copyright owner(s)
+Plessner, H., and Betsch, T. (2001). Sequential effects in important referee                are credited and that the original publication in this journal is cited, in accordance
+   decisions: the case of penalties in soccer. J. Sport Exerc. Psychol. 23, 254–259.        with accepted academic practice. No use, distribution or reproduction is permitted
+   doi: 10.1123/jsep.23.3.254                                                               which does not comply with these terms.
+
+
+
+
+Frontiers in Psychology | www.frontiersin.org                                           7                                               October 2019 | Volume 10 | Article 2380
+

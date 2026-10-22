@@ -1,0 +1,13 @@
+fields:
+  basic_info:
+    - name: sources
+      description: >-
+        Array of source records. Each must contain verified full APA citation, DOI or stable primary URL,
+        full_text_access status, local PDF path if downloaded, evidence_locations (PDF page numbers or
+        named full-text sections), method and sample, actual findings, limitations, relevance to WMI,
+        and a three-sentence paraphrased Indigo annotation. Read the methods, results, and limitations
+        in the full text before claiming full-text analysis. Do not invent page numbers. Clearly label
+        abstract-only sources. Download legal full texts to Downloads/WMI-next-meeting/articles and
+        retain extraction text in research/checkpoint3/fulltext. Do not edit shared source trackers or
+        Google Docs. You are not alone in the workspace; preserve other work.
+uncertain: []

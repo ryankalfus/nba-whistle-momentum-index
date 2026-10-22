@@ -6,6 +6,7 @@ const state = {
   filtered: [],
   selected: null,
   visibleCount: RESULT_BATCH_SIZE,
+  compare: [],
 };
 
 const els = {
@@ -16,6 +17,8 @@ const els = {
   meta: document.querySelector("#wmi-search-meta"),
   list: document.querySelector("#wmi-result-list"),
   selected: document.querySelector("#wmi-selected-game"),
+  compareAdd: document.querySelector("#compare-add"),
+  compareContent: document.querySelector("#compare-content"),
 };
 
 const TEAM_ALIASES = {
@@ -256,6 +259,54 @@ function selectGame(game) {
   renderResults();
 }
 
+function addSelectedToCompare() {
+  if (!state.selected || state.compare.some(game => game.game_id === state.selected.game_id)) return;
+  if (state.compare.length === 2) state.compare.shift();
+  state.compare.push(state.selected);
+  renderCompare();
+}
+
+function renderCompare() {
+  if (!els.compareContent) return;
+  els.compareContent.replaceChildren();
+  for (const game of state.compare) {
+    const card = document.createElement("article");
+    card.className = "compare-card";
+    const title = document.createElement("h4");
+    title.textContent = `${game.matchup || game.game_id} · ${compactDate(game.game_date_et)}`;
+    card.appendChild(title);
+    const stats = document.createElement("dl");
+    for (const [label, value] of [
+      ["WMI", formatNumber(game.WMI)],
+      ["Immediate", formatNumber(game.immediate_ratio)],
+      ["Continuation", formatNumber(game.continuation_ratio)],
+      ["Possessions", game.possessions || "N/A"],
+    ]) {
+      const item = document.createElement("div");
+      const term = document.createElement("dt");
+      term.textContent = label;
+      const description = document.createElement("dd");
+      description.textContent = value;
+      item.append(term, description);
+      stats.appendChild(item);
+    }
+    card.appendChild(stats);
+    const note = document.createElement("p");
+    note.textContent = game.parser_version === "period_start_v2" ? "Recalculated parser v2" : "Original snapshot";
+    card.appendChild(note);
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.textContent = "Remove game";
+    remove.setAttribute("aria-label", `Remove ${game.matchup || game.game_id} from comparison`);
+    remove.addEventListener("click", () => {
+      state.compare = state.compare.filter(item => item.game_id !== game.game_id);
+      renderCompare();
+    });
+    card.appendChild(remove);
+    els.compareContent.appendChild(card);
+  }
+}
+
 function renderSelectedGame(game) {
   const audited = game.parser_version === "period_start_v2";
   const reference = audited
@@ -369,6 +420,7 @@ async function loadSearchData() {
 }
 
 if (els.form) {
+  if (els.compareAdd) els.compareAdd.addEventListener("click", addSelectedToCompare);
   els.form.addEventListener("input", applyFilters);
   els.form.addEventListener("submit", (event) => event.preventDefault());
   els.list.addEventListener("scroll", () => {

@@ -1,0 +1,869 @@
+                                                                                                                                                              REVIEW
+                                                                                                                                         published: 10 November 2020
+                                                                                                                                       doi: 10.3389/fspor.2020.572891
+
+
+
+
+                                             Gaze Behavior of Referees in
+                                             Sport—A Review
+                                             Gal Ziv 1*, Ronnie Lidor 1 , Sima Zach 1 , Stephanie Brams 2 and Werner F. Helsen 2
+                                             1
+                                               The Academic College at Wingate, Wingate Institute, Netanya, Israel, 2 Movement Control & Neuroplasticity Research
+                                             Group, Department of Movement Sciences, KU Leuven, Leuven, Belgium
+
+
+
+                                             The purpose of this review was to examine the literature on gaze behavior in referees. A
+                                             literature search found only 12 relevant studies. Five of those studies were conducted on
+                                             referees in association football (soccer), three on judges in gymnastics, one on softball
+                                             umpires, and one each on referees in team handball, rugby, and ice hockey. Seven
+                                             studies reported differences in gaze behavior between referees of a higher skill level
+                                             and those of a lower skill level, while four studies found no differences. In addition, five
+                                             studies reported differences between referees of different skill levels in both gaze behavior
+                                             and performance, while four studies found differences in performance only. A number
+                                             of methodological concerns arise from the current review. Among them are the lack of
+                          Edited by:
+                                             studies conducted in ecologically valid conditions, the lack of studies on peripheral vision,
+                    Maurizio Bertollo,
+           G. d’Annunzio University of       and the lack of data on referees who are working together as teams. Based on this review,
+                 Chieti–Pescara, Italy       we conclude that additional research is needed to clarify the relationships between gaze
+                        Reviewed by:         behavior and performance in refereeing. Practitioners who work with referees should be
+                        Itay Basevitch,
+             Anglia Ruskin University,       cautious when adopting gaze training strategies to improve selective attention, since the
+                      United Kingdom         data on their effectiveness are scarce and sometimes contradictory.
+                       Christian Vater,
+       University of Bern, Switzerland       Keywords: gaze behavior, visual search, referees, umpires, perceptual-cognitive expertise
+                           André Roca,
+    St Mary’s University, Twickenham,
+                      United Kingdom         INTRODUCTION
+                  *Correspondence:
+                              Gal Ziv        To increase the chances that the best athlete or team will win competitions or games, referees
+                   galziv@yahoo.com          (or—as they are also called—judges, linesmen, officials, or umpires, depending upon the sport) have
+                                             an official position in most of competitive individual and team sports, in order to ensure that the
+                    Specialty section:       rules of the sporting event at hand are being applied (Bar-Eli et al., 2011). The perceptual–cognitive
+          This article was submitted to      demands imposed on referees differ across sports, mainly due to the specific characteristics and
+        Movement Science and Sport           nature of each sport. For example, the requirements of referees in association football (soccer) are
+                            Psychology,
+                                             different than the requirements of judges in gymnastics. However, regardless of the nature of the
+                a section of the journal
+  Frontiers in Sports and Active Living
+                                             sport, referees are frequently required to make decisions under time constraints and emotional
+                                             stress in challenging and dynamic settings.
+            Received: 15 June 2020
+                                                To make accurate decisions, referees are usually required to search visually for relevant
+      Accepted: 08 September 2020
+      Published: 10 November 2020
+                                             information in the sporting environment (Helsen and Bultynck, 2004). More specifically,
+                                             they must attend to the most relevant environmental cues (e.g., the performer, an object
+                             Citation:
+ Ziv G, Lidor R, Zach S, Brams S and
+                                             related to the sport or game) while ignoring irrelevant information that may interfere
+  Helsen WF (2020) Gaze Behavior of          with their decision making. Usually, the referee has just one chance to make the correct
+         Referees in Sport—A Review.         decision, as the observed act is performed only once. However in a number of sports
+  Front. Sports Act. Living 2:572891.        referees are currently able to utilize advanced technology - such as the Video Assistant
+     doi: 10.3389/fspor.2020.572891          Referee (VAR) technology used in association football - to reexamine their decisions in
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org                        1                                        November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                                    Gaze Behavior of Referees
+
+
+
+certain game situations. However, in most sports these                       evidence-based knowledge about gaze behavior in referees of
+technological aids are not available to assist the referee.                  different skill levels (e.g., national and international referees,
+Therefore, the ability of the referee to effectively attend to the           experts, and non-experts) and in different sports (team and
+relevant information at each moment of the competition/game                  individual); (b) discuss a number of methodological concerns
+is crucial for achieving a high level of proficiency in his or her           and research limitations; and (c) propose several ideas for
+decision making (MacMahon et al., 2007).                                     additional studies on gaze behavior in referees. In addition,
+    Understanding how referees guide their visual search can                 we argue that due to the small number of studies and their
+increase our knowledge on how they perceive their sporting                   limited findings, we should adopt a cautious approach when
+environment. For example, referees might fail to perceive cues in            implementing these findings in training programs aimed at
+the environment that are salient to the spectators. If the visual            improving gaze behavior in referees.
+search was guided to a certain environmental cue, it can be
+understood why another cue in the visual field was disregarded.
+Indeed, the relationship between gaze and performance is of
+                                                                             LITERATURE SEARCH
+major importance in sport (for a review, see Brams et al., 2019).            We conducted an electronic search of the literature in two
+In most circumstances, gaze behavior closely corresponds to the              databases—EBSCO Discovery Service and Google Scholar. For
+distribution of visual attention and visual processing across the            the search in EBSCO Discovery Service, we used the following
+visual field (eg., Henderson, 2003). Therefore, it can be argued             search terms: (referee∗ OR judge∗ OR umpire∗ OR official∗ )
+that specific gaze patterns can lead to improved performance by              AND (gaze OR visual search OR visual attention OR perceptual–
+enabling more appropriate information processing (see, Brams                 cognitive OR eye movements) AND (sport∗ OR basketball OR
+et al., 2019).                                                               baseball OR handball OR volleyball OR gymnastics OR soccer OR
+    For the purpose of our review, we define gaze behavior as                football OR hockey OR tennis OR diving). We limited the search
+the eye movements referees perform in a sport context that are               to peer-reviewed articles published in the English language. Only
+relevant to their officiating task. For example, assistant referees          studies that measured gaze variables were included. We excluded
+in association football (soccer) can direct their gaze toward the            studies that reported gaze instructions but did not record gaze.
+receiving player or toward the passing player when judging                   For the search in Google Scholar, we searched for a combination
+offside situations; gymnastics judges need to gaze at the gymnasts’          of the following terms in the title only: referee, official, umpire,
+body parts and at the scoreboard; and baseball and softball                  gaze behavior, and visual search. In addition, the lists of references
+umpires standing behind the plate need to direct their gaze at an            from relevant studies were scanned manually for further sources.
+invisible area that represents the strike zone.                              The search was performed in March, 2020.
+    Researchers can use different variables to measure the four                  A flow diagram of the study selection process based on the
+main aspects of eye movements: (a) the location of fixations—the             PRISMA Statement (Liberati et al., 2009) is presented in Figure 1.
+relevant cues to which the referee directs his or her gaze, (b) the          The electronic search yielded 11 relevant studies and the manual
+duration of fixations—how long the referee focuses on those cues,            search yielded one more study, for a total of 12 studies (Bard et al.,
+(c) the timing of fixations—the point in time at which the referee           1980; Catteeuw et al., 2009, 2010b; Hancock and Ste-Marie, 2013;
+starts fixating on a certain cue, and (d) the order of the visual            Millslagle et al., 2013; Flessas et al., 2015; Luis et al., 2015; Spitz
+scan—whether the referee shifts his or her gaze from one cue to              et al., 2016; Schnyder et al., 2017; Fasold et al., 2018; Pizzera et al.,
+another in a structured or in a random manner. Each of these                 2018; Moore et al., 2019).
+variables, as well as the relationships between them, is important
+for our understanding of the referee’s process of decision making.
+    These variables usually measure central, or foveal, vision.              GAZE BEHAVIOR OF REFEREES IN
+However, extraction of visual information is not limited to foveal           VARIOUS SPORTS
+vision. While the fovea—which represents about 5◦ of the visual
+field and has the highest visual acuity (Millodot, 2017)—allows              The findings of the reviewed studies are summarized in Table 2.
+us to clearly see visual stimuli, we also rely on peripheral vision          Out of the 12 reviewed studies, five were conducted on referees in
+for visual processing (Rosenholtz, 2016). Peripheral vision allows,          association football (soccer), three on judges in gymnastics, one
+for example the tracking of multiple objects and the detection of            on softball umpires, and one each on referees in team handball,
+changes in the environment that require a response (Vater et al.,            in rugby, and in ice hockey. Seven studies reported differences
+2017). Research on gaze behavior should address both foveal and              between referees of a higher skill level and those of a lower skill
+peripheral vision and take into consideration that referees in               level in gaze behavior, while four studies found no differences.
+different sports need to attend to different visual cues in the visual       Table 3 lists the studies that found differences between different
+field in order to perform adequately (see Table 1).                          levels of referees in gaze behavior only, in performance only, or
+    As far as we know, there are currently no review articles on             in both gaze behavior and performance. Indeed, the reviewed
+the gaze behavior of referees in sport. This is despite the influx           studies examined gaze behavior in referees from different sports,
+of research on sport officiating in the past two decades (for a              and presumably the referees acted under different environmental
+review, see Hancock et al., 2020). Therefore, in the current article         constraints. However, because only a small number of studies
+we review a series of studies (N = 12) focusing on gaze behavior             were found (12), we preferred to synthesize the research findings
+in this population. In this review, we (a) discuss and compare               that emerged from all the reviewed studies in spite of the
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org              2                                    November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                                                         Gaze Behavior of Referees
+
+
+
+TABLE 1 | A description of environmental constraints, referees’ tasks, and location of relevant cues in the visual field across the sports reviewed.
+
+Sport                   Environmental constraints                                     Primary tasks                        Location of relevant cues in the visual field
+
+Association Football    Dynamic environment. The assistant referee is required to Identify off-side situations.            Calling an offside correctly requires both foveal
+(assistant referees)    constantly adjust his/her position in order to observe    Identify foul plays.                     and peripheral vision.
+                        relevant environmental cues.
+Softball                Umpires mostly stationary. Some dynamic and some              Call ball/strike behind the plate.   Mostly foveal vision.
+                        relatively static plays.                                      Call safe/out around the bases.
+Gymnastics              Judges are stationary. Usually, a number of gymnasts          Follow specific body movements.
+                        perform at the same time.                                     Score accuracy of performance.
+Association Football    Highly dynamic and fast sport. Referees must anticipate       Identify foul plays and other        Calling a foul requires anticipation, advance cue
+(referees)              the action.                                                   game-play violations.                usage, and pattern recognition.
+                        Referees must avoid being “ball watchers.”                                                         Peripheral vision to direct attention to possibly
+Ice Hockey              Highly dynamic and fast sport. Referees must anticipate                                            relevant action away from the puck or ball.
+                        the action.                                                                                        Foveal vision to identify foul plays and
+Rugby                   Dynamic and stationary acts. The referee must move with                                            other violations.
+                        the action, but there are times when the players are mostly
+                        in one location.
+Team Handball           Moderately dynamic—mostly played with a set offense
+                        and a set defense, but with fast transitions in-between.
+
+
+
+
+differences in the officiating environments. Therefore, we also                           between the referees, it is possible that international ARs—
+took into account these differences while discussing the findings.                        perhaps based on their greater experience—possess more optimal
+                                                                                          cognitive strategies to correct for this bias.
+                                                                                              Similarly to the earlier Catteeuw et al. (2009) study, Catteeuw
+Association Football                                                                      et al. (2010b, Exp. 1) showed no differences in gaze behavior but
+We found four studies that examined the ability of assistant                              did reveal a bias toward raising the offside flag by less-successful
+referees (ARs) to judge whether a player was on- or off-side                              referees but not successful referees (divided by a median split
+(Catteeuw et al., 2009, 2010b; Luis et al., 2015; Schnyder et al.,                        of decision accuracy). In Exp. 2 of their study (Catteeuw et al.,
+2017), and one study that examined the ability to identify foul                           2010b), a group of referees was trained to make offside decisions
+plays (Spitz et al., 2016). In one of these studies (Catteeuw et al.,                     by watching 80 video simulations and 80 computer animations
+2009), five international and five national ARs were requested to                         of offside situations. Compared to the referees in a control group
+judge 40 recorded videos of simulated possible offside situations.                        who did not improve their accuracy from a pre-test to a post-
+Out of the 40 videos, 10 had the attacker at least one meter behind                       test, the referees who were trained did improve their decision
+the offside line, 10 had the attacker <1 m behind the offside line,                       accuracy. However, there were no differences in gaze behavior
+10 had the attacker on the offside line, and 10 had the attacker                          from pre- to post-testing.
+<1 m ahead of the offside line. The international ARs arrived at                              Differences in offside decision accuracy and no differences
+more correct decisions compared to the national referees (83.5                            in gaze behavior between expert and near-expert ARs were also
+vs. 74.5%, respectively), despite showing a similar gaze behavior.                        reported by Schnyder et al. (2017). In this study, three expert
+In fact, both groups of referees mostly fixated on the offside                            ARs made more correct decisions (91.4%) than three near-expert
+line. The only difference in gaze behavior between the groups                             ARs (79.8%) when judging 36 offside scenes on a real field of
+of ARs was that after the pass, the international ARs tended to                           play. There were no differences in gaze behavior between the two
+shift their gaze to the receiving attacker whereas the national ARs                       groups of referees. However, in both experimental groups, despite
+tended to maintain their gaze on the offside line. It is possible                         the small sample size, it appeared that a fixation on the offside line
+that the international referees were able to assess the position of                       at the time of the pass (and preferably a longer fixation) resulted
+the receiving attacker at the time of the pass from gazing at him                         in a higher number of correct responses.
+or her immediately after the pass.                                                            The distance of the AR and the size of the visual field
+    Findings also showed that national ARs demonstrated a bias                            between the passing and the receiving attacker may affect
+toward calling an offside erroneously, while the international                            performance and gaze behavior as well. Indeed, in one study of
+ARs did not show this tendency. This bias was also reported in                            eight intermediate-level ARs (Luis et al., 2015), offside decision
+previous studies (e.g., Gilis et al., 2009). One possible explanation                     accuracy was higher when the viewing angle was under 35◦
+for such a bias is a perceptual illusion called the flash-lag effect                      compared to over 35◦ . In addition, at a higher angle more errors
+(Nijhawan, 1994), in which a moving object can be perceived                               were made at a short distance, whereas at a smaller angle more
+ahead of its actual position at a certain instant that is usually                         errors were made at a long distance. It is possible that when the
+expressed by a brief marker. In offside situations, the receiving                         distance is short and the viewing angle is large, more saccades
+attacker may be perceived ahead of his or her actual position                             of larger amplitudes occur when attempting to see both the
+at the instant of the pass. Because gaze behavior did not differ                          passing and the receiving players, and it is easier to fixate on
+
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org                           3                                         November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                               Gaze Behavior of Referees
+
+
+
+
+  FIGURE 1 | PRISMA flow diagram of the article selection process.
+
+
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org          4   November 2020 | Volume 2 | Article 572891
+Frontiers in Sports and Active Living | www.frontiersin.org
+                                                                                                                                                                                                                                                                                             Ziv et al.
+                                                              TABLE 2 | A summary of studies (N = 12) examining gaze behavior of referees in sport (ordered by year of publication).
+
+                                                              References           Sport          Participants                    Procedure                                        Gaze behavior                                     Performance
+
+                                                              Bard et al., 1980    Gymnastics     Canadian nationally certified   Evaluate four video-recorded routines on a       # of fixations:                                   # of judgment mistakes:
+                                                                                                  judges (n = 4, 4–8 years of     balance beam                                     National < local (by 27%, not statistically       National < local (by 50%, not statistically
+                                                                                                  experience), local judges (n    Performance compared to an expert judge          significant—small sample size)                    significant—small sample size, large variability in
+                                                                                                  = 3, 1 year of experience)      who watched the routines in slow motion          Fixations on upper body:                          the local judges)
+                                                                                                                                                                                   National > local
+                                                                                                                                                                                   Fixations on legs:
+                                                                                                                                                                                   National < local
+                                                              Catteeuw et al.,     Association    International (n = 5) and       Judging 40 videotaped simulated offside          # of fixation and mean fixation duration per      Offside decision accuracy:
+                                                              2009                 football       national (n = 5) ARs            situations recorded from the perspective         video:                                            International > national
+                                                                                                                                  of an assistant referee                          International = national                          Bias toward flag errors in national referees only
+                                                                                                                                  Four categories of movies: more >1 m             Greatest amount of time spent fixation the        Highest error % when attacker on offside line (42%
+                                                                                                                                  behind the offside line, <1 m behind the         offside line                                      international, 72% national)
+                                                                                                                                  offside line, same line as offside line, <1 m    After the pass:
+                                                                                                                                  ahead of offside line                            International referees spent more time fixation
+                                                                                                                                                                                   the receiving attacker
+                                                              Catteeuw et al.,     Association    Exp. 1: Elite ARs (n = 17)      Exp. 1: Similar to Catteeuw et al., 2009         Exp. 1: # of fixations, fixation duration,        Exp. 1: Total accuracy: 75%
+                                                              2010b                football       divided by median split to      with the addition of the selection of the        percentage viewing time on areas of interest:     Successful−82.2%
+                                                                                                  successful and                  exact location of the attacking receiver         Offside line > passer                             Less-successful−64.4%
+                                                                                                  less-successful based on        from five possible images                        No differences between groups                     Bias toward flag errors in less-successful only
+                                                                                                  offside decision accuracy                                                                                                          Accuracy in memory of frame recognition:
+                                                                                                                                                                                                                                     Successful more consistent, less
+5                                                                                                                                                                                                                                    successful—more bias forward
+                                                                                                  Exp. 2: Training group: elite   Exp. 2: Pre-test and post-test like Exp. 1       Exp. 2: For training group only: no differences   Exp. 2: Training grouped improved from pre-test to
+                                                                                                  FIFA ARs (n = 10) Control       Training group received four training            between pre- and post-test                        post-test (from 71.3 to 78% correct decisions)
+                                                                                                  group: National referees        interventions for a total of 80 video                                                              Control group did not improve (∼63% correct)
+                                                                                                  (n = 14)                        simulations and 80 computer animations                                                             No bias toward flag errors in both groups
+                                                                                                                                  of offside situations                                                                              Training group improved consistency in memory of
+                                                                                                                                                                                                                                     exact location of attacker
+                                                              Hancock and          Ice hockey     Higher-level (n = 15) and       Decide on infractions (e.g., hooking,            No differences between higher-level and           Decision accuracy and sensitivity:
+                                                              Ste-Marie, 2013                     lower-level (n = 15) referees   tripping, roughing, elbowing) when               lower-level referees                              Higher-level > lower-level
+                                                                                                                                  watching 26 video clips of 3–6 s on a
+                                                                                                                                  computer
+                                                              Millslagle et al.,   Fast-pitch     Experienced (n = 4, >10         Calling ball or strike for 10 fastballs and 10   Total fixations/saccades/blinks:                  N/A
+                                                              2013                 softball       years behind the plate), and    change ups when standing behind the              Experienced < inexperienced
+
+
+
+
+November 2020 | Volume 2 | Article 572891
+                                                                                                  inexperienced (n = 4, <1        plate                                            Ball-tracking duration:
+                                                                                                  year behind the plate)          The hitter either swung or did not swing to      Experienced > inexperienced
+                                                                                                  varsity, college, and           create the experience of a real                  Fixation duration on ball release area:
+                                                                                                  university umpires              game situation                                   Experienced > inexperienced
+                                                                                                                                                                                   Onset of fixation on ball release area:
+                                                                                                                                                                                   Experienced earlier than inexperienced
+
+
+
+
+                                                                                                                                                                                                                                                                                             Gaze Behavior of Referees
+                                                              Flessas et al.,      Rhythmic       International (n = 10),         Judge two videos of a five-gymnast               Time looking away from the video: Novice <        Judging performance:
+                                                              2015                 gymnastics     national (n = 10), and          ensemble: with a hoop and with ribbons           international, national                           International > national, novice
+                                                                                                  novice (n = 10) level judges    and ropes                                        Mean time eyes overlaid the reported vs.          All judges reported <40% of the errors
+                                                                                                                                                                                   unreported errors:                                False alarm rate:
+                                                                                                                                                                                   Novices:                                          National > international, novice
+
+                                                                                                                                                                                                                                                                               (Continued)
+Frontiers in Sports and Active Living | www.frontiersin.org
+                                                              TABLE 2 | Continued                                                                                                                                                                                                         Ziv et al.
+
+                                                              References           Sport         Participants                   Procedure                                       Gaze behavior                                      Performance
+
+                                                                                                                                                                                Reported > not reported
+                                                                                                                                                                                International and national:
+                                                                                                                                                                                Reported = not reported
+                                                                                                                                                                                Eye position affected performance only in
+                                                                                                                                                                                national judges
+                                                              Luis et al., 2015    Association   Referees (n = 8) with 6        Judging 24 videotaped offside situations        Gaze moved from player with ball to receiving      Accuracy:
+                                                                                   football      years of experience            from three distances and from different         player and last defender as time progressed        Small view angle > large view angle
+                                                                                                 refereeing regional leagues    viewing angles between passing and              toward the pass                                    At smaller view angles—more errors from far
+                                                                                                 and lower national leagues     receiving attacking players (under and          # and duration of fixations on player with ball    distances
+                                                                                                                                over 35◦ )                                      just before pass: Large view angle > small view    At larger view angle—more errors from
+                                                                                                                                                                                angle                                              near distances
+                                                                                                                                                                                At larger distances: increased # and duration of
+                                                                                                                                                                                fixations on receiving player
+                                                                                                                                                                                At a shorter distance: increased # and duration
+                                                                                                                                                                                of fixation on middle area (between passer
+                                                                                                                                                                                and receiver)
+                                                              Spitz et al., 2016   Association   Elite (n = 20, 16 years of     Judging 20 foul play in open play (1 vs. 2      # and duration of fixations:                       General accuracy:
+                                                                                   football      experience, 9 years at         or 2 vs. 2) and in corner kicks (6–7 vs. 6–7,   Open play and corner kicks:                        Open play < corner kicks
+                                                                                                 professional level), and       1 goalkeeper) on video filmed from 1st          Elite = sub-elite                                  Open play:
+                                                                                                 sub-elite (n = 19, 12 years    person perspective of an assistant referee      Fixation location:                                 Technical decision accuracy: Elite = sub-elite
+                                                                                                 of experience—not in           Making technical decisions (e.g., free kick,    Open play:                                         Disciplinary decision accuracy: Elite > sub-elite
+6
+                                                                                                 professional level)            penalty kick) and disciplinary decisions        Time fixating contact zone: elite > sub-elite      Corner kicks:
+                                                                                                                                (e.g., yellow, red card)                        Corner kicks:                                      Technical decision accuracy: Elite > sub-elite
+                                                                                                                                                                                Time fixating contact zone of attacker: elite >    Disciplinary decision accuracy: Elite = sub-elite
+                                                                                                                                                                                sub-elite (p = 0.07)
+                                                              Schnyder et al.,     Association   Expert (n = 3, FIFA license,   Judging 36 offside scenes performed by          Fixation locations:                                Correct decisions:
+                                                              2017                 football      international experience)      an under-21 team in a real field with three     Experts = near-experts                             Expert > near-expert
+                                                                                                 and near-expert (n = 3,        attackers, three defenders, and a                                                                  In doubtful situations—tendency of both groups to
+                                                                                                 national experience) ARs       goalkeeper                                                                                         keep the flag down
+                                                                                                                                                                                                                                   More correct decisions when offside line was
+                                                                                                                                                                                                                                   fixated at the time of the pass and when this
+                                                                                                                                                                                                                                   fixation was longer
+                                                              Fasold et al.,       Team          A case study of a team of      Refereeing a real training match of two         Fixating action with ball:                         N/A
+                                                              2018                 handball      two referees with 6 years of   semi-professional teams from the two            In 75% of cases, both referees fixated the
+
+
+
+
+November 2020 | Volume 2 | Article 572891
+                                                                                                 experience at the regional     required positions: field referee and goal      same area and mostly the area of action with
+                                                                                                 level                          referee                                         the ball. But: Field referee > goal referee
+                                                                                                                                Analysis of set offense and defense             When referees fixated on different aspects of
+                                                                                                                                Analysis of 44 attacking scenes (mean           the game (only 15% of time): When the goal
+                                                                                                                                6.7 s each) in total                            referee fixated on action with ball:
+
+
+
+
+                                                                                                                                                                                                                                                                                          Gaze Behavior of Referees
+                                                                                                                                                                                Field referee fixated on action without ball
+                                                                                                                                                                                ∼75% of time, the other referee ∼15% of time
+                                                                                                                                                                                When field referee fixated on action with ball:
+                                                                                                                                                                                Goal referee fixated on action without ball
+                                                                                                                                                                                ∼81% of time, the other referee ∼15% of time
+
+                                                                                                                                                                                                                                                                            (Continued)
+Ziv et al.                                                                                                                                                                                                    Gaze Behavior of Referees
+
+
+
+                                                                                                                                                TABLE 3 | Studies that reported differences between referees with different skill
+
+                                                                                         Decision-making accuracy:
+                                                                                                                                                levels in performance, gaze behavior, or both (n = 11)* .
+
+                                                                                                                                                Differences in                   Differences in gaze        Differences in both
+
+
+                                                                                         Elite, trainees > players
+                                                                                                                                                performance only                 behavior only              performance and gaze
+                                                                                                                                                                                                            behavior
+
+
+                                        Judgement quality:
+                                                                                                                                                Catteeuw et al.,                 Millslagle et al.,         Spitz et al.,
+
+                                                                                         Percentage viewing time and accuracy contributed
+                                                                                                                                                2009# –Association football      2013**–Softball            2016—Association football
+                                                                                                                                                Catteeuw et al.,           Fasold et al.,       Bard et al.,
+
+                                        High level > low level
+                                                                                                                                                2010b—Association football 2018**–Team Handball 1980—Gymnastics
+
+                                                                                         to a significant proportion of the variance in
+                                                                                                                                                Schnyder et al.,                                            Pizzera et al.,
+
+
+
+                        Performance
+                                                                                                                                                2017—Association football                                   2018—Gymnastics
+
+
+                                        With motor experience = without
+                                                                                                                                                Hancock and Ste-Marie,                                      Flessas et al.,
+
+                                                                                         decision-making accuracy
+                                                                                                                                                2013—Ice Hockey                                             2015—Rhythmic
+                                                                                                                                                                                                            Gymnastics
+                                                                                                                                                                                                            Moore et al., 2019—Rugby
+
+                                        # of fixations:                                                                                         *The referees in the study by Luis et al. (2015) were of the same level, and therefore 11 of
+                                        High level > low level for whole skill and for                                                          the 12 reviewed studies are included here.
+                                                                                                                                                **Did not report performance variables.
+                                        landing phase                                                                                           # This study was placed here despite the reported difference in fixation location after the
+
+                                        With motor experience > without, for whole                                                              pass occurred in an offside decision-making task in association football. We consider that
+                                        skill                                            Search rate (fixations·s−1 )                           this difference may not have affected performance, as all other gaze variables were similar
+                                                                                                                                                between the international and national referees.
+                                        # of Fixations on head and arms:                 Elite < trainee < player
+                                                                                         Entropy:
+                                        High level > low level
+                                                                                         Elite, trainees < players
+
+
+
+
+                        Gaze behavior
+                                        # of Fixations on legs:                          Percentage viewing time:                               the wrong location. At larger viewing angles, more fixations of
+                                        With motor experience > without                  Central-pack:
+                                                                                         Elite, trainee > players
+                                                                                                                                                longer durations were made to the passing player immediately
+                                        Fixation duration:                                                                                      before the pass. In addition, more fixations of longer durations
+                                                                                         outer-pack, and non-pack:
+                                        With motor experience > without                  Elite, trainee < players                               were directed to the middle area between the passing and the
+                                                                                                                                                receiving attacking players. This may represent an attempt to use
+
+                                        Judge videos of handsprings forward with
+                                                                                                                                                peripheral visual information from both the passing player and
+                                                                                         Decide on possible infractions while
+                                                                                                                                                the offside line.
+                                                                                         watching 10 videos of scrum situations
+                                                                                                                                                    Finally, one study (Spitz et al., 2016) examined gaze behavior
+                                                                                                                                                and decision accuracy of elite and sub-elite referees when
+
+                                        a half turn on/half turn off on a vault Each
+                                                                                         (5–25 s in duration) on an 83-inch screen              judging videos of foul-play situations during open play and
+                                                                                                                                                during corner kicks. In each situation, the referees were asked
+                                                                                         Four possible decisions:                               to make a technical decision (e.g., penalty kick, free kick) as
+                                                                                                                                                well as a disciplinary decision (e.g., yellow, red, or no card).
+
+                                        video lasted ∼4.27 s
+                                                                                         Play on, reset, penalty attacking team,
+
+                        Procedure
+                                                                                                                                                During open play, elite referees were much more accurate than
+                                                                                                                                                sub-elite referees in making disciplinary calls (61 vs. 45.3%,
+                                                                                         penalty defending team                                 respectively) but not technical calls (54.5 vs. 49.5%, respectively).
+                                                                                                                                                In contrast, during corner kicks, elite referees were more
+                                                                                         Elite referees from highest
+                                        High-level (n = 15) and                          division of professional                               accurate than sub-elite referees in making technical calls (69.5
+                                        low-level (n = 20)                               rugby (n = 9), trainee                                 vs. 56.8%, respectively) but not disciplinary calls (82.5 vs. 82.6%,
+                                                                                         referees from a                                        respectively). There were no differences between the two groups
+                                        gymnastics judges with or
+                                                                                         university-based academy,                              in the number and duration of fixations. However, compared to
+
+
+                        Participants
+                                        without specific motor                           refereeing lower competitive
+                                                                                         levels (n = 9), experienced
+                                                                                                                                                sub-elite referees, elite referees spent more time fixating on the
+                                        experience as an athlete in                                                                             contact zone of the attacker in open play situations and also spent
+                                                                                         rugby players who never
+                                        gymnastics                                       refereed (n = 9)                                       more time (although only nearing significance) fixating on the
+                                                                                                                                                contact zone in a corner kick situation. The results of this study
+                                                                                                                                                suggest that gaze behavior of referees is related to their decision
+
+                                        Gymnastics
+                                                                                                                                                accuracy in assessing foul play.
+                        Sport                                                            Rugby
+                                                                                                                                                    In summary, it appears that in offside situations the difference
+
+
+
+
+  TABLE 2 | Continued
+                                                                                                                                                in decision-making accuracy between groups of referees is
+                                                                                                                                                not related to the foveal visual information (constituting the
+                                                                                                                                                area of maximum visual acuity and color discrimination) they
+                                        Pizzera et al.,
+
+                        References
+                                                                                         Moore et al.,                                          attend to and that ARs should fixate on the offside line at
+                                                                                                                                                the time of the pass. The lack of difference in gaze behavior
+                                        2018                                             2019                                                   between different levels of referees, and the higher decision
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org                                                                                 7                                             November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                              Gaze Behavior of Referees
+
+
+
+accuracy in expert referees, suggest that the expert referees             gymnast more often than the less-experienced judges (31.5
+use other perceptual–cognitive strategies for their decisions.            vs. 14% of all fixations, respectively). This trend was reversed
+For example, Larkin et al. (2018) used qualitative methodology            for gazing at the gymnast’s legs (17.5 vs. 27.5%, respectively).
+to evaluate three Australian Football umpires and observed                In addition, the experienced judges made fewer errors (∼12)
+three themes related to cognitive processes and decision                  compared to the less-experienced judges (∼21).
+making: knowledge of game-play, player intention during game-                 In another study (Pizzera et al., 2018), 35 gymnastics judges
+play, and decision evaluation—the process that leads to the               were asked to judge video clips of vault exercises. The judges
+actual decision. In addition, Spitz et al. (2018) reported that,          were divided into high- or low-level, based on their official
+compared with sub-elite referees, elite referees were better at           judging license as well as on whether they had motor experience
+anticipating (by using advance cues) and recalling foul plays.            in performing vault exercises. Similar to Bard et al. (1980),
+It is also possible that expert referees are better at extracting         high-level judges made more fixations on the head and arms
+relevant information from their peripheral vision; this should            but also made more total fixations. This was accompanied by
+be examined in future research. The use of peripheral vision              improved judging performance. However, judges with specific
+may be of greater importance for ARs’ decisions as the viewing            motor experience made more fixations on the legs compared to
+angle between the passing and the receiving player increases.             those who did not have any motor experience. Those with motor
+However, these suggestions may not be accurate when foul-play             experience also presented longer fixation durations compared
+decisions are being made, since the one study on this topic               to those without motor experience. These differences did not
+found differences in gaze behavior between referees of different          materialize into differences in judging performance.
+skill levels.                                                                 A third study (Flessas et al., 2015) examined the performance
+                                                                          and gaze behavior of international, national, and novice
+Softball                                                                  rhythmic gymnastics judges who judged videos of a five-gymnast
+One study examined the gaze behavior of behind-the-plate                  ensemble performing two exercises (hoops, ribbons and ropes).
+umpires in fast-pitch softball (Millslagle et al., 2013). Compared        International judges performed better than national and novice
+to the four inexperienced umpires who participated in this study          judges. However, the judges’ performance was relatively poor, as
+(<1 year of experience calling pitches behind the plate), the             international judges reported ∼40% of the performance errors
+four experienced umpires (>10 years of experience) showed a               and national and novice judges reported ∼20% of the errors.
+more economical gaze behavior (i.e., lower number of fixations,           As the authors suggested, these results are not surprising as the
+saccades, and blinks), earlier onset and longer duration of               task of keeping track of five gymnasts at one time is a difficult
+fixations on the ball release area, and longer tracking of the            one. As for the judges’ gaze behavior, novices spent more time
+ball in flight. Unfortunately, accuracy in calling strikes or balls       gazing at the errors that they eventually reported compared to
+was not reported in this study, and therefore it is not known             the errors that they missed. In contrast, there was no difference
+whether the differences in gaze behavior were related to the              between the time international judges and national judges gazed
+umpires’ performance.                                                     at reported and missed errors. This finding suggests that due to
+    Calling a strike or a ball accurately and consistently is a           their inexperience, novice judges may need more time to process
+challenging perceptual judgment (DeLong, 2017) and is crucial             an error, and therefore they have a higher chance of missing
+in the game of softball or baseball. Umpires in Major League              errors that occur simultaneously at different locations. Unlike
+Baseball are mostly accurate and, at least according to one               novice judges, who were not efficient at detecting errors (i.e.,
+source (Moskowitz and Wertheim, 2011), make erroneous strike              longer fixations on errors yet a lower probability of reporting
+or ball calls only 14.4% of the time. This level of accuracy is           errors), national judges showed a much higher efficiency (i.e.,
+impressive, given the ball’s velocity and spin and the very short         a higher proportion of fixated errors were reported). However,
+time it takes to reach home plate. As the decision making behind          the international-level judges did not show such efficiency. As
+the plate is a classic perceptual–cognitive task based on visual          the authors suggested, this finding may suggest that international
+information, we propose that it should be investigated further.           judges rely on other cognitive processes to detect errors. It is
+Understanding the gaze behavior of expert baseball umpires                possible, for example that (a) their experience allows them to use
+may allow this knowledge to be incorporated into gaze training            much shorter fixation durations to assess errors, (b) they may
+for umpires.                                                              rely more on peripheral vision, and (c) they may be better at
+                                                                          anticipating and detecting errors.
+Gymnastics and Rhythmic Gymnastics                                            In summary, the findings that emerged from the three
+We found three studies examining gaze behavior of judges in               abovementioned studies suggest that gaze behavior is related to
+gymnastics and rhythmic gymnastics (Bard et al., 1980; Flessas            judging performance in gymnastics but that this relationship
+et al., 2015; Pizzera et al., 2018). Bard and colleagues found no         is less apparent in rhythmic gymnastics. Specifically, it appears
+statistically significant differences between four experienced and        that more experienced judges make more fixations in general,
+three less-experienced judges. However, due to the large effect           and specifically they fixate their gaze to the head and the arms.
+sizes, these differences may be meaningful. More specifically, the        However, it remains to be seen whether this gaze behavior can
+experienced judges made fewer total fixations (82) compared to            be taught and therefore lead to improved judging performance.
+the less-experienced judges (112). In addition, the experienced           For acquiring this instructional knowledge, gaze-training studies
+judges directed their gaze toward the head and arms of the                are required.
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org           8                                 November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                                 Gaze Behavior of Referees
+
+
+
+Ice Hockey                                                                 referees, while both groups made fewer fixations per second
+We found one study that examined gaze behavior and                         compared to the players.
+decision making in ice hockey referees (Hancock and Ste-                       This finding is in contrast to the findings of Hancock and
+Marie, 2013). High-level and low-level referees (the higher-               Ste-Marie (2013), who found no differences in gaze behavior
+level referees were recruited from Junior and Under-18 AAA                 between higher-level and lower-level referees in ice hockey. One
+leagues, while the lower-level referees were recruited from youth          possible explanation for this difference is the variations in the
+ice hockey) were asked to make decisions about infractions                 size of the monitor on which the videos were played (30 vs.
+while watching 3- to 6-s video clips. While the higher-                    83-inch for Hancock and Ste-Marie, 2013; Moore et al., 2019,
+level referees showed greater accuracy and more sensitivity                respectively). Another possible explanation is that search rate
+compared to the lower-level referees, gaze behavior did not                is a more sensitive measure for differences between levels of
+differ between the two. These results suggest that, compared               expertise, and this measure was not used by Hancock and Ste-
+to lower-level referees, higher-level referees use cognitive               Marie (2013). As Moore et al. (2019) suggested, it is also possible
+processes that allow them to extract and process relevant                  that the differences in gaze behavior are due to differences in
+visual information. It is possible, for example, that higher-              task requirements. Indeed, scrum scenarios in rugby are rather
+level referees can more effectively compare what they see to               static, while ice hockey plays are more dynamic. Lastly, it is worth
+what is stored from experience in their long-term memory                   noting that the 83-inch screen in Moore et al. (2019) study allows
+(Ericsson and Kintsch, 1995).                                              for a better representation of the actual refereeing task because it
+    However, other explanations for these findings are                     allows for more realistic viewing angles and, as such, is better for
+noteworthy. First, as the authors of this study (Hancock                   assessing the relationship between perception and action in sport
+and Ste-Marie, 2013) argued, gaze behavior when looking at                 (Dicks et al., 2009).
+a 30-inch screen differs from gaze behavior in real situations.
+Indeed, it is likely that the larger visual field in a real game
+requires more dynamic gaze and eye movements (see, for                     Team Handball
+example, Gegenfurtner et al., 2011). Second, the participants in           In our search, we found one case study that examined gaze
+this study were not expert referees. It is possible that differences       behavior of two team-handball referees during a training game
+in gaze behavior would have been noticed if expert referees from           (Fasold et al., 2018). Among the 12 studies discussed in our
+the National Hockey League had been assessed in this study.                review, this study is the only one that attempted to examine
+Finally, the gaze variables in this study were rather general (i.e.,       shared gaze behavior of the referees. The results of the study
+number of fixations, average fixation duration). It is possible            showed that the referees mostly fixated on the same area in the
+that differences between the referees would have been found if             field of play, and this was usually where the action with the
+measures of visual search relating to specific areas of interest           ball took place. In only about 15% of the cases did one referee
+had been analyzed. For example, it would be interesting to know            fixate on the area of action with the ball, and the other referee
+if the two groups of referees spent their time gazing at specific          fixated on the area of action without the ball. Unfortunately,
+bodily areas differently (e.g., fixating more or less on the torso,        the referees’ decision-making accuracy was not evaluated, and
+hands, or head), or at the hockey stick. Finally, it is possible           therefore it is not known whether the team gaze behavior led to
+that the structure of the visual search (i.e., a more structured           erroneous decisions. On the one hand, when both referees gaze
+vs. a more random visual search) differed between the referees.            at the same location, they may miss possible infractions that are
+Additional studies should use gaze variables, such as these,               taking place away from the ball. On the other hand, gazing at the
+because they may shed more light on the underlying processes of            same location can improve decision making when the situation is
+expert judgment in ice hockey.                                             dynamic and rapidly changing.
+                                                                               Regardless, this case study shows that evaluating team gaze
+Rugby                                                                      behavior is possible. This is important, since improved or
+One study examined gaze behavior and performance of elite                  optimal shared gaze behavior can lead to better decision-making
+referees, trainee referees, and players in rugby (Moore et al.,            processes in the dynamic situations that are often encountered by
+2019). When watching videos of scrum scenarios, elite and                  referees in various team sports. In such situations, it is usually not
+trainee referees made more accurate judgments (53–58%                      the individual referee that makes the correct decision. Rather, it
+accuracy) compared to the rugby players (39%). The similar                 is the team of referees that makes the correct decision. Therefore,
+judgment accuracy between elite and trainee referees can be                it is the team’s shared gaze, shared cognition, and shared decision
+explained by the relatively substantial experience (∼4 years)              making that should be studied.
+acquired by the trainee referees.
+   Compared to the rugby players, elite and trainee referees had
+lower search entropy values (indicating a more structured search)          METHODOLOGICAL CONCERNS,
+and had a higher percentage of viewing time toward the central-            RESEARCH LIMITATIONS AND FUTURE
+pack and a lower percentage of viewing time toward the outer-              RESEARCH
+pack and to non-pack areas. The one gaze variable that differed
+between elite and trainee referees was the search rate. Elite              Based on the reviewed studies, seven methodological concerns
+referees made fewer fixations per second compared to trainee               are discussed—six specific and one general. Each concern leads
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org            9                                   November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                                      Gaze Behavior of Referees
+
+
+
+to ideas or principles that are relevant for carrying out additional           Fiore and Salas, 2006; see also Silva et al., 2013, for an ecological
+studies on gaze behavior in referees in sport.                                 dynamics approach). Finally, these studies also discuss the
+                                                                               importance of shared cognition for the performance of a team of
+Missing Theoretical Background                                                 players, and insights from this literature can be extended to teams
+Both the “expert performance approach” (Ericsson and Smith,                    of referees.
+1991) and the theories of visual search and visual attention
+(for reviews, see Wolfe and Horowitz, 2017; Wolfe, 2018;                       Lack of Studies on Peripheral Vision
+see also Gegenfurtner et al., 2011 for a somewhat different                    The role of peripheral vision in expert performance has been
+approach) are available in the literature for understanding                    examined in athletes in various sports (for a review of results
+the underlying processes related to visual search behavior and                 and research methodologies on this topic, see Vater et al.,
+expertise. Explaining these theories is beyond the scope of this               2019). Indeed, peripheral vision provides us with relevant visual
+review. However, most of the reviewed studies fail to address                  information, even though visual acuity and color perception
+these theories (Moore et al., 2019, is an exception). To further               decline in the periphery (Rosenholtz, 2016). However, none of
+evaluate the underlying mechanisms related to visual search                    the studies in the current review examined peripheral vision.
+and expertise in referees, we suggest that future work should                  This is unfortunate, as much of the information that can be
+consider these theories when designing research and selecting                  obtained from peripheral vision could be useful for referees. For
+gaze variables.                                                                example, it is probable that ARs who judge offside situations
+    An example from the current review is noteworthy. In one of                in association football use information from their peripheral
+the reviewed studies (Moore et al., 2019), the authors addressed               vision. That is, these referees fixate on the offside line, and if
+the possibility that their findings are in line with the information           the visual field is not large they may also perceive the passing
+reduction hypothesis (Haider and Frensch, 1999). In general, this              player in their peripheral vision. We suggest that it is vision as
+hypothesis suggests that experts make more fixations of longer                 a whole that leads to optimal perception, and not solely foveal
+durations to relevant areas in the visual field, and fewer fixations           vision. Indeed, a relationship between peripheral information
+of shorter durations to areas that are irrelevant to the task at hand.         processing and superior offside decision making was already
+Indeed, Moore et al. (2019) measured gaze to specific areas of                 reported by Hüttermann et al. (2018). Therefore, future studies
+interest and found differences between experts and novices. In                 should assess both foveal and peripheral vision in order to obtain
+contrast, another study (Hancock and Ste-Marie, 2013) did not                  a more complete understanding of the impact of gaze behavior
+report gaze differences between higher- and lower-level referees.              on decision making in referees.
+However, the gaze variables used in this study did not allow                      For example, researchers can study peripheral vision by
+for analyzing areas of interest in a visual field. Recording and               blurring the video and allowing participants to see clearly only
+analyzing appropriate gaze variables will allow researchers to                 in their foveal visual field. Ryu et al. (2015) implemented this
+assess whether their results are in line with a certain visual search          method to examine the contribution of peripheral vision and
+theory. Specifically, the number and duration of fixations on                  central vision in basketball. In their study, participants saw a clear
+relevant areas of interest, the scan pattern systematicity, and the            image at a visual field of 2.5◦ around their fixation point, and
+measures of one’s visual span (i.e., latency to the first fixation on a        the rest of the image was blurred. This viewing condition can
+relevant area of interest and the length of saccade amplitudes)                then be compared to regular viewing conditions (no blur), and
+can provide meaningful information related to search theories                  even to conditions that show peripheral areas clearly and blur
+(Gegenfurtner et al., 2011).                                                   central vision.
+
+Lack of Studies on Gaze Behavior of a                                          Lack of Studies in Ecologically Valid
+Team of Referees                                                               Conditions
+In most team sports (e.g., association football, basketball, ice               Out of the 12 reviewed studies, only three measured gaze
+hockey), it is a team of referees—rather than one referee—that                 behavior in real playing conditions: one in association football
+is responsible for making accurate decisions. Consequently, it is              (Schnyder et al., 2017), one in fast-pitch softball (Millslagle et al.,
+primarily the team’s coordinated gaze behavior that will lead to               2013), and one in team handball (Fasold et al., 2018). In the
+appropriate refereeing performances. We found only one study                   remaining nine studies, referees viewed videos on screens of
+that examined gaze behavior of a team of two referees (Fasold                  different sizes. Viewing videos on TV or computer screens does
+et al., 2018). This study showed that the referees’ joint gaze                 not represent the actual task on the field. More specifically, under
+behavior mostly fixated on the same areas; however, we cannot                  such task conditions the referee is usually seated—rather than
+determine whether this improves or obstructs decision making                   standing, walking, or running as in actual competition/game
+because the authors did not report decision accuracy. With the                 conditions—and the visual field is much smaller, especially
+availability of relatively inexpensive and accurate wearable eye               when the monitors are rather small. It has been argued that
+trackers, we suggest that conducting such research is timely and               to study perception and action in sport, task design should
+will greatly advance our knowledge on refereeing and decision                  be as representative as possible of the real conditions (Dicks
+making in team sports. These studies will also complement (and                 et al., 2009). It is likely that more realistic scenes contain
+gain insights from) the available literature on team cognition or              more details, which often generate background interferences as
+team coordination in sport (e.g., Eccles and Tenenbaum, 2004;                  well. Under such conditions, the differences between expert and
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org               10                                    November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                               Gaze Behavior of Referees
+
+
+
+less-expert referees may be more pronounced. In this respect,             Gaze Behavior, Cognitive Strategies and
+Kredel et al. (2017) suggested that eye-tracking studies strive,          Decision Making
+among other things, to include realistic viewing conditions and           While gaze behavior allows referees to attend to relevant
+naturalistic responses on the one hand and robust measurements            stimuli, many other factors interact and lead to better or
+on the other hand. However, achieving accurate and robust                 worse decisions. Fatigue, stress, physical fitness, environmental
+eye-tracking measurements in ecologically valid conditions can            conditions, experience, anticipation, knowledge of game-play,
+be difficult. Here, like in other research domains, researchers           and the player’s intentions (Larkin et al., 2018) are some of
+are faced with a choice between external and internal validity            the factors that, in addition to the referees’ gaze behavior,
+(Kredel et al., 2017).                                                    will lead to a specific decision. The fact that several cognitive
+    We suggest that researchers should try to mimic actual                processes, physical fitness, and environmental conditions interact
+conditions as much as possible when studying the performance              with gaze behavior and lead to good (or bad) decision making
+of referees. This can be done on a real field or by using virtual         may explain the contradictory results in the reviewed studies.
+reality (VR) with high functional fidelity. While data on the             It is possible that with similar gaze behavior and attention to
+transferability of VR to real-life situations are limited, recent         visual stimuli, expert referees use certain cognitive processes
+studies have shown that training athletes for decision making             to better advantage than less-expert referees. Hence, future
+in a VR environment can be generalized to the real game (Pagé             studies should use a more holistic approach and study gaze
+et al., 2019). Therefore, VR is worth further examination. We also        behavior alongside cognitive process, physical constraints, and
+suggest that researchers should project videos on large screens           environmental constraints.
+that represent, as closely as possible, the actual field of view
+of the referee in a real match. Researchers should also film              Other General Methodological Concerns
+such videos from the correct first-person position of the referee         Several of the reviewed studies used relatively small sample sizes
+in a match. Paying attention to such details can improve the              and did not report either the statistical power or corrections for
+ecological validity of video-based studies.                               multiple comparisons. While it can be difficult to recruit enough
+    In this respect, two video-based studies are noteworthy.              referees to meet the required statistical power, researchers should
+Catteeuw et al. (2010a) showed that off-field offside decision-           always correct for multiple comparisons. In addition, the variety
+making training using video clips and computer animations                 of aims and dependent variables restricts our ability to generalize
+should be considered as part of training because they help                referees’ gaze behavior. Researchers who wish to examine the
+the referees to gain more experience and to improve overall               relationship between gaze behavior and decision making in
+decision-making performance on the field. Another study (Put              referees should first decide on their objective (e.g., training
+et al., 2013) showed that perceptual–cognitive skill training             study, observational study); clearly choose the methodology that
+using a web-based application results in a positive and direct            will allow proper statistical power (e.g., a repeated-measure
+transfer to on-field offside decisions. It was argued that the            design may improve statistical power when the researcher
+structure and content of the web-based training intervention              knows that the sample size will be small); and choose the
+mimicked the perceptual difficulties of real-match situations             relevant independent and dependent variables [e.g., what are
+and therefore helped the assistant referees to mediate and                the important variables—fixations? saccades? dwell times on
+enhance their offside decision-making skills, both on- and off-           a specific area of interest (AOI)?]. Then, researchers should
+field. While eye movements were not recorded in either of                 assess whether they have access to the required eye tracking
+the studies, their results showed that video-based and online             hardware and software, e.g., if saccades and micro-saccades are
+training may be beneficial for performance in ecologically                important, a 30- or 60-Hz eye tracker may not be sufficient,
+valid conditions.                                                         but for saccades larger than 5◦ , 200 Hz is sufficient (Andersson
+                                                                          et al., 2010). Finally, if possible, researchers should pre-register
+                                                                          their study.
+Lack of Qualitative Studies
+A recent review of sport officiating by Hancock et al. (2020)
+showed that most studies used quantitative methodologies (e.g.,           RECOMMENDED GAZE VARIABLES TO
+78.5% of studies from 2010 to 2018). Similarly, all studies               MEASURE
+included in the current review used quantitative methodologies.
+Quantitative analyses are appropriate for measures of gaze                In most cases, researchers should decide on important AOIs in
+behavior, but incorporating qualitative methodologies can                 the referee’s visual field and measure dwell times and number
+improve our understanding of the complex decision-making                  of dwells to AOIs. This can be difficult in dynamic situations
+tasks that referees face (see, e.g., Larkin et al., 2018). We can         where these AOIs move and specialized algorithms or software
+ask referees what they usually attend to in certain situations,           are required. For example, in gymnastics, AOIs can include the
+whether they have specific visual strategies, how they work               tablet or notebook in which scores are recorded, or the gymnast’s
+together to attend to most relevant occurrences in the field              lower body and upper body. These AOIs move when the gymnast
+of play, etc. In addition, qualitative analyses may allow                 moves and when the head of the judge moves.
+researchers to assess how referees process and interpret                     In dynamic and fast-moving sports (e.g., association football,
+visual information.                                                       ice-hockey), referees should attend to players’ movements across
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org          11                                  November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                                                          Gaze Behavior of Referees
+
+
+
+large areas, and they must use saccades to shift their gaze between                       PRACTICAL IMPLICATIONS—THE
+several locations. In such conditions, researchers should also                            MISSING LINK
+measure (regardless of specific AOIs) the number and duration
+of fixations and saccades, and saccade amplitudes. As mentioned                           Due to the small number of studies (n = 12), as well as to
+earlier, the ability to measure saccades accurately depends, among                        the diverse findings of these studies (see Table 3), practitioners
+other things, on the sampling rate of the eye tracking system.                            should adopt a careful approach if they plan to implement
+    Although eye-tracking technology has improved significantly                           gaze-training programs for referees. Indeed, five of the reviewed
+over recent years, obtaining reliable results from wearable eye                           studies reported differences in both performance and gaze
+trackers is often overestimated (Hessels et al., 2020). Researchers                       behavior between referees, but in four studies referees of a
+should keep this in mind when attempting to record gaze                                   higher skill outperformed referees of a lower skill without
+behavior in naturalistic settings, and include the eye-tracking                           an apparent difference in gaze behavior. We can explain the
+technology they use in their decisions on study objectives                                contradictory findings by (a) the differences in environmental
+and design.                                                                               conditions and tasks, (b) the differences in defining “expert”
+                                                                                          and “novice” referees—an expert referee who makes few decision
+CAN WE GENERALIZE KNOWLEDGE                                                               errors is not necessarily the referee with the most experience,
+                                                                                          but experience (rather than performance) is often used to
+FROM ONE SPORT TO ANOTHER?                                                                differentiate experts from novices, (c) the differences in the
+We suggest that in a number of sports referees’ gaze behavior                             way referees interpret the visual information they attend to,
+is probably similar, and hence it is possible that results from a                         and (d) the unknowns regarding the role of team or shared
+study on one sport can be generalized to another. For example,                            gaze behavior.
+games like ice hockey and association football require referees                               Regardless of the underlying reasons, data are insufficient to
+to constantly move and position themselves in locations where                             suggest how gaze behavior assists skilled referees to perform
+they can view the action. Gaze behavior in both sports should                             better than their less-skilled counterparts. Additional knowledge
+include fixations on relevant AOIs (where the action takes place,                         should be gained before gaze training can be appropriately and
+for example).                                                                             effectively used in programs designated to improve the gaze
+    In contrast, it is unlikely that the gaze behavior of softball                        behavior of referees in sport.
+umpires will be relevant to the gaze behavior of ice hockey                                   Practitioners who work with referees are advised to take
+or association football referees. Softball umpires are mostly                             into account evidence-based knowledge when developing
+stationary and are required to see details, such as the ball location                     training programs aimed at facilitating improved gaze behavior.
+as it passes home plate or whether the ball reaches the glove                             Presumably, such training programs can benefit the referee in
+of an infielder before the foot of the base runner touches the                            his or her visual attention and decision-making processes that
+base. This requires fixating within a relatively small AOI and is                         take place in actual competitions/games. However, considering
+different from the larger visual fields that football or ice hockey                       all the findings of our review, we maintain that at this stage of
+referees need to cover. However, gymnastics judges and softball                           inquiry, evidence-based knowledge on gaze behavior in referees
+umpires may share some commonalities. Like umpires in softball                            in sport will mainly assist researchers, but not practitioners, in
+or baseball, judges in gymnastics look at a small AOI—the athlete                         their future work.
+itself—and attend to small details (e.g., did the legs stay straight
+during a jump?).                                                                          AUTHOR CONTRIBUTIONS
+    In summary, in cases where the job description of referees is
+similar—if, for example, in both sports the referees are mostly                           GZ and RL wrote the first draft. GZ, SZ, and SB conducted the
+stationary (or mobile), and if in both sports the visual field is                         literature search. SZ, SB, and WH edited and contributed to the
+narrow (or wide)—transfer of knowledge between the sports                                 final version of the manuscript. All authors critically reviewed
+remains possible.                                                                         and contributed to the manuscript.
+
+
+
+REFERENCES                                                                                Catteeuw, P., Gilis, B., Jaspers, A., Wagemans, J., and Helsen, W. (2010a). Training
+                                                                                             of perceptual-cognitive skills in offside decision-making. J. Sport Exerc. Psychol.
+Andersson, R., Nyström, M., and Holmqvist, K. (2010). Sampling frequency and                 32, 845–861. doi: 10.1123/jsep.32.6.845
+   eye-tracking measures: how speed affects durations, latencies, and more. J. Eye        Catteeuw, P., Gilis, B., Wagemans, J., and Helsen, W. F. (2010b).
+   Mov. Res. 3:6. doi: 10.16910/jemr.3.3.6                                                   Perceptual-cognitive skills in offside decision making: expertise and
+Bard, C., Fleury, M., Carrière, L., and Hallé, M. (1980). Analysis of                        training effects. J. Sport Exerc. Psychol. 32, 828–844. doi: 10.1123/jsep.
+   gymnastics judges’ visual search. Res. Q. Exerc. Sport. 51, 267–273.                      32.6.828
+   doi: 10.1080/02701367.1980.10605195                                                    Catteeuw, P., Helsen, W. F., Gilis, B., van Roie, E., and Wagemans, J. (2009).
+Bar-Eli, M., Plessner, H., and Raab, M. (2011). Judgment, Decision Making and                Visual scan patterns and decision-making skills of expert assistant referees
+   Success in Sport. Chichester: Wiley-Blackwell.                                            in offside situations. J. Sport Exerc. Psychol. 31, 786–797. doi: 10.1123/jsep.
+Brams, S., Ziv, G., Levin, O., Spitz, J., Wagemans, J., Williams, A. M., et al.              31.6.786
+   (2019). The relationship between gaze behavior, expertise, and performance:            DeLong, J. E. (2017). Neuropsychology behind the plate. Sport Ethics Philos. 11,
+   a systematic review. Psychol. Bull. 145:980. doi: 10.1037/bul0000207                      385–395. doi: 10.1080/17511321.2017.1311367
+
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org                          12                                           November 2020 | Volume 2 | Article 572891
+Ziv et al.                                                                                                                                             Gaze Behavior of Referees
+
+
+
+Dicks, M., Davids, K., and Button, C. (2009). Representative task design for the             Millodot, M. (2017). Dictionary of Optometry and Vision Science E-Book.
+   study of perception and action in sport. Int. J. Sport Psychol. 40, 506–524.                  Amsterdam: Elsevier Health Sciences.
+Eccles, D. W., and Tenenbaum, G. (2004). Why an expert team is more                          Millslagle, D. G., Smith, M. S., and Hines, B. B. (2013). Visual gaze behavior of near-
+   than a team of experts: a social-cognitive conceptualization of team                          expert and expert fast pitch softball umpires calling a pitch. J. Strength Condit.
+   coordination and communication in sport. J. Sport Exerc. Psychol. 26, 542–560.                Res. 27, 1188–1195. doi: 10.1519/JSC.0b013e318269ab15
+   doi: 10.1123/jsep.26.4.542                                                                Moore, L. J., Harris, D. J., Vine, S. J., Wilson, M. R., and Sharpe, B. T. (2019).
+Ericsson, K. A., and Kintsch, W. (1995). Long-term working memory. Psychol. Rev.                 Perceptual-cognitive expertise when refereeing the scrum in rugby union. J.
+   102, 211–245. doi: 10.1037/0033-295X.102.2.211                                                Sports Sci. 37, 1778–1786. doi: 10.1080/02640414.2019.1594568
+Ericsson, K. A., and Smith, J. (1991). Toward a General Theory of Expertise:                 Moskowitz, T., and Wertheim, L. J. (2011). Scorecasting: The Hidden Ifluences
+   Prospects and Limits. Cambridge: Cambridge University Press.                                  Behind How Sports are Played and Games are Won. Amsterdam: Three
+Fasold, F., Noël, B., Wolf, F., and Hüttermann, S. (2018). Coordinated                           Rivers Press.
+   gaze behaviour of handball referees: a practical exploration with                         Nijhawan, R. (1994). Motion extrapolation in catching. Nature 370, 256–257.
+   focus on the methodical implementation. Move. Sport Sci. 102, 71–79.                          doi: 10.1038/370256b0
+   doi: 10.1051/sm/2018029                                                                   Pagé, C., Bernier, P. M., and Trempe, M. (2019). Using video simulations and
+Fiore, S. M., and Salas, E. (2006). Team cognition and expert teams: developing                  virtual reality to improve decision-making skills in basketball. J. Sports Sci. 37,
+   insights from cross–disciplinary analysis of exceptional teams. Int. J. Sport                 2403–2410. doi: 10.1080/02640414.2019.1638193
+   Exerc. Psychol. 4, 369–375. doi: 10.1080/1612197X.2006.9671803                            Pizzera, A., Möller, C., and Plessner, H. (2018). Gaze behavior of gymnastics judges:
+Flessas, K., Mylonas, D., Panagiotaropoulou, G., Tsopani, D., Korda, A., Siettos, C.,            where do experienced judges and gymnasts look while judging? Res. Q. Exerc.
+   et al. (2015). Judging the judges’ performance in rhythmic gymnastics. Med. Sci.              Sport 89, 112–119. doi: 10.1080/02701367.2017.1412392
+   Sports Exerc. 47, 640–648. doi: 10.1249/MSS.0000000000000425                              Put, K., Wagemans, J., Jaspers, A., and Helsen, W. (2013). Web-based training
+Gegenfurtner, A., Lehtinen, E., and Säljö, R. (2011). Expertise differences                      improves on-field offside decision-making performance. Psychol. Sport Exerc.
+   in the comprehension of visualizations: A meta-analysis of eye-tracking                       14, 577–585. doi: 10.1016/j.psychsport.2013.03.005
+   research in professional domains. Educ. Psychol. Rev. 23, 523–552.                        Rosenholtz, R. (2016). Capabilities and limitations of peripheral vision.
+   doi: 10.1007/s10648-011-9174-7                                                                Ann. Rev. Vision Sci. 2, 437–457. doi: 10.1146/annurev-vision-082114-
+Gilis, B., Helsen, W., Catteeuw, P., Van Roie, E., and Wagemans, J. (2009).                      035733
+   Interpretation and application of the offside law by expert assistant referees:           Ryu, D., Abernethy, B., Mann, D. L., and Poolton, J. M. (2015). The contributions
+   Perception of spatial positions in complex dynamic events on and off the field.               of central and peripheral vision to expertise in basketball: how blur helps
+   J. Sports Sci. 27, 551–563. doi: 10.1080/02640410802702178                                    to provide a clearer picture. J. Exp. Psychol. 41, 167–185. doi: 10.1037/a00
+Haider, H., and Frensch, P. A. (1999). Eye movement during skill acquisition: more               38306
+   evidence for the information-reduction hypothesis. J. Exp. Psychol. 25, 172–190.          Schnyder, U., Koedijker, J. M., Kredel, R., and Hossner, E.-J. (2017). Gaze behaviour
+   doi: 10.1037/0278-7393.25.1.172                                                               in offside decision-making in football: a field study. German J. Exerc. Sport Res.
+Hancock, D. J., and Ste-Marie, D. M. (2013). Gaze behaviors and decision making                  47, 103–109. doi: 10.1007/s12662-017-0449-0
+   accuracy of higher- and lower-level ice hockey referees. Psychol. Sport Exerc. 14,        Silva, P., Garganta, J., Araújo, D., Davids, K., and Aguiar, P. (2013). Shared
+   66–71. doi: 10.1016/j.psychsport.2012.08.002                                                  knowledge or shared affordances? Insights from an ecological dynamics
+Hancock, D. J., Bennett, S., Roaten, H., Chapman, K., and Stanley, C. (2020). An                 approach to team coordination in sports. Sports Med. 43, 765–772.
+   analysis of literature on sport officiating research. Res. Q. Exerc. Sport. 1–11.             doi: 10.1007/s40279-013-0070-9
+   doi: 10.1080/02701367.2020.1756198. [Epub ahead of print].                                Spitz, J., Put, K., Wagemans, J., Williams, A., and Helsen, W. F. (2016). Visual
+Helsen, W., and Bultynck, J. B. (2004). Physical and perceptual-cognitive demands                search behaviors of association football referees during assessment of foul play
+   of top class refereeing in association football. J. Sports Sci. 22, 179–189.                  situations. Cogn. Res. 1:12. doi: 10.1186/s41235-016-0013-8
+   doi: 10.1080/02640410310001641502                                                         Spitz, J., Put, K., Wagemans, J., Williams, A. M., and Helsen, W. F.
+Henderson, J. M. (2003). Human gaze control during real-world scene perception.                  (2018). The role of domain-generic and domain-specific perceptual-cognitive
+   Trends Cogn. Sci. 7, 498–504. doi: 10.1016/j.tics.2003.09.006                                 skills in association football referees. Psychol. Sport Exerc. 34, 47–56.
+Hessels, R. S., Niehorster, D. C., Holleman, G. A., Benjamins, J. S., and Hooge,                 doi: 10.1016/j.psychsport.2017.09.010
+   I. T. (2020). Wearable technology for “real-world research”: realistic or not?            Vater, C., Kredel, R., and Hossner, E. J. (2017). Examining the functionality of
+   Perception 49, 611–615. doi: 10.1177/0301006620928324                                         peripheral vision: from fundamental understandings to applied sport science.
+Hüttermann, S., Helsen, W. F., Put, K., and Memmert, D. (2018). Does visual                      Curr. Issues Sport Sci. 2, 1–11. doi: 10.15203/CISS_2017.010
+   attention impact on decision making in complex dynamic events? J. Sport Exerc.            Vater, C., Williams, A. M., and Hossner, E.-J. (2019). What do we see out of
+   Psychol. 40, 163–166. doi: 10.1123/jsep.2017-0169                                             the corner of our eye? The role of visual pivots and gaze anchors in sport.
+Kredel, R., Vater, C., Klostermann, A., and Hossner, E. J. (2017). Eye-                          Int. Rev. Sport Exerc. Psychol. 13, 81–103. doi: 10.1080/1750984X.2019.15
+   tracking technology and the dynamics of natural gaze behavior in sports:                      82082
+   a systematic review of 40 years of research. Front. Psychol. 8:1845.                      Wolfe, J. M., and Horowitz, T. S. (2017). Five factors that guide attention in visual
+   doi: 10.3389/fpsyg.2017.01845                                                                 search. Nat. Hum. Behav. 1:0058. doi: 10.1038/s41562-017-0058
+Larkin, P., Mesagno, C., Berry, J., and Spittle, M. (2018). Exploration of the               Wolfe, J. M. (2018). “Visual search,” in Stevens’ Handbook of Experimental
+   perceptual-cognitive processes that contribute to in-game decision-making                     Psychology and Cognitive Neuroscience, Vol. 2, ed J. T. Serences (Hoboken, NJ:
+   of Australian football umpires. Int. J. Sport Exerc. Psychol. 16, 112–124.                    John Wiley & Sons).
+   doi: 10.1080/1612197X.2016.1167760
+Liberati, A., Altman, D. G., Tetzlaff, J., Mulrow, C., Gøtzsche, P. C.,                      Conflict of Interest: The authors declare that the research was conducted in the
+   Ioannidis, J. P. A., et al. (2009). The PRISMA statement for reporting                    absence of any commercial or financial relationships that could be construed as a
+   systematic reviews and meta-analyses of studies that evaluate health care                 potential conflict of interest.
+   interventions: explanation and elaboration. Ann. Intern. Med. 151, W65–94.
+   doi: 10.7326/0003-4819-151-4-200908180-00136                                              Copyright © 2020 Ziv, Lidor, Zach, Brams and Helsen. This is an open-access article
+Luis, V., Canelo, A., Morenas, J., Gómez-Valadés, J. M., and Gómez, J. S. (2015).            distributed under the terms of the Creative Commons Attribution License (CC BY).
+   Referees’ visual behaviour during offside situations in football. Rev. Int. Med.          The use, distribution or reproduction in other forums is permitted, provided the
+   Cienc. Activ. Fís. Deport. 15, 325–338. doi: 10.15366/rimcafd2015.58.008                  original author(s) and the copyright owner(s) are credited and that the original
+MacMahon, C., Helsen, W. F., Starkes, J. L., and Weston, M. (2007). Decision-                publication in this journal is cited, in accordance with accepted academic practice.
+   making skills and deliberate practice in elite association football referees. J.          No use, distribution or reproduction is permitted which does not comply with these
+   Sports Sci. 25, 65–78. doi: 10.1080/02640410600718640                                     terms.
+
+
+
+
+Frontiers in Sports and Active Living | www.frontiersin.org                             13                                           November 2020 | Volume 2 | Article 572891
+

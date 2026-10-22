@@ -1,0 +1,19 @@
+{
+  "window_start": "2026-09-12T12:42:52.527576-04:00",
+  "window_end": "2026-09-12T14:42:52.527576-04:00",
+  "recently_written_files": 6248,
+  "recently_written_bytes": 387527094,
+  "by_category": {
+    "source_documentation_or_config": 22,
+    "browser_verification": 11,
+    "cache": 35,
+    "research_artifact": 94,
+    "site_summary": 2,
+    "game_timeline": 6084
+  },
+  "project_files_read": 6329,
+  "project_bytes_read": 394367037,
+  "read_errors": [],
+  "excluded_from_project_read": "Git internal metadata (.git)",
+  "caution": "Modification timestamps record latest writes, not all content changes. The tracked diff uses the July 7 HEAD, not a two-hour snapshot. This review package was created after the window and is excluded from its own inventory."
+}

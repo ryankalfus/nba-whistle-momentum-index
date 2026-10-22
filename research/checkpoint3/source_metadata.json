@@ -1,0 +1,4251 @@
+{
+  "AndersonPierce2009": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          11
+        ]
+      ],
+      "date-time": "2026-09-11T22:50:43Z",
+      "timestamp": 1789167043209,
+      "version": "build-2803163510"
+    },
+    "reference-count": 22,
+    "publisher": "Informa UK Limited",
+    "issue": "7",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Sports Sciences"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          5
+        ]
+      ]
+    },
+    "DOI": "10.1080/02640410902729733",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          5,
+          7
+        ]
+      ],
+      "date-time": "2009-05-07T08:22:35Z",
+      "timestamp": 1241684555000
+    },
+    "page": "687-694",
+    "source": "Crossref",
+    "is-referenced-by-count": 58,
+    "title": [
+      "Officiating bias: The effect of foul differential on foul calls in NCAA basketball"
+    ],
+    "prefix": "10.1080",
+    "volume": "27",
+    "author": [
+      {
+        "given": "Kyle J.",
+        "family": "Anderson",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David A.",
+        "family": "Pierce",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "301",
+    "reference": [
+      {
+        "key": "CIT0001",
+        "first-page": "17",
+        "volume": "3",
+        "author": "Askins R. L.",
+        "year": "1978",
+        "journal-title": "Referee"
+      },
+      {
+        "key": "CIT0002",
+        "first-page": "9",
+        "volume": "4",
+        "author": "Askins R. L.",
+        "year": "1979",
+        "journal-title": "Referee"
+      },
+      {
+        "key": "CIT0003",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640410400021583"
+      },
+      {
+        "key": "CIT0004",
+        "volume-title": "Social pressure influences decisions of individuals: Evidence from the behavior of football referees. Discussion Paper No. 1595",
+        "author": "Dohmen T. J.",
+        "year": "2005"
+      },
+      {
+        "key": "CIT0005",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1162/0034653053970267"
+      },
+      {
+        "key": "CIT0006",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0010-0285(85)90010-6"
+      },
+      {
+        "key": "CIT0007",
+        "first-page": "41",
+        "volume": "13",
+        "author": "Glamser F. D.",
+        "year": "1990",
+        "journal-title": "Journal of Sport Behavior"
+      },
+      {
+        "key": "CIT0008",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2307/3033796"
+      },
+      {
+        "key": "CIT0009",
+        "first-page": "673",
+        "volume": "127",
+        "author": "Lehman D. R",
+        "year": "1987",
+        "journal-title": "The Journal of Social Psychology"
+      },
+      {
+        "key": "CIT0010",
+        "doi-asserted-by": "crossref",
+        "first-page": "328",
+        "DOI": "10.1123/jsep.24.3.328",
+        "volume": "24",
+        "author": "Mascarenhas D.",
+        "year": "2002",
+        "journal-title": "Journal of Sport and Exercise Psychology"
+      },
+      {
+        "key": "CIT0011",
+        "doi-asserted-by": "crossref",
+        "first-page": "148",
+        "DOI": "10.1123/jsep.14.2.148",
+        "volume": "14",
+        "author": "Mcguire E. J.",
+        "year": "1992",
+        "journal-title": "Journal of Sport and Exercise Psychology"
+      },
+      {
+        "key": "CIT0012",
+        "volume-title": "Eliminating rough play in men's college basketball is number-one priority for this season",
+        "year": "2000"
+      },
+      {
+        "key": "CIT0013",
+        "volume-title": "NCAA basketball rules committees announce recommendations",
+        "year": "2004"
+      },
+      {
+        "key": "CIT0014",
+        "volume-title": "NCAA Basketball 2008 men's and women's rules interpretations",
+        "year": "2007"
+      },
+      {
+        "key": "CIT0015",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1469-0292(01)00033-4"
+      },
+      {
+        "key": "CIT0016",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2165/00007256-199928040-00001"
+      },
+      {
+        "key": "CIT0017",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1123/jsep.23.3.254",
+        "volume": "23",
+        "author": "Plessner H.",
+        "year": "2001",
+        "journal-title": "Journal of Sport and Exercise Psychology"
+      },
+      {
+        "key": "CIT0018",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/BF01006417"
+      },
+      {
+        "key": "CIT0019",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640410400021633"
+      },
+      {
+        "key": "CIT0020",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S0167-4870(03)00013-8"
+      },
+      {
+        "key": "CIT0021",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.17730/humo.61.1.3hn68af24wahbvr3",
+        "volume": "61",
+        "author": "Thu K.",
+        "year": "2002",
+        "journal-title": "Human Organization"
+      },
+      {
+        "key": "CIT0022",
+        "volume-title": "The diamond appraised",
+        "author": "Wright C. R",
+        "year": "1989"
+      }
+    ],
+    "container-title": [
+      "Journal of Sports Sciences"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.tandfonline.com/doi/pdf/10.1080/02640410902729733",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          19
+        ]
+      ],
+      "date-time": "2019-05-19T18:34:50Z",
+      "timestamp": 1558290890000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "http://www.tandfonline.com/doi/abs/10.1080/02640410902729733"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          5
+        ]
+      ]
+    },
+    "references-count": 22,
+    "journal-issue": {
+      "issue": "7",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1080/02640410902729733"
+    ],
+    "URL": "https://doi.org/10.1080/02640410902729733",
+    "relation": {},
+    "ISSN": [
+      "0264-0414",
+      "1466-447X"
+    ],
+    "issn-type": [
+      {
+        "value": "0264-0414",
+        "type": "print"
+      },
+      {
+        "value": "1466-447X",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          5
+        ]
+      ]
+    }
+  },
+  "Gong2022": {
+    "author": [
+      {
+        "family": "Gong",
+        "given": "Hua"
+      }
+    ],
+    "container-title": [
+      "Journal of Sports Economics"
+    ],
+    "volume": "23",
+    "issue": "7",
+    "page": "950\u2013975",
+    "DOI": "10.1177/15270025211073337"
+  },
+  "Deutscher2015": {
+    "author": [
+      {
+        "family": "Deutscher",
+        "given": "Christian"
+      }
+    ],
+    "container-title": [
+      "Journal of Sports Analytics"
+    ],
+    "volume": "1",
+    "issue": "2",
+    "page": "91\u201396",
+    "DOI": "10.3233/JSA-150012"
+  },
+  "Gift2015": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          9
+        ]
+      ],
+      "date-time": "2026-10-09T07:42:13Z",
+      "timestamp": 1791531733709,
+      "version": "4.3.4"
+    },
+    "reference-count": 14,
+    "publisher": "Wiley",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2015,
+              1,
+              6
+            ]
+          ],
+          "date-time": "2015-01-06T00:00:00Z",
+          "timestamp": 1420502400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://onlinelibrary.wiley.com/termsAndConditions#vor"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "onlinelibrary.wiley.com"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Economic Inquiry"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2015,
+          4
+        ]
+      ]
+    },
+    "abstract": "<jats:p><jats:italic>This study investigates the impact of past performance evaluations on future decisions involving judgment. I analyze the decisions of highly skilled and highly monitored referees regarding offensive fouls and violations in the National Basketball Association. After testing for equilibrium adjustments in player behavior, findings support a hypothesis of increased referee scrutiny on one team following a potentially questionable call on the opposing team. Results are inconclusive for subsequent changes in scrutiny toward the original violating team. The analysis provides a nonexperimental test of sequential bias on elite employees working under strict performance standards, and suggests a likely role for sequential judgment effects in other areas of economic activity.</jats:italic> (<jats:italic>JEL</jats:italic> D03, L83, J44, M59)</jats:p>",
+    "DOI": "10.1111/ecin.12186",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          7
+        ]
+      ],
+      "date-time": "2015-01-07T05:15:59Z",
+      "timestamp": 1420607759000
+    },
+    "page": "1259-1274",
+    "update-policy": "https://doi.org/10.1002/crossmark_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 7,
+    "title": [
+      "SEQUENTIAL JUDGMENT EFFECTS IN THE WORKPLACE: EVIDENCE FROM THE NATIONAL BASKETBALL ASSOCIATION"
+    ],
+    "prefix": "10.1111",
+    "volume": "53",
+    "author": [
+      {
+        "given": "Paul",
+        "family": "Gift",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Associate Professor, Pepperdine University Graziadio School of Business and Management  Los Angeles CA 90045"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "311",
+    "published-online": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          6
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "e_1_2_9_2_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1177/0013164410387344"
+      },
+      {
+        "key": "e_1_2_9_3_1",
+        "unstructured": "Basketballvalue.com. \u201cBasketballvalue.comData Files.\u201d Accessed June 13 2011.http://basketballvalue.com/downloads.php."
+      },
+      {
+        "key": "e_1_2_9_4_1",
+        "first-page": "1",
+        "volume-title": "The Business of Sport",
+        "author": "Berri D.",
+        "year": "2008"
+      },
+      {
+        "key": "e_1_2_9_5_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1257/000282805774670365"
+      },
+      {
+        "key": "e_1_2_9_6_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1076-898X.12.3.166"
+      },
+      {
+        "key": "e_1_2_9_7_1",
+        "volume-title": "Personal Foul: A First\u2010Person Account of the Scandal that Rocked the NBA",
+        "author": "Donaghy T.",
+        "year": "2009"
+      },
+      {
+        "key": "e_1_2_9_8_1",
+        "unstructured": "2012 Social Science Research Network Working Paper H. Morgan K. Rotthoff Sequential Order Judging: Findings of a Difficulty Bias"
+      },
+      {
+        "key": "e_1_2_9_9_1",
+        "unstructured": "2010 National Basketball Association New York National Basketball Association Official Rules 2010\u20132011"
+      },
+      {
+        "key": "e_1_2_9_10_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jebo.2009.08.012"
+      },
+      {
+        "key": "e_1_2_9_11_1",
+        "unstructured": "Pedowitz L.\u201cReport to the Board of Governors of the National Basketball Association.\u201d Wachtell Lipton Rosen & Katz 2008. Accessed January 4 2012.http://www.nba.com/media/PedowitzReport.pdf."
+      },
+      {
+        "issue": "3",
+        "key": "e_1_2_9_12_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "254",
+        "DOI": "10.1123/jsep.23.3.254",
+        "article-title": "Sequential Effects in Important Referee Decisions: The Case of Penalties in Soccer",
+        "volume": "23",
+        "author": "Plessner H.",
+        "year": "2001",
+        "journal-title": "Journal of Sport and Exercise Psychology"
+      },
+      {
+        "key": "e_1_2_9_13_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Pope D. J.Price andJ.Wolfers. \u201cAwareness Reduces Racial Bias.\u201d NBER Working Paper No. 19765 2013. Accessed September 18 2014.http://www.nber.org/papers/w19765.",
+        "DOI": "10.3386/w19765"
+      },
+      {
+        "key": "e_1_2_9_14_1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/j.1530-9134.2011.00325.x"
+      },
+      {
+        "key": "e_1_2_9_15_1",
+        "unstructured": "Washington Post. \u201cDonaghy Sentenced to 15 Months in Prison \u201d 30 July2008 Sec. E p. 3."
+      }
+    ],
+    "container-title": [
+      "Economic Inquiry"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://api.wiley.com/onlinelibrary/tdm/v1/articles/10.1111%2Fecin.12186",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://onlinelibrary.wiley.com/doi/pdf/10.1111/ecin.12186",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          3
+        ]
+      ],
+      "date-time": "2023-10-03T19:43:23Z",
+      "timestamp": 1696362203000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://onlinelibrary.wiley.com/doi/10.1111/ecin.12186"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          6
+        ]
+      ]
+    },
+    "references-count": 14,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2015,
+            4
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1111/ecin.12186"
+    ],
+    "URL": "https://doi.org/10.1111/ecin.12186",
+    "archive": [
+      "Portico"
+    ],
+    "relation": {},
+    "ISSN": [
+      "0095-2583",
+      "1465-7295"
+    ],
+    "issn-type": [
+      {
+        "value": "0095-2583",
+        "type": "print"
+      },
+      {
+        "value": "1465-7295",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2015,
+          1,
+          6
+        ]
+      ]
+    },
+    "assertion": [
+      {
+        "value": "2012-12-31",
+        "order": 0,
+        "name": "received",
+        "label": "Received",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2014-09-22",
+        "order": 1,
+        "name": "accepted",
+        "label": "Accepted",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      },
+      {
+        "value": "2015-01-06",
+        "order": 2,
+        "name": "published",
+        "label": "Published",
+        "group": {
+          "name": "publication_history",
+          "label": "Publication History"
+        }
+      }
+    ]
+  },
+  "PriceRemerStone2012": {
+    "author": [
+      {
+        "family": "Price",
+        "given": "Joseph"
+      },
+      {
+        "family": "Remer",
+        "given": "Marc"
+      },
+      {
+        "family": "Stone",
+        "given": "Daniel F."
+      }
+    ],
+    "container-title": [
+      "Journal of Economics & Management Strategy"
+    ],
+    "volume": "21",
+    "issue": "1",
+    "page": "271\u2013300",
+    "DOI": "10.1111/j.1530-9134.2011.00325.x"
+  },
+  "Pelechrinis-2023": {
+    "author": [
+      {
+        "family": "Pelechrinis",
+        "given": "Konstantinos"
+      }
+    ],
+    "container-title": [
+      "Scientific Reports"
+    ],
+    "volume": "13",
+    "issue": "",
+    "page": "4664",
+    "DOI": "10.1038/s41598-023-31799-y"
+  },
+  "Morgulev-2018": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          22
+        ]
+      ],
+      "date-time": "2026-10-22T00:44:26Z",
+      "timestamp": 1792629866561,
+      "version": "4.5.0"
+    },
+    "reference-count": 36,
+    "publisher": "Frontiers Media SA",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2018,
+              12,
+              20
+            ]
+          ],
+          "date-time": "2018-12-20T00:00:00Z",
+          "timestamp": 1545264000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Psychol."
+    ],
+    "DOI": "10.3389/fpsyg.2018.02637",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          20
+        ]
+      ],
+      "date-time": "2018-12-20T00:28:03Z",
+      "timestamp": 1545265683000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 18,
+    "title": [
+      "Searching for Judgment Biases Among Elite Basketball Referees"
+    ],
+    "prefix": "10.3389",
+    "volume": "9",
+    "author": [
+      {
+        "given": "Elia",
+        "family": "Morgulev",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ofer H.",
+        "family": "Azar",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ronnie",
+        "family": "Lidor",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Eran",
+        "family": "Sabag",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Bar-Eli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          20
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "publisher",
+        "first-page": "687",
+        "DOI": "10.1080/02640410902729733",
+        "article-title": "Officiating bias: the effect of foul differential on foul calls in NCAA basketball.",
+        "volume": "27",
+        "author": "Anderson",
+        "year": "2009",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "first-page": "409",
+        "DOI": "10.1080/02640410400021583",
+        "article-title": "Do judges enhance home advantage in European championship boxing?",
+        "volume": "23",
+        "author": "Balmer",
+        "year": "2005",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B3",
+        "doi-asserted-by": "publisher",
+        "first-page": "93",
+        "DOI": "10.1123/jsep.28.1.93",
+        "article-title": "Sequential effects in elite basketball referees\u2019 foul decisions: an experimental study on the concept of game management.",
+        "volume": "28",
+        "author": "Brand",
+        "year": "2006",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B4",
+        "doi-asserted-by": "publisher",
+        "first-page": "245",
+        "DOI": "10.1080/13571516.2014.903110",
+        "article-title": "Life on the red carpet: star players and referee bias in the National Basketball Association.",
+        "volume": "21",
+        "author": "Caudill",
+        "year": "2014",
+        "journal-title": "Int. J. Econ. Bus."
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "883",
+        "DOI": "10.1080/13504851.2011.607118",
+        "article-title": "Experience, social pressure and performance: the case of soccer officials.",
+        "volume": "19",
+        "author": "Dawson",
+        "year": "2012",
+        "journal-title": "Appl. Econ. Lett."
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "publisher",
+        "first-page": "181",
+        "DOI": "10.1016/j.joep.2009.06.001",
+        "article-title": "The influence of social pressure and nationality on individual decisions: evidence from the behaviour of referees.",
+        "volume": "31",
+        "author": "Dawson",
+        "year": "2010",
+        "journal-title": "J. Econ. Psychol."
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "91",
+        "DOI": "10.3233/JSA-150012",
+        "article-title": "No referee bias in the NBA: new evidence with leagues\u2019 assessment data.",
+        "volume": "1",
+        "author": "Deutscher",
+        "year": "2015",
+        "journal-title": "J. Sports Anal."
+      },
+      {
+        "key": "B8",
+        "doi-asserted-by": "publisher",
+        "first-page": "679",
+        "DOI": "10.1111/joes.12106",
+        "article-title": "Referee bias.",
+        "volume": "30",
+        "author": "Dohmen",
+        "year": "2016",
+        "journal-title": "J. Econ. Surv."
+      },
+      {
+        "key": "B9",
+        "article-title": "\u201cLearning and the economics of small decisions,\u201d in",
+        "author": "Erev",
+        "year": "2016",
+        "journal-title": "The Handbook of Experimental Economics"
+      },
+      {
+        "key": "B10",
+        "doi-asserted-by": "publisher",
+        "first-page": "154",
+        "DOI": "10.1123/jsep.26.1.154",
+        "article-title": "A reputation bias in figure skating judging.",
+        "volume": "26",
+        "author": "Findlay",
+        "year": "2004",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B11",
+        "doi-asserted-by": "publisher",
+        "first-page": "208",
+        "DOI": "10.1162/0034653053970267",
+        "article-title": "Favoritism under social pressure.",
+        "volume": "87",
+        "author": "Garicano",
+        "year": "2005",
+        "journal-title": "Rev. Econ. Stat."
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1147",
+        "DOI": "10.1177/1527002517702422",
+        "article-title": "Performance evaluation and favoritism: evidence from mixed martial arts.",
+        "volume": "19",
+        "author": "Gift",
+        "year": "2017",
+        "journal-title": "J. Sports Econ."
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "541",
+        "DOI": "10.1177/1527002514535168",
+        "article-title": "Napoleon complex: height bias among national basketball association referees.",
+        "volume": "15",
+        "author": "Gift",
+        "year": "2014",
+        "journal-title": "J. Sports Econ."
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "1609",
+        "DOI": "10.1016/j.jbusres.2013.09.007",
+        "article-title": "Organizational culture, innovation, and performance: a test of Schein\u2019s model.",
+        "volume": "67",
+        "author": "Hogan",
+        "year": "2014",
+        "journal-title": "J. Bus. Res."
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "first-page": "991",
+        "DOI": "10.1080/026404102321011751",
+        "article-title": "The impact of a team\u2019s aggressive reputation on the decisions of association football referees.",
+        "volume": "20",
+        "author": "Jones",
+        "year": "2002",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B16",
+        "doi-asserted-by": "publisher",
+        "first-page": "666",
+        "DOI": "10.1177/0031512516633342",
+        "article-title": "The influence of referee bias on extra time in elite football matches.",
+        "volume": "122",
+        "author": "Lago-Pe\u00f1as",
+        "year": "2016",
+        "journal-title": "Percept. Mot. Skills"
+      },
+      {
+        "key": "B17",
+        "doi-asserted-by": "crossref",
+        "first-page": "673",
+        "DOI": "10.1080/19401183.1987.12461559",
+        "article-title": "Spectator influence on basketball officiating.",
+        "volume": "127",
+        "author": "Lehman",
+        "year": "1987",
+        "journal-title": "J. Soc. Psychol."
+      },
+      {
+        "key": "B18",
+        "doi-asserted-by": "publisher",
+        "first-page": "131",
+        "DOI": "10.1123/tsp.19.2.131",
+        "article-title": "A naturalistic approach to training accurate and coherent decision making in rugby union referees.",
+        "volume": "19",
+        "author": "Mascarenhas",
+        "year": "2005",
+        "journal-title": "Sport Psychol."
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "first-page": "387",
+        "DOI": "10.1002/mde.2630",
+        "article-title": "Social pressure at the plate: inequality aversion, status, and mere exposure.",
+        "volume": "35",
+        "author": "Mills",
+        "year": "2014",
+        "journal-title": "Manag. Decis. Econ."
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "108",
+        "DOI": "10.1016/j.jebo.2014.03.022",
+        "article-title": "Deception and decision making in professional basketball: Is it beneficial to flop?",
+        "volume": "102",
+        "author": "Morgulev",
+        "year": "2014",
+        "journal-title": "J. Econ. Behav. Org."
+      },
+      {
+        "key": "B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "148",
+        "DOI": "10.4236/ape.2012.24026",
+        "article-title": "The influence of crowd noise upon judging decisions in Muay Thai.",
+        "volume": "2",
+        "author": "Myers",
+        "year": "2012",
+        "journal-title": "Adv. Phys. Educ."
+      },
+      {
+        "key": "B22",
+        "doi-asserted-by": "publisher",
+        "first-page": "261",
+        "DOI": "10.1016/S1469-0292(01)00033-4",
+        "article-title": "The influence of crowd noise and experience upon refereeing decisions in football.",
+        "volume": "3",
+        "author": "Nevill",
+        "year": "2002",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "first-page": "766",
+        "DOI": "10.1080/09585190050075114",
+        "article-title": "Leadership style, organizational culture and performance: empirical evidence from UK companies.",
+        "volume": "11",
+        "author": "Ogbonna",
+        "year": "2000",
+        "journal-title": "Int. J. Hum. Res. Manag."
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "192",
+        "DOI": "10.1016/j.joep.2009.08.007",
+        "article-title": "Alone against the crowd: individual differences in referees\u2019 ability to cope under pressure.",
+        "volume": "31",
+        "author": "Page",
+        "year": "2010",
+        "journal-title": "J. Econ. Psychol."
+      },
+      {
+        "key": "B25",
+        "doi-asserted-by": "publisher",
+        "first-page": "59",
+        "DOI": "10.1080/10413200.2011.608412",
+        "article-title": "Perceptual judgments of sports officials are influenced by their motor and visual experience.",
+        "volume": "24",
+        "author": "Pizzera",
+        "year": "2012",
+        "journal-title": "J. Appl. Sport Psychol."
+      },
+      {
+        "key": "B26",
+        "doi-asserted-by": "publisher",
+        "first-page": "4988",
+        "DOI": "10.1287/mnsc.2017.2901",
+        "article-title": "Awareness reduces racial bias.",
+        "volume": "64",
+        "author": "Pope",
+        "year": "2018",
+        "journal-title": "Manag. Sci."
+      },
+      {
+        "key": "B27",
+        "doi-asserted-by": "publisher",
+        "first-page": "271",
+        "DOI": "10.1111/j.1530-9134.2011.00325.x",
+        "article-title": "Subperfect game: profitable biases of NBA referees.",
+        "volume": "21",
+        "author": "Price",
+        "year": "2012",
+        "journal-title": "J. Econ. Manag. Strat."
+      },
+      {
+        "key": "B28",
+        "doi-asserted-by": "publisher",
+        "first-page": "577",
+        "DOI": "10.1016/j.psychsport.2013.03.005",
+        "article-title": "Web-based training improves on-field offside decision-making performance.",
+        "volume": "14",
+        "author": "Put",
+        "year": "2013",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "first-page": "181",
+        "DOI": "10.1080/02640414.2015.1045926",
+        "article-title": "Using web-based training to enhance perceptual-cognitive skills in complex dynamic offside events.",
+        "volume": "34",
+        "author": "Put",
+        "year": "2016",
+        "journal-title": "J. Sport Sci."
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "first-page": "S221",
+        "DOI": "10.1080/17461391.2012.683813",
+        "article-title": "Foul or dive? Motor contributions to judging ambiguous foul situations in football.",
+        "volume": "14",
+        "author": "Renden",
+        "year": "2014",
+        "journal-title": "Eur. J. Sport Sci."
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "publisher",
+        "first-page": "184",
+        "DOI": "10.1080/21520704.2017.1287798",
+        "article-title": "Training prospective soccer referees using a deliberate practice perspective: The Israeli Excellence Program.",
+        "volume": "8",
+        "author": "Samuel",
+        "year": "2017",
+        "journal-title": "J. Sport Psychol. Action"
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "first-page": "429",
+        "DOI": "10.1080/10413200.2011.555346",
+        "article-title": "A video-based training method for improving soccer referees\u2019 intuitive decision-making skills.",
+        "volume": "23",
+        "author": "Schweizer",
+        "year": "2011",
+        "journal-title": "J. Appl. Sport Psychol."
+      },
+      {
+        "key": "B33",
+        "article-title": "Urteilsverzerrungen von Fu\u00dfballschiedsrichtern. in",
+        "author": "Strauss",
+        "year": "2002",
+        "journal-title": "Proceedings of the Vortrag auf dem 43. Kongress der Deutschen Gesellschaft f\u00fcr Psychologie"
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "461",
+        "DOI": "10.1016/S0167-4870(03)00013-8",
+        "article-title": "Favoritism of agents\u2013the case of referees\u2019 home bias.",
+        "volume": "25",
+        "author": "Sutter",
+        "year": "2004",
+        "journal-title": "J. Econ. Psychol."
+      },
+      {
+        "key": "B35",
+        "doi-asserted-by": "publisher",
+        "first-page": "483",
+        "DOI": "10.1123/jsep.32.4.483",
+        "article-title": "Crowd noise as a cue in referee decisions contributes to the home advantage.",
+        "volume": "32",
+        "author": "Unkelbach",
+        "year": "2010",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1123/jsep.32.1.3",
+        "article-title": "How embodied cognitions affect judgments: height-related attribution bias in football foul calls.",
+        "volume": "32",
+        "author": "Van Quaquebeke",
+        "year": "2010",
+        "journal-title": "J. Sport Exerc. Psychol."
+      }
+    ],
+    "container-title": [
+      "Frontiers in Psychology"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.frontiersin.org/article/10.3389/fpsyg.2018.02637/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          4
+        ]
+      ],
+      "date-time": "2026-04-04T17:07:14Z",
+      "timestamp": 1775322434000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.frontiersin.org/article/10.3389/fpsyg.2018.02637/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          20
+        ]
+      ]
+    },
+    "references-count": 36,
+    "alternative-id": [
+      "10.3389/fpsyg.2018.02637"
+    ],
+    "URL": "https://doi.org/10.3389/fpsyg.2018.02637",
+    "relation": {},
+    "ISSN": [
+      "1664-1078"
+    ],
+    "issn-type": [
+      {
+        "value": "1664-1078",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2018,
+          12,
+          20
+        ]
+      ]
+    },
+    "article-number": "2637"
+  },
+  "Sors-2019": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          8
+        ]
+      ],
+      "date-time": "2026-10-08T14:51:19Z",
+      "timestamp": 1791471079821,
+      "version": "4.3.4"
+    },
+    "reference-count": 56,
+    "publisher": "Frontiers Media SA",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2019,
+              10,
+              21
+            ]
+          ],
+          "date-time": "2019-10-21T00:00:00Z",
+          "timestamp": 1571616000000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Psychol."
+    ],
+    "DOI": "10.3389/fpsyg.2019.02380",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          21
+        ]
+      ],
+      "date-time": "2019-10-21T15:01:55Z",
+      "timestamp": 1571670115000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 35,
+    "title": [
+      "Pressing Crowd Noise Impairs the Ability of Anxious Basketball Referees to Discriminate Fouls"
+    ],
+    "prefix": "10.3389",
+    "volume": "10",
+    "author": [
+      {
+        "given": "Fabrizio",
+        "family": "Sors",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "David",
+        "family": "Tom\u00e9 Lourido",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Vittoria",
+        "family": "Parisi",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ilaria",
+        "family": "Santoro",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Alessandra",
+        "family": "Galmonte",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Tiziano",
+        "family": "Agostini",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Mauro",
+        "family": "Murgia",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          21
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "first-page": "67",
+        "article-title": "The relevance of auditory information in optimizing hammer throwers performance,",
+        "volume-title": "Biomechanics and Sports",
+        "author": "Agostini",
+        "year": "2004"
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "first-page": "123",
+        "DOI": "10.1016/j.psychsport.2017.04.009",
+        "article-title": "Recognizing fencing attacks from auditory and visual information: a comparison between expert fencers and novices",
+        "volume": "31",
+        "author": "Allerdissen",
+        "year": "2017",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B3",
+        "doi-asserted-by": "publisher",
+        "first-page": "10",
+        "DOI": "10.1016/j.psychsport.2017.10.006",
+        "article-title": "Football refereeing: an integrative review",
+        "volume": "35",
+        "author": "Aragao-Pina",
+        "year": "2018",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B4",
+        "first-page": "177",
+        "article-title": "Effects of group pressure upon the modification and distortion of judgment,",
+        "volume-title": "Groups, Leadership and Men",
+        "author": "Asch",
+        "year": "1951"
+      },
+      {
+        "key": "B5",
+        "first-page": "130",
+        "article-title": "Influence of crowd noise on soccer refereeing consistency in soccer",
+        "volume": "30",
+        "author": "Balmer",
+        "year": "2007",
+        "journal-title": "J. Sport Behav."
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "publisher",
+        "first-page": "1185",
+        "DOI": "10.1080/02640410601038576",
+        "article-title": "Referee bias contributes to home advantage in English Premiership football",
+        "volume": "25",
+        "author": "Boyko",
+        "year": "2007",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "publisher",
+        "first-page": "431",
+        "DOI": "10.1111/j.1467-985X.2009.00604.x",
+        "article-title": "The 12th man?: refereeing bias in English and German soccer",
+        "volume": "173",
+        "author": "Buraimo",
+        "year": "2010",
+        "journal-title": "J. R. Stat. Soc."
+      },
+      {
+        "key": "B8",
+        "doi-asserted-by": "publisher",
+        "first-page": "329",
+        "DOI": "10.1111/j.1465-7287.2011.00295.x",
+        "article-title": "Favoritism and referee bias in European soccer: evidence from the Spanish league and the UEFA champions league",
+        "volume": "30",
+        "author": "Buraimo",
+        "year": "2012",
+        "journal-title": "Contemp. Econ. Policy"
+      },
+      {
+        "key": "B9",
+        "doi-asserted-by": "publisher",
+        "first-page": "348",
+        "DOI": "10.1037/xhp0000316",
+        "article-title": "Expert players accurately detect an opponent's movement intentions through sound alone",
+        "volume": "43",
+        "author": "Camponogara",
+        "year": "2017",
+        "journal-title": "J. Exp. Psychol."
+      },
+      {
+        "key": "B10",
+        "doi-asserted-by": "publisher",
+        "first-page": "100",
+        "DOI": "10.1016/j.psychsport.2018.02.001",
+        "article-title": "Auditory contributions to visual anticipation in tennis",
+        "volume": "36",
+        "author": "Ca\u00f1al-Bruland",
+        "year": "2018",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B11",
+        "volume-title": "Statistical Power Analysis for the Behavioral Sciences",
+        "author": "Cohen",
+        "year": "1988"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "538",
+        "DOI": "10.1016/j.psychsport.2014.05.009",
+        "article-title": "Bayesian networks for unbiased assessment of referee bias in Association Football",
+        "volume": "15",
+        "author": "Constantinou",
+        "year": "2014",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "publisher",
+        "first-page": "161",
+        "DOI": "10.1080/19346182.2013.855224",
+        "article-title": "Understanding perception and action in sport: how can virtual reality technology help?",
+        "volume": "6",
+        "author": "Craig",
+        "year": "2013",
+        "journal-title": "Sports Technol."
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "181",
+        "DOI": "10.1016/j.joep.2009.06.001",
+        "article-title": "The influence of social pressure and nationality on individual decisions: Evidence from the behaviour of referees",
+        "volume": "31",
+        "author": "Dawson",
+        "year": "2010",
+        "journal-title": "J. Econ. Psychol."
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "first-page": "231",
+        "DOI": "10.1111/j.1467-985X.2006.00451.x",
+        "article-title": "Are football referees really biased and inconsistent?: evidence on the incidence of disciplinary sanction in the English Premier League",
+        "volume": "170",
+        "author": "Dawson",
+        "year": "2007",
+        "journal-title": "J. R. Stat. Soc."
+      },
+      {
+        "key": "B16",
+        "first-page": "33",
+        "article-title": "The phenomenon of social influence on the football pitch: Social pressure from the crowd on referees' decisions",
+        "volume": "18",
+        "author": "Di Corrado",
+        "year": "2011",
+        "journal-title": "Rev. Psychol."
+      },
+      {
+        "key": "B17",
+        "doi-asserted-by": "publisher",
+        "first-page": "411",
+        "DOI": "10.1111/j.1465-7295.2007.00112.x",
+        "article-title": "The influence of social forces: evidence from the behavior of football referees",
+        "volume": "46",
+        "author": "Dohmen",
+        "year": "2008",
+        "journal-title": "Econ. Inquiry"
+      },
+      {
+        "key": "B18",
+        "doi-asserted-by": "publisher",
+        "first-page": "1541",
+        "DOI": "10.1080/02640410701275193",
+        "article-title": "Effects of crowd size on referee decisions: analysis of the FA Cup",
+        "volume": "25",
+        "author": "Downward",
+        "year": "2007",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "publisher",
+        "first-page": "208",
+        "DOI": "10.1162/0034653053970267",
+        "article-title": "Favoritism under social pressure",
+        "volume": "87",
+        "author": "Garicano",
+        "year": "2005",
+        "journal-title": "Rev. Econ. Stat."
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "252",
+        "DOI": "10.2307/3033796",
+        "article-title": "Spectator booing and the home advantage: a study of social influence in the basketball arena",
+        "volume": "46",
+        "author": "Greer",
+        "year": "1983",
+        "journal-title": "Soc. Psychol. Q."
+      },
+      {
+        "key": "B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "215",
+        "DOI": "10.1080/1612197X.2013.773665",
+        "article-title": "Anxiety level and decision-making among Norwegian top-class soccer referees",
+        "volume": "11",
+        "author": "Johansen",
+        "year": "2013",
+        "journal-title": "Int. J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B22",
+        "doi-asserted-by": "publisher",
+        "first-page": "796",
+        "DOI": "10.1068/p7643",
+        "article-title": "The perception of natural and modulated movement sounds",
+        "volume": "43",
+        "author": "Kennel",
+        "year": "2014",
+        "journal-title": "Perception"
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "first-page": "666",
+        "DOI": "10.1177/0031512516633342",
+        "article-title": "The influence of referee bias on extra time in elite soccer matches",
+        "volume": "122",
+        "author": "Lago-Pe\u00f1as",
+        "year": "2016",
+        "journal-title": "Percep. Motor Skills"
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "863",
+        "DOI": "10.3389/fpsyg.2013.00863",
+        "article-title": "Calculating and reporting effect sizes to facilitate cumulative science: a practical primer for t-tests and ANOVAs",
+        "volume": "4",
+        "author": "Lakens",
+        "year": "2013",
+        "journal-title": "Front. Psychol."
+      },
+      {
+        "key": "B25",
+        "doi-asserted-by": "publisher",
+        "first-page": "424",
+        "DOI": "10.1080/17461391.2014.962620",
+        "article-title": "Influence of players' vocalisations on soccer referees' decisions",
+        "volume": "15",
+        "author": "Lex",
+        "year": "2015",
+        "journal-title": "Eur. J. Sport Sci."
+      },
+      {
+        "key": "B26",
+        "doi-asserted-by": "publisher",
+        "first-page": "65",
+        "DOI": "10.1080/02640410600718640",
+        "article-title": "Decision-making skills and deliberate practice in elite association football referees",
+        "volume": "25",
+        "author": "MacMahon",
+        "year": "2007",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B27",
+        "doi-asserted-by": "publisher",
+        "first-page": "371",
+        "DOI": "10.1037/h0040525",
+        "article-title": "Behavioral study of obedience",
+        "volume": "67",
+        "author": "Milgram",
+        "year": "1963",
+        "journal-title": "J. Abnorm. Soc. Psychol."
+      },
+      {
+        "key": "B28",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.1007/s10919-009-0075-0",
+        "article-title": "Tackling diving: the perception of deceptive intentions in association football (soccer)",
+        "volume": "34",
+        "author": "Morris",
+        "year": "2010",
+        "journal-title": "J. Nonverb. Behav."
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "first-page": "976",
+        "DOI": "10.1068/p7227",
+        "article-title": "Recognising one's own motor actions through sound: the role of temporal factors",
+        "volume": "41",
+        "author": "Murgia",
+        "year": "2012",
+        "journal-title": "Perception"
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "first-page": "148",
+        "DOI": "10.4236/ape.2012.24026",
+        "article-title": "The influence of crowd noise upon judging decisions in Muay Thai",
+        "volume": "2",
+        "author": "Myers",
+        "year": "2012",
+        "journal-title": "Adv. Phys. Educ."
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "publisher",
+        "first-page": "261",
+        "DOI": "10.1016/S1469-0292(01)00033-4",
+        "article-title": "The influence of crowd noise and experience upon refereeing decisions in football",
+        "volume": "3",
+        "author": "Nevill",
+        "year": "2002",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "first-page": "2257",
+        "DOI": "10.1080/02640414.2016.1265143",
+        "article-title": "Inconsistency of decision-making, the Achilles heel of referees",
+        "volume": "35",
+        "author": "Nevill",
+        "year": "2017",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B33",
+        "doi-asserted-by": "publisher",
+        "first-page": "583",
+        "DOI": "10.1123/jsep.31.5.583",
+        "article-title": "Choking vs. clutch performance: a study of sport performance under pressure",
+        "volume": "31",
+        "author": "Otten",
+        "year": "2009",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "192",
+        "DOI": "10.1016/j.joep.2009.08.007",
+        "article-title": "Alone against the crowd: individual differences in referees' ability to cope under pressure",
+        "volume": "31",
+        "author": "Page",
+        "year": "2010",
+        "journal-title": "J. Econ. Psychol."
+      },
+      {
+        "key": "B35",
+        "doi-asserted-by": "publisher",
+        "first-page": "216",
+        "DOI": "10.23736/S0025-7826.18.03209-X",
+        "article-title": "The inattentional blindness in soccer referees",
+        "volume": "71",
+        "author": "Pazzona",
+        "year": "2018",
+        "journal-title": "Medicina dello Sport"
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "first-page": "212",
+        "DOI": "10.1016/j.econlet.2010.04.023",
+        "article-title": "Behavior under social pressure: empty Italian stadiums and referee bias",
+        "volume": "108",
+        "author": "Pettersson-Lidbom",
+        "year": "2010",
+        "journal-title": "Econ. Lett."
+      },
+      {
+        "key": "B37",
+        "doi-asserted-by": "publisher",
+        "first-page": "447",
+        "DOI": "10.1080/1612197X.2015.1126852",
+        "article-title": "Does the crowd matter in refereeing decisions? Evidence from Spanish soccer",
+        "volume": "15",
+        "author": "Picazo-Tadeo",
+        "year": "2016",
+        "journal-title": "Int. J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B38",
+        "doi-asserted-by": "publisher",
+        "first-page": "1279",
+        "DOI": "10.1080/17461391.2017.1381767",
+        "article-title": "Long-term effects of acoustic reafference training (ART)",
+        "volume": "17",
+        "author": "Pizzera",
+        "year": "2017",
+        "journal-title": "Eur. J. Sport Sci."
+      },
+      {
+        "key": "B39",
+        "doi-asserted-by": "publisher",
+        "first-page": "254",
+        "DOI": "10.1123/jsep.23.3.254",
+        "article-title": "Sequential effects in important referee decisions: the case of penalties in soccer",
+        "volume": "23",
+        "author": "Plessner",
+        "year": "2001",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B40",
+        "doi-asserted-by": "publisher",
+        "first-page": "555",
+        "DOI": "10.1016/j.psychsport.2006.03.007",
+        "article-title": "Sports performance judgments from a social cognitive perspective",
+        "volume": "7",
+        "author": "Plessner",
+        "year": "2006",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B41",
+        "doi-asserted-by": "publisher",
+        "first-page": "151",
+        "DOI": "10.1016/S0079-6123(09)01313-2",
+        "article-title": "A multiple-cue learning approach as the basis for understanding and improving soccer referees' decision making",
+        "volume": "174",
+        "author": "Plessner",
+        "year": "2009",
+        "journal-title": "Progr. Brain Res."
+      },
+      {
+        "key": "B42",
+        "doi-asserted-by": "publisher",
+        "first-page": "237",
+        "DOI": "10.1080/02640418608732122",
+        "article-title": "Home advantage in soccer: a retrospective analysis",
+        "volume": "4",
+        "author": "Pollard",
+        "year": "1986",
+        "journal-title": "J. Sports Sci."
+      },
+      {
+        "key": "B43",
+        "doi-asserted-by": "publisher",
+        "first-page": "562",
+        "DOI": "10.1177/1527002516665794",
+        "article-title": "Does the home advantage depend on crowd support? Evidence from same-stadium derbies",
+        "volume": "19",
+        "author": "Ponzo",
+        "year": "2014",
+        "journal-title": "J. Sports Econ."
+      },
+      {
+        "key": "B44",
+        "doi-asserted-by": "publisher",
+        "first-page": "1292",
+        "DOI": "10.1111/ecin.12180",
+        "article-title": "Own-nationality bias: evidence from UEFA champions league football referees",
+        "volume": "53",
+        "author": "Pope",
+        "year": "2015",
+        "journal-title": "Econ. Inquiry"
+      },
+      {
+        "key": "B45",
+        "doi-asserted-by": "publisher",
+        "first-page": "244",
+        "DOI": "10.3389/fpsyg.2019.00244",
+        "article-title": "A review on the relationship between sound and movement in sports and rehabilitation",
+        "volume": "10",
+        "author": "Schaffert",
+        "year": "2019",
+        "journal-title": "Front. Psychol."
+      },
+      {
+        "key": "B46",
+        "doi-asserted-by": "publisher",
+        "first-page": "123",
+        "DOI": "10.1007/s00181-007-0146-1",
+        "article-title": "Are subjective evaluations biased by social factors or connections? An econometric analysis of soccer referee decisions",
+        "volume": "35",
+        "author": "Scoppa",
+        "year": "2008",
+        "journal-title": "Empirical Econ."
+      },
+      {
+        "key": "B47",
+        "doi-asserted-by": "publisher",
+        "first-page": "263",
+        "DOI": "10.1080/08917779008248733",
+        "article-title": "Measurement and correlates of sport-specific cognitive and somatic trait anxiety: the sport anxiety scale",
+        "volume": "2",
+        "author": "Smith",
+        "year": "1990",
+        "journal-title": "Anx. Res."
+      },
+      {
+        "key": "B48",
+        "doi-asserted-by": "publisher",
+        "first-page": "e0208174",
+        "DOI": "10.1371/journal.pone.0208174",
+        "article-title": "Predicting the length of volleyball serves: the role of early auditory and visual information",
+        "volume": "13",
+        "author": "Sors",
+        "year": "2018",
+        "journal-title": "PLoS ONE"
+      },
+      {
+        "key": "B49",
+        "doi-asserted-by": "publisher",
+        "first-page": "212",
+        "DOI": "10.2174/1874350101508010212",
+        "article-title": "Audio-based interventions in sport",
+        "volume": "8",
+        "author": "Sors",
+        "year": "2015",
+        "journal-title": "Open Psychol. J."
+      },
+      {
+        "key": "B50",
+        "doi-asserted-by": "publisher",
+        "first-page": "44",
+        "DOI": "10.1016/j.psychsport.2017.04.005",
+        "article-title": "The contribution of early auditory and visual information to the discrimination of shot power in ball sports",
+        "volume": "31",
+        "author": "Sors",
+        "year": "2017",
+        "journal-title": "Psychol. Sport Exerc."
+      },
+      {
+        "key": "B51",
+        "doi-asserted-by": "publisher",
+        "first-page": "223",
+        "DOI": "10.1080/10413200.2012.713440",
+        "article-title": "External influences on referees' decisions in judo: the effects of coaches' exclamations during throw situations",
+        "volume": "25",
+        "author": "Souchon",
+        "year": "2013",
+        "journal-title": "J. Appl. Sport Psychol."
+      },
+      {
+        "key": "B52",
+        "doi-asserted-by": "publisher",
+        "first-page": "461",
+        "DOI": "10.1016/S0167-4870(03)00013-8",
+        "article-title": "Favoritism of agents\u2013the case of referees' home bias",
+        "volume": "25",
+        "author": "Sutter",
+        "year": "2004",
+        "journal-title": "J. Econ. Psychol."
+      },
+      {
+        "key": "B53",
+        "doi-asserted-by": "publisher",
+        "first-page": "95",
+        "DOI": "10.1123/jsep.30.1.95",
+        "article-title": "Game management, context effects, and calibration: the case of yellow cards in soccer",
+        "volume": "30",
+        "author": "Unkelbach",
+        "year": "2008",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B54",
+        "doi-asserted-by": "publisher",
+        "first-page": "483",
+        "DOI": "10.1123/jsep.32.4.483",
+        "article-title": "Crowd noise as a cue in referee decisions contributes to the home advantage",
+        "volume": "32",
+        "author": "Unkelbach",
+        "year": "2010",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "key": "B55",
+        "doi-asserted-by": "publisher",
+        "first-page": "1024",
+        "DOI": "10.1080/14660970.2016.1267626",
+        "article-title": "The impact of referee training: reflections on the reduction of home advantage in association football",
+        "volume": "19",
+        "author": "Webb",
+        "year": "2018",
+        "journal-title": "Soccer Soc."
+      },
+      {
+        "key": "B56",
+        "first-page": "232",
+        "article-title": "Coping under pressure: Cognitive strategies for maintaining confidence among soccer referees",
+        "volume": "30",
+        "author": "Wolfson",
+        "year": "2007",
+        "journal-title": "J. Sport Behav."
+      }
+    ],
+    "container-title": [
+      "Frontiers in Psychology"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.frontiersin.org/article/10.3389/fpsyg.2019.02380/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          21
+        ]
+      ],
+      "date-time": "2019-10-21T15:02:02Z",
+      "timestamp": 1571670122000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.frontiersin.org/article/10.3389/fpsyg.2019.02380/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          21
+        ]
+      ]
+    },
+    "references-count": 56,
+    "alternative-id": [
+      "10.3389/fpsyg.2019.02380"
+    ],
+    "URL": "https://doi.org/10.3389/fpsyg.2019.02380",
+    "relation": {},
+    "ISSN": [
+      "1664-1078"
+    ],
+    "issn-type": [
+      {
+        "value": "1664-1078",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2019,
+          10,
+          21
+        ]
+      ]
+    },
+    "article-number": "2380"
+  },
+  "Cervone-2016-preprint": {
+    "author": [
+      {
+        "family": "Cervone",
+        "given": "Daniel"
+      },
+      {
+        "family": "D\u2019Amour",
+        "given": "Alex"
+      },
+      {
+        "family": "Bornn",
+        "given": "Luke"
+      },
+      {
+        "family": "Goldsberry",
+        "given": "Kirk"
+      }
+    ],
+    "container-title": [
+      "Journal of the American Statistical Association"
+    ],
+    "volume": "111",
+    "issue": "514",
+    "page": "585\u2013599",
+    "DOI": "10.1080/01621459.2016.1141685"
+  },
+  "Sicilia-2019": {},
+  "sabag2023": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          6,
+          26
+        ]
+      ],
+      "date-time": "2026-06-26T10:40:32Z",
+      "timestamp": 1782470432808,
+      "version": "3.54.5"
+    },
+    "reference-count": 57,
+    "publisher": "Termedia Sp. z.o.o.",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              25
+            ]
+          ],
+          "date-time": "2023-07-25T00:00:00Z",
+          "timestamp": 1690243200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              25
+            ]
+          ],
+          "date-time": "2023-07-25T00:00:00Z",
+          "timestamp": 1690243200000
+        },
+        "content-version": "am",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2023,
+              7,
+              25
+            ]
+          ],
+          "date-time": "2023-07-25T00:00:00Z",
+          "timestamp": 1690243200000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Journal of Human Kinetics"
+    ],
+    "abstract": "<jats:p>In this study, the three-person officiating (3PO) principle was employed as an innovative method to examine decision-making (DM) processes among basketball referees. We aimed at exploring whether the ranking, experience, and teamwork among 25 basketball referees could predict accuracy of DM in ambiguous situations taken from basketball games. An analysis of 283 officiating cases taken from 100 filmed games was conducted. The events were then classified by nine experts according to whether the officiating decision was accurate, and which referee (Lead, Center or Trail) was standing in the main coverage area, as per the 3PO principle, when the decision was made. Our findings indicate that the teamwork (coordination) component was associated with the quality of DM. Of the 283 events, 60 decisions (21%) were not made from the recommended position according to the 3PO principle; 49 of those decisions were incorrect. The findings are discussed from both developmental and instructional perspectives.</jats:p>",
+    "DOI": "10.5114/jhk/169439",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2023-07-27T07:09:26Z",
+      "timestamp": 1690441766000
+    },
+    "source": "Crossref",
+    "is-referenced-by-count": 6,
+    "title": [
+      "Teamwork and Decision Making among Basketball Referees: The 3PO Principle, Refereeing Level, and Experience"
+    ],
+    "prefix": "10.5114",
+    "author": [
+      {
+        "given": "Eran",
+        "family": "Sabag",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Ronnie",
+        "family": "Lidor",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michal",
+        "family": "Arnon",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Elia",
+        "family": "Morgulev",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Bar-Eli",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "3061",
+    "published-online": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          25
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref-914375",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640414.2013.816762"
+      },
+      {
+        "key": "ref-914376",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.psychsport.2021.101926"
+      },
+      {
+        "key": "ref-914377",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Bar-Eli, M., Plessner, H., & Raab, M. (2011). Judgment, decision making and success in sport. Wiley-Blackwell.",
+        "DOI": "10.1002/9781119977032"
+      },
+      {
+        "key": "ref-914378",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10413200.2010.507497"
+      },
+      {
+        "key": "ref-914379",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/bul0000207"
+      },
+      {
+        "key": "ref-914380",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1123/jsep.28.1.93"
+      },
+      {
+        "key": "ref-914381",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1123/ijspp.2016-0392"
+      },
+      {
+        "key": "ref-914382",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/job.82"
+      },
+      {
+        "key": "ref-914383",
+        "unstructured": "Chassy, P., & Gobet, F. (2010). Speed of expertise acquisition depends upon inherited factors. Talent Development and Excellence, 2(1), 17\u201327."
+      },
+      {
+        "key": "ref-914384",
+        "doi-asserted-by": "crossref",
+        "unstructured": "De Oliveira, M. C., Orbetelli, R., & Neto, T. L. D. B. (2011). Call accuracy and distance from the play: A study with Brazilian soccer referees. International Journal of Exercise Science, 4, 30\u201338.",
+        "DOI": "10.70252/YQIZ9104"
+      },
+      {
+        "key": "ref-914385",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1111/joes.12106"
+      },
+      {
+        "key": "ref-914386",
+        "unstructured": "Dosseville, F., Laborde, S., & Garncarzyk, C. (2013). Current research in sports officiating and decision-making. In C. Mohiyeddini (Ed.). Contemporary topics and trends in the psychology of sports. New York, NY: Nova. (pp. 13\u201338)."
+      },
+      {
+        "key": "ref-914387",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Ericsson, K. A., Hoffman, R. R., Kozbelt, A., & Williams, A. M. (Eds). (2018). The Cambridge handbook of expertise and expert performance. Cambridge University Press.",
+        "DOI": "10.1017/9781316480748"
+      },
+      {
+        "key": "ref-914388",
+        "unstructured": "Ericsson, K. A., & Pool, R. (2016). Peak: Secrets from the new science of expertise. Houghton Mifflin Harcourt."
+      },
+      {
+        "key": "ref-914389",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/24748668.2020.1758437"
+      },
+      {
+        "key": "ref-914390",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/v10078-009-0018-1"
+      },
+      {
+        "key": "ref-914391",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/1076-898X.14.1.21"
+      },
+      {
+        "key": "ref-914392",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02701367.2009.10599614"
+      },
+      {
+        "key": "ref-914393",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02701367.2020.1756198"
+      },
+      {
+        "key": "ref-914394",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.psychsport.2012.08.002"
+      },
+      {
+        "key": "ref-914395",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640410310001641502"
+      },
+      {
+        "key": "ref-914396",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640414.2019.1570898"
+      },
+      {
+        "key": "ref-914397",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14198/jhse.2021.16.Proc2.45"
+      },
+      {
+        "key": "ref-914398",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Kittel, A., Larkin, P., Elsworthy, N., & Spittle, M. (2019). Video-based testing in sporting officials: A systematic review. Psychology of Sport & Exercise, 43, 261\u2013270.",
+        "DOI": "10.1016/j.psychsport.2019.03.013"
+      },
+      {
+        "key": "ref-914399",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/24748668.2011.11868562"
+      },
+      {
+        "key": "ref-914400",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jsams.2007.05.006"
+      },
+      {
+        "key": "ref-914401",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640410600718640"
+      },
+      {
+        "key": "ref-914402",
+        "doi-asserted-by": "crossref",
+        "unstructured": "MacMahon, C., Mascarenhas, D., Plessner, H., Pizzera, A., Oudejans, R., & Raab, M. (2015). Sports officials and officiating: Science and practice. Routledge.",
+        "DOI": "10.4324/9780203700525"
+      },
+      {
+        "key": "ref-914403",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640414.2012.711485"
+      },
+      {
+        "key": "ref-914404",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mascarenhas, D. R., Collins, D., & Mortimer, P. (2002). The art of reason versus the exactness of science in elite refereeing: Comments on Plessner and Betsch (2001). Journal of Sport and Exercise Psychology, 24, 328\u2013333.",
+        "DOI": "10.1123/jsep.24.3.328"
+      },
+      {
+        "key": "ref-914405",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jebo.2014.03.022"
+      },
+      {
+        "key": "ref-914406",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpsyg.2018.02637"
+      },
+      {
+        "key": "ref-914407",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640414.2016.1194524"
+      },
+      {
+        "key": "ref-914408",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/00913847.2019.1599588"
+      },
+      {
+        "key": "ref-914409",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/S1469-0292(01)00033-4"
+      },
+      {
+        "key": "ref-914410",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.joep.2009.08.007"
+      },
+      {
+        "key": "ref-914411",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s11042-015-2938-1"
+      },
+      {
+        "key": "ref-914412",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.2478/hukin-2014-0025"
+      },
+      {
+        "key": "ref-914413",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.psychsport.2020.101787"
+      },
+      {
+        "key": "ref-914414",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02701367.2017.1412392"
+      },
+      {
+        "key": "ref-914415",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10413200.2011.608412"
+      },
+      {
+        "key": "ref-914416",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1123/jsep.23.3.254"
+      },
+      {
+        "key": "ref-914417",
+        "unstructured": "Proios, M., Kostas, K., Dimitrios, T., Michael, P., & Unierzyski, P. (2007). Decision making in sport: Choice decision versus application of the rules of the game. Studies in Physical Culture and Tourism, 14, 87\u201395."
+      },
+      {
+        "key": "ref-914418",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1123/jsep.35.6.576"
+      },
+      {
+        "key": "ref-914419",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.psychsport.2018.10.004"
+      },
+      {
+        "key": "ref-914420",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Raue, C., Dreisk\u00e4mper, D., Pauly, H., & Strauss, B. (2021). Team Trust in Sport Teams: Methodological Implications to Advance this Field. In Trust and Communication (pp. 241\u2013252). Springer, Cham.\u200f.",
+        "DOI": "10.1007/978-3-030-72945-5_12"
+      },
+      {
+        "key": "ref-914421",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5465/amr.2008.27751276"
+      },
+      {
+        "key": "ref-914422",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/1612197X.2018.1462100"
+      },
+      {
+        "key": "ref-914423",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fpsyg.2020.564855"
+      },
+      {
+        "key": "ref-914424",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/10413200.2012.741090"
+      },
+      {
+        "key": "ref-914425",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14198/jhse.2015.10.Proc1.22"
+      },
+      {
+        "key": "ref-914426",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1123/jsep.35.6.585"
+      },
+      {
+        "key": "ref-914427",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.14198/jhse.2020.154.09"
+      },
+      {
+        "key": "ref-914428",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.psychsport.2017.09.010"
+      },
+      {
+        "key": "ref-914429",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1080/02640414.2020.1809163"
+      },
+      {
+        "key": "ref-914430",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.5220/0006031501650170"
+      },
+      {
+        "key": "ref-914431",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.3389/fspor.2020.572891"
+      }
+    ],
+    "container-title": [
+      "Journal of Human Kinetics"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://jhk.termedia.pl/pdf-169439-92497",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "https://jhk.termedia.pl/pdf-169439-92497",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          25
+        ]
+      ],
+      "date-time": "2024-10-25T03:47:34Z",
+      "timestamp": 1729828054000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://jhk.termedia.pl/Teamwork-and-Decision-Making-among-Basketball-Referees-The-3PO-Principle-Refereeing,169439,0,2.html"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          25
+        ]
+      ]
+    },
+    "references-count": 57,
+    "alternative-id": [
+      "169439"
+    ],
+    "URL": "https://doi.org/10.5114/jhk/169439",
+    "relation": {},
+    "ISSN": [
+      "1640-5544",
+      "1899-7562"
+    ],
+    "issn-type": [
+      {
+        "value": "1640-5544",
+        "type": "print"
+      },
+      {
+        "value": "1899-7562",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2023,
+          7,
+          25
+        ]
+      ]
+    }
+  },
+  "gomez2020": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          1,
+          6
+        ]
+      ],
+      "date-time": "2026-01-06T05:13:41Z",
+      "timestamp": 1767676421058,
+      "version": "3.41.2"
+    },
+    "reference-count": 59,
+    "publisher": "Frontiers Media SA",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2020,
+              11,
+              5
+            ]
+          ],
+          "date-time": "2020-11-05T00:00:00Z",
+          "timestamp": 1604534400000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "frontiersin.org"
+      ],
+      "crossmark-restriction": true
+    },
+    "short-container-title": [
+      "Front. Psychol."
+    ],
+    "DOI": "10.3389/fpsyg.2020.566684",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ],
+      "date-time": "2020-11-05T06:18:56Z",
+      "timestamp": 1604557136000
+    },
+    "update-policy": "https://doi.org/10.3389/crossmark-policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 3,
+    "title": [
+      "Unbiased Decisions Among Women\u2019s Basketball Referees"
+    ],
+    "prefix": "10.3389",
+    "volume": "11",
+    "author": [
+      {
+        "given": "Carlos",
+        "family": "Gomez-Gonzalez",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Helmut",
+        "family": "Dietl",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Cornel",
+        "family": "Nesseler",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "1965",
+    "published-online": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "B1",
+        "doi-asserted-by": "crossref",
+        "first-page": "715",
+        "DOI": "10.1162/003355300554881",
+        "article-title": "Economics and identity.",
+        "volume": "115",
+        "author": "Akerlof",
+        "year": "2000",
+        "journal-title": "Q. J. Econ."
+      },
+      {
+        "key": "B2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.15185/izawol.29.v2",
+        "author": "Azmat",
+        "year": "2019",
+        "journal-title": "Gender Diversity in Teams."
+      },
+      {
+        "key": "B3",
+        "doi-asserted-by": "publisher",
+        "first-page": "1207",
+        "DOI": "10.1257/aer.20151211",
+        "article-title": "Does the gender composition of scientific committees matter?",
+        "volume": "107",
+        "author": "Bagues",
+        "year": "2017",
+        "journal-title": "Am. Econ. Rev."
+      },
+      {
+        "journal-title": "Blindspot: Hidden Biases of Good People.",
+        "year": "2016",
+        "author": "Banaji",
+        "key": "B4"
+      },
+      {
+        "key": "B5",
+        "doi-asserted-by": "publisher",
+        "first-page": "1169",
+        "DOI": "10.2307/20439061",
+        "article-title": "Discrimination and implicit bias in a racially unequal society.",
+        "volume": "94",
+        "author": "Banks",
+        "year": "2006",
+        "journal-title": "Calif. Law Rev."
+      },
+      {
+        "key": "B6",
+        "doi-asserted-by": "crossref",
+        "first-page": "R41",
+        "DOI": "10.1177/002795011523200105",
+        "article-title": "Born in the USA: national origin effects on time allocation in US and Spanish professional basketball.",
+        "volume": "232",
+        "author": "Berri",
+        "year": "2015",
+        "journal-title": "Natl. Inst. Econ. Rev."
+      },
+      {
+        "key": "B7",
+        "doi-asserted-by": "crossref",
+        "first-page": "94",
+        "DOI": "10.1257/000282805774670365",
+        "article-title": "Implicit discrimination.",
+        "volume": "95",
+        "author": "Bertrand",
+        "year": "2005",
+        "journal-title": "Am. Econ. Rev."
+      },
+      {
+        "key": "B8",
+        "first-page": "665",
+        "article-title": "Implicit attitudes",
+        "author": "Blair",
+        "year": "2015",
+        "journal-title": "APA Handbook of Personality and Social Psychology: Attitudes and Social Cognition"
+      },
+      {
+        "key": "B9",
+        "doi-asserted-by": "publisher",
+        "first-page": "126",
+        "DOI": "10.1016/j.jebo.2013.12.017",
+        "article-title": "Gender differences in risk aversion: do single-sex environments affect their development?",
+        "volume": "99",
+        "author": "Booth",
+        "year": "2014",
+        "journal-title": "J. Econ. Behav. Organ."
+      },
+      {
+        "key": "B10",
+        "doi-asserted-by": "publisher",
+        "first-page": "407",
+        "DOI": "10.1016/j.smr.2010.05.002",
+        "article-title": "Navigating barriers: a qualitative examination of the under-representation of Black females as head coaches in collegiate basketball.",
+        "volume": "13",
+        "author": "Borland",
+        "year": "2010",
+        "journal-title": "Sport Manage. Rev."
+      },
+      {
+        "key": "B11",
+        "doi-asserted-by": "publisher",
+        "first-page": "329",
+        "DOI": "10.1111/j.1465-7287.2011.00295.x",
+        "article-title": "Favoritism and referee bias in European soccer: evidence from the Spanish League and the UEFA Champions League.",
+        "volume": "30",
+        "author": "Buraimo",
+        "year": "2012",
+        "journal-title": "Contemp. Econ. Policy"
+      },
+      {
+        "key": "B12",
+        "doi-asserted-by": "publisher",
+        "first-page": "1",
+        "DOI": "10.4324/9781315269887-1",
+        "article-title": "Room composition effects on risk taking by gender.",
+        "volume": "2019",
+        "author": "Castillo",
+        "year": "2019",
+        "journal-title": "Exp. Econ"
+      },
+      {
+        "key": "B13",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1016/j.orgdyn.2019.03.002",
+        "article-title": "Improving decisions that affect gender equality in the workplace.",
+        "volume": "49",
+        "author": "Chang",
+        "year": "2020",
+        "journal-title": "Organ. Dyn."
+      },
+      {
+        "key": "B14",
+        "doi-asserted-by": "publisher",
+        "first-page": "176",
+        "DOI": "10.1016/j.joep.2017.04.005",
+        "article-title": "Choking under pressure and gender: Evidence from professional tennis.",
+        "volume": "61",
+        "author": "Cohen-Zada",
+        "year": "",
+        "journal-title": "J. Econ. Psychol."
+      },
+      {
+        "key": "B15",
+        "doi-asserted-by": "publisher",
+        "first-page": "66",
+        "DOI": "10.1016/j.jebo.2017.01.009",
+        "article-title": "Psychological momentum and gender.",
+        "volume": "135",
+        "author": "Cohen-Zada",
+        "year": "",
+        "journal-title": "J. Econ. Behav. Organ."
+      },
+      {
+        "key": "B16",
+        "doi-asserted-by": "publisher",
+        "first-page": "162",
+        "DOI": "10.1111/ecca.12107",
+        "article-title": "Gender discrimination and evaluators\u2019 gender: evidence from Italian academia.",
+        "volume": "82",
+        "author": "De Paola",
+        "year": "2015",
+        "journal-title": "Economica"
+      },
+      {
+        "journal-title": "How Black Lives Matter Activists Plan to Fix Schools.",
+        "year": "2016",
+        "author": "Deruy",
+        "key": "B17"
+      },
+      {
+        "key": "B18",
+        "doi-asserted-by": "publisher",
+        "first-page": "91",
+        "DOI": "10.3233/jsa-150012",
+        "article-title": "No referee bias in the NBA: new evidence with leagues\u2019 assessment data.",
+        "volume": "1",
+        "author": "Deutscher",
+        "year": "2015",
+        "journal-title": "J. Sports Anal."
+      },
+      {
+        "key": "B19",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4324/9781410611567",
+        "author": "Dipboye",
+        "year": "2013",
+        "journal-title": "Discrimination at Work: The Psychological and Organizational Bases."
+      },
+      {
+        "key": "B20",
+        "doi-asserted-by": "publisher",
+        "first-page": "679",
+        "DOI": "10.1111/joes.12106",
+        "article-title": "Referee bias.",
+        "volume": "30",
+        "author": "Dohmen",
+        "year": "2016",
+        "journal-title": "J. Econ. Surv."
+      },
+      {
+        "key": "B21",
+        "doi-asserted-by": "publisher",
+        "first-page": "411",
+        "DOI": "10.1111/j.1465-7295.2007.00112.x",
+        "article-title": "The influence of social forces: Evidence from the behavior of football referees.",
+        "volume": "46",
+        "author": "Dohmen",
+        "year": "2008",
+        "journal-title": "Econ. Inq."
+      },
+      {
+        "journal-title": "Delusions of Gender: How Our Minds, Society, and Neurosexism Create Difference.",
+        "year": "2010",
+        "author": "Fine",
+        "key": "B22"
+      },
+      {
+        "key": "B23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1186/s12910-017-0179-8",
+        "article-title": "Implicit bias in healthcare professionals: a systematic review.",
+        "volume": "18",
+        "author": "FitzGerald",
+        "year": "2017",
+        "journal-title": "BMC Med. Ethics"
+      },
+      {
+        "key": "B24",
+        "doi-asserted-by": "publisher",
+        "first-page": "573",
+        "DOI": "10.1177/14687968080080040103",
+        "article-title": "The here and now of everyday nationhood.",
+        "volume": "8",
+        "author": "Fox",
+        "year": "2008",
+        "journal-title": "Ethnicities"
+      },
+      {
+        "key": "B25",
+        "doi-asserted-by": "publisher",
+        "first-page": "136",
+        "DOI": "10.1111/j.1468-0084.2012.00725.x",
+        "article-title": "Punishing the foreigner: implicit discrimination in the Premier League based on oppositional identity.",
+        "volume": "75",
+        "author": "Gallo",
+        "year": "2013",
+        "journal-title": "Oxf. Bull. Econ. Stat."
+      },
+      {
+        "journal-title": "Race is a Social Construct.",
+        "year": "2016",
+        "author": "Gannon",
+        "key": "B26"
+      },
+      {
+        "key": "B27",
+        "doi-asserted-by": "publisher",
+        "first-page": "208",
+        "DOI": "10.1162/0034653053970267",
+        "article-title": "Favoritism under social pressure.",
+        "volume": "87",
+        "author": "Garicano",
+        "year": "2005",
+        "journal-title": "Rev. Econ. Stat."
+      },
+      {
+        "key": "B28",
+        "doi-asserted-by": "publisher",
+        "first-page": "88",
+        "DOI": "10.1177/2372732214550403",
+        "article-title": "Racial bias and public policy.",
+        "volume": "1",
+        "author": "Glaser",
+        "year": "2014",
+        "journal-title": "Policy Insights Behav. Brain Sci."
+      },
+      {
+        "key": "B29",
+        "doi-asserted-by": "publisher",
+        "first-page": "983",
+        "DOI": "10.1080/24748668.2016.11868943",
+        "article-title": "Investigation of the impact of \u2018fouling out\u2019 on teams\u2019 performance in elite basketball.",
+        "volume": "16",
+        "author": "Gomez",
+        "year": "2016",
+        "journal-title": "Int. J. Perform. Anal. Sport."
+      },
+      {
+        "key": "B30",
+        "doi-asserted-by": "publisher",
+        "first-page": "945",
+        "DOI": "10.2307/20439056",
+        "article-title": "Implicit bias: Scientific foundations.",
+        "volume": "94",
+        "author": "Greenwald",
+        "year": "2006",
+        "journal-title": "Calif. Law Rev."
+      },
+      {
+        "key": "B31",
+        "doi-asserted-by": "crossref",
+        "first-page": "1464",
+        "DOI": "10.1037/0022-3514.74.6.1464",
+        "article-title": "Measuring individual differences in implicit cognition: the implicit association test.",
+        "volume": "74",
+        "author": "Greenwald",
+        "year": "1998",
+        "journal-title": "J. Pers. Soc. Psychol."
+      },
+      {
+        "key": "B32",
+        "doi-asserted-by": "publisher",
+        "first-page": "39",
+        "DOI": "10.1016/j.riob.2009.10.001",
+        "article-title": "The existence of implicit bias is beyond reasonable doubt: A refutation of ideological and methodological objections and executive summary of ten studies that no manager should ignore.",
+        "volume": "29",
+        "author": "Jost",
+        "year": "2009",
+        "journal-title": "Res. Organ. Behav."
+      },
+      {
+        "journal-title": "Race in a Bottle: The Story of Bidil and Racialized Medicine in a PostGenomic Age.",
+        "year": "2013",
+        "author": "Kahn",
+        "key": "B33"
+      },
+      {
+        "key": "B34",
+        "doi-asserted-by": "publisher",
+        "first-page": "21",
+        "DOI": "10.1177/019372359101500102",
+        "article-title": "Employment patterns of female coaches in men\u2019s athletics: Tokenism and marginalization as reflections of occupational sex-segregation.",
+        "volume": "15",
+        "author": "Kane",
+        "year": "1991",
+        "journal-title": "J. Sport Soc. Issues"
+      },
+      {
+        "journal-title": "Nationalistic bias among international experts: Evidence from professional ski jumping.",
+        "year": "2020",
+        "author": "Krumer",
+        "key": "B35"
+      },
+      {
+        "key": "B36",
+        "doi-asserted-by": "publisher",
+        "first-page": "139",
+        "DOI": "10.1080/16184742.2018.1478440",
+        "article-title": "Group diversity\u2019s influence on sport teams and organizations: a meta-analytic examination and identification of key moderators.",
+        "volume": "19",
+        "author": "Lee",
+        "year": "2019",
+        "journal-title": "Eur. Sport Manag. Q."
+      },
+      {
+        "journal-title": "Choking Under Pressure of Top Performers: Evidence From Biathlon Competitions (No. 2017\u201324).",
+        "year": "2017",
+        "author": "Lindner",
+        "key": "B37"
+      },
+      {
+        "key": "B38",
+        "doi-asserted-by": "publisher",
+        "first-page": "495",
+        "DOI": "10.1080/00224549809600403",
+        "article-title": "Ingroup favoritism in umpiring decisions in Australian football.",
+        "volume": "138",
+        "author": "Mohr",
+        "year": "1998",
+        "journal-title": "J. Soc. Psychol."
+      },
+      {
+        "key": "B39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1037/0022-3514.81.1.33",
+        "article-title": "Moral credentials and the expression of prejudice.",
+        "volume": "81",
+        "author": "Monin",
+        "year": "2001",
+        "journal-title": "J. Pers. Soc. Psychol."
+      },
+      {
+        "key": "B40",
+        "volume": "62",
+        "author": "Page",
+        "year": "2010",
+        "journal-title": "Evidence of Referees\u2019 National Favouritism In Rugby."
+      },
+      {
+        "journal-title": "Race and Culture. Glencoe.",
+        "year": "1950",
+        "author": "Park",
+        "key": "B41"
+      },
+      {
+        "key": "B42",
+        "doi-asserted-by": "publisher",
+        "first-page": "1410",
+        "DOI": "10.1257/aer.101.4.1410",
+        "article-title": "Strike three: umpires\u2019 demand for discrimination.",
+        "volume": "101",
+        "author": "Parsons",
+        "year": "2011",
+        "journal-title": "Am. Econ. Rev."
+      },
+      {
+        "key": "B43",
+        "doi-asserted-by": "publisher",
+        "first-page": "1292",
+        "DOI": "10.1111/ecin.12180",
+        "article-title": "Own-nationality bias: evidence from UEFA Champions League football referees.",
+        "volume": "53",
+        "author": "Pope",
+        "year": "2015",
+        "journal-title": "Econ. Inq."
+      },
+      {
+        "key": "B44",
+        "doi-asserted-by": "publisher",
+        "first-page": "271",
+        "DOI": "10.1111/j.1530-9134.2011.00325.x",
+        "article-title": "Subperfect game: Profitable biases of NBA referees.",
+        "volume": "21",
+        "author": "Price",
+        "year": "2012",
+        "journal-title": "J. Econ. Manag. Strategy"
+      },
+      {
+        "key": "B45",
+        "doi-asserted-by": "publisher",
+        "first-page": "1859",
+        "DOI": "10.1162/qjec.2010.125.4.1859",
+        "article-title": "Racial discrimination among NBA referees.",
+        "volume": "125",
+        "author": "Price",
+        "year": "2010",
+        "journal-title": "Q. J. Econ."
+      },
+      {
+        "key": "B46",
+        "doi-asserted-by": "publisher",
+        "first-page": "343",
+        "DOI": "10.1038/s41562-018-0334-3",
+        "article-title": "Folk theories of nationality and anti-immigrant attitudes.",
+        "volume": "2",
+        "author": "Rad",
+        "year": "2018",
+        "journal-title": "Nat. Hum. Behav."
+      },
+      {
+        "key": "B47",
+        "doi-asserted-by": "publisher",
+        "first-page": "173",
+        "DOI": "10.1080/17461390600676200",
+        "article-title": "Discriminant analysis of game-related statistics between basketball guards, forwards and centres in three professional leagues.",
+        "volume": "6",
+        "author": "Sampaio",
+        "year": "2006",
+        "journal-title": "Eur. J. Sport Sci."
+      },
+      {
+        "key": "B48",
+        "doi-asserted-by": "publisher",
+        "first-page": "2131",
+        "DOI": "10.1111/ecoj.12513",
+        "article-title": "Competing identities: a field study of in-group bias among professional evaluators.",
+        "volume": "128",
+        "author": "Sandberg",
+        "year": "2018",
+        "journal-title": "Econ. J."
+      },
+      {
+        "key": "B49",
+        "doi-asserted-by": "publisher",
+        "first-page": "445",
+        "DOI": "10.1023/b:sers.0000049233.28353.f0",
+        "article-title": "Referees\u2019 decision making in handball and transgressive behaviors: Influence of stereotypes about gender of players?",
+        "volume": "51",
+        "author": "Souchon",
+        "year": "2004",
+        "journal-title": "Sex Roles"
+      },
+      {
+        "key": "B50",
+        "doi-asserted-by": "publisher",
+        "first-page": "585",
+        "DOI": "10.1123/jsep.35.6.585",
+        "article-title": "The influence of referees\u2019 expertise, gender, motivation, and time constraints on decisional bias against women.",
+        "volume": "35",
+        "author": "Souchon",
+        "year": "2013",
+        "journal-title": "J. Sport Exerc. Psychol."
+      },
+      {
+        "journal-title": "State of the Science: Implicit Bias Review 2014.",
+        "year": "2014",
+        "author": "Staats",
+        "key": "B51"
+      },
+      {
+        "key": "B52",
+        "doi-asserted-by": "publisher",
+        "first-page": "907",
+        "DOI": "10.1002/mar.1035",
+        "article-title": "Consumer ethnocentrism when foreign products are better.",
+        "volume": "18",
+        "author": "Supphellen",
+        "year": "2001",
+        "journal-title": "Psychol. Mark."
+      },
+      {
+        "key": "B53",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1093/oso/9780190465285.001.0001",
+        "author": "Suzuki",
+        "year": "2018",
+        "journal-title": "Reconsidering Race: Social Science Perspectives on Racial Categories in the Age of Genomics."
+      },
+      {
+        "key": "B54",
+        "doi-asserted-by": "crossref",
+        "first-page": "1",
+        "DOI": "10.1146/annurev.ps.33.020182.000245",
+        "article-title": "Social psychology of intergroup relations.",
+        "volume": "33",
+        "author": "Tajfel",
+        "year": "1982",
+        "journal-title": "Annu. Rev. Psychol."
+      },
+      {
+        "key": "B55",
+        "doi-asserted-by": "publisher",
+        "first-page": "1008",
+        "DOI": "10.1037/0021-9010.89.6.1008",
+        "article-title": "Work group diversity and group performance: an integrative model and research agenda.",
+        "volume": "89",
+        "author": "van Knippenberg",
+        "year": "2004",
+        "journal-title": "J. Appl. Psychol."
+      },
+      {
+        "key": "B56",
+        "doi-asserted-by": "publisher",
+        "first-page": "47",
+        "DOI": "10.2190/wr.15.1.d",
+        "article-title": "The underrepresentation of women in the male dominated sport workplace: perspectives of female coaches.",
+        "volume": "15",
+        "author": "Walker",
+        "year": "2011",
+        "journal-title": "J. Workplace Rights"
+      },
+      {
+        "key": "B57",
+        "doi-asserted-by": "publisher",
+        "first-page": "105",
+        "DOI": "10.1007/s11199-011-0064-8",
+        "article-title": "Gender effects on organizational problems\u2014Evidence from non-profit sports clubs in Germany.",
+        "volume": "66",
+        "author": "Wicker",
+        "year": "2012",
+        "journal-title": "Sex Roles"
+      },
+      {
+        "key": "B58",
+        "doi-asserted-by": "publisher",
+        "first-page": "67",
+        "DOI": "10.1111/j.1530-9134.2006.00092.x",
+        "article-title": "Nationalism in winter sports judging and its lessons for organizational decision making.",
+        "volume": "15",
+        "author": "Zitzewitz",
+        "year": "2006",
+        "journal-title": "J. Econ. Manag. Strategy"
+      },
+      {
+        "key": "B59",
+        "doi-asserted-by": "publisher",
+        "first-page": "3",
+        "DOI": "10.1177/1527002512441479",
+        "article-title": "Does transparency reduce favoritism and corruption? Evidence from the reform of figure skating judging.",
+        "volume": "15",
+        "author": "Zitzewitz",
+        "year": "2014",
+        "journal-title": "J. Sports Econ."
+      }
+    ],
+    "container-title": [
+      "Frontiers in Psychology"
+    ],
+    "original-title": [],
+    "link": [
+      {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.566684/full",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ],
+      "date-time": "2020-11-05T06:19:01Z",
+      "timestamp": 1604557141000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.566684/full"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ]
+    },
+    "references-count": 59,
+    "alternative-id": [
+      "10.3389/fpsyg.2020.566684"
+    ],
+    "URL": "https://doi.org/10.3389/fpsyg.2020.566684",
+    "relation": {},
+    "ISSN": [
+      "1664-1078"
+    ],
+    "issn-type": [
+      {
+        "type": "electronic",
+        "value": "1664-1078"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2020,
+          11,
+          5
+        ]
+      ]
+    },
+    "article-number": "566684"
+  },
+  "wang2025": {
+    "author": [
+      {
+        "family": "Wang",
+        "given": "R."
+      },
+      {
+        "family": "Chen",
+        "given": "L."
+      },
+      {
+        "family": "Wu",
+        "given": "Y."
+      },
+      {
+        "family": "Zhang",
+        "given": "Q."
+      }
+    ],
+    "container-title": [
+      "Frontiers in Psychology"
+    ],
+    "volume": "16",
+    "issue": "",
+    "page": "1682389",
+    "DOI": "10.3389/fpsyg.2025.1682389"
+  },
+  "shu2026": {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          19
+        ]
+      ],
+      "date-time": "2026-02-19T19:16:07Z",
+      "timestamp": 1771528567155,
+      "version": "3.50.1"
+    },
+    "reference-count": 49,
+    "publisher": "Public Library of Science (PLoS)",
+    "issue": "2",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2026,
+              2,
+              19
+            ]
+          ],
+          "date-time": "2026-02-19T00:00:00Z",
+          "timestamp": 1771459200000
+        },
+        "content-version": "vor",
+        "delay-in-days": 0,
+        "URL": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    ],
+    "content-domain": {
+      "domain": [
+        "www.plosone.org"
+      ],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "PLoS One"
+    ],
+    "abstract": "<jats:p>The growing emphasis on situational variables has significantly advanced research in sports performance analysis, yet studies focusing on referees from this perspective remain limited. This study examines how multiple situational variables influence foul calls metrics during the 2022\u20132023 Chinese Basketball Association League (CBA) season. Drawing on 18,519 foul events from 441 games, with the final analytical sample comprising 18,182 events from 439 games, independent-sample t-tests were used to assess the effects of individual situational variables, and binary logistic regression models were applied to examine their associations. The situational variables analyzed included game system, game type, team quality difference, score differential, and foul differential. Results show that while a clear home advantage emerges in home-and-away games, the overall foul number does not differ across systems. Stronger teams were called more fouls in games with large team quality gap, particularly in the fourth quarter. Leading teams were consistently called for more fouls when score differential widened, and teams with fewer accumulated fouls were more likely to receive subsequent calls, suggesting a potential balancing tendency in officiating. Logistic regression showed that foul calls was significantly associated with score differential, foul differential, and team quality difference, whereas the main effects of game type were limited. Importantly, several variables that were non-significant in single-factor tests emerged as significant in the multivariable models, underscoring the situational nature of officiating. This study enriches understanding of officiating performance within the framework of sports performance analysis. These findings highlight that referees\u2019 decisions are \u201ccontext-sensitive\u201d rather than random or rigid, meaning they vary across specific competitive situations. Such situational sensitivity may sustain competitive balance and game flow but also introduces risks of officiating bias. Recognizing this dual nature is valuable not only for referee evaluation, but also for leagues governance, as well as for teams seeking to anticipate officiating tendencies during games.</jats:p>",
+    "DOI": "10.1371/journal.pone.0342151",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          19
+        ]
+      ],
+      "date-time": "2026-02-19T18:26:30Z",
+      "timestamp": 1771525590000
+    },
+    "page": "e0342151",
+    "update-policy": "https://doi.org/10.1371/journal.pone.corrections_policy",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Situational influences on officiating performance: An analysis of foul calls in the Chinese basketball association league (CBA)"
+    ],
+    "prefix": "10.1371",
+    "volume": "21",
+    "author": [
+      {
+        "ORCID": "https://orcid.org/0009-0008-7543-5697",
+        "authenticated-orcid": true,
+        "given": "Fang",
+        "family": "Shu",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Liqing",
+        "family": "Zhang",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0001-6921-2851",
+        "authenticated-orcid": true,
+        "given": "Xiao",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Ruohan",
+        "family": "Xu",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "340",
+    "published-online": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          19
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "issue": "3",
+        "key": "pone.0342151.ref001",
+        "doi-asserted-by": "crossref",
+        "first-page": "503",
+        "DOI": "10.1080/09720073.2015.11891754",
+        "article-title": "The effects of teams, individual players and spectators on basketball officials\u2019 decision-making processes",
+        "volume": "20",
+        "author": "OA Gen\u00e7ay",
+        "year": "2015",
+        "journal-title": "The Anthropologist"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0342151.ref002",
+        "doi-asserted-by": "crossref",
+        "first-page": "4664",
+        "DOI": "10.1038/s41598-023-31799-y",
+        "article-title": "Quantifying implicit biases in refereeing using NBA referees as a testbed",
+        "volume": "13",
+        "author": "K Pelechrinis",
+        "year": "2023",
+        "journal-title": "Sci Rep"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0342151.ref003",
+        "article-title": "Inner pace: A dynamic exploration and analysis of basketball game pace",
+        "volume": "20",
+        "author": "F Zhang",
+        "year": "2025",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0342151.ref004",
+        "doi-asserted-by": "crossref",
+        "first-page": "155",
+        "DOI": "10.5114/biolsport.2019.83505",
+        "article-title": "Adverse effects of technical fouls in elite basketball performance",
+        "volume": "36",
+        "author": "M-\u00c1 G\u00f3mez",
+        "year": "2019",
+        "journal-title": "Biol Sport"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0342151.ref005",
+        "doi-asserted-by": "crossref",
+        "first-page": "664",
+        "DOI": "10.1123/ijspp.2015-0478",
+        "article-title": "The influence of unsportsmanlike fouls on basketball teams\u2019 performance according to context-related variables",
+        "volume": "11",
+        "author": "M-\u00c1 G\u00f3mez",
+        "year": "2016",
+        "journal-title": "International Journal of Sports Physiology and Performance"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0342151.ref006",
+        "doi-asserted-by": "crossref",
+        "first-page": "369",
+        "DOI": "10.1080/17461390802261470",
+        "article-title": "Basketball game\u2010related statistics that discriminate between teams\u2019 season\u2010long success",
+        "volume": "8",
+        "author": "SJ Ib\u00e1\u00f1ez",
+        "year": "2008",
+        "journal-title": "European Journal of Sport Science"
+      },
+      {
+        "issue": "8",
+        "key": "pone.0342151.ref007",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0273427",
+        "article-title": "Game statistics that discriminate winning and losing at the NBA level of basketball competition",
+        "volume": "17",
+        "author": "D Cabarkapa",
+        "year": "2022",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "pone.0342151.ref008",
+        "unstructured": "National Basketball Association. NBA Last Two Minute Reports \u2013 Frequently Asked Questions. https://official.nba.com/nba-last-two-minute-reports-frequently-asked-questions/. Accessed 2025 August 23."
+      },
+      {
+        "issue": "1",
+        "key": "pone.0342151.ref009",
+        "doi-asserted-by": "crossref",
+        "first-page": "13",
+        "DOI": "10.1123/jsep.14.1.13",
+        "article-title": "The Home Advantage In Sport Competitions: A Literature Review",
+        "volume": "14",
+        "author": "KS Courneya",
+        "year": "1992",
+        "journal-title": "Journal of Sport and Exercise Psychology"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0342151.ref010",
+        "doi-asserted-by": "crossref",
+        "first-page": "221",
+        "DOI": "10.2165/00007256-199928040-00001",
+        "article-title": "Home advantage in sport: an overview of studies on the advantage of playing at home",
+        "volume": "28",
+        "author": "AM Nevill",
+        "year": "1999",
+        "journal-title": "Sports Med"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0342151.ref011",
+        "first-page": "1",
+        "article-title": "Keeping the Game Close: \u201cFair Play\u201d Among Men\u2019s College Basketball Referees",
+        "volume": "61",
+        "author": "KM Thu",
+        "year": "2002",
+        "journal-title": "Human Organization"
+      },
+      {
+        "issue": "7",
+        "key": "pone.0342151.ref012",
+        "doi-asserted-by": "crossref",
+        "first-page": "687",
+        "DOI": "10.1080/02640410902729733",
+        "article-title": "Officiating bias: the effect of foul differential on foul calls in NCAA basketball",
+        "volume": "27",
+        "author": "KJ Anderson",
+        "year": "2009",
+        "journal-title": "J Sports Sci"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0342151.ref013",
+        "doi-asserted-by": "crossref",
+        "first-page": "271",
+        "DOI": "10.1111/j.1530-9134.2011.00325.x",
+        "article-title": "Subperfect game: profitable biases of NBA referees",
+        "volume": "21",
+        "author": "J Price",
+        "year": "2012",
+        "journal-title": "Economics Manag Strategy"
+      },
+      {
+        "key": "pone.0342151.ref014",
+        "doi-asserted-by": "crossref",
+        "first-page": "108",
+        "DOI": "10.1016/j.jebo.2014.03.022",
+        "article-title": "Deception and decision making in professional basketball: Is it beneficial to flop?",
+        "volume": "102",
+        "author": "E Morgulev",
+        "year": "2014",
+        "journal-title": "Journal of Economic Behavior & Organization"
+      },
+      {
+        "key": "pone.0342151.ref015",
+        "doi-asserted-by": "crossref",
+        "first-page": "2637",
+        "DOI": "10.3389/fpsyg.2018.02637",
+        "article-title": "Searching for judgment biases among elite basketball referees",
+        "volume": "9",
+        "author": "E Morgulev",
+        "year": "2018",
+        "journal-title": "Front Psychol"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0342151.ref016",
+        "doi-asserted-by": "crossref",
+        "first-page": "147",
+        "DOI": "10.1080/02640414.2020.1809163",
+        "article-title": "Video assistant referees (VAR): The impact of technology on decision making in association football referees",
+        "volume": "39",
+        "author": "J Spitz",
+        "year": "2021",
+        "journal-title": "J Sports Sci"
+      },
+      {
+        "key": "pone.0342151.ref017",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.1016/j.psychsport.2019.03.013",
+        "article-title": "Video-based testing in sporting officials: A systematic review",
+        "volume": "43",
+        "author": "A Kittel",
+        "year": "2019",
+        "journal-title": "Psychology of Sport and Exercise"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0342151.ref018",
+        "doi-asserted-by": "crossref",
+        "first-page": "391",
+        "DOI": "10.1080/17461391003699104",
+        "article-title": "Effects of starting score\u2010line, game location, and quality of opposition in basketball quarter score",
+        "volume": "10",
+        "author": "J Sampaio",
+        "year": "2010",
+        "journal-title": "European Journal of Sport Science"
+      },
+      {
+        "issue": "2010",
+        "key": "pone.0342151.ref019",
+        "doi-asserted-by": "crossref",
+        "first-page": "93",
+        "DOI": "10.2478/v10078-010-0036-z",
+        "article-title": "Ball Possession Strategies in Elite Soccer According to the Evolution of the Match-Score: the Influence of Situational Variables",
+        "volume": "25",
+        "author": "C Lago-Pe\u00f1as",
+        "year": "2010",
+        "journal-title": "Journal of Human Kinetics"
+      },
+      {
+        "key": "pone.0342151.ref020",
+        "volume-title": "Routledge handbook of sports performance analysis",
+        "author": "M\u00c1 G\u00f3mez",
+        "year": "2013"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0342151.ref021",
+        "doi-asserted-by": "crossref",
+        "first-page": "907",
+        "DOI": "10.1007/s40279-017-0851-7",
+        "article-title": "Talent Identification and Development in Male Football: A Systematic Review",
+        "volume": "48",
+        "author": "H Sarmento",
+        "year": "2018",
+        "journal-title": "Sports Med"
+      },
+      {
+        "issue": "7",
+        "key": "pone.0342151.ref022",
+        "doi-asserted-by": "crossref",
+        "first-page": "950",
+        "DOI": "10.1177/15270025211073337",
+        "article-title": "The effect of the crowd on home bias: evidence from NBA games during the COVID-19 pandemic",
+        "volume": "23",
+        "author": "H Gong",
+        "year": "2022",
+        "journal-title": "J Sports Econom"
+      },
+      {
+        "issue": "24",
+        "key": "pone.0342151.ref023",
+        "first-page": "2495",
+        "article-title": "\u201cOutlier detection: Underused in sport science despite outliers\u2019 impact on inference and prediction\u201d",
+        "volume": "42",
+        "author": "M Zanin",
+        "year": "2024",
+        "journal-title": "J Sports Sci"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0342151.ref024",
+        "doi-asserted-by": "crossref",
+        "first-page": "930",
+        "DOI": "10.1080/24748668.2019.1684773",
+        "article-title": "Predicting match outcome according to the quality of opponent in the English premier league using situational variables and team performance indicators",
+        "volume": "19",
+        "author": "G Bilek",
+        "year": "2019",
+        "journal-title": "Int J Performance Analysis in Sport"
+      },
+      {
+        "key": "pone.0342151.ref025",
+        "doi-asserted-by": "crossref",
+        "first-page": "1412840",
+        "DOI": "10.3389/fpsyg.2024.1412840",
+        "article-title": "The influence of \u201cmomentum\u201d on the game outcome while controlling for game types in basketball",
+        "volume": "15",
+        "author": "M Qiu",
+        "year": "2024",
+        "journal-title": "Front Psychol"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0342151.ref026",
+        "first-page": "331",
+        "article-title": "Home advantage analysis in ACB League in season 2007-2008",
+        "volume": "18",
+        "author": "J Garc\u00eda",
+        "year": "2009",
+        "journal-title": "Revista de Psicolog\u00eda del Deporte"
+      },
+      {
+        "issue": "7",
+        "key": "pone.0342151.ref027",
+        "doi-asserted-by": "crossref",
+        "first-page": "1819",
+        "DOI": "10.1111/j.1559-1816.2010.00641.x",
+        "article-title": "The home field advantage in athletics: a meta\u2010analysis",
+        "volume": "40",
+        "author": "JP Jamieson",
+        "year": "2010",
+        "journal-title": "J Applied Social Pyschol"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0342151.ref028",
+        "first-page": "263",
+        "article-title": "Variations in home advantage in the national basketball leagues of Europe",
+        "volume": "22",
+        "author": "R Pollard",
+        "year": "2013",
+        "journal-title": "Revista de Psicolog\u00eda del Deporte"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0342151.ref029",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0152440",
+        "article-title": "The advantage of playing home in nba: microscopic, team-specific and evolving features",
+        "volume": "11",
+        "author": "HV Ribeiro",
+        "year": "2016",
+        "journal-title": "PLoS One"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0342151.ref030",
+        "doi-asserted-by": "crossref",
+        "first-page": "213",
+        "DOI": "10.1007/s41060-017-0093-7",
+        "article-title": "Sports analytics and the big-data era",
+        "volume": "5",
+        "author": "E Morgulev",
+        "year": "2018",
+        "journal-title": "Int J Data Sci Anal"
+      },
+      {
+        "issue": "5",
+        "key": "pone.0342151.ref031",
+        "doi-asserted-by": "crossref",
+        "first-page": "655",
+        "DOI": "10.1123/ijspp.2020-0405",
+        "article-title": "The business end of the season: a comparison between playoff and regular-season workloads in professional basketball players",
+        "volume": "16",
+        "author": "D Ferioli",
+        "year": "2021",
+        "journal-title": "Int J Sports Physiol Perform"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0342151.ref032",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1371/journal.pone.0229212",
+        "article-title": "Training load and match-play demands in basketball based on competition level: a systematic review",
+        "volume": "15",
+        "author": "AJ Petway",
+        "year": "2020",
+        "journal-title": "PLoS One"
+      },
+      {
+        "key": "pone.0342151.ref033",
+        "doi-asserted-by": "crossref",
+        "first-page": "970455",
+        "DOI": "10.3389/fspor.2022.970455",
+        "article-title": "Training and match demands differ between the regular season and finals in semi-professional basketball",
+        "volume": "4",
+        "author": "JA Palmer",
+        "year": "2022",
+        "journal-title": "Front Sports Act Living"
+      },
+      {
+        "issue": "21",
+        "key": "pone.0342151.ref034",
+        "doi-asserted-by": "crossref",
+        "first-page": "9989",
+        "DOI": "10.3390/app14219989",
+        "article-title": "Home-court advantage and home win percentage in the nba: an in-depth investigation by conference and team ability",
+        "volume": "14",
+        "author": "A L\u00f3pez-Garc\u00eda",
+        "year": "2024",
+        "journal-title": "Appl Sci"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0342151.ref035",
+        "doi-asserted-by": "crossref",
+        "first-page": "261",
+        "DOI": "10.1016/S1469-0292(01)00033-4",
+        "article-title": "The influence of crowd noise and experience upon refereeing decisions in football",
+        "volume": "3",
+        "author": "AM Nevill",
+        "year": "2002",
+        "journal-title": "Psychol Sport and Exercise"
+      },
+      {
+        "issue": "12",
+        "key": "pone.0342151.ref036",
+        "doi-asserted-by": "crossref",
+        "first-page": "1597",
+        "DOI": "10.1080/17461391.2020.1845814",
+        "article-title": "The sound of silence in association football: Home advantage and referee bias decrease in matches played without spectators",
+        "volume": "21",
+        "author": "F Sors",
+        "year": "2021",
+        "journal-title": "Eur J Sport Sci"
+      },
+      {
+        "issue": "8",
+        "key": "pone.0342151.ref037",
+        "doi-asserted-by": "crossref",
+        "first-page": "1014",
+        "DOI": "10.1177/1527002519851145",
+        "article-title": "The Role of Referees in Professional Sports Contests",
+        "volume": "20",
+        "author": "C Duvinage",
+        "year": "2019",
+        "journal-title": "J Sports Economics"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0342151.ref038",
+        "doi-asserted-by": "crossref",
+        "first-page": "324",
+        "DOI": "10.1177/155862351200700404",
+        "article-title": "How Much Trouble is Early Foul Trouble? Strategically Idling Resources in the NBA",
+        "volume": "7",
+        "author": "A Maymin",
+        "year": "2012",
+        "journal-title": "Int J Sport Finance"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0342151.ref039",
+        "doi-asserted-by": "crossref",
+        "first-page": "17",
+        "DOI": "10.3233/JSA-180231",
+        "article-title": "Evaluating NBA end-of-game decision-making",
+        "volume": "5",
+        "author": "P McFarlane",
+        "year": "2018",
+        "journal-title": "Journal of Sports Analytics"
+      },
+      {
+        "issue": "4",
+        "key": "pone.0342151.ref040",
+        "doi-asserted-by": "crossref",
+        "first-page": "307",
+        "DOI": "10.3390/info16040307",
+        "article-title": "The effect of technical fouls on momentum change in basketball: a comparison of regular season vs. playoffs in the NBA",
+        "volume": "16",
+        "author": "G Tenenbaum",
+        "year": "2025",
+        "journal-title": "Information"
+      },
+      {
+        "issue": "8",
+        "key": "pone.0342151.ref041",
+        "doi-asserted-by": "crossref",
+        "first-page": "1014",
+        "DOI": "10.1177/1527002519851145",
+        "article-title": "The role of referees in professional sports contests",
+        "volume": "20",
+        "author": "C Duvinage",
+        "year": "2019",
+        "journal-title": "J Sports Econ"
+      },
+      {
+        "issue": "1",
+        "key": "pone.0342151.ref042",
+        "first-page": "19",
+        "article-title": "Competitive balance measures and the uncertainty of outcome hypothesis in European football",
+        "volume": "33",
+        "author": "V Manasis",
+        "year": "2021",
+        "journal-title": "IMA J Manag Mathematics"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0342151.ref043",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.1515/1559-0410.1402",
+        "article-title": "New insights on the tendency of NCAA basketball officials to even out foul calls",
+        "volume": "8",
+        "author": "CA Noecker",
+        "year": "2012",
+        "journal-title": "J Quantitative Analysis in Sports"
+      },
+      {
+        "issue": "4481",
+        "key": "pone.0342151.ref044",
+        "doi-asserted-by": "crossref",
+        "first-page": "453",
+        "DOI": "10.1126/science.7455683",
+        "article-title": "The framing of decisions and the psychology of choice",
+        "volume": "211",
+        "author": "A Tversky",
+        "year": "1981",
+        "journal-title": "Science"
+      },
+      {
+        "key": "pone.0342151.ref045",
+        "doi-asserted-by": "crossref",
+        "first-page": "101529",
+        "DOI": "10.1016/j.cogpsych.2022.101529",
+        "article-title": "Contextuality and context-sensitivity in probabilistic models of cognition",
+        "volume": "140",
+        "author": "PD Bruza",
+        "year": "2023",
+        "journal-title": "Cogn Psychol"
+      },
+      {
+        "issue": "3",
+        "key": "pone.0342151.ref046",
+        "doi-asserted-by": "crossref",
+        "first-page": "495",
+        "DOI": "10.1080/24748668.2020.1758437",
+        "article-title": "Systematic review of basketball referees\u2019 performances",
+        "volume": "20",
+        "author": "D Garc\u00eda-Santos",
+        "year": "2020",
+        "journal-title": "Int J Performance Anal Sport"
+      },
+      {
+        "key": "pone.0342151.ref047",
+        "doi-asserted-by": "crossref",
+        "DOI": "10.4324/9780203119914",
+        "volume-title": "Developing sport expertise: Researchers and coaches put theory into practice",
+        "author": "D Farrow",
+        "year": "2013"
+      },
+      {
+        "issue": "6",
+        "key": "pone.0342151.ref048",
+        "doi-asserted-by": "crossref",
+        "first-page": "555",
+        "DOI": "10.1016/j.psychsport.2006.03.007",
+        "article-title": "Sports performance judgments from a social cognitive perspective",
+        "volume": "7",
+        "author": "H Plessner",
+        "year": "2006",
+        "journal-title": "Psychology of Sport and Exercise"
+      },
+      {
+        "issue": "2",
+        "key": "pone.0342151.ref049",
+        "doi-asserted-by": "crossref",
+        "first-page": "181",
+        "DOI": "10.1080/02640414.2015.1045926",
+        "article-title": "Using web-based training to enhance perceptual-cognitive skills in complex dynamic offside events",
+        "volume": "34",
+        "author": "K Put",
+        "year": "2016",
+        "journal-title": "J Sports Sci"
+      }
+    ],
+    "container-title": [
+      "PLOS One"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0342151",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          19
+        ]
+      ],
+      "date-time": "2026-02-19T18:26:39Z",
+      "timestamp": 1771525599000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://dx.plos.org/10.1371/journal.pone.0342151"
+      }
+    },
+    "subtitle": [],
+    "editor": [
+      {
+        "given": "Muhammad",
+        "family": "Shakaib",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "editor",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          19
+        ]
+      ]
+    },
+    "references-count": 49,
+    "journal-issue": {
+      "issue": "2",
+      "published-online": {
+        "date-parts": [
+          [
+            2026,
+            2,
+            19
+          ]
+        ]
+      }
+    },
+    "URL": "https://doi.org/10.1371/journal.pone.0342151",
+    "relation": {},
+    "ISSN": [
+      "1932-6203"
+    ],
+    "issn-type": [
+      {
+        "value": "1932-6203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          19
+        ]
+      ]
+    }
+  },
+  "ziv2020": {
+    "author": [
+      {
+        "family": "Ziv",
+        "given": "G."
+      },
+      {
+        "family": "Lidor",
+        "given": "R."
+      },
+      {
+        "family": "Zach",
+        "given": "S."
+      },
+      {
+        "family": "Brams",
+        "given": "S."
+      },
+      {
+        "family": "Helsen",
+        "given": "W. F."
+      }
+    ],
+    "container-title": [
+      "Frontiers in Sports and Active Living"
+    ],
+    "volume": "2",
+    "issue": "",
+    "page": "572891",
+    "DOI": "10.3389/fspor.2020.572891"
+  }
+}

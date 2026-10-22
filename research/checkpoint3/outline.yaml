@@ -1,0 +1,9 @@
+topic: WMI annotated bibliography
+items:
+  - name: Existing full texts
+  - name: Additional open full texts
+  - name: Direct sequence and bias literature
+execution:
+  items_per_agent: 1
+  batch_size: 3
+  output_dir: research/checkpoint3/results

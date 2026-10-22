@@ -1,0 +1,202 @@
+[
+  {
+    "id": "019c7c5f-3b44-7722-bfa6-7c8b7836d822",
+    "title": "Review docs to outline next steps",
+    "pages": 8,
+    "turns": 77,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019c81ae-fb40-7572-a2cd-8cf36af7de7d",
+    "title": "Replace research log file",
+    "pages": 1,
+    "turns": 4,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019c81ce-347b-75e2-8f16-8304ad564aeb",
+    "title": "Add dated bullet log entries",
+    "pages": 1,
+    "turns": 1,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019caa9f-8578-7d91-a343-402909685f1d",
+    "title": "Rename repo and codex project",
+    "pages": 1,
+    "turns": 2,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cab46-02fd-77b0-b98c-8408aec5c926",
+    "title": "Move nba-whistle project folder",
+    "pages": 1,
+    "turns": 1,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cab4c-1cb7-7d23-a255-dd9dec1c5e00",
+    "title": "Restore chats for relocated project",
+    "pages": 1,
+    "turns": 1,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cab77-0f02-7bd0-a32c-60aa0d35d014",
+    "title": "Outline next steps",
+    "pages": 1,
+    "turns": 4,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cab89-0551-7862-bf40-39399b328822",
+    "title": "",
+    "pages": 3,
+    "turns": 26,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cabbe-2638-73e1-afb0-b2538f1eba48",
+    "title": "",
+    "pages": 2,
+    "turns": 16,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cabfe-e5bf-7c21-bdf3-b01729e2a385",
+    "title": "Compute WMI_raw for 25-26 game",
+    "pages": 3,
+    "turns": 22,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cac00-2f08-7862-a33c-1eb6d14ff5c7",
+    "title": "Validate WMI_raw formula",
+    "pages": 1,
+    "turns": 2,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cae81-bc3d-7c31-bd90-8083ff01505e",
+    "title": "Clone repo into codex-projects",
+    "pages": 1,
+    "turns": 2,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019cc3f9-d9fb-7511-9d58-93e240be977f",
+    "title": "Run desloppify health workflow",
+    "pages": 1,
+    "turns": 1,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d1cb5-56c6-71a0-9562-67e67c819c39",
+    "title": "Plan WMI controlled version",
+    "pages": 2,
+    "turns": 16,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d6095-9679-7382-a433-f5459e6ae49c",
+    "title": "Draft math professor email",
+    "pages": 1,
+    "turns": 3,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d60bd-9a77-7ae0-8473-a835817f2a3d",
+    "title": "Send Gmail messages",
+    "pages": 1,
+    "turns": 1,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d70cf-cd30-74a0-bcb8-b48d8cb9d3bf",
+    "title": "Draft explanation for Peng Zhao",
+    "pages": 1,
+    "turns": 2,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d70d4-3ec4-7a43-96c9-489591fd7f9b",
+    "title": "Explain WMI raw and scale",
+    "pages": 1,
+    "turns": 5,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d96dc-a836-7793-ab3b-681f1b2e02c0",
+    "title": "Convert WMI defs to LaTeX",
+    "pages": 1,
+    "turns": 1,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d96dd-961b-70c0-8cc9-0d9dd0a5df54",
+    "title": "Move docs into PROJECT",
+    "pages": 1,
+    "turns": 2,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019d9865-ed99-7502-9732-78e4a1041d7c",
+    "title": "Check cancellation etiquette",
+    "pages": 1,
+    "turns": 3,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019ee640-9be9-7e31-9f3b-8a1d7c01fdb0",
+    "title": "Assess project readiness",
+    "pages": 1,
+    "turns": 1,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019ee642-becd-7ea1-b2b5-02a600874a69",
+    "title": "Review project readiness",
+    "pages": 3,
+    "turns": 28,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "019ff29a-d8c0-7a32-a733-6ebef39e2500",
+    "title": "Run full WMI project report",
+    "pages": 1,
+    "turns": 7,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  },
+  {
+    "id": "01a096ca-4e67-7fd3-8556-118155d422cb",
+    "title": "Plan WMI project expansion",
+    "pages": 1,
+    "turns": 5,
+    "retrievedThrough": "Codex read_thread",
+    "complete": true
+  }
+]

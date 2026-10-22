@@ -1,0 +1,748 @@
+                                                                                                                         TYPE Original Research
+                                                                                                                         PUBLISHED 13 October 2025
+                                                                                                                         DOI 10.3389/fpsyg.2025.1682389
+
+
+
+
+                                                    Research on the visual search
+OPEN ACCESS                                         behavior and decision-making
+                                                    ability of basketball referees
+EDITED BY
+Iyán Iván-Baragaño,
+European University of Madrid, Spain
+
+REVIEWED BY
+Simone Migliore,                                    Rishu Wang 1, Long Chen 2, Yidong Wu 3 and Qi Zhang 3*
+University of L'Aquila, Italy                       1
+                                                     School of Athletic Performance, Shanghai University of Sport, Shanghai, China, 2 School of Physical
+Yawei Li,
+                                                    Education and Equestrian, Wuhan Business University, Wuhan, China, 3 School of Economics and
+Physical Education College of Zhengzhou
+                                                    Management, Shanghai University of Sport, Shanghai, China
+University, China
+
+*CORRESPONDENCE
+Qi Zhang
+  zhangqi@sus.edu.cn
+
+RECEIVED 08 August 2025
+                                                    Background: In sports, basketball referees have to face high pressure and time
+ACCEPTED 17 September 2025                          constraints, efficient visual search behavior and decision-making particularly
+PUBLISHED 13 October 2025                           important.
+CITATION                                            Methods: This study compared different levels of experience (expert group,
+Wang R, Chen L, Wu Y and Zhang Q (2025)             n = 10; non-expert groups, n = 10) examined the visual search behavior and
+Research on the visual search behavior and
+decision-making ability of basketball referees.     decision-making ability of basketball referees when watching 20 game video
+Front. Psychol. 16:1682389.                         clips through eye movement technology.
+doi: 10.3389/fpsyg.2025.1682389                     Results: The results showed that, compared with the non-expert group,
+COPYRIGHT                                           the expert group had higher decision-making accuracy (p < 0.01), and the
+© 2025 Wang, Chen, Wu and Zhang. This is
+                                                    percentage of fixations time was longer in the central area (p < 0.01), the outer
+an open-access article distributed under the
+terms of the Creative Commons Attribution           area (p < 0.01) and the percentage of fixations time in the invalid area (p < 0.05).
+License (CC BY). The use, distribution or           However, there were no significant differences in the number of fixations
+reproduction in other forums is permitted,
+                                                    (p = 0.904), fixations duration (p = 0.363) and entropy (p = 0.213) between the
+provided the original author(s) and the
+copyright owner(s) are credited and that the        expert group and non-experts.
+original publication in this journal is cited, in   Conclusion: Our research indicates that there are significant differences in the
+accordance with accepted academic
+                                                    visual search behaviors of basketball referees with different experiences. These
+practice. No use, distribution or reproduction
+is permitted which does not comply with             data can provide valuable insights into the visual search patterns of basketball
+these terms.                                        referees in real game environments and emphasize the importance of refereeing
+                                                    expertise for basketball referees.
+
+                                                    KEYWORDS
+
+                                                    basketball referee, visual search behavior, decision-making, experience, referee
+
+
+
+                                                    1 Introduction
+                                                         Referees are one of the most important components of sports competitions. Only those
+                                                    with special physical and mental abilities can make correct decisions (Bar-Eli et al., 2011). In
+                                                    fast-paced team games (such as basketball and football), the role of these abilities is even more
+                                                    important. Basketball referees need to have high requirements for interaction and physical
+                                                    movement, and often need to handle a large number of cues (MacMahon et al., 2014). Because
+                                                    in the basketball game, referees not only need to observe players and teammates simultaneously,
+                                                    but also make decisions under high pressure and time constraints (Klatt et al., 2021). Referees’
+                                                    decisions are based on the performance of their personal perceptual cognitive skills. For
+                                                    example, football referees make an average of 162 decisions per game (Helsen and Bultynck,
+                                                    2004). However, a key and interesting question is: How do basketball referees make these
+                                                    decisions in fast-paced and complex situations.
+                                                         Whether it is time constraints, complex competition scenarios or potential pressure
+                                                    conditions, referees need to make accurate and fair decisions (Samuel, 2015). The sports
+                                                    officials’ decision-making model explains how individuals interpret dynamic environments
+
+
+Frontiers in Psychology                                                   01                                                                frontiersin.org
+Wang et al.                                                                                                                    10.3389/fpsyg.2025.1682389
+
+
+
+
+through social knowledge and cognitive processes. It emphasizes                       The visual search behavior of referees relies on task characteristics
+that perception and mental representation are the processes before               (Kredel et al., 2017), in which experts tend to use shorter fixations
+decision-making and decision execution (Kostrna and Tenenbaum,                   duration in dynamic tasks, while in relatively static tasks, longer
+2021). Mental representations control the perceptual and cognitive               fixations duration (Gegenfurtner et al., 2011). The latest research
+processes, including emotions, information processing, attention,                shows that by introducing AI-based eye movement analysis for
+expectations, information integration and performance. Decision-                 basketball games, it is more helpful to understand their visual attention
+making is mainly influenced by mental representations (Kostrna                   patterns, objects of focus, duration, and physiological responses, etc.
+and Tenenbaum, 2021). Decision making involves choosing a series                 It can be seen from this that by leveraging AI technology and wearable
+of actions from among a certain class of alternatives with a specific            devices, a deeper understanding of the cognitive and decision-making
+goal in mind. According to this theory, the aim of decision making               processes adopted by referees in high-pressure sports environments
+is to increase the achievements or raise the level of expectations and           can be achieved (Lozzi et al., 2025). In basketball, predecessors
+to use the information in order to achieve this goal (Tenenbaum                  compared the visual search behavior of basketball referees of different
+et al., 2007; Gorman et al., 2015). It is clear that experts have                levels of experience. Although no differences in the number of
+cognitive-perceptual skills such as pattern recognition and recall               fixations and fixations duration between experts and novices, some
+based on the perception of basic visual information that helps make              studies suggested that the referee’s gaze behavior varies depending on
+the right decision (Van Maarseveen et al., 2015; Klostermann and                 their position on the field and their level of experience. Experienced
+Moeinirad, 2020). How referees in complicated situations with a                  referees demonstrate efficient gaze patterns and can focus on key areas
+time limit to make a decision, one possible way is through the                   more quickly and accurately. However, referees who are far from the
+visual search behavior to gain knowledge support to make                         ball often overlook the behavior in the no-ball area, indicating that it
+a decision.                                                                      is necessary to improve the distribution of visual attention (Alemanno
+     Perceptive skills allow to efficiently manage and attend to highly          et al., 2025). Knowing when to see where, extracting tasks-related
+relevant information that, according to previously acquired                      information and ignoring irrelevant information is crucial for efficient
+knowledge, facilitates the selection of appropriate make decisions               decision-making. Therefore, this study will further explore the
+under time pressure (Marteniuk, 1976). Existing research believes that           differences in visual search behaviors between expert and non-expert
+efficient visual gaze behavior is an important factor in decision-               referees by dividing areas of interest (e.g., trunk, legs, feet, arms, etc.).
+making performance in complex movements (Williams and Ward,                           In conclusion, our aim is to analyze the visual search behavior
+2007). In the competition situation, referees mainly make decisions by           and decision-making ability of referees in real basketball game
+visual searching for important stimulus information. Visual search can           scenarios, and we attempt to determine a visual search pattern for
+improve decision performance by extracting environmental                         basketball referees that distinguishes experts from non-experts. For
+information (Vater et al., 2019), and visual search behavior represents          this purpose, we obtain video clips from the real perspective of the
+how the referee’s visual system detects relevant information                     referee (the lead referee location) to restore the real game situation
+(Henderson, 2003).                                                               as much as possible. We particularly emphasize the analysis of the
+     Previous research has shown that experts’ visual search strategies          referees’ gaze positions and establish three areas of interest to
+are less number of fixations and fixations duration (Mann et al., 2007).         compare the differences in gaze behaviors between expert and
+Today, many studies have reported that visual search strategies                  non-expert referees. In this study, we predict that the number of
+perform differently in different sports (North et al., 2009; Roca et al.,        fixations and the fixations duration by the expert group basketball
+2011; Ziv, 2020). A lot of research supports this view. Expert athletes          referees may be similar to the non-expert group, but experts will
+spend more number of fixations and fixations duration in the main                pay more attention to task-related and information-rich key
+areas of interest that can provide task-related information (Brams               positions, which is in line with the information reduction
+et al., 2019). In terms of referees, there are also reports of similar           hypothesis. This visual search strategy is particularly prominent
+results. This finding is consistent with the information-reduction               among interactors (such as basketball referees and football referees),
+hypothesis (Haider and Frensch, 1999), which argues that through                 as they need to observe more visual cues than reactors and
+experience, experts selectively allocate attention to the task-relevant          monitors. Furthermore, we predict that the decision-making
+areas of the and ignoring task-redundant areas. The referee’s expertise          accuracy of the expert group will be higher than the non-expert
+cannot evaluate visual search strategies based on the number of                  group, which may be related to their expectation ability and long-
+fixations and fixations duration, but should focus more on the gaze              term working memory ability.
+behavior of the area. The perceived cognitive needs of referees in
+different sports events are different, mainly due to the unique
+characteristics of sports events. For example, basketball referees are           2 Materials and methods
+interactors, and their characteristics usually require handle a large
+number of game clues (MacMahon et al., 2014), and reasonable                     2.1 Participants
+allocation of attention between the referee’s responsibility area, ball,
+players and companions in the game scenario (Klatt et al., 2021).                    This study was analyzed using G*Power 3.1.9.2 software with an
+Recent research has found that when interactors (such as hockey and              effect size of 0.4, an α level of 0.05 and an power of 0.08. The results
+soccer referees) make decisions, referees of different expertise do not          indicated that 52 subjects were required. However, due to the
+differ in the number of fixations and fixations duration (Rafiee et al.,         particularity of the research subjects (such as the total number of
+2015). But experienced referees will spend more time focusing on the             professional league referees in the Shanghai area is relatively small,
+body parts of the offensive players (Ruiz et al., 2023).                         and the limitations of time and funds), it is difficult to reach the
+
+
+Frontiers in Psychology                                                     02                                                                 frontiersin.org
+Wang et al.                                                                                                                   10.3389/fpsyg.2025.1682389
+
+
+
+
+sample size calculated theoretically in the actual study.                         2.2 Apparatus
+We eventually recruited 20 subjects. Furthermore, based on
+previous studies on referee visual search and decision-making,                        Participants watched the video clips at a distance of approximately
+we find that the sample size selection is similar to ours, for example            42–62 cm from the computer. The video clips were presented on a
+(Ruiz et al., 2023, 2024) recruited 16 basketball referees, and the               23.8-inch computer display screen (EIZO EV2451, with a resolution
+study (Klatt et al., 2021) recruited 9 basketball referees. The                   of 1920 × 1080 and a viewing Angle of 178/178 degrees). The video
+relatively larger number of participants was approximately 30                     had no sound to avoid the influence of crowd noise. During the
+(Hancock and Ste-Marie, 2013; Moore et al., 2019). These studies                  experiment, the Eyelink Portable Duo eye tracker (SMI, Boston, MA),
+show that although the sample size is small, some valuable insights               with dimensions of 21 cm x 4.5 cm x 11 cm, weighing approximately
+and conclusions can be drawn. To ensure the data quality of all                   1 kg, having a binocular sampling rate as high as 2,000 hz and an
+subjects, we adopted strict data inclusion and exclusion criteria as              accuracy of 0.5 degrees, located beneath the display screen the eye
+well as quality control. Ensure that all the data of the recruited                tracker, which is connected to a laptop (Lenovo, ThinkPad) via a USB
+candidates are included in the data analysis, and there are no cases              cable, will record the visual behaviors of the subjects. In this study, an
+excluded due to poor quality.                                                     eye tracker placed on a desktop was used. To complete the sampling
+     All the participants were divided into two groups. The referees              more conveniently and efficiently, a stand was installed beside the
+who officiate in the country’s top-level basketball league are classified         table where the screen was placed. The position of the stand can
+as expert groups (N = 10, Mage ± SD = 36.9 ± 7.49 years,                          be adjusted. This is because the subjects have different heights, and the
+Mexperience ± SD = 15.1 ± 3.98 years). Many of whom were refereeing, or           best position to watch the video needs to be selected by adjusting the
+had refereed, at international level basketball games. Referees                   position of the stand.
+officiating in various provinces, cities and regions were classified as
+non-expert        groups     (N = 10,     Mage ± SD = 22.3 ± 2.91 years,
+Mexperience ± SD = 5.3 ± 1.34 years). Who were from University who                2.3 Video clips
+refereed at lower competitive levels, but had little experience refereeing
+professionally. All the Participants’ vision reached 5.0 or the corrected             To design the experimental video clips, we carried out several
+level of 5.0, and they all signed the written informed consent form               steps. First of all, all videos are from the game clips of the China Nike
+before the experiment. This study was approved by the Ethics                      High School Basketball League (the highest-level high school
+Committee of Shanghai University of Sport (Approval No.:                          basketball competition in China) shot from the perspective of the lead
+102772024RT070).                                                                  referee (see Figure 1). The inclusion criteria for the videos are: ① there
+
+
+
+
+    FIGURE 1
+    Examples of experimental materials.
+
+
+
+
+Frontiers in Psychology                                                      03                                                              frontiersin.org
+Wang et al.                                                                                                                          10.3389/fpsyg.2025.1682389
+
+
+
+
+is physical contact; ② in an offensive or defensive situation; ③ violation         interest is achieved through interviews with referee supervisors. The
+situation occurs in the area of the lead referee; ④ there is only one foul         central area includes the torso and arms of the ball handler, the torso
+or one violation in the video. After the author’s initial screening, 30            and arms of the defender, and the contact points. The outer area
+video clips were saved. However, this cannot be directly used as                   includes the lower limbs of the ball handler and the defender, as well as
+experimental material and needs to be further reviewed by experts.                 the torso, arms and lower limbs of the assist defender. The invalid area
+Secondly, the selection process of the experimental video clips was                contains the bodies of the remaining players (see Figure 2). Using 10
+rather difficult. Therefore, a video review team (including the author,            selected video clips as materials, the area of interest for each video is
+referee supervisors, referee lecturers and technical representatives               drawn on the Data Viewer software. Fourth, entropy refers to the
+from the Chinese Basketball Association) was established in this study,            uncertainty within a system, indicating the variability of gaze behavior.
+mainly to review whether the edited videos could be used as                        While different measures of entropy exist (Allsop and Gray, 2014),
+experimental materials. The team reaches a consensus on the penalty                Shannon entropy derives from information theory (Shannon, 1948),
+decision (for example, whether to commit a foul, and if so, what is the            and expresses the information contained within a probability
+behavior of the foul?). And rule out particularly obvious fouls or                 distribution in “bits.” Entropy was calculated as the sum of the logarithm
+violations. After review by the group, 10 videos were saved. Thirdly,                                                                           n
+we must meticulously edit these 10 videos. The videos start when ball-             of all probabilities in the given state space, H ( x ) = −∑P ( x i ) log b P ( x i )
+handling offense and defense situations occur (for example, the blue                                                                           i =1
+team fails to score while the red team gets the rebound and holds the              (Shannon, 1948). In short, lower entropy values therefore reflected gaze
+ball until a defender appears in front of them), and end before the                behavior that was focused on particular fixation locations, rather than
+referee makes a decision. The referees in the video were also covered              distributed or spread evenly across all locations. Finally, fixation heat
+to prevent them from attracting the attention and interest of the                  map uses the warmth or coolness of colors (such as green-yellow-red)
+subjects when they were watching the video. Finally, the referee                   to represent the spatial distribution density of fixation points. The hotter
+supervisor, referee lecturers and technical representatives reviewed               the color (such as red), the longer the total duration of fixation or the
+these 10 videos and checked the standards such as video length and                 more times the area is gazed at by all participants.
+clarity. Therefore, 10 video clips of the competition scenes with
+durations ranging from 10 to 30 s were generated. Each video contains
+only one possible violation. The video is played silently, eliminating             2.5 Procedure
+crowds, referees, viewers, scores and advertisements to reduce the
+number of distractions.                                                                 Participants first fill out the personal information form and provide
+                                                                                   a written informed consent form. Next, the participants adjusted the
+                                                                                   scaffolds and performed 9-point grid calibration. Then, watch a practice
+2.4 Variables                                                                      video to familiarize yourself with the experimental process. We provide
+                                                                                   the participants with standardized and detailed oral explanations of the
+2.4.1 Decision-making accuracy                                                     tasks. Participants are required to watch each video clip and then select
+    After the two competition supervisors of the review panel watched              the answer as soon as possible after the options are displayed on the
+each video, their decisions on the video were regarded as correct ones.            screen. For each segment, participants have to choose one of the five
+Decision-making accuracy was calculated as the total number of                     decisions: ① travel, ② no call (no violation occurred), ③ offensive foul,
+decisions (displayed as a percentage) that were in correspondence                  ④ defensive foul, ⑤ cheating foul, ⑥ traveling. After getting familiar
+with the reference decision (as Spitz et al., 2016).                               with the experimental process, ask the participants whether they fully
+                                                                                   understand the task. Subsequently, the participants watched 10 videos
+2.4.2 Gaze behavior                                                                and made decisions, while their gaze behaviors and decisions were
+     A fixation was defined as a gaze that was maintained on a location            recorded. To ensure the accuracy of the data, eye movement calibration
+within 1° of visual angle for a minimum of 120 ms (Vickers, 2007). Four            was performed on the subjects before each video was played. None of
+gaze measures were assessed for each of the 10 video clips. ① Number               the videos were replayed, and no feedback was given to the participants
+of fixations, ② fixations duration, ③ percentage of fixations time for             between the clips. Finally, the eye tracker was removed and the situation
+different locations, ④ entropy, ⑤ fixation heat map. The number of                 of the participants was reported and thanked (see Figures 3, 4).
+fixations and fixations duration reflect the need for information
+processing and the allocation of attention. Firstly, the number of
+fixations referred to the number of times a participant moved their eyes           2.6 Statistical analysis
+and fixated on a point for a minimum of 100 ms (Hancock and
+Ste-Marie, 2013). Secondly, fixations duration was the length of time                   In this study, the group (expert group and non-expert group) was
+participants focused on an area before fixating elsewhere (Hancock and             taken as the independent variable, and the number of fixations, fixations
+Ste-Marie, 2013). Thirdly, Percentage of fixations time referred to the            duration, Percentage of fixations time for different locations, the
+percentage of total fixations time spent fixating each location (as the            entropy, and the decision-making accuracy were taken as the dependent
+central area, the outer area, the invalid area) (Roca et al., 2011). The           variables. Firstly, the normality of the data was examined. Each
+central area refers to the area where key information can be obtained              dependent variable conformed to a normal distribution. Meanwhile, all
+by looking at this area. The outer area refers to the area where a small           the tests conformed to the homogeneity of variance hypothesis (Levene
+amount of information related to decision-making is obtained by                    test, p > 0.05; Field, 2013). Secondly, one-way ANOVAS analysis of
+looking at this area, and the invalid area refers to no information related        variance and correlation analysis were used. Explore the differences of
+to decision-making (Moore et al., 2019). The division of the area of               each dependent variable between groups and analyze the various data
+
+Frontiers in Psychology                                                       04                                                                      frontiersin.org
+Wang et al.                                                                                                                      10.3389/fpsyg.2025.1682389
+
+
+
+
+    FIGURE 2
+    The orange area represents the central area, the white area represents the outer area, and the rest are invalid area.
+
+
+
+
+                                                                                     among different groups. p-value less than 0.05 is considered statistically
+                                                                                     significant. All the analyses were conducted using IBM SPSS 26.
+                                                                                         Data inclusion criteria: All participants ① complete all
+                                                                                     experimental tasks in full; ② the eye tracker calibration was
+                                                                                     successful. ③ The overall eye-movement data tracking loss rate is
+                                                                                     below the threshold of 5%. We strictly control the quality control
+                                                                                     standards of the experiments. For instance, we conduct strict
+                                                                                     calibration before each experiment, monitor the data quality in real
+                                                                                     time during the experiments, and manually and automatically check
+                                                                                     the videos and data. All the data of the subjects participating in the
+                                                                                     experiment met the quality requirements, and no participant was
+                                                                                     excluded due to poor data quality. Ensured the completeness and
+    FIGURE 3
+    Experimental process.                                                            robustness of the research.
+
+
+
+                                                                                     3 Results
+                                                                                         The purpose of this study was to explore the differences in visual
+                                                                                     search behavior and decision-making accuracy between experts and
+                                                                                     non-experts in basketball referees.
+
+
+
+                                                                                     3.1 Number of fixations
+
+                                                                                         The number of fixations of non-expert referees (M = 41.1,
+                                                                                     SD = 9.45) was similar to that of expert referees (M = 41.6, SD = 8.89).
+    FIGURE 4                                                                         There was no significant difference in the number of fixations between
+    The recording process of the eye tracker.                                        expert and non-expert referees [F(1, 18) = 0.015, p = 0.904, ƞp2 = 0.001].
+                                                                                     The number of fixations data are presented in Tables 1, 2 and Figure 5.
+
+
+
+
+Frontiers in Psychology                                                         05                                                              frontiersin.org
+Wang et al.                                                                                                                     10.3389/fpsyg.2025.1682389
+
+
+
+
+TABLE 1 Mean (standard deviation) number of fixations, fixations
+duration, percentage of fixations time in the central area, percentage of
+fixations time in the outer area, percentage of fixations time in the invalid
+area, entropy, decision-making accuracy.
+
+ Measures                                               Group
+                                           Expert               Non-Expert
+ Number of fixations                     41.60 (8.89)            41.10 (9.45)
+
+ Fixations duration (s)                  18.19 (1.98)            19.33 (3.30)
+
+ Percentage of fixations time in         80.38 (4.55)            53.01 (7.41)
+ the central area (%)
+
+ Percentage of fixations time in         12.90 (3.54)            34.49 (5.02)
+ the outer area (%)
+
+ Percentage of fixations time in          6.71 (4.21)            12.81 (6.82)           FIGURE 5
+ the invalid area (%)                                                                   Comparison of the number of fixations between expert and non-
+                                                                                        expert referees. Error bars are ±1 SEM.
+ Entropy (bits)                           0.50 (0.18)            0.60 (0.20)
+
+ Decision-making accuracy (%)            78.00 (7.89)            46.00 (8.43)
+
+
+
+TABLE 2 The analysis of variance results of number of fixations, fixations
+duration, percentage of fixations time in the central area, percentage of
+fixations time in the outer area, percentage of fixations time in the invalid
+area, entropy, decision-making accuracy.
+
+ Measures                            F                   P              ƞp2
+ Number of fixations          F(1, 18) = 0.015          0.904          0.001
+
+ Fixations duration           F(1, 18) = 0.871          0.363          0.046
+
+ Percentage of fixations      F(1, 18) = 99.131         <0.01          0.846
+ time in the central
+ area
+
+ Percentage of fixations     F(1, 18) = 123.485         <0.01          0.873
+                                                                                        FIGURE 6
+ time in the outer area
+                                                                                        Comparison of the fixations duration between expert and non-
+ Percentage of fixations      F(1, 18) = 5.796          <0.05          0.244            expert referees. Error bars are ±1 SEM.
+
+ time in the invalid
+ area
+
+ Entropy                      F(1, 18) = 1.645          0.213          0.058         non-expert referees in the central area [F(1, 18) = 99.131, p < 0.01,
+ Decision-making              F(1, 18) = 0.768          <0.01          0.810         ƞp2 = 0.846]. The percentage of fixations time in the central area data
+ accuracy                                                                            are presented in Tables 1, 2 and Figure 7.
+
+                                                                                     3.3.2 Percentage of fixations time in the outer
+3.2 Fixations duration                                                               area
+                                                                                          The percentage of fixations time of expert referees in the outer
+     The fixations duration of non-expert referees (M = 19.33,                       area (M = 12.90, SD = 3.54) was significantly lower than that of
+SD = 3.30) was similar to that of expert referees (M = 18.19, SD = 1.98).            non-expert referees (M = 34.49, SD = 5.02). There was a significant
+There was no significant difference in fixations duration between expert             difference in the percentage of fixations time between expert and
+and non-expert referees [F(1, 18) = 0.871, p = 0.363, ƞp2 = 0.046]. The              non-expert referees in the outer area [F(1, 18) = 123.485, p < 0.01,
+fixations duration data are presented in Tables 1, 2 and Figure 6.                   ƞp2 = 0.873]. The percentage of fixations time in the outer area data
+                                                                                     are presented in Tables 1, 2 and Figure 7.
+
+3.3 Percentage of fixations time for                                                 3.3.3 Percentage of fixations time in the invalid
+different locations                                                                  area
+                                                                                         The percentage of fixations time of expert referees in the invalid
+3.3.1 Percentage of fixations time in the central                                    area (M = 6.71, SD = 4.21) was similar to that of non-expert referees
+area                                                                                 (M = 12.81, SD = 6.82). There was no significant difference in the
+     The percentage of fixations time of expert referees in the central              percentage of fixations time in the invalid area between expert and
+area (M = 80.38, SD = 4.55) was significantly higher than that of                    non-expert referees [F(1, 18) = 5.796, p < 0.05, ƞp2 = 0.244]. The
+non-expert referees (M = 53.01, SD = 7.41). There was a significant                  percentage of fixations time in the invalid area data are presented in
+difference in the percentage of fixations time between expert and                    Tables 1, 2 and Figure 7.
+
+
+Frontiers in Psychology                                                         06                                                             frontiersin.org
+Wang et al.                                                                                                                      10.3389/fpsyg.2025.1682389
+
+
+
+
+    FIGURE 7
+    Percentage of fixations time in the central area, outer area and invalid area between expert and non-expert referees. Error bars are ±1 SEM.
+
+
+
+
+                                                                                   3.6 Decision-making accuracy
+
+                                                                                       The expert referees were significantly higher than the non-expert
+                                                                                   referees (M = 46.00, SD = 7.89) in decision-making accuracy. There
+                                                                                   was a significant difference in the decision-making accuracy between
+                                                                                   expert and non-expert referees [F(1, 18) = 76.800, p < 0.01,
+                                                                                   ƞp2 = 0.810]. The percentage of fixations time in the invalid area data
+                                                                                   are presented in Tables 1, 2 and Figures 9–13.
+
+
+
+    FIGURE 8                                                                       4 Discussion
+    Comparison of the entropy between expert and non-expert referees.
+    Error bars are ±1 SEM.
+                                                                                        This study employed eye-tracking technology to better understand
+                                                                                   the differences in gaze behavior and decision-making between expert
+                                                                                   and non-expert basketball referees. The research results confirm that
+3.4 Entropy                                                                        there are significant differences between expert and non-expert
+                                                                                   basketball referees in terms of the percentage of gaze time in the
+    The entropy of expert referees (M = 0.50, SD = 0.18) is similar to             central area and the outer area, as well as the decision-making
+that of non-expert referees (M = 0.60, SD = 0.20). There was no                    accuracy and fixation heat map. However, the study did not find
+significant difference in entropy between expert and non-expert                    differences among the groups in terms of the number of fixations, the
+referees [F(1, 18) = 1.645, p > 0.213, ƞp2 = 0.058]. The entropy data are          duration of fixations, entropy, and the percentage of fixation time in
+presented in Tables 1, 2 and Figure 8.                                             the invalid area.
+                                                                                        Compared with non-expert groups, the decision-making accuracy
+                                                                                   of expert basketball referees is much better. Expertise has been defined
+3.5 Fixation heat map                                                              as the ability to consistently demonstrate superior athletic performance
+                                                                                   (Janelle et al., 2000). Researches have showed that expert officials
+     There are certain differences in the gaze distribution between                develop synergistic integration of extensive procedural knowledge
+expert referees and non-expert referees. Expert referees have paid                 (information on “how to” perform a task) and declarative knowledge
+a great deal of attention to the central area, but very little to the              (understanding the “whats and whys”), enabling them to extract
+outer area and the invalid area. And, the experts focus was mainly                 critical information from the environment to anticipate future events
+on the arms and trunks of the defenders and offensive players.                     (French and Thomas, 1987; McPherson, 1999). This knowledge
+However, non-expert referees focus on relatively scattered areas and               architecture allows them to anticipate and manage potential
+cannot obtain the most crucial information in a short period                       “flashpoints” during competitions (Mascarenhas et al., 2005). In other
+of time.                                                                           words, the key role of anticipatory ability in the decision-making
+
+
+Frontiers in Psychology                                                       07                                                                   frontiersin.org
+Wang et al.                                                10.3389/fpsyg.2025.1682389
+
+
+
+
+    FIGURE 9
+    Heat map of a representative non-expert referee.
+
+
+
+
+    FIGURE 10
+    Heat map of a representative expert referee.
+
+
+
+
+Frontiers in Psychology                                08               frontiersin.org
+Wang et al.                                                10.3389/fpsyg.2025.1682389
+
+
+
+
+    FIGURE 11
+    Heat map of a representative non-expert referee.
+
+
+
+
+    FIGURE 12
+    Heat map of a representative expert referee.
+
+
+
+
+Frontiers in Psychology                                09               frontiersin.org
+Wang et al.                                                                                                                10.3389/fpsyg.2025.1682389
+
+
+
+
+                                                                               the offensive player is about to shoot or pass the ball, the referee
+                                                                               will pay attention to whether the defensive player has committed
+                                                                               a violation at this time.
+                                     *
+                                                                                    In this study, by drawing on the research designs of predecessors,
+                                                                               the body parts of athletes were divided into regions of interest (Moore
+                                                                               et al., 2019). Our research indicates that the fixations time of expert
+                                                                               referees in the central area and the outer area is significantly longer
+                                                                               than that of non-expert referees. Previous studies support this result.
+                                                                               As an interactor, basketball referees usually need to handle a large
+                                                                               number of game clues (MacMahon et al., 2014), and complete the
+                                                                               reasonable distribution of attention among the referee’s responsibility
+                                                                               area, the ball, players and teammates in the game scene. On the one
+                                                                               hand, compared with non-expert referees, expert basketball referees
+    FIGURE 13
+    Comparison of the decision-making accuracy between expert and              have developed a stable “internal model” for visual search, enabling
+    non-expert referees. Error bars are ±1 SEM.                                them to efficiently allocate attention in visual search tasks (Kostrna
+                                                                               and Tenenbaum, 2021). In tasks with limited decision-making time,
+                                                                               expert referees can better distinguish relevant information sources
+process (Ericsson and Kintsch, 1995), research has proved that the             (the athletic performance of the central area and the outer area) from
+excellent anticipatory ability of expert referees is inseparable from          irrelevant information sources (the athletic performance of the
+long-term high-level officiating experience (Schrödter et al., 2023).          invalid area), and focus their attention on the most important
+High-level expected ability mainly stems from the rich practical               information sources. On the other hand, from the perspective of the
+competition refereeing experience of expert referees or the transfer of        information reduction hypothesis, this result indicates that expert
+sports skills when they are athletes. On the other hand, long-term             basketball referees may learn through experience to optimize the
+working memory provides effective support for the decision-making              amount of information processed and selectively focus on task-
+of expert referees (Ericsson and Chase, 1982). When expert referees            related information (Wu, 2024). We believe that the information
+observe the movements that appear in the video, they will quickly              reduction hypothesis supports the establishment of an “internal
+recall from their minds whether the occurrence of the movement is a            model” for visual search by expert basketball referees. Therefore,
+violation, thereby making decisions promptly (Plessner and Haar,               expert basketball referees selectively focus their attention on key
+2006; Ericsson, 2008). Therefore, we believe that different memory             positions in the central area and the outer area to obtain crucial
+retrieval methods will lead to differences in information processing.          information and achieve a high decision-making accuracy. However,
+Because expert referees have rich officiating experience, they will            based on existing knowledge, in the context of fast breaks or
+formulate more refined information retrieval strategies and processing         transitions between offense and defense, referees also need to monitor
+methods. When confronted with repetitive scenarios, it can more                the no-ball area. Moreover, the actual refereeing work requires
+effectively extract key information from long-term memory, guide               constant adjustment of body position and focus of attention to fully
+visual attention, and make correct decisions. In contrast, non-expert          cover the dynamics of the game. This point forms a surface
+referees rely more on random visual behaviors to collect information           contradiction with our research results. We speculate that the cause
+when facing complex game scenarios, and they lack the ability of               of this problem might be the limitations of the laboratory context. In
+anticipation and long-term working memory. Therefore, expert                   real refereeing, referees compensate for the concentration of gaze
+referees can show higher accuracy of decision making.                          through body movements and the switching of gaze points. However,
+    There are differences in the performance of expert and                     in the video viewing task of this study, the compensation mechanism
+non-expert referees in the fixation heat map. From the figure,                 could not be demonstrated, and expert referees thus showed a more
+we can intuitively find that expert referees allocate their attention          concentrated gaze pattern.
+to the key areas and can effectively suppress the visual information                There is no difference in the number of fixations and the fixations
+in the outer areas and invalid areas. However, non-expert referees             duration, which is similar to the results of previous studies. This might
+allocate approximately half of the fixation to the outer areas and             be due to the significant differences between the tests completed under
+invalid areas, and the fixation is relatively scattered, making it             laboratory conditions and the positions and perspectives of the
+impossible to quickly and accurately extract key information. Our              referees (MacMahon and Ste-Marie, 2002; Plessner and Betsch, 2001).
+findings support the results of previous studies. When a high-level            Previous studies suggested that the number of fixations and the
+basketball referee is refereeing, his attention will be focused on the         duration of fixations could not be used as important parameters to
+offensive and defensive players who hold the ball (Klatt et al.,               distinguish experts from non-experts (Catteeuw et al., 2009). However,
+2021). When an attacking player starts with the ball, the expert               by further exploring the differences in gaze behavior between expert
+referee will first observe whether the player will commit a travel             and non-expert referees through the division of areas of interest, it can
+violation when they start dribbling. Then officiate the defense                be proved that expert referees will spend more time focusing on the
+(which is also required by the current FIBA refereeing regulations),           important areas and clues of the game (Moore et al., 2019). Expert
+while visually tracking and searching the defenders for any illegal            referees focus their main attention and most of their time on the key
+actions (Ruiz et al., 2024). When the offensive player finishes                information area, while non-expert referees focus their attention and
+dribbling and stops, the expert referee will again observe whether             most of their time on the irrelevant information area. Our research
+the offensive player has committed a travel violation. Then, when              also proves this view. In addition, the differences in perceptual and
+
+
+Frontiers in Psychology                                                   10                                                             frontiersin.org
+Wang et al.                                                                                                                       10.3389/fpsyg.2025.1682389
+
+
+
+
+cognitive skills between expert and non-expert referees may also                    result in us not being able to observe significant differences between
+be influenced by other factors. For example, the way video stimuli are              the groups.
+presented and the types of stimuli may cause referees to extract
+different information when watching the materials (Dicks et al., 2010).
+At present, most studies usually adopt laboratory environments or                   5 Conclusion
+simulate competitive scenarios. Although they offer strict
+experimental controls, it is difficult to replicate the dynamics and                    In conclusion, this study examined the gaze behavior and
+unpredictability of real competitive conditions. For instance, factors              decision-making accuracy of basketball referees with different
+such as crowd noise, high-pressure decision-making and fast-paced                   experiences when evaluating game scenarios. Compared with
+interaction. All these may have limited the ecological validity and                 non-expert basketball referees, expert basketball referees make
+applicability of the research results. Therefore, future research should            more accurate decisions, pay more attention to the central and outer
+incorporate these factors.                                                          areas, pay less attention to the invalid area, have a smaller entropy,
+     This study is the first to explore the difference in entropy between           a shorter fixations duration, and a similar number of fixations. This
+expert and non-expert basketball referees. Although the results show                research places greater emphasis on the fact that the gaze behavior
+that the fixation entropy of expert basketball referees is lower than that          of basketball referees is related to the decision-making in the game
+of non-experts. However, no significant difference in fixation entropy              scene. Therefore, it can be incorporated into the personalized
+was found between experts and non-experts. This is consistent with                  training plan for improving the decision-making ability of
+the results of the study on the gaze behavior of rugby referees (Moore              basketball referees.
+et al., 2019). This might indicate that the accumulated refereeing
+experience of both expert and non-expert referees enables them to
+adopt systematic visual search strategies and both strive to focus on               6 Limitations and outlook
+more critical information (Haider and Frensch, 1999), it’s just that
+expert basketball referees pay attention to key information for a longer                 First, the sample size is relatively small, which is due to the scarcity
+time. Therefore, this might indicate that a lower fixation entropy                  of the referee group in Chinese’s top basketball league and the extreme
+predicts more accurate decisions, but research shows that the entropy               difficulty in recruitment (Schnyder et al., 2017). Although the trends
+of sub-elite referees is higher than that of elite referees, and there is no        and effect magnitudes reported by the research institute have
+difference in the decision-making accuracy (Moore et al., 2019).                    significant reference value and provide a crucial foundation for future
+Therefore, the interpretation of the result of entropy should                       large-sample validation studies. However, the post-event statistical test
+be more cautious.                                                                   power also fails to reach the standard value, which means that the
+     Based on the fact that the expert group and the non-expert                     failure to detect significant differences may result from insufficient
+group did not show significant differences in the number of fixations               statistical test power. Therefore, we encourage researchers to use a
+and fixations duration and fixation entropy, we speculate that this                 larger sample size and more trials in the visual search and decision-
+may be influenced by factors such as the design of the research task                making tasks of referees. Second, the video clips were captured by the
+or the insufficient sensitivity of the indicators used in the study.                camera at the position of the lead referee. These video clips help
+Firstly, in terms of task design, the partial absence of real-life                  enhance the representativeness of this research task. However, existing
+situational factors in basketball may instead prevent expert referees               studies have shown that different perspectives can affect visual search
+from demonstrating their genuine, context-dependent visual search                   behavior. Future research should control this by generating unique
+and decision-making advantages. For instance, the game score, the                   first-person shots (Spitz et al., 2016). Thirdly, although this study
+remaining time, the number of fouls committed by the team and the                   attempts to adopt a more realistic referees’ specific decision-making
+influence of the players, etc. There are the following differences                  task than previous studies, this task is still carried out in the laboratory
+between laboratory conditions and real situations. The richness of                  rather than in a natural game context, which limits the
+perceived information (for instance, in laboratory conditions,                      representativeness of the task. Since gaze behaviors in different
+referees rely more on foveal vision, while in real matches, referees                situations may vary due to different task constraints (Dicks et al.,
+more often use peripheral vision to monitor the area without the                    2010), future research should give priority to using mobile gaze
+ball); Cognitive and decision-making pressure (for instance, in real                tracking devices to enhance the ecological validity of perception-
+competitions, referees might adopt a more conservative gaze pattern                 cognitive assessment. Furthermore, eye-tracking technology, when
+due to pressure, or exhibit intuitive visual search strategies based on             combined with other physiological and cognitive tests (such as EEG)
+experience). Task participation and physical participation (for                     and gesture tracking devices (such as Leap Motion Controller ),          ®
+example, in laboratory conditions, physical movement is stripped                    provides a comprehensive understanding of the factors influencing
+away, while in a real competition, the referee’s gaze strategy is                   basketball performance.
+accomplished through eye-head-body coordination). Secondly, on
+the selected indicators, it may be impossible to capture the micro-
+differences in visual information extraction between the expert                     Data availability statement
+group and the non-expert group. Some eye movement data failed to
+form a strong correlation with decision-making accuracy. It is                          The raw data supporting the conclusions of this article will
+possible that the two groups adopted the same visual search strategy                be made available by the authors, without undue reservation.
+but exhibited different decision-making behaviors, which would
+
+
+
+
+Frontiers in Psychology                                                        11                                                                 frontiersin.org
+Wang et al.                                                                                                                                                          10.3389/fpsyg.2025.1682389
+
+
+
+
+Ethics statement                                                                                        Conflict of interest
+     The studies involving humans were approved by Ethics Committee of                                      The authors declare that the research was conducted in the
+the Shanghai University of Sport. The studies were conducted in accordance                              absence of any commercial or financial relationships that could
+with the local legislation and institutional requirements. The participants                             be construed as a potential conflict of interest.
+provided their written informed consent to participate in this study. Written
+informed consent was obtained from the individual(s) for the publication
+of any identifiable images or data included in this article.
+                                                                                                        Generative AI statement
+Author contributions                                                                                         The authors declare that no Gen AI was used in the creation of
+                                                                                                        this manuscript.
+    RW: Writing – original draft, Visualization, Software,                                                   Any alternative text (alt text) provided alongside figures in this
+Conceptualization, Data curation, Methodology, Formal analysis. LC:                                     article has been generated by Frontiers with the support of artificial
+Investigation, Validation, Writing – review & editing. YW:                                              intelligence and reasonable efforts have been made to ensure accuracy,
+Investigation, Formal analysis, Writing – review & editing, Validation,                                 including review by the authors wherever possible. If you identify any
+Data curation, Supervision. QZ: Project administration, Validation,                                     issues, please contact us.
+Writing – review & editing, Funding acquisition, Resources,
+Supervision, Conceptualization, Visualization, Investigation.
+                                                                                                        Publisher’s note
+Funding                                                                                                     All claims expressed in this article are solely those of the authors
+                                                                                                        and do not necessarily represent those of their affiliated organizations,
+    The author(s) declare that financial support was received for the                                   or those of the publisher, the editors and the reviewers. Any
+research and/or publication of this article. This work was supported                                    product that may be evaluated in this article, or claim that may
+by the National Social Science Fund of China under Grant 22CTY002                                       be made by its manufacturer, is not guaranteed or endorsed by
+and East Talent Plan Young Project.                                                                     the publisher.
+
+
+
+References
+  Alemanno, M., Di Pompeo, I., Marcaccio, M., Canini, D., Curcio, G., and Migliore, S.                    Haider, H., and Frensch, P. A. (1999). Eye movement during skill acquisition: more
+(2025). From gaze to game: a systematic review of eye-tracking applications in                          evidence for the information-reduction hypothesis. J. Exp. Psychol. Learn. 25:172.
+basketball. Brain Sci. 15:421. doi: 10.3390/brainsci15040421
+                                                                                                          Hancock, D. J., and Ste-Marie, D. M. (2013). Gaze behaviors and decision making
+  Allsop, J., and Gray, R. (2014). Flying under pressure: effects of anxiety on attention               accuracy of higher-and lower-level ice hockey referees. Psychol. Sport. Exerc. 14, 66–71.
+and gaze behavior in aviation. J. Appl. Res. Mem. Cogn. 3, 63–71. doi:
+                                                                                                          Helsen, W., and Bultynck, J. B. (2004). Physical and perceptual-cognitive demands of
+10.1016/j.jarmac.2014.04.010
+                                                                                                        top class refereeing in association football. J. Sports Sci. 22, 179–189. doi:
+  Bar-Eli, M., Plessner, H., and Raab, M. (2011). Judgement, decision making and                        10.1080/02640410310001641502
+success in sport. Chichester: Wiley.
+                                                                                                         Henderson, J. (2003). Human gaze control during real-world scene perception. Trends
+  Brams, S., Ziv, G., Levin, O., Spitz, J., Wagemans, J., Williams, A. M., et al. (2019). The           Cogn. Sci. 7, 498–504. doi: 10.1016/j.tics.2003.09.006
+relationship between gaze behavior, expertise, and performance: a systematic review.
+                                                                                                          Janelle, C., Hillman, C. H., Apparies, R. J., Murray, N. P., Meili, L., Fallon, E. A., et al.
+Psychol. Bull. 145, 980–1027. doi: 10.1037/bul0000207
+                                                                                                        (2000). Expertise differences in cortical activation and gaze behavior during rifle
+  Catteeuw, P., Helsen, W. F., Gilis, B., and Wagemans, J. (2009). Decision-making skills,              shooting. J. Sport Exerc. Psychol. 22, 167–182.
+role specificity, and deliberate practice in association football refereeing. J. Sports Sci. 27,
+                                                                                                          Klatt, S., Noël, B., Nicklas, A., Schul, K., Seifriz, F., Schwarting, A., et al. (2021). Gaze
+1125–1136. doi: 10.1080/02640410903079179
+                                                                                                        behavior and positioning of referee teams during three-point shots in basketball. Appl.
+   Dicks, M., Button, C., and Davids, K. (2010). Examination of gaze behaviors under in                 Sci. 11:6648. doi: 10.3390/app11146648
+situ and video simulation task constraints reveals differences in information pickup for
+                                                                                                          Klostermann, A., and Moeinirad, S. (2020). Fewer fixations of longer duration? Expert
+perception and action. Atten. Percept. Psychophys. 72, 706–720. doi:
+                                                                                                        gaze behavior revisited. Ger. J. Exerc. Sport Res. 50, 146–161. doi:
+10.3758/APP.72.3.706
+                                                                                                        10.1007/s12662-019-00616-y
+  Ericsson, K. A. (2008). Deliberate practice and acquisition of expert performance: a
+                                                                                                          Kostrna, J., and Tenenbaum, G. (2021). Developing and testing the expanded sport
+general overview. Acad. Emerg. Med. 15, 988–994. doi: 10.1111/j.
+                                                                                                        official’s decision-making model. Int. J. Sport Exerc. Psychol. 20, 586–611. doi:
+1553-2712.2008.00227.x
+                                                                                                        10.1080/1612197X.2021.1891117
+  Ericsson, K. A., and Chase, W. G. (1982). Exceptional memory: extraordinary feats of
+                                                                                                          Kredel, R., Vater, C., Klostermann, A., and Hossner, E. J. (2017). Eye-tracking
+memory can be matched or surpassed by people with average memories that have been
+                                                                                                        technology and the dynamics of natural gaze behavior in sports: a systematic review of
+improved by training. Am. Sci. 70, 607–615.
+                                                                                                        40 years of research. Front. Psychol. Perfor. Sci. 8:1845. doi: 10.3389/fpsyg.2017.01845
+  Ericsson, K. A., and Kintsch, W. (1995). Long-term working memory. Psychol. Rev.
+                                                                                                          Lozzi, D., Di Pompeo, I., Marcaccio, M., Alemanno, M., Krüger, M., Curcio, G., et al.
+102:211. doi: 10.1037/0033-295x.102.2.211
+                                                                                                        (2025). AI-powered analysis of eye tracker data in basketball game. Sensors 25:3572. doi:
+  Field, A. (2013). Discovering statistics using SPSS. 4th Edn. Washington, DC: Sage.                   10.3390/s25113572
+  French, K. E., and Thomas, J. R. (1987). The relation of knowledge development to                       MacMahon, C., and Ste-Marie, D. M. (2002). Decision-making by experienced rugby
+children’s basketball performance. J. Sport Psychol. 9, 15–32.                                          referees: use of perceptual information and episodic memory. Percept. Mot. Skills
+                                                                                                        95:570e572. doi: 10.2466/pms.2002.95.2.570
+  Gegenfurtner, A., Lehtinen, E., and Saljo, R. (2011). Expertise differences in the
+comprehension of visualizations: a meta-analysis of eye-tracking research in professional                 MacMahon, C., Mascarenhas, D., Plessner, H., Pizzera, A., Oudejans, R., and Raab, M.
+domains. Educ. Psychol. Rev. 23, 523–552. doi: 10.1007/s10648-011-9174-7                                (2014). Sports officials and officiating: Science and practice. Oxfordshire: Routledge.
+  Gorman, A. D., Abernethy, B., and Farrow, D. (2015). Evidence of different underlying                   Mann, D. T. Y., Williams, A. M., Ward, P., and Janelle, C. M. (2007). Perceptual-cognitive
+processes in pattern recall and decisionmaking. Q J Exp Psychol 68, 1813–1831. doi:                     expertise in sport: a meta-analysis. J. Sport Exerc. Psychol. 29, 457–478. doi: 10.1123/jsep.29.4.457
+10.1080/17470218.2014.992797
+
+
+
+Frontiers in Psychology                                                                            12                                                                                    frontiersin.org
+Wang et al.                                                                                                                                                10.3389/fpsyg.2025.1682389
+
+
+
+
+  Marteniuk, R. G. (1976). Information processing in motor skills. New York: Holt,                    Samuel, R. D. (2015). A psychological preparation framework for elite soccer referees:
+Rinehart and Winston.                                                                               a practitioner’s perspective. J. Sport Psychol. Action 6, 170–187. doi: 10.1080/
+                                                                                                    21520704.2015.1065938
+  Mascarenhas, R. D., Collins, D., and Mortimer, P. (2005). Elite refereeing performance:
+developing a model for sport science support. Sport Psychol. 19, 364–379. doi:                        Schnyder, U., Koedijker, J. M., Kredel, R., and Hossner, E.-J. (2017). Gaze behaviour
+10.1123/tsp.19.4.364                                                                                in offside decision-making in football. Germ. J. Exerc. Sport Res. 47, 103–109. doi:
+  McPherson, S. L. (1999). Tactical differences in problem representations and solutions in         10.1007/s12662-017-0449-0
+collegiate varsity and beginner women tennis players. Res. Q. Exerc. Sport 70, 369–284.               Schrödter, R., Schwarting, A., Fasold, F., Schul, K., and Klatt, S. (2023). The relevance
+  Moore, L. J., Harris, D. J., Sharpe, B. T., Vine, S. J., and Wilson, M. R. (2019).                of general spatial anticipation skills for basketball referees. Appl. Sci. 13:2991.
+Perceptual-cognitive expertise when refereeing the scrum in rugby union. J. Sports Sci.               Shannon, C. E. (1948). A mathematical theory of communication. Bell Syst. Tech. J.
+37, 1778–1786. doi: 10.1080/02640414.2019.1594568                                                   27, 379–423. doi: 10.1002/j.1538-7305.1948.tb01338.x
+  North, J. S., Williams, A. M., Hodges, N., Ward, P., and Ericsson, K. A. (2009).                    Spitz, J., Put, K., Wagemans, J., Williams, A. M., and Helsen, W. F. (2016). Visual search
+Perceiving patterns in dynamic action sequences: investigating the processes                        behaviors of association football referees during assessment of foul play situations.
+underpinning stimulus recognition and anticipation skill. Appl. Cogn. Psychol. 23,                  Cognit. Res. 1:12. doi: 10.1186/s41235-016-0013-8
+878–894. doi: 10.1002/acp.1581
+                                                                                                     Tenenbaum, G., and Robert, G. J. (2007). Handbook of sport psychology. 3rd Edn.
+   Plessner, H., and Betsch, T. (2001). Sequential effects in important referee decisions:          Hoboken, NJ: Wiley.
+the case of penalties in soccer. J. Sport Exerc. Psychol. 23, 254e–259e. doi: 10.1123/
+jsep.23.3.254                                                                                         Van Maarseveen, M. J., Oudejans, R. R., and Savelsbergh, G. J. (2015). Pattern recall
+                                                                                                    skills of talented soccer players: two new methods applied. Hum. Mov. Sci. 41, 59–75.
+  Plessner, H., and Haar, T. (2006). Sports performance judgments from a social                     doi: 10.1016/j.humov.2015.02.007
+cognitive perspective. Psychol. Sport Exerc. 7, 555–575. doi: 10.1016/j.
+psychsport.2006.03.007                                                                                Vater, C., Williams, A. M., and Hossner, E.-J. (2019). What do we see out of
+                                                                                                    the corner of our eye? The role of visual pivots and gaze anchors in sport.
+   Rafiee, S., Vaezmousavi, M., Ghasemi, A., and Jafarzadehpour, E. (2015). Visual search           Int. Rev. Sport Exerc. Psychol. 13, 81–103. doi: 10.1080/1750984X.2019.
+and decision making accuracy of expert and novice basketball referees. Motor Behav.                 1582082
+7, 65–76.
+                                                                                                      Vickers, J. N. (2007). Perception, cognition, and decision training: The quiet eye in
+  Roca, A., Ford, P. R., McRobert, P. R., and Williams, A. M. (2011). Identifying the               action. Champaign, IL: Human Kinetics.
+processes underpinning anticipation and decision-making in a dynamic time-
+constrained task. Cogn. Process. 12, 301–310. doi: 10.1007/s10339-011-0392-1                          Williams, A. M., and Ward, P. (2007). “Anticipation and decision making: exploring
+                                                                                                    new horizons” in Handbook of sport psychology. eds. G. Tenenbaum and R. C. Eklund
+  Ruiz, A., Albaladejo-Garcıa, C., Reina, R., and Moreno, F. J. (2023). Basketball referee’s
+                                                                                                    (Hoboken, NJ, USA: John Wiley & Sons), 203–223.
+gaze behavior and stimulus selection in relation to visual angle perspective and
+officiating mechanics and expertise. Eur. J. Hum. Mov. 50:4–18. doi: 10.21134/                        Wu, Y. (2024). A comparison of perceptual-cognitive skills in expert and non-expert
+eurjhm.2023.50.2                                                                                    sports officials: a systematic review and meta-analysis. Front. Psychol. 15:1380281. doi:
+                                                                                                    10.3389/fpsyg.2024.1380281
+  Ruiz, A., Albaladejo-García, C., Reina, R., and Moreno, F. J. (2024). Perceptual-
+cognitive skills of basketball referees: on-the-court visual search behavior. Percept. Mot.           Ziv, G. (2020). Gaze behavior of referees in sport—a review. Front. Sports Act. Living.
+Skills 131, 1873–1893. doi: 10.1177/00315125241278532                                               2:572891. doi: 10.3389/fspor.2020.572891
+
+
+
+
+Frontiers in Psychology                                                                        13                                                                             frontiersin.org
+

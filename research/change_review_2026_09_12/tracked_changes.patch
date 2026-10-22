@@ -1,0 +1,607 @@
+diff --git a/.github/workflows/ci.yml b/.github/workflows/ci.yml
+index ff9324d..7f1af40 100644
+--- a/.github/workflows/ci.yml
++++ b/.github/workflows/ci.yml
+@@ -23,3 +23,10 @@ jobs:
+ 
+       - name: Test
+         run: pytest -q
++
++      - uses: actions/setup-node@v4
++        with:
++          node-version: '22'
++
++      - name: Website unit checks
++        run: node tests/test_site.cjs
+diff --git a/PROJECT/Definitions for NBA Analytics Research - Ryan Kalfus (2026).md b/PROJECT/Definitions for NBA Analytics Research - Ryan Kalfus (2026).md
+index a98f9a2..7f32b2a 100644
+--- a/PROJECT/Definitions for NBA Analytics Research - Ryan Kalfus (2026).md	
++++ b/PROJECT/Definitions for NBA Analytics Research - Ryan Kalfus (2026).md	
+@@ -97,7 +97,7 @@ Meaning:
+ ## Context Variables
+ 
+ ### `seconds_left_in_game`
+-- Seconds remaining in the game at the possession reference point.
++- Known remaining time at the possession reference point: remaining regulation time for periods 1–4, or time left in the current overtime. Future overtime is never included.
+ - Larger values mean earlier in the game.
+ - Smaller values mean later in the game.
+ 
+@@ -178,3 +178,19 @@ Equivalent wording:
+ - WMI can suggest patterns that deserve review.
+ - WMI cannot prove bias by itself.
+ - Definitions should stay stable unless the project intentionally changes the metric.
++
++## Validated Reconstruction and Research Diagnostics
++
++- Possession ownership follows the feed, with a mandatory new group at every period change. Administrative events cannot create possessions; ownership changes are recognized on live-event rows. Technical-only ownership segments are removed. A returning same-team segment rejoins its prior segment only when the prior segment did not end in a terminal live play. This is a feed reconstruction; unusual retained-ball and administrative events may need adjudication.
++- Prediction start state uses the prior recorded event's score and clock, or the new period's start clock. Current-possession shot outcomes, free throws, fouls and final-game duration are never predictors.
++- The final-game WMI is retrospective because N_t uses future possessions. Global windows continue across period boundaries and truncate at game edges.
++- `p_l = P(F_t=1 | L_t=l)`; `q_l = P(N_t=1 | F_t=1,L_t=l)`.
++- Immediate component: `p_1 / p_0`.
++- Continuation component: `(1+q_1)/(1+q_0)`.
++- Their product equals WMI where both components are defined. A component with no qualifying observations is missing, never zero-filled.
++- Same-team and opposite-team transitions count consecutive foul possessions by the defending team. They do not establish makeup calls.
++- Team foul counts exclude offensive, technical and double fouls; special personal fouls remain included. Bonus eligibility for the next common foul occurs after four counted team fouls in regulation or three in overtime, or after one counted team foul in the last two minutes. This state is reconstructed from source labels and may miss rare exceptions.
++- Late-strategy sensitivity removes all possessions beginning in period 4 or overtime with (clock <=35 and offense lead >3) or (clock <=15 and offense lead >=1), irrespective of the current outcome.
++- Percentiles explicitly name their parser version and reference cohort. They are descriptive rankings, not significance tests.
++- Group counts and small-denominator notices describe support. Per-game inferential intervals are withheld until coverage is validated. An interval containing one would not establish equivalence.
++- Context residual: observed foul possessions minus the sum of held-out context-model probabilities. This is a volume residual, not a new WMI formula or a measure of call correctness.
+diff --git a/PROJECT/PROJECT.md b/PROJECT/PROJECT.md
+index ec000ce..d77fb13 100644
+--- a/PROJECT/PROJECT.md
++++ b/PROJECT/PROJECT.md
+@@ -21,16 +21,16 @@
+ - The unit of analysis is a possession.
+ - The user-facing unit is one NBA game.
+ - The core question is whether recent defensive fouls inside a game connect to current and near-future foul patterns.
+-- The active project uses WMI only.
++- The public headline metric remains WMI; explanatory components and a separate validation study are authorized.
+ - Completed-game lists are only comparison context for percentiles and distribution plots.
+ - The project no longer has a separate pooled season-level edition.
+ - WMI should show whistle-pattern behavior. It should not be presented as proof of referee intent by itself.
+ 
+ ## Current Project Stage
+-- Current stage: game-level `WMI`.
++- Current stage: game-level `WMI` with a separate audited multi-season validation and prediction study.
+ - Current work centers on game-level WMI.
+ - League-wide completed-game outputs support game comparison, not pooled season claims.
+-- Current documentation priority: keep definitions, project guidance, and logs organized and separate.
++- Current priority: audit reconstruction, expose descriptive components, and compare context-only prediction with context plus foul history on later seasons.
+ 
+ ## Core Project Rules
+ - Offensive fouls end possessions.
+@@ -68,7 +68,7 @@
+ 
+ ## Interpretation Rules
+ - A WMI value above `1` means more whistle momentum after recent fouls.
+-- A WMI value near `1` means little or no difference.
++- A WMI value numerically near `1` has a small observed ratio difference; this alone does not establish statistical equivalence.
+ - A WMI value below `1` means less whistle momentum after recent fouls.
+ - WMI is easier to explain.
+ - Percentiles and distribution plots compare one game against other completed games.
+diff --git a/PROJECT/Plan for WMI - Ryan Kalfus (2026).md b/PROJECT/Plan for WMI - Ryan Kalfus (2026).md
+index badf4a3..29885b7 100644
+--- a/PROJECT/Plan for WMI - Ryan Kalfus (2026).md	
++++ b/PROJECT/Plan for WMI - Ryan Kalfus (2026).md	
+@@ -6,7 +6,7 @@
+ 
+ ## Current Direction
+ - The project studies NBA whistle momentum at the possession level.
+-- The current active scope is WMI only.
++- WMI remains the public headline metric; a separate validation study and explanatory diagnostics are active.
+ - The game-level metric is named `WMI`.
+ - Completed-game lists are used only to compare one game against other games.
+ - The project no longer maintains a separate pooled season-level edition.
+diff --git a/PROJECT/nba-whistle-project-log.md b/PROJECT/nba-whistle-project-log.md
+index e2663bd..ce0a2ef 100644
+--- a/PROJECT/nba-whistle-project-log.md
++++ b/PROJECT/nba-whistle-project-log.md
+@@ -117,3 +117,7 @@ Log all changes here. Short, summarized.
+ - 06.29.2026: Changed active `WMI_controlled` from a per-game Poisson GLM adjusted ratio to a context-filtered mean ratio: calculate the same `M_t` by `L_t` ratio as WMI after excluding controlled possessions. Regenerated controlled example breakdowns and the controlled distribution for 2020-21 through 2024-25; the old 2025-26 controlled snapshot is no longer mixed into the active controlled distribution because it used the previous GLM method.
+ - 06.29.2026: Changed active `WMI_controlled` again to a regression-controlled version of the WMI setup: Poisson GLM on `M_t` with `L_t` as the main effect and score/time/period/offense/defense controls. Regenerated controlled example breakdowns and the 2020-21 through 2024-25 controlled distribution; current controlled distribution mean is `0.806753` and median is `0.763403`.
+ - 06.29.2026: Paused controlled WMI and removed it from the active project surface. The current product is WMI game-by-game WMI with completed-game percentile/distribution context; controlled experiments were archived for possible future research.
++- 08.11.2026: Added and ran a separate expansion-analysis runner on the complete 2024-25 regular season (1,230 games, 244,786 possessions, 0 source failures), producing a full report with WMI decomposition, directional and multi-scale diagnostics, game-bootstrap and block-bootstrap intervals, limited context-adjusted inference, and chronological prediction; the active game-level WMI definition was unchanged.
++- 09.12.2026: Added the separate reproducible validation pipeline, corrected period/admin/technical ownership reconstruction and future-overtime timing, rebuilt five seasons plus playoffs, compared matched context/history models on later seasons, and added version-labeled website diagnostics, timelines and missing-value handling.
++- 09.12.2026: Completed conditional next-team/time-to-foul forecasts and a six-scenario bootstrap coverage stress test; interval coverage was inconsistent, so public per-game intervals remain withheld.
++- 09.12.2026: Added and ran the separate `run_all_wmi_hypotheses.py` study for H1–H17 plus supplied H18: 6,080 retained games, 77 reported estimates, game/crew-aware uncertainty, global multiple-test correction, and a full report in `research/hypotheses_2026_09_12`; four source-clock anomaly games were quarantined, causal/data limits were documented, and the public WMI outputs were not changed by this study.
+diff --git a/README.md b/README.md
+index b9ee617..7915aa4 100644
+--- a/README.md
++++ b/README.md
+@@ -4,7 +4,7 @@ NBA Whistle Momentum Index is a possession-level basketball analytics project th
+ 
+ > After recent defensive foul calls, do NBA games show short-term changes in foul-call momentum?
+ 
+-The current public version is intentionally narrow. It uses one active metric, `WMI`, calculated game by game.
++The public headline metric is `WMI`, calculated game by game. A separate validation study audits possession reconstruction and tests whether recent foul history improves prediction beyond basketball context.
+ 
+ ![WMI distribution](wmi_distribution_2020_21_to_2025_26.png)
+ 
+@@ -29,7 +29,7 @@ average(M_t where L_t = 1) / average(M_t where L_t = 0)
+ Interpretation:
+ 
+ - `WMI > 1`: more whistle momentum after recent fouls.
+-- `WMI ~= 1`: little or no difference.
++- `WMI ~= 1`: a small observed ratio difference; statistical equivalence is not established.
+ - `WMI < 1`: less whistle momentum after recent fouls.
+ 
+ WMI is a pattern metric. It is not proof of referee intent, bias, or misconduct.
+@@ -124,3 +124,23 @@ The website search dataset covers 2019-20 through the available 2025-26 snapshot
+ ## Status
+ 
+ This is a v1 research release. The metric is intentionally simple, explainable, and scoped to completed games.
++
++## Audited validation release
++
++The shared parser now splits at period changes, ignores administrative ownership changes when starting possessions, and reconstructs time without using future overtime. The WMI formula and global windows are unchanged. Existing CSV snapshots remain archived release data; `site-data/audited_games.csv` overlays recalculated games in search. Each row names its parser version and percentile reference cohort.
++
++Run the reproducible offline study:
++
++```bash
++python validate_wmi.py
++python forecast_foul_sequences.py
++python validate_wmi_intervals.py
++python -m pytest -q
++node tests/test_site.cjs
++```
++
++The conditional sequence runner executes only when the replication gate passes. The main study needs the commit-pinned inputs listed in `research/hypotheses_2026_09_12/source_manifest.json`; the existing fetch helper acquires those inputs. It verifies SHA256 hashes before use. `python validate_wmi.py --evaluate-only` uses the saved possession partitions. Development builds require `--max-games N --output /tmp/wmi-smoke` so release artifacts are protected.
++
++Outputs live in `research/validation_2026_09_12/`: protocol, report, source/partition manifest, environment versions, parser and source comparisons, held-out predictions, calibration, residuals, and the expansion decision. Compressed possession partitions include model inputs and separately named outcomes. Current-possession shots/free throws are never prediction features. Missing shot-zone coverage is explicit.
++
++The August expansion report is historical; its prediction claims are superseded by the matched context/history validation. A coverage stress test of circular block intervals found inconsistent coverage, so per-game confidence intervals remain withheld. The website shows sample counts and denominator diagnostics without asserting significance.
+diff --git a/index.html b/index.html
+index 460d592..c17a126 100644
+--- a/index.html
++++ b/index.html
+@@ -18,6 +18,7 @@
+         <a href="#results">Results</a>
+         <a href="#search">WMI Search</a>
+         <a href="#method">Method</a>
++        <a href="#validation">Validation</a>
+         <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">GitHub</a>
+       </nav>
+     </header>
+@@ -40,10 +41,9 @@
+       <section id="results" class="section">
+         <div class="section-heading">
+           <p class="eyebrow">Current release</p>
+-          <h2>WMI v1 snapshot</h2>
++          <h2>Original WMI snapshot</h2>
+           <p>
+-            The comparison set is built from completed games. Percentiles tell where a single game
+-            lands relative to the rest of the dataset.
++            These archived statistics describe 6,727 regular-season games from 2020–21 through March 2026. Search includes additional seasons and game types. Each selected game names its own percentile reference set.
+           </p>
+         </div>
+ 
+@@ -75,8 +75,8 @@
+                 <dd>More whistle momentum after recent defensive fouls.</dd>
+               </div>
+               <div>
+-                <dt>WMI ~= 1</dt>
+-                <dd>Little or no difference in the short-term pattern.</dd>
++                <dt>WMI near 1</dt>
++                <dd>A small observed ratio difference; uncertainty may still be substantial.</dd>
+               </div>
+               <div>
+                 <dt>WMI &lt; 1</dt>
+@@ -89,8 +89,7 @@
+             <h3>Worked example</h3>
+             <p>
+               OKC vs. MIL on February 12, 2026 has
+-              <strong>WMI = 0.9523809524</strong>. The score is close to 1, which points to
+-              little difference in this game.
++              <strong>WMI = 0.952</strong> in the original snapshot. This ratio is numerically close to 1; it does not establish statistical equivalence.
+             </p>
+             <a href="wmi_breakdown_okc_mil.csv">Open the game breakdown</a>
+           </article>
+@@ -102,7 +101,7 @@
+           <p class="eyebrow">WMI Search</p>
+           <h2>Look up a game</h2>
+           <p>
+-            Search the static WMI dataset by team, date, matchup, or game ID. Results include
++            Search by team, date, matchup, or game ID. Recalculated games include explanatory components and foul timelines. Each result is labeled with its parser version. Results include
+             regular season, playoffs, and play-in games from 2019-20 through the available
+             2025-26 snapshot where possession-level data is available.
+           </p>
+@@ -152,13 +151,26 @@
+         </div>
+       </section>
+ 
++      <section id="validation" class="section">
++        <div class="section-heading">
++          <p class="eyebrow">Research validation</p>
++          <h2>Does foul history add information?</h2>
++          <p id="validation-status">The validation study compares the same basketball-context model with and without recent foul history, holding out later seasons and resampling whole games for uncertainty.</p>
++        </div>
++        <div class="callout">
++          <p>Period boundaries and prediction timing were corrected. Reconstructed start-state features include score, clock, team fouls and bonus eligibility. Current-possession outcomes are excluded from predictors.</p>
++          <p id="validation-result">Results and the expansion decision are documented in the validation report.</p>
++          <p><a href="research/validation_2026_09_12/report.md">Read the validation report (Markdown)</a> · <a href="research/validation_2026_09_12/prediction_results.csv">Download model comparisons</a> · <a href="research/validation_2026_09_12/interval_validation.md">Interval coverage study</a> · <a href="site-data/audited_games.csv">Download recalculated game summaries</a></p>
++          <p class="muted-text">These are associations in final recorded play-by-play. They do not establish call correctness, referee intent or causal makeup calls. A bootstrap coverage stress test found inconsistent coverage; per-game intervals remain withheld.</p>
++        </div>
++      </section>
++
+       <section id="method" class="section band">
+         <div class="section-heading">
+           <p class="eyebrow">Method</p>
+           <h2>One formula, one active metric</h2>
+           <p>
+-            WMI uses possession windows. It does not adjust for score, teams, period, or late-game
+-            strategy in v1.
++            WMI uses global possession windows. Its formula is unchanged. It is retrospective because the next-two-possession term uses future events. WMI does not adjust for basketball context; the separate prediction study tests whether history adds information beyond context.
+           </p>
+         </div>
+ 
+diff --git a/requirements.txt b/requirements.txt
+index 54bffe2..c441a71 100644
+--- a/requirements.txt
++++ b/requirements.txt
+@@ -6,3 +6,5 @@ requests
+ ruff
+ statsmodels
+ 
++scikit-learn
++scipy
+diff --git a/site.js b/site.js
+index d3850a6..f238649 100644
+--- a/site.js
++++ b/site.js
+@@ -96,6 +96,7 @@ function parseCsv(text) {
+ }
+ 
+ function numberValue(value) {
++  if (value === null || value === undefined || String(value).trim() === "") return null;
+   const parsed = Number(value);
+   return Number.isFinite(parsed) ? parsed : null;
+ }
+@@ -107,14 +108,14 @@ function formatNumber(value, digits = 3) {
+ 
+ function formatPercentile(value) {
+   const parsed = numberValue(value);
+-  return parsed === null ? "N/A" : `${parsed.toFixed(1)}th`;
++  return parsed === null ? "N/A" : `${parsed.toFixed(1)}%`;
+ }
+ 
+ function compactDate(value) {
+   if (!value) {
+     return "Unknown date";
+   }
+-  return value.slice(0, 10);
++  return /^\d{8}$/.test(value) ? `${value.slice(0, 4)}-${value.slice(4, 6)}-${value.slice(6, 8)}` : value.slice(0, 10);
+ }
+ 
+ function gameLabel(game) {
+@@ -132,7 +133,7 @@ function searchableText(game) {
+     game.season,
+     game.season_type,
+     game.game_id,
+-    game.game_date_et,
++    compactDate(game.game_date_et),
+     game.away_team,
+     game.home_team,
+     game.matchup,
+@@ -148,13 +149,9 @@ function interpretation(wmi) {
+   if (value === null) {
+     return "This game did not have enough valid possession groups to compute WMI.";
+   }
+-  if (value > 1.05) {
+-    return "More whistle momentum after recent defensive fouls.";
+-  }
+-  if (value < 0.95) {
+-    return "Less whistle momentum after recent defensive fouls.";
+-  }
+-  return "Close to neutral short-term whistle momentum.";
++  if (value > 1) return "The observed WMI ratio is above 1. This is a descriptive difference, not evidence of statistical significance or referee intent.";
++  if (value < 1) return "The observed WMI ratio is below 1. This is a descriptive difference, not evidence of statistical significance or referee intent.";
++  return "The two observed group means are equal. This alone does not establish statistical equivalence.";
+ }
+ 
+ function populateFilters() {
+@@ -260,26 +257,69 @@ function selectGame(game) {
+ }
+ 
+ function renderSelectedGame(game) {
++  const audited = game.parser_version === "period_start_v2";
++  const reference = audited
++    ? "Recalculated regular-season games, 2020–21 through 2024–25 (period-boundary parser v2)."
++    : "Original search snapshot: regular season, playoffs and play-in, 2019–20 through the March 2026 snapshot (original parser).";
++  const stat = (label, value) => `<div><span>${label}</span><strong>${value}</strong></div>`;
++  const denominator = numberValue(game.mean_M_t_where_L_t_eq_0);
++  const support = Math.min(numberValue(game.n1_count_L_t_eq_1) ?? Infinity, numberValue(game.n0_count_L_t_eq_0) ?? Infinity);
+   els.selected.innerHTML = `
+     <p class="eyebrow">${game.season} | ${game.season_type}</p>
+     <h3>${game.matchup || game.game_id}</h3>
+     <p class="game-date">${gameLabel(game)}</p>
++    <p class="version-label">${audited ? "Recalculated · parser v2" : "Original snapshot · awaiting recalculation"}</p>
+     <div class="selected-stats">
+-      <div>
+-        <span>WMI</span>
+-        <strong>${formatNumber(game.WMI, 4)}</strong>
+-      </div>
+-      <div>
+-        <span>Percentile</span>
+-        <strong>${formatPercentile(game.wmi_percentile)}</strong>
+-      </div>
+-      <div>
+-        <span>Possessions</span>
+-        <strong>${game.possessions || "N/A"}</strong>
+-      </div>
++      ${stat("WMI", formatNumber(game.WMI))}
++      ${stat("Percentile", formatPercentile(game.wmi_percentile))}
++      ${stat("Possessions", game.possessions || "N/A")}
+     </div>
++    <p class="reference-note"><strong>Percentile reference:</strong> ${reference}</p>
+     <p>${interpretation(game.WMI)}</p>
++    <details open><summary>Why this game received this score</summary>
++      <div class="diagnostic-grid">
++        ${stat("Recent-foul possessions (n1)", game.n1_count_L_t_eq_1 || "N/A")}
++        ${stat("Other possessions (n0)", game.n0_count_L_t_eq_0 || "N/A")}
++        ${stat("Numerator · mean M after recent fouls", formatNumber(game.mean_M_t_where_L_t_eq_1))}
++        ${stat("Denominator · mean M without recent fouls", formatNumber(game.mean_M_t_where_L_t_eq_0))}
++        ${stat("Immediate foul ratio", formatNumber(game.immediate_ratio))}
++        ${stat("Continuation ratio", formatNumber(game.continuation_ratio))}
++      </div>
++      <p class="muted-text">WMI divides the numerator by the denominator. Where defined, immediate ratio × continuation ratio gives the same WMI.</p>
++      ${audited ? `<p>Consecutive foul possessions: <strong>${game.same_team_transitions}</strong> same-team transitions; <strong>${game.opposite_team_transitions}</strong> opposite-team transitions. These counts do not identify makeup calls.</p>` : "<p>Components and timelines require reprocessing the source events. They are unavailable for this original snapshot row.</p>"}
++    </details>
++    <p class="support-note">${denominator === 0 ? "WMI is undefined because its denominator is zero. " : ""}${support !== null && support < 30 ? "Fewer than 30 possessions in at least one comparison group; interpret the ratio cautiously. This is a sample-size notice, not a validated reliability threshold. " : ""}Per-game confidence intervals are not displayed: the tested bootstrap method did not achieve consistent coverage across simulated scenarios.</p>
++    ${audited ? '<details><summary>Foul timeline · team and subtype</summary><div id="foul-timeline" aria-live="polite">Loading foul events…</div></details>' : ""}
+   `;
++  if (audited) loadTimeline(game.game_id);
++}
++
++async function loadTimeline(gameId) {
++  try {
++    const response = await fetch(`site-data/timelines/${gameId}.json`);
++    if (!response.ok) throw new Error("Timeline unavailable");
++    const data = await response.json();
++    if (state.selected?.game_id !== gameId) return;
++    const container = document.querySelector("#foul-timeline");
++    if (!container) return;
++    container.replaceChildren();
++    const list = document.createElement("ol");
++    list.className = "foul-timeline";
++    for (const event of data.events) {
++      const item = document.createElement("li");
++      const seconds = event.clock % 60;
++      const clock = `${Math.floor(event.clock / 60)}:${(Number.isInteger(seconds) ? String(seconds).padStart(2, "0") : seconds.toFixed(1).padStart(4, "0"))}`;
++      item.textContent = `Possession ${event.possession} · Q${event.period} ${clock} · ${event.team} · ${event.descriptor || event.subtype}: ${event.description}`;
++      list.appendChild(item);
++    }
++    container.appendChild(list);
++    if (!data.events.length) container.textContent = "No counted defensive fouls.";
++  } catch {
++    if (state.selected?.game_id === gameId) {
++      const container = document.querySelector("#foul-timeline");
++      if (container) container.textContent = "Foul timeline could not be loaded. The game summary remains available.";
++    }
++  }
+ }
+ 
+ function renderEmptySelection() {
+@@ -297,14 +337,26 @@ async function loadSearchData() {
+       throw new Error(`Could not load ${DATA_URL}`);
+     }
+     const text = await response.text();
+-    state.games = parseCsv(text).map((game) => ({
++    let merged = parseCsv(text).map(game => ({...game, game_id: game.game_id.padStart(10, "0")}));
++    try {
++      const auditedResponse = await fetch("site-data/audited_games.csv");
++      if (!auditedResponse.ok) throw new Error("Recalculated data unavailable");
++      const audited = parseCsv(await auditedResponse.text());
++      const gamesById = new Map(merged.map(game => [game.game_id, game]));
++      audited.forEach(game => gamesById.set(game.game_id, {...gamesById.get(game.game_id), ...game}));
++      merged = [...gamesById.values()];
++    } catch {
++      document.querySelector("#validation-status").textContent = "Recalculated data could not be loaded. Search is showing the original snapshot.";
++    }
++    merged.sort((a,b) => compactDate(b.game_date_et).localeCompare(compactDate(a.game_date_et)) || b.game_id.localeCompare(a.game_id));
++    state.games = merged.map((game) => ({
+       ...game,
+       searchText: searchableText(game),
+     }));
+     state.filtered = state.games;
+     populateFilters();
+     applyFilters();
+-    selectGame(state.games[0]);
++    if (state.games.length) selectGame(state.games[0]);
+   } catch (error) {
+     els.meta.textContent = "WMI search data could not be loaded.";
+     els.list.replaceChildren();
+@@ -330,4 +382,38 @@ if (els.form) {
+     }
+   });
+   loadSearchData();
++  loadValidation();
++}
++
++async function loadValidation() {
++  try {
++    const response = await fetch("research/validation_2026_09_12/prediction_results.csv");
++    if (!response.ok) return;
++    const rows = parseCsv(await response.text()).filter(row => row.scope === "All possessions");
++    const result = document.querySelector("#validation-result");
++    const final = rows.find(row => row.season === "2024-25" && row.game_type === "Regular Season");
++    if (final) result.textContent = `Recent foul history added a small amount of predictive information. In ${final.season} regular-season testing, log loss changed by ${formatNumber(final.delta_log_loss,6)}. This supports further research, not a strong forecasting claim.`;
++    const table = document.createElement("table");
++    table.className = "validation-table";
++    const caption = document.createElement("caption");
++    caption.textContent = "Matched model comparison · lower log loss is better";
++    table.appendChild(caption);
++    const head = document.createElement("thead");
++    const header = document.createElement("tr");
++    for (const label of ["Test season", "Context", "+ Foul history", "Change · 95% interval"]) {
++      const cell = document.createElement("th"); cell.scope = "col"; cell.textContent = label; header.appendChild(cell);
++    }
++    head.appendChild(header); table.appendChild(head);
++    const body = document.createElement("tbody");
++    for (const row of rows) {
++      const tr = document.createElement("tr");
++      for (const value of [`${row.season} ${row.game_type}`, formatNumber(row.context_log_loss,6), formatNumber(row.history_log_loss,6), `${formatNumber(row.delta_log_loss,6)} (${formatNumber(row.ci_low,6)}, ${formatNumber(row.ci_high,6)})`]) {
++        const cell = document.createElement("td"); cell.textContent = value; tr.appendChild(cell);
++      }
++      body.appendChild(tr);
++    }
++    table.appendChild(body);
++    const wrapper = document.createElement("div"); wrapper.className = "table-scroll"; wrapper.appendChild(table);
++    result.after(wrapper);
++  } catch { /* The report link remains available if the optional summary fails. */ }
+ }
+diff --git a/styles.css b/styles.css
+index 7d7d8fc..662d4e0 100644
+--- a/styles.css
++++ b/styles.css
+@@ -518,3 +518,20 @@ h3 {
+     white-space: normal;
+   }
+ }
++
++.version-label { display: inline-block; border: 1px solid #9bbfb4; border-radius: 4px; padding: 4px 8px; font-size: .85rem; }
++.reference-note, .support-note { font-size: .9rem; color: var(--muted); }
++.diagnostic-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
++.diagnostic-grid div { padding: 12px; background: white; border-radius: 6px; }
++.diagnostic-grid span { display: block; font-size: .8rem; color: var(--muted); }
++.diagnostic-grid strong { font-size: 1.15rem; }
++summary { cursor: pointer; font-weight: 700; padding: 8px 0; }
++.foul-timeline { max-height: 360px; overflow-y: auto; padding-left: 24px; font-size: .9rem; }
++.foul-timeline li { padding: 8px 0; border-bottom: 1px solid var(--line); }
++@media (max-width: 640px) { .diagnostic-grid { grid-template-columns: 1fr; } }
++
++.table-scroll { overflow-x: auto; margin: 20px 0; }
++.validation-table { width: 100%; border-collapse: collapse; font-size: .9rem; text-align: left; }
++.validation-table caption { text-align: left; font-weight: 700; padding-bottom: 12px; }
++.validation-table th, .validation-table td { padding: 12px; border-bottom: 1px solid var(--line); }
++.validation-table th { background: var(--soft); }
+diff --git a/wmi_utils.py b/wmi_utils.py
+index 80148f4..11a2aac 100644
+--- a/wmi_utils.py
++++ b/wmi_utils.py
+@@ -1,5 +1,3 @@
+-import re
+-
+ import numpy as np
+ import pandas as pd
+ import requests
+@@ -17,15 +15,8 @@ def default_wmi_breakdown_out_path(game_id):
+ 
+ 
+ def clock_to_seconds(clock_str):
+-    if pd.isna(clock_str):
+-        return None
+-    match = re.match(r"PT(\d+)M(\d+)\.(\d+)S", str(clock_str))
+-    if not match:
+-        return None
+-    minutes = int(match.group(1))
+-    seconds = int(match.group(2))
+-    hundredths = int(match.group(3))
+-    return minutes * 60 + seconds + (hundredths / 100.0)
++    from wmi_possessions import clock_seconds
++    return clock_seconds(clock_str)
+ 
+ 
+ def parse_int(value):
+@@ -95,14 +86,12 @@ def add_recent_foul_columns(df, foul_col="foul_called_this_possession"):
+ 
+     f = out[foul_col].fillna(0).astype(int).to_numpy(dtype=np.int16)
+ 
+-    prev1 = np.concatenate((np.array([0], dtype=np.int16), f[:-1]))
+-    prev2 = np.concatenate((np.array([0, 0], dtype=np.int16), f[:-2]))
+-    l_count = prev1 + prev2
+-    l_vals = (l_count > 0).astype(np.int16)
+-
+-    next1 = np.concatenate((f[1:], np.array([0], dtype=np.int16)))
+-    next2 = np.concatenate((f[2:], np.array([0, 0], dtype=np.int16)))
+-    n_vals = ((next1 + next2) > 0).astype(np.int16)
++    l_vals = np.zeros(len(f), dtype=np.int16)
++    n_vals = np.zeros(len(f), dtype=np.int16)
++    for distance in (1, 2):
++        if distance < len(f):
++            l_vals[distance:] |= (f[:-distance] > 0)
++            n_vals[:-distance] |= (f[distance:] > 0)
+ 
+     out["L_t"] = l_vals.astype(int)
+     out["F_t"] = f.astype(int)
+@@ -112,79 +101,8 @@ def add_recent_foul_columns(df, foul_col="foul_called_this_possession"):
+ 
+ 
+ def build_possession_summary_from_actions(actions, game_id):
+-    df = pd.DataFrame(actions).sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
+-    if df.empty:
+-        raise ValueError(f"No actions available to build possession summary for game_id {game_id}.")
+-
+-    df["seconds_remaining_in_period"] = df["clock"].apply(clock_to_seconds)
+-    df["game_seconds_elapsed"] = (df["period"] - 1) * 720 + (720 - df["seconds_remaining_in_period"])
+-    df = df[df["game_seconds_elapsed"].notna()].copy()
+-    if df.empty:
+-        raise ValueError(f"No valid timed actions found for game_id {game_id}.")
+-
+-    df["event_seq_same_clock"] = df.groupby("game_seconds_elapsed").cumcount()
+-    df["timeline_time"] = df["game_seconds_elapsed"] + (df["event_seq_same_clock"] * 0.001)
+-
+-    team_rows = df[df["teamTricode"].notna()][["teamId", "teamTricode"]].dropna().drop_duplicates()
+-    team_id_to_tricode = {int(r.teamId): r.teamTricode for _, r in team_rows.iterrows()}
+-    team_ids = sorted(team_id_to_tricode.keys())
+-    if len(team_ids) != 2:
+-        raise ValueError(f"Expected exactly 2 teams in game_id {game_id}.")
+-
+-    opponent_id = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
+-    valid = df[df["possession"].isin(team_ids)].copy()
+-    if valid.empty:
+-        raise ValueError(f"No valid possession rows found for game_id {game_id}.")
+-
+-    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
+-    valid["possession_group"] = valid["is_new_possession"].cumsum()
+-    total_game_seconds = float(valid["game_seconds_elapsed"].max())
+-    score_side = infer_team_score_side(valid, team_ids)
+-
+-    rows = []
+-    for group_id, grp in valid.groupby("possession_group", sort=True):
+-        offense_team_id = int(grp["possession"].iloc[0])
+-        defense_team_id = opponent_id[offense_team_id]
+-
+-        subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
+-        def_foul_count = int(
+-            (
+-                (grp["actionType"] == "foul")
+-                & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
+-                & (grp["teamId"] == defense_team_id)
+-            ).sum()
+-        )
+-        has_def_foul = int(def_foul_count > 0)
+-
+-        end_time = float(grp["timeline_time"].max())
+-        score_row = grp[grp["scoreHome"].notna() & grp["scoreAway"].notna()].tail(1)
+-        score_difference = None
+-        if len(score_row) == 1:
+-            sr = score_row.iloc[0]
+-            sh = parse_int(sr.get("scoreHome"))
+-            sa = parse_int(sr.get("scoreAway"))
+-            offense_score = sh if score_side.get(offense_team_id) == "home" else sa
+-            defense_score = sh if score_side.get(defense_team_id) == "home" else sa
+-            if offense_score is not None and defense_score is not None:
+-                score_difference = offense_score - defense_score
+-
+-        rows.append(
+-            {
+-                "game_id": game_id,
+-                "possession_group": int(group_id),
+-                "period": int(grp["period"].iloc[-1]),
+-                "offense_team_id": offense_team_id,
+-                "defense_team_id": defense_team_id,
+-                "offense_team": team_id_to_tricode[offense_team_id],
+-                "defense_team": team_id_to_tricode[defense_team_id],
+-                "seconds_left_in_game": round(total_game_seconds - end_time, 3),
+-                "score_difference": score_difference,
+-                "foul_called_this_possession": has_def_foul,
+-                "defensive_foul_count": def_foul_count,
+-            }
+-        )
+-
+-    return pd.DataFrame(rows).sort_values("possession_group").reset_index(drop=True)
++    from wmi_possessions import reconstruct
++    return reconstruct(actions, game_id)
+ 
+ 
+ def build_possession_model_table_from_actions(actions, game_id):

@@ -91,15 +91,17 @@ Build the website search dataset:
 python build_wmi_search_dataset.py
 ```
 
-## MVP Website
+## Website
 
-The static MVP website is in `index.html` and `styles.css`. It is designed to run directly from the repository root and can be served by GitHub Pages.
+The static Whistle Atlas website is in `index.html`, `styles.css`, and `site.js`. It explains the research question, searches game-level WMI scores, and compares two selected games side by side. It is designed to run directly from the repository root and can be served by GitHub Pages.
 
 Preview locally:
 
 ```bash
 python -m http.server 8000
 ```
+
+The 22 October 2026 meeting packet is in `research/meeting_2026_10_22/`: a proposed problem statement and decision gate, the Indigo-format ten-source bibliography draft, an RIS file for Zotero, and a source tracker. Source annotations are preliminary until the full papers are read and page-numbered notes are added.
 
 ## Project Structure
 

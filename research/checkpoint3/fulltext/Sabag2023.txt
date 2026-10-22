@@ -1,0 +1,849 @@
+                Journal of Human Kinetics volume 89/2023, 313–326 DOI: 10.5114/jhk/169439                                   313
+                Section IV – Psychological and Sociological Aspects of Sport and Exercise
+
+
+
+
+    Teamwork and Decision Making among Basketball Referees:
+       The 3PO Principle, Refereeing Level, and Experience
+
+                                               by
+             Eran Sabag 1,2,*, Ronnie Lidor 1, Michal Arnon 1, Elia Morgulev 1,2,
+                                      Michael Bar-Eli 1,3
+
+         In this study, the three-person officiating (3PO) principle was employed as an innovative method to examine
+decision-making (DM) processes among basketball referees. We aimed at exploring whether the ranking, experience, and
+teamwork among 25 basketball referees could predict accuracy of DM in ambiguous situations taken from basketball
+games. An analysis of 283 officiating cases taken from 100 filmed games was conducted. The events were then classified
+by nine experts according to whether the officiating decision was accurate, and which referee (Lead, Centre or Trail) was
+standing in the main coverage area, as per the 3PO principle, when the decision was made. Our findings indicate that
+the teamwork (coordination) component was associated with the quality of DM. Of the 283 events, 60 decisions (21%)
+were not made from the recommended position according to the 3PO principle; 49 of those decisions were incorrect. The
+findings are discussed from both developmental and instructional perspectives.
+Keywords: positioning; coordination; three-person officiating; accuracy of decisions
+
+Introduction
+                                                                     perceptual ability (Helsen and Bultynck, 2004;
+         Referees are key stakeholders in both                       Kittel et al., 2019; Cobanoglu et al., 2021), mental
+individual and team sports. Their primary                            ability (Anshel et al., 2014; Castillo et al., 2017),
+responsibility is the maintenance of safety and                      visual attention (Pietraszewski et al., 2014; Spitz et
+competitive fairness through enforcement of the                      al., 2018), rules knowledge, and game management
+rules (Bar-Eli et al., 2011; Hancock et al., 2021).                  (Mascarenhas et al., 2002).
+Single refereeing decisions can have major impact                             One factor that seems to be particularly
+on the outcome (Dosseville et al., 2013; Hossner et                  relevant to referees' DM quality is their level of
+al., 2019; Raab et al., 2019), and accurate decision-                expertise (MacMahon et al., 2007; Souchon et al.,
+making (DM) performance is considered to be one                      2013). Expertise is the individual's ability to
+of the most important characteristics that a referee                 effectively perform in domain-specific tasks
+should possess (Bar-Eli et al., 2011; Nabli et al.,                  (Chassy and Gobet, 2010), and refers to the
+2019). Ample research has been conducted to                          characteristics, skills, and knowledge that
+identify sources of referees' bias, and to reveal how                distinguish experts from novices or less
+accuracy of officiating can be improved (Dohmen                      experienced individuals (Ericsson et al., 2018;
+and Sauermann, 2016; Morgulev et al., 2018;                          Ericsson and Pool, 2016). In sport, the referees'
+Schweizer et al., 2013; Spencer et al., 2020).                       level of expertise is typically reflected by the level
+Contributing factors that have been found to assist                  at which they officiate (e.g., regional, national or
+referees in their DM processes include physical                      international levels) (Avugos et al., 2021).
+fitness (Helsen and Bultynck, 2004; Leicht, 2008),
+
+1 Department of Movement and Sport Sciences, Levinsky-Wingate Academic College, Netanya, Israel.
+2 Department of Physical Education, Kaye Academic College of Education, Beer-Sheva, Israel.
+3 Department of Business Administration, Guilford Glazer Faculty of Business and Management, Ben-Gurion University of the
+
+Negev, Beer-Sheva, Israel.
+* Correspondence: sabageran@gmail.com
+
+Accepted for publishing in the Journal of Human Kinetics vol. 89/2023 in October 2023.
+314                                                                    Decision-making and teamwork in referees
+
+
+          DM of expert referees is superior to that of     were able to effectively position themselves in
+novice referees (Larkin et al., 2011; Put et al., 2013).   relation to an anticipated event.
+For example, Gilis and colleagues (2008) found that                 Indeed, referees' DM has been examined
+international-level assistant referees were more           under a variety of conditions, including different
+accurate in recalling the spatial positions of soccer      officiating ranks, court locations, and distances
+players in complex offside situations, compared to         from the given game situation. Yet referees' on-
+their national-level counterparts. Page and Page           court coordination and collaborations during
+(2010) examined the influence of the home                  games, as well as their impact on the referees'
+advantage on officiating, based on an extensive            shared DM in practice, have been largely neglected
+sample of games from various English soccer                in sports refereeing literature. In other words,
+games. Those authors concluded that on average,            despite referees' DM requiring teamwork and
+referees with a greater level of expertise were less       cooperation, especially in ball games such as
+responsive to social pressure than those with less         basketball, in-depth research on this topic is greatly
+experience and training.                                   lacking (Pina et al., 2021). Moreover, since the
+          In another ball game, i.e., basketball, Hack     introduction of the three-person officiating (3PO)
+et al. (2009) demonstrated that compared to non-           principle in basketball in the beginning of the
+professionals, professional referees exhibited             2000s, only few studies have examined the
+superior domain-specific attention mechanisms.             practical application of the referees' teamwork,
+This was evident through them ascribing greater            regarding cases where referees changed positions
+importance to officiating tasks and using long-time        during the actual game.
+experience to assess effectively game situations.
+                                                           The 3PO Principle
+Overall, previous findings suggest that officiating
+expertise is associated with an improved ability to                  In any professional game of basketball,
+select and process relevant, useful situational            three referees simultaneously function on the
+information (Ghasemi et al., 2009; Hancock and             court, working together as a single unit by what is
+Ste-Marie, 2013; Pizzera et al., 2018).                    termed the 3PO principle. According to this notion,
+          Another factor that distinguishes between        the referees alternate their zone of responsibility,
+novice and expert referees is related to their             as the location of the ball and the players changes
+teamwork, that is, coordination and positioning in         in real time [for more details, see the International
+relation to the event and to each other (Avugos et         Basketball Association (FIBA) Three-Person
+al., 2021; Samuel et al., 2020). For example, Mallo        Officiating                                  Manual:
+and colleagues (2012) showed that DM accuracy of           https://www.clubdelarbitro.com/documentos/FIB
+referees and assistant referees in soccer was              A_3PO_Advanced_v1_1_Dec2020_en.pdf
+affected by either the distance or the angle from          (accessed on 1 July 2022)]. Each referee fills one of
+which they observed the game. When examining               three basic positions: Lead, Centre or Trail. Each
+key factors that contribute to expert officiating          position is responsible for a primary coverage area
+performance in the National Rugby League, Morris           (Figure 1, lefthand panel). In some cases, due to
+and O'Connor (2017) found positioning and                  functional coverage areas (Figure 1, righthand
+teamwork to be among the leading attributes in             panel), some overlapping does occur between the
+officiating excellence. De Oliveira et al. (2011),         three referees.
+however, did not find significant associations             Addressing the 3PO Principle for Increasing
+between the referee's distance from a foul play and        Validity of DM Studies on Basketball Officiating
+the accuracy of the call in Brazilian soccer. Hossner
+et al. (2019) analyzed viewing angles and distances                 The literature is abundant in studies on
+in relation to error rates in whistled and non-            referee positioning in soccer (Avugos et al., 2021;
+whistled events in the International Federation of         Kittel et al., 2019), yet much less attention has been
+Association Football (FIFA) World Cup 2014. They           given to positioning and coordination among the
+also found no significant correlations between the         triad of referees that is unique to the game of
+variables, yet they stated that although there             basketball (for a recent systematic review on
+seemed to be no "ideal distance" for making                basketball referees, see García-Santos et al., 2020).
+accurate decisions in soccer, elite-level referees         In a preliminary descriptive study, Smid (2015)
+
+
+
+
+Journal of Human Kinetics, volume 89/2023                                                     http://www.johk.pl
+by Eran Sabag et al.                                                                                           315
+
+attempted to characterize the positions and zones             referees' expertise from two perspectives, namely,
+of responsibility among the three referees on the             (a) were they national or international?, and (b)
+court (Lead, Centre, and Trail). It was found that            how many years of experience did they have?
+over three basketball seasons, the Lead position
+was dominant compared to the Centre and Trail
+                                                              Methods
+positions. Moreover, changes to the team's shared             Participants
+DM indicated a diffusion of power between the
+                                                                       Nine Israeli elite-level basketball referees
+team members. Overall, the Lead position
+                                                              served as expert observers in this study. They were
+outperformed the other two positions, yet no effect
+                                                              all males, aged 36–52 years (mean = 43.9), with an
+of the officiating referees' DM on accuracy was
+                                                              average of 26.3 years of experience. The expert
+found. The current study is novel as it focuses on
+                                                              observers were recruited from the Israeli
+the teamwork component of DM in basketball
+                                                              Basketball Referees Association and were active
+referees.
+                                                              members of FIBA. All nine observers held an
+         For educational purposes, Pecev et al.
+                                                              international refereeing license and had experience
+(2016) applied neural network techniques to
+                                                              in officiating international games, such as in the
+simulate the visual field and identify the optimal
+                                                              EuroLeague and the European Championships for
+relative positioning for each of the three referees in
+                                                              national teams.
+various game situations. Finally, Hrusa and
+                                                                       In line with protocols used in previous
+Hrusova (2021) used expert observers to assess the
+                                                              studies on referees in sport (Brand et al., 2006;
+accuracy of referees in court decisions. Comparing
+                                                              Morgulev et al., 2014; Plessner and Betsch, 2001;
+between 30 games that were officiated by two
+                                                              Sabag et al., 2018), expert observers were asked to
+referees and 30 games that were attended by three
+                                                              provide their professional opinion on a sample of
+referees (all from the same league), those authors
+                                                              real-game situations, while assessing the quality of
+concluded that the average number of officiating
+                                                              the referees' DM in each situation. The study was
+mistakes decreased significantly with the
+                                                              approved by the Ethics Committee of the authors'
+transition from a two- to a three-referee system.
+                                                              affiliated academic institution and by the Ethical
+         In the current study, we applied a unique
+                                                              Committee of the Israeli Basketball Referees
+methodological approach to research on basketball
+                                                              Association.
+officiating, by incorporating the quality of the
+referees' DM, their officiating level, years of               Database
+experience, and the novel additional component of
+                                                                       WSC Sports Technologies software
+the 3PO principle. By adding this principle as a
+                                                              [https://wsc-sports.com (accessed on 1 January
+real-game variable, we strove to increase the
+                                                              2019)], was used to download 100 games from the
+ecological validity of how DM processes in
+                                                              Israeli Super League from the 2016–17 season. We
+basketball referees were assessed from a teamwork
+                                                              scanned these games and chose 321 events that
+perspective.
+                                                              seemed to be the most ambiguous, with the
+         We hypothesized that the manner in
+                                                              potential to elicit officiating errors. All selected
+which referees in basketball coordinated their
+                                                              events constituted a complex situation in which
+actions during an actual game – namely, how they
+                                                              players, fans, broadcasters, and/or coaches were
+applied the 3PO principle – would influence the
+                                                              dissatisfied with the referees' calls or no-call
+quality of their DM as follows: (a) maintaining or
+                                                              decisions.
+not maintaining the designated area of
+                                                                       The events were selected by the first
+responsibility of each referee would influence the
+                                                              author of this article, a 42-year-old basketball coach
+quality of his officiating calls that he made
+                                                              with 20 years of coaching experience, including
+throughout the game; (b) the amount of
+                                                              working at the highest level of competitive
+overlapping during the game between the
+                                                              basketball in Israel (The Israeli Super League). The
+designated coverages of the referees would
+                                                              Israeli Super League is the highest competitive
+influence the accuracy of the referees' calls; and (c)
+                                                              basketball division (i.e., Division 1) in Israel. This
+the distance of each referee in his designated area
+                                                              league is comprised of 12 professional clubs.
+from the actual officiating event would influence
+                                                              Players practice on a daily basis and play between
+the quality of DM. In addition, we examined
+                                                              one and two games per week. Some clubs also
+
+
+Articles published in the Journal of Human Kinetics are licensed under an open access Creative Commons CC BY 4.0
+license.
+316                                                                    Decision-making and teamwork in referees
+
+
+participate in the European leagues (e.g., the            three expert observers regarding the correct
+Euroleague)]. To validate the selection of these          officiating decision and the referee who should
+events, one experienced professional coach (male;         have been responsible for the given event. These 38
+40 years old with 19 years of coaching experience)        unidentified cases were therefore excluded from
+and one experienced professional referee (male; 37        the data analysis. Of the remaining 283 officiating
+years old with 13 years of officiating experience)        events, agreement was not reached between the
+reassessed the selected events. They were asked to        first two observers for only six cases (about 2%),
+confirm that each event constituted an ambiguous          which required the involvement of a third expert
+on-court situation, with the potential to elicit          observer.
+officiating errors. In all events, the referees and
+                                                          Referees' Age and Years of Experience
+their calls were edited (by the first author) out of
+the video recordings. As such, the expert observers                A total of 25 referees were involved in the
+did not know whether the referee had made a call          283 cases that were included in this study. Seven
+or had ignored the situation. The events were then        were licensed international-level referees. Their
+grouped into videoclips of 20 events each.                age and years of officiating experience are
+                                                          presented in Table 1. A t-test indicated that
+Procedures
+                                                          international-level referees were older (t = 1.96; p <
+         For each selected event, the first author        0.05, Cohen's d = 0.87) and more experienced (t =
+documented the location of the event on the court,        3.22; p < 0.01, Cohen's d = 1.44) than their national-
+the position of the three referees (Lead, Centre, and     level counterparts.
+Trail) on the court, the referee who made the call,
+                                                          Statistical Analyses
+and his decision. In events where the referees did
+not blow their whistle, the officiating decision was               Chi-square tests were performed to
+classified as "no-call".                                  examine correlations between the referees' level of
+         Each event was independently examined            officiating, teamwork, and quality of decisions. A
+by two expert observers. After comparing their            two-way ANOVA was conducted to determine
+input, a third expert observer was required in cases      whether the distance from the event was related to
+where a lack of agreement was seen between the            the referees' level, teamwork, and quality of
+first two experts. Each expert observer sat in front      decisions. To examine robustness, we employed a
+of a computer screen in a quiet room. The session         binomial logistic regression in which quality of
+began with a brief introduction and a short training      decisions and teamwork served as the dependent
+session, in which three trial events were viewed          variables. Cramér's V, partial eta-squared, and
+and discussed, to ensure the expert observer had          Cohen's d were used as effect sizes to match the
+understood the requirements of the observational          relevant statistical test. Alpha was set at 0.05 for all
+task.                                                     statistical analyses. SPSS version 26 was used for
+         Each officiating event was presented to the      data analyses.
+experts in the following sequence: (a) an
+                                                          Results
+introductory slide presenting the number of the
+event, with arrows pointing to players involved in        Comparison of Decisions Made by Real-Time
+the event; (b) a videoclip of the event itself, without   Referees vs. Expert Observers
+the referees' decision; (c) two slow-motion replays                Distribution of referees' and expert
+of the event; and (d) a final slide requesting the        observers' decisions in the 283 officiating events is
+classification of the event. For each officiating         presented in Table 2 (cross-tabulation).
+event, expert observers were asked to identify: (a)                Overall, expert observers only reached the
+the referee that should have taken responsibility         same decision as referees in 109 of the 283 events
+for the call when an event occurred within his            (38.5%), confirming that the selected officiating
+primary coverage area; and (b) the correct                situations were indeed challenging. The highest
+officiating decision that should have been made.          agreement rates were found in decisions regarding
+Each expert observer assessed 80–100 events.              flagrant fouls (4 out of 7; 57.1%) and on the no-calls
+         For 38 of the 321 selected events (about         (61 out of 114; 53.5%). On the other hand, only 12
+12%), a consensus was not reached between the             of the 68 calls of a shooting foul (17.6%) were
+
+
+
+Journal of Human Kinetics, volume 89/2023                                                     http://www.johk.pl
+by Eran Sabag et al.                                                                                                 317
+
+confirmed by experts.                                         compared to their national level counterparts (6.96
+                                                              m and 6.19 m, respectively) [F(1, 279) = 10.08, p < 0.01,
+Referees' Level, Teamwork, and Distance between
+                                                              η2 = 0.04].
+the Referee and the Actual Event
+                                                                           In light of the significant interaction
+         The number and the percentage of                     between teamwork and the referees' level [F(1) =
+incorrect/correct calls made by referees are                  7.08, p < 0.01, η2 = 0.03], we examined cases with
+presented in Table 3 according to their officiating           correct/erroneous teamwork separately. Our
+level (national/international). These results show            findings reveal that in cases with correct
+that referees at the international level did not              teamwork, international and national level referees
+exhibit better DM than their national level                   were found to be standing at a similar distance
+counterparts (χ2 (1) = 0.18, p > 0.05, Rc = 0.25).            from the event (5.94 m and 5.81 m, respectively)
+          We also examined cases where the referee            [F(1, 221) = 0.34 , p > 0.05, η2 = 0.002]. However, in cases
+who should have made the call (as the event                   where teamwork was erroneous, referees at the
+occurred within his primary coverage area) was                international level were found to be standing
+indeed the one who did take responsibility for DM.            further away from the event compared to their
+Our findings show that these cases were less                  national level colleagues (7.98 m and 6.56 m,
+erroneous than cases where the wrong referee                  respectively) [F(1, 58) = 7.06, p < 0.01, η2 = 0.11]. This
+made the call (i.e., when the event was outside his           finding indicates that when international level
+primary coverage area). The number and the                    referees were involved, their erroneous teamwork
+percentage of incorrect/correct calls made by                 was related to their tendency to take responsibility
+referees in incorrect/correct positions are presented         for events that took place further away from them.
+in Table 4.                                                                Analysis of accuracy rates of referees by
+         As seen in Table 4, referees made more               the national/international level, and in relation to
+errors (81.7%) when they made decisions                       their distance from the given event, revealed that
+regarding events that were outside their primary              national level referees were at a similar distance
+coverage area (χ2 (1) = 13.09, p < 0.01, Rc = 0.22). This     from the event in both erroneous and correct
+finding is also true when examining each group of             decisions (6.09 m and 5.74 m, respectively) [F(1, 184) =
+referees discretely: national level referees (χ2 (1) =        2.00, p > 0.05, η2 = 0.01]. International level referees
+10.01, p < 0.001, Rc = 0.23) and international level          were also found to be at a similar distance in both
+referees (χ2 (1) = 3.68, p < 0.05, Rc = 0.20). Evidently,     correct and erroneous decisions (6.72 m and 6.30 m,
+correct positioning among the three referees (i.e.,           respectively) [F(1, 95) = 1.22, p > 0.05, η2 = 0.01].
+teamwork) is an important officiating factor. We              Overall, international level referees made decisions
+therefore also examined whether international                 from further away than their national level
+level referees outperformed their national level              counterparts (6.47 m and 5.96 m, respectively) [F(1,
+colleagues in this regard. The number and the                 281) = 5.6, p < 0.01, η2 = 0.02], as seen in Figure 2.
+percentage of incorrect/correct positions by                  However, taking responsibility for events that
+national/international level referees are presented           occurred further away had no detrimental effect on
+in Table 5.                                                   their rate of accuracy. National level referees, on
+         Results in Table 5 show that no evidence             the other hand, needed to be closer to the event in
+was observed for associations between the level of            order to make a correct decision.
+referees and the quality of teamwork (χ2 (1) = 1.85, p
+                                                              Robustness Check
+> 0.05, Rc = 0.08). We therefore performed a two-
+way ANOVA to determine whether teamwork and                            To conduct a robustness check, a binomial
+the referee's level were associated with the distance         logistic regression analysis was performed to
+between the referee and the event. In cases with              assess the findings of this study. This was done
+correct teamwork, the referee was found to be                 through two models. Model 1 (Table 6) was used
+situated closer to the event, compared to cases with          to assess the explanatory power of: (a) correct
+erroneous teamwork (5.88 m and 7.27 m,                        teamwork; (b) the referee's level; (c) referee's
+respectively) [F(1, 279) = 32.72, p < 0.01, η2 = 0.11].       experience; and (d) the referee's distance from the
+Moreover, international level referees were found             event. Model 2 (Table 7) was used to assess the
+to be located further away from the event,                    explanatory power of: (a) the referee's level; (b)
+
+
+
+Articles published in the Journal of Human Kinetics are licensed under an open access Creative Commons CC BY 4.0
+license.
+318                                                                      Decision-making and teamwork in referees
+
+
+referee's experience; and (c) the referee's distance         derived from the Israeli Super League, i.e., the
+from the event.                                              highest competitive basketball division in Israel.
+         Model 1 was found to be significant [χ2 (4,                  Previous studies on basketball officiating
+N = 283) = 15.44, p < 0.001], explaining 7.2%                found that employing the 3PO principle was better
+(Nagelkerke R2) of the variance of the correct               than employing the previous two-person
+decisions and correctly classifying 60.8% of all             officiating (2PO) principle in terms of the quality of
+observed situations. Model 2 was also found to be            referees' decisions (Hrusa and Hrusova, 2021).
+significant [χ2 (3, N = 283) = 27.01, p < 0.001],            However, those earlier studies did not examine
+explaining 14.1% (Nagelkerke R2) of the variance of          basketball referees' DM accuracy with reference to
+the correct positions and correctly classifying              the designated position of each active referee
+80.9% of the observed cases. As such, teamwork               according to the 3PO principle. In the present
+was the only significant predictor of accurate               study, in order to assess DM accuracy, referees'
+officiating (i.e., correct DM). Model 2 indicates that       decisions were compared to officiating decisions of
+referees who made decisions from further away                the same situations made by expert observers in
+often hindered such events rather than contributed           hindsight. We adopted this protocol in order to
+to correct DM, as these were outside their primary           determine whether the referees who made the
+coverage area.                                               decisions were indeed standing in the position
+         The results of binomial logistic regression         recommended by the 3PO principle, and whether
+analyses strengthened the findings of ANOVA                  their     positions     were      associated     with
+analysis. Overall, findings indicate that national           inaccurate/accurate calls. We hypothesized that
+level referees needed to remain within the                   maintaining the correct position in line with the
+predefined boundaries of the 3PO principle, while            3PO principle would improve the referees'
+higher degrees of freedom could be permitted                 teamwork, and in turn, help them make more
+among international level referees.                          accurate on-court decisions.
+                                                                      Two main findings emerged from the
+Discussion                                                   current study. First, no associations were observed
+        In this study, we examined the DM quality            between           the        referees'       ranking
+of basketball referees at the national and                   (national/international        level),     officiating
+international level in ambiguous officiating                 experience, and DM accuracy. These findings
+situations, using an authentic real-game                     differ from those of previous studies (Nevill et al.,
+methodology, i.e., the 3PO principle. By                     2002; Pizzera and Raab, 2012; Spitz et al., 2021),
+innovatively applying this principle as a research           where DM quality among referees from higher
+variable, we attempted to explore relationships              ranks and with more officiating experience was
+between the accuracy of the referees' officiating            typically better than among their counterparts
+decisions, their officiating level, and their                from lower level leagues and with less experience.
+teamwork (based on the 3PO principle). Basketball            The data collected in our study indicated that the
+situations that were examined in this study were             quality of calls made by international level referees
+                                                             was not better than that of national level referees.
+
+
+
+
+               Table 1. Referees' age and years of experience by the national/international level.
+                   Referees' level (N)             Mean age (SD)       Mean years of experience in
+                                                      (years)               Division 1 (SD)
+                   National (n = 18)                 38.6 (5.7)                 6.7 (5.1)
+                   International (n = 7)             43.4 (4.7)                14.3 (5.9)
+                   Total = 25                        40.0 (5.8)                 8.8 (6.2)
+
+
+
+
+Journal of Human Kinetics, volume 89/2023                                                            http://www.johk.pl
+by Eran Sabag et al.                                                                                                                        319
+
+
+
+
+             Table 2. Cross-tabulation of the decisions made by the referees and expert observers.
+                                                                                Referees
+                                                   Foul        Shooting     Offensive      Travelling   No       Flagrant     Out   Total
+                                                                 Foul         Foul                      Call
+                                    Foul            16            3             5                 0      8          1          1     34
+
+                                    Shooting        1            12              2                1     13          1          0     30
+                                    Foul
+
+
+
+
+                Expert Observers
+                                    Offensive       6             6              12               0     17          0          0     41
+                                    Foul
+                                    Travelling      0             0              0                4     12          0          0     16
+
+                                    No Call         25           46              14               3     61          1          0    151
+
+                                    Flagrant        3             1              0                0      2          4          0     10
+
+                                    Goaltending     0             0              0                0      1          0          0     1
+
+                                    Flop            0             0              1                0      0          0          0     1
+
+                                    Total           51           68              34               8     114         7          1    283
+
+
+        Note: The officiating decisions in Table 2 were identified by either referees or expert observers, and
+                                                 categorized as follows:
+       Foul (referees and experts): Illegal personal contact with a player in offense not in the act of shooting;
+         Shooting foul (referees and experts): Illegal personal contact with a player in offense in the act of
+                                                         shooting;
+                Offensive foul (referees and experts): Illegal personal contact with a player in defence;
+               Travelling (referees and experts): A player's illegal movement while holding a live ball;
+              No call (referees and experts): Ignored the situation/no refereeing decision was required;
+        Flagrant (referees and experts): An unsportsmanlike foul, contact with an opponent, illegitimately
+                     attempting to directly play the ball within the spirit and intent of the rules;
+             Out (referees): A player with the ball is out-of-bounds/causes the ball to go out-of-bounds;
+        Goaltending (experts): Situation during a shot when a player touches the ball while it is completely
+       above the level of the ring on its downward flight to the basket or after it has touched the backboard;
+          Flop (experts): Deceptive behaviour of a player who intentionally falls after little or no physical
+                                contact by an opposing player in order to receive a foul.
+
+
+
+
+            Table 3. The number and the percentage of incorrect/correct calls made by referees
+                        according to their officiating level (national/international).
+                                                    Incorrect               %              Correct           %              Total
+
+                                   National              116              62.40%             70         37.60%              186
+
+                                   International          58              59.80%             39         40.20%               97
+
+                                   Total                 174              61.50%            109         38.50%              283
+
+
+
+
+Articles published in the Journal of Human Kinetics are licensed under an open access Creative Commons CC BY 4.0
+license.
+320                                                                                                 Decision-making and teamwork in referees
+
+
+
+
+          Table 4. The number and the percentage of incorrect/correct calls made by referees in
+                                     incorrect/correct positions.
+                                                     Incorrect             %              Correct           %           Total
+
+                   Incorrect teamwork                   49            81.70%                11          18.30%            60
+
+                   Correct teamwork                    125            56.10%                98          43.90%           223
+
+                   Total                               174            61.50%               109          38.50%           283
+
+
+
+
+            Table 5. The number and the percentage of incorrect/correct positions (teamwork)
+                               by national-/international level referees.
+                                         Incorrect             %                 Correct               %                Total
+                                        teamwork                               teamwork
+                  National                 35                18.80%               151                81.20%             186
+
+                  International            25                25.80%                  72              74.20%              97
+
+
+                  Total                    60                21.20%               223                78.80%             283
+
+
+
+
+                             Table 6. Binomial Logistic Regression Analysis, Model 1.
+                                                                                                                    95% for
+                                                                                                                  C.I EXP(B)
+                                           B           SE          Wald         Df         Sig.     Exp(B)      Lower      Upper
+
+                Teamwork                −1.35         0.38         12.76         1        0.00       0.25        0.12          0.54
+                Referee level           −0.21         0.31          0.45         1        0.50       0.81        0.43          1.49
+                Referee experience      −0.006        0.02          0.04         1        0.82       0.99        0.94          1.04
+                Referee distance         0.06         0.07          0.63         1        0.42       1.06        0.91          1.24
+
+
+
+
+                             Table 7. Binomial Logistic Regression Analysis, Model 2.
+                                                                                                                    95% for
+                                                                                                                   C.I EXP(B)
+                                          B           SE           Wald         Df         Sig.      Exp(B)     Lower    Upper
+                Referee level           −0.20        0.37           0.30        1         0.58        0.81       0.38     1.70
+                Referee experience      0.002        0.03          0.004        1          0.95       1.00       0.94     1.06
+                Referee distance        −0.44        0.09          21.85        1         0.001       0.64       0.53     0.77
+
+
+
+
+Journal of Human Kinetics, volume 89/2023                                                                                             http://www.johk.pl
+by Eran Sabag et al.                                                                                           321
+
+
+
+
+        Figure 1. Lefthand panel: Theoretical 3PO coverage, Lead (Blue), Centre (Red), and Trail
+       (Green); Righthand panel: Real-time, functional court coverage, Lead (Blue), Centre (Red),
+                                           and Trail (Green).
+
+
+
+
+        Figure 2. Distance between national and international level referees and the actual event in
+                                       incorrect/correct decisions.
+
+
+
+
+          To explain these findings, we speculated            that international level referees in each game
+that as both the national and the international level         assisted national level referees in their officiating
+referees officiated at the same competitive level             performance, serving as on-court tutors, and
+(i.e., the Israeli Super League, Division 1), rather          providing the latter with on-court officiating
+than at different levels of competitive                       support. In other words, the mix of referees from
+divisions/leagues, this minimized the gap between             both the national and the international level
+the two groups of referees. As such, we assumed               upgraded officiating performances of national
+
+
+
+Articles published in the Journal of Human Kinetics are licensed under an open access Creative Commons CC BY 4.0
+license.
+322                                                                  Decision-making and teamwork in referees
+
+
+level referees.                                                   As for the distance between the position of
+         The second main finding of our study was        the referee and the actual officiating situation, our
+related to the implementation of the 3PO principle.      results revealed that national level referees were
+The results revealed a significant association           standing at a similar distance from the officiating
+between the outcome of referees' DM and their            situation when the decision was right or wrong.
+positioning in the officiating situation: of the 283     The same is true for the international level referees;
+analysed situations, expert observers identified 174     however, they tended to be positioned further
+calls as incorrect (61.5%), of which 49 (28%) were       away from the event than their national level
+associated with referees' incorrect teamwork as          counterparts. This finding is in line with De
+defined by the 3PO principle. No additional              Oliveira et al. (2011), who did not find a significant
+associations were found between any of the other         association between referees' distance from a foul
+DM variables examined and remaining incorrect            play and the accuracy of their DM. In other words,
+officiating decisions (125; about 72%). In fact, 60 of   distance was not found to be the most important
+the 283 officiating decisions (21%) were not made        factor in officiating accuracy.
+from the position recommended by the 3PO                          It is evident that when applying the 3PO
+principle. As only 11 of them were correct (18%),        principle in basketball, all three referees oversee
+the position within the 3PO principle of the referee     the game. However, only one of the three has
+seems to be a major factor determining DM                primary coverage (namely, the responsibility area)
+success, regardless of the referees' ranking             at any given point in the game. It seems that
+(national/international levels).                         maintaining a position outside the primary
+         Referees in basketball are required to          coverage area had the potential to hinder the
+coordinate their DM, while making accurate               referee's DM accuracy. In a previous study, Wang
+decisions in fast-paced game situations applying         and Hsieh (2016) analysed performances of
+anticipation and immediate dynamic adjustments           basketball referee teams and found that teamwork
+(Hossner et al., 2019; MacMahon et al., 2015). In this   (or as they labelled it – teamwork capability), was
+respect, the use of shared mental models which           associated with the referees' game performance, so
+refer to the knowledge structures that team              that when the referees worked together well,
+members possess, could help referees to predict          officiating performances were better. Therefore,
+subsequent situations and coordinate their actions       when applying the 3PO principle, the instructional
+accordingly. When different team members                 challenge seems to be to find the most appropriate
+perceive a game situation in a similar manner,           preparation/training program aimed at improving
+these knowledge structures could help them               teamwork among the three referees.
+improve their DM processes (Cannon-Bowers and                     Indeed, observing the actual positions of
+Salas, 2001).                                            the referees and their distance from the given
+         Team trust is another important officiating     officiating situation in comparison to their position
+variable that characterizes effectively the              derived from the 3PO principle, could assist in
+functioning of shared mental models. This is true        evaluating DM accuracy among basketball
+especially in game situations where referees are         referees. However, additional studies are required
+required to coordinate their actions, with no time       to examine why some officiating decisions are
+to communicate or ability to control their               made when standing outside their area of
+environment (Raue et al., 2021; Rico et al., 2008).      responsibility. It is particularly interesting to
+Shared mental models and team trust greatly              investigate why the more experienced, top-level
+depend on the team's collective experiences (i.e.,       referees make calls when they are standing far
+the longevity of the team), that enable them to          away from the officiating situation – actually, in an
+develop team-related knowledge. Such knowledge           incorrect position (according to the 3PO principle).
+may refer to abilities, behavioural tendencies,
+roles, and skills (Blickensderfer et al., 2010). We
+                                                         Limitations and Future Research
+therefore propose that shared team experiences                   This study is exploratory. As such, the
+and their effect on performance should be the focus      results should be further validated in other
+of future studies on referees' DM in dynamic team        basketball settings such as in highly professional
+sports such as basketball.                               contests (e.g., the NBA and EuroLeague). In order
+
+
+
+Journal of Human Kinetics, volume 89/2023                                                   http://www.johk.pl
+by Eran Sabag et al.                                                                                           323
+
+to strengthen the use of the present methodology              Practical Implications for Preparation/Training
+in studies on basketball officiating, additional              Programs for Referees in Basketball
+variables should be addressed, such as the referees'
+                                                                       A number of practical implications can be
+gaze behaviour (e.g., Brams et al., 2019). Measuring
+                                                              derived from our findings. First, teams of
+gaze behaviour in sport settings could increase our
+                                                              basketball referees may benefit from the
+understanding of how performers relate to
+                                                              composition of referees from both the national and
+relevant environmental cues. In a recent review on
+                                                              the international level, as the latter could upgrade
+gaze behaviour in sports' referees, data were
+                                                              DM of the former. Moreover, preparation/training
+discussed from soccer, softball, ice hockey, rugby,
+                                                              programs for referees in basketball should place an
+and team handball, yet not basketball (Ziv et al.,
+                                                              emphasis on improving the internal hierarchy and
+2022). Therefore, basketball laboratory-simulated
+                                                              team coordination among the three referees in line
+conditions should be developed in order to enable
+                                                              with the structure of the 3PO principle. A focus
+the researcher not only to collect gaze data, but also
+                                                              should be put on preventing an overlap between
+to analyse verbal reports provided by the referees.
+                                                              the three referees, as well as on enabling each
+Such collected reports could lead to better
+                                                              referee to make decisions within his responsibility
+understanding of why referees make calls in game
+                                                              area. Therefore, referees should be aware of their
+situations without precisely following the 3PO
+                                                              making calls from (in)correct positions while
+Principle.
+                                                              adopting the 3PO principle, which should of
+                                                              course improve their DM accuracy. Referees
+                                                              should be encouraged not to respond when they
+                                                              are outside their responsibility area, thereby
+                                                              adopting a more cautious approach which allows
+                                                              their colleague/s to make the call when needed.
+
+
+
+
+Author Contributions: Conceptualization: E.S., R.L. and M.B.-E.; methodology: E.S., R.L. and M.B.-E.;
+software: E.S. and M.A.; validation: M.A. and E.M.; formal analysis: M.A. and E.M.; investigation: E.S.;
+resources: R.L. and E.S.; data curation: M.A. and E.M.; writing—original draft preparation: E.S. and E.M.;
+writing—review & editing: R.L. and E.M.; visualization: M.A. and E.M.; supervision: M.B.-E.; project
+administration: R.L.; funding acquisition: N/A. All authors have read and agreed to the published version of
+the manuscript.
+Funding Information: This research received no external funding.
+Institutional Review Board Statement: This study was conducted following the principles of the Declaration
+of Helsinki, and approved by the Committee for Ethical Considerations in Human Experimentation of the
+Faculty of Education, the University of Haifa, Israel (approval date: 3 October, 2018).
+Informed Consent: Informed consent was obtained from all participants included in the study.
+Conflicts of Interest: The authors declare no conflict of interest.
+Acknowledgements: We would like to thank the Israeli Basketball Association, and the Israeli Basketball
+Referees' Association, for their help in carrying out the research.
+
+
+Received: 18 March 2023
+Accepted: 05 June 2023
+Published: 27 October 2023
+
+
+
+
+Articles published in the Journal of Human Kinetics are licensed under an open access Creative Commons CC BY 4.0
+license.
+324                                                                       Decision-making and teamwork in referees
+
+
+References
+Anshel, M. H., Sutarso, T., Ekmekci, R., & Saraswati, I. W. (2014). A model linking sources of stress to approach
+         and avoidance coping styles of Turkish basketball referees. Journal of Sports Sciences, 32(2), 116–128.
+         https://doi.org/10.1080/02640414.2013.816762
+Avugos, S., MacMahon, C., Bar-Eli, M., & Raab, M. (2021). Inter-individual differences in sport refereeing: A
+         review of theory and practice. Psychology of Sport and Exercise, 55, 101926.
+         https://doi.org/10.1016/j.psychsport.2021.101926
+Bar-Eli, M., Plessner, H., & Raab, M. (2011). Judgment, decision making and success in sport. Wiley-Blackwell.
+Blickensderfer, E. L., Reynolds, R., Salas, E., & Cannon-Bowers, J. A. (2010). Shared expectations and implicit
+         coordination in tennis doubles teams. Journal of Applied Sport Psychology, 22(4), 486–499.
+         https://doi.org/10.1080/10413200.2010.507497
+Brams, S., Ziv, G., Levin, O., Spitz, J., Wagemans, J., Williams, A. M., & Helsen, W. F. (2019). The relationship
+         between gaze behavior, expertise, and performance: A systematic review. Psychological Bulletin, 145,
+         980–1027. https://doi.org/10.1037/bul0000207
+Brand, R., Schmidt, G., & Schneeloch, Y. (2006). Sequential effects in elite basketball referees’ foul decisions:
+         An experimental study on the concept of game management. Journal of Sport & Exercise Psychology,
+         28(1), 93–99. https://doi.org/10.1123/jsep.28.1.93
+Castillo, D., Weston, M., McLaren, S. J., Cámara, j., & Yanci, J. (2017). Relationships between internal and
+         external match-load indicators in soccer match officials. International Journal of Sports Physiology and
+         Performance, 12(7), 922–927. https://doi.org/10.1123/ijspp.2016-0392
+Cannon-Bowers, J. A., & Salas, E. (2001). Reflections on shared cognition. Journal of Organizational Behavior,
+         22(2), 195–202. https://doi.org/10.1002/job.82
+Chassy, P., & Gobet, F. (2010). Speed of expertise acquisition depends upon inherited factors. Talent
+         Development and Excellence, 2(1), 17–27.
+Cobanoglu, G., Suner-Keklik, S., Gokdogan, C., Kafa, N., Savas, S., & Guzel, N.A. (2021). Static balance and
+         proprioception evaluation in deaf national basketball players. Balt J Health Phys Activ, 13, 9-15.
+         https://doi.org/10.29359/BJHPA.13.1.02
+De Oliveira, M. C., Orbetelli, R., & Neto, T. L. D. B. (2011). Call accuracy and distance from the play: A study
+         with Brazilian soccer referees. International Journal of Exercise Science, 4(1), 30–38.
+Dohmen, T., & Sauermann, J. (2016). Referees bias. Journal of Economic Surveys, 30(4), 679–695.
+         https://doi.org/10.1111/joes.12106
+Dosseville, F., Laborde, S., & Garncarzyk, C. (2013). Current research in sports officiating and decision-making.
+         In C. Mohiyeddini (Ed.). Contemporary topics and trends in the psychology of sports. New York, NY: Nova.
+         (pp. 13–38).
+Ericsson, K. A., Hoffman, R. R., Kozbelt, A., & Williams, A. M. (Eds). (2018). The Cambridge handbook of expertise
+         and expert performance. Cambridge University Press.
+Ericsson, K. A., & Pool, R. (2016). Peak: Secrets from the new science of expertise. Houghton Mifflin Harcourt.
+García-Santos, D., Gómez-Ruano, M. A., Vaquera, A., & Ibáñez, S. J. (2020). Systematic review of basketball
+         referees’ performances. International Journal of Performance Analysis in Sport, 20, 495–533.
+         https://doi.org/10.1080/24748668.2020.1758437
+Ghasemi, A., Momeni, M., Rezaee, M., & Gholami, A. (2009). The difference in visual skills between expert
+         versus novice soccer referees. Journal of Human Kinetics, 22, 15–20. https://doi.org/10.2478/v10078-009-
+         0018-1
+Gilis, B., Helsen, W., Catteeuw, P., & Wagemans, J. (2008). Offside decisions by expert assistant referees in
+         association football: Perception and recall of spatial positions in complex dynamic events. Journal of
+         Experimental Psychology: Applied, 14(1), 21–35. https://doi.org/10.1037/1076-898X.14.1.21
+Hack, J., Rupp, A., & Memmert, D. (2009). Attentional mechanisms in sports via brain-electrical event-related
+         potentials.     Research    Quarterly      for    Exercise    and     Sport,      80(4), 727–738.    DOI:
+         10.1080/02701367.2009.10599614
+Hancock, D. J., Bennett, S., Roaten, H., Chapman, K., & Stanley, C. (2021). An analysis of literature on sport
+         officiating    research.    Research     Quarterly    for    Exercise     and     Sport, 92(4),   607–617.
+         https://doi.org/10.1080/02701367.2020.1756198
+
+Journal of Human Kinetics, volume 89/2023                                                       http://www.johk.pl
+by Eran Sabag et al.                                                                                             325
+
+Hancock, D. J., & Ste-Marie, D. M. (2013). Gaze behaviors and decision making accuracy of higher-and lower-
+         level      ice    hockey       referees.    Psychology    of    Sport    and     Exercise,   14(1),    66–71.
+         https://doi.org/10.1016/j.psychsport.2012.08.002
+Helsen, W., & Bultynck, J. B. (2004). Physical and perceptual-cognitive demands of top-class refereeing in
+         association          football.        Journal      of      Sports       Sciences,       22(2),       179–189.
+         https://doi.org/10.1080/02640410310001641502
+Hossner, E. J., Schnyder, U., Schmid, J., & Kredel, R. (2019). The role of viewing distance and viewing angle
+         on referees' decision-making performance during the FIFA World Cup 2014. Journal of Sports Sciences,
+         37(13), 1481–1489. https://doi.org/10.1080/02640414.2019.1570898
+Hrusa, P., & Hrusova, D. (2021). Dependence of objectivity in basketball game officiating on the number of
+         referees. Journal of Human Sport and Exercise, 16, 601–609. DOI:10.14198/jhse.2021.16.Proc2.45
+Kittel, A., Larkin, P., Elsworthy, N., & Spittle, M. (2019). Video-based testing in sporting officials: A systematic
+         review. Psychology of Sport & Exercise, 43, 261–270.
+Larkin, P., Berry, J., Dawson, B., & Lay, B. (2011). Perceptual and decision-making skills of Australian football
+         umpires. International Journal of Performance Analysis in Sport, 11(3), 427–437.
+         https://doi.org/10.1080/24748668.2011.11868562
+Leicht, A. S. (2008). Physiological demands of basketball refereeing during international competition. Journal
+         of Science and Medicine in Sport, 11(3), 357–360. https://doi.org/10.1016/j.jsams.2007.05.006
+MacMahon, C., Helsen, W. F., Starkes, J. L., & Weston, M. (2007). Decision-making skills and deliberate practice
+         in     elite    association      football   referees.   Journal    of   Sport     Sciences,   25(1),   65–78.
+         https://doi.org/10.1080/02640410600718640
+MacMahon, C., Mascarenhas, D., Plessner, H., Pizzera, A., Oudejans, R., & Raab, M. (2015). Sports officials and
+         officiating: Science and practice. Routledge.
+Mallo, J., Frutos, P. G., Juárez, D., & Navarro, E. (2012). Effect of positioning on the accuracy of decision making
+         of association football top-class referees and assistant referees during competitive matches. Journal of
+         Sports Sciences, 30(13), 1437–1445. https://doi.org/10.1080/02640414.2012.711485
+Mascarenhas, D. R., Collins, D., & Mortimer, P. (2002). The art of reason versus the exactness of science in elite
+         refereeing: Comments on Plessner and Betsch (2001). Journal of Sport and Exercise Psychology, 24(3), 328–
+         333.
+Morgulev, E., Azar, O. H., Lidor, R., Sabag, E., & Bar-Eli, M. (2014). Deception and decision making in
+         professional basketball: Is it beneficial to flop? Journal of Economic Behavior & Organization, 102, 108–
+         118. https://doi.org/10.1016/j.jebo.2014.03.022
+Morgulev, E., Azar, O. H., Lidor, R., Sabag, E., & Bar-Eli, M. (2018). Searching for judgment biases among elite
+         basketball referees. Frontiers in Psychology, 9, 2637. https://doi.org/10.3389/fpsyg.2018.02637
+Morris, G., & O’Connor, D. (2017). Key attributes of expert NRL referees. Journal of Sports Sciences, 35(9), 852–
+         857. https://doi.org/10.1080/02640414.2016.1194524
+Nabli, M. A., Ben Abdelkrim, N., Fessi, M. S., DeLang, M. D., Moalla, W., & Chamari, K. (2019). Sport science
+         applied to basketball refereeing: A narrative review. The Physician and Sportsmedicine, 47, 365–374.
+         https://doi.org/10.1080/00913847.2019.1599588
+Nevill, A. M., Balmer, N. J., & Williams, A. M. (2002). The influence of crowd noise and experience upon
+         refereeing decisions in football. Psychology of Sport and Exercise, 3(4), 261–272.
+         https://doi.org/10.1016/S1469-0292(01)00033-4
+Page, K., & Page, L. (2010). Alone against the crowd: Individual differences in referees’ ability to cope under
+         pressure. Journal of Economic Psychology, 31(2), 192–199. https://doi.org/10.1016/j.joep.2009.08.007
+Pecev, P., Racković, M., & Ivković, M. (2016). A system for deductive prediction and analysis of movement of
+         basketball referees. Multimedia Tools and Applications, 75, 16389–16416. https://doi.org/10.1007/s11042-
+         015-2938-1
+Pietraszewski, P., Roczniok, R., Maszczyk, A., Grycmann, P., Roleder, T., Stanula, A., Fidos-Czuba, O. &
+         Ponczek, M. (2014). The elements of executive attention in top soccer referees and assistant referees.
+         Journal of Human Kinetics, 40, 235–243. https://doi.org/10.2478/hukin-2014-0025
+
+
+
+
+Articles published in the Journal of Human Kinetics are licensed under an open access Creative Commons CC BY 4.0
+license.
+326                                                                         Decision-making and teamwork in referees
+
+
+Pina, J. A., Passos, A. M., Maynard, M. T., & Sinval, J. (2021). Self-efficacy, mental models and team adaptation:
+          A first approach on football and futsal refereeing. Psychology of Sport and Exercise, 52, 101787.
+          https://doi.org/10.1016/j.psychsport.2020.101787
+Pizzera, A., Möller, C., & Plessner, H. (2018). Gaze behavior of gymnastics judges: Where do experienced
+          judges and gymnasts look while judging? Research Quarterly for Exercise and Sport, 89(1), 112–119.
+          https://doi.org/10.1080/02701367.2017.1412392
+Pizzera, A., & Raab, M. (2012). Perceptual judgments of sports officials are influenced by their motor and visual
+          experience.         Journal       of        Applied       Sport       Psychology,       24(1),       59–72.
+          https://doi.org/10.1080/10413200.2011.608412
+Plessner, H., & Betsch, T. (2001). Sequential effects in important referee decisions: The case of penalties in
+          soccer. Journal of Sport & Exercise Psychology, 23(3), 254–259. https://doi.org/10.1123/jsep.23.3.254
+Put, K., Baldo, M. V., Cravo, A. M., Wagemans, J., & Helsen, W. F. (2013). Experts in offside decision making
+          learn to compensate for their illusory perceptions. Journal of Sport and Exercise Psychology, 35(6), 576–
+          584. https://doi.org/10.1123/jsep.35.6.576
+Raab, M., Bar-Eli, M., Plessner, H., & Araújo, D. (2019). The past, present and future of research on judgment
+          and decision making in sports. Psychology of Sport and Exercise, 42, 25–32.
+          https://doi.org/10.1016/j.psychsport.2018.10.004
+Raue, C., Dreiskämper, D., Pauly, H., & Strauss, B. (2021). Team Trust in Sport Teams: Methodological
+          Implications to Advance this Field. In Trust and Communication (pp. 241–252). Springer, Cham.
+Rico, R., Sánchez-Manzanares, M., Gil, F., & Gibson, C. (2008). Team implicit coordination processes: A team
+          knowledge–based          approach.      Academy       of    Management       Review,    33(1),     163–184.
+          https://doi.org/10.5465/amr.2008.27751276
+Sabag, E., Lidor, R., Morgulev, E., Arnon, M., Azar, O. H., & Bar-Eli, M. (2018). To dive or not to dive in the
+          penalty area, the questionable art of deception in soccer. International Journal of Sport and Exercise
+          Psychology, 18(3), 296–307. https://doi.org/10.1080/1612197X.2018.1462100
+Samuel, R. D., Galily, Y., Filho, E., & Tenenbaum, G. (2020). Implementation of the video assistant referee
+          (VAR) as a career change-event: The Israeli premier league case study. Frontiers in Psychology, 11, 1–
+          16. https://doi.org/10.3389/fpsyg.2020.564855
+Schweizer, G., Plessner, H., & Brand, R. (2013). Establishing standards for basketball elite referees' decisions.
+          Journal of Applied Sport Psychology, 25(3), 370–375. https://doi.org/10.1080/10413200.2012.741090
+Smid, P. (2015). Analysis of teamwork in officiating in basketball. Journal of Human Sport and Exercise, 10(1),
+          330–339. https://doi.org/10.14198/jhse.2015.10.Proc1.22
+Souchon, N., Livingstone, A. G., & Maio, G. R. (2013). The influence of referees’ expertise, gender, motivation,
+          and time constraints on decisional bias against women. Journal of Sport and Exercise Psychology, 35(6),
+          585–599. https://doi.org/10.1123/jsep.35.6.585
+Spencer, C., McErlain-Naylor, S. A., Paget, N., & Kilding, A. (2020). Activity profiles of elite netball umpires:
+          A review. Journal of Human Sport and Exercise, 15(4), 816–825. https://doi.org/10.14198/jhse.2020.154.09
+Spitz J., Put, K., Wagemans, J., Williams, A. M., & Helsen, W. F. (2018). The role of domain-generic and domain-
+          specific perceptual-cognitive skills in association football referees. Psychology of Sport and Exercise, 34,
+          47–56. https://doi.org/10.1016/j.psychsport.2017.09.010
+Spitz, J., Wagemans, j., Memmert, D., Williams, A. M., & Helsen, W. F. (2021). Video assistant referees (VAR):
+          The impact of technology on decision making in association football referees. Journal of Sports Sciences,
+          39(2), 147–153. https://doi.org/10.1080/02640414.2020.1809163
+Wang, S. W., & Hsieh, W. W. (2016). Performance analysis of basketball referees by machine learning
+          techniques. Proceedings of the 4th International Congress of Sport Science Research and Technology Support
+          (pp. 165–170). doi: 10.5220/0006031501650170
+Ziv, G., Lidor, R., Zach, S., Brams, S., & Helsen, W. F. (2020). Gaze behavior of referees in sport – A review.
+          Frontiers in Sports and Active Living, 2, 1–13. https://doi.org/10.3389/fspor.2020.572891
+
+
+
+
+Journal of Human Kinetics, volume 89/2023                                                          http://www.johk.pl
+

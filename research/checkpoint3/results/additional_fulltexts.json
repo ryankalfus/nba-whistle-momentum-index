@@ -1,0 +1,171 @@
+{
+  "sources": [
+    {
+      "id": "sabag2023",
+      "apa_citation": "Sabag, E., Lidor, R., Arnon, M., Morgulev, E., & Bar-Eli, M. (2023). Teamwork and decision making among basketball referees: The 3PO principle, refereeing level, and experience. Journal of Human Kinetics, 89, 313–326. https://doi.org/10.5114/jhk/169439",
+      "doi_or_stable_primary_url": "https://doi.org/10.5114/jhk/169439",
+      "full_text_access": "Full publisher PDF downloaded; methods, results, discussion, and limitations examined.",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Sabag2023.pdf",
+      "extraction_text_path": "/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project/research/checkpoint3/fulltext/Sabag2023.txt",
+      "evidence_locations": [
+        "PDF pp. 3–4 (printed 315–316): Methods, Database, Procedures, Statistical Analyses",
+        "PDF pp. 5–8 (printed 317–320): Results and Tables 4, 6, 7",
+        "PDF pp. 10–11 (printed 322–323): Discussion; Limitations and Future Research"
+      ],
+      "method_and_sample": "Observational coding of 321 deliberately ambiguous events from 100 Israeli Super League games in 2016–17. Nine elite international referee observers assessed edited clips; two independently assessed each event with a third for disagreement. Excluding 38 cases without consensus left 283 events involving 25 on-court referees (18 national, 7 international). Chi-square, ANOVA and binomial logistic regression related accuracy to primary coverage responsibility, rank, experience and distance.",
+      "actual_findings": [
+        "Only 109/283 decisions (38.5%) matched expert assessments, reflecting selection of difficult cases, not a representative league accuracy rate.",
+        "Errors occurred in 49/60 events (81.7%) with incorrect teamwork/coverage responsibility versus 125/223 (56.1%) with correct responsibility (Table4).",
+        "Table6 reports teamwork as the only statistically significant predictor among teamwork, rank, experience and distance; rank and experience were not significantly associated with accuracy."
+      ],
+      "limitations": [
+        "Purposive selection of contentious plays inflates errors relative to ordinary play; exclusion of unresolved expert disagreement may further affect the sample.",
+        "Exploratory single-league observational data cannot establish that position causes accuracy; no referee gaze measures were available.",
+        "Authors explicitly call for validation in NBA and EuroLeague."
+      ],
+      "relevance_to_WMI": "Provides an alternative mechanism for observed foul patterns: positioning and crew coordination can affect detection. WMI play-by-play lacks these variables and cannot infer correctness from call counts. Cite in limitations and motivate optional video validation, not as evidence of sequential make-up calls.",
+      "indigo_annotation": "This study compared expert judgments with 283 deliberately difficult basketball officiating events and found that calls outside the responsible referee’s coverage area were associated with more errors. Referee rank and years of experience did not independently explain accuracy, while the selected ambiguous sample prevents treating its error rate as a league-wide estimate. It will support the paper’s discussion of unobserved positioning and crew coordination and the need to distinguish foul frequency from decision correctness.",
+      "keywords": [
+        "three-person officiating",
+        "primary coverage",
+        "decision accuracy",
+        "observational video"
+      ]
+    },
+    {
+      "id": "gomez2020",
+      "apa_citation": "Gomez-Gonzalez, C., Dietl, H., & Nesseler, C. (2020). Unbiased decisions among women’s basketball referees. Frontiers in Psychology, 11, Article 566684. https://doi.org/10.3389/fpsyg.2020.566684",
+      "doi_or_stable_primary_url": "https://doi.org/10.3389/fpsyg.2020.566684",
+      "full_text_access": "Full publisher PDF downloaded; methods, results, discussion, and limitations examined.",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Women2020.pdf",
+      "extraction_text_path": "/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project/research/checkpoint3/fulltext/Women2020.txt",
+      "evidence_locations": [
+        "PDF pp. 3–5: Data and Methods; Empirical Strategy",
+        "PDF pp. 5–7: Tables 2–4 and Results",
+        "PDF pp. 8–9: Discussion and limitations"
+      ],
+      "method_and_sample": "Official statistics for Spanish women’s first and second divisions, 2014–15 to 2018–19: 2,555 matches, 58 teams, 53,398 player-match records. Main homogeneous two-referee analysis drops first-division 2018–19, with full controlled models using 47,258 observations. Linear regressions use fouls per 40 minutes and a fifth-foul indicator, sequential player and match controls and team, season and referee fixed effects; standard errors cluster at player level. Close-game subsample is defined by final margin ≤3 points.",
+      "actual_findings": [
+        "No significant adverse association with Black identity or foreign nationality in full controlled sample; mixed versus all-male referee composition also lacked significant effects.",
+        "In close games, foreign players had fewer fouls per 40 minutes (fully controlled coefficient −0.789, SE0.392, p<.05; Table3); this is an observational association.",
+        "No significant nationality or race effect on fifth fouls among players finishing with four or five; player position and performance controls matter for foul rates."
+      ],
+      "limitations": [
+        "Final margin is an imperfect stress proxy and is future information relative to an in-game prediction; attendance data were unavailable.",
+        "Race was inferred from photos; all-female referee teams were too rare for strong subgroup conclusions.",
+        "Calls do not reveal whether contact warranted a foul, and observational null results are not proof that all bias is absent."
+      ],
+      "relevance_to_WMI": "Supports covariate adjustment, exposure normalization and honest treatment of null results. WMI should use only pre-possession information rather than copying final-score or full-game performance controls into prediction.",
+      "indigo_annotation": "Using Spanish women’s basketball records, the authors found no consistent evidence that Black or foreign players received more fouls after adjustment or that all-male crews differed from mixed crews. Foreign players received fewer fouls in games ending within three points, although the study could not directly measure stress or foul correctness. This source will help justify contextual controls and careful interpretation of null findings while highlighting why final-game information must be excluded from a live prediction model.",
+      "keywords": [
+        "foul rate",
+        "fixed effects",
+        "nationality",
+        "gender composition",
+        "context"
+      ]
+    },
+    {
+      "id": "wang2025",
+      "apa_citation": "Wang, R., Chen, L., Wu, Y., & Zhang, Q. (2025). Research on the visual search behavior and decision-making ability of basketball referees. Frontiers in Psychology, 16, Article 1682389. https://doi.org/10.3389/fpsyg.2025.1682389",
+      "doi_or_stable_primary_url": "https://doi.org/10.3389/fpsyg.2025.1682389",
+      "full_text_access": "Full publisher PDF downloaded; methods, results, discussion, and limitations examined.",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Wang2025.pdf",
+      "extraction_text_path": "/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project/research/checkpoint3/fulltext/Wang2025.txt",
+      "evidence_locations": [
+        "PDF p.1: publication date 13 October 2025",
+        "PDF pp. 2–5: Methods; Participants; Video clips; Procedure",
+        "PDF pp. 6–7: Tables1–2 and Results3.6",
+        "PDF pp. 10–11: Discussion; Limitations and outlook"
+      ],
+      "method_and_sample": "Laboratory eye tracking of 20 basketball referees, 10 expert and 10 non-expert. Experts averaged 36.9 years old/15.1 years officiating, non-experts22.3/5.3. Detailed methods describe 10 silent 10–30s clips from the lead-referee perspective, screened for one ambiguous foul or violation and rated by supervisors; participants selected a call after each clip. ANOVAs compared gaze measures and accuracy.",
+      "actual_findings": [
+        "Table1 reports decision accuracy78% (SD7.89) for experts and46% (SD8.43) for non-experts.",
+        "Central-area fixation time was80.38% versus53.01%; outer-area fixation time12.90% versus34.49%; number of fixations, duration and entropy did not significantly differ.",
+        "[uncertain] Exact inferential statistics are internally inconsistent: abstract says20 clips while methods/procedure say10; Table2 accuracy F=.768 conflicts with Results3.6 F=76.800; invalid-area significance is described inconsistently. The group means are recorded as reported rather than used to resolve those discrepancies."
+      ],
+      "limitations": [
+        "Small nonrandom groups differ in age and experience simultaneously; laboratory silent clips omit crowd pressure, game score, movement and remaining time.",
+        "Lead-referee perspective and small trial count limit transfer to real NBA officiating.",
+        "Internal numerical/text inconsistencies mean exact inferential statistics should not be relied on without author clarification."
+      ],
+      "relevance_to_WMI": "Background on visual detection as an unmeasured explanation, useful for literature limitations. Do not infer sequential bias from this small gaze experiment, and do not treat its laboratory accuracy as an NBA baseline.",
+      "indigo_annotation": "The authors used laboratory eye tracking to compare expert and less experienced basketball referees and reported greater accuracy and more attention to central contact areas among experts. The small groups, simplified video task, and inconsistencies between the abstract, tables, and results limit confidence in precise statistical claims. This source will provide cautious background on perceptual mechanisms that possession data cannot observe, rather than evidence that one foul causes another.",
+      "keywords": [
+        "eye tracking",
+        "expertise",
+        "decision accuracy",
+        "visual search"
+      ]
+    },
+    {
+      "id": "shu2026",
+      "apa_citation": "Shu, F., Zhang, L., Xu, X., & Xu, R. (2026). Situational influences on officiating performance: An analysis of foul calls in the Chinese basketball association league (CBA). PLOS One, 21(2), Article e0342151. https://doi.org/10.1371/journal.pone.0342151",
+      "doi_or_stable_primary_url": "https://doi.org/10.1371/journal.pone.0342151",
+      "full_text_access": "Full publisher PDF downloaded; methods, results, discussion, and limitations examined.",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/CBA2026.pdf",
+      "extraction_text_path": "/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project/research/checkpoint3/fulltext/CBA2026.txt",
+      "evidence_locations": [
+        "PDF p.1: authors, metadata, published19February2026",
+        "PDF pp.3–5: Methods, exclusions, variables, analysis",
+        "PDF pp.6–15: Results; especially pp.12,15 regression results",
+        "PDF pp.16–17: Limitations and conclusions"
+      ],
+      "method_and_sample": "Event study of 2022–23 CBA official records:18,519 foul events in441games, final18,182calls in439games. Technical/disqualifying fouls, overtime and specified outliers excluded. Independent t tests and binary logistic regressions study which team received a recorded foul (home/away, leading/trailing, higher/lower foul counts), with score differential, foul differentials, quarter, team-strength categories, format and game type. Models are explicitly explanatory, not predictive.",
+      "actual_findings": [
+        "Higher existing foul counts were associated with relatively fewer additional calls, consistent with balancing at the recorded-call level. Quarter-level more-versus-fewer model reports quarter foul differential OR0.893 and score differential OR1.017 (p<.05).",
+        "Home-versus-away model has format OR0.913, score differential OR1.019, and quarter foul differential OR0.913 (p<.05); aggregate format comparisons were not significant.",
+        "Game-level more-versus-fewer model had poor Hosmer–Lemeshow fit; quarter-level model fit was acceptable."
+      ],
+      "limitations": [
+        "Called events alone omit non-call possessions and actual opportunities; cannot identify probability of any foul next possession or call correctness.",
+        "Single season and coexistence of COVID venue formats limit generalization; strategic behavior, player/bench interactions and psychological factors are unobserved.",
+        "Whole-season win percentage used for strength would leak future information in prospective WMI prediction. Repeated-event dependence and the exact pre/post-call timing of foul differential need care before adapting the model."
+      ],
+      "relevance_to_WMI": "Direct rationale for comparing sequence history against a context-only baseline and for pre-possession score/foul-state controls. Crucial distinction: this conditions on a call and asks which team, while WMI next-possession incidence includes no-foul possessions; keep estimands separate and do not label associations causal bias.",
+      "indigo_annotation": "Using 18,182 CBA foul records, this study found that call allocation varied with score and accumulated foul differentials, including fewer subsequent calls on teams already carrying more fouls. Its observational, call-only sample cannot separate tactical contact from referee decisions or estimate the chance of a foul on an arbitrary possession. It will motivate contextual controls and a clear distinction between predicting whether a foul occurs and studying which team receives a recorded call.",
+      "keywords": [
+        "foul differential",
+        "score differential",
+        "CBA",
+        "logistic regression",
+        "balancing"
+      ]
+    },
+    {
+      "id": "ziv2020",
+      "apa_citation": "Ziv, G., Lidor, R., Zach, S., Brams, S., & Helsen, W. F. (2020). Gaze behavior of referees in sport—A review. Frontiers in Sports and Active Living, 2, Article 572891. https://doi.org/10.3389/fspor.2020.572891",
+      "doi_or_stable_primary_url": "https://doi.org/10.3389/fspor.2020.572891",
+      "full_text_access": "Full publisher PDF downloaded; methods, results, discussion, and limitations examined.",
+      "local_pdf_path": "/Users/ryankalfus/Downloads/WMI-next-meeting/articles/Gaze2020.pdf",
+      "extraction_text_path": "/Users/ryankalfus/Downloads/codex-projects/nba-whistle-project/research/checkpoint3/fulltext/Gaze2020.txt",
+      "evidence_locations": [
+        "PDF pp.1–2: metadata, Literature Search and inclusion criteria",
+        "PDF pp.3–9: sport-specific synthesis and Tables2–3",
+        "PDF pp.10–12: methodological concerns, ecological validity, practical implications"
+      ],
+      "method_and_sample": "Review searched EBSCO Discovery Service and Google Scholar in March2020, English peer-reviewed studies measuring actual gaze variables plus reference scanning. Twelve studies: five association football, three gymnastics, one each softball, handball, rugby and ice hockey; none basketball. Narrative comparison rather than pooled meta-analysis.",
+      "actual_findings": [
+        "Seven studies reported expertise-related gaze differences while four did not; five reported both gaze and performance differences, and four performance differences without gaze differences.",
+        "Only three studies measured gaze in real play, and only one examined a referee team; evidence on peripheral vision and shared gaze was scarce.",
+        "Authors conclude evidence is too limited and contradictory for confident gaze-training recommendations."
+      ],
+      "limitations": [
+        "Small, heterogeneous evidence base with varying expertise definitions, tasks, eye trackers and sample sizes; many studies lack power or multiple-comparison discussion.",
+        "No included basketball study, so application to NBA is indirect and later work must be considered.",
+        "Gaze alone does not capture stress, fatigue, anticipation, interpretation or decision correctness."
+      ],
+      "relevance_to_WMI": "Useful methodological review for explaining why WMI should avoid psychological or accuracy claims from a simple sequence association. Supports external-validation limitations and careful separation of task context from mechanism.",
+      "indigo_annotation": "This review synthesized twelve studies of sports officials and found mixed relationships between expertise, gaze patterns, and performance. Most studies used artificial viewing conditions, none examined basketball, and the authors considered evidence insufficient for firm training recommendations. It will support the paper’s methodological caution that possession-level patterns cannot by themselves identify referee perception, psychological momentum, or incorrect calls.",
+      "keywords": [
+        "literature review",
+        "gaze",
+        "ecological validity",
+        "referee mechanisms"
+      ]
+    }
+  ],
+  "uncertain": [
+    "sources[2].actual_findings[2]"
+  ]
+}

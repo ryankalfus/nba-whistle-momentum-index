@@ -1,0 +1,1640 @@
+                                                 A Multiresolution Stochastic Process Model for
+                                                  Predicting Basketball Possession Outcomes
+
+                                             Daniel Cervone1 , Alex D’Amour2 , Luke Bornn3 , and Kirk Goldsberry4
+                                                       1 Center for Data Science, New York University, New York, NY 10003
+
+
+
+
+arXiv:1408.0777v3 [stat.AP] 25 Feb 2016
+                                                       2 Department of Statistics, Harvard University, Cambridge, MA 02138
+                                          3 Department of Statistics and Actuarial Science, Simon Fraser University, Burnaby, BC, Canada
+                                               4 Institute for Quantitative Social Science, Harvard University, Cambridge, MA 02138
+
+
+
+
+                                                                             Author’s Footnote:
+
+                                          Daniel Cervone (email: dcervone@nyu.edu) is Moore-Sloan Data Science Fellow at New
+                                          York University. Alex D’Amour (damour@fas.harvard.edu) is PhD candidate, Statistics
+                                          Department, Harvard University. Luke Bornn (lbornn@sfu.ca) is Assistant Professor, De-
+                                          partment of Statistics and Actuarial Science, Simon Fraser University. Kirk Goldsberry
+                                          (kgoldsberry@fas.harvard.edu) is Visiting Scholar, Center for Geographic Analysis, Har-
+                                          vard University. Daniel Cervone is funded by a fellowship from the Alfred P. Sloan and
+                                          Betty Moore foundations. Luke Bornn is funded by DARPA Award FA8750-14-2-0117, ARO
+                                          Award W911NF-15-1-0172, an Amazon AWS Research Grant, and the Natural Sciences and
+                                          Engineering Research Council of Canada.
+                                             The authors would like to thank Alex Franks, Andrew Miller, Carl Morris, Natesh Pillai,
+                                          and Edoardo Airoldi for helpful comments, as well as STATS LLC in partnership with the
+                                          NBA for providing the optical tracking data. The computations in this paper were run on
+                                          the Odyssey cluster supported by the FAS Division of Science, Research Computing Group
+                                          at Harvard University.
+                                          Abstract
+
+Basketball games evolve continuously in space and time as players constantly interact with
+their teammates, the opposing team, and the ball. However, current analyses of basketball
+outcomes rely on discretized summaries of the game that reduce such interactions to tallies
+of points, assists, and similar events. In this paper, we propose a framework for using optical
+player tracking data to estimate, in real time, the expected number of points obtained by
+the end of a possession. This quantity, called expected possession value (EPV), derives
+from a stochastic process model for the evolution of a basketball possession. We model
+this process at multiple levels of resolution, differentiating between continuous, infinitesimal
+movements of players, and discrete events such as shot attempts and turnovers. Transition
+kernels are estimated using hierarchical spatiotemporal models that share information across
+players while remaining computationally tractable on very large data sets. In addition to
+estimating EPV, these models reveal novel insights on players’ decision-making tendencies
+as a function of their spatial strategy. A data sample and R code for further exploration of
+our model/results are available in the repository https://github.com/dcervone/EPVDemo.
+
+
+Keywords: Optical tracking data, spatiotemporal model, competing risks, Gaussian pro-
+cess.
+
+                                     1. INTRODUCTION
+Basketball is a fast-paced sport, free-flowing in both space and time, in which players’ actions
+and decisions continuously impact their teams’ prospective game outcomes. Team owners,
+general managers, coaches, and fans all seek to quantify and evaluate players’ contributions to
+their team’s success. However, current statistical models for player evaluation such as “Player
+Efficiency Rating” (Hollinger 2005) and “Adjusted Plus/Minus” (Omidiran 2011) rely on
+highly reductive summary statistics of basketball games such as points scored, rebounds,
+steals, assists—the so-called “box score” summary of the game. Such models reflect the fact
+that up until very recently, data on basketball games were only available in this low level
+of resolution. Thus previous statistical analyses of basketball performance have overlooked
+many of the high-resolution motifs—events not measurable by such aggregate statistics—
+that characterize basketball strategy. For instance, traditional analyses cannot estimate the
+value of a clever move that fools the defender, or the regret of skipping an open shot in favor
+of passing to a heavily defended teammate. The advent of player tracking data in the NBA
+has provided an opportunity to fill this gap.
+
+1.1 Player-Tracking Data
+In 2013 the National Basketball Association (NBA), in partnership with data provider
+STATS LLC, installed optical tracking systems in the arenas of all 30 teams in the league.
+The systems track the exact two-dimensional locations of every player on the court (as well
+as the three-dimensional location of the ball) at a resolution of 25Hz, yielding over 1 billion
+space-time observations over the course of a full season.
+    Consider, for example, the following possession recorded using this player tracking system.
+This is a specific Miami Heat possession against the Brooklyn Nets from the second quarter
+of a game on November 1, 2013, chosen arbitrarily among those during which LeBron James
+(widely considered the best NBA player as of 2014) handles the ball. In this particular
+
+                                               1
+                                                                                               2                                                                                             OFFENSE
+      2                       3
+                                              A   2                        3               B    2
+                                                                                                                         3               C   2
+                                                                                                                                             2           1
+                                                                                                                                                                     3           D
+                                                      2                                                                                                          3                   1   Norris Cole
+              2                               4                                        4                                             4
+                                                                                                             3
+                                                                                                                                                                             4
+                                                                   3                                                                             5 1
+                                                                                   4                 1
+                                                                                                    15                       4                                       4               2   Ray Allen
+                      3                   4
+
+                                                          1                                                                                                                          3   Rashard Lewis
+                      5                                       15
+                                  5
+                                                                                                                                                     5
+                                                                                                                                                                                     4   LeBron James
+                                  1                                                                           5
+                                                                           5
+                                  1
+                                                                                                                                                                                     5   Chris Bosh
+
+
+
+
+  2               1                                                    1                        2                                                                                            DEFENSE
+  2
+                          3                   E       2
+                                                      2
+                                                                               3           F                         1
+                                                                                                                                         G   2                   1
+                                                                                                                                                                                 H
+                      3                                                                         2                                3           2                                       1   Deron Williams
+              1                                                        1 3                                       1                                           1           3
+
+                                                                                                                     3                                                               2   Jason Terry
+                          4           4                                                                      4                                   4
+          5                                                                                                   4                                                  3
+                                                                        4      4                                                                     4
+                                                                                                                                                                                     3   Joe Johnson
+                                                              5                                                                                  5
+                                                                                                         5
+      5                                                                                                                                                                              4   Andray Blatche
+                                                              5                                                                                  5
+                                                                                                         5
+                                                                                                                                                                                     5   Brook Lopez
+
+
+
+
+Figure 1: Miami Heat possession against Brooklyn Nets. Norris Cole wanders into the perimeter
+(A) before driving toward the basket (B). Instead of taking the shot, he runs underneath the basket
+(C) and eventually passes to Rashard Lewis(D), who promptly passes to LeBron James (E). After
+entering the perimeter (F), James slips behind the defense (G) and scores an easy layup (H).
+
+
+possession, diagrammed in Figure 1, point guard Norris Cole begins with possession of the
+ball crossing the halfcourt line (panel A). After waiting for his teammates to arrive in the
+offensive half of the court, Cole wanders gradually into the perimeter (inside the three point
+line), before attacking the basket through the left post. He draws two defenders, and while
+he appears to beat them to the basket (B), instead of attempting a layup he runs underneath
+the basket through to the right post (C). He is still being double teamed and at this point
+passes to Rashard Lewis (D), who is standing in the right wing three position. As defender
+Joe Johnson closes, Lewis passes to LeBron James, who is standing about 6 feet beyond the
+three point line and drawing the attention of Andray Blatche (E). James wanders slowly into
+the perimeter (F), until just behind the free throw line, at which point he breaks towards
+the basket. His rapid acceleration (G) splits the defense and gains him a clear lane to the
+basket. He successfully finishes with a layup (H), providing the Heat two points.
+
+1.2 Expected Possession Value
+Such detailed data hold both limitless analytical potential for basketball spectators and new
+methodological challenges to statisticians. Of the dizzying array of questions that could be
+asked of such data, we choose to focus this paper on one particularly compelling quantity
+of interest, which we call expected possession value (EPV), defined as the expected number
+of points the offense will score on a particular possession conditional on that possession’s
+evolution up to time t.
+    For illustration, we plot the EPV curve corresponding to the example Heat possession in
+Figure 2, with EPV estimated using the methodology in this paper. We see several moments
+when the expected point yield of the possession, given its history, changes dramatically. For
+the first 2 seconds of the possession, EPV remains around 1. When Cole drives toward the
+basket, EPV rises until peaking at around 1.34 when Cole is right in front of the basket.
+As Cole dribbles past the basket (and his defenders continue pursuit), however, EPV falls
+rapidly, bottoming out at 0.77 before “resetting” to 1.00 with the pass to Rashard Lewis.
+
+
+                                                                                                                             2
+The EPV increases slightly to 1.03 when the ball is then passed to James. As EPV is sensitive
+to small changes in players’ exact locations, we see EPV rise slightly as James approaches
+the three point line and then dip slightly as he crosses it. Shortly afterwards, EPV rises
+suddenly as James breaks towards the basket, eluding the defense, and continues rising until
+he is beneath the basket, when an attempted layup boosts the EPV from 1.52 to 1.62.
+
+      1.6                                                              RASHARD                                                   James
+                 NORRIS COLE POSSESSION                                 LEWIS          LEBRON JAMES POSSESSION                   shot
+                                                                        POSS.
+
+      1.4                                                                                            Splits the defense;
+                                                                                                        clear path to
+                                                                                                            basket
+
+                                    Accelerates
+
+      1.2
+EPV
+                                  towards basket
+
+                                                                                                                   Accelerates
+                                                                                                                   into the
+                                                                              Pass                                 paint
+                                                                 Pass
+      1.0
+                                                Runs behind
+
+                Slight dip in EPV after
+                                                 basket and
+                                               defenders close   {            {          Slight dip in EPV after
+                                                                                          crossing 3 point line
+                 crossing 3 point line                            EPV constant while
+                                                                  pass is en route
+      0.8
+
+            0              1.2                     2.4              3.6                4.8                   6.0                  7.2
+                                                                 time (sec)
+
+Figure 2: Estimated EPV over time for the possession shown in Figure 1. Changes in EPV are
+induced by changes in players’ locations and dynamics of motion; macrotransitions such as passes
+and shot attempts produce immediate, sometimes rapid changes in EPV. The black line slightly
+smooths EPV evaluations at each time point (gray dots), which are subject to Monte Carlo error.
+
+    In this way, EPV corresponds naturally to a coach’s or spectator’s sense of how the
+actions that basketball players take in continuous time help or hurt their team’s cause to
+score in the current possession, and quantifies this in units of expected points. EPV acts like
+a stock ticker, providing an instantaneous summary of the possession’s eventual point value
+given all available information, much like a stock price values an asset based on speculation
+of future expectations.
+
+1.3 Related Work and Contributions
+Concepts similar to EPV, where final outcomes are modeled conditional on observed progress,
+have had statistical treatment in other sports, such as in-game win probability in baseball
+(Bukiet, Harold & Palacios 1997; Yang & Swartz 2004) and football (Lock & Nettleton 2014),
+as well as in-possession point totals in football (Burke 2010; Goldner 2012). These previous
+efforts can be categorized into either marginal regression/classification approaches, where
+features of the current game state are mapped directly to expected outcomes, or process-
+based models that use a homogeneous Markov chain representation of the game to derive
+outcome distributions. Neither of these approaches is ideal for application to basketball.
+Marginal regression methodologies ignore the natural martingale structure of EPV, which
+is essential to its “stock ticker” interpretation. On the other hand, while Markov chain
+methodologies do maintain this “stock ticker” structure, applying them to basketball requires
+discretizing the data, introducing an onerous bias-variance-computation tradeoff that is not
+present for sports like baseball that are naturally discrete in time.
+
+
+                                                                   3
+    To estimate EPV effectively, we introduce a novel multiresolution approach in which we
+model basketball possessions at two separate levels of resolution, one fully continuous and
+one highly coarsened. By coherently combining these models we are able to obtain EPV
+estimates that are reliable, sensitive, stochastically consistent, and computationally feasible
+(albeit intensive). While our methodology is motivated by basketball, we believe that this
+research can serve as an informative case study for analysts working in other application areas
+where continuous monitoring data are becoming widespread, including traffic monitoring
+(Ihler, Hutchins & Smyth 2006), surveillance, and digital marketing (Shao & Li 2011), as
+well as other sports such as soccer and hockey (Thomas, Ventura, Jensen & Ma 2013).
+    Section 2 formally defines EPV within the context of a stochastic process for basketball,
+introducing the multiresolution modeling approach that make EPV calculations tractable as
+averages over future paths of a stochastic process. Parameters for these models, which rep-
+resent players’ decision-making tendencies in various spatial and situational circumstances,
+are discussed in Section 3. Section 4 discusses inference for these parameters using hierchical
+models that share information between players and across space. We highlight results from
+actual NBA possessions in Section 5, and show how EPV provides useful new quantifications
+of player ability and skill. Section 6 concludes with directions for further work.
+
+                           2. MULTIRESOLUTION MODELING
+To present our process model for a basketball possession, we require some formalism. Let Ω
+represent the space of all possible basketball possessions in full detail, with ω ∈ Ω describing
+the full path of a particular possession. For simplicity, we restrict our focus to possessions
+that do not include fouls1 , so that each possession we consider results in 0, 2, or 3 points
+scored for the offense, denoted X(ω) ∈ {0, 2, 3}. For any possession path ω, we denote
+by Z(ω) the optical tracking time series generated by this possession so that Zt (ω) ∈ Z,
+t > 0, is a “snapshot” of the tracking data exactly t seconds from the start of the possession
+(t = 0). Z is a high dimensional space that includes (x, y) coordinates for all 10 players on
+the court, (x, y, z) coordinates for the ball, summary information such as which players are
+on the court and what the game situation is (game location, score, time remaining, etc.),
+and event annotations that are observable in real time, such as a turnover occurring, a pass,
+or a shot being attempted and the result of that attempt.
+    Taking the intuitive view of Ω as a sample space of possession paths, we model Z(ω) as a
+stochastic process, and likewise, define Zt (ω) for each t > 0 as a random variable in Z. Z(ω)
+                                  (Z)
+provides the natural filtration Ft = σ({Zs−1 : 0 ≤ s ≤ t}), which represents all information
+available from the optical tracking data for the first t seconds of a possession. EPV is the
+expected value of the number of points scored for the possession (X) given all available data
+                 (Z)
+up to time t (Ft ):
+
+Definition The expected possession value, or EPV, at time t ≥ 0 during a possession is
+          (Z)
+νt = E[X|Ft ].
+   1
+     Our data include foul events, but do not specify the type or circumstances of the foul. There are
+several types of fouls and game situations for which fouls lead to free throws—for instance, shooting fouls,
+technical/flagrant fouls, clear path fouls, and fouls during the fouling team’s “bonus” period; thus, modeling
+fouls presents additional complications relative to the other events we model in our EPV model. While
+drawing fouls can be a valuable and important part of team strategy, we omit modeling such behavior in
+this paper.
+
+
+                                                      4
+                                (Z)
+    The expectation E[X|Ft ] is an integral over the distribution of future paths the current
+possession can take. Letting T (ω) denote the time at which a possession following path ω
+ends2 , the possession’s point total is a deterministic function of the full resolution data at
+this time, X(ω) = h(ZT (ω) (ω)). Thus, evaluating EPV amounts to integrating over the joint
+distribution of (T, ZT ):
+                              Z
+                        (Z)                   (Z)
+           νt = E[X|Ft ] =       X(ω)P(dω|Ft )
+                              ZΩ∞ Z
+                                                             (Z)            (Z)
+                            =         h(z)P(Zs = z|T = s, Ft )P(T = s|Ft )dzds.             (1)
+                                   t    Z
+
+                                                                                                   (Z)
+Note that we use probability notation P(·) somewhat heuristically, as P(T = s|Ft ) is a
+density with respect to Lebesgue measure, while Zs mixes both discrete (annotations) and
+continuous (locations) components. We will also generally omit the dependence on ω when
+writing random variables, e.g., Zt instead of Zt (ω).
+
+2.1 Estimator Criteria
+We have defined EPV in (1) as an unobserved, theoretical quantity; one could thus imagine
+many different EPV estimators based on different models and/or information in the data.
+However, we believe that in order for EPV to achieve its full potential as a basis for high-
+resolution player and strategy evaluation, an EPV estimator should meet several criteria.
+    First, we require that the EPV estimator be stochastically consistent. Recognizing that
+EPV is simply a conditional expectation, it is tempting to estimate EPV using a regression or
+                                                    (Z)
+classification approach that maps features from Ft to an outcome space, [0, 3] or {0, 2, 3}.
+Setting aside the fact that our data associate each possession outcome X with process-valued
+inputs Z, and thus do not conform naturally to input/output structure of such models,
+such an approach cannot guarantee the estimator will have the (Kolmogorov) stochastic
+consistency inherent to theoretical EPV, which is essential to its “stock ticker” interpretation.
+Using a stochastically consistent EPV estimator guarantees that changes in the resulting
+EPV curve derive from players’ on-court actions, rather than artifacts or inefficiencies of
+the data analysis. A stochastic process model for the evolution of a basketball possession
+guarantees such consistency.
+    The second criterion that we require is that the estimator be sensitive to the fine-grained
+details of the data without incurring undue variance or computatonal complexity. Applying
+a Markov chain-based estimation approach would require discretizing the data by mapping
+the observed spatial configuration Zt into a simplified summary Ct , violating this crite-
+rion by trading potentially useful information in the player tracking data for computational
+tractability.
+    To develop methodology that meet both criteria, we note the information-computation
+tradeoff in current process modeling strategies results from choosing a single level of res-
+olution at which to model the possession and compute all expectations. In contrast, our
+method for estimating EPV combines models for the possession at two distinct levels of
+resolution, namely, a fully continuous model of player movement and actions, and a Markov
+chain model for a highly coarsened view of the possession. This multiresolution approach
+   2
+     The time of a possession is bounded, even for pathological examples, by the 12-minute length of a
+quarter; yet we do not leverage this fact and simply assume that possession lenghts are almost surely finite.
+
+
+                                                     5
+leverages the computational simplicity of a discrete Markov chain model while conditioning
+on exact spatial locations and high-resolution data features.
+
+2.2 A Coarsened Process
+The Markov chain portion of our method requires a coarsened view of the data. For all time
+0 < t ≤ T during a possession, let C(·) be a coarsening that maps Z to a finite set C, and
+call Ct = C(Zt ) the “state” of the possession. To make the Markovian assumption plausible,
+we populate the coarsened state space C with summaries of the full resolution data so that
+transitions between these states represent meaningful events in a basketball possession—see
+Figure 3 for an illustration.
+
+
+
+
+            Player 1                    Player 2                Player 3                   Player 4                Player 5
+
+
+                          Pass to P2               Pass to P3                 Pass to P4              Pass to P5
+   Cposs
+
+
+
+
+  Ctrans                                     Turnover               Shot    Rebound
+
+
+    Cend                               Made 2pt     Made 3pt               End of possession
+
+
+
+Figure 3: Schematic of the coarsened possession process C, with states (rectangles) and possible
+state transitions (arrows) shown. The unshaded states in the first row compose Cposs . Here, states
+corresponding to distinct ballhandlers are grouped together (Player 1 through 5), and the discretized
+court in each group represents the player’s coarsened position and defended state. The gray shaded
+rectangles are transition states, Ctrans , while the rectangles in the third row represent the end states,
+Cend . Blue arrows represent possible macrotransition entrances (and red arrows, macrotransition
+exits) when Player 1 has the ball; these terms are introduced in Section 3.
+
+    First, there are 3 “bookkeeping” states, denoted Cend , that categorize the end of the
+possession, so that CT ∈ Cend and for all t < T, Ct 6∈ Cend (shown in the bottom row of
+Figure 3). These are Cend ={made 2 pt, made 3 pt, end of possession}. These three states
+have associated point values of 2, 3, and 0, respectively (the generic possession end state
+can be reached by turnovers and defensive rebounds, which yield no points). This makes the
+possession point value X a function of the final coarsened state CT .
+    Next, whenever a player possesses the ball at time t, we assume Ct = (ballcarrier ID at t)×
+(court region at t) × (defended at t), having defined seven disjoint regions of the court and
+classifying a player as defended at time t by whether there is a defender within 5 feet
+of him. The possible values of Ct , if a player possesses the ball at time t, thus live in
+Cposs = {player ID} × {region ID} × {1[defended]}. These states are represented by the un-
+shaded portion of the top row of Figure 3, where the differently colored regions of the court
+
+                                                                6
+diagrams reveal the court space discretization.
+    Finally, we define a set of states to indicate that an annotated basketball action from
+the full resolution data Z is currently in progress. These “transition” states encapsulate
+constrained motifs in a possession, for example, when the ball is in the air traveling between
+players in a pass attempt. Explicitly, denote Ctrans = {shot attempt from c ∈ Cposs , pass
+to c0 ∈ Cposs from c ∈ Cposs , turnover in progress, rebound in progress} (listed in the gray
+shaded portions of Figure 3). These transition states carry information about the possession
+path, such as the most recent ballcarrier, and the target of the pass, while the ball is in the
+air during shot attempts and passes3 . Note that, by design, a possession must pass through
+a state in Ctrans in order to reach a state in Cend . For simplicity and due to limitations of the
+data, this construction of C = Cposs ∪ Ctrans ∪ Cend excludes several notable basketball events
+(such as fouls, violations, and other stoppages in play) and aggregates others (the data, for
+example, does not discriminate among steals, intercepted passes, or lost balls out of bounds).
+
+2.3 Combining Resolutions
+We make several modeling assumptions about the processes Z and C, which allow them to
+be combined into a coherent EPV estimator.
+
+(A1) C is marginally semi-Markov.
+
+The semi-Markov assumption (A1) guarantees that the embedded sequence of disjoint posses-
+sion states C (0) , C (1) , . . . , C (K) is a Markov chain, which ensures that it is straightforward to
+compute E[X|Ct ] using the associated transition probability matrix (Kemeny & Snell 1976).
+    Next, we specify the relationship between coarsened and full-resolution conditioning.
+This first requires defining two additional time points which mark changes in the future
+evolution of the possession:
+                                      (
+                                        min{s : s > t, Cs ∈ Ctrans } if Ct ∈ Cposs
+                               τt =                                                                  (2)
+                                        t                            if Ct 6∈ Cposs
+                         δt = min{s : s ≥ τt , Cs 6∈ Ctrans }.                                      (3)
+
+Thus, assuming a player possesses the ball at time t, τt is the first time after t he attempts
+a shot/pass or turns the ball over (entering a state in Ctrans ), and δt is the endpoint of
+this shot/pass/turnover (leaving a state in Ctrans ). We assume that passing through these
+transition states, Ctrans , decouples the future of the possession after time δt with its history
+up to time t:
+                                                    (Z)
+(A2) For all s > δt and c ∈ C, P(Cs = c|Cδt , Ft ) = P(Cs = c|Cδt ).
+
+   Intuitively, assumption (A2) states that for predicting coarsened states beyond some
+point in the future δt , all information in the possession history up to time t is summarized
+by the distribution of Cδt . The dynamics of basketball make this assumption reasonable;
+when a player passes the ball or attempts a shot, this represents a structural transition in
+the basketball possession to which all players react. Their actions prior to this transition are
+  3
+    The reason we index transition states by the origin of the pass/shot attempt (and destination of the
+pass) is to preserve this information under a Markov assumption, where generic “pass” or “shot” states
+would inappropriately allow future states to be independent of the players involved in the shot or pass.
+
+
+                                                   7
+not likely to influence their actions after this transition. Given Cδt —which, for a pass at τt
+includes the pass recipient, his court region, and defensive pressure, and for a shot attempt
+at τt includes the shot outcome—data prior to the pass/shot attempt are not informative of
+the possession’s future evolution.
+    Together, these assumptions yield a simplified expression for (1), which combines contri-
+butions from full-resolution and coarsened views of the process.
+
+Theorem 2.1 Under assumptions (A1)–(A2), the full-resolution EPV νt can be rewritten:
+                           X                           (Z)
+                      νt =    E[X|Cδt = c]P(Cδt = c|Ft ).                          (4)
+                                  c∈C
+
+
+Remark Although we have specified this result in terms of the specific coarsening defined
+in Section 2.2, we could substitute any coarsening for which (A1)–(A2) are well-defined and
+reasonably hold. We briefly discuss potential alternative coarsenings in Section 6.
+
+The proof of Theorem 2.1, follows immediately from (A1)–(A2), and is therefore omitted.
+Heuristically, (4) expresses νt as the expectation given by a homogeneous Markov chain
+on C with a random starting point Cδt , where only the starting point depends on the full-
+                           (Z)
+resolution information Ft . This result illustrates the multiresolution conditioning scheme
+that makes our EPV approach computationally feasible: the term E[X|Cδt = c] is easy to
+                                                             (Z)
+calculate using properties of Markov chains, and P(Cδt |Ft ) only requires forecasting the
+full-resolution data for a short period of time relative to (1), as δt ≤ T .
+
+                         3. TRANSITION MODEL SPECIFICATION
+The representation in Theorem (2.1) shows that estimating EPV does not require a full-blown
+model for entire basketball possessions at high resolution. Instead, the priority is to accu-
+rately predict the next major “decoupling” action in the possession, which we have denoted
+Cδt . At this point, Equation (4) switches resolutions: Cδt depends on the full-resolution pos-
+                   (Z)
+session history Ft , after which our EPV estimate only depends on the coarsened state Cδt .
+This section presents models that operate on these two distinct levels of resolution, using
+parameterizations that reflect players’ reactions to the situational, spatiotemporal predica-
+ments they face on the basketball court.
+    First, using the full-resolution data, we need to predict Cδt . We achieve this using three
+models; heuristically speaking, one predicts player movement in space while the ballcarrier
+remains constant, one predicts the occurrence of events (passes/shots/turnovers) that change
+the ballcarrier, and one predicts the outcome state (Cδt ) of such events.
+    Writing these models requires some additional notation. Fix  > 0, and for any t ≥ 0
+during the possession (here, we use 1/25 second since this is the temporal resolution of our
+data), and let M (t) be the event {τt ≤ t + }; for this, we say that a macrotransition occurs
+during (t, t + ]. Recalling the definition of τt (2), M (t) is realized when the possession moves
+from Cposs to Ctrans , which represents the start of a pass, shot attempt, or turnover (and M (t)
+is continuously realized throughout the duration of this action). We now define:
+                                                     (Z)
+(M1) The microtransition model, P(Zt+ |M (t)c , Ft ), which describes infinitesimal player
+     movement assuming that a major ball movement does not occur.
+
+
+                                                8
+                                                           (Z)
+(M2) The macrotransition entry model, P(M (t)|Ft ), which describes the occurrence of a
+     macrotransition (pass/shot/turnover) within the next  time.
+                                                                 (Z)
+(M3) The macrotransition exit model P(Cδt |M (t), Ft ), which gives the outcome of this
+     macrotransition in C.
+                                                                       (Z)
+    (M1)–(M3) together allow us to sample from P(Cδt |Ft ), as we alternate draws from
+(M1) and (M2) until a macrotransition occurs, and then use (M3) to sample the outcome
+state of this macrotransition. Thus, while models (M1)–(M3) condition on the full-resolution
+                      (Z)
+possession history Ft in order to predict Cδt , calculating EPV given Cδt only requires a
+model for transitions between coarsened states C. Due to the Markov assumption (A1), this
+is easily summarized by a transition probability matrix:
+
+(M4) The Markov transition probability matrix P, with Pqr = P(C (n+1) = cr |C (n) = cq ).
+
+Thus, (M1)–(M4) are sufficient to compute EPV using our multiresolution framework of
+Theorem 2.1. In the following subsections, we discuss each of these models in greater detail.
+
+3.1 Microtransition Model
+The microtransition model describes player movement with the ballcarrier held constant.
+In the periods between transfers of ball possession (including passes, shots, and turnovers),
+all players on the court move in order to influence the character of the next ball movement
+(macrotransition). For instance, the ballcarrier might drive toward the basket to attempt
+a shot, or move laterally to gain separation from a defender, while his teammates move to
+position themselves for passes or rebounds, or to set screens and picks. The defense moves
+correspondingly, attempting to deter easy shot attempts or passes to certain players while
+simultaneously anticipating a possible turnover. Separate models are assumed for offensive
+and defensive players, as we shall describe.
+    Predicting the motion of offensive players over a short time window is driven by the
+players’ dynamics (velocity, acceleration, etc.). Let the location of offensive player ` (` ∈
+{1, . . . , L = 461}) at time t be z` (t) = (x` (t), y ` (t)). We then model movement in each of
+the x and y coordinates using
+
+                         x` (t + ) = x` (t) + αx` [x` (t) − x` (t − )] + ηx` (t)                 (5)
+
+(and analogously for y ` (t)). This expression derives from a Taylor series expansion to the
+ballcarrier’s position for each coordinate, such that αx` [x` (t) − x` (t − )] ≈ x`0 (t), and ηx` (t)
+provides stochastic innovations representing the contribution of higher-order derivatives (ac-
+celeration, jerk, etc.). Because they are driven to score, players’ dynamics on offense are
+nonstationary. When possessing the ball, most players accelerate toward the basket when
+beyond the three-point line, and decelerate when very close to the basket in order to attempt
+a shot. Also, players will accelerate away from the edges of the court as they approach these,
+in order to stay in bounds. To capture such behavior, we assume spatial structure for the
+innovations, ηx` (t) ∼ N (µ`x (z` (t)), (σx` )2 ), where µ`x maps player `’s location on the court to
+an additive effect in (5), which has the interpretation of an acceleration effect; see Figure 4
+for an example.
+                                                           (Z)
+    The defensive components of P(Zt+ |M (t)c , Ft ), corresponding to the positions of the
+five defenders, are easier to model conditional on the evolution of the offense’s positions.
+
+                                                    9
+    TONY PARKER WITH BALL   TONY PARKER WITHOUT BALL        DWIGHT HOWARD WITH BALL   DWIGHT HOWARD WITHOUT BALL
+
+
+
+
+            (a)                       (b)                            (c)                         (d)
+
+Figure 4: Acceleration fields (µx (z(t)), µy (z(t))) for Tony Paker (a)–(b) and Dwight Howard (c)–(d)
+with and without ball possession. The arrows point in the direction of the acceleration at each point
+on the court’s surface, and the size and color of the arrows are proportional to the magnitude of the
+acceleration. Comparing (a) and (c) for instance, we see that when both players possess the ball,
+Parker more frequently attacks the basket from outside the perimeter. Howard does not accelerate
+to the basket from beyond the perimeter, and only tends to attack the basket inside the paint.
+
+
+Following Franks, Miller, Bornn & Goldsberry (2015), we assume each defender’s position is
+centered on a linear combination of the basket’s location, the ball’s location, and the location
+of the offensive player he is guarding. Franks et al. (2015) use a hidden Markov model (HMM)
+based on this assumption to learn which offensive players each defender is guarding, such
+that conditional on defender ` guarding offender k his location z` (t) = (x` (t), y ` (t)) should
+be normally distributed with mean mkopt (t) = 0.62zk (t) + 0.11zbask + 0.27zball (t).
+    Of course, the dynamics (velocity, etc.) of defensive players’ are still hugely informative
+for predicting their locations within a small time window. Thus our microtransition model
+for defender ` balances these dynamics with the mean path induced by the player he is
+guarding:
+                                       
+            x (t + )|mopt,x (t) ∼ N x` (t) + a`x [x` (t) − x` (t − )]
+              `          k
+
+                                                                                            
+                       `    k               k             ` `         k                 ` 2
+                    + bx [mopt,x (t + ) − mopt,x (t)] + cx [x (t) − mopt,x (t + )], (τx )   (6)
+
+and symmetrically in y. Rather than implement the HMM procedure used in Franks et al.
+(2015), we simply assume each defender is guarding at time t whichever offensive player j
+yields the smallest residual ||z` (t) − mjopt (t)||, noting that more than one defender may be
+guarding the same offender (as in a “double team”). Thus, conditional on the locations of
+the offense at time t + , (6) provides a distribution over the locations of the defense at t + .
+
+3.2 Macrotransition Entry Model
+                                           (Z)
+The macrotransition entry model P(M (t)|Ft ) predicts ball movements that instantaneously
+shift the course of the possession—passes, shot attempts, and turnovers. As such, we con-
+                                                          (Z)
+sider a family of macrotransition entry models P(Mj (t)|Ft ), where j indexes the type of
+macrotransition corresponding to M (t). There are six such types: four pass options (in-
+dexed, without loss of generality, j ≤ 4), a shot attempt (j = 5), or a turnover (j = 6).
+Thus, Mj (t) is the event that a macrotransition of type j begins in the time window
+
+
+                                                       10
+(t, t + ], and M (t) = 6j=1 Mj (t). Since macrotransition types are disjoint, we also know
+                       S
+            (Z)                   (Z)
+P(M (t)|Ft ) = 6j=1 P(Mj (t)|Ft ).
+                 P
+     We parameterize the macrotransition entry models as competing risks (Prentice, Kalbfleisch,
+Peterson Jr, Flournoy, Farewell & Breslow 1978): assuming player ` possesses the ball at
+time t > 0 during a possession, denote
+                                                               (Z)
+                                         `           P(Mj (t)|Ft )
+                                        λj (t) = lim                                                   (7)
+                                                 →0       
+as the hazard for macrotransition j at time t. We assume these are log-linear,
+                                                                                   
+                 log(λ`j (t)) = [Wj` (t)]0 β `j + ξj` z` (t) + ξ˜j` (zj (t)) 1[j ≤ 4] ,                (8)
+
+where Wj` (t) is a pj × 1 vector of time-varying covariates, β `j a pj × 1 vector of coefficients,
+z` (t) is the ballcarrier’s 2D location on the court (denote the court space S) at time t, and
+ξj` : S → R is a mapping of the player’s court location to an additive effect on the log-hazard,
+providing spatial variation. The last term in (8) only appears for pass events (j ≤ 4) to
+incorporate the location of the receiving player for the corresponding pass: zj (t) (which
+slightly abuses notation) provides his location on the court at time t, and ξ˜j` , analogously
+to ξj` , maps this location to an additive effect on the log-hazard. The four different passing
+options are identified by the (basketball) position of the potential pass recipient: point guard
+(PG), shooting guard (SG), small forward (SF), power forward (PF), and center (C).
+     The macrotransition model (7)–(8) represents the ballcarrier’s decision-making process
+as an interpretable function of the unique basketball predicaments he faces. For example,
+in considering the hazard of a shot attempt, the time-varying covariates (Wj` (t)) we use
+are the distance between the ballcarrier and his nearest defender (transformed as log(1 + d)
+to moderate the influence of extremely large or small observed distances), an indicator for
+whether the ballcarrier has dribbled since gaining possession, and a constant representing
+a baseline shooting rate (this is not time-varying)4 . The spatial effects ξj` reveal locations
+where player ` is more/less likely to attempt a shot in a small time window, holding fixed the
+time-varying covariates Wj` (t). Such spatial effects (illustrated in Figure 5) are well-known
+to be nonlinear in distance from the basket and asymmetric about the angle to the basket
+(Miller, Bornn, Adams & Goldsberry 2013).
+     All model components—the time-varying covariates, their coefficients, and the spatial
+effects ξ, ξ˜ differ across macrotransition types j for the same ballcarrier `, as well as across
+all L = 461 ballcarriers in the league during the 2013-14 season. This reflects the fact that
+players’ decision-making tendencies and skills are unique; a player such as Dwight Howard
+will very rarely attempt a three point shot even if he is completely undefended, while someone
+like Stephen Curry will attempt a three point shot even when closely defended.
+  4
+      Full details on all covariates used for all macrotransition types are included in Appendix A.1
+
+
+
+
+                                                      11
+  (a) ξ1 , ξ˜1 (pass to PG)   (b) ξ2 , ξ˜2 (pass to SG)
+
+
+
+
+                                                               (c) ξ5 (shot-taking)    (d) ξ6 (turnover)
+  (e) ξ3 , ξ˜3 (pass to PF)    (f) ξ4 , ξ˜4 (pass to C)
+
+Figure 5: Plots of estimated spatial effects ξ for LeBron James as the ballcarrier. For instance, plot
+(c) reveals the largest effect on James’ shot-taking hazard occurs near the basket, with noticeable
+positive effects also around the three point line (particularly in the “corner 3” shot areas). Plot
+(a) shows that he is more likely (per unit time) to pass to the point guard when at the top of the
+arc—more so when the point guard is positioned in the post area.
+
+
+3.3 Macrotransition Exit Model
+Using the six macrotransition types introduced in the previous subsection, we can express
+the macrotransition exit model (M3) when player ` has possession as
+                                           6
+                                           X
+                                 (Z)                              (Z)                 (Z)
+                  P(Cδt |M (t), Ft ) =           P(Cδt |Mj (t), Ft )P(Mj (t)|M (t), Ft )
+                                           j=1
+                                           6
+                                           X                   (Z)   λ`j (t)
+                                       =       P(Cδt |Mj (t), Ft ) P6       `
+                                                                                  ,                    (9)
+                                           j=1                      k=1 k λ   (t)
+
+using the competing risks model for Mj (t) given by (7)–(8). As terms λ`j (t) are supplied by
+(8), we focus on the macrotransition exit model conditional on the macrotransition type,
+                (Z)
+P(Cδt |Mj (t), Ft ).
+    For each j = 1, . . . , 4, Mj (t) represents a pass-type macrotransition, therefore Cδt is a
+possession state c0 ∈ Cposs for the player corresponding to pass option j. Thus, a model
+                    (Z)
+for P(Cδt |Mj (t), Ft ) requires us to predict the state c0 ∈ Cposs the jth pass target will
+occupy upon receiving the ball. Our approach is to simply assume c0 is given by the pass
+target’s location at the time the pass begins. While this is naive and could be improved
+by further modeling, it is a reasonable approximation in practice, because with only seven
+court regions and two defensive spacings comprising Cposs , the pass recipient’s position in this
+space is unlikely to change during the time the pass is traveling en route, δt − t (a noteable
+exception is the alley-oop pass, which leads the pass recipient from well outside the basket to
+                                                                                             (Z)
+a dunk or layup within the restricted area). Our approach thus collapses P(Cδt |Mj (t), Ft )
+to a single state in Cposs , which corresponds to pass target j’s location at time t.
+    When j = 5, and a shot attempt occurs in (t, t + ], Cδt is either a made/missed 2 point
+shot, or made/missed three point shot. For sufficiently small , we observe at Zt whether
+the shot attempt in (t, t + ] is a two- or three-point shot, therefore our task in providing
+
+
+                                                          12
+                 (Z)
+P(Cδt |Mj (t), Ft ) is modeling the shot’s probability of success. We provide a parametric
+shot probability model, which shares the same form as the macrotransition entry model (7)–
+(8), though we use a logit link function as we are modeling a probability instead of a hazard.
+Specifically, for player ` attempting a shot at time t, let p` (t) represent the probability of
+the shot attempt being successful (resulting in a basket). We assume
+
+                                logit(p` (t)) = [Ws` (t)]0 β `s + ξs` (z` (t))                        (10)
+
+with components in (10) having the same interpretation as their j-indexed counterparts
+in the competing risks model (8); that is, Ws` is a vector of time-varying covariates (we
+use distance to the nearest defender—transformed as log(1 + d)—an indicator for whether
+the player has dribbled, and a constant to capture baseline shooting efficiency) with β `s a
+corresponding vector of coefficients, and ξs` a smooth spatial effect, as in (8).
+    Lastly, when j = 6 and Mj (t) represents a turnover, Cδt is equal to the turnover state in
+Cend with probability 1.
+    Note that the macrotransition exit model is mostly trivial when no player has ball pos-
+session at time t, since this implies Ct ∈ Ctrans ∪ Cend and τt = t. If Ct ∈ Cend , then the
+possession is over and Cδt = Ct . Otherwise, if Ct ∈ Ctrans represents a pass attempt or
+turnover in progress, the following state Cδt is deterministic given Ct (recall that the pass re-
+cipient and his location are encoded in the definition of pass attempt states in Ctrans ). When
+Ct represents a shot attempt in progress, the macrotransition exit model reduces to the shot
+probability model (10). Finally, when Ct is a rebound in progress, we ignore full-resolution
+information and simply use the Markov transition probabilities from P5 .
+
+3.4 Transition Probability Matrix for Coarsened Process
+The last model necessary for calculating EPV is (M4), the transition probability matrix
+for the embedded Markov chain corresponding to the coarsened process C (0) , C (2) , . . . , C (K) .
+This transition probability matrix is used to compute the term E[X|Cδt = c] that appears
+in Theorem 2.1. Recall that we denote the transition probability matrix as P, where Pqr =
+P(C (i+1) = cr |C (i) = cq ) for any cq , cr ∈ C.
+    Without any other probabilistic structure assumed for C (i) other than Markov, for all q, r,
+the maximum likelihood estimator of Pqr is the observed transition frequency, P̂qr = P N0 qr        ,
+                                                                                            r Nqr 0
+where Nqr counts the number of transitions cq → cr . Of course, this estimator has undesirable
+performance if the number of visits to any particular state cq is small (for instance, Dwight
+Howard closely defended in the corner 3 region), as the estimated transition probabilities
+from that state may be degenerate.
+    Under our multiresolution model for basketball possessions, however, expected transition
+counts between many coarsened states C (i) can be computed as summaries of our macro-
+transition models (M2)–(M3). To show this, for any arbitrary t > 0 let Mjr (t) be the event
+                                                                       (Z)
+                           Mjr (t) = {P(Mj (t) and Ct+ = cr |Ft ) > 0}.
+
+Thus Mjr (t) occurs if it is possible for a macrotransition of type j into state cr to occur in
+   5
+    Our rebounding model could be improved by using full-resolution spatiotemporal information, as players’
+reactions to the missed shot event are informative of who obtains the rebound.
+
+
+
+
+                                                     13
+(t, t+]. When applicable, we can use this to get the expected number of cq → cr transitions:
+                                         X
+                                Ñqr =        λ`j (t)1[Mjr (t)].                        (11)
+                                           t:Ct =cq
+
+
+    When cq is a shot attempt    state from cq0 ∈ Cposs , (11) is adjusted using the shot probability
+model (10): Ñqr =  t:Ct =cq0 λ`j (t)p(t)1[Mjr (t)] when cr represents an eventual made shot
+                        P
+
+and Ñqr =  t:Ct =cq0 λ`j (t)(1 − p(t))1[Mjr (t)] when cr represents an eventual miss.
+             P
+
+    By replacing raw counts with their expectations conditional on higher-resolution data,
+leveraging the hazards (11) provides a Rao-Blackwellized (unbiased, lower variance) alterna-
+tive to counting observed transitions. Furthermore, due to the hierarchical parameterization
+of hazards λ`j (t) (discussed in Section 4), information is shared across space and player com-
+binations so that estimated hazards are well-behaved even in situations without significant
+observed data. Thus, when cq → cr represents a macrotransition, we use Ñqr in place of Nqr
+when calculating P̂qr .
+
+                  4. HIERARCHICAL MODELING AND INFERENCE
+A critical aspect of the micro- and macrotransition models defined in the previous section
+is that they are parameterized to capture the variations between actions, players, and court
+space that play a central role in basketball strategy. This section outlines the procedure for
+reliably estimating this rich set of model parameters using likelihood-based methods.
+    Hierarchical models are essential for our problem because by implicitly averaging over
+all possible future possession paths, calculating EPV requires transition probabilities for
+situations for which there is no data. For instance, DeAndre Jordan did not attempt a
+three-point shot in the 2013-14 season, yet any EPV estimate for a possession with him
+on the court requires an estimate of his shooting ability from everywhere on the court,
+even though for some of these regions it is unlikely he would attempt a shot. Hierarchical
+models combine information both across space and across different players to estimate such
+probabilities.
+
+4.1 Conditional Autoregressive Prior for Player-Specific Coefficients
+Sharing information between players is critical for our estimation problem, but standard
+hierarchical models encode an assumption of exchangeability between units that is too strong
+for NBA players, even between those who are classified by the league as playing the same
+position. For instance, LeBron James is listed at the same position (small forward) as Steve
+Novak, despite the fact that James is one of the NBA’s most prolific short-range scorers
+whereas Novak has not scored a layup since 2012. To model between-player variation more
+realistically, our hierarchical model shares information across players based on a localized
+notion of player similarity that we represent as an L×L binary adjacency matrix H: H`k = 1
+if players ` and k are similar to each other and H`k = 0 otherwise. We determine similarity
+in a pre-processing step that compares the spatial distribution of where players spend time
+on the offensive half-court; see Appendix A.2 for exact details on specifying H.
+    Now let βji`
+                 be the ith component of β `j , the vector of coefficients for the time-referenced
+covariates for player `’s hazard j (8). Also let β ji be the vector representing this component
+                               1  2         L 0
+across all L = 461 players, (βji βji . . . βji ) . We assume independent conditional autogressive
+
+
+                                                  14
+(CAR) priors (Besag 1974) for β ji :
+                                                                         2
+                                                                              !
+                               `   (−`)                     1 X k τβji
+                              βji |βji , τβ2ji ∼ N                   β ,
+                                                            n` k:H =1 ji n`
+                                                                  `k
+
+                                          τβ2ji ∼ InvGam(1, 1)                                       (12)
+
+where n` = k H`k . Similarly, let β si = (βsi1 βsi2 . . . βsiL ) be the vector of the ith component
+            P
+of the shot probability model (10) across players 1, . . . , L. We assume the same CAR prior
+(12) independently for each component i. While the inverse gamma prior for τ∗2 terms seems
+very informative, we want to avoid very large or small values of τ∗2 , corresponding to 0 or
+full shrinkage (respectively), which we know are inappropriate for our model. Predictive
+performance for the 0 shrinkage model (τ∗2 very large) is shown in Table 1, whereas the
+full shrinkage model (τ∗2 = 0) doesn’t allow parameters to differ by player identity, which
+precludes many of the inferences EPV was designed for.
+
+4.2 Spatial Effects ξ
+Player-tracking data is a breakthrough because it allows us to model the fundamental spa-
+tial component of basketball. In our models, we incorporate the properties of court space in
+spatial effects ξj` , ξ˜j` , ξs` , which are unknown real-valued functions on S, and therefore infinite
+dimensional. We represent such spatial effects using Gaussian processes (see Rasmussen
+(2006) for an overview of modeling aspects of Gaussian processes). Gaussian processes are
+usually specified by a mean function and covariance function; this approach is computation-
+ally intractable for large data sets, as the computation cost of inference and interpolating the
+surface at unobserved locations is O(n3 ), where n is the number of different points at which
+ξj` is observed (for many spatial effects ξj` , the corresponding n would be in the hundreds
+of thousands). We instead provide ξ with a low-dimensional representation using functional
+bases (Higdon 2002; Quiñonero-Candela & Rasmussen 2005), which offers three important
+advantages. First, this representation is more computationally efficient for large data sets
+such as ours. Second, functional bases allow for a non-stationary covariance structure that
+reflects unique spatial dependence patterns on the basketball court. Finally, the finite ba-
+sis representation allows us to apply the same between-player CAR prior to estimate each
+player’s spatial effects.
+     Our functional basis representation of a Gaussian process ξj` relies on d deterministic
+basis functions φj1 , . . . , φjd : S → R such that for any z ∈ S,
+                                                      d
+                                                      X
+                                          ξj` (z) =          `
+                                                            wji φji (z),                             (13)
+                                                      i=1
+
+
+where wj` = (wj1   `
+                               ) is a random vector of loadings, wj` ∼ N (ω `j , Σ`j ). Letting Φj (z) =
+                             ` 0
+                     . . . wjd
+(φj1 (z) . . . φjd (z))0 , we can see that ξj` given by (13) is a Gaussian process with mean
+function Φj (z)0 ω `j and covariance function Cov[ξj` (z1 ), ξj` (z2 )] = Φj (z1 )0 Σ`j Φj (z2 ). However,
+since bases φji are deterministic, each ξj` is represented as a d-dimensional parameter. Note
+that we also use (13) for pass receiver spatial effects and the spatial effect term in the
+shot probability model, ξ˜j` and ξs` , respectively. For these terms we have associated bases
+                            `
+φ̃ji , φsi and weights, w̃ji  , wsi` . As our notation indicates, bases functions Φj (z) differ for each
+
+                                                       15
+Figure 6: The functional bases φji for i = 1, . . . , 10 and j corresponding to the shot-taking macro-
+transition, j = 5. There is no statistical interpretation of the ordering of the bases; we have
+displayed them in rough order of the shot types represented, from close-range to long-range.
+
+
+macrotransition type but are constant across players; whereas weight vectors wj` vary across
+both macrotransition types and players.
+   Using d = 10, we determine the functional bases in a pre-processing step, discussed
+in Appendix A.3. These basis functions are interpretable as patterns/motifs that constitute
+players’ decision-making tendencies as a function of space; please see Figure 6 for an example,
+or Miller et al. (2013) for related work in a basketball context. Furthermore, we use a CAR
+model (12) to supply the prior mean and covariance matrix (ω `j , Σ`j ) for the weights:
+                                                                              !
+                                 −(`)                  1 X            τw2
+                           w`j |wj      , τw2 j ∼ N              wjk , j Id
+                                                       n` k:H =1       n`
+                                                            `k
+
+                                         τw2 j ∼ InvGam(1, 1).                                   (14)
+
+As with (12), we also use (14) for terms w̃j and ws . Combining the functional basis rep-
+resentation (13) with the between-player CAR prior (14) for the weights, we get a prior
+representation for spatial effects ξj` , ξ˜j` , ξ˜` that is low-dimensional and shares information
+both across space and between different players.
+
+4.3 Parameter Estimation
+As discussed in Section 3, calculating EPV requires the parameters that define the mul-
+tiresolution transition models (M1)–(M4)—specifically, the hazards λ`j , shot probabilities p` ,
+and all parameters of the microtransition model (M1). We estimate these parameters in a
+Bayesian fashion, combining the likelihood of the observed optical tracking data with the
+prior structure discussed earlier in this section. Using our multiresolution models, we can
+
+
+
+
+                                                      16
+write the likelihood for the full optical tracking data, indexed arbitrarily by t:
+                                                                                                                Lrem
+                                                  Lmic                     z                                     }|                   {!
+                             zY               }|                        {! YY6
+                                                                        c
+Y                 (Z)                                (Z)                                                                    (Z)
+     P(Zt+ |Ft ) =                P(Zt+ |M (t)c , Ft )1[M (t) ]                                   P(Zt+ |Mj (t), Cδt , Ft )1[Mj (t)]
+ t                            t                                                    t       j=1
+                                                6
+                                                                                   !         6
+                                                                                                                                          !
+                                   1[M (t)c ]
+         Y                   (Z)
+                                                Y                (Z)
+                                                                                            YY                             (Z)
+     ×           P(M (t)c |Ft )                       P(Mj (t)|Ft )1[Mj (t)]                               P(Cδt |Mj (t), Ft )1[Mj (t)]       ,
+             t                                  j=1                                             t    j=1
+         |                                 {z                                  }            |                       {z               }
+                                         Lentry                                                                    Lexit
+                                                                                                                                   (15)
+
+The factorization used in (15) highlights data features that inform different parameter groups:
+Lmic is the likelihood term corresponding to the microtransition model (M1), Lentry the
+macrotransition entry model (M2), and Lexit the macrotransition exit model (M3). The
+remaining term Lrem is left unspecified, and ignored during inference. Thus, Lmic , Lentry , and
+Lexit can be though of as partial likelihoods (Cox 1975b), which under mild conditions leads
+to consistent and asymptotically well-behaved estimators (Wong 1986). When parameters in
+these partial likelihood terms are given prior distributions, as is the case for those comprising
+the hazards in the macrotransition entry model, as well as those in the shot probability model,
+the resulting inference is partially Bayesian (Cox 1975a).
+    The microtransition partial likelihood term Lmic factors by player:
+                              L
+                                                                                       c
+                             YY                                        (Z)
+                    Lmic ∝               P(z` (t + )|M (t)c , Ft )1[M (t) and ` on court at time t] .                             (16)
+                              t    `=1
+
+Depending on whether or not player ` is on offense (handling the ball or not) or defense,
+                       (Z)
+P(z` (t+)|M (t)c , Ft ) is supplied by the offensive (5) or defensive(6) microtransition models.
+Parameters for these models (5)–(6) are estimated using R-INLA, where spatial acceleration
+effects µ`x , µ`y are represented using a Gaussian Markov random field approximation to a
+Gaussian process with Matérn covariance (Lindgren, Rue & Lindström 2011). Appendix A.3
+provides the details on this approximation. We do perform any hierarchical modeling for
+the parameters of the microtransition model—because this model only describes movement
+(not decision-making), the data for every player is informative enough to provide precise
+inference. Thus, microtransition models are fit in parallel using each player’s data separately;
+this requires L = 461 processors, each taking at most 18 hours at 2.50Ghz clock speed, using
+32GB of RAM.
+    For the macrotransition entry term, we can write
+                                                           L Y
+                                                           Y 6
+                                                Lentry ∝             L`entryj (λ`j (·)),                                           (17)
+                                                           l=1 j=1
+
+
+
+
+                                                                17
+recognizing that (for small ),
+                                                  
+                                                                                
+                                     Y `              X
+               L`entryj (λ`j (·)) ∝ 
+                                       λ j (t) exp −
+                                                         λ`j (t)
+                                      t : Mj (t)                 t∈T `
+                                        t∈T `
+                                                                                                     
+                                                                                        0
+      where        log(λ`j (t)) = [Wj` (t)]0 β `j + φj (z` (t))0 wj` +       φ̃j (zj (t)) w̃j` 1[j ≤ 4]   (18)
+
+and T ` is the set of time t for which player ` possesses the ball. Expression (18) is the
+likelihood for a Poisson regression; combined with prior distributions (12)–(14), inference for
+β `j , wj` , w̃j` is thus given by a hierarchical Poisson regression. However, the size of our data
+makes implementing such a regression model computationally difficult as the design matrix
+would have 30.4 million rows and a minimum of L(pj + d) ≥ 5993 columns, depending
+on macrotransition type. We perform this regression through the use of integrated nested
+Laplace approximations (INLA) (Rue, Martino & Chopin 2009). Each macrotransition type
+can be fit separately, and requires approximately 24 hours using a single 2.50GHz processor
+with 120GB of RAM.
+       Recalling Section 3.3, the macrotransition exit model (M3) is deterministic for all macro-
+transitions except shot attempts (j = 5). Thus, Lexit only provides information on the
+parameters of our shot probability model (10). Analogous to the Poisson model in (18),
+Lexit is the likelihood of a logistic regression, which factors by player. We also use INLA
+to fit this hierarchical logistic regression model, though fewer computational resources are
+required as this likelihood only depends on time points where a shot is attempted, which is
+a much smaller subset of our data.
+
+                                        5. RESULTS
+After obtaining parameter estimates for the multresolution transition models, we can cal-
+culate EPV using Theorem 2.1 and plot νt throughout the course of any possession in our
+data. We view such (estimated) EPV curves as the main contribution of our work, and their
+behavior and potential inferential value has been introduced in Section 1. We illustrate this
+value by revisiting the possession highlighted in Figure 1 through the lens of EPV. Analysts
+may also find meaningful aggregations of EPV curves that summarize players’ behavior over
+a possession, game, or season in terms of EPV. We offer two such aggregations in this section.
+
+5.1 Predictive Performance of EPV
+Before analyzing EPV estimates, it is essential to check that such estimates are properly
+calibrated (Gneiting, Balabdaoui & Raftery 2007) and accurate enough to be useful to bas-
+ketball analysts. Our paper introduces EPV, and as such there are no existing results to
+benchmark the predictive performance of our estimates. We can, however, compare the pro-
+posed implementation for estimating EPV with simpler models, based on lower resolution
+information, to verify whether our multiresolution model captures meaningful features of our
+data. Assessing the predictive performance of an EPV estimator is difficult because the esti-
+mand is a curve whose length varies by possession. Moreover, we never observe any portion
+of this curve; we only know its endpoint. Therefore, rather than comparing estimated EPV
+curves between our method and alternative methods, we compare estimated transition prob-
+
+
+                                                     18
+abilities. For any EPV estimator method that is stochastically consistent, if the predicted
+transitions are properly calibrated, then the derived EPV estimates should be as well.
+    For the inference procedure in Section 4, we use only 90% of our data set for parameter
+inference, with the remaining 10% used to evaluate the out-of-sample performance of our
+model. We also evaluated out-of-sample performance of simpler macrotransition entry/exit
+models, which use varying amounts of information from the data. Table 1 provides the out-of-
+sample log-likelihood for the macrotransition models applied to the 10% of the data not used
+in model fitting for various simplified models. In particular, we start with the simple model
+employing constant hazards for each player/event type, then successively add situational
+covariates, spatial information, then full hierarchical priors. Without any shrinkage, our
+full model performs in some cases worse than a model with no spatial effects included, but
+with shrinkage, it consistently performs the best (highest log-likelihood) of the configurations
+compared. This behavior justifies the prior structure introduced in Section 4.
+
+                                                      Model Terms
+              Macro. type       Player   Covariates     Covariates + Spatial      Full
+              Pass1              -29.4         -27.7                     -27.2   -26.4
+              Pass2              -24.5         -23.7                     -23.2   -22.2
+              Pass3              -26.3         -25.2                     -25.3   -23.9
+              Pass4              -20.4         -20.4                     -24.5   -18.9
+              Shot Attempt       -48.9         -46.4                     -40.9   -40.7
+              Made Basket         -6.6          -6.6                      -5.6    -5.2
+              Turnover            -9.3          -9.1                      -9.0    -8.4
+
+Table 1: Out of sample log-likelihood (in thousands) for macrotransition entry/exit models under
+various model specifications. “Player” assumes constant hazards for each player/event type com-
+bination. “Covariates” augments this model with situational covariates, Wj` (t) as given in (8).
+“Covariates + Spatial” adds a spatial effect, yielding (8) in its entirety. Lastly, “Full” implements
+this model with the full hierchical model discussed in Section 4.
+
+
+5.2 Possession Inference from Multiresolution Transitions
+Understanding the calculation of EPV in terms of multiresolution transitions is a valuable
+exercise for a basketball analyst, as these model components reveal precisely how the EPV
+estimate derives from the spatiotemporal circumstances of the time point considered. Figure
+7 diagrams four moments during our example possession (introduced originally in Figures 1
+and 2) in terms of multiresolution transition probabilities. These diagrams illustrate The-
+orem 2.1 by showing EPV as a weighted average of the value of the next macrotransition.
+Potential ball movements representing macrotransitions are shown as arrows, with their
+respective values and probabilities graphically illustrated by color and line thickness (this
+information is also annotated explicitly). Microtransition distributions are also shown, indi-
+cating distributions of players’ movement over the next two seconds. Note that the possession
+diagrammed here was omitted from the data used for parameter estimation.
+    Analyzing Figure 7, we see that our model estimates largely agree with basketball in-
+tuition. For example, players are quite likely to take a shot when they are near to and/or
+moving towards the basket, as shown in panels A and D. Additionally, because LeBron James
+
+                                                 19
+                                                                                                                                                    LEGEND
+      1.6
+                                                                                                      V 0.98                                    MOVEMENT
+                                                                    2V 1.09
+                                                                     P 0.00                       3
+                                                                                                      P 0.04
+                                                                                                                 A                 Macro                   History              Micro
+      1.4                                              D                   2
+                              A                                                                                  4 V 1.01            MACROTRANSITION VALUE (V)
+                                                                                                                  P 0.06
+                                                                                         3                                         High                Medium                   Low
+      1.2
+EPV
+                                                                                                           4
+                                                                   V 1.42                                                     MACROTRANSITION PROBABILITY (P)
+                                                                   P 0.83
+                                          C                                                                                    High       Medium           Low
+      1.0                                                                      1
+                                                                                   15
+                                B
+                                                                                                                                 OFFENSE                           DEFENSE
+                                                                                                               TURNOVER
+      0.8                                                                                                        V 0.00        1 Norris Cole                   Deron Williams 1
+                                                                                                 5 V 1.03        P 0.02        2 Ray Allen                        Jason Terry 2
+                                                                                                     P 0.04      OTHER         3 Rashard Lewis                   Joe Johnson 3
+               0    1.2       2.4     3.6      4.8    6.0   7.2                                                  V 0.99
+                                                                                                                 P 0.02        4 LeBron James                  Andray Blatche 4
+                               time (sec)                                                                                      5 Chris Bosh                      Brook Lopez 5
+
+
+
+
+           V 1.02                                                 V 1.01
+                                                                  P 0.04
+                                                                                                                 C                                                          D
+           P 0.03                     V 0.98
+       2                              P 0.04
+                                                      B               2                                                              2                 1
+                                  3                                                                    3                    V 1.09            V 1.01
+                                                                      2                                                     P 0.01            P 0.01
+           2                                                                V 1.00 1                                                                               V 0.98
+                                                                            P 0.13               3                                   2                           3 P 0.04
+                                                     4 V 1.01                                                                                    1
+                     3                                P 0.23                                                     4V 1.01
+                                                                                                                  P 0.61
+                                                                                   5 1
+                                      4                                                               4                                                3
+        11                                                                                                                                     4
+  V 1.17 5                                                         V 1.01                                                    V 1.50             4
+  P 0.27                                                           P 0.05                                                    P 0.83
+
+
+                                                                                                                                          5
+                                                                                    5 V 1.05
+                                                 TURNOVER                               P 0.04                 TURNOVER                                               TURNOVER
+                          5                        V 0.00                                                        V 0.00                                                 V 0.00
+                                                   P 0.16                                                        P 0.01                                                 P 0.04
+                                                                                                                                   V 1.03 5
+                      V 1.03
+                      P 0.12                       OTHER                                                         OTHER                                                  OTHER
+                                                   V 1.00                                                        V 0.97            P 0.00                               V 1.06
+                                                   P 0.16                                                        P 0.13                                                 P 0.06
+
+
+
+
+Figure 7: Detailed diagram of EPV as a function of multiresolution transition probabilities for four
+time points (labeled A,B,C,D) of the possession featured in Figures 1–2. Two seconds of microtran-
+sitions are shaded (with forecasted positions for short time horizons darker) while macrotransitions
+are represented by arrows, using color and line thickness to encode the value (V) and probability
+(P) of such macrotransitions. The value and probability of the “other” category represents the case
+that no macrotransition occurs during the next two seconds.
+
+
+is a better shooter than Norris Cole, the value of his shot attempt is higher, even though in
+the snapshot in panel D he is much farther from the basket than Cole is in panel A. While
+the value of the shot attempt averages over future microtransitions, which may move the
+player closer to the basket, when macrotransition hazards are high this average is dominated
+by microtransitions on very short time scales.
+    We also see Ray Allen, in the right corner 3, as consistently one of the most valuable pass
+options during this possession, particularly when he is being less closely defended as in panels
+A and D. In these panels, though, we never see an estimated probability of him receiving
+a pass above 0.05, most likely because he is being fairly closely defended for someone so
+far from the ball, and because there are always closer passing options for the ballcarrier.
+Similarly, while Chris Bosh does not move much during this possession, he is most valuable
+
+                                                                                             20
+as a passing option in panel C where he is closest to the basket and without any defenders in
+his lane. From this, we see that the estimated probabilities and values of the macrotransitions
+highlighted in Figure 7 match well with basketball intuition.
+    The analysis presented here could be repeated on any of hundreds of thousands of posses-
+sions available in a season of optical tracking data. EPV plots as in Figure 2 and diagrams as
+in Figure 7 provide powerful insight as to how players’ movements and decisions contribute
+value to their team’s offense. With this insight, coaches and analysts can formulate strategies
+and offensive schemes that make optimal use of their players’ ability—or, defensive strategies
+that best suppress the motifs and situations that generate value for the opposing offense.
+
+5.3 EPV-Added
+Aggregations of EPV estimates across possessions can yield useful summaries for player
+evaluation. For example, EPV-Added (EPVA) quantifies a player’s overall offensive value
+through his movements and decisions while handling the ball, relative to the estimated value
+contributed by a league-average player receiving ball possession in the same situations. The
+notion of relative value is important because the martingale structure of EPV (νt ) prevents
+any meaningful aggregation of EPV across a specific player’s possessions. E[νt − νt+ ] = 0
+for all t, meaning that on average EPV does not change during any specific player’s ball
+handling. Thus, while we see the EPV skyrocket after LeBron James receives the ball and
+eventually attack the basket in Figure 2, the definition of EPV prevents such increases being
+observed on average.
+    If player ` has possession of the ball starting at time ts and ending at te , the quantity
+        r(`)
+νte − νts estimates the value contributed player by ` relative to the hypothetical league-
+                                                               r(`)
+average player during his ball possession (represented by νts ). We calculate EPVA for
+player ` (EPVA(`)) by summing such differences over all a player’s touches (and dividing by
+the number of games played by player ` to provide standardization):
+                                           1             X                   r(`)
+                        EPVA(`) =                                     νte − νts              (19)
+                                      # games for `
+                                                      {ts ,te }∈T `
+
+
+where T ` contains all intervals of form [ts , te ] that span player `’s ball possession. Specific
+                          r(`)
+details on calculating νt are included in Appendix A.4.
+    Averaging over games implicitly rewards players who have high usage, even if their value
+added per touch might be low. Often, one-dimensional offensive players accrue the most
+EPVA per touch since they only handle the ball when they are uniquely suited to scoring;
+for instance, some centers (such as the Clippers’ DeAndre Jordan) only receive the ball right
+next to the basket, where their height offers a considerable advantage for scoring over other
+players in the league. Thus, averaging by game—not touch—balances players’ efficiency
+per touch with their usage and importance in the offense. Depending on the context of
+the analysis, EPVA can also be adjusted to account for team pace (by normalizing by 100
+possession) or individual usage (by normalizing by player-touches).
+    Table 2 provides a list of the top and bottom 10 ranked players by EPVA using our 2013-
+14 data. Generally, players with high EPVA effectively adapt their decision-making process
+to the spatiotemporal circumstances they inherit when gaining possession. They receive the
+ball in situations that are uniquely suited to their abilities, so that on average the rest of the
+league is less successful in these circumstances. Players with lower EPVA are not necessarily
+
+                                               21
+“bad” players in any conventional sense; their actions simply tend to lead to fewer points
+than other players given the same options. Of course, EPVA provides a limited view of a
+player’s overall contributions since it does not quantify players’ actions on defense, or other
+ways that a player may impact EPV while not possessing the ball (though EPVA could be
+extended to include these aspects).
+
+          Rank    Player            EPVA          Rank      Player             EPVA
+              1   Kevin Durant        3.26            277   Zaza Pachulia      -1.55
+              2   LeBron James        2.96            278   DeMarcus Cousins   -1.59
+              3   Jose Calderon       2.79            279   Gordon Hayward     -1.61
+              4   Dirk Nowitzki       2.69            280   Jimmy Butler       -1.61
+              5   Stephen Curry       2.50            281   Rodney Stuckey     -1.63
+              6   Kyle Korver         2.01            282   Ersan Ilyasova     -1.89
+              7   Serge Ibaka         1.70            283   DeMar DeRozan      -2.03
+              8   Channing Frye       1.65            284   Rajon Rondo        -2.27
+              9   Al Horford          1.55            285   Ricky Rubio        -2.36
+             10   Goran Dragic        1.54            286   Rudy Gay           -2.59
+
+Table 2: Top/bottom 10 players by EPVA per game in 2013-14, minimum 500 touches in season.
+
+     As such, we stress the idea that EPVA is not a best/worst players in the NBA ranking.
+Analysts should also be aware that the league-average player being used as a baseline is
+completely hypothetical, and we heavily extrapolate our model output by considering value
+calculations assuming this nonexistant player possessing the ball in all the situations en-
+countered by an actual NBA player. The extent to which such an extrapolation is valid
+is a judgment a basketball expert can make. Alternatively, one can consider EPV-added
+over specific players (assuming player `2 receives the ball in the same situations as player
+`1 ), using the same framework developed for EPVA. Such a quantity may actually be more
+useful, particularly if the players being compared play similar roles on their teams and face
+similar situations and the degree of extrapolation is minimized.
+
+5.4 Shot Satisfaction
+Aggregations of the individual components of our multiresolution transition models can
+also provide useful insights. For example, another player metric we consider is called shot
+satisfaction. For each shot attempt a player takes, we wonder how satisfied the player
+is with his decision to shoot—what was the expected point value of his most reasonable
+passing option at the time of the shot? If for a particular player, the EPV measured at his
+shot attempts is higher than the EPV conditioned on his possible passes at the same time
+points, then by shooting the player is usually making the best decision for his team. On the
+other hand, players with pass options at least as valuable as shots should regret their shot
+attempts (we term “satisfaction” as the opposite of regret) as passes in these situations have
+higher expected value.
+    Specifically, we calculate
+                                                   "      4
+                                                                          #
+                                   1     X               [            (Z)
+                     SATIS(`) = `            νt − E X |      Mj (t), Ft                   (20)
+                                |Tshot |  `              j=1
+                                       t∈Tshot
+
+
+                                                 22
+   Rank    Player                Shot Satis.        Rank   Player               Shot Satis.
+       1   Mason Plumlee                0.35         277   Garrett Temple             -0.02
+       2   Pablo Prigioni               0.31         278   Kevin Garnett              -0.02
+       3   Mike Miller                  0.27         279   Shane Larkin               -0.02
+       4   Andre Drummond               0.26         280   Tayshaun Prince            -0.03
+       5   Brandan Wright               0.24         281   Dennis Schroder            -0.04
+       6   DeAndre Jordan               0.24         282   LaMarcus Aldridge          -0.04
+       7   Kyle Korver                  0.24         283   Ricky Rubio                -0.04
+       8   Jose Calderon                0.22         284   Roy Hibbert                -0.05
+       9   Jodie Meeks                  0.22         285   Will Bynum                 -0.05
+      10   Anthony Tolliver             0.22         286   Darrell Arthur             -0.05
+
+Table 3: Top/bottom 10 players by shot satisfaction in 2013-14, minimum 500 touches in season.
+
+          `
+where Tshot   indexes times a shot attempt occurs, {t : M5 (t)}, for player `. Recalling
+that macrotransitions j = 1, . . . , 4 correspond to pass events (and j = 5 a shot attempt),
+S 4
+  j=1 Mj (t) is equivalent to a pass happening in (t, t + ]. Unlike EPVA, shot satisfaction
+SATIS(`) is expressed as an average per shot (not per game), which favors player such as
+three point specialists, who often take fewer shots than their teammates, but do so in situ-
+ations where their shot attempt is extremely valuable. Table 3 provides the top/bottom 10
+players in shot satisfaction for our 2013-14 data. While players who mainly attempt three-
+pointers (e.g. Miller, Korver) and/or shots near the basket (e.g. Plumlee, Jordan) have
+the most shot satisfaction, players who primarily take mid-range or long-range two-pointers
+(e.g. Aldridge, Garnett) or poor shooters (e.g. Rubio, Prince) have the least. However, be-
+cause shot satisfaction numbers are mostly positive league-wide, players still shoot relatively
+efficiently—almost every player generally helps his team by shooting rather than passing in
+the same situations, though some players do so more than others.
+    We stress that the two derived metrics given in this paper, EPVA and shot satisfaction,
+are simply examples of the kinds of analyses enabled by EPV. Convential metrics currently
+used in basketball analysis do measure shot selection and efficiency, as well as passing rates
+and assists, yet EPVA and shot satisfaction are novel in analyzing these events in their
+spatiotemporal contexts.
+
+                                        6. DISCUSSION
+This paper introduces a new quantity, EPV, which represents a paradigm shift in the pos-
+sibilities for statistical inferences about basketball. Using high resolution, optical tracking
+data, EPV reveals the value in many of the schemes and motifs that characterize basketball
+offenses but are omitted in the box score. For instance, as diagrammed in Figures 2 and 7,
+we see that EPV may rise as a player attacks the basket (more so for a strong scorer like
+LeBron James than for a bench player like Norris Cole), passes to a well-positioned team-
+mate, or gains separation from the defense. Aside from simply tracking changes in EPV,
+analysts can understand why EPV changes by expressing its value as a weighted average of
+transition values (as done in Figure 7). Doing so reveals that the source of a high (or low)
+EPV estimate may come from alternate paths of the possession that were never realized, but
+were probable enough to have influenced the EPV estimate—an open teammate in a good
+
+                                               23
+shooting location, for instance. These insights, which can be reproduced for any valid NBA
+possession in our data set, have the potential to reshape the way we quantify players’ actions
+and decisions.
+    We make a number of assumptions—mostly to streamline and simplify our modeling
+and analysis pipeline—that could be relaxed and yield a more precise model. The largest
+assumption is that the particular coarsened view of a basketball possession that we propose
+here is marginally semi-Markov. While this serves as a workable first-order approximation,
+there are cases that clearly violate this assumption, for example, pre-set plays that string
+together sequences of runs and passes. Future refinements of the model could define a wider
+set of macrotransitions and coarsened states to encapsulate these motifs, effectively encoding
+this additional possession structure from the coach’s playbook.
+    A number of smaller details could also be addressed. For instance, it seems desirable to
+model rebound outcomes conditional on high resolution information, such as the identities
+and motion dynamics of potential rebounders; we do not do this, however, and use a constant
+probability for each team of a rebound going to either the offense or defense. We also do
+not distinguish between different types of turnovers (steals, bad passes, ball out of bounds,
+etc.), though this is due to a technical feature of our data set. Indeed, regardless of the
+complexity and refinement of an EPV model, we stress that the full resolution data still
+omits key information, such as the positioning of players’ hands and feet, their heights when
+jumping, and other variables that impact basketball outcomes. As such, analyses based on
+EPV are best accompanied by actual game film and the insight of a basketball expert.
+    The computational requirements of estimating EPV curves (and the parameters that
+generate them) likely limit EPV discussions to academic circles and professional basketball
+teams with access to the appropriate resources. Our model nevertheless offers a case study
+whose influence extends beyond basketball. High resolution spatiotemporal data sets are an
+emerging inferential topic in a number of scientific or business areas, such as climate, security
+and surveillance, advertising, and gesture recognition. Many of the core methodological
+approaches in our work, such as using multiresolution transitions and hierarchical spatial
+models, provide insight beyond the scope of basketball to other spatiotemporal domains.
+
+
+
+
+                                               24
+                 APPENDIX A. ADDITIONAL TECHNICAL DETAILS
+In this appendix we provide additional details on steps used in fitting multiresolution models
+and deriving basketball metrics from EPV estimates.
+
+A.1 Time-Varying Covariates in Macrotransition Entry Model
+As revealed in (8), the hazards λ`j (t) are parameterized by spatial effects (ξj` and ξ˜j` for
+pass events), as well as coefficients for situation covariates, β `j . The covariates used may be
+different for each macrotransition j, but we assume for each macrotransition type the same
+covariates are used across players `.
+    Among the covariates we consider, dribble is an indicator of whether the ballcarrier has
+started dribbling after receiving possession. ndef is the distance between the ballcarrier and
+his nearest defender (transformed to log(1 + d)). ball lastsec records the distance traveled
+by the ball in the previous one second. closeness is a categorical variable giving the rank
+of the ballcarrier’s teammates’ distance to the ballcarrier. Lastly, open is a measure of how
+open a potential pass receiver is using a simple formula relating the positions of the defensive
+players to the vector connecting the ballcarrier with the potential pass recipient.
+    For j ≤ 4, the pass event macrotransitions, we use dribble, ndef, closeness, and
+open. For shot-taking and turnover events, dribble, ndef, and ball lastsec are included.
+Lastly, the shot probability model (which, from (10) has the same parameterization as the
+macrotransition model) uses dribble and ndef only. All models also include an intercept
+term. As discussed in Section 4.1, independent CAR priors are assumed for each coefficient
+in each macrotransition hazard model.
+
+A.2 Player Similarity Matrix H for CAR Prior
+The hierarchical models used for parameters of the macrotransition entry model, discussed
+in Section 4.1, are based on the idea that players who share similar roles for their respective
+teams should behave similarly in the situations they face. Indeed, players’ positions (point
+guard, power forward, etc.) encode their offensive responsibilities: point guards move and
+distribute the ball, small forwards penetrate and attack the basket, and shooting guards
+get open for three-point shots. Such responsibilities reflect spatiotemporal decision-making
+tendencies, and therefore informative for our macrotransition entry model (7)–(8).
+     Rather than use the labeled positions in our data, we define position as a distribution of
+a player’s location during his time on the court. Specifically, we divide the offensive half of
+the court into 4-square-foot bins (575 total) and count, for each player, the number of data
+points for which he appears in each bin. Then we stack these counts together into a L × 575
+matrix (there are L = 461 players in our data), denoted G, and take the square root of all
+entries in G for normalization. We then perform non-negative matrix factorization (NMF)
+on G in order to obtain a low-dimensional representation of players’ court occupancy that
+still reflects variation across players (Miller et al. 2013). Specifically, this involves solving:
+                                                             
+                           ∗                  ∗
+    Ĝ = argmin{D(G, G )}, subject to G = U                  V     and Uij , Vij ≥ 0 for all i, j,
+           G∗                                       L×r   r×575
+                                                                                  (A.1)
+where r is the rank of the approximation Ĝ to G (we use r = 5), and D is some distance
+
+
+
+
+                                               25
+function; we use a Kullback-Liebler type
+                                   X
+                      D(G, G∗ ) =      Gij log Gij /G∗ij − Gij + G∗ij .
+                                                        
+                                        i,j
+
+
+The rows of V are non-negative basis vectors for players’ court occupancy distributions (plot-
+ted in Figure 8) and the rows of U give the loadings for each player. With this factorization,
+Ui (the ith row of U) provides player i’s “position”—a r-dimensional summary of where
+he spends his time on the court. Moreover, the smaller the difference between two players’
+positions, ||Ui − Uj ||, the more alike are their roles on their respective teams, and the more
+similar we expect the parameters of their macrotransition models to be a priori.
+
+
+
+
+Figure 8: The rows of V (plotted above for r = 5) are bases for the players’ court occupancy
+distribution. There is no interpretation to the ordering.
+
+    Formalizing this, we take the L×L matrix H to consist of 0s, then set Hij = 1 if player j is
+one of the eight closest players in our data to player i using the distance ||Ui −Uj || (the cutoff
+of choosing the closest eight players is arbitrary). This construction of H does not guarantee
+symmetry, which is required for the CAR prior we use, thus we set Hji = 1 if Hij = 1. For
+instance, LeBron James’ “neighbors” are (in no order): Andre Iguodala, Harrison Barnes,
+Paul George, Kobe Bryant, Evan Turner, Carmelo Anthony, Rodney Stuckey, Will Barton,
+and Rudy Gay.
+
+A.3 Basis Functions for Spatial Effects ξ
+Recalling (13), for each player ` and macrotransition type j, we have ξj` (z) = di=1 wji  `
+                                                                                   P
+                                                                                            φji (z),
+where {φji , i = 1, . . . , d} are the basis functions for macrotransition j. During the inference
+discussed in Section 4, these basis functions are assumed known. They are derived from a
+pre-processing step. Heuristically, they are constructed by approximately fitting a simplified
+macrotransition entry model with stationary spatial effect for each player, then performing
+NMF to find a low-dimensional subspace (in this function space of spatial effects) that
+accurately captures the spatial dependence of players’ macrotransition behavior. We now
+describe this process in greater detail.
+    Each basis function φji is itself represented as a linear combination of basis functions,
+                                                  d0
+                                                  X
+                                      φji (z) =         vjik ψk (z),                           (A.2)
+                                                  k=1
+
+where {ψk , k = 1, . . . , d0 } are basis functions (as the notation suggests, the same basis is used
+for all j, i). The basis functions {ψk , k = 1, . . . , d0 } are induced by a triangular mesh of d0
+vertices (we use d0 = 383) on the court space S. In practice, the triangulation is defined on
+
+                                                  26
+a larger region that includes S, due to boundary effects. The mesh is formed by partitioning
+S into triangles, where any two triangles share at most one edge or corner; see Figure 9 for
+an illustration. With some arbitrary ordering of the vertices of this mesh, ψk : S → R is the
+unique function taking value 0 at all vertices k̃ 6= k, 1 at vertex k, and linearly interpolating
+between any two points within the same triangle used in the mesh construction. Thus, with
+this basis, φji (and consequently, ξj` ) are piecewise linear within the triangles of the mesh.
+
+
+
+
+Figure 9: Triangulation of S used to build the functional basis {ψk , k = 1, . . . , d0 }. Here, d0 = 383.
+
+   This functional basis {ψk , k = 1, . . . , d0 } is used by Lindgren et al. (2011), who show
+that it can
+        Pd0approximate a Gaussian random 0field with Matérn covariance. Specifically, let
+x(z) = k=1    vk ψk (z) and assume (v1 . . . vk ) = v ∼ N (0, Σν,κ,σ2 ). The form of Σν,κ,σ2 is
+such that the covariance function of x approximates a Matérn covariance:
+
+                                                          σ2
+   Cov[x(z1 ), x(z2 )] = ψ(z1 )0 Σν,κ,σ2 ψ(z2 ) ≈               (κ||z1 − z2 ||)ν Kν (κ||z1 − z2 ||),    (A.3)
+                                                       Γ(ν)2ν−1
+
+where ψ(z) = (ψ1 (z) . . . ψd0 (z))0 . As discussed in Section 4.2, the functional basis represen-
+tation of a Gaussian process offers computational advantages in that the infinite dimensional
+field x is given a d0 -dimensional representation, as x is completely determined by v. Further-
+more, as discussed in Lindgren et al. (2011), Σ−1       ν,κ,σ 2 is sparse ((A.3) is actually a Gaussian
+Markov random field (GMRF) approximation to x), offering additional computational sav-
+ings (Rue 2001).
+    The GMRF approximation given by (A.2)–(A.3) is actually used in fitting the micro-
+transition models for offensive players (5). We give the spatial innovation terms µ`x , µ`y
+representations using the ψ basis. Then, as mentioned in Section 4.3, (5) is fit independently
+for each player in our data set using the software R-INLA.
+    We also fit simplified versions of the macrotransition entry model, using the ψ basis, in
+order to determine {vjik , k = 1, . . . , d0 }, the loadings of the basis representation for φ, (A.2).
+This simplified model replaces the macrotransition hazards (8) with
+                                        d0
+                                        X                                   d0
+                                                                            X
+                 log(λ`j (t)) = c`j +         u`jk ψk (z` (t)) + 1[j ≤ 4]         ũ`jk ψk (zj (t)) ,   (A.4)
+                                        k=1                                 k=1
+
+
+thus omitting situational covariates (β `j in (8)) and using the ψ basis representation in place
+
+                                                       27
+of ξj` . Note that for pass events, like (8), we have an additional term based on the pass
+recipient’s location, parameterized by {ũ`jk , k = 1, . . . , d0 }. As discussed in Section 4.3,
+parameters in (A.4) can be estimated by running a Poisson regression. We perform this
+independently for all players ` and macrotransition types j using the R-INLA software. Like
+the microtransition model, we fit (A.4) separately for each player across L = 461 processors
+(each hazard type j is run in serial), each requiring at most 32GB RAM and taking no more
+than 16 hours.
+    For each macrotransition type j, point estimates û`jk are exponentiated6 , so that [Uj ]`k =
+exp(û`jk ). We then perform NMF (A.1) on Uj :
+                                                                  !
+                                          Uj ≈     Qj         Vj        .                              (A.5)
+                                                   L×d       d×d0
+
+
+Following the NMF example in Section A.2, the rows of Vj are bases for the variation in
+coefficients {u`jk , k = 1, . . . , d0 } across players `. As 1 ≤ k ≤ d0 indexes points on our court
+triangulation (Figure 9), such bases reflect structured variation across space. We furthermore
+use these terms as the coefficients for (A.2), the functional basis representation of φji , setting
+vjik = [Vj ]ik . Equivalently, we can summarize our spatial basis model as:
+
+                                  ξj` (z) = [wj` ]0 φj (z) = [wj` ]0 Vj ψ(z).                          (A.6)
+
+The preprocessing steps described in this section—fitting a simplified macrotransition entry
+model (A.4) and performing NMF on the coefficient estimates (A.5)—provide us with basis
+functions φji (z) that we treat as fixed and known during the modeling and inference discussed
+in Section 4.
+    Note that an analogous expression for (A.6) is used for ξ˜j` in terms of w̃j` and Ṽj for
+pass events; however, for the spatial effect ξs` in the shot probability model, we simply use
+V5 . Thus, the basis functions for the shot probability model are the same as those for the
+shot-taking hazard model.
+
+A.4 Calculating EPVA: Baseline EPV for League-Average Player
+To calculate the baseline EPV for a league-average player possessing the ball in player `’s
+                  r(`)
+shoes, denoted νt in (19), we start by considering an alternate version of the transition
+probability matrix between coarsened states P. For each player `1 , . . . , `5 on offense, there
+is a disjoint subset of rows of P, denoted P`i , that correspond to possession states for player
+`i . Each row of P`i is a probability distribution over transitions in C given possession in
+a particular state. Technically, since states in Cposs encode player identities, players on
+different teams do not share all states which they have a nonzero probability of transitioning
+to individually. To get around this, we remove the columns from each P`i corresponding to
+passes to players not on player `i ’s team, and reorder the remaining columns according to
+the position (guard, center, etc.) of the associated pass recipient. Thus, the interpretation
+of transition distributions P`i across players `i is as consistent as possible.
+   6
+    The reason for exponentiation is because estimates û`jk inform the log hazard, so exponentiation converts
+these estimates to a more natural scale of interest. Strong negative signals among the û`jk will move to 0
+in the entries of Uj and not be very influential in the matrix factorization (A.5), which is desirable for our
+purposes.
+
+
+                                                      28
+     We create a baseline transition profile of a hypothetical league-average player by averaging
+these
+PL transition probabilities across all players: (with slight abuse of notation) let Pr =
+    `=1 P` /L. Using this, we create a new transition probability matrix Pr (`) by replacing
+player `’s transition probabilities (P` ) with the league-average player’s (Pr ). The baseline
+                                                                    r(`)
+(league-average) EPV at time t is then found by evaluating νt = EPr (`) [X|Ct ]. Note that
+  r(`)
+νt depends only on the coarsened state Ct at time t, rather than the full history of the
+               (Z)                                               r(`)
+possession, Ft , as in νt (4). This “coarsened” baseline νt exploits the fact that, when
+averaging possessions over the entire season, the results are (in expectation) identical to using
+a full-resolution baseline EPV that assumes the corresponding multiresolution transition
+probability models for this hypothetical league-average player.
+
+                            APPENDIX B. DATA AND CODE
+The Git repository https://github.com/dcervone/EPVDemo contains a one game sample of
+optical tracking data (csv), along with R code for visualizing model results and reproducing
+EPV calculations. Pre-computed results of computationally-intensive steps are also included
+as Rdata files, and can be loaded to save time and resources. A reproducible knitr tutorial,
+EPV demo.Rnw, introduces the data and demonstrates core code functionality.
+
+                                       REFERENCES
+Besag, J. (1974), “Spatial Interaction and the Statistical Analysis of Lattice Systems,” Jour-
+    nal of the Royal Statistical Society: Series B (Methodological), 36(2), 192–236.
+
+Bukiet, B., Harold, E. R., & Palacios, J. L. (1997), “A Markov Chain Approach to Baseball,”
+    Operations Research, 45(1), 14–23.
+
+Burke,    B.    (2010),      “Win      Probability          Added       (WPA)       Explained,”
+    www.advancedfootballanalytics.com, (website).
+
+Cox, D. R. (1975a), “A Note on Partially Bayes Inference and the Linear Model,” Biometrika,
+    62(3), 651–654.
+
+Cox, D. R. (1975b), “Partial Likelihood,” Biometrika, 62(2), 269–276.
+
+Franks, A., Miller, A., Bornn, L., & Goldsberry, K. (2015), “Characterizing the Spatial
+    Structure of Defensive Skill in Professional Basketball,” Annals of Applied Statistics, .
+
+Gneiting, T., Balabdaoui, F., & Raftery, A. E. (2007), “Probabilistic forecasts, calibration
+    and sharpness,” Journal of the Royal Statistical Society: Series B (Statistical Method-
+    ology), 69(2), 243–268.
+
+Goldner, K. (2012), “A Markov Model of Football: Using Stochastic Processes to Model a
+    Football Drive,” Journal of Quantitative Analysis in Sports [online], 8(1).
+
+Higdon, D. (2002), “Space and Space-Time Modeling Using Process Convolutions,” in Quan-
+    titative Methods for Current Environmental Issues, New York, NY: Springer, pp. 37–56.
+
+Hollinger, J. (2005), Pro Basketball Forecast, 2005-06, Washington, D.C: Potomac Books.
+
+
+
+                                               29
+Ihler, A., Hutchins, J., & Smyth, P. (2006), “Adaptive Event Detection with Time-Varying
+     Poisson Processes,” in Proceedings of the 12th ACM SIGKDD International Conference
+     on Knowledge Discovery and Data Mining, New York, NY: ACM, pp. 207–216.
+Kemeny, J. G., & Snell, J. L. (1976), Finite Markov chains: with a new appendix” General-
+   ization of a fundamental matrix” Springer.
+Lindgren, F., Rue, H., & Lindström, J. (2011), “An Explicit Link Between Gaussian Fields
+    and Gaussian Markov Random Fields: the Stochastic Partial Differential Equation Ap-
+    proach,” Journal of the Royal Statistical Society: Series B (Methodological), 73(4), 423–
+    498.
+Lock, D., & Nettleton, D. (2014), “Using random forests to estimate win probability before
+    each play of an NFL game,” Journal of Quantitative Analysis in Sports, 10(2), 197–205.
+Miller, A., Bornn, L., Adams, R., & Goldsberry, K. (2013), “Factorized Point Process In-
+     tensities: A Spatial Analysis of Professional Basketball,” in Proceedings of the 31st
+     International Conference on Machine Learning, pp. 235–243.
+Omidiran, D. (2011), “A New Look at Adjusted Plus/Minus for Basketball Analysis,” MIT
+   Sloan Sports Analytics Conference [online], 2011.
+Prentice, R. L., Kalbfleisch, J. D., Peterson Jr, A. V., Flournoy, N., Farewell, V., & Bres-
+    low, N. (1978), “The Analysis of Failure Times in the Presence of Competing Risks,”
+    Biometrics, pp. 541–554.
+Quiñonero-Candela, J., & Rasmussen, C. E. (2005), “A Unifying View of Sparse Approximate
+     Gaussian Process Regression,” The Journal of Machine Learning Research, 6, 1939–
+     1959.
+Rasmussen, C. E. (2006), Gaussian Processes for Machine Learning, Cambridge, MA: MIT
+    Press.
+Rue, H. (2001), “Fast sampling of Gaussian Markov random fields,” Journal of the Royal
+    Statistical Society: Series B (Statistical Methodology), 63(2), 325–338.
+Rue, H., Martino, S., & Chopin, N. (2009), “Approximate Bayesian Inference for Latent
+    Gaussian Models by Using Integrated Nested Laplace Approximations,” Journal of the
+    Royal Statistical Society: Series B (Methodological), 71(2), 319–392.
+Shao, X., & Li, L. (2011), “Data-Driven Multi-Touch Attribution Models,” in Proceedings
+    of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data
+    Mining, New York, NY: ACM, pp. 258–264.
+Thomas, A., Ventura, S. L., Jensen, S. T., & Ma, S. (2013), “Competing Process Hazard
+   Function Models for Player Ratings in Ice Hockey,” The Annals of Applied Statistics,
+   7(3), 1497–1524.
+Wong, W. H. (1986), “Theory of Partial Likelihood,” The Annals of Statistics, pp. 88–123.
+Yang, T. Y., & Swartz, T. (2004), “A Two-Stage Bayesian Model for Predicting Winners in
+    Major League Baseball,” Journal of Data Science, 2(1), 61–73.
+
+
+                                             30
+

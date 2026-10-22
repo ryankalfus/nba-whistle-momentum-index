@@ -1,198 +1,68 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="NBA Whistle Momentum Index, a game-by-game metric for short-term foul-call momentum."
-    />
-    <title>NBA Whistle Momentum Index</title>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="NBA Whistle Momentum Index home">WMI</a>
-      <nav aria-label="Primary navigation">
-        <a href="#results">Results</a>
-        <a href="#search">WMI Search</a>
-        <a href="#method">Method</a>
-        <a href="#validation">Validation</a>
-        <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">GitHub</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Explore game-level NBA Whistle Momentum Index scores, their components, and the research behind foul sequences." />
+  <title>Whistle Atlas | NBA foul sequence research</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Whistle Atlas home"><span class="brand-mark" aria-hidden="true">◉</span><span>WHISTLE<br>ATLAS</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="#question">The question</a><a href="#search">Explore games</a><a href="#evidence">Evidence</a><a href="#method">Method</a>
+    </nav>
+    <a class="header-action" href="#search">Open explorer</a>
+  </header>
+  <main id="main">
+    <section id="top" class="hero">
+      <div class="hero-copy">
+        <p class="kicker">An NBA possession research project</p>
+        <h1>Does a whistle<br>change the <em>next play?</em></h1>
+        <p class="lede">Explore how defensive fouls cluster across possessions, what game-level WMI can describe, and where the evidence stops.</p>
+        <div class="hero-actions"><a class="button primary" href="#search">Explore game scores</a><a class="text-link" href="#question">See the research question</a></div>
+        <p class="hero-caveat">WMI describes recorded foul patterns. It does not rate call accuracy or referee intent.</p>
+      </div>
+      <div class="possession-board" aria-label="WMI examines the previous two possessions, the current possession, and the next two possessions">
+        <div class="board-top"><span>Possession sequence</span><span>Global game order</span></div>
+        <div class="court-line" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="possession-cells"><div><b>−2</b><small>Recent</small></div><div><b>−1</b><small>Recent</small></div><div class="current"><b>0</b><small>Foul?</small></div><div><b>+1</b><small>Follow-up</small></div><div><b>+2</b><small>Follow-up</small></div></div>
+        <div class="board-bottom"><span>Past two <strong>L<sub>t</sub></strong></span><span>Current <strong>F<sub>t</sub></strong></span><span>Next two <strong>N<sub>t</sub></strong></span></div>
+        <p>One game. One retrospective ratio. Context belongs in a separate test.</p>
+      </div>
+    </section>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">NBA analytics research</p>
-          <h1>Whistle Momentum Index</h1>
-          <p class="lede">
-            A game-by-game metric for whether recent defensive foul calls are followed by short-term
-            changes in foul-call momentum.
-          </p>
-          <div class="hero-actions" aria-label="Primary actions">
-            <a class="button primary wide-button" href="#search">Search WMI</a>
-          </div>
-        </div>
-      </section>
+    <section id="question" class="section question-section">
+      <div class="section-heading"><p class="section-index">Research direction</p><h2>One question to organize the project.</h2></div>
+      <div class="question-layout"><div class="question-statement"><p>After accounting for what was already happening in an NBA game, does recent defensive-foul history improve our ability to predict a defensive foul on the next possession?</p></div><div class="question-detail"><h3>What the product shows</h3><ol><li>Game-level WMI scores built from counted defensive fouls.</li><li>The underlying components, sample sizes, and parser version for each game.</li><li>A side-by-side comparison of two games.</li><li>The separate validation results and the limits of interpreting foul sequences.</li></ol></div></div>
+    </section>
 
-      <section id="results" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Current release</p>
-          <h2>Original WMI snapshot</h2>
-          <p>
-            These archived statistics describe 6,727 regular-season games from 2020–21 through March 2026. Search includes additional seasons and game types. Each selected game names its own percentile reference set.
-          </p>
-        </div>
+    <section id="search" class="section explorer-section">
+      <div class="section-heading"><p class="section-index">Game explorer</p><h2>Find the pattern in a game.</h2><p>Search by team, date, matchup, or game ID. Select two games to compare their WMI, component ratios, and sample support.</p></div>
+      <div class="explorer-toolbar"><div class="coverage"><strong>6,727</strong><span>games in the archived regular-season comparison set<br>2020–21 through March 2026</span></div><a href="wmi_search_games_2019_2026.csv" download>Download search data (CSV)</a></div>
+      <div class="search-tool">
+        <form class="search-controls" id="wmi-search-form">
+          <label class="field"><span>Search games</span><input id="wmi-search-input" name="q" type="search" autocomplete="off" placeholder="Team, date, matchup, or game ID" /></label>
+          <label class="field"><span>Season</span><select id="wmi-season-filter" name="season"><option value="">All seasons</option></select></label>
+          <label class="field"><span>Game type</span><select id="wmi-type-filter" name="type"><option value="">All types</option><option value="Regular Season">Regular season</option><option value="Playoffs">Playoffs</option><option value="Play-In">Play-In</option></select></label>
+        </form>
+        <div class="search-meta" id="wmi-search-meta" aria-live="polite">Loading WMI search data…</div>
+        <div class="search-layout"><div class="result-list" id="wmi-result-list" aria-label="WMI search results"></div><article class="selected-game" id="wmi-selected-game"><h3>Choose a game</h3><p>Its WMI, components, and source notes will appear here.</p></article></div>
+        <div class="compare-panel" id="compare-panel" aria-live="polite"><div><h3>Compare games</h3><p>Select a game, then add it here. Choose a second game to see them side by side.</p></div><button type="button" class="button secondary" id="compare-add">Add selected game</button><div id="compare-content" class="compare-content"></div></div>
+      </div>
+    </section>
 
-        <div class="stat-grid" aria-label="WMI summary statistics">
-          <div class="stat">
-            <span class="stat-value">6,727</span>
-            <span class="stat-label">games with WMI</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">0.961</span>
-            <span class="stat-label">mean WMI</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">0.909</span>
-            <span class="stat-label">median WMI</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">503</span>
-            <span class="stat-label">logged data gaps</span>
-          </div>
-        </div>
+    <section id="evidence" class="section evidence-section"><div class="section-heading"><p class="section-index">What the data says</p><h2>A small signal with important limits.</h2></div><div class="evidence-layout"><div class="evidence-main"><p>In the audited 2024–25 possession study, the immediate foul ratio was <strong>0.969</strong> and the conditional continuation ratio was <strong>1.011</strong>. Their product was a pooled descriptive WMI of <strong>0.980</strong>. These are research diagnostics; the public WMI remains one score per game.</p><p>Lag estimates do not show a smooth fade. Later windows often contain another foul, so one call’s independent influence cannot be read directly from those coefficients.</p><a href="research/hypotheses_2026_09_12/full_hypothesis_report.md">Read the full hypothesis report</a></div><aside class="evidence-side"><h3>Interpretation boundary</h3><p>Recorded foul sequences can reflect tactics, teams, score, bonus, opportunities, and officiating. They do not by themselves establish which calls were right or why they were made.</p><p id="validation-status">Matched models were evaluated on later seasons using the same games and context variables; one model also included past foul history.</p><p id="validation-result">In 2024–25 regular-season games, adding foul history changed held-out log loss from 0.443315 to 0.443260, an improvement of 0.000055. The game-bootstrap 95% interval for the change was −0.000107 to −0.000007. The gain is measurable but small.</p><a href="research/validation_2026_09_12/report.md">Read validation report</a></aside></div></section>
 
-        <div class="result-layout">
-          <article class="callout">
-            <h3>How to read a game</h3>
-            <dl class="thresholds">
-              <div>
-                <dt>WMI &gt; 1</dt>
-                <dd>More whistle momentum after recent defensive fouls.</dd>
-              </div>
-              <div>
-                <dt>WMI near 1</dt>
-                <dd>A small observed ratio difference; uncertainty may still be substantial.</dd>
-              </div>
-              <div>
-                <dt>WMI &lt; 1</dt>
-                <dd>Less whistle momentum after recent defensive fouls.</dd>
-              </div>
-            </dl>
-          </article>
-
-          <article class="callout muted">
-            <h3>Worked example</h3>
-            <p>
-              OKC vs. MIL on February 12, 2026 has
-              <strong>WMI = 0.952</strong> in the original snapshot. This ratio is numerically close to 1; it does not establish statistical equivalence.
-            </p>
-            <a href="wmi_breakdown_okc_mil.csv">Open the game breakdown</a>
-          </article>
-        </div>
-      </section>
-
-      <section id="search" class="section search-section">
-        <div class="section-heading">
-          <p class="eyebrow">WMI Search</p>
-          <h2>Look up a game</h2>
-          <p>
-            Search by team, date, matchup, or game ID. Recalculated games include explanatory components and foul timelines. Each result is labeled with its parser version. Results include
-            regular season, playoffs, and play-in games from 2019-20 through the available
-            2025-26 snapshot where possession-level data is available.
-          </p>
-        </div>
-
-        <div class="search-tool" aria-live="polite">
-          <form class="search-controls" id="wmi-search-form">
-            <label class="field">
-              <span>Search</span>
-              <input
-                id="wmi-search-input"
-                name="q"
-                type="search"
-                autocomplete="off"
-                placeholder="Try Lakers, 2024-05, OKC @ DAL, or 0042300312"
-              />
-            </label>
-            <label class="field">
-              <span>Season</span>
-              <select id="wmi-season-filter" name="season">
-                <option value="">All seasons</option>
-              </select>
-            </label>
-            <label class="field">
-              <span>Type</span>
-              <select id="wmi-type-filter" name="type">
-                <option value="">All types</option>
-                <option value="Regular Season">Regular season</option>
-                <option value="Playoffs">Playoffs</option>
-                <option value="Play-In">Play-In</option>
-              </select>
-            </label>
-          </form>
-
-          <div class="search-meta" id="wmi-search-meta">Loading WMI search data...</div>
-
-          <div class="search-layout">
-            <div class="result-list" id="wmi-result-list" aria-label="WMI search results"></div>
-            <article class="selected-game" id="wmi-selected-game">
-              <p class="eyebrow">Selected game</p>
-              <h3>Pick a game to see its WMI</h3>
-              <p class="muted-text">
-                The lookup is instant because the WMI values are precomputed into a static CSV.
-              </p>
-            </article>
-          </div>
-        </div>
-      </section>
-
-      <section id="validation" class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Research validation</p>
-          <h2>Does foul history add information?</h2>
-          <p id="validation-status">The validation study compares the same basketball-context model with and without recent foul history, holding out later seasons and resampling whole games for uncertainty.</p>
-        </div>
-        <div class="callout">
-          <p>Period boundaries and prediction timing were corrected. Reconstructed start-state features include score, clock, team fouls and bonus eligibility. Current-possession outcomes are excluded from predictors.</p>
-          <p id="validation-result">Results and the expansion decision are documented in the validation report.</p>
-          <p><a href="research/validation_2026_09_12/report.md">Read the validation report (Markdown)</a> · <a href="research/validation_2026_09_12/prediction_results.csv">Download model comparisons</a> · <a href="research/validation_2026_09_12/interval_validation.md">Interval coverage study</a> · <a href="site-data/audited_games.csv">Download recalculated game summaries</a></p>
-          <p class="muted-text">These are associations in final recorded play-by-play. They do not establish call correctness, referee intent or causal makeup calls. A bootstrap coverage stress test found inconsistent coverage; per-game intervals remain withheld.</p>
-        </div>
-      </section>
-
-      <section id="method" class="section band">
-        <div class="section-heading">
-          <p class="eyebrow">Method</p>
-          <h2>One formula, one active metric</h2>
-          <p>
-            WMI uses global possession windows. Its formula is unchanged. It is retrospective because the next-two-possession term uses future events. WMI does not adjust for basketball context; the separate prediction study tests whether history adds information beyond context.
-          </p>
-        </div>
-
-        <div class="formula-card">
-          <div class="formula">
-            WMI = average(M_t where L_t = 1) / average(M_t where L_t = 0)
-          </div>
-          <ul class="variable-list">
-            <li><strong>L_t</strong> equals 1 when one of the previous two possessions had a counted defensive foul.</li>
-            <li><strong>F_t</strong> equals 1 when the current possession had a counted defensive foul.</li>
-            <li><strong>N_t</strong> equals 1 when one of the next two possessions had a counted defensive foul.</li>
-            <li><strong>M_t</strong> equals F_t + F_t*N_t.</li>
-          </ul>
-        </div>
-
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <p>NBA Whistle Momentum Index v1. Built as research context, not proof of referee intent.</p>
-      <a href="https://github.com/ryankalfus/nba-whistle-momentum-index">View on GitHub</a>
-    </footer>
-    <script src="site.js"></script>
-  </body>
+    <section id="method" class="section method-section"><div class="section-heading"><p class="section-index">Method</p><h2>How WMI is made.</h2><p>WMI uses the last two and next two possessions in global game order. Because it looks ahead, a completed game is required.</p></div><div class="method-layout"><div class="formula-card"><span>Game-level formula</span><div class="formula">WMI = mean(M<sub>t</sub> | L<sub>t</sub> = 1) ÷ mean(M<sub>t</sub> | L<sub>t</sub> = 0)</div><p>M<sub>t</sub> = F<sub>t</sub> + F<sub>t</sub>N<sub>t</sub></p></div><dl class="variable-list"><div><dt>L<sub>t</sub></dt><dd>A counted defensive foul in either of the prior two possessions.</dd></div><div><dt>F<sub>t</sub></dt><dd>A counted defensive foul in the current possession.</dd></div><div><dt>N<sub>t</sub></dt><dd>A counted defensive foul in either of the next two possessions.</dd></div></dl></div><p class="method-note">WMI &gt; 1 means a higher observed ratio after recent fouls; WMI &lt; 1 means lower. Near 1 is a small observed difference, not proof of equivalence. Per-game confidence intervals are withheld because tested coverage was inconsistent.</p></section>
+  </main>
+  <footer class="site-footer"><div><strong>WHISTLE ATLAS</strong><p>NBA foul-sequence research by Ryan Kalfus.</p></div><div><a href="https://github.com/ryankalfus/nba-whistle-momentum-index">Source code</a></div></footer>
+  <script src="site.js"></script>
+</body>
 </html>

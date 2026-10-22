@@ -1,0 +1,1095 @@
+Article
+                                                                        Journal of Sports Economics
+                                                                           2022, Vol. 23(7) 950-975
+                                                                              © The Author(s) 2022
+The Effect of the Crowd on                                                  Article reuse guidelines:
+                                                                   sagepub.com/journals-permissions
+Home Bias: Evidence from                                          DOI: 10.1177/15270025211073337
+                                                                      journals.sagepub.com/home/jse
+NBA Games During the
+COVID-19 Pandemic
+
+Hua Gong1
+
+
+Abstract
+The present study examines a speciﬁc type of referee biases, home bias, and ana-
+lyzes how the presence of fans affects home bias by using NBA games played in
+empty arenas during the COVID-19 pandemic in the 2020–2021 season and
+matches played before the pandemic from 2017 to 2020. This research also uses
+a unique data set from NBA Last Two Minute Reports to assess referees’ perfor-
+mance at the play level. The ﬁndings show crowd support does not cause referees
+to treat home and away teams differently in crucial situations during the NBA reg-
+ular season, contrary to the results in most prior studies.
+
+
+Keywords
+referee bias, home bias, COVID-19, crowd support
+
+
+1.       Introduction
+Referees are appointed to make impartial decisions in sports competition. Yet, a wide
+range of biases may exist to distract referees from making correct decisions, such as
+biases based on race (e.g., Price and Wolfers, 2010), star status (e.g., Caudill et al.,
+2014), nationality (e.g., Pope and Pope, 2015), etc. Home bias, which occurs when
+referees favor home teams over away teams, is another source of referee bias
+
+
+1
+    Department of Sport Management, Rice University, USA
+
+Corresponding Author:
+Hua Gong, Department of Sport Management, Rice University, Houston, TX, 77005, USA.
+Email: hg37@rice.edu
+Gong                                                                               951
+
+
+(Garicano et al., 2005). It is often believed that home bias contributes to home advan-
+tage with referees consistently favoring home teams over their opponents (Boyko
+et al., 2007). Despite the strong belief of home bias among fans, it is less clear
+how home bias occurs in sports competition. Prior research has proposed a variety
+of plausible causes of home bias, such as crowd support (e.g., Dohmen, 2008), het-
+erogeneity in referees (e.g., Boyko et al., 2007), stake size (e.g., Garicano et al.,
+2005). Among these possibilities, the home crowd factor seems to draw the most
+attention in scholarship (Nevill et al., 2002; Sutter & Kocher, 2004).
+    The theoretical explanations of the impact of the crowd on home bias are well doc-
+umented in the literature. Several studies pointed out that social pressure created by
+home crowds causes referees to make favorable calls to home teams (Akerlof, 1980;
+Becker & Murphy, 2000; Bernheim, 1994). In sports competition, home crowds form
+a social environment to support home teams. Any actions against the home crowds
+may face strong social pressure. As a result, referees may make some decisions
+that they would not have made to gain social awards or avoid social sanctions in
+front of the home crowd (Dohmen & Sauermann, 2016).
+    Resting on theoretical foundations, a plethora of research sought to develop
+empirical evidence regarding the impact of the crowd on home bias (Nevill et al.,
+2002; Sutter & Kocher, 2004). Despite extensive research, prior studies lag in
+three areas that motivate our study. First, most prior research employed game-level
+and minute-level data, such as the number of yellow and red cards and penalty
+kicks, to investigate the impact of crowd support on home bias (Boyko et al.,
+2007; Buraimo et al., 2010; Buraimo et al., 2012). By comparing the frequency of
+game statistics in matches with and without fans, scholars drew conclusions regard-
+ing the effect of crowd support on home bias. Yet, these game statistics may be simul-
+taneously affected by player and referee behavior. Without a clear identiﬁcation
+strategy, it is difﬁcult to conclude the change in game statistics is solely caused by
+the change in referee behavior (Buraimo et al., 2017). Second, prior studies largely
+utilized the variation in attendance or the distance between the stand and the ﬁeld
+to study how the crowd affects referee behavior (e.g., Dohmen, 2008). Few studies
+considered the case where fans were completely removed from the stands. This is
+largely due to the lack of incidents where teams restrict fans from attending live
+events (e.g., Pettersson-Lidbom and Priks, 2010). However, the absence of the
+crowd may create additional effects on referees’ performance that were not captured
+before. Thus, additional analysis is needed to further investigate how the missing
+crowd will affect referee behavior. Lastly, a wealth of studies of the impact of the
+crowd on home bias focused on European football (Buraimo et al., 2017). Little
+attention is paid to other sports and sports leagues (Dohmen & Sauermann, 2016).
+Yet, prior research has noted that even within the same sport, referees may exhibit
+different behaviors across various leagues and divisions (Bryson et al., 2021).
+Thus, it is necessary to study other sports and leagues in order to develop a more
+comprehensive understanding of the effect of the crowd on home bias.
+952                                                    Journal of Sports Economics 23(7)
+
+
+   The present study uses a natural experiment from the 2020–2021 National
+Basketball Association (NBA) regular-season games played during the COVID-19
+pandemic and games played before the pandemic to study the effect of the crowd
+on home bias. This research also employs a unique data set from NBA Last Two
+Minute Reports (L2Ms) to analyze how the crowd impacts home bias. The data
+set is unique in that it does not only include the count of foul calls and non-calls,
+but also the correctness of these calls and non-calls, information that was not avail-
+able in most prior research examining home bias. With data speciﬁcally related to ref-
+erees’ performance, our research can plausibly separate referee behavior from player
+behavior, producing more accurate estimation of the impact of the crowd on home
+bias. The play-by-play nature of the data set also allows us to examine referee behav-
+ior at the play level, rather than at the game level and minute level that were often
+observed in prior research.
+
+
+
+2.    Literature Review
+2.1   Home Bias
+Early studies of home bias largely focus on developing evidence that referees favor
+home teams over away teams in sports competition. A lineage of studies relied on
+European football as the context to study home bias. Dohmen and Sauermann
+(2016) summarized numerous forms of home bias in European football. First, a
+few studies showed referees assigned more stoppage time to home teams than
+away teams. The different treatments by referees are particularly salient when
+home teams are trailing toward the end of the game (Garicano et al., 2005).
+Second, a range of studies investigated whether referees were more likely to award
+goals to home teams than away teams. By using data with the correctness of the refer-
+ring decisions, Dohmen (2008) found that more incorrect goals were awarded to
+home teams than away teams, implying strong favoritism toward home teams.
+Third, a few studies investigated whether home teams tended to receive more
+penalty kicks than their opponents (Boyko et al., 2007; Constantinou et al., 2014).
+Among these inquires, Dohmen’s (2008) study using the correctness of penalty
+kicks in Bundesliga to investigate home bias is particularly relevant to the present
+research. Speciﬁcally, he found that incorrect or disputable penalty kicks were
+more likely to be awarded to home teams, suggesting the existence of home team
+favoritism. Lastly, a number of studies compared the number of yellow cards
+awarded to home and away teams in studying home bias. Most research concluded
+that visiting teams were more likely to receive yellow cards than home teams, imply-
+ing that referees favor home teams through penalizing away teams more (Buraimo
+et al., 2010; Dawson et al., 2007; Goumas, 2014; Pettersson-Lidbom & Priks, 2010).
+    Home bias was also examined in other sports. Of particular relevance to the study
+is the referee behavior in the NBA. Price et al. (2012) extracted referee calls from
+Gong                                                                                 953
+
+
+play-by-play data to examine home bias in the NBA. They used non-discretional
+turnovers, calls that do not involve referees’ discretion, as the control group, and dis-
+cretional turnovers, calls that need subjective judgment from referees, as the treat-
+ment group. They found strong evidence that NBA referees favored home teams
+by calling fewer discretionary turnovers on home teams than away teams, relative
+to non-discretional calls. Deutscher (2015) employed NBA L2Ms from the 2014–
+2015 season and examined home bias in the NBA. Unlike Price et al.’s (2012)
+study, Deutscher (2015) did not ﬁnd strong evidence of home bias in the NBA.
+Despite the contradictory conclusions, it is crucial to note that NBA L2M data
+used in Deutscher; (2015) research only track referees’ performance late in a close
+game and may not capture home bias exhibited early in a match. Interestingly,
+Price et al. (2012) did ﬁnd some evidence that home bias was reduced in the
+fourth quarter of the NBA games, partially echoing the ﬁndings from Deutscher’s
+(2015) study.
+
+
+2.2    Causes of Home Bias
+While home bias seems common in sports competition, perhaps a more interesting
+question to ask is what factors cause home bias (Buraimo et al., 2017; Pollard,
+2008). A wide range of possible causes of home bias has been proposed and
+studied in prior research. For example, Boyko et al. (2007) found out that home
+bias might depend on individual referees. They examined matches in the English
+Premium League and discovered the variability of home bias across referees. In
+other words, certain referees were more likely to favor home teams than their
+peers. In addition, stake size may affect home bias. For example, Garicano et al.
+(2005) noted that home teams were strongly favored toward the end of the season
+when the stake of games is high. On the other hand, Price et al. (2012) reported
+that home bias was reduced in the fourth quarter of a basketball game where referees’
+decisions might signiﬁcantly inﬂuence game outcomes.
+   Another possible source of home bias that has been widely studied is the presence
+of the home crowd. With home fans cheering loudly for home teams, referees may
+face strong social pressure, and thus are likely to make biased decisions in favor
+of home teams. Based on this hypothesis, previous research used the variation in
+the size of the home crowd to test whether home fans contribute to home bias. For
+example, Garicano et al. (2005) noted that home bias was positively related to atten-
+dance in Spain soccer leagues. Other research extends the previous work by examin-
+ing how the composition of the home crowd will affect home bias. Speciﬁcally, a few
+studies calculated the ratio of attendance to capacity to gauge the proportion of away
+team fans in the crowd as they argued the ratio would be higher if more away fans
+were present (Dohmen, 2008; Garicano et al., 2005; Goumas, 2014). These studies
+found consistent evidence that home bias was mitigated when more away fans
+joined the crowd. Pettersson-Lidbom and Priks (2010) took advantage of the
+absence of the crowd in Italian football leagues, due to hooligan violence in 2007.
+954                                                    Journal of Sports Economics 23(7)
+
+
+They developed evidence that games without spectators involved less home bias.
+Prior research also used the distance to the ﬁeld to study home bias. For example,
+Dohmen (2008) and Scoppa (2008) compared the home bias in stadiums with and
+without running tracks and found the bias is weaker when games were played in sta-
+diums with running tracks.
+
+
+
+2.3   COVID-19, Home Advantage, and Home Bias
+The COVID-19 pandemic forced sports leagues and teams to play games without
+fans in the stands. This setting has created an opportunity to study whether the
+crowd drives the home advantage. While not always the case, numerous studies
+have found the reduced home advantage in games played behind closed doors
+across the world, showing evidence that the home advantage depends on crowd
+support (Benz & Lopez, 2021; Cueva, 2020; Ferraresi & Gucciardi, 2021; Ponzo
+& Scoppa, 2018). Among research that is particularly relevant to our study, Higgs
+and Stavness (2021) analyzed the home advantage in the NBA bubble where all
+games were played in empty arenas. They found that the NBA home advantage
+was signiﬁcantly reduced in the bubble. In addition, Leota et al. (2021) examined
+the NBA 2020–21 season where a signiﬁcant portion of games was played
+without fans and other proportions of games were played in partially ﬁlled areas.
+They also found that the absence of the crowd reduces the home advantage in the
+NBA.
+    In observing the reduced home advantage in sports leagues, a range of studies also
+take advantage of games played behind closed doors during the COVID-19 pandemic
+to investigate whether the crowd affects the home advantage through pressuring ref-
+erees to favor home teams over away teams (Endrich & Gesche, 2020; Fischer &
+Haucap, 2021). Speciﬁcally, these studies analyzed how home bias will differ
+when fans are allowed in games, compared to games without fans (Bryson et al.,
+2021). As of this writing, numerous investigations have shown the absence of the
+crowd did signiﬁcantly reduce home bias. For example, Bryson et al. (2021);
+Endrich and Gesche (2020), Scoppa (2021), and Sors et al. (2021) examined
+European football games played during the COVID-19 pandemic, showing that
+there was less home bias (particularly the gap between home and away teams in
+yellow cards) when teams were played in empty stadiums. Reade et al. (2020)
+used closed-door games played before the pandemic and found similar evidence of
+reduced home bias in European football leagues.
+    Despite extensive investigations of the effect of crowd support on home bias using
+games played during the COVID-19 pandemic, most studies were conducted in the
+context of European football (Reade et al., 2020). Evidence from North American
+professional sports leagues seems scant. Prior studies noted the importance of exam-
+ining different leagues and counties as research found conﬂicting results regarding
+the impact of the empty stadiums on home bias across European football leagues.
+Gong                                                                                955
+
+
+(Bryson et al., 2021; Reade et al., 2020). Therefore, there is a need to further explore
+the effect of crowd support on home bias in other sports and leagues.
+   It is also worth noting that most recent research studying the effect of the crowd on
+home bias relied on comparing game-level or minute-level statistics, such as fouls,
+penalty kicks, and yellow cards, in games with and without fans in the stands
+(Bryson et al., 2021; Endrich & Gesche, 2020). One possible issue with such a com-
+parison is that the difference may be caused by the change in player behavior rather
+than referee behavior as the absence of fans may also affect how players compete
+(Fischer & Haucap, 2021; Russell, 1983). These studies rejected the idea that the
+reduced home bias stemmed from the change in player behavior through two
+methods. First, prior studies incorporated player statistics, such as goals, tackles,
+shots, passes, fouls, etc., into statistical models to control for player behavior
+(Endrich & Gesche, 2020; Price et al., 2012). Second, a few studies compared
+player statistics in games with and without fans and noted the player statistics differ-
+ences between the two games were not signiﬁcant (Bryson et al., 2021;
+Pettersson-Lidbom & Priks, 2010). Based on this observation, they argued that the
+change in game statistics, such as the number of fouls and penalty kicks, must
+come from the change in referee behavior, not player behavior. Despite these
+efforts, prior studies cannot completely rule out the possibility that both player and
+referee behavior contribute to the change in games statistics when fans are absent.
+Therefore, more precise estimation of referee behavior is needed in order to reveal
+how the missing crowd affects home bias during the COVID-19 pandemic.
+
+
+3.     Methodology
+To better estimate the impact of the crowd on home bias, our research uses NBA
+L2M data from 1,679 NBA regular-season games played between the 2017–2018
+and 2020–2021 seasons. We excluded all games that happened in the NBA bubble
+during the 2019–2020 season from analysis as these games played in a neutral site
+and settings were signiﬁcantly different from regular NBA arenas. The unit of obser-
+vation is a foul play in NBA L2Ms. In total, our research analyzes 30,695 foul plays
+from 1,679 games.
+
+
+3.1    Data
+An NBA L2M (see Figure 1) is a play-by-play document that tracks the correctness
+of calls and non-calls for actions in the last two minutes of the fourth quarter or the
+last two minutes of any overtime in qualiﬁed games (National Basketball Association
+[NBA], n.d.a). If a game is qualiﬁed for the L2M, the NBA league ofﬁce will review
+game videos after matches to determine the correctness of every ofﬁciating decision
+(NBA, n.d.a). The ﬁrst L2M report was released in March 2015 (Deutscher, 2015).
+Since the 2017–2018 season, the NBA has provided L2Ms for any game in which
+956                                                      Journal of Sports Economics 23(7)
+
+
+
+
+Figure 1. Example of the NBA L2M.
+
+
+Table 1. Summary of ICs and INCs from the 2017-2018 to 2020-2021 Seasons.
+
+Season         IC Percentage      IC per period     INC Percentage        INC per period
+
+2017-2018          2.9%               0.096              6.0%                  0.809
+2018-2019          4.0%               0.126              6.7%                  1.020
+2019-2020          3.8%               0.125              6.3%                  0.836
+2020-2021          5.1%               0.168              4.6%                  0.578
+Average            3.9%               0.127              6.0%                  0.817
+
+
+
+one team’s lead over the other is three points or fewer at any point during the last two
+minutes of the fourth quarter or overtime (NBA, n.d.a). While the league ﬁrst
+launched L2Ms in 2015, it made signiﬁcant changes to the report before the begin-
+ning of the 2017–2018 season (NBA, n.d.a). Thus, to ensure the consistency of our
+analysis, the present study utilizes L2M data from the 2017–2018 to 2020–2021
+seasons. In addition, our research will focus on foul calls and non-calls, given the
+fact that 88% of the actions reported in L2Ms are related to fouls.1 The second
+most frequent action is turnovers, but a large number of turnover plays do not rely
+on referees’ judgment, such as 24-second violations. For these reasons, this article
+will center on examining foul actions in L2Ms. L2M data are available at
+ofﬁcial.nba.com.
+   We consider two sets of ofﬁciating decisions documented in NBA L2Ms, Correct
+Call (CC) versus Incorrect Call (IC) and Correct Non-Call (CNC) versus Incorrect
+Non-Call (INC), as our dependent variables in statistical models. Speciﬁcally, CCs
+and ICs represent the correctness of foul calls, while CNCs and INCs relate to foul
+calls missed by referees. The frequency and percentage of these calls and non-calls
+by season can be found in Table 1. It is important to note that although the percentage
+Gong                                                                               957
+
+
+of ICs (3.9%) and INCs (6.0%) are close, INCs occur more frequently in an NBA
+game than ICs. For example, the average number of INCs per period is 0.817, sug-
+gesting one incorrect foul non-call is expected to occur almost every period. On the
+other hand, the average number of ICs is equal to 0.127, implying one incorrect foul
+call is expected to happen every eight periods. Figures 2 and 3 also visualize the per-
+centage of ICs and INCs and frequency of ICs and INCs per period from the 2017–
+2018 to 2020–2021 seasons.
+   In addition to data from L2Ms, we also collect NBA player and team data from
+basketball-reference.com. As displayed in Figure 1, each play in L2Ms is linked to
+a player who may commit a foul on the court. We match player names with player
+and team information found on Basketball-Reference in order to identify whether a
+player is from the home or away team. The dummy variable Home is equal to 1 if
+a foul committing player is from the home team and 0 otherwise. We also use
+game attendance collected from basketball-reference.com to determine whether a
+given game has fans in the stands or not. The dummy variable Fan contains the
+value of 1 for games with fans and 0 for games without fans. It is critical to note
+that, unlike prior studies, we do not include game attendance as one of the predictors
+
+
+
+
+Figure 2. Percentage of ICs and INCs from the 2017-2018 to 2020-2021 seasons.
+958                                                      Journal of Sports Economics 23(7)
+
+
+
+
+Figure 3. Frequency of ICs and INCs per period from the 2017-2018 to 2020-2021 seasons.
+
+in our models due to its high correlation with the variable Fan. Figures 4 and 5 show
+the average weekly attendance for all games played between the 2017–2018 and
+2020–2021 season and how teams gradually allowed fans in NBA arenas during
+the 2020–2021 pandemic season.
+    We also gather data for a range of control variables that may affect referees’ ofﬁ-
+ciating decisions. First, prior research noted that referees might favor all-star players
+over normal players (Caudill et al., 2014). Thus, we ﬁnd the all-star status for all
+players documented in L2Ms. The all-star status is determined by players being
+selected into all-star teams in a given season. The variable Star is equal to 1 if the
+observed player has the all-star status and 0 otherwise. In addition to the all-star
+status, referees may make biased calls or non-calls based on players’ nationality
+(Dawson & Dobson, 2010; Page & Page, 2010; Pope & Pope, 2015). To control
+for this bias, we collect nationality data from basketball-reference.com and assign
+all players to one of the two categories, non-U.S. and U.S. players based on their
+born places. The dummy variable Nationality is equal to 1 for all U.S. players and
+0 for non-U.S. players. Along with player data, we also count seconds left for
+each action in L2Ms as referees may change their ofﬁciating behavior toward the
+end of the game with a few seconds left on the clock (Deutscher, 2015).
+Gong                                                                                959
+
+
+
+
+Figure 4. The presence of fans in home games during the 2020-2021 season.
+
+
+    Several variables related to game information are included in models. We use the
+variable National TV with the value of 1 to indicate games that were broadcast on
+national television based on data collected from espn.com. These nationally televised
+games are under special scrutiny and thus may change how referees make decisions on
+the court (Rocha et al., 2013; Yewell et al., 2014). Point spread data from covers.com
+is used to measure the relative strength between two competing teams. Prior research
+suggested that underdogs are more likely to receive favored calls than other teams
+(Dawson et al., 2007). Lastly, we calculate score differentials for all plays in L2Ms
+by using the home team score minus the away team score at the time of the play.
+Team scores are collected from NBA play-by-play data on basketball-reference.com.
+The prior literature suggests referees may ofﬁciate games differently when home
+teams are behind their opponents (Garicano et al., 2005).
+    We also gather referee data to control for heterogeneity in referees. Speciﬁcally,
+we consider referees’ age and experience as both of them are likely to affect their ofﬁ-
+ciating performance (Weston et al., 2011). We calculate the referee’s age by using a
+given NBA game date subtracting referee’s birthdate. Experience is estimated by
+counting the number of games referees have ofﬁciated in prior seasons. Since all
+960                                                    Journal of Sports Economics 23(7)
+
+
+
+
+Figure 5. Average weekly attendance from the 2017-2018 to 2020-2021 seasons.
+
+
+NBA games are ofﬁciated by three referees, we average their ages and count their
+total number of ofﬁciated games to construct the variables Age and Experience for
+a given play in L2Ms.
+
+
+
+3.2   Empirical Strategy
+One of the key challenges in identifying the impact of the crowd on home bias is to
+differentiate player and referee behavior as both of them are likely to be affected by
+crowds (Price et al., 2012). Without accounting for the change in player behavior,
+econometric models may suffer from endogeneity issues, resulting in biased estima-
+tion regarding the effect of crowd support on home bias.
+   We address the aforementioned issue by analyzing the correctness of foul calls
+and non-calls from NBA L2Ms at the play level. By assuming that the probability
+of ICs and INCs is independent of player behavior, we expect NBA referees will ofﬁ-
+ciate games at the same level of accuracy regardless of how hard players compete.
+This assumption allows us to directly test the impact of the home crowd on home
+bias, without worrying that the change in referees’ performance is caused by players.
+Gong                                                                              961
+
+
+   Overall, our analysis takes two steps. We ﬁrst explore the existence of home bias
+and the overall impact of the crowd on the probability of ICs and INCs in the NBA by
+using the following model speciﬁcation:
+
+             Yit = β0 + β1 Homeit + β2 Fanit + Xit′ a + σ rhv + τyw + εit          (1)
+
+
+where Yit takes the value of 1 for ICs and INCs in play i at game t and 0 otherwise.
+Homeit is a dummy variable with 1 indicating the foul committing player in play i is
+from the home team in game t and 0 otherwise. Fanit is also a dummy variable with 1
+meaning fans are allowed in play i at game t and 0 otherwise. Xit contains a set of
+control variables, including the player all-star status, nationality, seconds left,
+national TV game, favorite, score differential, etc. The term σ rhv includes referee,
+home team, and visiting team ﬁxed effects. τyw represents season and week ﬁxed
+effects. εit is an error term capturing unobserved effects on referees’ performance.
+Consider the natures of foul calls and non-calls in L2Ms, we analyze the probability
+of ICs and INCs in two separate models, one for ICs and CCs and the other one for
+INCs and CNCs.
+   After exploring the existence of home bias and the overall effect of the crowd on
+referees’ ofﬁciating performance, we then study the effect of the crowd on home
+bias. Speciﬁcally, our second model, Equation (2), extends Equation (1) by
+adding the interaction term between the Homeit and Fanit variables in order to esti-
+mate how home bias may change when arenas are ﬁlled with fans, relative to empty
+venues.
+
+  Yit = β0 + β1 Homeit + β2 Fanit + β3 Homeit ∗ Fanit + Xit′ a + σ rhv + τyw + εit (2)
+
+
+We estimate both Equations (1) and (2) using the linear probability model with the
+Ordinary Least Squares (OLS) estimation method. While other models are available,
+we choose the linear probability model in this study because its estimators are rel-
+atively easy to interpret (Ai & Norton, 2003). We also cluster standard errors at the
+game level as the accuracy of foul calls or non-calls may be correlated in each game
+(Wooldridge, 2015).
+   To further study whether the estimation results from Equations (1) and (2) are
+driven by a speciﬁc type of fouls, we pay attention to various types of foul calls
+and non-calls documented in L2Ms. Speciﬁcally, we employ the same speciﬁcations
+in Equations (1) and (2) to perform separate regression analyses for each of the four
+most frequent foul types, personal, shooting, offensive, loose ball fouls. While
+L2Ms track more than 20 types of fouls, 96% of fouls can be found in one of
+the four fouls noted above.2 Thus, we only explore these four foul types here
+instead of all of them. The detailed descriptions of these foul types can be found
+in Table 2.
+962                                                                  Journal of Sports Economics 23(7)
+
+
+Table 2. Foul Type Deﬁnitions.
+
+Foul Type          Deﬁnition
+
+Personal Foula Illegal personal contact with an opponent.
+Shooting Foul  A player is fouled in the act of shooting. Free throws should
+                   be awarded regardless of the penalty situation.
+Offensive Foul Illegal personal contact initiated by an offensive player.
+Loose Ball     A foul committed when no team has the control of the ball.
+  Foul
+Note. Detailed descriptions of fouls can be found here: https://ofﬁcial.nba.com/rule-no-12-fouls-and-
+penalties/.
+a
+  Since shooting, offensive, and loose ball fouls can all be considered personal fouls and the NBA does not
+specify what constitutes personal fouls in L2Ms, we treat personal fouls here as common defensive fouls.
+
+
+Table 3. Summary Statistics.
+
+Variable                      N                Mean                St. Dev.           Min            Max
+
+IC                             5,876             0.039               0.193             0               1
+INC                           24,819             0.060               0.237             0               1
+Home                          30,695             0.497               0.500             0               1
+Fan                           30,695             0.896               0.306             0               1
+All-star                      30,695             0.149               0.356             0               1
+Seconds Left                  30,695            51.5                36.2               0              123
+Score Differential            30,695             0.224               3.7              −14              14
+Nationality                   30,695             0.728               0.445             0               1
+National TV                   30,695             0.238               0.426             0               1
+Favorite                      30,695             0.493               0.500             0               1
+Age                           30,695            45.3                 4.9              32.5             62
+Experience                    30,695           696.1               240.9              171            1558
+
+
+
+4.    Results
+Table 3 provides summary statistics. Overall, ICs account for 3.9% of 5,876 foul calls
+in L2Ms, while INCs make up 6% of 24,819 foul non-calls. Among a total of 30,695
+plays examined in the present study, 49.7% of foul committing players are from
+home teams. About 15% of the plays involve all-star players, and 72.8% of the
+plays are related to U.S. players. Approximately half of the plays include players
+from favorite teams, according to betting odds data. The average seconds left for
+actions in L2Ms are 51.5 s, and the average score differentials are 0.224 points. Of
+all plays used in our research, almost 90% of the plays occurred in games with spec-
+tators in the stands, while the rest appeared in matches without fans. It is also impor-
+tant to note that all games played behind closed doors in our analysis are from the
+2020–2021 pandemic season. We did not include NBA bubble games as these
+Gong                                                                                         963
+
+
+games took place in a site that is vastly different from regular NBA facilities. The
+summary statistics table also shows approximately 23.8% of plays occurred in
+national TV games. The average age of referees is 45.3 and total ofﬁciating experi-
+ence is 696 games.
+
+
+4.1        Home Bias and Crowd Support
+We ﬁrst report the estimation results for Equation (1) in Table 4. Recall that Equation
+(1) considers the evidence of home bias and the overall impact of crowd support on
+referees’ ofﬁciating performance. Column 1 of Table 4 contains the results for the
+model using INCs and CNCs as the dependent variable. The estimated coefﬁcient
+on Fan is not statistically signiﬁcant. This is evidence that crowd support may not
+affect referees’ overall performance in foul non-calls. The parameter estimate on
+Home is not signiﬁcant, indicating that referees do not favor home teams over
+away teams in foul non-calls during clutch time in the NBA regular season.
+
+
+
+Table 4. Foul Non-Call Models Without the Interaction Term (INCs vs. CNCs).
+
+                            (1)             (2)              (3)              (4)         (5)
+Variable                    All           Personal         Shooting        Offensive   Loose Ball
+
+Home                        0.000     −0.002        0.008       −0.004         0.024*
+                           (0.003)     (0.006)     (0.007)       (0.005)      (0.011)
+Fan                         0.012       0.006     −0.005          0.023*       0.030
+                           (0.007)     (0.012)     (0.013)       (0.011)      (0.024)
+All Star                  −0.001      −0.006        0.002       −0.002       −0.000
+                           (0.004)     (0.008)     (0.009)       (0.007)      (0.015)
+Seconds Left              −0.0001*    −0.0001       0.0003***   −0.0003***   −0.0004*
+                           (0.0000)    (0.0001)    (0.0001)      (0.0001)     (0.0001)
+Score Differential          0.000       0.001     −0.002*         0.001      −0.001
+                           (0.000)     (0.001)     (0.001)       (0.001)      (0.001)
+Nationality                 0.005       0.009       0.001         0.015**    −0.014
+                           (0.004)     (0.006)     (0.007)       (0.005)      (0.012)
+National TV               −0.001        0.005     −0.010          0.010      −0.026
+                           (0.004)     (0.008)     (0.009)       (0.007)      (0.014)
+Favorite                  −0.003        0.002     −0.011        −0.003         0.004
+                            0.000     −0.002        0.008       −0.004        (0.011)
+Age                       −0.144      −0.276        1.095       −0.736       −1.363
+                           (0.314)     (0.588)     (0.586)       (0.526)      (1.001)
+Experience                −0.000      −0.001      −0.000        −0.000         0.002
+                           (0.000)     (0.001)     (0.001)       (0.000)      (0.001)
+N                      24819        7071        6945          7168         3011
+R2                          0.017       0.051       0.054         0.054        0.124
+Note. Standard errors in parentheses. *p < 0.1; **p < 0.05; ***p < 0.01.
+964                                                     Journal of Sports Economics 23(7)
+
+
+   Columns 2 to 5 of Table 4 report the regression analysis results for Equation (1)
+across four foul types in the model using INCs and CNCs as the dependent variable.
+Speciﬁcally, the estimated parameter on Fan is signiﬁcant only in the Offensive foul
+model, but not in the other three models. This result implies that the presence of fans
+will increase the probability of INCs in offensive fouls by 2.3%, compared to empty
+arenas. Another interesting ﬁnding from Columns 2 to 5 of Table 4 is that the esti-
+mate on Home is signiﬁcant in the Loose Ball foul model. Speciﬁcally, the model
+shows referees are 2.4% more likely to miss loose ball foul calls on home teams
+than away teams, providing some evidence of home team favoritism in the NBA.
+This ﬁnding is also evident in Figure 6 that shows the probability of INCs in loose
+ball fouls for home teams is consistently higher than away teams over the four
+seasons examined in the present study.
+   We now turn to report the estimation results for Equation (1) using ICs and CCs as
+the dependent variable in Table 5. The insigniﬁcant estimate on Home in Column 1
+implies that referees do not favor home teams by calling more incorrect calls on away
+teams than home teams. The parameter estimate on the Fan variable is not signiﬁcant
+
+
+
+
+Figure 6. Percentage of loose ball foul INCs for home and away teams from the 2017-2018
+to 2020-2021 seasons.
+Gong                                                                                           965
+
+
+Table 5. Foul Call Models Without the Interaction Term (ICs vs. CCs).
+
+                              (1)                (2)               (3)          (4)         (5)
+Variable                      All              Personal          Shooting    Offensive   Loose Ball
+
+Home                        0.006               0.002              0.013        0.151     −0.165
+                           (0.006)             (0.008)            (0.014)      (0.319)     (0.330)
+Fan                         0.001               0.007              0.013     −23.760      −1.290
+                           (0.012)             (0.015)            (0.036)     (39.353)     (2.761)
+All Star                    0.009               0.004            −0.004         0.244       0.021
+                           (0.009)             (0.010)            (0.022)      (0.636)     (0.430)
+Seconds Left                0.0003***           0.0004***        −0.0003        0.002     −0.001
+                           (0.0001)            (0.0001)           (0.0002)     (0.009)     (0.004)
+Score Differential          0.001             −0.000               0.001        0.089     −0.021
+                           (0.001)             (0.001)            (0.002)      (0.168)     (0.085)
+Nationality               −0.013              −0.005             −0.008       −0.026      −0.090
+                           (0.007)             (0.008)            (0.016)      (0.647)     (0.237)
+National TV                 0.001             −0.007               0.029      −3.664        0.395
+                           (0.007)             (0.008)            (0.021)      (7.562)     (0.797)
+Favorite                    0.008               0.003              0.021      −0.054        0.186
+                           (0.006)             (0.007)            (0.016)      (0.443)     (0.342)
+Age                         0.092             −0.046               1.915
+                           (0.485)             (0.588)            (1.397)
+Experience                  0.000               0.001              0.000
+                           (0.000)             (0.001)            (0.001)
+N                       5876                3276               1652          224         271
+R2                          0.058               0.113              0.198       0.924       0.875
+
+Note. Standard errors in parentheses. *p < 0.5; **p < 0.01; ***p < 0.001.
+
+
+either, indicating that crowd support does not generally increase the probability of
+ICs.
+   Columns 2 to 5 of Table 5 report the results for four foul types from the foul call
+model using the speciﬁcation in Equation (1). None of the estimates on Home are
+statistically signiﬁcant, consistent with the ﬁnding in Column 1. These results
+suggest home bias related to foul calls may not exist during clutch time in the
+NBA regular season. The same insigniﬁcant results can be observed on the Fan var-
+iable from Columns 2 to 5. These ﬁndings are consistent with the results in Column 1,
+showing that fans cheering in arenas does not cause referees to make more ICs.
+
+
+
+4.2        The Effect of the Crowd on Home Bias
+So far, we have reported analysis results for the models examining home bias and the
+overall impact of the crowd on referees’ performance. We now show the analysis
+results for the models using the speciﬁcation in Equation (2). Recall that the interac-
+tion term between the Fan and Home variables is added to Equation (2) in order to
+966                                                                   Journal of Sports Economics 23(7)
+
+
+investigate whether crowd support is a source of home bias. Table 6 presents the anal-
+ysis results for the models with INCs and CNCs as the dependent variable. Columns
+1 reports the results for the model using the full data set of foul non-calls and
+Columns 2 to 5 contain the analysis results for four foul types. All estimated coefﬁ-
+cients on the interaction term between Home and Fan are not statistically signiﬁcant,
+meaning referees do not treat home and away teams differently in foul non-calls
+when fans are present, relative to the absence of the crowd.
+   We now report the estimation results on control variables from the foul non-call
+models in Table 6. Among all control variables included in the model, the Seconds
+Left variable has a signiﬁcant impact on the probability of INCs. Interestingly, the
+relationship between seconds left and the probability of INCs various across different
+foul types. For example, seconds left do not seem to matter to the occurrence of per-
+sonal foul INCs. On the other hand, the Offensive and Loose Ball foul models present
+a negative relationship, meaning referees are more likely to miss offensive and loose
+
+
+
+Table 6. Foul Non-Call Models with the Interaction Term (INCs vs. CNCs).
+
+                            (1)             (2)              (3)               (4)            (5)
+Variable                    All           Personal         Shooting         Offensive      Loose Ball
+
+Home                        0.003       0.004       0.022       −0.016         0.025
+                           (0.008)     (0.015)     (0.016)       (0.012)      (0.034)
+Fan                         0.014       0.010       0.003         0.017        0.031
+                           (0.008)     (0.014)     (0.015)       (0.013)      (0.028)
+Home × Fan                −0.003      −0.007      −0.016          0.013      −0.001
+                           (0.009)     (0.016)     (0.017)       (0.013)      (0.036)
+All Star                  −0.001      −0.006        0.002       −0.002       −0.000
+                           (0.004)     (0.008)     (0.009)       (0.007)      (0.015)
+Seconds Left              −0.0001*    −0.0001       0.0003***   −0.0003***   −0.0004*
+                           (0.0000)    (0.0001)    (0.0001)      (0.0001)     (0.0001)
+Score Differential          0.000       0.001     −0.002*         0.001      −0.001
+                           (0.000)     (0.001)     (0.001)       (0.001)      (0.001)
+Nationality                 0.005       0.009       0.001         0.015**    −0.014
+                           (0.004)     (0.006)     (0.007)       (0.005)      (0.012)
+National TV               −0.001        0.005     −0.010          0.010      −0.026
+                           (0.004)     (0.008)     (0.009)       (0.007)      (0.014)
+Favorite                  −0.003        0.002     −0.011        −0.003         0.004
+                           (0.003)     (0.006)     (0.006)       (0.005)      (0.011)
+Age                       −0.144      −0.276        1.099       −0.728       −1.363
+                           (0.314)     (0.588)     (0.585)       (0.527)      (1.001)
+Experience                −0.000      −0.001      −0.000        −0.000         0.002
+                           (0.000)     (0.001)     (0.001)       (0.000)      (0.001)
+N                      24819        7071        6945          7168         3011
+R2                          0.017       0.051       0.054         0.054        0.124
+Note. Standard errors in parentheses. *p < 0.5; **p < 0.01; ***p < 0.001.
+Gong                                                                                           967
+
+
+ball foul calls toward the end of the period. Furthermore, the Shooting foul model
+suggests that the probability of referees missing shooting foul calls will signiﬁcantly
+increase with a few seconds left on the game clock.
+   Score differentials also affect the probability of INCs in the Shooting foul model.
+Recall score differentials are calculated by using the home team score minus the away
+team score at the occurrence of a foul call or non-call. The positive and signiﬁcant
+parameter estimate on Score Differential suggests the more the home team leads,
+the less likely referees will miss shooting foul calls. The positive and signiﬁcant esti-
+mate on Nationality in the Offensive foul model presents another interesting ﬁnding.
+Recall the Nationality variable takes the value of 1 for U.S. players and 0 for
+non-U.S. players. The results from the Offensive foul model suggest referees are
+1.5% more likely to miss an offensive foul call on U.S. players than non-U.S.
+players. None of the other control variables are statistically signiﬁcant in affecting
+the probability of INCs.
+
+
+
+Table 7. Foul Call Models with the Interaction Term (ICs vs. CCs).
+
+                              (1)                (2)               (3)          (4)         (5)
+Variable                      All              Personal          Shooting    Offensive   Loose Ball
+
+Home                        0.017               0.003            −0.035       −0.112        0.106
+                           (0.018)             (0.026)            (0.041)      (0.468)     (1.081)
+Fan                         0.006               0.007            −0.014      −21.175      −0.976
+                           (0.015)             (0.019)            (0.041)     (40.833)     (4.037)
+Home × Fan                −0.012              −0.001               0.054        0.296     −0.294
+                           (0.019)             (0.026)            (0.044)      (0.426)     (1.207)
+All Star                    0.009               0.004            −0.003         0.256       0.065
+                           (0.009)             (0.010)            (0.022)      (0.629)     (0.520)
+Seconds Left                0.0003***           0.0004***        −0.0003        0.002     −0.001
+                           (0.0001)            (0.0001)           (0.0001)     (0.010)     (0.004)
+Score Differential          0.001             −0.000               0.001        0.089     −0.032
+                           (0.001)             (0.001)            (0.002)      (0.175)     (0.137)
+Nationality               −0.013              −0.005             −0.008       −0.027      −0.079
+                           (0.007)             (0.008)            (0.016)      (0.670)     (0.248)
+National TV                 0.001             −0.007               0.029      −3.225        0.492
+                           (0.007)             (0.008)            (0.021)      (7.875)     (1.082)
+Favorite                    0.008               0.003              0.020      −0.093        0.174
+                           (0.006)             (0.007)            (0.016)      (0.435)     (0.338)
+Age                         0.092             −0.046               1.936
+                           (0.485)             (0.587)            (1.393)
+Experience                  0.000               0.001              0.000
+                           (0.000)             (0.001)            (0.001)
+N                       5876                3276               1652          224         271
+R2                          0.058               0.113              0.199       0.926       0.877
+Note. Standard errors in parentheses. *p < 0.5; **p < 0.01; ***p < 0.001.
+968                                                      Journal of Sports Economics 23(7)
+
+
+   Table 7 reports the ﬁndings for the model using the speciﬁcation in Equation (2)
+with ICs and CCs as the dependent variable. Similar to foul non-call models, we
+report the results for the full model in Column 1 and four foul types in Columns 2
+to 5. None of the estimated coefﬁcients on the interaction term are statistically signif-
+icant, offering consistent evidence that the gap in the probability of ICs between
+home and away teams does not change with and without fans in the stands.
+   Moving to the control variables from the foul call models in Table 7, the estimated
+coefﬁcient on Seconds Left is positive and signiﬁcant in Column 1, offering evidence
+that referees are less likely to make ICs toward the end of the game. The estimation
+results in Columns 2 to 5 also suggest that the positive relationship between Seconds
+Left and the probability of ICs largely exists in personal fouls. None of the other
+control variables are statistically signiﬁcant in affecting the probability of ICs.
+
+
+4.3    Robustness Checks
+We perform a series of robustness checks in order to test the robustness of the analysis
+results for the variable of interest, which is the interaction term between the Fan and
+Home variables in Equation (2). First, we conduct several placebo tests that examine
+whether estimation results will change when they ought not to. We also address
+some endogeneity concerns due to the pandemic effect. Then, our robustness checks
+re-examine the estimation results by using the data only from the 2020–2021 season
+in which all games were played during the COVID-19 pandemic. We also consider
+how different levels of crowd size and the timing of the competition will affect estima-
+tion results. The last few robustness checks analyze INCs at the game level, coach’s
+challenge and instant replay (NBA, n.d.b), as well as outliners in model estimations.
+   Overall, the results from robustness checks are consistent with our main ﬁndings,
+which suggest that crowd support does not cause referees to treat home and away
+teams differently in late-game situations during the NBA regular season. The full
+analyses of the robustness checks can be found in Appendix A.
+
+
+5.    Discussion
+The present study aims to study the impact of the crowd on home bias in the NBA. To
+do this, we ﬁrst check the existence of home bias and examine the overall impact of
+the crowd on NBA referee performance by using L2M data through Equation (1).
+Our research offers evidence that home bias may not widely exist in crucial situations
+during the NBA regular season, except for INCs in loose ball fouls. Figure 6 visual-
+izes the probability of INCs in loose ball fouls between home and away teams from
+the 2017–2018 to 2020–2021 seasons. This ﬁnding is expected as among the four
+foul types examined in the present study, judging the side that commits loose ball
+fouls requires the most referees’ discretion. According to the NBA league ofﬁce,
+loose ball fouls occur when no team has control of the ball (NBA, n.d.c). Our analysis
+Gong                                                                               969
+
+
+results showing home teams are more likely to receive INCs in loose ball fouls than
+away teams illustrate that referees may favor home teams through missing more loose
+ball fouls that should be called on home teams.
+    Apart from loose ball foul INCs, our research is largely in line with two prior
+research that shows little evidence of home bias in the NBA. For example, Price
+et al. (2012) found some evidence of home bias in the NBA, but also noted that
+such bias was signiﬁcantly mitigated in the fourth quarter. Their ﬁndings may be con-
+sistent with our results from NBA L2Ms, which only document foul calls and non-
+calls in the last two minutes of the fourth quarter and the last two minutes of over-
+times. Our analysis also echoes the study of home bias conducted by Deutscher
+(2015) who analyzed NBA L2M data from the 2014–2015 season. After analyzing
+foul calls and non-calls, the author did not ﬁnd home team favoritism in the NBA.
+With conclusions from prior research and the present study, it is safe to summarize
+that home bias is not common in late-game situations during the NBA regular season.
+    In addition to testing the existence of home bias in the NBA, our research also
+offers analysis of the overall impact of the crowd on referees’ performance. On the
+INC side, we show that referees are 2.3% more likely to miss calls in offensive
+fouls when fans are present. The correctness of other foul non-calls does not seem
+to be affected by the presence of the crowd. This ﬁnding is also expected as offensive
+fouls are often considered the most difﬁcult foul to judge in basketball. This is
+evident in our data set where the offensive foul calls have the lowest accuracy rate
+among four foul types. As a result, it is not surprising that the presence of the
+crowd may pressure referees to miss more offensive foul calls. For ICs, our analysis
+does not ﬁnd evidence that crowd support results in a higher probability of ICs. This
+ﬁnding is different from previous research that examines the correctness of referees’
+decisions in European football. For example, Dohmen (2008) used data from the
+German soccer league and found when fans were closer to the ﬁeld, referees
+became more likely to grant wrong or disputable penalty kicks.
+    Through Equation (2), our analysis reveals that crowd support does not cause ref-
+erees to favor home teams over away teams in foul calls and non-calls, relative to the
+absence of the crowd in NBA games. Our ﬁnding is in line with a few studies exam-
+ining the effect of the crowd on home bias (e.g., Fischer and Haucap, 2021) but con-
+tradicts most prior research that concluded the missing crowd leads to reduced home
+bias in European football leagues during the COVID-19 pandemic (e.g., Bryson
+et al., 2021; Endrich & Gesche, 2020; Scoppa, 2021; Sors et al., 2021).
+    While our study offers a different conclusion regarding the relationship between
+crowd support and home bias than prior research, it is critical to recognize a few dif-
+ferences between our study and previous work. First, our research employs play-level
+data that are not used in most prior work. In particular, the present research employs
+play-by-play data from NBA L2Ms that track the correctness of foul calls or non-calls
+at the end of close games, whereas existing research often analyzes data, such as the
+number of yellow, red cards, fouls, penalty kicks, at the game level or minute level.
+The availability of play-level data allows us to control for more factors that can
+970                                                    Journal of Sports Economics 23(7)
+
+
+potentially affect refereeing decisions, and thus produces more precise estimation of
+the inﬂuence of the crowd on home bias. Another possible reason that our analysis
+draws a different conclusion than most prior research may relate to the nature of
+L2M data. As noted before, L2Ms only document the plays in the last two
+minutes of the fourth quarter and overtimes in qualiﬁed games. Referee behavior
+in other periods of the game and games with large score differentials are not docu-
+mented by L2Ms. Thus, it is possible that referees are inﬂuenced by crowds when
+making ofﬁciating decisions on home and away teams in periods or games that are
+not covered by L2Ms. The last possible reason for our ﬁnding is that referees may
+be well aware that their actions are closely monitored in the last two minutes of
+the fourth quarter and overtimes in close games, since their foul calls and non-calls
+will be reported and evaluated in L2Ms. Thus, NBA referees may exercise extra
+caution in ofﬁciating during these periods as their refereeing performance could be
+linked to their promotion and contract extension (Deutscher, 2015; NBA, n.d.d).
+    Our study also offers evidence that the home crowd may not contribute to the
+home advantage through pressuring referees to favor home teams in the NBA. A
+wealth of studies has argued that one mechanism of how the home advantage is
+created is through home crowds pressuring referees to give favorable treatments
+toward home teams. (Boyko et al., 2007; Goumas, 2014; Johnston, 2008; Sors
+et al., 2021). If the crowd does help create the home advantage through affecting ref-
+erees’ judgment, then referees should be more biased toward home teams in games
+with fans than matches without fans. Yet, our study shows that while NBA referees
+seem to favor home teams over their opponents in loose ball foul non-calls, the gap in
+the probability of loose ball foul INCs between home and away teams does not
+change when teams compete in empty NBA arenas during the COVID-19 pandemic.
+In other foul types and call types, we do not ﬁnd evidence of home bias in the NBA
+nor do we detect any change in the relative difference of the probability of ICs and
+INCs between home and away teams in games with and without fans.
+
+
+6.    Conclusion
+The present study investigates the effect of the crowd on home bias by comparing
+NBA games played in empty arenas during the COVID-19 pandemic and games
+played before the pandemic. Using data from NBA L2Ms, our research provides con-
+sistent evidence that the presence of fans does not lead referees to treat home and
+away teams differently in clutch time during the NBA regular season. In the mean-
+time, our research offers evidence that crowd support will increase the probability of
+INCs in offensive fouls by 2.3% late in a game, indicating fans can affect referees’
+decision-making process in general. The present study also reveals some evidence
+of home bias in loose ball foul non-calls. Data analysis shows that referees are
+2.4% more likely to miss a loose ball foul on home teams than away teams. Other
+foul calls and non-calls do not present home team favoritism.
+Gong                                                                              971
+
+
+    Consider these ﬁndings, our research makes three signiﬁcant contributions to the
+home bias literature. First, our study takes advantage of the games played during the
+COVID-19 pandemic, almost half of which do not have fans in the stands. This
+setting creates a natural experiment to examine whether fans contribute to home
+bias. The majority of prior research studying how crowd support affects home bias
+relies on investigating the change in attendance as attendance data are often observ-
+able in most sporting events (e.g., Garicano et al., 2005; Sutter & Kocher, 2004). Our
+research advances the existing work by comparing games with fans completely
+removed from the stands to games with fans in the stands.
+    Second, our analysis employs play-by-play data from NBA L2Ms to isolate
+referee behavior from player behavior, producing more accurate estimation of the
+relationship between the crowd and home bias. Most prior research used game-level
+and minute-level data, such as stoppage time, penalty kicks, and yellow cards, to
+study the impact of fans on home bias (Boyko et al., 2007; Buraimo et al.,
+2010). Despite the use of numerous control variables, prior research may not
+fully rule out the possibility that the reduced home bias in empty stadiums is
+caused by the change in player behavior (Buraimo et al., 2012). Our research
+addresses this issue by examining the correctness of foul calls and non-calls at
+the play level, which allows us to directly test the impact of fans on referees’ ofﬁ-
+ciating decisions.
+    Third, most prior inquiries on home bias center on European football (Dohmen &
+Sauermann, 2016). The present study advances prior studies by examining home bias
+in one of the most popular North American sports leagues, the NBA. Our research
+draws different conclusions from previous studies, highlighting the importance of
+considering home bias in different sports and leagues (Bryson et al., 2021).
+    A few limitations of the present study need to be noted. First, our research exam-
+ining the effect of the crowd on home bias only considers close games in which score
+differentials between two teams are equal or fewer than three points at any point
+during the ﬁnal two minutes of the fourth quarter or overtime (NBA, n.d.a). Thus,
+the ﬁndings from our study may not apply to all NBA games. In addition, the data
+set used in the present study, NBA L2Ms, only documents foul calls and non-calls
+that happened late in a game. Late-game situations are signiﬁcantly different from
+other periods of the game, especially when a single foul call or missed foul call
+may dictate game outcomes toward the end of the games or in overtimes.
+Therefore, our analysis may not predict how referees will behave in other game
+situations.
+    Future research may further explore home bias and the effect of the crowd on
+home bias under more complicated situations. With the availability of NBA L2Ms,
+scholars may consider examining referee bias in the playoffs. It is believed that the
+intensity and stake of playoff games are drastically different from regular-season
+games (Price et al., 2012). Thus, referees may face more social pressure or scrutiny
+in playoff games. Future studies may investigate whether home bias will occur during
+the playoffs or how the playoff crowd will affect home bias in the NBA.
+972                                                           Journal of Sports Economics 23(7)
+
+
+Acknowledgments
+The authors would like to thank attendees of the 2021 North American Society for Sport
+Management Conference for helpful comments on the project. All errors and omissions are
+the responsibility of the authors.
+
+
+Declaration of Conﬂicting Interests
+The author declared no potential conﬂicts of interest with respect to the research, authorship,
+and/or publication of this article.
+
+
+Funding
+The author received no ﬁnancial support for the research, authorship, and/or publication of this
+article.
+
+
+ORCID iD
+Hua Gong       https://orcid.org/0000-0001-8251-570X
+
+
+Supplemental material
+Supplemental material for this article is available online.
+
+
+Notes
+1. Other call types include turnovers, instant replay, violation, stoppage, ejection, etc.
+2. The rest includes defensive 3-second, personal take, away from play, technical, etc.
+
+
+References
+Ai, C., & Norton, E. C. (2003). Interaction terms in logit and probit models. Economics Letters,
+   80(1), 123–129. https://doi.org/10.1016/S0165-1765(03)00032-6
+Akerlof, G. A. (1980). A theory of social custom, of which unemployment may be one con-
+   sequence. The Quarterly Journal of Economics, 94(4), 749–775. https://doi.org/10.2307/
+   1885667
+Becker, G. S., & Murphy, K. M. (2000). Social economics: Market behavior in a social envi-
+   ronment. Harvard University Press.
+Benz, L. S., & Lopez, M. J. (2021). Estimating the change in soccer’s home advantage during
+   the COVID-19 pandemic using bivariate poisson regression. AStA Advances in Statistical
+   Analysis, 1–28. https://doi.org/10.1007/s10182-021-00413-9
+Bernheim, B. D. (1994). A theory of conformity. Journal of Political Economy, 102(5), 841–
+   877. https://doi.org/10.1086/261957
+Boyko, R. H., Boyko, A. R., & Boyko, M. G. (2007). Referee bias contributes to home advan-
+   tage in English premiership football. Journal of Sports Sciences, 25(11), 1185–1194.
+   https://doi.org/10.1080/02640410601038576
+Gong                                                                                         973
+
+
+Bryson, A., Dolton, P., Reade, J. J., Schreyer, D., & Singleton, C. (2021). Causal effects of an
+   absent crowd on performances and refereeing decisions during COVID-19. Economics
+   Letters, 198, 109664. https://doi.org/10.1016/j.econlet.2020.109664
+Buraimo, B., Forrest, D., & Simmons, R. (2010). The 12th man?: Refereeing bias in English
+   and German soccer. Journal of the Royal Statistical Society: Series A (Statistics in Society),
+   173(2), 431–449. https://doi.org/10.1111/j.1467-985X.2009.00604.x
+Buraimo, B., Semmelroth, D., & Simmons, R. (2017). Referee bias in football. In J. Albert,
+   M. E. Glickman, T. B. Swartz, & R. H. Koning (Eds.), Handbook of statistical methods
+   and analyses in sports (pp. 417–440). Chapman and Hall/CRC.
+Buraimo, B., Simmons, R., & Maciaszczyk, M. (2012). Favoritism and referee bias in european
+   soccer: Evidence from the spanish league and the UEFA champions league. Contemporary
+   Economic Policy, 30(3), 329–343. https://doi.org/10.1111/j.1465-7287.2011.00295.x
+Caudill, S. B., Mixon Jr, F. G., & Wallace, S. (2014). Life on the red carpet: Star players and
+   referee bias in the national basketball association. International Journal of the Economics
+   of Business, 21(2), 245–253. https://doi.org/10.1080/13571516.2014.903110
+Constantinou, A. C., Fenton, N. E., & Pollock, L. J. H. (2014). Bayesian Networks for unbi-
+   ased assessment of referee bias in association football. Psychology of Sport and Exercise,
+   15(5), 538–547. https://doi.org/10.1016/j.psychsport.2014.05.009
+Cueva, C. (2020). Animal spirits in the beautiful game: Testing social pressure in professional
+   football during the COVID-19 lockdown (Working Paper). University of Alicante. https://
+   web.ua.es/va/actualidad-universitaria/documentos/2020/octubre2020/football-covid.pdf
+Dawson, P., & Dobson, S. (2010). The inﬂuence of social pressure and nationality on individ-
+   ual decisions: Evidence from the behaviour of referees. Journal of Economic Psychology,
+   31(2), 181–191. https://doi.org/10.1016/j.joep.2009.06.001
+Dawson, P., Dobson, S., Goddard, J., & Wilson, J. (2007). Are football referees really biased
+   and inconsistent? Evidence on the incidence of disciplinary sanction in the English premier
+   league. Journal of the Royal Statistical Society: Series A (Statistics in Society), 170(1),
+   231–250. https://doi.org/10.1111/j.1467-985X.2006.00451.x
+Deutscher, C. (2015). No referee bias in the NBA: New evidence with leagues’ assessment
+   data. Journal of Sports Analytics, 1(2), 91–96. https://doi.org/10.3233/JSA-150012
+Dohmen, T. J. (2008). The inﬂuence of social forces: Evidence from the behavior of football ref-
+   erees. Economic Inquiry, 46(3), 411–424. https://doi.org/10.1111/j.1465-7295.2007.00112.x
+Dohmen, T., & Sauermann, J. (2016). Referee bias. Journal of Economic Surveys, 30(4), 679–
+   695. https://doi.org/10.1111/joes.12106
+Endrich, M., & Gesche, T. (2020). Home-bias in referee decisions: Evidence from “ghost
+   matches” during the Covid19-pandemic. Economics Letters, 197, 109621. https://doi.org/
+   10.1016/j.econlet.2020.109621
+Ferraresi, M., & Gucciardi, G. (2021). Who chokes on a penalty kick? Social environment and
+   individual performance during COVID-19 times. Economics Letters, 203, 109868. https://
+   doi.org/10.1016/j.econlet.2021.109868
+Fischer, K., & Haucap, J. (2021). Does crowd support drive the home advantage in professional
+   football? Evidence from German ghost games during the COVID-19 pandemic. Journal of
+   Sports Economics, 22(8), 982–1008. https://doi.org/10.1177/15270025211026552
+974                                                          Journal of Sports Economics 23(7)
+
+
+Garicano, L., Palacios-Huerta, I., & Prendergast, C. (2005). Favoritism under social pressure.
+   Review of Economics and Statistics, 87(2), 208–216. https://doi.org/10.1162/
+   0034653053970267
+Goumas, C. (2014). Home advantage and referee bias in european football. European Journal
+   of Sport Science, 14(sup1), 243–249. https://doi.org/10.1080/17461391.2012.686062
+Higgs, N., & Stavness, I. (2021). Bayesian analysis of home advantage in North American pro-
+   fessional sports before and during COVID-19. Scientiﬁc Reports, 11(1), 1–11. https://doi.
+   org/10.1038/s41598-021-93533-w
+Johnston, R. (2008). On referee bias, crowd size, and home advantage in the English soccer
+   premiership. Journal of Sports Sciences, 26(6), 563–568. https://doi.org/10.1080/
+   02640410701736780
+Leota, J., Hoffman, D., Mascaro, L., Czeisler, M. É., Nash, K., Drummond, S., Anderson, C.,
+   Rajaratnam, S. MW., & Facer-Childs, E. (2021). Home is where the hustle is: The inﬂuence
+   of crowds on effort and home advantage in the National Basketball Association (Working
+   Paper No. 3898283). Social Science Research Network. http://dx.doi.org/10.2139/ssrn.
+   3898283
+National Basketball Association (n.d.a). NBA Last Two Minute reports – frequently asked
+   questions. NBA Ofﬁcial. https://ofﬁcial.nba.com/nba-last-two-minute-reports-frequently-
+   asked-questions/.
+National Basketball Association (n.d.b). Triggers. NBA Ofﬁcial. https://ofﬁcial.nba.com/
+   replay/triggers/.
+National Basketball Association (n.d.c). Rule No.12: Fouls and penalties. NBA Ofﬁcial.
+   https://ofﬁcial.nba.com/rule-no-12-fouls-and-penalties/.
+National Basketball Association (n.d.d). Ofﬁciating opportunities. NBA Ofﬁcial. https://
+   www.nbaofﬁcials.com/.
+Nevill, A. M., Balmer, N. J., & Williams, A. M. (2002). The inﬂuence of crowd noise and
+   experience upon refereeing decisions in football. Psychology of Sport and Exercise, 3(4),
+   261–272. https://doi.org/10.1016/S1469-0292(01)00033-4
+Page, L., & Page, K. (2010). Evidence of referees’ national favoritism in rugby (NCER
+   Working Paper Series No. 62). National Centre for Econometric Research. https://ideas.re-
+   pec.org/p/qut/auncer/2010_09.html.
+Pettersson-Lidbom, P., & Priks, M. (2010). Behavior under social pressure: Empty Italian sta-
+   diums and referee bias. Economics Letters, 108(2), 212–214. https://doi.org/10.1016/j.
+   econlet.2010.04.023
+Pollard, R. (2008). Home advantage in football: A current review of an unsolved puzzle.
+   The Open Sports Sciences Journal, 1(1), 12–14. https://doi.org/10.2174/
+   1875399X00801010012
+Ponzo, M., & Scoppa, V. (2018). Does the home advantage depend on crowd support?
+   Evidence from same-stadium derbies. Journal of Sports Economics, 19(4), 562–582.
+   https://doi.org/10.1177/1527002516665794
+Pope, B. R., & Pope, N. G. (2015). Own-nationality bias: Evidence from UEFA champions
+   league football referees. Economic Inquiry, 53(2), 1292–1304. https://doi.org/10.1111/
+   ecin.12180
+Gong                                                                                    975
+
+
+Price, J., Remer, M., & Stone, D. F. (2012). Subperfect game: Proﬁtable biases of NBA refer-
+   ees. Journal of Economics & Management Strategy, 21(1), 271–300. https://doi.org/10.
+   1111/j.1530-9134.2011.00325.x
+Price, J., & Wolfers, J. (2010). Racial discrimination among NBA referees. The Quarterly
+   Journal of Economics, 125(4), 1859–1887. https://doi.org/10.1162/qjec.2010.125.4.1859
+Reade, J. J., Schreyer, D., & Singleton, C. (2020). Eliminating supportive crowds reduces
+   referee bias (Working Paper No. 3743972). Social Science Research Network. https://
+   doi.org/10.2139/ssrn.3743972
+Rocha, B., Sanches, F., Souza, I., & Carlos Domingos da Silva, J. (2013). Does monitoring
+   affect corruption? Career concerns and home bias in football refereeing. Applied
+   Economics Letters, 20(8), 728–731. https://doi.org/10.1080/13504851.2012.736938
+Russell, G. W. (1983). Crowd size and density in relation to athletic aggression and perfor-
+   mance. Social Behavior and Personality: An international journal, 11(1), 9–15. https://
+   doi.org/10.2224/sbp.1983.11.1.9
+Scoppa, V. (2008). Are subjective evaluations biased by social factors or connections? An
+   econometric analysis of soccer referee decisions. Empirical Economics, 35(1), 123–140.
+   https://doi.org/10.1007/s00181-007-0146-1
+Scoppa, V. (2021). Social pressure in the stadiums: Do agents change behavior without crowd
+   support? Journal of Economic Psychology, 82, 102344. https://doi.org/10.1016/j.joep.
+   2020.102344
+Sors, F., Grassi, M., Agostini, T., & Murgia, M. (2021). The sound of silence in association
+   football: Home advantage and referee bias decrease in matches played without spectators.
+   European Journal of Sport Science, 21(12), 1597–1605. https://doi.org/10.1080/17461391.
+   2020.1845814
+Sutter, M., & Kocher, M. G. (2004). Favoritism of agents–the case of referees’ home bias.
+   Journal of Economic Psychology, 25(4), 461–469. https://doi.org/10.1016/S0167-
+   4870(03)00013-8
+Weston, M., Drust, B., Atkinson, G., & Gregson, W. (2011). Variability of soccer referees’
+   match performances. International Journal of Sports Medicine, 32(3), 190–194. https://
+   doi.org/10.1055/s-0030-1269843
+Wooldridge, J. M. (2015). Introductory econometrics: A modern approach. Cengage
+   Learning.
+Yewell, K. G., Caudill, S. B., & Mixon Jr, F. G. (2014). Referee bias and stoppage time in
+   major league soccer: A partially adaptive approach. Econometrics, 2(1), 1–19. https://
+   doi.org/10.3390/econometrics2010001n
+
+Author Biography
+Hua Gong is an assistant professor in the Department of Sport Management at Rice
+University. His research interests include sports analytics and sports economics.
+
