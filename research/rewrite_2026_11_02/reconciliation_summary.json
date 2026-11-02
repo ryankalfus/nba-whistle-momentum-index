@@ -1,0 +1,430 @@
+{
+  "comparison": {
+    "candidate_possessions": 1196161,
+    "changed_vs_hypothesis": 5433,
+    "changed_vs_validation": 3028,
+    "hypothesis_groups_same_games": 1209538,
+    "matched_games": 5999,
+    "validation_possessions_same_games": 1191875,
+    "validation_reference": "research/validation_2026_09_12/parser_comparison.csv",
+    "validation_reference_sha256": "1e9e43e0bdf4545c98b9c0f2ee4d8f05dd4a0e790c8945b82848f972efa1ec02"
+  },
+  "date": "2026-11-02",
+  "eligible_games": 0,
+  "independent_audit_status": "BLOCKED",
+  "issues": {
+    "event_owner_conflict": 5,
+    "foul_defense_unresolved": 419,
+    "independent_audit_required": 5999,
+    "missing_period_end": 20,
+    "offensive_foul_owner_conflict": 52,
+    "partial_start": 12,
+    "provisional_final_possession": 2,
+    "unexplained_control_transfer": 2780,
+    "unknown_ownership": 116,
+    "unsupported_free_throw": 3,
+    "unsupported_label": 236,
+    "violation_requires_audit": 10347
+  },
+  "limitations": [
+    "Candidate has not passed independent footage audit.",
+    "Unknown or incomplete sequences do not receive game WMI; no groups are dropped to manufacture a complete sequence.",
+    "Historical derived home/away metadata is used for comparison, not as independent schedule proof.",
+    "Changing parser counts is not itself evidence of improved accuracy."
+  ],
+  "metadata": [
+    {
+      "file": "cdnnba_2020_games.csv",
+      "sha256": "db1dea6c56f6f6098ee0fee9ed9b5cd96f4871fa00d92c8171c5f7cf1c855d13",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2021_games.csv",
+      "sha256": "1eb950749765888e6afede055d51132d89af45326acec5a72e010b314f3a6bce",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2022_games.csv",
+      "sha256": "a2ebd2045d148982dbc1866ae57bdc03b030fae5fbf399937385524c8a47fdd5",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2023_games.csv",
+      "sha256": "0b92a99783b83f2578869ceb1f0c5a0644008ff036195437eff99604cc8efa64",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2024_games.csv",
+      "sha256": "0ff4396b5678527c98a9599373fc124e7b6e442a3dde78695a713f83a2afa302",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_po_2024_games.csv",
+      "sha256": "12d21f77ae130735746a8fe53dda695dc2b11ea8f317e3e63dce16f9252cf613",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    }
+  ],
+  "metric_statuses": {
+    "descriptive_candidate": 970,
+    "not_computed": 85,
+    "withheld_incomplete_or_ambiguous": 5029
+  },
+  "observed_games": 6084,
+  "parser_sha256": "a0fc53a3389002d79affef35300ce76f12a7fe058621d6231d35b0676a45743a",
+  "parser_version": "canonical_candidate_v1",
+  "quarantined_games": [
+    {
+      "game_id": "0022000147",
+      "reason": "clock/period regression at action 621"
+    },
+    {
+      "game_id": "0022000153",
+      "reason": "clock/period regression at action 301"
+    },
+    {
+      "game_id": "0022000181",
+      "reason": "clock/period regression at action 594"
+    },
+    {
+      "game_id": "0022000195",
+      "reason": "clock/period regression at action 672"
+    },
+    {
+      "game_id": "0022000216",
+      "reason": "clock/period regression at action 742"
+    },
+    {
+      "game_id": "0022000232",
+      "reason": "clock/period regression at action 571"
+    },
+    {
+      "game_id": "0022000245",
+      "reason": "clock/period regression at action 363"
+    },
+    {
+      "game_id": "0022000254",
+      "reason": "clock/period regression at action 661"
+    },
+    {
+      "game_id": "0022000323",
+      "reason": "clock/period regression at action 642"
+    },
+    {
+      "game_id": "0022000449",
+      "reason": "clock/period regression at action 668"
+    },
+    {
+      "game_id": "0022000450",
+      "reason": "clock/period regression at action 659"
+    },
+    {
+      "game_id": "0022000513",
+      "reason": "clock/period regression at action 740"
+    },
+    {
+      "game_id": "0022000587",
+      "reason": "clock/period regression at action 157"
+    },
+    {
+      "game_id": "0022000630",
+      "reason": "clock/period regression at action 204"
+    },
+    {
+      "game_id": "0022000686",
+      "reason": "clock/period regression at action 663"
+    },
+    {
+      "game_id": "0022000779",
+      "reason": "clock/period regression at action 332"
+    },
+    {
+      "game_id": "0022000849",
+      "reason": "clock/period regression at action 146"
+    },
+    {
+      "game_id": "0022000881",
+      "reason": "clock/period regression at action 669"
+    },
+    {
+      "game_id": "0022000908",
+      "reason": "clock/period regression at action 639"
+    },
+    {
+      "game_id": "0022000925",
+      "reason": "clock/period regression at action 338"
+    },
+    {
+      "game_id": "0022000968",
+      "reason": "clock/period regression at action 564"
+    },
+    {
+      "game_id": "0022000983",
+      "reason": "clock/period regression at action 620"
+    },
+    {
+      "game_id": "0022001021",
+      "reason": "clock/period regression at action 359"
+    },
+    {
+      "game_id": "0022001027",
+      "reason": "clock/period regression at action 566"
+    },
+    {
+      "game_id": "0022001028",
+      "reason": "clock/period regression at action 421"
+    },
+    {
+      "game_id": "0022100016",
+      "reason": "clock/period regression at action 440"
+    },
+    {
+      "game_id": "0022100039",
+      "reason": "clock/period regression at action 655"
+    },
+    {
+      "game_id": "0022100102",
+      "reason": "clock/period regression at action 651"
+    },
+    {
+      "game_id": "0022100154",
+      "reason": "clock/period regression at action 554"
+    },
+    {
+      "game_id": "0022100198",
+      "reason": "clock/period regression at action 598"
+    },
+    {
+      "game_id": "0022100206",
+      "reason": "clock/period regression at action 159"
+    },
+    {
+      "game_id": "0022100224",
+      "reason": "clock/period regression at action 510"
+    },
+    {
+      "game_id": "0022100234",
+      "reason": "clock/period regression at action 66"
+    },
+    {
+      "game_id": "0022100250",
+      "reason": "clock/period regression at action 613"
+    },
+    {
+      "game_id": "0022100251",
+      "reason": "clock/period regression at action 695"
+    },
+    {
+      "game_id": "0022100367",
+      "reason": "clock/period regression at action 610"
+    },
+    {
+      "game_id": "0022100376",
+      "reason": "clock/period regression at action 625"
+    },
+    {
+      "game_id": "0022100385",
+      "reason": "clock/period regression at action 595"
+    },
+    {
+      "game_id": "0022100417",
+      "reason": "clock/period regression at action 653"
+    },
+    {
+      "game_id": "0022100456",
+      "reason": "clock/period regression at action 563"
+    },
+    {
+      "game_id": "0022100462",
+      "reason": "clock/period regression at action 429"
+    },
+    {
+      "game_id": "0022100485",
+      "reason": "clock/period regression at action 422"
+    },
+    {
+      "game_id": "0022100494",
+      "reason": "clock/period regression at action 538"
+    },
+    {
+      "game_id": "0022100569",
+      "reason": "clock/period regression at action 694"
+    },
+    {
+      "game_id": "0022100573",
+      "reason": "clock/period regression at action 656"
+    },
+    {
+      "game_id": "0022100581",
+      "reason": "clock/period regression at action 644"
+    },
+    {
+      "game_id": "0022100596",
+      "reason": "clock/period regression at action 86"
+    },
+    {
+      "game_id": "0022100604",
+      "reason": "clock/period regression at action 531"
+    },
+    {
+      "game_id": "0022100630",
+      "reason": "clock/period regression at action 522"
+    },
+    {
+      "game_id": "0022100697",
+      "reason": "clock/period regression at action 516"
+    },
+    {
+      "game_id": "0022100715",
+      "reason": "clock/period regression at action 132"
+    },
+    {
+      "game_id": "0022100728",
+      "reason": "clock/period regression at action 551"
+    },
+    {
+      "game_id": "0022100743",
+      "reason": "clock/period regression at action 369"
+    },
+    {
+      "game_id": "0022100750",
+      "reason": "clock/period regression at action 455"
+    },
+    {
+      "game_id": "0022100756",
+      "reason": "clock/period regression at action 583"
+    },
+    {
+      "game_id": "0022100758",
+      "reason": "clock/period regression at action 530"
+    },
+    {
+      "game_id": "0022100759",
+      "reason": "clock/period regression at action 541"
+    },
+    {
+      "game_id": "0022100787",
+      "reason": "clock/period regression at action 636"
+    },
+    {
+      "game_id": "0022100805",
+      "reason": "clock/period regression at action 605"
+    },
+    {
+      "game_id": "0022100807",
+      "reason": "clock/period regression at action 572"
+    },
+    {
+      "game_id": "0022100853",
+      "reason": "clock/period regression at action 562"
+    },
+    {
+      "game_id": "0022100865",
+      "reason": "clock/period regression at action 178"
+    },
+    {
+      "game_id": "0022100915",
+      "reason": "clock/period regression at action 524"
+    },
+    {
+      "game_id": "0022100920",
+      "reason": "clock/period regression at action 428"
+    },
+    {
+      "game_id": "0022100932",
+      "reason": "clock/period regression at action 554"
+    },
+    {
+      "game_id": "0022100935",
+      "reason": "clock/period regression at action 636"
+    },
+    {
+      "game_id": "0022100954",
+      "reason": "clock/period regression at action 666"
+    },
+    {
+      "game_id": "0022101030",
+      "reason": "clock/period regression at action 149"
+    },
+    {
+      "game_id": "0022101060",
+      "reason": "clock/period regression at action 589"
+    },
+    {
+      "game_id": "0022101065",
+      "reason": "clock/period regression at action 634"
+    },
+    {
+      "game_id": "0022101106",
+      "reason": "clock/period regression at action 173"
+    },
+    {
+      "game_id": "0022101149",
+      "reason": "clock/period regression at action 646"
+    },
+    {
+      "game_id": "0022101176",
+      "reason": "clock/period regression at action 538"
+    },
+    {
+      "game_id": "0022101227",
+      "reason": "clock/period regression at action 588"
+    },
+    {
+      "game_id": "0022101229",
+      "reason": "clock/period regression at action 562"
+    },
+    {
+      "game_id": "0022200908",
+      "reason": "clock/period regression at action 591"
+    },
+    {
+      "game_id": "0022200943",
+      "reason": "clock/period regression at action 189"
+    },
+    {
+      "game_id": "0022300367",
+      "reason": "clock/period regression at action 496"
+    },
+    {
+      "game_id": "0022300394",
+      "reason": "clock/period regression at action 627"
+    },
+    {
+      "game_id": "0022300474",
+      "reason": "clock/period regression at action 380"
+    },
+    {
+      "game_id": "0022300786",
+      "reason": "clock/period regression at action 412"
+    },
+    {
+      "game_id": "0022301129",
+      "reason": "clock/period regression at action 7"
+    },
+    {
+      "game_id": "0022301177",
+      "reason": "clock/period regression at action 473"
+    },
+    {
+      "game_id": "0022400326",
+      "reason": "clock/period regression at action 585"
+    },
+    {
+      "game_id": "0022400334",
+      "reason": "clock/period regression at action 758"
+    }
+  ],
+  "reconciliation_module_sha256": "d31d7e69958d548a9eebe0306f1c1715f7b4dbebc652f2cf6bd885a83e5054c9",
+  "report_sha256": "c060489701e5e0eea15a5ca5d0ccd51f1741a61c80f38ba8df479b701bee7f11",
+  "selection": {
+    "limit_per_source": 0,
+    "method": "first_games_per_archive_diagnostic_not_random"
+  },
+  "source_failures": [],
+  "source_manifest_sha256": "fd0d6639ef35e84d3d63b1e10035312f2cf5c7bd60973c856278ec54dd27b84a",
+  "status": "candidate_diagnostics_not_validation",
+  "statuses": {
+    "candidate_diagnostic_only": 5999,
+    "quarantined": 85
+  }
+}
