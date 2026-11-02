@@ -1,0 +1,56 @@
+{
+  "all_sources_verified": true,
+  "cohorts": [
+    {
+      "game_type": "regular_season",
+      "games": 1080,
+      "season": "2020-21"
+    },
+    {
+      "game_type": "regular_season",
+      "games": 1230,
+      "season": "2021-22"
+    },
+    {
+      "game_type": "regular_season",
+      "games": 1230,
+      "season": "2022-23"
+    },
+    {
+      "game_type": "regular_season",
+      "games": 1230,
+      "season": "2023-24"
+    },
+    {
+      "game_type": "playoffs",
+      "games": 84,
+      "season": "2024-25"
+    },
+    {
+      "game_type": "regular_season",
+      "games": 1230,
+      "season": "2024-25"
+    }
+  ],
+  "coverage": {
+    "completeness": "unverified",
+    "games": [],
+    "schedule_evidence": null,
+    "status": "observed_only"
+  },
+  "date": "2026-11-02",
+  "dispositions": {
+    "observed": 6084
+  },
+  "limitations": [
+    "No independent expected-game schedule supplied.",
+    "Observed archives do not establish complete seasons or independently validated possession labels."
+  ],
+  "manifest_sha256": "fd0d6639ef35e84d3d63b1e10035312f2cf5c7bd60973c856278ec54dd27b84a",
+  "observed_games": 6084,
+  "reproduce": ".venv/bin/python -m whistle_research.sources inventory --manifest research/hypotheses_2026_09_12/source_manifest.json --cache research/hypotheses_2026_09_12/cache --output NEW_DIRECTORY",
+  "source_failures": [],
+  "source_module_sha256": "a87001bd724eb427ee4d6bc2a86509420fc9edaa26bdf9865c753cada15cfa7e",
+  "status": "automated_source_inventory_only",
+  "verified_sources": 10
+}
