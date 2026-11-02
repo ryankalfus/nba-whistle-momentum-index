@@ -1,0 +1,68 @@
+{
+  "checked_on": "2026-11-02",
+  "command": ".venv/bin/python scripts/check.py",
+  "exit_code": 0,
+  "python_tests_passed": 425,
+  "javascript_tests": {
+    "legacy_site": "passed",
+    "v2_site": {
+      "passed": 5,
+      "failed": 0
+    }
+  },
+  "lint": "passed",
+  "dependency_check": "passed",
+  "wheel_build_and_isolated_install": "passed",
+  "log": {
+    "path": "output/v2/rewrite-publication-checks-2026-11-02.log",
+    "sha256": "6bf52e3d4f2d90627a816dc4c6dd45de038c3eb6bf22658c512f4e524be21053",
+    "bytes": 8103
+  },
+  "independent_review": {
+    "model": "Sol",
+    "status": "no_open_findings",
+    "focused_python_tests": 118,
+    "artifact_bindings_checked": 24
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8765/v2/",
+    "desktop": "Default desktop viewport: evidence rendered; selected independent step process displayed WMI 3.400.",
+    "phone": "390x844: readable responsive navigation/content; rare-process selection displayed mean 0.139 and 67.3% undefined.",
+    "console_errors_or_warnings": 0,
+    "final_payload_reload": "Final v5 values and both playback-only badges observed; viewport reset.",
+    "scientific_gate": "BLOCKED",
+    "continuous_footage_coverage_verified": false
+  },
+  "final_artifacts": [
+    {
+      "path": "v2/data.json",
+      "sha256": "c8443dc0608a16a11a54098b95a8e44734fda82ce43b4cc92eb15ae61bf1c5ad",
+      "bytes": 84166
+    },
+    {
+      "path": "research/rewrite_completion_2026_11_02/pipeline_summary.json",
+      "sha256": "15f37a6d31d6724c839564b479e077d87b50564fb8e1487db826b4733e745cdb",
+      "bytes": 4571
+    },
+    {
+      "path": "research/rewrite_completion_2026_11_02/public_replays.json",
+      "sha256": "78e371790766ed0c79ea924ade98ed1246941bd8c86f9c0803f08f2f224d1d43",
+      "bytes": 12764
+    },
+    {
+      "path": "research/rewrite_completion_2026_11_02/development_report.md",
+      "sha256": "16e3a37c7e6b3c367c0a5b3253f3591cc542b27895379670349674eba1cd6d13",
+      "bytes": 1368
+    },
+    {
+      "path": "research/rewrite_completion_2026_11_02/draft_paper.md",
+      "sha256": "c256ee36225d26cc1a4d21dc2034446d39e5d1998aa8bb5f42eae73d6adcf082",
+      "bytes": 1354
+    }
+  ],
+  "limitations": [
+    "Software and browser checks do not establish empirical scientific accuracy.",
+    "Independent review is code/evidence consistency review, not the missing human full-game annotation.",
+    "No real empirical model fit, scientific release, merge or deployment performed."
+  ]
+}

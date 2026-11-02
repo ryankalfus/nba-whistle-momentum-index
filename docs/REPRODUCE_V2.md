@@ -1,6 +1,6 @@
 # Reproduce the v2 development diagnostics
 
-Date: 2026-11-02. These commands produce implementation diagnostics, not a validated research release. Run from the repository root after the locked environment is installed. Each output directory must be new; use another name when repeating a run. All paths below are portable repository-relative paths.
+Date: 2026-11-02. These commands produce implementation diagnostics, not a validated research release. **For the current integrated v5 workflow, use [PIPELINE.md](PIPELINE.md).** The individual earlier-stage commands below explain preserved development artifacts; they are not an instruction to rebind old audit templates to current code. Run from the repository root after the locked environment is installed. Each output directory must be new; use another name when repeating a run. All paths below are portable repository-relative paths.
 
 ## Environment and checks
 
@@ -14,7 +14,7 @@ bash scripts/bootstrap.sh
 .venv/bin/python scripts/check.py
 ```
 
-The check command covers maintained lint, all Python tests, website unit checks, wheel building and installation outside the source tree. No website redesign is included in this stack, so no browser sweep is needed.
+The check command covers maintained lint, all Python tests, both website unit suites, wheel building and installation outside the source tree. The `/v2/` development notebook additionally receives a focused browser check when its UI changes.
 
 ## Immutable source inputs
 
@@ -24,7 +24,7 @@ The historical source manifest is tracked; its raw cache is gitignored. A fresh 
 .venv/bin/python -m whistle_research.fetch --manifest research/hypotheses_2026_09_12/source_manifest.json --cache research/hypotheses_2026_09_12/cache --output output/v2/fetch-check
 ```
 
-This is the only network step. Existing matching cache files are reused. Mismatched existing inputs are refused; preserve and investigate them instead of replacing evidence automatically. Do not run the old hypothesis runner's fetch path against a historical release because it regenerates that release's manifest.
+This source-acquisition step uses the network. Independent schedule acquisition has its own explicit command and snapshot evidence; see `SCHEDULE_COVERAGE.md`. Existing matching cache files are reused. Mismatched existing inputs are refused; preserve and investigate them instead of replacing evidence automatically. Do not run the old hypothesis runner's fetch path against a historical release because it regenerates that release's manifest.
 
 ```bash
 .venv/bin/python -m whistle_research.sources inventory --manifest research/hypotheses_2026_09_12/source_manifest.json --cache research/hypotheses_2026_09_12/cache --output output/v2/source-inventory
@@ -61,3 +61,9 @@ The tracked `audit_config.draft.json` and `audit_reviews.empty.json` contain del
 Expected result now: exit status 1 and `gate.json` with `status=BLOCKED`. This is an intentional scientific gate outcome, not a failed implementation check. It lists missing independent schedule evidence, frozen tolerances/assumptions and reviews; using preserved v1 templates with a new v2 plan also reports binding mismatches. Full-game footage and reviewers remain unresolved. The 2026-11-02 access investigation verified activation prompts for all 14 game pages and playback of one selected event clip; it did not obtain full-game coverage. See `research/footage_2026_11_02/README.md`.
 
 Before collecting protected audit labels, choose sample size/error tolerances and record a genuine pre-review freeze. Two independent full-game reviewers provide evidence/annotation references, source bindings, start/completion timestamps and discrepancy labels. Agreeing labels need no third reviewer; disagreements require a distinct adjudicator, and any supplied adjudication is validated. Original labels are preserved. The exact game-level one-sided bound uses only the random stratum, not enriched cases. A conditional pass checks the evidence structure and declared assumptions; it does not authenticate external attestations or authorize model/publication gates automatically. See `AUDIT_PROTOCOL.md` and the `audit` module schema.
+
+## Current integrated v5 workflow
+
+[PIPELINE.md](PIPELINE.md) verifies source bytes and independent schedule, runs reconciliation and feature export, writes a fresh parser-bound audit packet, executes mathematical/model demonstrations and generates reports in one new output directory. Explicit reuse still rehashes inputs and verifies aligned full feature/provenance streams. Its real-data promotion/fit path remains blocked for the actual current dataset.
+
+[SCHEDULE_COVERAGE.md](SCHEDULE_COVERAGE.md), [FEATURE_CONTRACT.md](FEATURE_CONTRACT.md), [MATHEMATICAL_VALIDATION.md](MATHEMATICAL_VALIDATION.md), [MODELING_CONTRACT.md](MODELING_CONTRACT.md) and [EXPLORER_V2.md](EXPLORER_V2.md) document each layer. Current public-only access observations in `research/rewrite_completion_2026_11_02/public_replays.json` supersede the earlier no-playback search result: two long broadcasts play, but none has independently verified continuous coverage. The scientific audit stays blocked.

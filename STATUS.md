@@ -2,20 +2,24 @@
 
 ## Current work
 
-Research-first v2 rewrite authorized on 2026-11-02. Foundation, source tooling and candidate reconstruction are merged into main; independent-audit tooling is implemented. The legacy research release and website remain the public baseline. The full rewrite is not complete: no new scientific result is independently validated or published, and the audit gate remains BLOCKED. Merging implementation does not pass the scientific gate.
+The v2 software now connects verified inputs, independent schedule accounting, versioned reconstruction, feature export, mathematical simulations, gated matched models, a generated draft manuscript and a development research explorer. The independent scientific audit has **not passed**: zero games are eligible and no new empirical finding is published. Software completion and scientific validation remain separate. The legacy release stays preserved.
 
-| Stage | State | Release gate |
+| Stage | Implementation state | Remaining scientific evidence |
 | --- | --- | --- |
-| 1. Protocol and environment | Merged; independently reviewed; local checks and Linux CI passed | Development protocol remains unlocked |
-| 2. Source inventory | Implemented; independently reviewed; ten sources verified / 6,084 observed games | Independent expected-game schedule still required |
-| 3. Canonical reconstruction | Candidate v2 implemented; all 6,084 games diagnosed after corroborated goaltending correction | Semantic/clock flags and independent accuracy audit unresolved; zero eligible games |
-| 4. Independent audit | Tools and fresh v2-bound 14-game pilot implemented; gate BLOCKED | 14 official game routes checked; full-game access/reviewers, independent schedule and pre-review tolerances still missing |
-| 5. Descriptive mathematics | Exact legacy components, missingness and exhaustive short-sequence checks implemented | Broader process simulations and uncertainty validation remain pending |
-| 6. Stronger matched models | Blocked by audit | Past-only features, matched evaluation design |
-| 7. Locked evaluation | Blocked by audit and protocol lock | Unused evaluation cohort and frozen procedure |
-| 8. Paper and explorer | Pending | Validated release, generated results, accessible provenance |
+| 1. Protocol and environment | Pinned package, checks and development protocol implemented | Genuine protocol freeze and meaningful-gain threshold |
+| 2. Source inventory | Ten source files verified; independent ESPN/NBA evidence accounts for all 6,084 games and 30 corrected dates | Source accuracy remains subject to audit |
+| 3. Canonical reconstruction | Candidate v5; 6,000 reconstructed, 84 quarantined; event provenance retained | 257 transfer flags, 373 violation flags and other ambiguity; zero eligible games |
+| 4. Independent audit | Parser-bound fixed 10-random + 4-enriched packet and strict gate implemented | Full continuous footage, two independent reviewers, pre-review tolerances; gate BLOCKED |
+| 5. Descriptive mathematics | Exact references, seven process simulations, uncertainty stress tests implemented and reproduced | Synthetic behavior is not an NBA finding; no per-game WMI intervals asserted |
+| 6. Stronger matched models | Before-event adapter, additive/nonlinear context and matched history models, gated real fit/evaluation paths implemented | Actual data remain ineligible; no real fit authorized |
+| 7. Locked evaluation | Chronological splits, matched losses, calibration, conditional game bootstrap and exposure inventory implemented | No unused cohort or protocol freeze established; 2025–26 snapshot already exposed |
+| 8. Paper and explorer | One-command development pipeline, generated draft and local v2 notebook implemented | Empirical paper results and public scientific release remain blocked |
+
+Current evidence: `research/rewrite_completion_2026_11_02/`. Reproduction: `docs/PIPELINE.md`. Local explorer: `/v2/` when serving the repository. Public replay search found twelve exact-game listings and two playable long broadcasts; continuous coverage and independent annotation remain unverified.
 
 ## Milestones
+
+- 2026-11-02: Integrated the research software workflow. Independently cross-checked all 6,084 games, corrected 30 stale metadata dates with preserved official evidence, and reran candidate v5 across all sources. Exported 1,193,032 provisional rows with all 2,221 unknown targets retained; 5,972 games have full-game markers and 1,859 have unresolved critical issues. Synthetic mathematics demonstrates that changing independent rates can inflate WMI; matched synthetic modeling and gated real APIs now run. Added strict conditional promotion, an exposure inventory (including previously analyzed 2025–26), generated development report/manuscript, and a hash-bound research notebook. The actual gate remains BLOCKED with zero independent reviews and zero eligible games. Public-only footage discovery found 12 exact listings and verified playback of two long broadcasts, not complete film coverage. Final local checks pass 425 Python tests, both website suites, lint and isolated wheel installation; focused desktop/phone checks pass. Verification results are recorded in the dated completion evidence.
 
 - 2026-11-02: Completed official-source discovery and live access checks for all 14 pilot games: activation prompts on every game page, entitlement prompts on two direct archive players, and one successfully played official event clip. No full-game replay or independent annotation was obtained. Classified all 10,347 v1 violation flags, all 2,780 unexplained-transfer flags, and 91 clock rises across 85 quarantines. Fixed a demonstrated made-basket/goaltending duplicate boundary in `canonical_candidate_v2`; a full source-verified rerun reduces transfer flags to 227 and group counts from 1,196,161 to 1,193,332 while retaining all violation flags, the same 85 quarantines and zero eligible games. Local checks pass 219 tests plus lint/site/wheel checks. A new parser-bound pilot uses the same sample and remains BLOCKED with empty reviews and unlocked tolerances. Evidence: `research/footage_2026_11_02/`. Next implementation work is the 227 remaining transfers, violation semantics and explicit clock-correction evidence, alongside independent schedule coverage.
 

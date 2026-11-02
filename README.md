@@ -1,6 +1,8 @@
 # NBA whistle research
 
-The v2 rewrite is in development: a Python package, immutable source ledger, and auditable possession reconstruction support a recorded defensive-foul prediction study. The independent reconstruction audit has not passed; package checks do not establish scientific validity. See [STATUS.md](STATUS.md), [research protocol](docs/RESEARCH_PROTOCOL.md), and [rewrite plan](docs/REWRITE_PLAN.md). The legacy WMI release and explorer below remain the public baseline.
+The v2 software provides a reproducible recorded-foul prediction workflow: immutable source verification, independent schedule accounting, candidate possession reconstruction, traceable features, mathematical diagnostics, gated matched models and a development research notebook. The independent audit remains **BLOCKED**, with zero eligible games; software checks do not establish scientific validity. The legacy WMI release below is preserved.
+
+Start with [current status](STATUS.md), [one-command pipeline](docs/PIPELINE.md), [research protocol](docs/RESEARCH_PROTOCOL.md) and [exposure inventory](docs/EXPOSURE_INVENTORY.md). Serve the repository and open **`/v2/`** for the generated development explorer. Its synthetic demonstrations and provisional data are explicitly labeled; no new empirical result or publication approval is implied.
 
 ## Development environment
 

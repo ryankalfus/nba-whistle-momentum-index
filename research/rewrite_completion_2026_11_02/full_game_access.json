@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-02",
+  "scope": "Initial bounded search pass, before later browser discovery. No playback or independent annotation was performed by this researcher; current access evidence is public_replays.json.",
+  "sample_unchanged": true,
+  "verified_accessible_full_games": 0,
+  "verified_complete_durations": 0,
+  "source_inputs": [
+    "research/footage_2026_11_02/early_games.json",
+    "research/footage_2026_11_02/recent_games.json",
+    "research/footage_2026_11_02/browser_observations.json"
+  ],
+  "methods": [
+    "Exact-match matchup/date/game ID full replay queries; date formatting variants; FULL GAME searches excluding highlights; official NBA/team YouTube and broadcaster catalog searches.",
+    "Internet Archive public advancedsearch API queried all fourteen matchup title pairs with mediatype:movies, returning all <=6 results per query; no exact sample game identified.",
+    "Read NBA subscription/archive documentation and current purchase page; no account, purchase, messages, large-media download or security bypass.",
+    "Investigated third-party public replay season catalogs; titles are discovery leads only and publisher authorization is unknown."
+  ],
+  "subscription_routes": [
+    {
+      "provider": "NBA League Pass standard",
+      "url": "https://www.nba.com/league-pass-purchase?sr=nba+official+basketball",
+      "market_assumption": "US; actual checkout/location taxes and eligibility unverified",
+      "monthly_usd": 16.99,
+      "monthly_price_evidence": "Search-index extraction of official NBA purchase page; direct web open defaults to season billing. Monthly selection and checkout not observed by this researcher.",
+      "season_usd_direct_page": 109.99,
+      "premium_monthly_usd_indexed": 24.99,
+      "premium_season_usd_direct_page": 159.99,
+      "archive_policy_url": "https://support.watch.nba.com/hc/en-us/articles/115000585974-NBA-League-Pass?hidenav=true",
+      "archive_policy_updated": "2026-10-13",
+      "archive_scope_advertised": "Full-game archives 2012-2013 to present.",
+      "recommendation_status": "Cheapest general-audience legitimate archive subscription identified, conditional on exact-game confirmation; not proven globally cheapest and no purchase recommended as a guaranteed unlock.",
+      "exact_14_catalog_complete_verified": false,
+      "playback_verified": false,
+      "next_action": "Existing entitled subscriber should inspect each fixed game, choose full home/away broadcast, record duration and beginning/end/continuous clock coverage. If absent, ask NBA support for exact game IDs before any new purchase."
+    }
+  ],
+  "route_findings": [
+    {
+      "route": "Official NBA and team YouTube",
+      "status": "No exact-sample full broadcast found through indexed searches. Returned FULL GAME HIGHLIGHTS titles were excluded.",
+      "complete_search_of_all_uploads": false
+    },
+    {
+      "route": "Internet Archive",
+      "url": "https://archive.org/advancedsearch.php",
+      "status": "No exact-sample item identified in fourteen all-results matchup-title searches. Other dates, youth games, video games and clips were rejected.",
+      "limitations": "Title-only matching can miss compilations, abbreviated team names, hidden/unindexed/deleted records and incomplete metadata. Archive presence would not establish uploader authorization or authenticity."
+    },
+    {
+      "route": "Prime Video exact-game catalogs",
+      "status": "Exact-date searches for recent sample games did not produce matching catalog entries. Generic team tournament page was not accepted.",
+      "generic_page_rejected": "https://www.primevideo.com/tournament/amzn1.dv.icid.bb89b408-68d6-4d51-9584-82b5ccec4ae9?tr=gb",
+      "limitations": "Search coverage only; no account-specific catalog/entitlement observation."
+    },
+    {
+      "route": "Basketball-video third-party catalog",
+      "url": "https://basketball-video.com/",
+      "season_urls": [
+        "https://basketball-video.com/videos/nba_full_game_replays/nba_regular_season_2020_21/5",
+        "https://basketball-video.com/2023-24",
+        "https://basketball-video.com/2024-25"
+      ],
+      "status": "Season catalogs resolve via web text extraction, but exact-date web searches returned no matching indexed items; onsite search/pagination deep links failed in web tool; direct HTTP request returned 403.",
+      "authorization": "Unknown; no league/broadcaster authorization evidence located.",
+      "authenticity_duration_playback": "Unverified; no exact-game candidate accepted.",
+      "failed_routes": [
+        "https://basketball-video.com/search/?q=January+13+2025",
+        "https://basketball-video.com/search/?q=April+12+2024",
+        "https://basketball-video.com/search/?q=January+15+2021",
+        "https://basketball-video.com/videos/nba_full_game_replays/nba_regular_season_2020_21/5-40",
+        "https://basketball-video.com/2024-25?page2=75"
+      ]
+    },
+    {
+      "route": "nbafullhd",
+      "url": "https://nbafullhd.com/",
+      "status": "Direct web open inaccessible; exact-date site searches did not expose sample entries. No bypass attempted.",
+      "authorization": "Unknown",
+      "playback_verified": false
+    },
+    {
+      "route": "Raw NBA game HTML metadata",
+      "url": "https://www.nba.com/game/mia-vs-lac-0022400553",
+      "status": "Ordinary Python urllib request returned HTTP 403; no metadata/stream extraction or bypass attempted."
+    }
+  ],
+  "games": [
+    {
+      "game_id": "0022000181",
+      "date": "2021-01-15",
+      "matchup": "NYK @ CLE",
+      "official_route": "https://www.nba.com/game/nyk-vs-cle-0022000181",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(knicks cavaliers) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28knicks+cavaliers%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=50&output=json",
+        "returned_items": 4,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022000254",
+      "date": "2021-01-24",
+      "matchup": "ATL @ MIL",
+      "official_route": "https://www.nba.com/game/atl-vs-mil-0022000254",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(hawks bucks) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28hawks+bucks%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 6,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022000367",
+      "date": "2021-02-08",
+      "matchup": "HOU @ CHA",
+      "official_route": "https://www.nba.com/game/hou-vs-cha-0022000367",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(rockets hornets) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28rockets+hornets%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 1,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022000544",
+      "date": "2021-03-03",
+      "matchup": "ATL @ ORL",
+      "official_route": "https://www.nba.com/game/atl-vs-orl-0022000544",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(hawks magic) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28hawks+magic%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 3,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": [
+        {
+          "url": "https://www.nba.com/watch/video/hawks-magic-03-03-2021-a",
+          "provider": "NBA",
+          "evidence": "Exact-game titled archive item; prior live browser entitlement prompt. Current web title and League Pass label rechecked.",
+          "status": "entitlement_required_duration_and_coverage_unverified",
+          "playback_verified": false,
+          "duration_seconds_verified": null
+        }
+      ]
+    },
+    {
+      "game_id": "0022000925",
+      "date": "2021-04-26",
+      "matchup": "MEM @ DEN",
+      "official_route": "https://www.nba.com/game/mem-vs-den-0022000925",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(grizzlies nuggets) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28grizzlies+nuggets%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 0,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022000997",
+      "date": "2021-05-06",
+      "matchup": "WAS @ TOR",
+      "official_route": "https://www.nba.com/game/was-vs-tor-0022000997",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(wizards raptors) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28wizards+raptors%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 3,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": [],
+      "additional_official_label": {
+        "url": "https://www.nba.com/raptors/game/0022000997",
+        "status": "Matching game date and Watch Replay label only; no duration/stream entitlement verified."
+      }
+    },
+    {
+      "game_id": "0022100226",
+      "date": "2021-11-18",
+      "matchup": "LAC @ MEM",
+      "official_route": "https://www.nba.com/game/lac-vs-mem-0022100226",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(clippers grizzlies) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28clippers+grizzlies%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 2,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": [
+        {
+          "url": "https://www.nba.com/watch/video/clippers-grizzlies-11-18-2021-kiswe",
+          "provider": "NBA",
+          "evidence": "Exact-game titled archive item; prior live browser entitlement prompt. Current web title and League Pass label rechecked.",
+          "status": "entitlement_required_duration_and_coverage_unverified",
+          "playback_verified": false,
+          "duration_seconds_verified": null
+        }
+      ]
+    },
+    {
+      "game_id": "0022200780",
+      "date": "2023-02-02",
+      "matchup": "MIA@NYK",
+      "official_route": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(heat knicks) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28heat+knicks%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 2,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022201087",
+      "date": "2023-03-22",
+      "matchup": "PHI@CHI",
+      "official_route": "https://www.nba.com/game/phi-vs-chi-0022201087",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(76ers bulls) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%2876ers+bulls%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 5,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022301101",
+      "date": "2024-04-02",
+      "matchup": "LAC@SAC",
+      "official_route": "https://www.nba.com/game/lac-vs-sac-0022301101",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(clippers kings) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28clippers+kings%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 1,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022301177",
+      "date": "2024-04-12",
+      "matchup": "LAL@MEM",
+      "official_route": "https://www.nba.com/game/lal-vs-mem-0022301177",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(lakers grizzlies) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28lakers+grizzlies%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=50&output=json",
+        "returned_items": 5,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022400393",
+      "date": "2024-12-23",
+      "matchup": "BOS@ORL",
+      "official_route": "https://www.nba.com/game/bos-vs-orl-0022400393",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(celtics magic) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28celtics+magic%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 5,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": [],
+      "additional_official_label": {
+        "url": "https://www.nba.com/celtics/game/0022400393-celtics-vs-magic-orlando-fl-12-23-2024",
+        "status": "Matching game date and Watch Replay label only; no duration/stream entitlement verified."
+      }
+    },
+    {
+      "game_id": "0022400481",
+      "date": "2025-01-04",
+      "matchup": "UTA@MIA",
+      "official_route": "https://www.nba.com/game/uta-vs-mia-0022400481",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(jazz heat) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28jazz+heat%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 0,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    },
+    {
+      "game_id": "0022400553",
+      "date": "2025-01-13",
+      "matchup": "MIA@LAC",
+      "official_route": "https://www.nba.com/game/mia-vs-lac-0022400553",
+      "inherited_live_browser_result": "activation_prompt_observed",
+      "inherited_browser_source": "research/footage_2026_11_02/browser_observations.json",
+      "new_discovery_status": "No additional exact-game full broadcast located; availability remains unresolved.",
+      "internet_archive_query": {
+        "query": "title:(heat clippers) AND mediatype:movies",
+        "url": "https://archive.org/advancedsearch.php?q=title%3A%28heat+clippers%29+AND+mediatype%3Amovies&fl%5B%5D=identifier&fl%5B%5D=title&fl%5B%5D=date&fl%5B%5D=creator&rows=100&output=json",
+        "returned_items": 1,
+        "exact_sample_match_identified": false,
+        "all_returned_titles_inspected": true
+      },
+      "full_game_playback_verified": false,
+      "duration_seconds_verified": null,
+      "full_game_candidates": []
+    }
+  ],
+  "limitations": [
+    "Zero full-game playback verified, zero complete-game duration verified. This search does not establish that footage does not exist.",
+    "Inherited NBA activation/player barriers are clearly separated from new web/API discovery.",
+    "The sample cannot be replaced based on easier footage availability. No audit review, adjudication, eligibility or scientific validity attestation is supplied.",
+    "A video title, Watch Replay label, subscription policy or playable highlight cannot establish complete full-game coverage."
+  ],
+  "subsequent_browser_evidence": "public_replays.json"
+}
