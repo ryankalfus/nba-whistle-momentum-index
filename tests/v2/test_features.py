@@ -48,6 +48,26 @@ def reconstruction():
     return reconstruct(actions, GID, 100, 200)
 
 
+@pytest.mark.parametrize("note_period", [4, 7])
+def test_postgame_source_note_does_not_replace_complete_game_markers(note_period):
+    actions = []
+    for period in range(1, 5):
+        actions.extend([
+            event(period * 10, "period", None, None, "PT12M00S", "start", period=period),
+            event(period * 10 + 1, period=period),
+            event(period * 10 + 2, "period", None, None, "PT00M00S", "end", period=period),
+        ])
+    actions.append(event(50, "game", None, None, "PT00M00S", "end", period=4))
+    actions.append(event(51, "memo", None, None, "PT00M00S", period=note_period,
+                         value="Source note requiring review", scoreHome=99))
+    result = reconstruct(actions, GID, 100, 200)
+    status = features.game_status(result)
+    assert status["complete"] is True
+    assert status["critical_unresolved"] is True
+    assert result.eligible is False
+    assert result.events[-1].kind == "memo" and result.events[-1].home_score == 99
+
+
 def test_features_use_before_state_and_correct_score_orientation():
     result = reconstruction()
     rows = features.build_rows(result, META)

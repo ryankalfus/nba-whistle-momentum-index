@@ -110,12 +110,13 @@ def game_diagnostic(actions, game_id, metadata, source_sha256):
         raise ValueError("source teams do not match declared home/away metadata") from None
     result = reconstruct(actions, game_id, home, away, source_sha256)
     uncertain = sum(p.foul_indicator is None or not p.complete for p in result.possessions)
-    periods = {event.period for event in result.events}
-    period_starts = Counter(event.period for event in result.events
+    marker_events = tuple(event for event in result.events if event.kind != "memo")
+    periods = {event.period for event in marker_events}
+    period_starts = Counter(event.period for event in marker_events
                             if event.kind == "period" and event.subtype == "start")
-    period_ends = Counter(event.period for event in result.events
+    period_ends = Counter(event.period for event in marker_events
                           if event.kind == "period" and event.subtype == "end")
-    terminal = result.events[-1] if result.events else None
+    terminal = marker_events[-1] if marker_events else None
     complete_game = bool(
         terminal and terminal.kind == "game" and terminal.subtype == "end"
         and terminal.period >= 4 and terminal.clock == 0
@@ -153,6 +154,8 @@ def reconcile(manifest: Path, cache: Path, metadata: list[Path], output: Path,
               limit_per_source: int = 3, save_games: bool = False):
     if limit_per_source < 0:
         raise ValueError("limit_per_source must be nonnegative; zero means all")
+    parser_path = Path(__file__).with_name("possessions.py")
+    parser_sha256 = file_digest(parser_path)[1]
     output.mkdir(parents=True, exist_ok=False)
     verification = verify_sources(manifest, cache)
     rows, failures, issue_counts = [], [], Counter()
@@ -196,9 +199,11 @@ def reconcile(manifest: Path, cache: Path, metadata: list[Path], output: Path,
                 if row["source_file"] == name:
                     row.update(status="quarantined", eligible=False, wmi=None,
                                error="source iteration failed; see source_failures")
+    if file_digest(parser_path)[1] != parser_sha256:
+        raise ValueError("parser source changed during reconciliation; rerun in a new directory")
     report = {
         "schema_version": "candidate-reconciliation-v1", "parser_version": PARSER_VERSION,
-        "parser_sha256": file_digest(Path(__file__).with_name("possessions.py"))[1],
+        "parser_sha256": parser_sha256,
         "verification": verification, "metadata": meta_sources,
         "selection": {"method": "first_games_per_archive_diagnostic_not_random",
                       "limit_per_source": limit_per_source},
