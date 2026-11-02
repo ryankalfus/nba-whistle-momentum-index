@@ -6,7 +6,7 @@ import math
 import re
 from typing import Mapping, Sequence
 
-PARSER_VERSION = "canonical_candidate_v2"
+PARSER_VERSION = "canonical_candidate_v5"
 ADMIN = {
     "substitution",
     "timeout",
@@ -130,6 +130,13 @@ def _integer(value, label, optional=False):
     return int(number)
 
 
+def _tokens(value):
+    """Only the two observed CDN list encodings; never substring matching."""
+    if isinstance(value, str):
+        return [token.strip() for token in value.split(",")]
+    return value if isinstance(value, list) else []
+
+
 def reconstruct(
     actions: Sequence[Mapping],
     game_id: str,
@@ -189,7 +196,25 @@ def reconstruct(
             for k in ("description", "descriptor", "qualifiers")
         )
         technical = technical or (kind == "freethrow" and "technical" in text)
-        classification = "administrative" if kind in ADMIN or technical else "control"
+        delay_warning = (
+            kind == "violation"
+            and sub == "delay-of-game"
+            and "team" in _tokens(a.get("qualifiers"))
+        )
+        classification = (
+            "administrative"
+            if kind in ADMIN or technical or delay_warning
+            else "control"
+        )
+        if delay_warning:
+            issues.append(
+                ParseIssue(
+                    "administrative_delay_of_game",
+                    n,
+                    "team delay record does not establish or transfer live control",
+                    False,
+                )
+            )
         if kind == "foul" and sub not in FOULS:
             classification = "unsupported"
         elif kind not in ADMIN | {
@@ -226,13 +251,33 @@ def reconstruct(
             )
         )
     events.sort(key=lambda e: (e.order_number, e.action_number))
+    source_clock_corrections = {}
     for previous, e in zip(events, events[1:]):
         if e.order_number == previous.order_number:
             raise ValueError("ambiguous duplicate orderNumber")
-        if e.period < previous.period or (
-            e.period == previous.period and e.clock > previous.clock
-        ):
+        if e.period < previous.period:
             raise ValueError(f"clock/period regression at action {e.action_number}")
+        if e.period == previous.period and e.clock > previous.clock:
+            raw = json.loads(e.raw_json)
+            supported_travel_restoration = (
+                previous.kind == "turnover"
+                and previous.subtype == "traveling"
+                and previous.clock == 0
+                and previous.team_id == previous.possession_team_id
+                and previous.team_id in teams
+                and e.kind == "instantreplay"
+                and e.subtype == "request"
+                and raw.get("descriptor") == "support"
+                and raw.get("value") == "Travel with time on the clock"
+                and e.possession_team_id in teams - {previous.team_id}
+            )
+            if not supported_travel_restoration:
+                raise ValueError(f"clock/period regression at action {e.action_number}")
+            source_clock_corrections[e.action_number] = (
+                f"source replay after traveling action {previous.action_number}: "
+                f"recorded {previous.clock} -> {e.clock}; source-supported timing, "
+                "not independently verified live time"
+            )
     possessions, unassigned = [], []
     current = None
     prior = None
@@ -241,6 +286,7 @@ def reconstruct(
     observed_period_starts = set()
     pending = None
     retained = False
+    retained_clock = None
 
     def flag(code, e, detail):
         if code in {
@@ -254,7 +300,7 @@ def reconstruct(
             current["flags"].add(code)
 
     def finish(reason, complete=True):
-        nonlocal current, pending, retained
+        nonlocal current, pending, retained, retained_clock
         if current is None:
             return
         possessions.append(
@@ -275,7 +321,7 @@ def reconstruct(
                 tuple(sorted(current["flags"])),
             )
         )
-        current, pending, retained = None, None, False
+        current, pending, retained, retained_clock = None, None, False, None
 
     for e in events:
         if e.kind == "period" and e.subtype == "start":
@@ -294,6 +340,12 @@ def reconstruct(
             prior = e
             continue
         if e.classification == "administrative":
+            if e.action_number in source_clock_corrections:
+                flag(
+                    "source_clock_correction_requires_audit",
+                    e,
+                    source_clock_corrections[e.action_number],
+                )
             if current is not None:
                 current["events"].append(e)
             else:
@@ -328,6 +380,15 @@ def reconstruct(
             and e.kind == "turnover"
             and e.subtype == "offensive foul"
         )
+        paired_kick_turnover = (
+            pending == "offensive_kicked_ball"
+            and current is not None
+            and not current["kick_turnover_paired"]
+            and owner == current["owner"] == e.team_id
+            and e.clock == current["terminal_clock"]
+            and e.kind == "turnover"
+            and e.subtype == "offensive-kicked-ball"
+        )
         paired_goaltending = (
             pending == "made_field_goal"
             and current is not None
@@ -342,6 +403,7 @@ def reconstruct(
         )
         continuation = (
             paired_offensive_turnover
+            or paired_kick_turnover
             or paired_goaltending
             or (
                 pending == "made_field_goal"
@@ -394,6 +456,7 @@ def reconstruct(
                 flags=set(),
                 terminal_clock=None,
                 offensive_turnover_paired=False,
+                kick_turnover_paired=False,
                 terminal_goaltending_qualified=False,
                 goaltending_paired=False,
             )
@@ -439,16 +502,39 @@ def reconstruct(
                 current["fouls"].append(e.action_number)
                 key = (e.period, e.team_id)
                 counts[key] = counts.get(key, 0) + 1
-                if e.subtype in SPECIAL:
+                descriptor = str(json.loads(e.raw_json).get("descriptor") or "").lower()
+                # These exact archive descriptors name special categories; they
+                # do not establish season-specific entitlement or FT completeness.
+                if e.subtype in SPECIAL or descriptor in {
+                    "clear-path",
+                    "transition take",
+                }:
                     retained = True
+                    retained_clock = e.clock
                     pending = None
                     flag(
                         "retained_ball_requires_audit",
                         e,
                         "special foul rule/season requires adjudication",
                     )
-                elif continuation:
-                    pending = None
+                else:
+                    if descriptor == "away-from-play":
+                        flag(
+                            "special_descriptor_requires_audit",
+                            e,
+                            "archive off-ball descriptor alone does not establish formal entitlement",
+                        )
+                    # A distinct later-clock ordinary foul establishes a new
+                    # entitlement; an earlier retained award cannot carry into it.
+                    if (
+                        retained
+                        and retained_clock is not None
+                        and e.clock < retained_clock
+                    ):
+                        retained = False
+                        retained_clock = None
+                    if continuation:
+                        pending = None
         elif e.kind in {"2pt", "3pt"}:
             if e.shot_result not in {"made", "missed"}:
                 flag("unknown_shot_result", e, "cannot determine terminal state")
@@ -470,6 +556,8 @@ def reconstruct(
         elif e.kind == "turnover":
             if paired_offensive_turnover:
                 current["offensive_turnover_paired"] = True
+            elif paired_kick_turnover:
+                current["kick_turnover_paired"] = True
             else:
                 pending = "turnover"
         elif e.kind == "freethrow":
@@ -490,9 +578,33 @@ def reconstruct(
         elif e.kind == "violation":
             if paired_goaltending:
                 current["goaltending_paired"] = True
-            flag(
-                "violation_requires_audit", e, "no blanket control-transfer assumption"
-            )
+                issues.append(
+                    ParseIssue(
+                        "corroborated_goaltending_companion",
+                        e.action_number,
+                        "explicit awarded-basket companion retains made-basket boundary",
+                        False,
+                    )
+                )
+            elif e.subtype == "kicked ball" and e.team_id in teams:
+                if e.team_id == owner:
+                    pending = "offensive_kicked_ball"
+                    current["terminal_clock"] = e.clock
+                    current["kick_turnover_paired"] = False
+                    detail = "explicit offensive actor loses possession"
+                else:
+                    detail = (
+                        "explicit defensive actor; source offense retains possession"
+                    )
+                issues.append(
+                    ParseIssue("classified_kicked_ball", e.action_number, detail, False)
+                )
+            else:
+                flag(
+                    "violation_requires_audit",
+                    e,
+                    "unresolved violation/control entitlement",
+                )
         prior = e
     if current is not None:
         # A terminal basket may still acquire an and-one in an appended suffix.

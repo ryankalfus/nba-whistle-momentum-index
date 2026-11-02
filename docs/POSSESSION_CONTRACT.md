@@ -1,6 +1,6 @@
 # Canonical candidate possession contract
 
-Date: 2026-11-02. Version: `canonical_candidate_v2`. Status: implemented candidate, not independently validated. This contract is separate from the historical `period_start_v2` parser and changes no legacy release.
+Date: 2026-11-02. Version: `canonical_candidate_v5`. Status: implemented candidate, not independently validated. This contract is separate from the historical `period_start_v2` parser and changes no legacy release.
 
 ## API and provenance
 
@@ -8,7 +8,7 @@ Date: 2026-11-02. Version: `canonical_candidate_v2`. Status: implemented candida
 
 A supplied SHA256 must have 64 lowercase hexadecimal characters. `provenance_status=declared_unverified` means the caller supplied a digest, not that this parser verified source bytes. Without a digest it is `missing`. A source ledger must verify the exact source bytes and provenance separately. `eligible` always remains false; `audit_status=blocked_pending_independent_audit` cannot be overridden by synthetic tests or parser agreement.
 
-Malformed clocks, invalid numeric fields, clock/period regressions, repeated action IDs (including identical copies), repeated ordering values and non-game teams raise `ValueError`. Unsupported semantic labels remain in the event ledger with explicit blocking `ParseIssue` records. No semantic error is replaced by a negative foul target.
+Malformed clocks, invalid numeric fields, uncorroborated clock/period regressions, repeated action IDs (including identical copies), repeated ordering values and non-game teams raise `ValueError`. Unsupported semantic labels remain in the event ledger with explicit blocking `ParseIssue` records. No semantic error is replaced by a negative foul target.
 
 ## Candidate control and boundaries
 
@@ -20,7 +20,7 @@ Recognized ordinary defensive personal/shooting/loose-ball labels count only whe
 
 End of input does not establish end of game. Without a period-end marker, the final group has `complete=False`, `boundary_reason=input_exhausted`, `provisional_final_possession` and a missing target, even when its last row is a made shot. An appended and-one or continuation could change that group. A period-end marker establishes only the observed period boundary, not whole-game completeness or schedule coverage.
 
-A made field goal and one corroborated defensive-goaltending companion share a group. Pairing requires the terminal shot's exact `defensivegoaltending` qualifier (a list token or comma-separated archive token), valid offensive shot actor, matching period/clock/source offense, and an opposing violation actor with subtype `defensive goaltending`. The made-basket boundary remains pending, including a subsequent and-one. Uncorroborated, mismatched or repeated companions do not qualify. The violation still receives `violation_requires_audit`, so pairing neither supplies a known foul target nor makes the game eligible.
+A made field goal and one corroborated defensive-goaltending companion share a group. Pairing requires the terminal shot's exact `defensivegoaltending` qualifier (a list token or comma-separated archive token), valid offensive shot actor, matching period/clock/source offense, and an opposing violation actor with subtype `defensive goaltending`. The made-basket boundary remains pending, including a subsequent and-one. Uncorroborated, mismatched or repeated companions do not qualify. In v3/v4, this exact companion receives the nonblocking `corroborated_goaltending_companion` reason rather than a generic violation flag. Other unresolved evidence still makes the target missing; the game remains ineligible.
 
 ## Feature availability
 
@@ -41,3 +41,22 @@ Handwritten tests cover rebounds, and-one, ordinary and retained-ball free throw
 Review correction (2026-11-02): paired offensive-foul/turnover rows represent one loss, and attribution/control conflicts must propagate uncertainty beyond the row where detected. Three failing regressions established these defects before correction.
 
 Candidate-v2 correction (2026-11-02): the source-backed game `0022000006` actions 327/329 demonstrated that v1 split a made basket from its goaltending companion and manufactured an unexplained transfer at action 330. The narrow pairing above corrects that implementation defect; positive, malformed, conflicting and repeated-companion fixtures cover the boundary. The historical v1 diagnostics and audit plan retain their original parser hash. New diagnostics and any future annotation must bind to v2 separately.
+
+
+## Candidate-v3/v4 semantic correction (2026-11-02)
+
+The reason for this change is demonstrated overclassification of source administrative and explicitly attributed violation rows, plus special foul meaning stored in the archive descriptor rather than subtype. Original event labels and JSON remain unchanged. New semantic reason records are nonblocking only where the following narrow evidence is present:
+
+- `violation/delay-of-game` with the exact `team` qualifier token is administrative (`administrative_delay_of_game`). It neither creates a group nor switches ownership, including when its recorded source owner differs from the active group. A separate technical foul/free throw remains separately recorded; no penalty attempt is invented.
+- `violation/kicked ball` with explicit actor and source offense receives `classified_kicked_ball`. A defensive actor retains the source offense; an offensive actor sets the `offensive_kicked_ball` boundary. One same-clock, same-actor/source-owner `turnover/offensive-kicked-ball` companion shares that loss. Missing actors, unknown ownership, conflicting prior control and other violation types keep their existing blocking uncertainty.
+- A defensive personal foul with exact descriptor `clear-path` or `transition take` enters the existing retained-ball path and still receives `retained_ball_requires_audit`. A later-clock ordinary defensive foul starts a new entitlement and clears the old retained state; same-clock uncertainty is preserved. A personal foul descriptor `away-from-play` receives `special_descriptor_requires_audit` without forcing retained control: the archive also uses it after early-period made baskets, while the formal special rule has timing/throw-in conditions. No descriptor asserts complete free-throw evidence, and bare `take` descriptors are not normalized by guesswork.
+
+Historical primary support is the [NBA 2020–21 rulebook](https://ak-static.cms.nba.com/wp-content/uploads/sites/25/2021/01/2020-2021-NBA-Rule-Book.pdf), Rule 10 IV (kicks), Rule 11 (awarded-basket procedure), and Rule 12A II (delay). The [NBA 2023–24 rulebook](https://official.nba.com/wp-content/uploads/sites/4/2023/10/2023-24-NBA-Season-Official-Playing-Rules.pdf), Rule 12B X–XI, supports distinguishing away-from-play and transition take categories. These editions support candidate category handling, not a season-by-season rules audit or footage validation. Lane, double-lane, jump-ball, unpaired goaltending and other unrecognized violations remain unresolved.
+
+`NormalizedEvent.clock` remains the immutable recorded source timestamp. `BeforeState.clock` remains a prior-record reference, not an independently reconstructed live-state clock. V3/v4 retained every strict clock quarantine. V5 recognizes one explicit source timing pattern: a traveling turnover recorded at zero, immediately followed in source order by a same-period `instantreplay/request`, exact descriptor `support`, exact raw `value` of `Travel with time on the clock`, and source possession belonging to the opposite team. That replay timestamp can rise above zero. Neither event clock is rewritten, and `source_clock_correction_requires_audit` records the preceding action and both clocks as blocking uncertainty. A later group can reference the replay timestamp as recorded source state; it is not independently verified live time. Unknown/mismatched replay values, nontravel turnovers, period reversals and all other clock rises still raise. No administrative-time blanket exemption or clock sorting is used. The other enriched scenarios remain unresolved.
+
+Fresh v3/v4/v5 diagnostics and exact v2 count deltas are recorded in `research/rewrite_completion_2026_11_02/parser_changes.json` and `.md`. The prior v1/v2/v3/v4 reports and their parser bindings remain historical evidence.
+
+The initial v3 diagnostic exposed an overbroad away-from-play mapping and persistent retained entitlement. V4 fixes those two demonstrated defects with source-backed regression neighborhoods (`0022000018` and `0022000045`); the initial v3 report is preserved and is not the final parser result.
+
+Candidate-v5 clock evidence (2026-11-02): archive game `0022000925`, actions 337–339, explicitly records the supported travel timing review and subsequent play at 0.2 seconds. The 2020–21 rulebook, Rule 5 III(a)(2), permits added time when the whistle precedes zero. This supports retaining the source correction as auditable evidence; it does not independently certify the clock or resolve the game’s other control conflicts.

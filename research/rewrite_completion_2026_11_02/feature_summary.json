@@ -1,0 +1,163 @@
+{
+  "date": "2026-11-02",
+  "eligible_games": 0,
+  "feature_sha256": "8008b45ca51aebefda0dabd6522eb9373dc7b4f2401f8bfa7eb55370809fccc4",
+  "feature_version": "before_event_v1",
+  "full_export": {
+    "cohorts": {
+      "2020-21/regular_season": {
+        "games": 1080,
+        "provisional_reconstruction": 1056,
+        "quarantined": 24,
+        "rows": 210843,
+        "unknown_outcomes": 362
+      },
+      "2021-22/regular_season": {
+        "games": 1230,
+        "provisional_reconstruction": 1180,
+        "quarantined": 50,
+        "rows": 233217,
+        "unknown_outcomes": 450
+      },
+      "2022-23/regular_season": {
+        "games": 1230,
+        "provisional_reconstruction": 1228,
+        "quarantined": 2,
+        "rows": 245503,
+        "unknown_outcomes": 554
+      },
+      "2023-24/regular_season": {
+        "games": 1230,
+        "provisional_reconstruction": 1224,
+        "quarantined": 6,
+        "rows": 242688,
+        "unknown_outcomes": 406
+      },
+      "2024-25/playoffs": {
+        "games": 84,
+        "provisional_reconstruction": 84,
+        "rows": 16200,
+        "unknown_outcomes": 46
+      },
+      "2024-25/regular_season": {
+        "games": 1230,
+        "provisional_reconstruction": 1228,
+        "quarantined": 2,
+        "rows": 244581,
+        "unknown_outcomes": 403
+      }
+    },
+    "complete_games": 5972,
+    "critical_unresolved_games": 1859,
+    "frame_sha256": "007a243d5db45e77f083499dce0ee2c951032eb2d1b733129bf574520aeecb73",
+    "game_count": 6084,
+    "game_status_counts": {
+      "provisional_reconstruction": 6000,
+      "quarantined": 84
+    },
+    "known_outcomes": 1190811,
+    "manifest_path": "output/v2/features-candidate-v5-2026-11-02/manifest.json",
+    "manifest_sha256": "99c3091c4a8742c1a5f65913d1b509b94d8425e213a5f9601a36d4657234d722",
+    "missing_fields": {
+      "defense_counted_fouls": 10065,
+      "outcome": 2221,
+      "previous_foul_1": 8196,
+      "previous_foul_2": 14181
+    },
+    "ok": true,
+    "plan_sha256": null,
+    "row_count": 1193032,
+    "row_provenance_bytes": 235546918,
+    "row_provenance_sha256": "33cb6d91b084da94c9b355b3279a0123c6a0790a59831a0e8ec50919a20c1325",
+    "rows_bytes": 440790857,
+    "rows_file_sha256": "83deb21a485f1e217c61970869301ca6942b9d9ee4f617b9bee2eecd5d30e59b",
+    "rows_sha256": "d0a9be0334a83cbf4d995f30d03d9aff5bf0449a90923d15257bcfb453253460",
+    "schedule_binding": {
+      "corrected_dates": 30,
+      "limit": "Bound derived schedule bytes; acquisition evidence is not reauthenticated here.",
+      "provenance": "Independent ESPN team schedules; all 30 team responses in each of six cohorts verified against preserved raw response SHA256s, duplicate events corroborated by both teams, exact regular-season per-team totals after explicit Cup championship exclusions. Thirty historical dates are explicitly amended through preserved official NBA game-page title/ID/team evidence; original dates and correction-source hashes retained. NBA game IDs are mapped through unique season/type/America-New_York-date/home/away joins to historical metadata; independent ESPN IDs retained. This is a schedule cross-check, not independent possession validation or proof beyond the endpoint's coverage. Report manifest SHA256: 7911aff928cf1630e6af90948e74ec38117f5d4222d15d2beaee6ecc3d559086",
+      "sha256": "c880b3080bff469ea75b075bfb166b7be05330aa96387db18b0fa27179d0c412"
+    },
+    "source_failures": [],
+    "source_map": {
+      "cdnnba_2020.tar.xz": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "cdnnba_2021.tar.xz": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "cdnnba_2022.tar.xz": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "cdnnba_2023.tar.xz": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "cdnnba_2024.tar.xz": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "cdnnba_po_2024.tar.xz": "065798b27908f9e16d8f9b6f19f429d0a798d98ce67aad116c9c9b7786f801f7"
+    },
+    "unknown_outcomes": 2221
+  },
+  "limits": [
+    "Retrospective source control and before-record references are not independently verified live opportunities.",
+    "Independent possession audit, complete rule adjudication, frozen model protocol and genuinely unused evaluation outcomes remain absent.",
+    "Full manifest deliberately includes quarantined games with no invented feature rows; real modeling must refuse unknown targets and false eligibility.",
+    "Schedule bytes and correction bindings verified; this adapter does not reauthenticate external schedule acquisition attestations."
+  ],
+  "parser_sha256": "6d6b481095e588f5346aeacea8799a7c6984b9f9b07d583c69a5df6a6d80f646",
+  "parser_version": "canonical_candidate_v5",
+  "pilot_export": {
+    "canonical_list_hash_checked_against_model_digest": true,
+    "game_status_counts": {
+      "not_selected": 6066,
+      "provisional_reconstruction": 18
+    },
+    "manifest_path": "output/v2/features-pilot-v5-2026-11-02/manifest.json",
+    "manifest_sha256": "b8a160c4d427b7fa715a16b65c194d077ac71aed5ef14693a69f84ac02c5e2ac",
+    "real_fit_refusal": {
+      "evidence_supplied": "actual pilot dataset manifest only; no fabricated audit or protocol",
+      "reasons": [
+        "independent_audit_not_passed",
+        "malformed_evidence_structure"
+      ],
+      "status": "BLOCKED"
+    },
+    "row_count": 3655,
+    "rows_sha256": "b08c0de8b5393b1d3f1e0e4c84786ad7c2ec627bf222115f037ac5bd5efebfd6",
+    "unknown_outcomes": 10
+  },
+  "python_version": "3.14.7",
+  "row_columns": [
+    "clock",
+    "date",
+    "defense_counted_fouls",
+    "defense_team_id",
+    "game_id",
+    "game_type",
+    "home_defense",
+    "offense_team_id",
+    "outcome",
+    "period",
+    "possession_number",
+    "previous_foul_1",
+    "previous_foul_2",
+    "score_difference",
+    "score_margin",
+    "season",
+    "start_type"
+  ],
+  "schema_version": "feature-export-summary-v1",
+  "scientific_status": "PROVISIONAL_AUDIT_BLOCKED",
+  "score_contract": {
+    "score_difference": "before defense score minus before offense score; negative means defense trails",
+    "score_margin": "abs(before.home_score-before.away_score)"
+  },
+  "verification": {
+    "all_expected_games_accounted": true,
+    "all_game_counts_match_parser_report": true,
+    "all_games_ineligible": true,
+    "focused_tests": {
+      "command": ".venv/bin/python -m pytest tests/v2/test_features.py -q",
+      "result": "21 passed"
+    },
+    "full_stream_hash_and_provenance_alignment": true,
+    "no_target_filtering": true,
+    "parser_report_path": "output/v2/reconciliation-semantics-v5-2026-11-02/report.json",
+    "parser_report_sha256": "00148f9dfb2bc23e4f4400f1fceb62cf9616ac90c9c4f628de71c9fabe045ab8",
+    "ruff": {
+      "command": ".venv/bin/ruff check src/whistle_research/features.py tests/v2/test_features.py",
+      "result": "All checks passed!"
+    }
+  }
+}

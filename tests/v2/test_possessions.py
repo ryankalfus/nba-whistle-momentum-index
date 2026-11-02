@@ -95,10 +95,10 @@ def test_corroborated_defensive_goaltending_companion_keeps_made_basket_boundary
         (330, 999),
     ]
     assert r.possessions[0].boundary_reason == "made_field_goal"
-    assert r.possessions[0].foul_indicator is None
-    assert r.possessions[0].audit_flags == ("violation_requires_audit",)
+    assert r.possessions[0].foul_indicator == 0
+    assert r.possessions[0].audit_flags == ()
     assert [(i.code, i.action_number) for i in r.issues if i.action_number] == [
-        ("violation_requires_audit", 329)
+        ("corroborated_goaltending_companion", 329)
     ]
     assert not r.eligible
     assert r.audit_status == "blocked_pending_independent_audit"
@@ -155,10 +155,7 @@ def test_repeated_goaltending_companion_is_not_blindly_merged():
     ]
     assert [
         i.action_number for i in r.issues if i.code == "violation_requires_audit"
-    ] == [
-        329,
-        330,
-    ]
+    ] == [330]
 
 
 def test_goaltending_companion_preserves_subsequent_and_one():
@@ -172,8 +169,8 @@ def test_goaltending_companion_preserves_subsequent_and_one():
     assert r.possessions[0].event_action_numbers == (327, 329, 330, 331)
     assert r.possessions[0].boundary_reason == "final_made_free_throw"
     assert r.possessions[0].counted_foul_action_numbers == (330,)
-    assert r.possessions[0].foul_indicator is None
-    assert "violation_requires_audit" in r.possessions[0].audit_flags
+    assert r.possessions[0].foul_indicator == 1
+    assert not r.possessions[0].audit_flags
 
 
 def test_admin_technical_does_not_switch_ownership_and_is_preserved():
@@ -428,3 +425,253 @@ def test_rebound_owner_conflict_quarantines_both_sides_and_later_history():
         assert "rebound_ownership_conflict" in p.audit_flags
     assert r.possessions[2].start_state.previous_foul_indicators == (None, None)
     assert r.possessions[2].start_state.defense_counted_fouls is None
+
+
+def test_delay_warning_is_administrative_even_with_conflicting_source_owner():
+    actions = [
+        event(0, "period", None, None, "start", "PT12M00S"),
+        event(1, shotResult="Missed"),
+        event(2, "violation", 200, 200, "delay-of-game", qualifiers="team"),
+        event(3, "turnover"),
+        end(),
+    ]
+    original = json.dumps(actions)
+    r = parse(actions)
+    assert r.events[2].classification == "administrative"
+    assert r.possessions[0].event_action_numbers == (1, 2, 3, 99)
+    assert r.possessions[0].foul_indicator == 0
+    assert json.dumps(actions) == original
+    assert {i.code for i in r.issues if i.blocking} == {"independent_audit_required"}
+
+
+def test_delay_warning_cannot_establish_opening_control():
+    r = parse(
+        [
+            event(0, "period", None, None, "start", "PT12M00S"),
+            event(1, "violation", 200, 200, "delay-of-game", qualifiers=["team"]),
+            event(2, "turnover"),
+            end(),
+        ]
+    )
+    assert r.unassigned_action_numbers == (0, 1)
+    assert r.possessions[0].start_action_number == 2
+
+
+@pytest.mark.parametrize(
+    "team, terminal", [(100, "offensive_kicked_ball"), (200, "turnover")]
+)
+def test_kicked_ball_uses_explicit_actor_and_offense(team, terminal):
+    r = parse(
+        [
+            event(0, "period", None, None, "start", "PT12M00S"),
+            event(1, shotResult="Missed"),
+            event(2, "violation", team, 100, "kicked ball"),
+            *([] if team == 100 else [event(3, "turnover")]),
+            event(4, "turnover", 200, 200, clock="PT10M59S"),
+            end(),
+        ]
+    )
+    assert r.possessions[0].boundary_reason == terminal
+    assert r.possessions[0].foul_indicator == 0
+    assert {i.code for i in r.issues if i.blocking} == {"independent_audit_required"}
+
+
+def test_offensive_kick_and_exact_turnover_companion_are_one_loss():
+    r = parse(
+        [
+            event(0, "period", None, None, "start", "PT12M00S"),
+            event(1, "violation", sub="kicked ball"),
+            event(2, "turnover", sub="offensive-kicked-ball"),
+            event(3, "turnover", 200, 200, clock="PT10M59S"),
+            end(),
+        ]
+    )
+    assert r.possessions[0].event_action_numbers == (1, 2)
+    assert r.possessions[0].boundary_reason == "offensive_kicked_ball"
+    assert len(r.possessions) == 2
+
+
+@pytest.mark.parametrize(
+    "kind, sub, extra",
+    [
+        ("violation", "kicked ball", {"team": None}),
+        ("violation", "lane", {}),
+        ("violation", "double lane", {}),
+        ("violation", "jumpball", {}),
+        ("violation", "delay-of-game", {"qualifiers": "notteam"}),
+    ],
+)
+def test_unsupported_violation_evidence_remains_unknown(kind, sub, extra):
+    action = event(2, kind, sub=sub, **extra)
+    r = parse(
+        [
+            event(0, "period", None, None, "start", "PT12M00S"),
+            event(1, shotResult="Missed"),
+            action,
+            end(),
+        ]
+    )
+    assert r.possessions[0].foul_indicator is None
+    assert any(i.code == "violation_requires_audit" for i in r.issues)
+    assert not r.eligible
+
+
+@pytest.mark.parametrize("descriptor", ["clear-path", "transition take"])
+def test_explicit_special_descriptor_preserves_retained_sequence_and_unknown(
+    descriptor,
+):
+    actions = [
+        event(0, "period", None, None, "start", "PT12M00S"),
+        event(1, "foul", 200, 100, "personal", descriptor=descriptor),
+        event(2, "freethrow", sub="1 of 1", shotResult="Made", descriptor=descriptor),
+        event(3, "turnover", clock="PT10M59S"),
+        event(4, "turnover", 200, 200, clock="PT10M58S"),
+        end(),
+    ]
+    r = parse(actions)
+    assert r.possessions[0].event_action_numbers == (1, 2, 3)
+    assert r.possessions[0].foul_indicator is None
+    assert r.possessions[0].counted_foul_action_numbers == (1,)
+    assert "retained_ball_requires_audit" in r.possessions[0].audit_flags
+    assert r.possessions[1].start_state.previous_foul_indicators == (None,)
+    assert r.possessions[1].start_state.defense_counted_fouls == 0
+    assert parse(actions[:4]).possessions[0].start_state == r.possessions[0].start_state
+    assert sorted(
+        [n for p in r.possessions for n in p.event_action_numbers]
+        + list(r.unassigned_action_numbers)
+    ) == [0, 1, 2, 3, 4, 99]
+    assert not r.eligible
+
+
+@pytest.mark.parametrize(
+    "kind, sub",
+    [
+        ("memo", ""),
+        ("instantreplay", "request"),
+        ("turnover", "shot clock"),
+        ("violation", "delay-of-game"),
+    ],
+)
+def test_recorded_clock_rises_are_not_assumed_to_be_live_clock_repairs(kind, sub):
+    actions = [
+        event(1, "turnover", clock="PT01M00S"),
+        event(2, kind, sub=sub, clock="PT01M01S", qualifiers="team"),
+    ]
+    with pytest.raises(ValueError, match="clock/period regression at action 2"):
+        parse(actions)
+
+
+def test_archive_away_descriptor_after_made_basket_does_not_prove_retained_entitlement():
+    # 0022000018 actions 9/11/15/16: recorded early-period basket, off-ball
+    # foul and one FT. Descriptor alone does not prove the formal special rule.
+    r = parse(
+        [
+            event(0, "period", None, None, "start", "PT12M00S"),
+            event(9, "3pt", shotResult="Made", clock="PT11M26S"),
+            event(
+                11,
+                "foul",
+                200,
+                100,
+                "personal",
+                "PT11M26S",
+                descriptor="away-from-play",
+            ),
+            event(
+                15,
+                "freethrow",
+                sub="1 of 1",
+                clock="PT11M26S",
+                shotResult="Made",
+                descriptor="away-from-play",
+            ),
+            event(16, "3pt", 200, 200, clock="PT11M14S", shotResult="Missed"),
+            end(),
+        ]
+    )
+    assert r.possessions[0].event_action_numbers == (9, 11, 15)
+    assert r.possessions[0].boundary_reason == "final_made_free_throw"
+    assert r.possessions[0].foul_indicator is None
+    assert "special_descriptor_requires_audit" in r.possessions[0].audit_flags
+    assert not any(i.code == "unexplained_control_transfer" for i in r.issues)
+
+
+def test_retained_entitlement_does_not_leak_into_later_ordinary_foul_sequence():
+    # 0022000045 actions 323..332: a clear-path entitlement is followed by
+    # a distinct later-clock shooting foul, whose ordinary FT sequence ends.
+    r = parse(
+        [
+            event(0, "period", None, None, "start", "PT12M00S"),
+            event(
+                323, "foul", 200, 100, "personal", "PT09M03S", descriptor="clear-path"
+            ),
+            event(326, "freethrow", sub="1 of 2", clock="PT09M03S", shotResult="Made"),
+            event(327, "freethrow", sub="2 of 2", clock="PT09M03S", shotResult="Made"),
+            event(328, "foul", 200, 100, "personal", "PT08M58S", descriptor="shooting"),
+            event(330, "freethrow", sub="1 of 2", clock="PT08M58S", shotResult="Made"),
+            event(331, "freethrow", sub="2 of 2", clock="PT08M58S", shotResult="Made"),
+            event(332, "turnover", 200, 200, clock="PT08M39S"),
+            end(999),
+        ]
+    )
+    assert r.possessions[0].event_action_numbers == (323, 326, 327, 328, 330, 331)
+    assert r.possessions[0].boundary_reason == "final_made_free_throw"
+    assert r.possessions[0].counted_foul_action_numbers == (323, 328)
+    assert r.possessions[0].foul_indicator is None
+    assert not any(i.code == "unexplained_control_transfer" for i in r.issues)
+
+
+def clock_restoration_sequence():
+    return [
+        event(0, "period", None, None, "start", "PT12M00S"),
+        event(337, "turnover", sub="traveling", clock="PT00M00S"),
+        event(
+            338,
+            "instantreplay",
+            None,
+            200,
+            "request",
+            "PT00M00.2S",
+            descriptor="support",
+            value="Travel with time on the clock",
+        ),
+        event(339, "turnover", 200, 200, clock="PT00M00.2S"),
+        end(999),
+    ]
+
+
+def test_explicit_supported_travel_replay_retains_recorded_clocks_and_audit_reason():
+    actions = clock_restoration_sequence()
+    original = json.dumps(actions)
+    r = parse(actions)
+    assert [e.clock for e in r.events[1:4]] == [0, 0.2, 0.2]
+    assert r.possessions[1].start_state.reference_action_number == 338
+    assert r.possessions[1].start_state.clock == 0.2
+    assert "source_clock_correction_requires_audit" in r.possessions[0].audit_flags
+    assert r.possessions[0].foul_indicator is None
+    assert r.possessions[1].start_state.previous_foul_indicators == (None,)
+    issue = next(
+        i for i in r.issues if i.code == "source_clock_correction_requires_audit"
+    )
+    assert issue.action_number == 338 and "337" in issue.detail and issue.blocking
+    assert json.dumps(actions) == original
+    assert parse(actions[:3]).possessions[0].start_state == r.possessions[0].start_state
+    assert not r.eligible
+
+
+@pytest.mark.parametrize(
+    "change",
+    [
+        {"descriptor": "overturned"},
+        {"value": "Foul occurred prior to expiration of time"},
+        {"value": "Travel with time on the clock?"},
+        {"possession": 100},
+        {"actionType": "memo"},
+        {"subType": "unknown"},
+    ],
+)
+def test_uncorroborated_clock_rise_is_not_repaired(change):
+    actions = clock_restoration_sequence()
+    actions[2].update(change)
+    with pytest.raises(ValueError, match="clock/period regression"):
+        parse(actions)
