@@ -1,0 +1,40 @@
+{
+  "bound_method": "one_sided_Clopper_Pearson_binomial",
+  "completed_enriched_games": 0,
+  "completed_random_games": 0,
+  "confidence": null,
+  "config_sha256": "378f3ce6871fd53a679ebc880ec60289d57cfb1fc6264d469e11bb2bd811eb5c",
+  "enriched_games": 4,
+  "enriched_reasons": {
+    "0022000181": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently.",
+    "0022000254": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently.",
+    "0022000925": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently.",
+    "0022301177": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently."
+  },
+  "inventory_coverage": {
+    "completeness": "unverified",
+    "games": [],
+    "schedule_evidence": null,
+    "status": "observed_only"
+  },
+  "kind": "independent_audit_gate",
+  "limitations": "Attestations and external evidence are not authenticated. Game-level binomial model is assumed; enriched games are not pooled. Passing is necessary, not sufficient, for scientific release.",
+  "parser_sha256": "a0fc53a3389002d79affef35300ce76f12a7fe058621d6231d35b0676a45743a",
+  "parser_version": "canonical_candidate_v1",
+  "plan_sha256": "6450642f88493ea7ae172d7961e3eda249753cc7527a0689cc5b09c97e8a4561",
+  "random_games": 10,
+  "random_games_with_material_discrepancy": 0,
+  "reasons": [
+    "independent_schedule_coverage_unverified",
+    "missing_or_invalid_tolerances",
+    "missing_selected_game_reviews",
+    "random_error_bound_unavailable",
+    "random_sample_assumption_undeclared",
+    "tolerances_not_frozen_before_review"
+  ],
+  "reviews_sha256": "166d2a7793ba52cae6ee71b63df45fbcae4c9cb7c8f02b49f00616fd97a46f72",
+  "sample_assumption": null,
+  "schema_version": "audit-gate-v1",
+  "status": "BLOCKED",
+  "upper_bound": null
+}
