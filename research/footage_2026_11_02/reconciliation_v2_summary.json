@@ -1,0 +1,217 @@
+{
+  "baseline": {
+    "candidate_possessions": 1196161,
+    "eligible_games": 0,
+    "games": 6084,
+    "issue_counts": {
+      "event_owner_conflict": 5,
+      "foul_defense_unresolved": 419,
+      "independent_audit_required": 5999,
+      "missing_period_end": 20,
+      "offensive_foul_owner_conflict": 52,
+      "partial_start": 12,
+      "provisional_final_possession": 2,
+      "unexplained_control_transfer": 2780,
+      "unknown_ownership": 116,
+      "unsupported_free_throw": 3,
+      "unsupported_label": 236,
+      "violation_requires_audit": 10347
+    },
+    "metric_statuses": {
+      "descriptive_candidate": 970,
+      "not_reconstructed": 85,
+      "withheld_incomplete_or_ambiguous": 5029
+    },
+    "parser_sha256": "a0fc53a3389002d79affef35300ce76f12a7fe058621d6231d35b0676a45743a",
+    "parser_version": "canonical_candidate_v1",
+    "report_path": "output/v2/reconciliation-all-2026-11-02/report.json",
+    "report_sha256": "c060489701e5e0eea15a5ca5d0ccd51f1741a61c80f38ba8df479b701bee7f11",
+    "source_failures": [],
+    "statuses": {
+      "candidate_diagnostic_only": 5999,
+      "quarantined": 85
+    }
+  },
+  "changed_field_counts": {
+    "candidate_possessions": 2219,
+    "difference_vs_hypothesis": 2219,
+    "issues": 2056,
+    "uncertain_possessions": 19
+  },
+  "changed_games": 2219,
+  "current": {
+    "candidate_possessions": 1193332,
+    "eligible_games": 0,
+    "games": 6084,
+    "issue_counts": {
+      "event_owner_conflict": 5,
+      "foul_defense_unresolved": 419,
+      "independent_audit_required": 5999,
+      "missing_period_end": 20,
+      "offensive_foul_owner_conflict": 52,
+      "partial_start": 12,
+      "provisional_final_possession": 2,
+      "unexplained_control_transfer": 227,
+      "unknown_ownership": 116,
+      "unsupported_free_throw": 3,
+      "unsupported_label": 236,
+      "violation_requires_audit": 10347
+    },
+    "metric_statuses": {
+      "descriptive_candidate": 970,
+      "not_reconstructed": 85,
+      "withheld_incomplete_or_ambiguous": 5029
+    },
+    "parser_sha256": "880810734ce70a49fbae2ad3395837426a62475e84e2d8d8d6e096038d182d3a",
+    "parser_version": "canonical_candidate_v2",
+    "report_path": "output/v2/reconciliation-goaltending-2026-11-02/report.json",
+    "report_sha256": "90484e4538cc999591f09b45e1d39a9c1e819159137973f36b3355dc22db02ed",
+    "source_failures": [],
+    "statuses": {
+      "candidate_diagnostic_only": 5999,
+      "quarantined": 85
+    }
+  },
+  "date": "2026-11-02",
+  "interpretation": "Grouping change only. Violations remain blocking. Flag reduction is implementation behavior, not a measured reconstruction error rate or independent accuracy estimate. The baseline adjacency count 2540 is not identical to the before/after flag reduction.",
+  "metadata": [
+    {
+      "file": "cdnnba_2020_games.csv",
+      "sha256": "db1dea6c56f6f6098ee0fee9ed9b5cd96f4871fa00d92c8171c5f7cf1c855d13",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2021_games.csv",
+      "sha256": "1eb950749765888e6afede055d51132d89af45326acec5a72e010b314f3a6bce",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2022_games.csv",
+      "sha256": "a2ebd2045d148982dbc1866ae57bdc03b030fae5fbf399937385524c8a47fdd5",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2023_games.csv",
+      "sha256": "0b92a99783b83f2578869ceb1f0c5a0644008ff036195437eff99604cc8efa64",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_2024_games.csv",
+      "sha256": "0ff4396b5678527c98a9599373fc124e7b6e442a3dde78695a713f83a2afa302",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "cdnnba_po_2024_games.csv",
+      "sha256": "12d21f77ae130735746a8fe53dda695dc2b11ea8f317e3e63dce16f9252cf613",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    }
+  ],
+  "possession_count_reduction": 2829,
+  "same_game_ids": true,
+  "same_quarantined_game_ids": true,
+  "source_manifest_sha256": "fd0d6639ef35e84d3d63b1e10035312f2cf5c7bd60973c856278ec54dd27b84a",
+  "status": "development_diagnostics_not_independent_validation",
+  "transfer_flags_removed": 2553,
+  "verified_sources": [
+    {
+      "actual_bytes": 15548680,
+      "expected_bytes": 15548680,
+      "expected_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "manifest_index": 0,
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "source_url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2020.tar.xz",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 17660924,
+      "expected_bytes": 17660924,
+      "expected_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "manifest_index": 1,
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "source_url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2021.tar.xz",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 18705272,
+      "expected_bytes": 18705272,
+      "expected_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "manifest_index": 2,
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "source_url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2022.tar.xz",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 18598380,
+      "expected_bytes": 18598380,
+      "expected_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "manifest_index": 3,
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "source_url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2023.tar.xz",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 18886652,
+      "expected_bytes": 18886652,
+      "expected_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "manifest_index": 4,
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "source_url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2024.tar.xz",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 1255524,
+      "expected_bytes": 1255524,
+      "expected_sha256": "065798b27908f9e16d8f9b6f19f429d0a798d98ce67aad116c9c9b7786f801f7",
+      "manifest_index": 5,
+      "source_file": "cdnnba_po_2024.tar.xz",
+      "source_sha256": "065798b27908f9e16d8f9b6f19f429d0a798d98ce67aad116c9c9b7786f801f7",
+      "source_url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_po_2024.tar.xz",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 11344636,
+      "expected_bytes": 11344636,
+      "expected_sha256": "79f698e66439e3e43bdb6299eb4da7897b5e007985193350da280c8a4ec76e60",
+      "manifest_index": 6,
+      "source_file": "datanba_2024.tar.xz",
+      "source_sha256": "79f698e66439e3e43bdb6299eb4da7897b5e007985193350da280c8a4ec76e60",
+      "source_url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2024.tar.xz",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 28207265,
+      "expected_bytes": 28207265,
+      "expected_sha256": "36a46aecb09e0c29d294c99753038cf9ac893155103e71757803ac6b62f4c165",
+      "manifest_index": 7,
+      "source_file": "box.csv",
+      "source_sha256": "36a46aecb09e0c29d294c99753038cf9ac893155103e71757803ac6b62f4c165",
+      "source_url": "https://raw.githubusercontent.com/atlhawksfanatic/L2M/330ab64acf052fbfd7b4b111294e4b835f26799e/0-data/stats_nba/stats_nba_box.csv",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 11304909,
+      "expected_bytes": 11304909,
+      "expected_sha256": "577de12b00cb1f6933b4f994a8a837480327ac3e74f3be172e81b8719cda5099",
+      "manifest_index": 8,
+      "source_file": "attendance.csv",
+      "source_sha256": "577de12b00cb1f6933b4f994a8a837480327ac3e74f3be172e81b8719cda5099",
+      "source_url": "https://raw.githubusercontent.com/atlhawksfanatic/L2M/330ab64acf052fbfd7b4b111294e4b835f26799e/0-data/bkref/bkref_box.csv",
+      "status": "verified"
+    },
+    {
+      "actual_bytes": 3396656,
+      "expected_bytes": 3396656,
+      "expected_sha256": "1c09dbb32d07dd9e8003e1d6dca78565312668d6e4941ed552e2daa91d197c72",
+      "manifest_index": 9,
+      "source_file": "assignments.csv",
+      "source_sha256": "1c09dbb32d07dd9e8003e1d6dca78565312668d6e4941ed552e2daa91d197c72",
+      "source_url": "https://raw.githubusercontent.com/atlhawksfanatic/L2M/330ab64acf052fbfd7b4b111294e4b835f26799e/0-data/official_nba/nba_referee_assignments.csv",
+      "status": "verified"
+    }
+  ]
+}

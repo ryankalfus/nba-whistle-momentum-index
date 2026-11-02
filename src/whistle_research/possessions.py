@@ -6,7 +6,7 @@ import math
 import re
 from typing import Mapping, Sequence
 
-PARSER_VERSION = "canonical_candidate_v1"
+PARSER_VERSION = "canonical_candidate_v2"
 ADMIN = {
     "substitution",
     "timeout",
@@ -328,12 +328,28 @@ def reconstruct(
             and e.kind == "turnover"
             and e.subtype == "offensive foul"
         )
-        continuation = paired_offensive_turnover or (
+        paired_goaltending = (
             pending == "made_field_goal"
             and current is not None
-            and owner == current["owner"]
+            and current["terminal_goaltending_qualified"]
+            and not current["goaltending_paired"]
+            and e.period == current["period"]
             and e.clock == current["terminal_clock"]
-            and e.kind in {"foul", "freethrow"}
+            and owner == current["owner"]
+            and e.team_id in teams - {owner}
+            and e.kind == "violation"
+            and e.subtype == "defensive goaltending"
+        )
+        continuation = (
+            paired_offensive_turnover
+            or paired_goaltending
+            or (
+                pending == "made_field_goal"
+                and current is not None
+                and owner == current["owner"]
+                and e.clock == current["terminal_clock"]
+                and e.kind in {"foul", "freethrow"}
+            )
         )
         if current is not None and (
             owner != current["owner"] or (pending and not continuation)
@@ -378,6 +394,8 @@ def reconstruct(
                 flags=set(),
                 terminal_clock=None,
                 offensive_turnover_paired=False,
+                terminal_goaltending_qualified=False,
+                goaltending_paired=False,
             )
             if e.period not in observed_period_starts and not any(
                 p.period == e.period for p in possessions
@@ -437,6 +455,18 @@ def reconstruct(
             elif e.shot_result == "made":
                 pending = "made_field_goal"
                 current["terminal_clock"] = e.clock
+                # Only pair the explicitly corroborated companion row; neither
+                # a violation label alone nor malformed qualifiers suffice.
+                qualifiers = json.loads(e.raw_json).get("qualifiers")
+                if isinstance(qualifiers, str):
+                    # The archived CSV stores the CDN qualifier list this way.
+                    qualifiers = [token.strip() for token in qualifiers.split(",")]
+                current["terminal_goaltending_qualified"] = (
+                    e.team_id == owner
+                    and isinstance(qualifiers, list)
+                    and "defensivegoaltending" in qualifiers
+                )
+                current["goaltending_paired"] = False
         elif e.kind == "turnover":
             if paired_offensive_turnover:
                 current["offensive_turnover_paired"] = True
@@ -458,6 +488,8 @@ def reconstruct(
         elif e.kind == "jumpball" and e.subtype != "recovered":
             flag("unsupported_jump_control", e, "source jump outcome not recognized")
         elif e.kind == "violation":
+            if paired_goaltending:
+                current["goaltending_paired"] = True
             flag(
                 "violation_requires_audit", e, "no blanket control-transfer assumption"
             )

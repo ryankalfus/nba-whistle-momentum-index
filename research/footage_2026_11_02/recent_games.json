@@ -1,0 +1,433 @@
+[
+  {
+    "game_id": "0022200780",
+    "date": "2023-02-02",
+    "matchup": "MIA@NYK",
+    "checked_date": "2026-11-02",
+    "sources": [
+      {
+        "url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+        "publisher": "NBA",
+        "title": "MIA@NYK 2023-02-02 official game details",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/mia-vs-nyk-0022200780/box-score",
+        "publisher": "NBA",
+        "title": "MIA@NYK 2023-02-02 official box score",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/mia-vs-nyk-0022200780/play-by-play",
+        "publisher": "NBA",
+        "title": "MIA@NYK 2023-02-02 official play-by-play",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+        "publisher": "NBA League Pass",
+        "title": "MIA@NYK 2023-02-02 full replay access candidate via Game Details",
+        "kind": "full_replay",
+        "observed_evidence": "NBA help directs subscribers to Game Details for replays. This is an access route candidate, not an observed replay listing or successful playback.",
+        "access_status": "subscription_route_identified_game_replay_inventory_and_playback_unverified"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=EdbTr2mdLgU",
+        "publisher": "NBA",
+        "title": "HEAT at KNICKS | FULL GAME HIGHLIGHTS | February 2, 2023",
+        "kind": "highlights",
+        "observed_evidence": "Search result identifies exact matchup/date highlights by NBA, publication 2023-02-02; video playback untested. Highlights do not provide complete-game coverage.",
+        "access_status": "indexed_highlights_playback_unverified"
+      },
+      {
+        "url": "https://www.nba.com/heat/game/0022200780-heat-vs-knicks-new-york-ny-02-02-2023/box-score",
+        "publisher": "Miami Heat",
+        "title": "Heat at Knicks game page with replay label",
+        "kind": "game_page",
+        "observed_evidence": "Search index displays a Watch Replay label for this game; direct text extraction exposes only an iframe shell.",
+        "access_status": "replay_label_indexed_playback_unverified"
+      },
+      {
+        "url": "https://official.nba.com/archive/goaltending-basket-interference-heat-knicks/",
+        "publisher": "NBA Official",
+        "title": "Goaltending/Basket Interference: Heat @ Knicks",
+        "kind": "event_clips",
+        "observed_evidence": "Official page identifies February 2 2023, fourth quarter 1:22 goaltending review and includes HTML5-video fallback text; actual playback not tested.",
+        "access_status": "event_video_page_observed_playback_unverified"
+      }
+    ],
+    "searches": [
+      "Miami Heat New York Knicks February 2 2023 full game replay 0022200780"
+    ],
+    "conclusion": "Official game/log routes and exact-game official highlights identified. League Pass Game Details is a subscription replay candidate; this game's full-replay listing, entitlement and playback remain unverified. Highlights/event clips cannot satisfy full-game audit coverage. Search did not establish that footage is unavailable.",
+    "full_game_playback_verified": false,
+    "replay_policy_source": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+    "replay_policy_observed": "Official help updated 2026-10-07 requires active League Pass subscription; full replays are found through Game Details. Policy does not guarantee this historical game remains playable."
+  },
+  {
+    "game_id": "0022201087",
+    "date": "2023-03-22",
+    "matchup": "PHI@CHI",
+    "checked_date": "2026-11-02",
+    "sources": [
+      {
+        "url": "https://www.nba.com/game/phi-vs-chi-0022201087",
+        "publisher": "NBA",
+        "title": "PHI@CHI 2023-03-22 official game details",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/phi-vs-chi-0022201087/box-score",
+        "publisher": "NBA",
+        "title": "PHI@CHI 2023-03-22 official box score",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/phi-vs-chi-0022201087/play-by-play",
+        "publisher": "NBA",
+        "title": "PHI@CHI 2023-03-22 official play-by-play",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/phi-vs-chi-0022201087",
+        "publisher": "NBA League Pass",
+        "title": "PHI@CHI 2023-03-22 full replay access candidate via Game Details",
+        "kind": "full_replay",
+        "observed_evidence": "NBA help directs subscribers to Game Details for replays. This is an access route candidate, not an observed replay listing or successful playback.",
+        "access_status": "subscription_route_identified_game_replay_inventory_and_playback_unverified"
+      },
+      {
+        "url": "https://www.nba.com/sixers/videos/philadelphia-76ers-vs-chicago-bulls-highlights-mar-22-2023",
+        "publisher": "Philadelphia 76ers",
+        "title": "Philadelphia 76ers vs. Chicago Bulls Highlights (Mar. 22, 2023)",
+        "kind": "highlights",
+        "observed_evidence": "Team search result identifies exact date highlights; direct web open exposes only an iframe shell. Video playback untested; complete-game coverage not established.",
+        "access_status": "indexed_highlights_playback_unverified"
+      }
+    ],
+    "searches": [
+      "Philadelphia 76ers Chicago Bulls March 22 2023 full game replay 0022201087",
+      "\"76ERS at BULLS\" \"March 22, 2023\" NBA YouTube",
+      "76ers Bulls March 22 2023 NBA highlights"
+    ],
+    "conclusion": "Official game/log routes and exact-game official highlights identified. League Pass Game Details is a subscription replay candidate; this game's full-replay listing, entitlement and playback remain unverified. Highlights/event clips cannot satisfy full-game audit coverage. Search did not establish that footage is unavailable.",
+    "full_game_playback_verified": false,
+    "replay_policy_source": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+    "replay_policy_observed": "Official help updated 2026-10-07 requires active League Pass subscription; full replays are found through Game Details. Policy does not guarantee this historical game remains playable."
+  },
+  {
+    "game_id": "0022301101",
+    "date": "2024-04-02",
+    "matchup": "LAC@SAC",
+    "checked_date": "2026-11-02",
+    "sources": [
+      {
+        "url": "https://www.nba.com/game/lac-vs-sac-0022301101",
+        "publisher": "NBA",
+        "title": "LAC@SAC 2024-04-02 official game details",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/lac-vs-sac-0022301101/box-score",
+        "publisher": "NBA",
+        "title": "LAC@SAC 2024-04-02 official box score",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/lac-vs-sac-0022301101/play-by-play",
+        "publisher": "NBA",
+        "title": "LAC@SAC 2024-04-02 official play-by-play",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/lac-vs-sac-0022301101",
+        "publisher": "NBA League Pass",
+        "title": "LAC@SAC 2024-04-02 full replay access candidate via Game Details",
+        "kind": "full_replay",
+        "observed_evidence": "NBA help directs subscribers to Game Details for replays. This is an access route candidate, not an observed replay listing or successful playback.",
+        "access_status": "subscription_route_identified_game_replay_inventory_and_playback_unverified"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=w6Pa1MxcjVY",
+        "publisher": "NBA",
+        "title": "CLIPPERS at KINGS | FULL GAME HIGHLIGHTS | April 2, 2024",
+        "kind": "highlights",
+        "observed_evidence": "Search result identifies exact matchup/date highlights by NBA, publication 2024-04-02; video playback untested. Highlights do not provide complete-game coverage.",
+        "access_status": "indexed_highlights_playback_unverified"
+      }
+    ],
+    "searches": [
+      "LA Clippers Sacramento Kings April 2 2024 full game replay 0022301101",
+      "\"CLIPPERS at KINGS\" \"April 2, 2024\" highlights",
+      "\"Clippers\" \"Kings\" \"April 2, 2024\" \"full game replay\""
+    ],
+    "conclusion": "Official game/log routes and exact-game official highlights identified. League Pass Game Details is a subscription replay candidate; this game's full-replay listing, entitlement and playback remain unverified. Highlights/event clips cannot satisfy full-game audit coverage. Search did not establish that footage is unavailable.",
+    "full_game_playback_verified": false,
+    "replay_policy_source": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+    "replay_policy_observed": "Official help updated 2026-10-07 requires active League Pass subscription; full replays are found through Game Details. Policy does not guarantee this historical game remains playable."
+  },
+  {
+    "game_id": "0022301177",
+    "date": "2024-04-12",
+    "matchup": "LAL@MEM",
+    "checked_date": "2026-11-02",
+    "sources": [
+      {
+        "url": "https://www.nba.com/game/lal-vs-mem-0022301177",
+        "publisher": "NBA",
+        "title": "LAL@MEM 2024-04-12 official game details",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/lal-vs-mem-0022301177/box-score",
+        "publisher": "NBA",
+        "title": "LAL@MEM 2024-04-12 official box score",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/lal-vs-mem-0022301177/play-by-play",
+        "publisher": "NBA",
+        "title": "LAL@MEM 2024-04-12 official play-by-play",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/lal-vs-mem-0022301177",
+        "publisher": "NBA League Pass",
+        "title": "LAL@MEM 2024-04-12 full replay access candidate via Game Details",
+        "kind": "full_replay",
+        "observed_evidence": "NBA help directs subscribers to Game Details for replays. This is an access route candidate, not an observed replay listing or successful playback.",
+        "access_status": "subscription_route_identified_game_replay_inventory_and_playback_unverified"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=GgC2In7I9T4",
+        "publisher": "NBA",
+        "title": "LAKERS at GRIZZLIES | FULL GAME HIGHLIGHTS | April 12, 2024",
+        "kind": "highlights",
+        "observed_evidence": "Search result identifies exact matchup/date highlights by NBA, publication 2024-04-12; video playback untested. Highlights do not provide complete-game coverage.",
+        "access_status": "indexed_highlights_playback_unverified"
+      },
+      {
+        "url": "https://www.nba.com/grizzlies/videos/grizzlies-vs-lakers-highlights-4-12-24",
+        "publisher": "Memphis Grizzlies",
+        "title": "Grizzlies vs Lakers highlights 4.12.24",
+        "kind": "highlights",
+        "observed_evidence": "Official team search result matches game date; full team highlights are edited highlights, not full-game footage. Playback untested.",
+        "access_status": "indexed_highlights_playback_unverified"
+      }
+    ],
+    "searches": [
+      "Los Angeles Lakers Memphis Grizzlies April 12 2024 full game replay 0022301177"
+    ],
+    "conclusion": "Official game/log routes and exact-game official highlights identified. League Pass Game Details is a subscription replay candidate; this game's full-replay listing, entitlement and playback remain unverified. Highlights/event clips cannot satisfy full-game audit coverage. Search did not establish that footage is unavailable.",
+    "full_game_playback_verified": false,
+    "replay_policy_source": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+    "replay_policy_observed": "Official help updated 2026-10-07 requires active League Pass subscription; full replays are found through Game Details. Policy does not guarantee this historical game remains playable."
+  },
+  {
+    "game_id": "0022400393",
+    "date": "2024-12-23",
+    "matchup": "BOS@ORL",
+    "checked_date": "2026-11-02",
+    "sources": [
+      {
+        "url": "https://www.nba.com/game/bos-vs-orl-0022400393",
+        "publisher": "NBA",
+        "title": "BOS@ORL 2024-12-23 official game details",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/bos-vs-orl-0022400393/box-score",
+        "publisher": "NBA",
+        "title": "BOS@ORL 2024-12-23 official box score",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/bos-vs-orl-0022400393/play-by-play",
+        "publisher": "NBA",
+        "title": "BOS@ORL 2024-12-23 official play-by-play",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/bos-vs-orl-0022400393",
+        "publisher": "NBA League Pass",
+        "title": "BOS@ORL 2024-12-23 full replay access candidate via Game Details",
+        "kind": "full_replay",
+        "observed_evidence": "NBA help directs subscribers to Game Details for replays. This is an access route candidate, not an observed replay listing or successful playback.",
+        "access_status": "subscription_route_identified_game_replay_inventory_and_playback_unverified"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=s5RPZoZZdTo",
+        "publisher": "Orlando Magic",
+        "title": "FULL GAME HIGHLIGHTS: CELTICS VS. MAGIC 12.23.24",
+        "kind": "highlights",
+        "observed_evidence": "Search result identifies exact matchup/date highlights by Orlando Magic, publication 2024-12-23; video playback untested. Highlights do not provide complete-game coverage.",
+        "access_status": "indexed_highlights_playback_unverified"
+      }
+    ],
+    "searches": [
+      "Boston Celtics Orlando Magic December 23 2024 full game replay 0022400393",
+      "Celtics Magic December 23 2024 NBA highlights",
+      "\"Celtics\" \"Magic\" \"December 23, 2024\" \"full game replay\""
+    ],
+    "conclusion": "Official game/log routes and exact-game official highlights identified. League Pass Game Details is a subscription replay candidate; this game's full-replay listing, entitlement and playback remain unverified. Highlights/event clips cannot satisfy full-game audit coverage. Search did not establish that footage is unavailable.",
+    "full_game_playback_verified": false,
+    "replay_policy_source": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+    "replay_policy_observed": "Official help updated 2026-10-07 requires active League Pass subscription; full replays are found through Game Details. Policy does not guarantee this historical game remains playable."
+  },
+  {
+    "game_id": "0022400481",
+    "date": "2025-01-04",
+    "matchup": "UTA@MIA",
+    "checked_date": "2026-11-02",
+    "sources": [
+      {
+        "url": "https://www.nba.com/game/uta-vs-mia-0022400481",
+        "publisher": "NBA",
+        "title": "UTA@MIA 2025-01-04 official game details",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/uta-vs-mia-0022400481/box-score",
+        "publisher": "NBA",
+        "title": "UTA@MIA 2025-01-04 official box score",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/uta-vs-mia-0022400481/play-by-play",
+        "publisher": "NBA",
+        "title": "UTA@MIA 2025-01-04 official play-by-play",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/uta-vs-mia-0022400481",
+        "publisher": "NBA League Pass",
+        "title": "UTA@MIA 2025-01-04 full replay access candidate via Game Details",
+        "kind": "full_replay",
+        "observed_evidence": "NBA help directs subscribers to Game Details for replays. This is an access route candidate, not an observed replay listing or successful playback.",
+        "access_status": "subscription_route_identified_game_replay_inventory_and_playback_unverified"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=RYYkGxIS1pA",
+        "publisher": "NBA",
+        "title": "JAZZ at HEAT | FULL GAME HIGHLIGHTS | January 4, 2025",
+        "kind": "highlights",
+        "observed_evidence": "Search result identifies exact matchup/date highlights by NBA, publication 2025-01-04; video playback untested. Highlights do not provide complete-game coverage.",
+        "access_status": "indexed_highlights_playback_unverified"
+      },
+      {
+        "url": "https://www.nba.com/heat/game/0022400481-jazz-vs-heat-miami-fl-01-04-2025",
+        "publisher": "Miami Heat",
+        "title": "Jazz at Heat game page with replay label",
+        "kind": "game_page",
+        "observed_evidence": "Search index displays a Watch Replay label for this game; direct text extraction exposes only an iframe shell.",
+        "access_status": "replay_label_indexed_playback_unverified"
+      }
+    ],
+    "searches": [
+      "Utah Jazz Miami Heat January 4 2025 full game replay 0022400481"
+    ],
+    "conclusion": "Official game/log routes and exact-game official highlights identified. League Pass Game Details is a subscription replay candidate; this game's full-replay listing, entitlement and playback remain unverified. Highlights/event clips cannot satisfy full-game audit coverage. Search did not establish that footage is unavailable.",
+    "full_game_playback_verified": false,
+    "replay_policy_source": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+    "replay_policy_observed": "Official help updated 2026-10-07 requires active League Pass subscription; full replays are found through Game Details. Policy does not guarantee this historical game remains playable."
+  },
+  {
+    "game_id": "0022400553",
+    "date": "2025-01-13",
+    "matchup": "MIA@LAC",
+    "checked_date": "2026-11-02",
+    "sources": [
+      {
+        "url": "https://www.nba.com/game/mia-vs-lac-0022400553",
+        "publisher": "NBA",
+        "title": "MIA@LAC 2025-01-13 official game details",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/mia-vs-lac-0022400553/box-score",
+        "publisher": "NBA",
+        "title": "MIA@LAC 2025-01-13 official box score",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/mia-vs-lac-0022400553/play-by-play",
+        "publisher": "NBA",
+        "title": "MIA@LAC 2025-01-13 official play-by-play",
+        "kind": "game_page",
+        "observed_evidence": "Web open returned the matching game/date page title; extracted body was chiefly navigation. No video playback or event-video coverage observed.",
+        "access_status": "page_title_observed_body_limited_playback_untested"
+      },
+      {
+        "url": "https://www.nba.com/game/mia-vs-lac-0022400553",
+        "publisher": "NBA League Pass",
+        "title": "MIA@LAC 2025-01-13 full replay access candidate via Game Details",
+        "kind": "full_replay",
+        "observed_evidence": "NBA help directs subscribers to Game Details for replays. This is an access route candidate, not an observed replay listing or successful playback.",
+        "access_status": "subscription_route_identified_game_replay_inventory_and_playback_unverified"
+      },
+      {
+        "url": "https://www.youtube.com/watch?v=MhbEHpQXxUQ",
+        "publisher": "NBA",
+        "title": "HEAT at CLIPPERS | FULL GAME HIGHLIGHTS | January 13, 2025",
+        "kind": "highlights",
+        "observed_evidence": "Search result identifies exact matchup/date highlights by NBA, publication 2025-01-13; video playback untested. Highlights do not provide complete-game coverage.",
+        "access_status": "indexed_highlights_playback_unverified"
+      },
+      {
+        "url": "https://www.nba.com/watch/video/full-game-highlights-miami-heat-la-clippers-2",
+        "publisher": "NBA",
+        "title": "Full Game Highlights: Miami Heat @ LA Clippers",
+        "kind": "highlights",
+        "observed_evidence": "Search index matches January 13 2025 highlight page. The title describes highlights; actual playback and full-game coverage were not observed.",
+        "access_status": "indexed_highlights_playback_unverified"
+      }
+    ],
+    "searches": [
+      "Miami Heat LA Clippers January 13 2025 full game replay 0022400553"
+    ],
+    "conclusion": "Official game/log routes and exact-game official highlights identified. League Pass Game Details is a subscription replay candidate; this game's full-replay listing, entitlement and playback remain unverified. Highlights/event clips cannot satisfy full-game audit coverage. Search did not establish that footage is unavailable.",
+    "full_game_playback_verified": false,
+    "replay_policy_source": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+    "replay_policy_observed": "Official help updated 2026-10-07 requires active League Pass subscription; full replays are found through Game Details. Policy does not guarantee this historical game remains playable."
+  }
+]

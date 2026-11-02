@@ -1,0 +1,407 @@
+{
+  "researched_on": "2026-11-02",
+  "scope": "Seven fixed early audit games; source discovery only, no account session or playback observation.",
+  "methods": [
+    "Exact date, matchup and game ID full-replay web searches.",
+    "Opened all seven canonical NBA game-summary, box-score and play-by-play URLs.",
+    "Searched NBA/team highlights and opened promising official video listings.",
+    "No account access, purchases, paywall bypass, full-game downloads, or browser shared state used."
+  ],
+  "common_sources": [
+    {
+      "url": "https://support.watch.nba.com/hc/en-us/articles/360011802673-Full-Game-Replays-and-Condensed-Game-Availability",
+      "publisher": "NBA Help Center",
+      "title": "Full Game Replays and Condensed Game Availability",
+      "observed_evidence": "Article updated October 7, 2026. Requires active League Pass subscription; NBA.com route is Games, desired game, Watch Now below player, desired stream.",
+      "access_status": "support_page_read_not_game_specific_catalog_confirmation"
+    }
+  ],
+  "limitations": [
+    "Page resolution and indexed replay labels are not evidence of playable full-game access.",
+    "Web tools cannot establish entitlement, regional availability, stream duration or complete coverage without actual authorized playback.",
+    "Some official pages extract only navigation/metadata; title resolution does not verify the event rows or video.",
+    "April 19, 2021 MEM/DEN highlights appeared in search but were excluded because the required game is April 26.",
+    "No independent annotation or audit eligibility established."
+  ],
+  "games": [
+    {
+      "game_id": "0022000181",
+      "date": "2021-01-15",
+      "matchup": "NYK @ CLE",
+      "searched_on": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nba.com/game/nyk-vs-cle-0022000181",
+          "publisher": "NBA",
+          "title": "Official game summary",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned a matching date/team page title.",
+          "access_status": "page_resolved_full_replay_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/nyk-vs-cle-0022000181/box-score",
+          "publisher": "NBA",
+          "title": "Official box score",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching box-score title; no player playback tested.",
+          "access_status": "page_resolved_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/nyk-vs-cle-0022000181/play-by-play",
+          "publisher": "NBA",
+          "title": "Official play-by-play",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching play-by-play title; event-video playback untested.",
+          "access_status": "page_resolved_event_video_unverified"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gJeH_wB0Ei4",
+          "publisher": "NBA (verified YouTube channel)",
+          "title": "KNICKS at CAVALIERS | FULL GAME HIGHLIGHTS | January 15, 2021",
+          "kind": "highlights",
+          "observed_evidence": "Search lists NBA verified channel; direct web open failed/throttled.",
+          "access_status": "official_highlight_listing_found_playback_unverified"
+        }
+      ],
+      "searches": [
+        "Knicks Cavaliers January 15 2021 full game replay 0022000181"
+      ],
+      "official_replay_route": "https://www.nba.com/game/nyk-vs-cle-0022000181",
+      "official_replay_route_evidence": "Generic NBA Help instructions direct subscribers to each game details page, Watch Now, desired stream. This does not confirm this historical game is in the playable catalog.",
+      "conclusion": "Official game and highlights listings found. Full-game replay remains unverified; an authorized League Pass session must inspect the exact game and stream. Highlights cannot support full-game audit coverage. Search did not establish that no lawful full replay exists.",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000254",
+      "date": "2021-01-24",
+      "matchup": "ATL @ MIL",
+      "searched_on": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nba.com/game/atl-vs-mil-0022000254",
+          "publisher": "NBA",
+          "title": "Official game summary",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned a matching date/team page title.",
+          "access_status": "page_resolved_full_replay_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/atl-vs-mil-0022000254/box-score",
+          "publisher": "NBA",
+          "title": "Official box score",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching box-score title; no player playback tested.",
+          "access_status": "page_resolved_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/atl-vs-mil-0022000254/play-by-play",
+          "publisher": "NBA",
+          "title": "Official play-by-play",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching play-by-play title; event-video playback untested.",
+          "access_status": "page_resolved_event_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/bucks/video/2021/01/24/20210124-game-recap-bucks-129-hawks-115",
+          "publisher": "Milwaukee Bucks / NBA",
+          "title": "Game Recap: Bucks 129 - Hawks 115 | 1.24.21",
+          "kind": "highlights",
+          "observed_evidence": "Search lists dated team recap; direct web open timed out.",
+          "access_status": "official_highlight_listing_found_playback_unverified"
+        }
+      ],
+      "searches": [
+        "Hawks Bucks January 24 2021 full game replay 0022000254",
+        "site:youtube.com NBA \"HAWKS at BUCKS\" \"January 24, 2021\"",
+        "\"HAWKS at BUCKS\" \"January 24, 2021\" NBA highlights youtube",
+        "NBA Hawks Bucks Jan 24 2021 highlights official video"
+      ],
+      "official_replay_route": "https://www.nba.com/game/atl-vs-mil-0022000254",
+      "official_replay_route_evidence": "Generic NBA Help instructions direct subscribers to each game details page, Watch Now, desired stream. This does not confirm this historical game is in the playable catalog.",
+      "conclusion": "Official game and highlights listings found. Full-game replay remains unverified; an authorized League Pass session must inspect the exact game and stream. Highlights cannot support full-game audit coverage. Search did not establish that no lawful full replay exists.",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000367",
+      "date": "2021-02-08",
+      "matchup": "HOU @ CHA",
+      "searched_on": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nba.com/game/hou-vs-cha-0022000367",
+          "publisher": "NBA",
+          "title": "Official game summary",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned a matching date/team page title.",
+          "access_status": "page_resolved_full_replay_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/hou-vs-cha-0022000367/box-score",
+          "publisher": "NBA",
+          "title": "Official box score",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching box-score title; no player playback tested.",
+          "access_status": "page_resolved_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/hou-vs-cha-0022000367/play-by-play",
+          "publisher": "NBA",
+          "title": "Official play-by-play",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching play-by-play title; event-video playback untested.",
+          "access_status": "page_resolved_event_video_unverified"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=f5NVGuYB7SM",
+          "publisher": "NBA (verified YouTube channel)",
+          "title": "ROCKETS at HORNETS | FULL GAME HIGHLIGHTS | February 8, 2021",
+          "kind": "highlights",
+          "observed_evidence": "Search lists NBA verified channel; direct web open failed/throttled.",
+          "access_status": "official_highlight_listing_found_playback_unverified"
+        },
+        {
+          "url": "https://www.nba.com/rockets/game/0022000367",
+          "publisher": "Houston Rockets / NBA",
+          "title": "Official team game page with replay label",
+          "kind": "full_replay",
+          "observed_evidence": "Search extraction shows Watch Replay and matching game date. Playback untested.",
+          "access_status": "candidate_full_replay_label_only_not_playback_verified"
+        }
+      ],
+      "searches": [
+        "Rockets Hornets February 8 2021 full game replay 0022000367"
+      ],
+      "official_replay_route": "https://www.nba.com/game/hou-vs-cha-0022000367",
+      "official_replay_route_evidence": "Generic NBA Help instructions direct subscribers to each game details page, Watch Now, desired stream. This does not confirm this historical game is in the playable catalog.",
+      "conclusion": "Official game and highlights listings found. Full-game replay remains unverified; an authorized League Pass session must inspect the exact game and stream. Highlights cannot support full-game audit coverage. Search did not establish that no lawful full replay exists.",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000544",
+      "date": "2021-03-03",
+      "matchup": "ATL @ ORL",
+      "searched_on": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nba.com/game/atl-vs-orl-0022000544",
+          "publisher": "NBA",
+          "title": "Official game summary",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned a matching date/team page title.",
+          "access_status": "page_resolved_full_replay_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/atl-vs-orl-0022000544/box-score",
+          "publisher": "NBA",
+          "title": "Official box score",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching box-score title; no player playback tested.",
+          "access_status": "page_resolved_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/atl-vs-orl-0022000544/play-by-play",
+          "publisher": "NBA",
+          "title": "Official play-by-play",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching play-by-play title; event-video playback untested.",
+          "access_status": "page_resolved_event_video_unverified"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=IOrLvWYAL60",
+          "publisher": "NBA (verified YouTube channel)",
+          "title": "HAWKS at MAGIC | FULL GAME HIGHLIGHTS | March 3, 2021",
+          "kind": "highlights",
+          "observed_evidence": "Search lists NBA verified channel; direct web open failed/throttled.",
+          "access_status": "official_highlight_listing_found_playback_unverified"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/hawks-magic-03-03-2021-a",
+          "publisher": "NBA",
+          "title": "Hawks @ Magic 03/03/2021 - a",
+          "kind": "full_replay",
+          "observed_evidence": "Matching watch-page title; duration, stream entitlement and completeness unknown.",
+          "access_status": "candidate_full_replay_page_only_not_playback_verified"
+        },
+        {
+          "url": "https://www.nba.com/magic/game/0022000544-hawks-vs-magic-orlando-fl-03-03-2021",
+          "publisher": "Orlando Magic / NBA",
+          "title": "Official team game page with replay label",
+          "kind": "full_replay",
+          "observed_evidence": "Search extraction shows Watch Replay and matching game date. Playback untested.",
+          "access_status": "candidate_full_replay_label_only_not_playback_verified"
+        }
+      ],
+      "searches": [
+        "Hawks Magic March 3 2021 full game replay 0022000544",
+        "site:youtube.com NBA \"HAWKS at MAGIC\" \"March 3, 2021\""
+      ],
+      "official_replay_route": "https://www.nba.com/game/atl-vs-orl-0022000544",
+      "official_replay_route_evidence": "Generic NBA Help instructions direct subscribers to each game details page, Watch Now, desired stream. This does not confirm this historical game is in the playable catalog.",
+      "conclusion": "Official game and highlights listings found. Full-game replay remains unverified; an authorized League Pass session must inspect the exact game and stream. Highlights cannot support full-game audit coverage. Search did not establish that no lawful full replay exists.",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000925",
+      "date": "2021-04-26",
+      "matchup": "MEM @ DEN",
+      "searched_on": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nba.com/game/mem-vs-den-0022000925",
+          "publisher": "NBA",
+          "title": "Official game summary",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned a matching date/team page title.",
+          "access_status": "page_resolved_full_replay_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/mem-vs-den-0022000925/box-score",
+          "publisher": "NBA",
+          "title": "Official box score",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching box-score title; no player playback tested.",
+          "access_status": "page_resolved_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/mem-vs-den-0022000925/play-by-play",
+          "publisher": "NBA",
+          "title": "Official play-by-play",
+          "kind": "game_page",
+          "observed_evidence": "Web open timed out; URL remains an unverified official route.",
+          "access_status": "web_tool_timeout"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/memphis-grizzlies-highlights-vs-denver-nuggets-azo0hs",
+          "publisher": "NBA",
+          "title": "Memphis Grizzlies Highlights vs. Denver Nuggets",
+          "kind": "highlights",
+          "observed_evidence": "Page identifies highlights dated April 26, 2021; playback untested.",
+          "access_status": "official_highlight_listing_found_playback_unverified"
+        },
+        {
+          "url": "https://www.nba.com/nuggets/game/0022000925",
+          "publisher": "Denver Nuggets / NBA",
+          "title": "Official team game page with replay label",
+          "kind": "full_replay",
+          "observed_evidence": "Search extraction shows Watch Replay and matching game date. Playback untested.",
+          "access_status": "candidate_full_replay_label_only_not_playback_verified"
+        }
+      ],
+      "searches": [
+        "Grizzlies Nuggets April 26 2021 full game replay 0022000925",
+        "site:youtube.com NBA \"GRIZZLIES at NUGGETS\" \"April 26, 2021\"",
+        "\"GRIZZLIES at NUGGETS\" \"April 26, 2021\" NBA highlights youtube",
+        "NBA Grizzlies Nuggets Apr 26 2021 highlights official video"
+      ],
+      "official_replay_route": "https://www.nba.com/game/mem-vs-den-0022000925",
+      "official_replay_route_evidence": "Generic NBA Help instructions direct subscribers to each game details page, Watch Now, desired stream. This does not confirm this historical game is in the playable catalog.",
+      "conclusion": "Official game and highlights listings found. Full-game replay remains unverified; an authorized League Pass session must inspect the exact game and stream. Highlights cannot support full-game audit coverage. Search did not establish that no lawful full replay exists.",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000997",
+      "date": "2021-05-06",
+      "matchup": "WAS @ TOR",
+      "searched_on": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nba.com/game/was-vs-tor-0022000997",
+          "publisher": "NBA",
+          "title": "Official game summary",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned a matching date/team page title.",
+          "access_status": "page_resolved_full_replay_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/was-vs-tor-0022000997/box-score",
+          "publisher": "NBA",
+          "title": "Official box score",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching box-score title; no player playback tested.",
+          "access_status": "page_resolved_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/was-vs-tor-0022000997/play-by-play",
+          "publisher": "NBA",
+          "title": "Official play-by-play",
+          "kind": "game_page",
+          "observed_evidence": "Web tool reported URL inaccessible; event-log/video access unverified.",
+          "access_status": "web_tool_inaccessible"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=ir_hdApSid4",
+          "publisher": "NBA (verified YouTube channel)",
+          "title": "WIZARDS at RAPTORS | FULL GAME HIGHLIGHTS | May 6, 2021",
+          "kind": "highlights",
+          "observed_evidence": "Search lists NBA verified channel; direct web open failed/throttled.",
+          "access_status": "official_highlight_listing_found_playback_unverified"
+        }
+      ],
+      "searches": [
+        "Wizards Raptors May 6 2021 full game replay 0022000997"
+      ],
+      "official_replay_route": "https://www.nba.com/game/was-vs-tor-0022000997",
+      "official_replay_route_evidence": "Generic NBA Help instructions direct subscribers to each game details page, Watch Now, desired stream. This does not confirm this historical game is in the playable catalog.",
+      "conclusion": "Official game and highlights listings found. Full-game replay remains unverified; an authorized League Pass session must inspect the exact game and stream. Highlights cannot support full-game audit coverage. Search did not establish that no lawful full replay exists.",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022100226",
+      "date": "2021-11-18",
+      "matchup": "LAC @ MEM",
+      "searched_on": "2026-11-02",
+      "sources": [
+        {
+          "url": "https://www.nba.com/game/lac-vs-mem-0022100226",
+          "publisher": "NBA",
+          "title": "Official game summary",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned a matching date/team page title.",
+          "access_status": "page_resolved_full_replay_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/lac-vs-mem-0022100226/box-score",
+          "publisher": "NBA",
+          "title": "Official box score",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching box-score title; no player playback tested.",
+          "access_status": "page_resolved_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/game/lac-vs-mem-0022100226/play-by-play",
+          "publisher": "NBA",
+          "title": "Official play-by-play",
+          "kind": "game_page",
+          "observed_evidence": "Web open returned matching play-by-play title; event-video playback untested.",
+          "access_status": "page_resolved_event_video_unverified"
+        },
+        {
+          "url": "https://www.nba.com/grizzlies/video/highlights-lac-211118",
+          "publisher": "Memphis Grizzlies / NBA",
+          "title": "Grizzlies vs. Clippers highlights 11.18.21",
+          "kind": "highlights",
+          "observed_evidence": "Search title matches date; page extraction only returned a tag-manager iframe.",
+          "access_status": "official_highlight_listing_found_playback_unverified"
+        },
+        {
+          "url": "https://www.nba.com/watch/video/clippers-grizzlies-11-18-2021-kiswe",
+          "publisher": "NBA",
+          "title": "Clippers @ Grizzlies 11/18/2021 - kiswe",
+          "kind": "full_replay",
+          "observed_evidence": "Matching watch-page title; duration, stream entitlement and completeness unknown.",
+          "access_status": "candidate_full_replay_page_only_not_playback_verified"
+        }
+      ],
+      "searches": [
+        "Clippers Grizzlies November 18 2021 full game replay 0022100226",
+        "site:youtube.com NBA \"CLIPPERS at GRIZZLIES\" \"November 18, 2021\"",
+        "\"CLIPPERS at GRIZZLIES\" \"November 18, 2021\" NBA highlights youtube",
+        "NBA Clippers Grizzlies Nov 18 2021 highlights official video"
+      ],
+      "official_replay_route": "https://www.nba.com/game/lac-vs-mem-0022100226",
+      "official_replay_route_evidence": "Generic NBA Help instructions direct subscribers to each game details page, Watch Now, desired stream. This does not confirm this historical game is in the playable catalog.",
+      "conclusion": "Official game and highlights listings found. Full-game replay remains unverified; an authorized League Pass session must inspect the exact game and stream. Highlights cannot support full-game audit coverage. Search did not establish that no lawful full replay exists.",
+      "full_game_playback_verified": false
+    }
+  ]
+}

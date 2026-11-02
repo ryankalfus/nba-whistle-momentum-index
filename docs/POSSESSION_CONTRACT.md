@@ -1,6 +1,6 @@
 # Canonical candidate possession contract
 
-Date: 2026-11-02. Version: `canonical_candidate_v1`. Status: implemented candidate, not independently validated. This contract is separate from the historical `period_start_v2` parser and changes no legacy release.
+Date: 2026-11-02. Version: `canonical_candidate_v2`. Status: implemented candidate, not independently validated. This contract is separate from the historical `period_start_v2` parser and changes no legacy release.
 
 ## API and provenance
 
@@ -20,6 +20,8 @@ Recognized ordinary defensive personal/shooting/loose-ball labels count only whe
 
 End of input does not establish end of game. Without a period-end marker, the final group has `complete=False`, `boundary_reason=input_exhausted`, `provisional_final_possession` and a missing target, even when its last row is a made shot. An appended and-one or continuation could change that group. A period-end marker establishes only the observed period boundary, not whole-game completeness or schedule coverage.
 
+A made field goal and one corroborated defensive-goaltending companion share a group. Pairing requires the terminal shot's exact `defensivegoaltending` qualifier (a list token or comma-separated archive token), valid offensive shot actor, matching period/clock/source offense, and an opposing violation actor with subtype `defensive goaltending`. The made-basket boundary remains pending, including a subsequent and-one. Uncorroborated, mismatched or repeated companions do not qualify. The violation still receives `violation_requires_audit`, so pairing neither supplies a known foul target nor makes the game eligible.
+
 ## Feature availability
 
 `start_action_number` is the first retrospective member of a group. It is distinct from `start_state.reference_action_number`, which names the prior recorded event. The start state snapshots scores and counted-foul history before processing the new group's event; at a period transition its clock is the regulation/OT period length. Missing initial scores stay missing. Missing period-start evidence or an unresolved foul classification makes affected cumulative counts missing, rather than zero; unknown classifications propagate into later history. The previous two indicators use global completed group order across periods.
@@ -37,3 +39,5 @@ The metric uses global two-group past/future windows, crosses period and team bo
 Handwritten tests cover rebounds, and-one, ordinary and retained-ball free throws, offensive fouls, technical ownership, jump control, periods, exact event accounting, future suffix invariance and a saved opening-feed fixture. Exhaustive binary sequences through length eight verify the legacy windows and factorization. These checks establish implementation behavior only. Independent footage audit, season-specific special-rule adjudication, full-game coverage verification and the research protocol's release gates remain outstanding.
 
 Review correction (2026-11-02): paired offensive-foul/turnover rows represent one loss, and attribution/control conflicts must propagate uncertainty beyond the row where detected. Three failing regressions established these defects before correction.
+
+Candidate-v2 correction (2026-11-02): the source-backed game `0022000006` actions 327/329 demonstrated that v1 split a made basket from its goaltending companion and manufactured an unexplained transfer at action 330. The narrow pairing above corrects that implementation defect; positive, malformed, conflicting and repeated-companion fixtures cover the boundary. The historical v1 diagnostics and audit plan retain their original parser hash. New diagnostics and any future annotation must bind to v2 separately.
