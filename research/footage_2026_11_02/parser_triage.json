@@ -1,0 +1,5541 @@
+{
+  "schema_version": "parser-triage-v1",
+  "date": "2026-11-02",
+  "scope": "Read-only archived-feed diagnosis; no rules adjudication, film review, parser change or scientific validation.",
+  "report_sha256": "c060489701e5e0eea15a5ca5d0ccd51f1741a61c80f38ba8df479b701bee7f11",
+  "parser_sha256": "a0fc53a3389002d79affef35300ce76f12a7fe058621d6231d35b0676a45743a",
+  "source_verification": [
+    {
+      "source_file": "cdnnba_2020.tar.xz",
+      "sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "bytes": 15548680,
+      "status": "fresh_snapshot_hash_and_size_verified"
+    },
+    {
+      "source_file": "cdnnba_2021.tar.xz",
+      "sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "bytes": 17660924,
+      "status": "fresh_snapshot_hash_and_size_verified"
+    },
+    {
+      "source_file": "cdnnba_2022.tar.xz",
+      "sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "bytes": 18705272,
+      "status": "fresh_snapshot_hash_and_size_verified"
+    },
+    {
+      "source_file": "cdnnba_2023.tar.xz",
+      "sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "bytes": 18598380,
+      "status": "fresh_snapshot_hash_and_size_verified"
+    },
+    {
+      "source_file": "cdnnba_2024.tar.xz",
+      "sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "bytes": 18886652,
+      "status": "fresh_snapshot_hash_and_size_verified"
+    },
+    {
+      "source_file": "cdnnba_po_2024.tar.xz",
+      "sha256": "065798b27908f9e16d8f9b6f19f429d0a798d98ce67aad116c9c9b7786f801f7",
+      "bytes": 1255524,
+      "status": "fresh_snapshot_hash_and_size_verified"
+    }
+  ],
+  "games_seen": 6084,
+  "games_reordered_by_existing_canonical_source_order": 0,
+  "reconstructed_games": 5999,
+  "quarantined_games": 85,
+  "raw_violations_including_quarantines": 10558,
+  "flagged_violation_count": 10347,
+  "unknown_ownership_violation_examples": [
+    {
+      "game_id": "0022000059",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "4",
+      "csv_row": 34013,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022000133",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "3",
+      "csv_row": 75837,
+      "order_number": "30000",
+      "clock": "PT11M59.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022000213",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "4",
+      "csv_row": 120867,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022000386",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "3",
+      "csv_row": 218471,
+      "order_number": "30000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022000700",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "7",
+      "csv_row": 392694,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022000705",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "4",
+      "csv_row": 395614,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022000880",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "33",
+      "csv_row": 493601,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022001072",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "4",
+      "csv_row": 600382,
+      "order_number": "40000",
+      "clock": "PT11M56.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100083",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "9",
+      "csv_row": 47804,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100103",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "61",
+      "csv_row": 59096,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100149",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "685",
+      "csv_row": 85261,
+      "order_number": "6740000",
+      "clock": "PT05M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100151",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "4",
+      "csv_row": 85834,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100156",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "24",
+      "csv_row": 88809,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100177",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "7",
+      "csv_row": 100773,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100222",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "3",
+      "csv_row": 125737,
+      "order_number": "30000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100717",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "4",
+      "csv_row": 404625,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100826",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "4",
+      "csv_row": 465323,
+      "order_number": "40000",
+      "clock": "PT11M58.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100880",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "9",
+      "csv_row": 495679,
+      "order_number": "45000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022100880",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "10",
+      "csv_row": 495680,
+      "order_number": "47500",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022101171",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "4",
+      "csv_row": 658892,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022101207",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "54",
+      "csv_row": 678807,
+      "order_number": "23750",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200007",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "7",
+      "csv_row": 3466,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200019",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "8",
+      "csv_row": 10626,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200100",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "9",
+      "csv_row": 56849,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200328",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "11",
+      "csv_row": 183380,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200389",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "7",
+      "csv_row": 217498,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200415",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "7",
+      "csv_row": 232032,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200428",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "7",
+      "csv_row": 239225,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200544",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "11",
+      "csv_row": 303287,
+      "order_number": "35000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200650",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "8",
+      "csv_row": 362299,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200651",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "9",
+      "csv_row": 362867,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200674",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "4",
+      "csv_row": 375446,
+      "order_number": "40000",
+      "clock": "PT11M58.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200714",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "4",
+      "csv_row": 397674,
+      "order_number": "40000",
+      "clock": "PT11M58.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200778",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "4",
+      "csv_row": 432763,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200944",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "12",
+      "csv_row": 523644,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200944",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "16",
+      "csv_row": 523645,
+      "order_number": "27500",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022200956",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "4",
+      "csv_row": 530188,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022201010",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "7",
+      "csv_row": 559660,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300154",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "4",
+      "csv_row": 85948,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300425",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "4",
+      "csv_row": 237099,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300441",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "4",
+      "csv_row": 245902,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300473",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "151",
+      "csv_row": 263788,
+      "order_number": "1460000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300552",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "8",
+      "csv_row": 307345,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300598",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "711",
+      "csv_row": 332954,
+      "order_number": "6960000",
+      "clock": "PT04M58.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300635",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "4",
+      "csv_row": 352530,
+      "order_number": "40000",
+      "clock": "PT11M59.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300770",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "8",
+      "csv_row": 426019,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300861",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "8",
+      "csv_row": 475921,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300881",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "9",
+      "csv_row": 486715,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022300948",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "688",
+      "csv_row": 523259,
+      "order_number": "6840000",
+      "clock": "PT05M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022301014",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "7",
+      "csv_row": 557749,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022301130",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "3",
+      "csv_row": 620060,
+      "order_number": "30000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400124",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "4",
+      "csv_row": 70528,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400206",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "4",
+      "csv_row": 116319,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400251",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "11",
+      "csv_row": 141348,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400251",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "14",
+      "csv_row": 141349,
+      "order_number": "27500",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400361",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "36",
+      "csv_row": 203043,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400495",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "4",
+      "csv_row": 276878,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400868",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "4",
+      "csv_row": 485762,
+      "order_number": "40000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/jumpball",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400892",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "7",
+      "csv_row": 499028,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022400892",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "8",
+      "csv_row": 499029,
+      "order_number": "27500",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    },
+    {
+      "game_id": "0022401170",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "7",
+      "csv_row": 652212,
+      "order_number": "25000",
+      "clock": "PT12M00.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "0"
+    }
+  ],
+  "violation_subtypes": {
+    "kicked ball": 4664,
+    "defensive goaltending": 2856,
+    "delay-of-game": 2480,
+    "lane": 274,
+    "double lane": 42,
+    "jumpball": 31
+  },
+  "violation_signatures": [
+    {
+      "subtype": "kicked ball",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 4664
+    },
+    {
+      "subtype": "defensive goaltending",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 2856
+    },
+    {
+      "subtype": "delay-of-game",
+      "qualifiers": "team",
+      "descriptor": "<missing>",
+      "count": 2480
+    },
+    {
+      "subtype": "lane",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 264
+    },
+    {
+      "subtype": "double lane",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 42
+    },
+    {
+      "subtype": "jumpball",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 31
+    },
+    {
+      "subtype": "lane",
+      "qualifiers": "fastbreak",
+      "descriptor": "<missing>",
+      "count": 10
+    }
+  ],
+  "violation_signatures_including_quarantines": [
+    {
+      "subtype": "kicked ball",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 4748
+    },
+    {
+      "subtype": "defensive goaltending",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 2887
+    },
+    {
+      "subtype": "delay-of-game",
+      "qualifiers": "team",
+      "descriptor": "<missing>",
+      "count": 2545
+    },
+    {
+      "subtype": "lane",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 267
+    },
+    {
+      "subtype": "jumpball",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 59
+    },
+    {
+      "subtype": "double lane",
+      "qualifiers": "<missing>",
+      "descriptor": "<missing>",
+      "count": 42
+    },
+    {
+      "subtype": "lane",
+      "qualifiers": "fastbreak",
+      "descriptor": "<missing>",
+      "count": 10
+    }
+  ],
+  "unexplained_transfer_count": 2780,
+  "transfer_adjacent_nonadministrative_signatures": {
+    "violation/defensive goaltending -> 3pt/Jump Shot": 777,
+    "violation/defensive goaltending -> 2pt/Jump Shot": 581,
+    "violation/defensive goaltending -> 2pt/Layup": 432,
+    "violation/defensive goaltending -> foul/personal": 301,
+    "violation/defensive goaltending -> turnover/bad pass": 100,
+    "violation/defensive goaltending -> 2pt/DUNK": 80,
+    "foul/personal -> freethrow/1 of 2": 66,
+    "violation/defensive goaltending -> 2pt/Hook": 61,
+    "violation/defensive goaltending -> turnover/out-of-bounds": 57,
+    "violation/defensive goaltending -> turnover/lost ball": 49,
+    "violation/defensive goaltending -> foul/offensive": 47,
+    "foul/personal -> freethrow/1 of 1": 32,
+    "foul/personal -> 3pt/Jump Shot": 27,
+    "foul/personal -> 2pt/Jump Shot": 19,
+    "violation/defensive goaltending -> turnover/traveling": 19,
+    "violation/defensive goaltending -> violation/kicked ball": 12,
+    "violation/defensive goaltending -> turnover/shot clock": 9,
+    "violation/defensive goaltending -> violation/delay-of-game": 9,
+    "foul/personal -> 2pt/Layup": 7,
+    "freethrow/1 of 1 -> 3pt/Jump Shot": 7,
+    "foul/personal -> foul/personal": 6,
+    "rebound/defensive -> foul/offensive": 5,
+    "freethrow/1 of 1 -> 2pt/Layup": 5,
+    "foul/personal -> turnover/LaneViolation": 4,
+    "violation/delay-of-game -> 3pt/Jump Shot": 4,
+    "freethrow/1 of 1 -> 2pt/Jump Shot": 4,
+    "foul/personal -> turnover/bad pass": 4,
+    "rebound/defensive -> foul/personal": 3,
+    "rebound/offensive -> 3pt/Jump Shot": 3,
+    "jumpball/recovered -> 2pt/Jump Shot": 3,
+    "steal/ -> foul/offensive": 3,
+    "jumpball/recovered -> 2pt/Layup": 2,
+    "foul/personal -> 2pt/Hook": 2,
+    "freethrow/1 of 1 -> 2pt/DUNK": 2,
+    "foul/personal -> turnover/out-of-bounds": 2,
+    "memo/ -> 2pt/Jump Shot": 2,
+    "violation/delay-of-game -> foul/personal": 2,
+    "violation/defensive goaltending -> turnover/3-second-violation": 2,
+    "violation/defensive goaltending -> turnover/backcourt": 2,
+    "jumpball/recovered -> 3pt/Jump Shot": 2,
+    "foul/personal -> turnover/lost ball": 2,
+    "foul/personal -> foul/offensive": 2,
+    "freethrow/1 of 1 -> turnover/lost ball": 1,
+    "violation/jumpball -> 2pt/Jump Shot": 1,
+    "foul/personal -> turnover/shot clock": 1,
+    "foul/personal -> turnover/traveling": 1,
+    "violation/defensive goaltending -> turnover/8-second-violation": 1,
+    "violation/defensive goaltending -> turnover/offensive-kicked-ball": 1,
+    "violation/delay-of-game -> 2pt/Jump Shot": 1,
+    "memo/ -> 2pt/Layup": 1,
+    "freethrow/1 of 1 -> turnover/out-of-bounds": 1,
+    "violation/kicked ball -> 3pt/Jump Shot": 1,
+    "jumpball/recovered -> turnover/bad pass": 1,
+    "foul/personal -> turnover/offensive foul": 1,
+    "foul/personal -> freethrow/": 1,
+    "violation/kicked ball -> 2pt/Layup": 1,
+    "freethrow/1 of 1 -> freethrow/1 of 2": 1,
+    "jumpball/recovered -> foul/personal": 1,
+    "rebound/defensive -> 2pt/Layup": 1,
+    "violation/kicked ball -> 2pt/DUNK": 1,
+    "violation/delay-of-game -> 2pt/Layup": 1,
+    "foul/personal -> freethrow/1 of 3": 1,
+    "rebound/defensive -> freethrow/1 of 1": 1,
+    "rebound/defensive -> freethrow/1 of 2": 1
+  },
+  "representative_examples": {
+    "violation:('defensive goaltending', '<missing>', '<missing>')": {
+      "game_id": "0022000001",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "453",
+      "events": [
+        {
+          "csv_row": 381,
+          "actionNumber": "450",
+          "clock": "PT06M45.00S",
+          "period": "3",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612751",
+          "scoreHome": "80",
+          "scoreAway": "52",
+          "orderNumber": "4310000",
+          "description": "MISS K. Durant 3PT",
+          "teamId": "1610612751",
+          "teamTricode": "BKN",
+          "descriptor": null,
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 382,
+          "actionNumber": "451",
+          "clock": "PT06M42.00S",
+          "period": "3",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "80",
+          "scoreAway": "52",
+          "orderNumber": "4320000",
+          "description": "S. Curry REBOUND (Off:3 Def:1)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 383,
+          "actionNumber": "452",
+          "clock": "PT06M40.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "fastbreak, pointsinthepaint, defensivegoaltending",
+          "possession": "1610612744",
+          "scoreHome": "80",
+          "scoreAway": "54",
+          "orderNumber": "4330000",
+          "description": "J. Toscano-Anderson running Layup (2 PTS) (S. Curry 7 AST)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": "running",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 384,
+          "actionNumber": "453",
+          "clock": "PT06M40.00S",
+          "period": "3",
+          "actionType": "violation",
+          "subType": "defensive goaltending",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "80",
+          "scoreAway": "54",
+          "orderNumber": "4340000",
+          "description": "K. Durant defensive goaltending VIOLATION",
+          "teamId": "1610612751",
+          "teamTricode": "BKN",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 385,
+          "actionNumber": "454",
+          "clock": "PT06M22.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "pointsinthepaint",
+          "possession": "1610612751",
+          "scoreHome": "82",
+          "scoreAway": "54",
+          "orderNumber": "4350000",
+          "description": "S. Dinwiddie driving finger roll Layup (9 PTS)",
+          "teamId": "1610612751",
+          "teamTricode": "BKN",
+          "descriptor": "driving finger roll",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 386,
+          "actionNumber": "455",
+          "clock": "PT06M13.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "pointsinthepaint",
+          "possession": "1610612744",
+          "scoreHome": "82",
+          "scoreAway": "56",
+          "orderNumber": "4360000",
+          "description": "J. Toscano-Anderson cutting Layup (4 PTS) (S. Curry 8 AST)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": "cutting",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 387,
+          "actionNumber": "457",
+          "clock": "PT05M51.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612751",
+          "scoreHome": "82",
+          "scoreAway": "56",
+          "orderNumber": "4380000",
+          "description": "MISS K. Durant 17' pullup Shot",
+          "teamId": "1610612751",
+          "teamTricode": "BKN",
+          "descriptor": "pullup",
+          "shotResult": "Missed"
+        }
+      ]
+    },
+    "violation:('delay-of-game', 'team', '<missing>')": {
+      "game_id": "0022000002",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "67",
+      "events": [
+        {
+          "csv_row": 659,
+          "actionNumber": "64",
+          "clock": "PT06M40.00S",
+          "period": "1",
+          "actionType": "substitution",
+          "subType": "out",
+          "qualifiers": null,
+          "possession": "1610612746",
+          "scoreHome": "8",
+          "scoreAway": "17",
+          "orderNumber": "640000",
+          "description": "SUB out: S. Ibaka",
+          "teamId": "1610612746",
+          "teamTricode": "LAC",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 660,
+          "actionNumber": "65",
+          "clock": "PT06M40.00S",
+          "period": "1",
+          "actionType": "substitution",
+          "subType": "in",
+          "qualifiers": null,
+          "possession": "1610612746",
+          "scoreHome": "8",
+          "scoreAway": "17",
+          "orderNumber": "650000",
+          "description": "SUB in: M. Harrell",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 661,
+          "actionNumber": "66",
+          "clock": "PT06M40.00S",
+          "period": "1",
+          "actionType": "substitution",
+          "subType": "in",
+          "qualifiers": null,
+          "possession": "1610612746",
+          "scoreHome": "8",
+          "scoreAway": "17",
+          "orderNumber": "660000",
+          "description": "SUB in: I. Zubac",
+          "teamId": "1610612746",
+          "teamTricode": "LAC",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 662,
+          "actionNumber": "67",
+          "clock": "PT06M40.00S",
+          "period": "1",
+          "actionType": "violation",
+          "subType": "delay-of-game",
+          "qualifiers": "team",
+          "possession": "1610612746",
+          "scoreHome": "8",
+          "scoreAway": "17",
+          "orderNumber": "670000",
+          "description": "TEAM delay-of-game VIOLATION",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 663,
+          "actionNumber": "68",
+          "clock": "PT06M40.00S",
+          "period": "1",
+          "actionType": "freethrow",
+          "subType": "2 of 2",
+          "qualifiers": null,
+          "possession": "1610612746",
+          "scoreHome": "8",
+          "scoreAway": "18",
+          "orderNumber": "680000",
+          "description": "K. Leonard Free Throw 2 of 2 (2 PTS)",
+          "teamId": "1610612746",
+          "teamTricode": "LAC",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 664,
+          "actionNumber": "69",
+          "clock": "PT06M36.00S",
+          "period": "1",
+          "actionType": "turnover",
+          "subType": "out-of-bounds",
+          "qualifiers": null,
+          "possession": "1610612747",
+          "scoreHome": "8",
+          "scoreAway": "18",
+          "orderNumber": "690000",
+          "description": "A. Davis lost ball out-of-bounds TURNOVER (1 TO)",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": "lost ball",
+          "shotResult": null
+        },
+        {
+          "csv_row": 665,
+          "actionNumber": "70",
+          "clock": "PT06M27.00S",
+          "period": "1",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": "fromturnover",
+          "possession": "1610612746",
+          "scoreHome": "8",
+          "scoreAway": "18",
+          "orderNumber": "700000",
+          "description": "MISS P. Beverley 3PT",
+          "teamId": "1610612746",
+          "teamTricode": "LAC",
+          "descriptor": null,
+          "shotResult": "Missed"
+        }
+      ]
+    },
+    "violation:('lane', '<missing>', '<missing>')": {
+      "game_id": "0022000002",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "608",
+      "events": [
+        {
+          "csv_row": 1102,
+          "actionNumber": "587",
+          "clock": "PT08M15.00S",
+          "period": "4",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": "2ndchance",
+          "possession": "1610612746",
+          "scoreHome": "90",
+          "scoreAway": "99",
+          "orderNumber": "5780000",
+          "description": "MISS L. Kennard 25' 3PT",
+          "teamId": "1610612746",
+          "teamTricode": "LAC",
+          "descriptor": null,
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 1103,
+          "actionNumber": "588",
+          "clock": "PT08M13.00S",
+          "period": "4",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612747",
+          "scoreHome": "90",
+          "scoreAway": "99",
+          "orderNumber": "5790000",
+          "description": "M. Harrell REBOUND (Off:4 Def:6)",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 1104,
+          "actionNumber": "590",
+          "clock": "PT08M00.00S",
+          "period": "4",
+          "actionType": "foul",
+          "subType": "personal",
+          "qualifiers": "2freethrow",
+          "possession": "1610612747",
+          "scoreHome": "90",
+          "scoreAway": "99",
+          "orderNumber": "5810000",
+          "description": "I. Zubac shooting personal FOUL (4 PF) (James 2 FT)",
+          "teamId": "1610612746",
+          "teamTricode": "LAC",
+          "descriptor": "shooting",
+          "shotResult": null
+        },
+        {
+          "csv_row": 1105,
+          "actionNumber": "608",
+          "clock": "PT08M00.00S",
+          "period": "4",
+          "actionType": "violation",
+          "subType": "lane",
+          "qualifiers": null,
+          "possession": "1610612747",
+          "scoreHome": "90",
+          "scoreAway": "99",
+          "orderNumber": "5825000",
+          "description": "P. Beverley lane VIOLATION",
+          "teamId": "1610612746",
+          "teamTricode": "LAC",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 1106,
+          "actionNumber": "592",
+          "clock": "PT08M00.00S",
+          "period": "4",
+          "actionType": "freethrow",
+          "subType": "1 of 2",
+          "qualifiers": null,
+          "possession": "1610612747",
+          "scoreHome": "91",
+          "scoreAway": "99",
+          "orderNumber": "5830000",
+          "description": "L. James Free Throw 1 of 2 (21 PTS)",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 1107,
+          "actionNumber": "609",
+          "clock": "PT08M00.00S",
+          "period": "4",
+          "actionType": "freethrow",
+          "subType": "2 of 2",
+          "qualifiers": null,
+          "possession": "1610612747",
+          "scoreHome": "92",
+          "scoreAway": "99",
+          "orderNumber": "5845000",
+          "description": "L. James Free Throw 2 of 2 (22 PTS)",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 1108,
+          "actionNumber": "595",
+          "clock": "PT08M00.00S",
+          "period": "4",
+          "actionType": "substitution",
+          "subType": "out",
+          "qualifiers": null,
+          "possession": "1610612746",
+          "scoreHome": "92",
+          "scoreAway": "99",
+          "orderNumber": "5860000",
+          "description": "SUB out: K. Kuzma",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": null,
+          "shotResult": null
+        }
+      ]
+    },
+    "violation:('double lane', '<missing>', '<missing>')": {
+      "game_id": "0022000003",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "564",
+      "events": [
+        {
+          "csv_row": 1689,
+          "actionNumber": "560",
+          "clock": "PT08M37.00S",
+          "period": "4",
+          "actionType": "foul",
+          "subType": "personal",
+          "qualifiers": "1freethrow",
+          "possession": "1610612738",
+          "scoreHome": "107",
+          "scoreAway": "97",
+          "orderNumber": "5450000",
+          "description": "K. Middleton shooting personal FOUL (2 PF) (Thompson 1 FT)",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": "shooting",
+          "shotResult": null
+        },
+        {
+          "csv_row": 1690,
+          "actionNumber": "562",
+          "clock": "PT08M37.00S",
+          "period": "4",
+          "actionType": "substitution",
+          "subType": "out",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "107",
+          "scoreAway": "97",
+          "orderNumber": "5470000",
+          "description": "SUB out: J. Tatum",
+          "teamId": "1610612738",
+          "teamTricode": "BOS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 1691,
+          "actionNumber": "563",
+          "clock": "PT08M37.00S",
+          "period": "4",
+          "actionType": "substitution",
+          "subType": "in",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "107",
+          "scoreAway": "97",
+          "orderNumber": "5480000",
+          "description": "SUB in: J. Teague",
+          "teamId": "1610612738",
+          "teamTricode": "BOS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 1692,
+          "actionNumber": "564",
+          "clock": "PT08M37.00S",
+          "period": "4",
+          "actionType": "violation",
+          "subType": "double lane",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "107",
+          "scoreAway": "97",
+          "orderNumber": "5490000",
+          "description": "M. Smart double lane VIOLATION",
+          "teamId": "1610612738",
+          "teamTricode": "BOS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 1693,
+          "actionNumber": "565",
+          "clock": "PT08M37.00S",
+          "period": "4",
+          "actionType": "violation",
+          "subType": "double lane",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "107",
+          "scoreAway": "97",
+          "orderNumber": "5500000",
+          "description": "J. Holiday double lane VIOLATION",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 1694,
+          "actionNumber": "566",
+          "clock": "PT08M36.00S",
+          "period": "4",
+          "actionType": "jumpball",
+          "subType": "recovered",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "107",
+          "scoreAway": "97",
+          "orderNumber": "5510000",
+          "description": "Jump Ball B. Lopez vs. T. Thompson: Tip to G. Antetokounmpo",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": "doubleviolation",
+          "shotResult": null
+        },
+        {
+          "csv_row": 1695,
+          "actionNumber": "571",
+          "clock": "PT08M29.00S",
+          "period": "4",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "pointsinthepaint",
+          "possession": "1610612749",
+          "scoreHome": "107",
+          "scoreAway": "99",
+          "orderNumber": "5560000",
+          "description": "G. Antetokounmpo driving Layup (24 PTS)",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": "driving",
+          "shotResult": "Made"
+        }
+      ]
+    },
+    "violation:('kicked ball', '<missing>', '<missing>')": {
+      "game_id": "0022000006",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "45",
+      "events": [
+        {
+          "csv_row": 2963,
+          "actionNumber": "40",
+          "clock": "PT09M21.00S",
+          "period": "1",
+          "actionType": "freethrow",
+          "subType": "2 of 2",
+          "qualifiers": null,
+          "possession": "1610612749",
+          "scoreHome": "7",
+          "scoreAway": "6",
+          "orderNumber": "400000",
+          "description": "G. Antetokounmpo Free Throw 2 of 2 (2 PTS)",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 2964,
+          "actionNumber": "41",
+          "clock": "PT09M05.00S",
+          "period": "1",
+          "actionType": "2pt",
+          "subType": "DUNK",
+          "qualifiers": "pointsinthepaint",
+          "possession": "1610612744",
+          "scoreHome": "7",
+          "scoreAway": "8",
+          "orderNumber": "410000",
+          "description": "E. Paschall driving DUNK (2 PTS) (S. Curry 2 AST)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": "driving",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 2965,
+          "actionNumber": "43",
+          "clock": "PT08M51.00S",
+          "period": "1",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612749",
+          "scoreHome": "10",
+          "scoreAway": "8",
+          "orderNumber": "430000",
+          "description": "D. DiVincenzo 26' 3PT  (6 PTS) (J. Holiday 1 AST)",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 2966,
+          "actionNumber": "45",
+          "clock": "PT08M42.00S",
+          "period": "1",
+          "actionType": "violation",
+          "subType": "kicked ball",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "10",
+          "scoreAway": "8",
+          "orderNumber": "450000",
+          "description": "B. Lopez kicked ball VIOLATION",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 2967,
+          "actionNumber": "46",
+          "clock": "PT08M32.00S",
+          "period": "1",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "pointsinthepaint",
+          "possession": "1610612744",
+          "scoreHome": "10",
+          "scoreAway": "8",
+          "orderNumber": "460000",
+          "description": "MISS A. Wiggins driving reverse Layup",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": "driving reverse",
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 2968,
+          "actionNumber": "47",
+          "clock": "PT08M30.00S",
+          "period": "1",
+          "actionType": "rebound",
+          "subType": "offensive",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "10",
+          "scoreAway": "8",
+          "orderNumber": "470000",
+          "description": "K. Oubre Jr. REBOUND (Off:1 Def:2)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 2969,
+          "actionNumber": "49",
+          "clock": "PT08M28.00S",
+          "period": "1",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": "2ndchance",
+          "possession": "1610612744",
+          "scoreHome": "10",
+          "scoreAway": "8",
+          "orderNumber": "480000",
+          "description": "MISS S. Curry 28' 3PT",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": "Missed"
+        }
+      ]
+    },
+    "transfer:violation/defensive goaltending -> 3pt/Jump Shot": {
+      "game_id": "0022000006",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "330",
+      "events": [
+        {
+          "csv_row": 3204,
+          "actionNumber": "326",
+          "clock": "PT03M39.00S",
+          "period": "2",
+          "actionType": "freethrow",
+          "subType": "2 of 2",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "49",
+          "scoreAway": "41",
+          "orderNumber": "3120000",
+          "description": "K. Oubre Jr. Free Throw 2 of 2 (1 PTS)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 3205,
+          "actionNumber": "327",
+          "clock": "PT03M26.00S",
+          "period": "2",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "pointsinthepaint, defensivegoaltending",
+          "possession": "1610612749",
+          "scoreHome": "51",
+          "scoreAway": "41",
+          "orderNumber": "3130000",
+          "description": "J. Holiday driving Layup (6 PTS) (K. Middleton 2 AST)",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": "driving",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 3206,
+          "actionNumber": "329",
+          "clock": "PT03M26.00S",
+          "period": "2",
+          "actionType": "violation",
+          "subType": "defensive goaltending",
+          "qualifiers": null,
+          "possession": "1610612749",
+          "scoreHome": "51",
+          "scoreAway": "41",
+          "orderNumber": "3150000",
+          "description": "E. Paschall defensive goaltending VIOLATION",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 3207,
+          "actionNumber": "330",
+          "clock": "PT03M17.00S",
+          "period": "2",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "51",
+          "scoreAway": "44",
+          "orderNumber": "3160000",
+          "description": "D. Lee 26' 3PT  (6 PTS) (S. Curry 4 AST)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 3208,
+          "actionNumber": "335",
+          "clock": "PT03M09.00S",
+          "period": "2",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612749",
+          "scoreHome": "54",
+          "scoreAway": "44",
+          "orderNumber": "3180000",
+          "description": "K. Middleton 25' 3PT step back (17 PTS)",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": "step back",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 3209,
+          "actionNumber": "336",
+          "clock": "PT03M00.00S",
+          "period": "2",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "54",
+          "scoreAway": "44",
+          "orderNumber": "3190000",
+          "description": "MISS E. Paschall 3PT",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 3210,
+          "actionNumber": "337",
+          "clock": "PT02M57.00S",
+          "period": "2",
+          "actionType": "rebound",
+          "subType": "offensive",
+          "qualifiers": null,
+          "possession": "1610612744",
+          "scoreHome": "54",
+          "scoreAway": "44",
+          "orderNumber": "3200000",
+          "description": "J. Wiseman REBOUND (Off:1 Def:3)",
+          "teamId": "1610612744",
+          "teamTricode": "GSW",
+          "descriptor": null,
+          "shotResult": null
+        }
+      ]
+    },
+    "transfer:foul/personal -> 3pt/Jump Shot": {
+      "game_id": "0022000013",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "506",
+      "events": [
+        {
+          "csv_row": 7457,
+          "actionNumber": "503",
+          "clock": "PT01M44.00S",
+          "period": "3",
+          "actionType": "substitution",
+          "subType": "out",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "73",
+          "scoreAway": "80",
+          "orderNumber": "4938750",
+          "description": "SUB out: T. Harris",
+          "teamId": "1610612755",
+          "teamTricode": "PHI",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 7458,
+          "actionNumber": "504",
+          "clock": "PT01M44.00S",
+          "period": "3",
+          "actionType": "substitution",
+          "subType": "in",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "73",
+          "scoreAway": "80",
+          "orderNumber": "4939375",
+          "description": "SUB in: M. Scott",
+          "teamId": "1610612755",
+          "teamTricode": "PHI",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 7459,
+          "actionNumber": "500",
+          "clock": "PT01M44.00S",
+          "period": "3",
+          "actionType": "foul",
+          "subType": "personal",
+          "qualifiers": "inpenalty, 2freethrow",
+          "possession": "1610612755",
+          "scoreHome": "73",
+          "scoreAway": "80",
+          "orderNumber": "4940000",
+          "description": "R. Lopez shooting personal FOUL (2 PF) (Milton 2 FT)",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": "shooting",
+          "shotResult": null
+        },
+        {
+          "csv_row": 7460,
+          "actionNumber": "506",
+          "clock": "PT01M36.00S",
+          "period": "3",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "73",
+          "scoreAway": "83",
+          "orderNumber": "5000000",
+          "description": "T. Brown Jr. 27' 3PT  (3 PTS) (R. Westbrook 14 AST)",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 7461,
+          "actionNumber": "508",
+          "clock": "PT01M07.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612755",
+          "scoreHome": "73",
+          "scoreAway": "83",
+          "orderNumber": "5020000",
+          "description": "MISS S. Milton 19' Jump Shot",
+          "teamId": "1610612755",
+          "teamTricode": "PHI",
+          "descriptor": null,
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 7462,
+          "actionNumber": "509",
+          "clock": "PT01M04.00S",
+          "period": "3",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "73",
+          "scoreAway": "83",
+          "orderNumber": "5030000",
+          "description": "R. Westbrook REBOUND (Off:1 Def:8)",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 7463,
+          "actionNumber": "510",
+          "clock": "PT01M01.00S",
+          "period": "3",
+          "actionType": "turnover",
+          "subType": "out-of-bounds",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "73",
+          "scoreAway": "83",
+          "orderNumber": "5040000",
+          "description": "R. Westbrook bad pass out-of-bounds TURNOVER (5 TO)",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": "bad pass",
+          "shotResult": null
+        }
+      ]
+    },
+    "violation:('jumpball', '<missing>', '<missing>')": {
+      "game_id": "0022000033",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "156",
+      "events": [
+        {
+          "csv_row": 19129,
+          "actionNumber": "153",
+          "clock": "PT00M38.40S",
+          "period": "1",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "33",
+          "scoreAway": "26",
+          "orderNumber": "1520000",
+          "description": "T. Brown Jr. REBOUND (Off:0 Def:1)",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 19130,
+          "actionNumber": "154",
+          "clock": "PT00M33.00S",
+          "period": "1",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "33",
+          "scoreAway": "26",
+          "orderNumber": "1530000",
+          "description": "MISS B. Beal 26' running pullup 3PT",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": "running pullup",
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 19131,
+          "actionNumber": "155",
+          "clock": "PT00M29.70S",
+          "period": "1",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612753",
+          "scoreHome": "33",
+          "scoreAway": "26",
+          "orderNumber": "1540000",
+          "description": "M. Carter-Williams REBOUND (Off:0 Def:1)",
+          "teamId": "1610612753",
+          "teamTricode": "ORL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 19132,
+          "actionNumber": "156",
+          "clock": "PT00M25.50S",
+          "period": "1",
+          "actionType": "violation",
+          "subType": "jumpball",
+          "qualifiers": null,
+          "possession": "1610612753",
+          "scoreHome": "33",
+          "scoreAway": "26",
+          "orderNumber": "1550000",
+          "description": "B. Beal jumpball VIOLATION",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 19133,
+          "actionNumber": "158",
+          "clock": "PT00M13.60S",
+          "period": "1",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612753",
+          "scoreHome": "33",
+          "scoreAway": "29",
+          "orderNumber": "1570000",
+          "description": "T. Ross 27' 3PT pullup (11 PTS) (C. Anthony 1 AST)",
+          "teamId": "1610612753",
+          "teamTricode": "ORL",
+          "descriptor": "pullup",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 19134,
+          "actionNumber": "160",
+          "clock": "PT00M00.60S",
+          "period": "1",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612764",
+          "scoreHome": "35",
+          "scoreAway": "29",
+          "orderNumber": "1590000",
+          "description": "I. Smith 20' pullup Jump Shot (2 PTS) (B. Beal 3 AST)",
+          "teamId": "1610612764",
+          "teamTricode": "WAS",
+          "descriptor": "pullup",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 19135,
+          "actionNumber": "162",
+          "clock": "PT00M00.00S",
+          "period": "1",
+          "actionType": "period",
+          "subType": "end",
+          "qualifiers": null,
+          "possession": "1610612753",
+          "scoreHome": "35",
+          "scoreAway": "29",
+          "orderNumber": "1610000",
+          "description": "Period End",
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": null,
+          "shotResult": null
+        }
+      ]
+    },
+    "violation:('lane', 'fastbreak', '<missing>')": {
+      "game_id": "0022000100",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "351",
+      "events": [
+        {
+          "csv_row": 57510,
+          "actionNumber": "348",
+          "clock": "PT00M29.30S",
+          "period": "2",
+          "actionType": "substitution",
+          "subType": "in",
+          "qualifiers": null,
+          "possession": "1610612740",
+          "scoreHome": "50",
+          "scoreAway": "52",
+          "orderNumber": "3370000",
+          "description": "SUB in: E. Bledsoe",
+          "teamId": "1610612740",
+          "teamTricode": "NOP",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 57511,
+          "actionNumber": "349",
+          "clock": "PT00M29.30S",
+          "period": "2",
+          "actionType": "substitution",
+          "subType": "out",
+          "qualifiers": null,
+          "possession": "1610612740",
+          "scoreHome": "50",
+          "scoreAway": "52",
+          "orderNumber": "3380000",
+          "description": "SUB out: E. Bledsoe",
+          "teamId": "1610612740",
+          "teamTricode": "NOP",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 57512,
+          "actionNumber": "350",
+          "clock": "PT00M29.30S",
+          "period": "2",
+          "actionType": "substitution",
+          "subType": "in",
+          "qualifiers": null,
+          "possession": "1610612740",
+          "scoreHome": "50",
+          "scoreAway": "52",
+          "orderNumber": "3390000",
+          "description": "SUB in: N. Alexander-Walker",
+          "teamId": "1610612740",
+          "teamTricode": "NOP",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 57513,
+          "actionNumber": "351",
+          "clock": "PT00M29.30S",
+          "period": "2",
+          "actionType": "violation",
+          "subType": "lane",
+          "qualifiers": "fastbreak",
+          "possession": "1610612740",
+          "scoreHome": "50",
+          "scoreAway": "52",
+          "orderNumber": "3400000",
+          "description": "J. Holiday lane VIOLATION",
+          "teamId": "1610612754",
+          "teamTricode": "IND",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 57514,
+          "actionNumber": "352",
+          "clock": "PT00M29.30S",
+          "period": "2",
+          "actionType": "freethrow",
+          "subType": "1 of 1",
+          "qualifiers": "fastbreak",
+          "possession": "1610612740",
+          "scoreHome": "51",
+          "scoreAway": "52",
+          "orderNumber": "3410000",
+          "description": "B. Ingram Free Throw 1 of 1 (12 PTS)",
+          "teamId": "1610612740",
+          "teamTricode": "NOP",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 57515,
+          "actionNumber": "353",
+          "clock": "PT00M06.60S",
+          "period": "2",
+          "actionType": "foul",
+          "subType": "personal",
+          "qualifiers": "inpenalty, 2freethrow",
+          "possession": "1610612754",
+          "scoreHome": "51",
+          "scoreAway": "52",
+          "orderNumber": "3420000",
+          "description": "Z. Williamson shooting personal FOUL (2 PF) (Brogdon 2 FT)",
+          "teamId": "1610612740",
+          "teamTricode": "NOP",
+          "descriptor": "shooting",
+          "shotResult": null
+        },
+        {
+          "csv_row": 57516,
+          "actionNumber": "355",
+          "clock": "PT00M06.60S",
+          "period": "2",
+          "actionType": "freethrow",
+          "subType": "1 of 2",
+          "qualifiers": null,
+          "possession": "1610612754",
+          "scoreHome": "51",
+          "scoreAway": "52",
+          "orderNumber": "3440000",
+          "description": "MISS M. Brogdon Free Throw 1 of 2",
+          "teamId": "1610612754",
+          "teamTricode": "IND",
+          "descriptor": null,
+          "shotResult": "Missed"
+        }
+      ]
+    },
+    "transfer:foul/personal -> freethrow/1 of 2": {
+      "game_id": "0022000157",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "738",
+      "events": [
+        {
+          "csv_row": 89848,
+          "actionNumber": "733",
+          "clock": "PT00M04.80S",
+          "period": "5",
+          "actionType": "foul",
+          "subType": "personal",
+          "qualifiers": "inpenalty, 1freethrow",
+          "possession": "1610612755",
+          "scoreHome": "136",
+          "scoreAway": "134",
+          "orderNumber": "7330000",
+          "description": "D. Robinson away-from-play personal FOUL (2 PF) (Joe 1 FT)",
+          "teamId": "1610612748",
+          "teamTricode": "MIA",
+          "descriptor": "away-from-play",
+          "shotResult": null
+        },
+        {
+          "csv_row": 89849,
+          "actionNumber": "735",
+          "clock": "PT00M04.80S",
+          "period": "5",
+          "actionType": "freethrow",
+          "subType": "1 of 1",
+          "qualifiers": null,
+          "possession": "1610612755",
+          "scoreHome": "137",
+          "scoreAway": "134",
+          "orderNumber": "7350000",
+          "description": "I. Joe away-from-play Free Throw 1 of 1 (13 PTS)",
+          "teamId": "1610612755",
+          "teamTricode": "PHI",
+          "descriptor": "away-from-play",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 89850,
+          "actionNumber": "736",
+          "clock": "PT00M03.60S",
+          "period": "5",
+          "actionType": "foul",
+          "subType": "personal",
+          "qualifiers": "inpenalty, 2freethrow",
+          "possession": "1610612748",
+          "scoreHome": "137",
+          "scoreAway": "134",
+          "orderNumber": "7360000",
+          "description": "G. Vincent take personal FOUL (3 PF) (Mathias 2 FT)",
+          "teamId": "1610612748",
+          "teamTricode": "MIA",
+          "descriptor": "take",
+          "shotResult": null
+        },
+        {
+          "csv_row": 89851,
+          "actionNumber": "738",
+          "clock": "PT00M03.60S",
+          "period": "5",
+          "actionType": "freethrow",
+          "subType": "1 of 2",
+          "qualifiers": null,
+          "possession": "1610612755",
+          "scoreHome": "137",
+          "scoreAway": "134",
+          "orderNumber": "7380000",
+          "description": "MISS D. Mathias Free Throw 1 of 2",
+          "teamId": "1610612755",
+          "teamTricode": "PHI",
+          "descriptor": null,
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 89852,
+          "actionNumber": "739",
+          "clock": "PT00M03.60S",
+          "period": "5",
+          "actionType": "rebound",
+          "subType": "offensive",
+          "qualifiers": "deadball, team",
+          "possession": "1610612755",
+          "scoreHome": "137",
+          "scoreAway": "134",
+          "orderNumber": "7390000",
+          "description": "TEAM offensive REBOUND",
+          "teamId": "1610612755",
+          "teamTricode": "PHI",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 89853,
+          "actionNumber": "740",
+          "clock": "PT00M03.60S",
+          "period": "5",
+          "actionType": "freethrow",
+          "subType": "2 of 2",
+          "qualifiers": null,
+          "possession": "1610612755",
+          "scoreHome": "137",
+          "scoreAway": "134",
+          "orderNumber": "7400000",
+          "description": "MISS D. Mathias Free Throw 2 of 2",
+          "teamId": "1610612755",
+          "teamTricode": "PHI",
+          "descriptor": null,
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 89854,
+          "actionNumber": "741",
+          "clock": "PT00M01.70S",
+          "period": "5",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612748",
+          "scoreHome": "137",
+          "scoreAway": "134",
+          "orderNumber": "7410000",
+          "description": "K. Olynyk REBOUND (Off:1 Def:7)",
+          "teamId": "1610612748",
+          "teamTricode": "MIA",
+          "descriptor": null,
+          "shotResult": null
+        }
+      ]
+    },
+    "transfer:rebound/defensive -> foul/offensive": {
+      "game_id": "0022000180",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "313",
+      "events": [
+        {
+          "csv_row": 102304,
+          "actionNumber": "309",
+          "clock": "PT00M44.90S",
+          "period": "2",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "60",
+          "scoreAway": "48",
+          "orderNumber": "3070000",
+          "description": "M. Smart REBOUND (Off:0 Def:2)",
+          "teamId": "1610612738",
+          "teamTricode": "BOS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 102305,
+          "actionNumber": "310",
+          "clock": "PT00M34.50S",
+          "period": "2",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "60",
+          "scoreAway": "48",
+          "orderNumber": "3080000",
+          "description": "MISS J. Brown 17' Jump Shot",
+          "teamId": "1610612738",
+          "teamTricode": "BOS",
+          "descriptor": null,
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 102306,
+          "actionNumber": "311",
+          "clock": "PT00M32.90S",
+          "period": "2",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612753",
+          "scoreHome": "60",
+          "scoreAway": "48",
+          "orderNumber": "3090000",
+          "description": "C. Anthony REBOUND (Off:0 Def:3)",
+          "teamId": "1610612753",
+          "teamTricode": "ORL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 102307,
+          "actionNumber": "313",
+          "clock": "PT00M26.00S",
+          "period": "2",
+          "actionType": "foul",
+          "subType": "offensive",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "60",
+          "scoreAway": "48",
+          "orderNumber": "3110000",
+          "description": "C. Anthony offensive FOUL (2 PF)",
+          "teamId": "1610612753",
+          "teamTricode": "ORL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 102308,
+          "actionNumber": "357",
+          "clock": "PT00M26.00S",
+          "period": "2",
+          "actionType": "turnover",
+          "subType": "offensive foul",
+          "qualifiers": null,
+          "possession": "1610612753",
+          "scoreHome": "60",
+          "scoreAway": "48",
+          "orderNumber": "3125000",
+          "description": "C. Anthony offensive foul TURNOVER (3 TO)",
+          "teamId": "1610612753",
+          "teamTricode": "ORL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 102309,
+          "actionNumber": "315",
+          "clock": "PT00M26.00S",
+          "period": "2",
+          "actionType": "timeout",
+          "subType": "challenge",
+          "qualifiers": "team",
+          "possession": "1610612738",
+          "scoreHome": "60",
+          "scoreAway": "48",
+          "orderNumber": "3130000",
+          "description": "BOS Timeout",
+          "teamId": "1610612738",
+          "teamTricode": "BOS",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 102310,
+          "actionNumber": "317",
+          "clock": "PT00M26.00S",
+          "period": "2",
+          "actionType": "instantreplay",
+          "subType": "challenge",
+          "qualifiers": null,
+          "possession": "1610612738",
+          "scoreHome": "60",
+          "scoreAway": "48",
+          "orderNumber": "3150000",
+          "description": null,
+          "teamId": "1610612738",
+          "teamTricode": "BOS",
+          "descriptor": "overturned",
+          "shotResult": null
+        }
+      ]
+    },
+    "transfer:freethrow/1 of 1 -> 3pt/Jump Shot": {
+      "game_id": "0022100590",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "610",
+      "events": [
+        {
+          "csv_row": 333902,
+          "actionNumber": "607",
+          "clock": "PT02M08.00S",
+          "period": "4",
+          "actionType": "foul",
+          "subType": "technical",
+          "qualifiers": "1freethrow",
+          "possession": "1610612757",
+          "scoreHome": "96",
+          "scoreAway": "108",
+          "orderNumber": "6030000",
+          "description": "A. Simons technical FOUL (1 Tech)",
+          "teamId": "1610612757",
+          "teamTricode": "POR",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 333903,
+          "actionNumber": "608",
+          "clock": "PT02M08.00S",
+          "period": "4",
+          "actionType": "timeout",
+          "subType": "full",
+          "qualifiers": "team, mandatory",
+          "possession": "1610612757",
+          "scoreHome": "96",
+          "scoreAway": "108",
+          "orderNumber": "6040000",
+          "description": "CLE Timeout",
+          "teamId": "1610612739",
+          "teamTricode": "CLE",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 333904,
+          "actionNumber": "609",
+          "clock": "PT02M08.00S",
+          "period": "4",
+          "actionType": "freethrow",
+          "subType": "1 of 1",
+          "qualifiers": null,
+          "possession": "1610612757",
+          "scoreHome": "96",
+          "scoreAway": "109",
+          "orderNumber": "6050000",
+          "description": "D. Garland technical Free Throw 1 of 1 (23 PTS)",
+          "teamId": "1610612739",
+          "teamTricode": "CLE",
+          "descriptor": "technical",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 333905,
+          "actionNumber": "610",
+          "clock": "PT01M45.00S",
+          "period": "4",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612757",
+          "scoreHome": "99",
+          "scoreAway": "109",
+          "orderNumber": "6060000",
+          "description": "A. Simons 3PT pullup (14 PTS) (J. Nurkic 4 AST)",
+          "teamId": "1610612757",
+          "teamTricode": "POR",
+          "descriptor": "pullup",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 333906,
+          "actionNumber": "612",
+          "clock": "PT01M45.00S",
+          "period": "4",
+          "actionType": "instantreplay",
+          "subType": "request",
+          "qualifiers": null,
+          "possession": "1610612739",
+          "scoreHome": "99",
+          "scoreAway": "109",
+          "orderNumber": "6080000",
+          "description": null,
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": "support",
+          "shotResult": null
+        },
+        {
+          "csv_row": 333907,
+          "actionNumber": "613",
+          "clock": "PT01M28.00S",
+          "period": "4",
+          "actionType": "stoppage",
+          "subType": "out-of-bounds",
+          "qualifiers": null,
+          "possession": "1610612739",
+          "scoreHome": "99",
+          "scoreAway": "109",
+          "orderNumber": "6090000",
+          "description": null,
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 333908,
+          "actionNumber": "614",
+          "clock": "PT01M21.00S",
+          "period": "4",
+          "actionType": "3pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612739",
+          "scoreHome": "99",
+          "scoreAway": "112",
+          "orderNumber": "6100000",
+          "description": "D. Garland 29' 3PT step back (26 PTS)",
+          "teamId": "1610612739",
+          "teamTricode": "CLE",
+          "descriptor": "step back",
+          "shotResult": "Made"
+        }
+      ]
+    },
+    "pilot-clock:0022000181:594": {
+      "clock_increase_seconds": 1.0,
+      "period": "4",
+      "previous_label": "freethrow/2 of 2",
+      "current_label": "instantreplay/request",
+      "game_id": "0022000181",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "594",
+      "events": [
+        {
+          "csv_row": 103082,
+          "actionNumber": "593",
+          "clock": "PT01M18.00S",
+          "period": "4",
+          "actionType": "instantreplay",
+          "subType": "request",
+          "qualifiers": null,
+          "possession": "1610612739",
+          "scoreHome": "98",
+          "scoreAway": "97",
+          "orderNumber": "5880000",
+          "description": null,
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": "support",
+          "shotResult": null
+        },
+        {
+          "csv_row": 103083,
+          "actionNumber": "615",
+          "clock": "PT01M18.00S",
+          "period": "4",
+          "actionType": "freethrow",
+          "subType": "1 of 2",
+          "qualifiers": "fromturnover",
+          "possession": "1610612739",
+          "scoreHome": "99",
+          "scoreAway": "97",
+          "orderNumber": "5885000",
+          "description": "D. Dotson clear-path Free Throw 1 of 2 (10 PTS)",
+          "teamId": "1610612739",
+          "teamTricode": "CLE",
+          "descriptor": "clear-path",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 103084,
+          "actionNumber": "616",
+          "clock": "PT01M18.00S",
+          "period": "4",
+          "actionType": "freethrow",
+          "subType": "2 of 2",
+          "qualifiers": "fromturnover",
+          "possession": "1610612739",
+          "scoreHome": "100",
+          "scoreAway": "97",
+          "orderNumber": "5887500",
+          "description": "D. Dotson clear-path Free Throw 2 of 2 (11 PTS)",
+          "teamId": "1610612739",
+          "teamTricode": "CLE",
+          "descriptor": "clear-path",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 103085,
+          "actionNumber": "594",
+          "clock": "PT01M19.00S",
+          "period": "4",
+          "actionType": "instantreplay",
+          "subType": "request",
+          "qualifiers": null,
+          "possession": "1610612752",
+          "scoreHome": "100",
+          "scoreAway": "97",
+          "orderNumber": "5890000",
+          "description": null,
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": "support",
+          "shotResult": null
+        },
+        {
+          "csv_row": 103086,
+          "actionNumber": "595",
+          "clock": "PT01M05.00S",
+          "period": "4",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "pointsinthepaint, fromturnover",
+          "possession": "1610612739",
+          "scoreHome": "102",
+          "scoreAway": "97",
+          "orderNumber": "5900000",
+          "description": "D. Dotson driving Layup (13 PTS)",
+          "teamId": "1610612739",
+          "teamTricode": "CLE",
+          "descriptor": "driving",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 103087,
+          "actionNumber": "596",
+          "clock": "PT01M05.00S",
+          "period": "4",
+          "actionType": "timeout",
+          "subType": "full",
+          "qualifiers": "team",
+          "possession": "1610612752",
+          "scoreHome": "102",
+          "scoreAway": "97",
+          "orderNumber": "5910000",
+          "description": "NYK Timeout",
+          "teamId": "1610612752",
+          "teamTricode": "NYK",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 103088,
+          "actionNumber": "599",
+          "clock": "PT01M05.00S",
+          "period": "4",
+          "actionType": "substitution",
+          "subType": "out",
+          "qualifiers": null,
+          "possession": "1610612752",
+          "scoreHome": "102",
+          "scoreAway": "97",
+          "orderNumber": "5940000",
+          "description": "SUB out: D. Dotson",
+          "teamId": "1610612739",
+          "teamTricode": "CLE",
+          "descriptor": null,
+          "shotResult": null
+        }
+      ]
+    },
+    "pilot-clock:0022000254:661": {
+      "clock_increase_seconds": 71.0,
+      "period": "4",
+      "previous_label": "game/end",
+      "current_label": "memo/",
+      "game_id": "0022000254",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "661",
+      "events": [
+        {
+          "csv_row": 145170,
+          "actionNumber": "656",
+          "clock": "PT00M20.90S",
+          "period": "4",
+          "actionType": "rebound",
+          "subType": "defensive",
+          "qualifiers": null,
+          "possession": "1610612749",
+          "scoreHome": "129",
+          "scoreAway": "115",
+          "orderNumber": "6420000",
+          "description": "D. DiVincenzo REBOUND (Off:4 Def:5)",
+          "teamId": "1610612749",
+          "teamTricode": "MIL",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 145171,
+          "actionNumber": "658",
+          "clock": "PT00M00.00S",
+          "period": "4",
+          "actionType": "period",
+          "subType": "end",
+          "qualifiers": null,
+          "possession": "1610612749",
+          "scoreHome": "129",
+          "scoreAway": "115",
+          "orderNumber": "6430000",
+          "description": "Period End",
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 145172,
+          "actionNumber": "659",
+          "clock": "PT00M00.00S",
+          "period": "4",
+          "actionType": "game",
+          "subType": "end",
+          "qualifiers": null,
+          "possession": "0",
+          "scoreHome": "129",
+          "scoreAway": "115",
+          "orderNumber": "6440000",
+          "description": "Game End",
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 145173,
+          "actionNumber": "661",
+          "clock": "PT01M11.00S",
+          "period": "4",
+          "actionType": "memo",
+          "subType": null,
+          "qualifiers": null,
+          "possession": "0",
+          "scoreHome": "129",
+          "scoreAway": "115",
+          "orderNumber": "6450000",
+          "description": null,
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": null,
+          "shotResult": null
+        }
+      ]
+    },
+    "pilot-clock:0022000925:338": {
+      "clock_increase_seconds": 0.2,
+      "period": "2",
+      "previous_label": "turnover/traveling",
+      "current_label": "instantreplay/request",
+      "game_id": "0022000925",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "338",
+      "events": [
+        {
+          "csv_row": 518779,
+          "actionNumber": "335",
+          "clock": "PT00M12.10S",
+          "period": "2",
+          "actionType": "freethrow",
+          "subType": "2 of 2",
+          "qualifiers": null,
+          "possession": "1610612763",
+          "scoreHome": "56",
+          "scoreAway": "53",
+          "orderNumber": "3300000",
+          "description": "J. Morant Free Throw 2 of 2 (16 PTS)",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 518780,
+          "actionNumber": "336",
+          "clock": "PT00M03.00S",
+          "period": "2",
+          "actionType": "2pt",
+          "subType": "Layup",
+          "qualifiers": "pointsinthepaint",
+          "possession": "1610612743",
+          "scoreHome": "58",
+          "scoreAway": "53",
+          "orderNumber": "3310000",
+          "description": "F. Campazzo driving finger roll Layup (5 PTS)",
+          "teamId": "1610612743",
+          "teamTricode": "DEN",
+          "descriptor": "driving finger roll",
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 518781,
+          "actionNumber": "337",
+          "clock": "PT00M00.00S",
+          "period": "2",
+          "actionType": "turnover",
+          "subType": "traveling",
+          "qualifiers": null,
+          "possession": "1610612763",
+          "scoreHome": "58",
+          "scoreAway": "53",
+          "orderNumber": "3320000",
+          "description": "J. Morant traveling TURNOVER (1 TO)",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 518782,
+          "actionNumber": "338",
+          "clock": "PT00M00.20S",
+          "period": "2",
+          "actionType": "instantreplay",
+          "subType": "request",
+          "qualifiers": null,
+          "possession": "1610612743",
+          "scoreHome": "58",
+          "scoreAway": "53",
+          "orderNumber": "3330000",
+          "description": null,
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": "support",
+          "shotResult": null
+        },
+        {
+          "csv_row": 518783,
+          "actionNumber": "339",
+          "clock": "PT00M00.20S",
+          "period": "2",
+          "actionType": "turnover",
+          "subType": "out-of-bounds",
+          "qualifiers": null,
+          "possession": "1610612743",
+          "scoreHome": "58",
+          "scoreAway": "53",
+          "orderNumber": "3340000",
+          "description": "N. Jokic bad pass out-of-bounds TURNOVER (6 TO)",
+          "teamId": "1610612743",
+          "teamTricode": "DEN",
+          "descriptor": "bad pass",
+          "shotResult": null
+        },
+        {
+          "csv_row": 518784,
+          "actionNumber": "340",
+          "clock": "PT00M00.20S",
+          "period": "2",
+          "actionType": "jumpball",
+          "subType": "recovered",
+          "qualifiers": null,
+          "possession": "1610612763",
+          "scoreHome": "58",
+          "scoreAway": "53",
+          "orderNumber": "3345000",
+          "description": "Jump Ball N. Jokic vs. J. Valanciunas: Tip to Team (DEN)",
+          "teamId": "1610612743",
+          "teamTricode": "DEN",
+          "descriptor": "outofbounds",
+          "shotResult": null
+        },
+        {
+          "csv_row": 518785,
+          "actionNumber": "346",
+          "clock": "PT00M00.00S",
+          "period": "2",
+          "actionType": "period",
+          "subType": "end",
+          "qualifiers": null,
+          "possession": "1610612763",
+          "scoreHome": "58",
+          "scoreAway": "53",
+          "orderNumber": "3350000",
+          "description": "Period End",
+          "teamId": null,
+          "teamTricode": null,
+          "descriptor": null,
+          "shotResult": null
+        }
+      ]
+    },
+    "pilot-clock:0022301177:473": {
+      "clock_increase_seconds": 52.0,
+      "period": "3",
+      "previous_label": "turnover/shot clock",
+      "current_label": "2pt/Jump Shot",
+      "game_id": "0022301177",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "473",
+      "events": [
+        {
+          "csv_row": 645877,
+          "actionNumber": "470",
+          "clock": "PT01M14.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": "pointsinthepaint, fromturnover, 2ndchance",
+          "possession": "1610612763",
+          "scoreHome": "93",
+          "scoreAway": "92",
+          "orderNumber": "4650000",
+          "description": "MISS J. Goodwin turnaround fadeaway Shot",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": "turnaround fadeaway",
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 645878,
+          "actionNumber": "471",
+          "clock": "PT01M14.00S",
+          "period": "3",
+          "actionType": "rebound",
+          "subType": "offensive",
+          "qualifiers": null,
+          "possession": "1610612763",
+          "scoreHome": "93",
+          "scoreAway": "92",
+          "orderNumber": "4660000",
+          "description": "T. Allen REBOUND (Off:3 Def:3)",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 645879,
+          "actionNumber": "681",
+          "clock": "PT01M14.00S",
+          "period": "3",
+          "actionType": "turnover",
+          "subType": "shot clock",
+          "qualifiers": "team",
+          "possession": "1610612763",
+          "scoreHome": "93",
+          "scoreAway": "92",
+          "orderNumber": "4670000",
+          "description": "MEM shot clock Team TURNOVER",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 645880,
+          "actionNumber": "473",
+          "clock": "PT02M06.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": "fromturnover",
+          "possession": "1610612747",
+          "scoreHome": "93",
+          "scoreAway": "94",
+          "orderNumber": "4680000",
+          "description": "A. Davis 16' Jump Shot (24 PTS) (D. Russell 8 AST)",
+          "teamId": "1610612747",
+          "teamTricode": "LAL",
+          "descriptor": null,
+          "shotResult": "Made"
+        },
+        {
+          "csv_row": 645881,
+          "actionNumber": "475",
+          "clock": "PT01M47.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": null,
+          "possession": "1610612763",
+          "scoreHome": "93",
+          "scoreAway": "94",
+          "orderNumber": "4700000",
+          "description": "MISS Z. Simpson 19' step back Shot",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": "step back",
+          "shotResult": "Missed"
+        },
+        {
+          "csv_row": 645882,
+          "actionNumber": "476",
+          "clock": "PT01M44.00S",
+          "period": "3",
+          "actionType": "rebound",
+          "subType": "offensive",
+          "qualifiers": null,
+          "possession": "1610612763",
+          "scoreHome": "93",
+          "scoreAway": "94",
+          "orderNumber": "4710000",
+          "description": "J. Goodwin REBOUND (Off:5 Def:7)",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": null,
+          "shotResult": null
+        },
+        {
+          "csv_row": 645883,
+          "actionNumber": "477",
+          "clock": "PT01M41.00S",
+          "period": "3",
+          "actionType": "2pt",
+          "subType": "Jump Shot",
+          "qualifiers": "2ndchance",
+          "possession": "1610612763",
+          "scoreHome": "95",
+          "scoreAway": "94",
+          "orderNumber": "4720000",
+          "description": "J. Goodwin 17' step back Jump Shot (18 PTS)",
+          "teamId": "1610612763",
+          "teamTricode": "MEM",
+          "descriptor": "step back",
+          "shotResult": "Made"
+        }
+      ]
+    }
+  },
+  "pilot_issue_traces": [
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022000367",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "508",
+      "csv_row": 208274,
+      "order_number": "4960000",
+      "clock": "PT08M59.00S",
+      "raw_label": "violation/kicked ball",
+      "source_possession": "1610612745"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022000544",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "265",
+      "csv_row": 306569,
+      "order_number": "2580000",
+      "clock": "PT03M36.00S",
+      "raw_label": "violation/defensive goaltending",
+      "source_possession": "1610612737"
+    },
+    {
+      "issue": "unexplained_control_transfer",
+      "game_id": "0022000544",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "267",
+      "csv_row": 306570,
+      "order_number": "2590000",
+      "clock": "PT03M25.00S",
+      "raw_label": "2pt/Layup",
+      "source_possession": "1610612753"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022000997",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "action_number": "411",
+      "csv_row": 559180,
+      "order_number": "4070000",
+      "clock": "PT04M30.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "1610612761"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022100226",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "66",
+      "csv_row": 127884,
+      "order_number": "660000",
+      "clock": "PT05M34.00S",
+      "raw_label": "violation/kicked ball",
+      "source_possession": "1610612746"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022100226",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "action_number": "223",
+      "csv_row": 128020,
+      "order_number": "2220000",
+      "clock": "PT06M12.00S",
+      "raw_label": "violation/kicked ball",
+      "source_possession": "1610612746"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022200780",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "203",
+      "csv_row": 434048,
+      "order_number": "1695000",
+      "clock": "PT10M43.00S",
+      "raw_label": "violation/lane",
+      "source_possession": "1610612752"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022200780",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "249",
+      "csv_row": 434107,
+      "order_number": "2310000",
+      "clock": "PT05M29.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "1610612748"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022200780",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "395",
+      "csv_row": 434220,
+      "order_number": "3640000",
+      "clock": "PT03M41.00S",
+      "raw_label": "violation/kicked ball",
+      "source_possession": "1610612752"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022200780",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "567",
+      "csv_row": 434358,
+      "order_number": "5240000",
+      "clock": "PT01M23.00S",
+      "raw_label": "violation/defensive goaltending",
+      "source_possession": "1610612752"
+    },
+    {
+      "issue": "unexplained_control_transfer",
+      "game_id": "0022200780",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "569",
+      "csv_row": 434359,
+      "order_number": "5260000",
+      "clock": "PT01M11.00S",
+      "raw_label": "2pt/Jump Shot",
+      "source_possession": "1610612748"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022201087",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "217",
+      "csv_row": 601951,
+      "order_number": "2090000",
+      "clock": "PT08M56.00S",
+      "raw_label": "violation/defensive goaltending",
+      "source_possession": "1610612741"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022201087",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "287",
+      "csv_row": 602004,
+      "order_number": "2730000",
+      "clock": "PT03M12.00S",
+      "raw_label": "violation/kicked ball",
+      "source_possession": "1610612741"
+    },
+    {
+      "issue": "unexplained_control_transfer",
+      "game_id": "0022201087",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "action_number": "218",
+      "csv_row": 601952,
+      "order_number": "2100000",
+      "clock": "PT08M28.00S",
+      "raw_label": "2pt/Jump Shot",
+      "source_possession": "1610612755"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022301101",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "490",
+      "csv_row": 604789,
+      "order_number": "4650000",
+      "clock": "PT01M03.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "1610612758"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022301101",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "action_number": "575",
+      "csv_row": 604858,
+      "order_number": "5490000",
+      "clock": "PT06M46.00S",
+      "raw_label": "violation/kicked ball",
+      "source_possession": "1610612746"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022400393",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "107",
+      "csv_row": 220904,
+      "order_number": "1060000",
+      "clock": "PT04M04.00S",
+      "raw_label": "violation/defensive goaltending",
+      "source_possession": "1610612738"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022400393",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "285",
+      "csv_row": 221052,
+      "order_number": "2810000",
+      "clock": "PT04M12.00S",
+      "raw_label": "violation/defensive goaltending",
+      "source_possession": "1610612738"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022400393",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "497",
+      "csv_row": 221225,
+      "order_number": "4910000",
+      "clock": "PT03M08.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "1610612738"
+    },
+    {
+      "issue": "unexplained_control_transfer",
+      "game_id": "0022400393",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "109",
+      "csv_row": 220905,
+      "order_number": "1070000",
+      "clock": "PT03M48.00S",
+      "raw_label": "turnover/bad pass",
+      "source_possession": "1610612753"
+    },
+    {
+      "issue": "unexplained_control_transfer",
+      "game_id": "0022400393",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "286",
+      "csv_row": 221053,
+      "order_number": "2820000",
+      "clock": "PT03M59.00S",
+      "raw_label": "2pt/Jump Shot",
+      "source_possession": "1610612753"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022400481",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "126",
+      "csv_row": 269417,
+      "order_number": "905000",
+      "clock": "PT05M09.00S",
+      "raw_label": "violation/kicked ball",
+      "source_possession": "1610612762"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022400553",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "536",
+      "csv_row": 309782,
+      "order_number": "5330000",
+      "clock": "PT04M34.00S",
+      "raw_label": "violation/defensive goaltending",
+      "source_possession": "1610612746"
+    },
+    {
+      "issue": "violation_requires_audit",
+      "game_id": "0022400553",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "556",
+      "csv_row": 309797,
+      "order_number": "5510000",
+      "clock": "PT02M56.00S",
+      "raw_label": "violation/delay-of-game",
+      "source_possession": "1610612748"
+    },
+    {
+      "issue": "unexplained_control_transfer",
+      "game_id": "0022400553",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "action_number": "537",
+      "csv_row": 309783,
+      "order_number": "5340000",
+      "clock": "PT04M32.00S",
+      "raw_label": "foul/personal",
+      "source_possession": "1610612748"
+    }
+  ],
+  "quarantined_game_regressions": [
+    {
+      "game_id": "0022000147",
+      "reported_error": "clock/period regression at action 621",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.3,
+          "period": "4",
+          "previous_label": "stoppage/out-of-bounds",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000147",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "621",
+          "csv_row": 84168,
+          "order_number": "6160000",
+          "clock": "PT00M41.80S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612750"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000153",
+      "reported_error": "clock/period regression at action 301",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "2",
+          "previous_label": "foul/personal",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000153",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "301",
+          "csv_row": 87292,
+          "order_number": "2980000",
+          "clock": "PT02M47.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612755"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000181",
+      "reported_error": "clock/period regression at action 594",
+      "pilot_game": true,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "freethrow/2 of 2",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000181",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "594",
+          "csv_row": 103085,
+          "order_number": "5890000",
+          "clock": "PT01M19.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612752"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000195",
+      "reported_error": "clock/period regression at action 672",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.3,
+          "period": "4",
+          "previous_label": "stoppage/out-of-bounds",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000195",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "672",
+          "csv_row": 111157,
+          "order_number": "6560000",
+          "clock": "PT00M18.80S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612737"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000216",
+      "reported_error": "clock/period regression at action 742",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 3.0,
+          "period": "6",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022000216",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "742",
+          "csv_row": 123217,
+          "order_number": "7300000",
+          "clock": "PT03M32.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612751"
+        },
+        {
+          "clock_increase_seconds": 5.8,
+          "period": "6",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022000216",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "781",
+          "csv_row": 123248,
+          "order_number": "7680000",
+          "clock": "PT00M16.60S",
+          "raw_label": "memo/",
+          "source_possession": "1610612739"
+        },
+        {
+          "clock_increase_seconds": 3.4,
+          "period": "6",
+          "previous_label": "game/end",
+          "current_label": "memo/",
+          "game_id": "0022000216",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "784",
+          "csv_row": 123251,
+          "order_number": "7710000",
+          "clock": "PT00M03.40S",
+          "raw_label": "memo/",
+          "source_possession": "0"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000232",
+      "reported_error": "clock/period regression at action 571",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 12.0,
+          "period": "4",
+          "previous_label": "2pt/Layup",
+          "current_label": "memo/",
+          "game_id": "0022000232",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "571",
+          "csv_row": 132384,
+          "order_number": "5610000",
+          "clock": "PT06M56.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000245",
+      "reported_error": "clock/period regression at action 363",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.7,
+          "period": "2",
+          "previous_label": "rebound/defensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000245",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "363",
+          "csv_row": 139658,
+          "order_number": "3315000",
+          "clock": "PT00M04.40S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612747"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000254",
+      "reported_error": "clock/period regression at action 661",
+      "pilot_game": true,
+      "regressions": [
+        {
+          "clock_increase_seconds": 71.0,
+          "period": "4",
+          "previous_label": "game/end",
+          "current_label": "memo/",
+          "game_id": "0022000254",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "661",
+          "csv_row": 145173,
+          "order_number": "6450000",
+          "clock": "PT01M11.00S",
+          "raw_label": "memo/",
+          "source_possession": "0"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000323",
+      "reported_error": "clock/period regression at action 642",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 18.0,
+          "period": "4",
+          "previous_label": "3pt/Jump Shot",
+          "current_label": "memo/",
+          "game_id": "0022000323",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "642",
+          "csv_row": 183894,
+          "order_number": "6360000",
+          "clock": "PT02M37.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612761"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000449",
+      "reported_error": "clock/period regression at action 668",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 3.4,
+          "period": "4",
+          "previous_label": "3pt/Jump Shot",
+          "current_label": "memo/",
+          "game_id": "0022000449",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "668",
+          "csv_row": 253998,
+          "order_number": "6410000",
+          "clock": "PT00M59.60S",
+          "raw_label": "memo/",
+          "source_possession": "1610612753"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000450",
+      "reported_error": "clock/period regression at action 659",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.6,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022000450",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "659",
+          "csv_row": 254572,
+          "order_number": "6490000",
+          "clock": "PT00M29.20S",
+          "raw_label": "memo/",
+          "source_possession": "1610612741"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000513",
+      "reported_error": "clock/period regression at action 740",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.3,
+          "period": "5",
+          "previous_label": "turnover/out-of-bounds",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000513",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "740",
+          "csv_row": 289699,
+          "order_number": "7310000",
+          "clock": "PT00M22.60S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612755"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000587",
+      "reported_error": "clock/period regression at action 157",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "2",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000587",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "157",
+          "csv_row": 330446,
+          "order_number": "1560000",
+          "clock": "PT11M26.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612751"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000630",
+      "reported_error": "clock/period regression at action 204",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 3.0,
+          "period": "2",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/challenge",
+          "game_id": "0022000630",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "204",
+          "csv_row": 354267,
+          "order_number": "2010000",
+          "clock": "PT09M48.00S",
+          "raw_label": "instantreplay/challenge",
+          "source_possession": "1610612747"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000686",
+      "reported_error": "clock/period regression at action 663",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.2,
+          "period": "4",
+          "previous_label": "stoppage/out-of-bounds",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000686",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "663",
+          "csv_row": 385516,
+          "order_number": "6560000",
+          "clock": "PT00M02.90S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612766"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000779",
+      "reported_error": "clock/period regression at action 332",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "2",
+          "previous_label": "foul/personal",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000779",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "332",
+          "csv_row": 437142,
+          "order_number": "3200000",
+          "clock": "PT04M42.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612751"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000849",
+      "reported_error": "clock/period regression at action 146",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "1",
+          "previous_label": "foul/personal",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000849",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "146",
+          "csv_row": 476437,
+          "order_number": "1450000",
+          "clock": "PT01M10.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612753"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000881",
+      "reported_error": "clock/period regression at action 669",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 16.3,
+          "period": "4",
+          "previous_label": "foul/personal",
+          "current_label": "memo/",
+          "game_id": "0022000881",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "669",
+          "csv_row": 494716,
+          "order_number": "6650000",
+          "clock": "PT00M31.10S",
+          "raw_label": "memo/",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000908",
+      "reported_error": "clock/period regression at action 639",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.6,
+          "period": "4",
+          "previous_label": "period/end",
+          "current_label": "memo/",
+          "game_id": "0022000908",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "639",
+          "csv_row": 509759,
+          "order_number": "6360000",
+          "clock": "PT00M00.60S",
+          "raw_label": "memo/",
+          "source_possession": "1610612747"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000925",
+      "reported_error": "clock/period regression at action 338",
+      "pilot_game": true,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.2,
+          "period": "2",
+          "previous_label": "turnover/traveling",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000925",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "338",
+          "csv_row": 518782,
+          "order_number": "3330000",
+          "clock": "PT00M00.20S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612743"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000968",
+      "reported_error": "clock/period regression at action 564",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000968",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "564",
+          "csv_row": 543179,
+          "order_number": "5540000",
+          "clock": "PT05M35.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612738"
+        }
+      ]
+    },
+    {
+      "game_id": "0022000983",
+      "reported_error": "clock/period regression at action 620",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.8,
+          "period": "4",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022000983",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "620",
+          "csv_row": 551528,
+          "order_number": "6110000",
+          "clock": "PT00M00.90S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612756"
+        }
+      ]
+    },
+    {
+      "game_id": "0022001021",
+      "reported_error": "clock/period regression at action 359",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "3",
+          "previous_label": "substitution/in",
+          "current_label": "instantreplay/request",
+          "game_id": "0022001021",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "359",
+          "csv_row": 572623,
+          "order_number": "3550000",
+          "clock": "PT10M07.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022001027",
+      "reported_error": "clock/period regression at action 566",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 14.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022001027",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "566",
+          "csv_row": 576115,
+          "order_number": "5640000",
+          "clock": "PT05M06.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612754"
+        }
+      ]
+    },
+    {
+      "game_id": "0022001028",
+      "reported_error": "clock/period regression at action 421",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "3",
+          "previous_label": "foul/personal",
+          "current_label": "instantreplay/request",
+          "game_id": "0022001028",
+          "source_file": "cdnnba_2020.tar.xz",
+          "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+          "action_number": "421",
+          "csv_row": 576525,
+          "order_number": "4100000",
+          "clock": "PT07M24.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612763"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100016",
+      "reported_error": "clock/period regression at action 440",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 3.0,
+          "period": "3",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100016",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "440",
+          "csv_row": 9276,
+          "order_number": "4370000",
+          "clock": "PT05M56.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612746"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100039",
+      "reported_error": "clock/period regression at action 655",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 7.0,
+          "period": "4",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/challenge",
+          "game_id": "0022100039",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "655",
+          "csv_row": 22801,
+          "order_number": "6400000",
+          "clock": "PT00M59.20S",
+          "raw_label": "instantreplay/challenge",
+          "source_possession": "1610612758"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100102",
+      "reported_error": "clock/period regression at action 651",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.1,
+          "period": "4",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100102",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "651",
+          "csv_row": 59092,
+          "order_number": "6465000",
+          "clock": "PT00M02.30S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612760"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100154",
+      "reported_error": "clock/period regression at action 554",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.9,
+          "period": "1",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100154",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "554",
+          "csv_row": 87699,
+          "order_number": "1743750",
+          "clock": "PT00M01.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612747"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100198",
+      "reported_error": "clock/period regression at action 598",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.3,
+          "period": "4",
+          "previous_label": "2pt/Jump Shot",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100198",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "598",
+          "csv_row": 113020,
+          "order_number": "5970000",
+          "clock": "PT00M51.90S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612746"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100206",
+      "reported_error": "clock/period regression at action 159",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.5,
+          "period": "1",
+          "previous_label": "rebound/defensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100206",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "159",
+          "csv_row": 117016,
+          "order_number": "1580000",
+          "clock": "PT00M00.60S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612756"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100224",
+      "reported_error": "clock/period regression at action 510",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 15.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100224",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "510",
+          "csv_row": 127233,
+          "order_number": "4930000",
+          "clock": "PT08M28.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612744"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100234",
+      "reported_error": "clock/period regression at action 66",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 26.0,
+          "period": "1",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100234",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "66",
+          "csv_row": 132366,
+          "order_number": "650000",
+          "clock": "PT06M52.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612749"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100250",
+      "reported_error": "clock/period regression at action 613",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "turnover/shot clock",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100250",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "613",
+          "csv_row": 141766,
+          "order_number": "6040000",
+          "clock": "PT04M17.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612741"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100251",
+      "reported_error": "clock/period regression at action 695",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 19.0,
+          "period": "4",
+          "previous_label": "freethrow/1 of 2",
+          "current_label": "memo/",
+          "game_id": "0022100251",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "695",
+          "csv_row": 142379,
+          "order_number": "6370000",
+          "clock": "PT01M49.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612756"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100367",
+      "reported_error": "clock/period regression at action 610",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 8.0,
+          "period": "4",
+          "previous_label": "turnover/offensive foul",
+          "current_label": "memo/",
+          "game_id": "0022100367",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "610",
+          "csv_row": 207579,
+          "order_number": "6040000",
+          "clock": "PT03M46.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612741"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100376",
+      "reported_error": "clock/period regression at action 625",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100376",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "625",
+          "csv_row": 212698,
+          "order_number": "6200000",
+          "clock": "PT02M54.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612757"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100385",
+      "reported_error": "clock/period regression at action 595",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.2,
+          "period": "4",
+          "previous_label": "timeout/challenge",
+          "current_label": "instantreplay/challenge",
+          "game_id": "0022100385",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "595",
+          "csv_row": 217748,
+          "order_number": "5940000",
+          "clock": "PT00M51.20S",
+          "raw_label": "instantreplay/challenge",
+          "source_possession": "1610612752"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100417",
+      "reported_error": "clock/period regression at action 653",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 12.0,
+          "period": "4",
+          "previous_label": "3pt/Jump Shot",
+          "current_label": "memo/",
+          "game_id": "0022100417",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "653",
+          "csv_row": 235724,
+          "order_number": "6430000",
+          "clock": "PT02M22.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612745"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100456",
+      "reported_error": "clock/period regression at action 563",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 13.0,
+          "period": "4",
+          "previous_label": "3pt/Jump Shot",
+          "current_label": "memo/",
+          "game_id": "0022100456",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "563",
+          "csv_row": 257524,
+          "order_number": "5530000",
+          "clock": "PT07M37.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612756"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100462",
+      "reported_error": "clock/period regression at action 429",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 12.0,
+          "period": "3",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100462",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "429",
+          "csv_row": 260835,
+          "order_number": "4240000",
+          "clock": "PT03M28.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612758"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100485",
+      "reported_error": "clock/period regression at action 422",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 5.0,
+          "period": "3",
+          "previous_label": "foul/personal",
+          "current_label": "memo/",
+          "game_id": "0022100485",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "422",
+          "csv_row": 273597,
+          "order_number": "4180000",
+          "clock": "PT07M08.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612744"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100494",
+      "reported_error": "clock/period regression at action 538",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100494",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "538",
+          "csv_row": 278966,
+          "order_number": "5290000",
+          "clock": "PT11M03.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100569",
+      "reported_error": "clock/period regression at action 694",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.6,
+          "period": "4",
+          "previous_label": "violation/defensive goaltending",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100569",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "694",
+          "csv_row": 321974,
+          "order_number": "6870000",
+          "clock": "PT00M23.20S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612745"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100573",
+      "reported_error": "clock/period regression at action 656",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.8,
+          "period": "4",
+          "previous_label": "rebound/offensive",
+          "current_label": "turnover/shot clock",
+          "game_id": "0022100573",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "656",
+          "csv_row": 324204,
+          "order_number": "6470000",
+          "clock": "PT00M33.60S",
+          "raw_label": "turnover/shot clock",
+          "source_possession": "1610612761"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100581",
+      "reported_error": "clock/period regression at action 644",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 10.0,
+          "period": "4",
+          "previous_label": "substitution/in",
+          "current_label": "memo/",
+          "game_id": "0022100581",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "644",
+          "csv_row": 328722,
+          "order_number": "6180000",
+          "clock": "PT02M06.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612746"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100596",
+      "reported_error": "clock/period regression at action 86",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "1",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100596",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "86",
+          "csv_row": 336856,
+          "order_number": "825000",
+          "clock": "PT04M28.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612748"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100604",
+      "reported_error": "clock/period regression at action 531",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 15.0,
+          "period": "4",
+          "previous_label": "rebound/offensive",
+          "current_label": "memo/",
+          "game_id": "0022100604",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "531",
+          "csv_row": 341702,
+          "order_number": "5260000",
+          "clock": "PT08M24.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612744"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100630",
+      "reported_error": "clock/period regression at action 522",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "turnover/offensive foul",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100630",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "522",
+          "csv_row": 356250,
+          "order_number": "5070000",
+          "clock": "PT11M26.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612760"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100697",
+      "reported_error": "clock/period regression at action 516",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 13.0,
+          "period": "4",
+          "previous_label": "2pt/Jump Shot",
+          "current_label": "memo/",
+          "game_id": "0022100697",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "516",
+          "csv_row": 393807,
+          "order_number": "5010000",
+          "clock": "PT10M54.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612754"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100715",
+      "reported_error": "clock/period regression at action 132",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "1",
+          "previous_label": "3pt/Jump Shot",
+          "current_label": "instantreplay/altercationrequest",
+          "game_id": "0022100715",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "132",
+          "csv_row": 403563,
+          "order_number": "1300000",
+          "clock": "PT01M46.00S",
+          "raw_label": "instantreplay/altercationrequest",
+          "source_possession": "1610612761"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100728",
+      "reported_error": "clock/period regression at action 551",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 9.0,
+          "period": "4",
+          "previous_label": "freethrow/1 of 1",
+          "current_label": "period/start",
+          "game_id": "0022100728",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "551",
+          "csv_row": 411225,
+          "order_number": "5460000",
+          "clock": "PT12M00.00S",
+          "raw_label": "period/start",
+          "source_possession": "1610612759"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100743",
+      "reported_error": "clock/period regression at action 369",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.1,
+          "period": "2",
+          "previous_label": "period/end",
+          "current_label": "memo/",
+          "game_id": "0022100743",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "369",
+          "csv_row": 419585,
+          "order_number": "3640000",
+          "clock": "PT00M01.10S",
+          "raw_label": "memo/",
+          "source_possession": "1610612750"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100750",
+      "reported_error": "clock/period regression at action 455",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "3",
+          "previous_label": "instantreplay/challenge",
+          "current_label": "memo/",
+          "game_id": "0022100750",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "455",
+          "csv_row": 423715,
+          "order_number": "4280000",
+          "clock": "PT05M51.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612744"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100756",
+      "reported_error": "clock/period regression at action 583",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "rebound/offensive",
+          "current_label": "turnover/shot clock",
+          "game_id": "0022100756",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "583",
+          "csv_row": 427130,
+          "order_number": "5760000",
+          "clock": "PT01M43.00S",
+          "raw_label": "turnover/shot clock",
+          "source_possession": "1610612743"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100758",
+      "reported_error": "clock/period regression at action 530",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 17.0,
+          "period": "4",
+          "previous_label": "stoppage/out-of-bounds",
+          "current_label": "memo/",
+          "game_id": "0022100758",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "530",
+          "csv_row": 428136,
+          "order_number": "5030000",
+          "clock": "PT08M48.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612756"
+        },
+        {
+          "clock_increase_seconds": 11.0,
+          "period": "4",
+          "previous_label": "foul/personal",
+          "current_label": "memo/",
+          "game_id": "0022100758",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "591",
+          "csv_row": 428187,
+          "order_number": "5620000",
+          "clock": "PT03M25.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612759"
+        },
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "4",
+          "previous_label": "foul/personal",
+          "current_label": "memo/",
+          "game_id": "0022100758",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "636",
+          "csv_row": 428225,
+          "order_number": "6050000",
+          "clock": "PT00M07.50S",
+          "raw_label": "memo/",
+          "source_possession": "1610612756"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100759",
+      "reported_error": "clock/period regression at action 541",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 16.0,
+          "period": "4",
+          "previous_label": "3pt/Jump Shot",
+          "current_label": "memo/",
+          "game_id": "0022100759",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "541",
+          "csv_row": 428689,
+          "order_number": "5330000",
+          "clock": "PT09M18.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612740"
+        },
+        {
+          "clock_increase_seconds": 7.0,
+          "period": "4",
+          "previous_label": "foul/personal",
+          "current_label": "memo/",
+          "game_id": "0022100759",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "601",
+          "csv_row": 428740,
+          "order_number": "5920000",
+          "clock": "PT05M06.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612740"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100787",
+      "reported_error": "clock/period regression at action 636",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.2,
+          "period": "4",
+          "previous_label": "instantreplay/request",
+          "current_label": "instantreplay/challenge",
+          "game_id": "0022100787",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "636",
+          "csv_row": 444190,
+          "order_number": "6280000",
+          "clock": "PT00M01.20S",
+          "raw_label": "instantreplay/challenge",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100805",
+      "reported_error": "clock/period regression at action 605",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 5.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100805",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "605",
+          "csv_row": 454056,
+          "order_number": "5930000",
+          "clock": "PT04M48.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100807",
+      "reported_error": "clock/period regression at action 572",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 14.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100807",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "572",
+          "csv_row": 455155,
+          "order_number": "5670000",
+          "clock": "PT07M03.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612742"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100853",
+      "reported_error": "clock/period regression at action 562",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 7.0,
+          "period": "4",
+          "previous_label": "2pt/Jump Shot",
+          "current_label": "memo/",
+          "game_id": "0022100853",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "562",
+          "csv_row": 480939,
+          "order_number": "5280000",
+          "clock": "PT02M15.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612742"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100865",
+      "reported_error": "clock/period regression at action 178",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.6,
+          "period": "1",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/request",
+          "game_id": "0022100865",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "178",
+          "csv_row": 487398,
+          "order_number": "1750000",
+          "clock": "PT00M00.60S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612745"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100915",
+      "reported_error": "clock/period regression at action 524",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 4.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "instantreplay/challenge",
+          "game_id": "0022100915",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "524",
+          "csv_row": 516408,
+          "order_number": "5150000",
+          "clock": "PT11M19.00S",
+          "raw_label": "instantreplay/challenge",
+          "source_possession": "1610612766"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100920",
+      "reported_error": "clock/period regression at action 428",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 14.0,
+          "period": "3",
+          "previous_label": "2pt/Hook",
+          "current_label": "memo/",
+          "game_id": "0022100920",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "428",
+          "csv_row": 519297,
+          "order_number": "4230000",
+          "clock": "PT03M18.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100932",
+      "reported_error": "clock/period regression at action 554",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 14.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022100932",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "554",
+          "csv_row": 526190,
+          "order_number": "5360000",
+          "clock": "PT06M52.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612766"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100935",
+      "reported_error": "clock/period regression at action 636",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 4.0,
+          "period": "4",
+          "previous_label": "timeout/full",
+          "current_label": "memo/",
+          "game_id": "0022100935",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "636",
+          "csv_row": 528005,
+          "order_number": "6290000",
+          "clock": "PT00M34.10S",
+          "raw_label": "memo/",
+          "source_possession": "1610612762"
+        }
+      ]
+    },
+    {
+      "game_id": "0022100954",
+      "reported_error": "clock/period regression at action 666",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "4",
+          "previous_label": "memo/",
+          "current_label": "memo/",
+          "game_id": "0022100954",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "666",
+          "csv_row": 538740,
+          "order_number": "6620000",
+          "clock": "PT00M46.30S",
+          "raw_label": "memo/",
+          "source_possession": "1610612758"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101030",
+      "reported_error": "clock/period regression at action 149",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "1",
+          "previous_label": "rebound/offensive",
+          "current_label": "instantreplay/challenge",
+          "game_id": "0022101030",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "149",
+          "csv_row": 581329,
+          "order_number": "1480000",
+          "clock": "PT01M10.00S",
+          "raw_label": "instantreplay/challenge",
+          "source_possession": "1610612753"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101060",
+      "reported_error": "clock/period regression at action 589",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 9.0,
+          "period": "4",
+          "previous_label": "foul/personal",
+          "current_label": "memo/",
+          "game_id": "0022101060",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "589",
+          "csv_row": 598311,
+          "order_number": "5810000",
+          "clock": "PT05M32.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612739"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101065",
+      "reported_error": "clock/period regression at action 634",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 4.0,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022101065",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "634",
+          "csv_row": 601070,
+          "order_number": "6250000",
+          "clock": "PT01M42.00S",
+          "raw_label": "memo/",
+          "source_possession": "1610612760"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101106",
+      "reported_error": "clock/period regression at action 173",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 3.2,
+          "period": "1",
+          "previous_label": "3pt/Jump Shot",
+          "current_label": "instantreplay/request",
+          "game_id": "0022101106",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "173",
+          "csv_row": 623008,
+          "order_number": "1685000",
+          "clock": "PT00M05.10S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612746"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101149",
+      "reported_error": "clock/period regression at action 646",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.2,
+          "period": "4",
+          "previous_label": "foul/personal",
+          "current_label": "instantreplay/request",
+          "game_id": "0022101149",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "646",
+          "csv_row": 647288,
+          "order_number": "6390000",
+          "clock": "PT00M07.20S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612741"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101176",
+      "reported_error": "clock/period regression at action 538",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "2pt/Jump Shot",
+          "current_label": "timeout/full",
+          "game_id": "0022101176",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "538",
+          "csv_row": 662097,
+          "order_number": "5300000",
+          "clock": "PT08M33.00S",
+          "raw_label": "timeout/full",
+          "source_possession": "1610612758"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101227",
+      "reported_error": "clock/period regression at action 588",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 8.7,
+          "period": "4",
+          "previous_label": "rebound/defensive",
+          "current_label": "memo/",
+          "game_id": "0022101227",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "588",
+          "csv_row": 690186,
+          "order_number": "5690000",
+          "clock": "PT00M34.80S",
+          "raw_label": "memo/",
+          "source_possession": "1610612748"
+        }
+      ]
+    },
+    {
+      "game_id": "0022101229",
+      "reported_error": "clock/period regression at action 562",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "timeout/full",
+          "current_label": "instantreplay/request",
+          "game_id": "0022101229",
+          "source_file": "cdnnba_2021.tar.xz",
+          "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+          "action_number": "562",
+          "csv_row": 691202,
+          "order_number": "5510000",
+          "clock": "PT06M32.00S",
+          "raw_label": "instantreplay/request",
+          "source_possession": "1610612758"
+        }
+      ]
+    },
+    {
+      "game_id": "0022200908",
+      "reported_error": "clock/period regression at action 591",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.1,
+          "period": "4",
+          "previous_label": "timeout/full",
+          "current_label": "substitution/out",
+          "game_id": "0022200908",
+          "source_file": "cdnnba_2022.tar.xz",
+          "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+          "action_number": "591",
+          "csv_row": 504387,
+          "order_number": "5790000",
+          "clock": "PT00M22.10S",
+          "raw_label": "substitution/out",
+          "source_possession": "1610612755"
+        }
+      ]
+    },
+    {
+      "game_id": "0022200943",
+      "reported_error": "clock/period regression at action 189",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "2",
+          "previous_label": "rebound/defensive",
+          "current_label": "substitution/out",
+          "game_id": "0022200943",
+          "source_file": "cdnnba_2022.tar.xz",
+          "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+          "action_number": "189",
+          "csv_row": 523280,
+          "order_number": "1925000",
+          "clock": "PT10M20.00S",
+          "raw_label": "substitution/out",
+          "source_possession": "1610612755"
+        }
+      ]
+    },
+    {
+      "game_id": "0022300367",
+      "reported_error": "clock/period regression at action 496",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "timeout/full",
+          "current_label": "turnover/out-of-bounds",
+          "game_id": "0022300367",
+          "source_file": "cdnnba_2023.tar.xz",
+          "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+          "action_number": "496",
+          "csv_row": 205455,
+          "order_number": "4920000",
+          "clock": "PT11M09.00S",
+          "raw_label": "turnover/out-of-bounds",
+          "source_possession": "1610612755"
+        }
+      ]
+    },
+    {
+      "game_id": "0022300394",
+      "reported_error": "clock/period regression at action 627",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "foul/personal",
+          "current_label": "timeout/full",
+          "game_id": "0022300394",
+          "source_file": "cdnnba_2023.tar.xz",
+          "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+          "action_number": "627",
+          "csv_row": 220284,
+          "order_number": "6180000",
+          "clock": "PT04M04.00S",
+          "raw_label": "timeout/full",
+          "source_possession": "1610612765"
+        }
+      ]
+    },
+    {
+      "game_id": "0022300474",
+      "reported_error": "clock/period regression at action 380",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "3",
+          "previous_label": "rebound/defensive",
+          "current_label": "foul/technical",
+          "game_id": "0022300474",
+          "source_file": "cdnnba_2023.tar.xz",
+          "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+          "action_number": "380",
+          "csv_row": 264490,
+          "order_number": "3680000",
+          "clock": "PT08M47.00S",
+          "raw_label": "foul/technical",
+          "source_possession": "1610612762"
+        }
+      ]
+    },
+    {
+      "game_id": "0022300786",
+      "reported_error": "clock/period regression at action 412",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "3",
+          "previous_label": "2pt/Layup",
+          "current_label": "foul/technical",
+          "game_id": "0022300786",
+          "source_file": "cdnnba_2023.tar.xz",
+          "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+          "action_number": "412",
+          "csv_row": 434940,
+          "order_number": "4110000",
+          "clock": "PT03M59.00S",
+          "raw_label": "foul/technical",
+          "source_possession": "1610612743"
+        },
+        {
+          "clock_increase_seconds": 1.0,
+          "period": "4",
+          "previous_label": "2pt/Jump Shot",
+          "current_label": "timeout/full",
+          "game_id": "0022300786",
+          "source_file": "cdnnba_2023.tar.xz",
+          "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+          "action_number": "540",
+          "csv_row": 435045,
+          "order_number": "5390000",
+          "clock": "PT08M20.00S",
+          "raw_label": "timeout/full",
+          "source_possession": "1610612743"
+        }
+      ]
+    },
+    {
+      "game_id": "0022301129",
+      "reported_error": "clock/period regression at action 7",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 3.0,
+          "period": "1",
+          "previous_label": "jumpball/recovered",
+          "current_label": "violation/delay-of-game",
+          "game_id": "0022301129",
+          "source_file": "cdnnba_2023.tar.xz",
+          "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+          "action_number": "7",
+          "csv_row": 619525,
+          "order_number": "70000",
+          "clock": "PT12M00.00S",
+          "raw_label": "violation/delay-of-game",
+          "source_possession": "1610612755"
+        }
+      ]
+    },
+    {
+      "game_id": "0022301177",
+      "reported_error": "clock/period regression at action 473",
+      "pilot_game": true,
+      "regressions": [
+        {
+          "clock_increase_seconds": 52.0,
+          "period": "3",
+          "previous_label": "turnover/shot clock",
+          "current_label": "2pt/Jump Shot",
+          "game_id": "0022301177",
+          "source_file": "cdnnba_2023.tar.xz",
+          "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+          "action_number": "473",
+          "csv_row": 645880,
+          "order_number": "4680000",
+          "clock": "PT02M06.00S",
+          "raw_label": "2pt/Jump Shot",
+          "source_possession": "1610612747"
+        }
+      ]
+    },
+    {
+      "game_id": "0022400326",
+      "reported_error": "clock/period regression at action 585",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 2.0,
+          "period": "3",
+          "previous_label": "rebound/defensive",
+          "current_label": "foul/technical",
+          "game_id": "0022400326",
+          "source_file": "cdnnba_2024.tar.xz",
+          "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+          "action_number": "585",
+          "csv_row": 183845,
+          "order_number": "4494843",
+          "clock": "PT03M07.00S",
+          "raw_label": "foul/technical",
+          "source_possession": "1610612764"
+        }
+      ]
+    },
+    {
+      "game_id": "0022400334",
+      "reported_error": "clock/period regression at action 758",
+      "pilot_game": false,
+      "regressions": [
+        {
+          "clock_increase_seconds": 0.2,
+          "period": "5",
+          "previous_label": "timeout/full",
+          "current_label": "substitution/out",
+          "game_id": "0022400334",
+          "source_file": "cdnnba_2024.tar.xz",
+          "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+          "action_number": "758",
+          "csv_row": 188653,
+          "order_number": "7440000",
+          "clock": "PT00M25.90S",
+          "raw_label": "substitution/out",
+          "source_possession": "1610612747"
+        }
+      ]
+    }
+  ],
+  "clock_regression_summary": {
+    "adjacent_rises": 91,
+    "rise_seconds_range": [
+      0.1,
+      71.0
+    ],
+    "all_same_period": true,
+    "current_action_type_counts": {
+      "instantreplay": 34,
+      "memo": 42,
+      "turnover": 3,
+      "period": 1,
+      "timeout": 3,
+      "substitution": 3,
+      "foul": 3,
+      "violation": 1,
+      "2pt": 1
+    },
+    "diagnostic_context_counts": {
+      "administrative_or_unsupported_memo_row": 86,
+      "control_classified_row": 5
+    },
+    "games_with_any_control_classified_rise": 5,
+    "warning": "Context categories identify which rows carry time increases; they do not certify legitimate clock correction or erroneous live event ordering."
+  },
+  "transfer_previous_nonadministrative_counts": {
+    "foul/personal": 178,
+    "freethrow/1 of 1": 21,
+    "jumpball/recovered": 9,
+    "memo/": 3,
+    "rebound/defensive": 11,
+    "rebound/offensive": 3,
+    "steal/": 3,
+    "violation/defensive goaltending": 2540,
+    "violation/delay-of-game": 8,
+    "violation/jumpball": 1,
+    "violation/kicked ball": 3
+  },
+  "denominator_accounting": {
+    "all_games": 6084,
+    "reconstructed_games": 5999,
+    "quarantined_games": 85,
+    "all_raw_violation_rows": 10558,
+    "violation_rows_in_quarantined_games": 150,
+    "violation_rows_in_reconstructed_games_without_owner_so_unknown_ownership_not_violation_flag": 61,
+    "flagged_violation_rows_in_reconstructed_games": 10347,
+    "unknown_owner_raw_subtypes": {
+      "jumpball": 28,
+      "delay-of-game": 33
+    },
+    "signatures": "Qualifiers and descriptors are raw CSV strings, case preserved; missing represented as <missing>. Each count is an event/issue count, never a game count."
+  },
+  "pilot_games": [
+    {
+      "game_id": "0022000181",
+      "stratum": "enriched",
+      "status": "quarantined",
+      "issues": {},
+      "error": "clock/period regression at action 594"
+    },
+    {
+      "game_id": "0022000254",
+      "stratum": "enriched",
+      "status": "quarantined",
+      "issues": {},
+      "error": "clock/period regression at action 661"
+    },
+    {
+      "game_id": "0022000367",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "violation_requires_audit": 1
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022000544",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "unexplained_control_transfer": 1,
+        "violation_requires_audit": 1
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022000925",
+      "stratum": "enriched",
+      "status": "quarantined",
+      "issues": {},
+      "error": "clock/period regression at action 338"
+    },
+    {
+      "game_id": "0022000997",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "violation_requires_audit": 1
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022100226",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "violation_requires_audit": 2
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022200780",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "unexplained_control_transfer": 1,
+        "unknown_ownership": 1,
+        "violation_requires_audit": 4
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022201087",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "unexplained_control_transfer": 1,
+        "violation_requires_audit": 2
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022301101",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "violation_requires_audit": 2
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022301177",
+      "stratum": "enriched",
+      "status": "quarantined",
+      "issues": {},
+      "error": "clock/period regression at action 473"
+    },
+    {
+      "game_id": "0022400393",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "unexplained_control_transfer": 2,
+        "violation_requires_audit": 3
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022400481",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "violation_requires_audit": 1
+      },
+      "error": null
+    },
+    {
+      "game_id": "0022400553",
+      "stratum": "random",
+      "status": "candidate_diagnostic_only",
+      "issues": {
+        "independent_audit_required": 1,
+        "unexplained_control_transfer": 1,
+        "violation_requires_audit": 2
+      },
+      "error": null
+    }
+  ],
+  "minimal_observed_goaltending_reproduction": {
+    "source_example_key": "transfer:violation/defensive goaltending -> 3pt/Jump Shot",
+    "note": "Exact observed rows 327,329,330 only. The subset is deliberately partial and is not scored or made eligible. Demonstrates grouping behavior, not full-game ground truth.",
+    "possessions": [
+      {
+        "events": [
+          327
+        ],
+        "boundary_reason": "made_field_goal",
+        "flags": [
+          "partial_start"
+        ]
+      },
+      {
+        "events": [
+          329
+        ],
+        "boundary_reason": "source_control_transfer",
+        "flags": [
+          "unexplained_control_transfer",
+          "violation_requires_audit"
+        ]
+      },
+      {
+        "events": [
+          330
+        ],
+        "boundary_reason": "input_exhausted",
+        "flags": [
+          "provisional_final_possession"
+        ]
+      }
+    ]
+  },
+  "primary_rule_background": [
+    {
+      "url": "https://official.nba.com/rule-no-11-basket-interference-goaltending/",
+      "section": "Penalty",
+      "purpose": "Defensive award is scored and resumed as a made field goal; supports linking same-clock shot/violation records rather than treating both as new possessions."
+    },
+    {
+      "url": "https://official.nba.com/rule-no-10-violations-and-penalties/",
+      "section": "IV and V",
+      "purpose": "Kicked-ball possession depends on offense/defense; jump-ball violation can award possession or repeat the toss."
+    },
+    {
+      "url": "https://official.nba.com/rule-no-9-free-throws-and-penalties/",
+      "section": "I",
+      "purpose": "FT lane outcomes depend on shooter/team/opponent, attempt result, and whether the attempt remains live."
+    },
+    {
+      "url": "https://official.nba.com/rule-no-13-instant-replay/",
+      "section": "I(a)(5), II(e)",
+      "purpose": "Official timing review can add time, but archive row context alone cannot certify that this explains a given regression."
+    }
+  ],
+  "rule_background_limit": "Retrieved 2026-11-02. Current official pages explain categories only; archived season-specific rule versions and independent footage adjudication remain required.",
+  "classification_limit": "Aggregate adjacency is descriptive; only selected exact neighborhoods are manually interpreted. Goaltending adjacency is not a claim that all 2,540 cases share one cause or that any count is independently validated. No fixes applied.",
+  "full_detail_artifact": "output/v2/parser-triage-2026-11-02/full_detail.json",
+  "reproduction_script": "research/footage_2026_11_02/reproduce_triage.py",
+  "reproduction_metadata_sources": [
+    {
+      "file": "research/hypotheses_2026_09_12/cdnnba_2020_games.csv",
+      "sha256": "db1dea6c56f6f6098ee0fee9ed9b5cd96f4871fa00d92c8171c5f7cf1c855d13",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "research/hypotheses_2026_09_12/cdnnba_2021_games.csv",
+      "sha256": "1eb950749765888e6afede055d51132d89af45326acec5a72e010b314f3a6bce",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "research/hypotheses_2026_09_12/cdnnba_2022_games.csv",
+      "sha256": "a2ebd2045d148982dbc1866ae57bdc03b030fae5fbf399937385524c8a47fdd5",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "research/hypotheses_2026_09_12/cdnnba_2023_games.csv",
+      "sha256": "0b92a99783b83f2578869ceb1f0c5a0644008ff036195437eff99604cc8efa64",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "research/hypotheses_2026_09_12/cdnnba_2024_games.csv",
+      "sha256": "0ff4396b5678527c98a9599373fc124e7b6e442a3dde78695a713f83a2afa302",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    },
+    {
+      "file": "research/hypotheses_2026_09_12/cdnnba_po_2024_games.csv",
+      "sha256": "12d21f77ae130735746a8fe53dda695dc2b11ea8f317e3e63dce16f9252cf613",
+      "status": "historical_derived_metadata_not_independent_schedule"
+    }
+  ],
+  "baseline_commit": "618d480eb7f97781515907452e5d43ab4b7f9a57",
+  "baseline_version_note": "All existing triage counts and parser line references describe canonical_candidate_v1 at the frozen parser SHA, not the current production parser."
+}

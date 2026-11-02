@@ -23,3 +23,13 @@ Reason: full archive diagnostics exposed unresolved control/label cases and stri
 - Require two independent full-game reviewers; disagreements require distinct adjudication. Quantify game-level error only for the random sample, with a predeclared tolerance and confidence level.
 - Keep the actual audit result BLOCKED until independent schedule evidence, review evidence, and frozen tolerances exist. Synthetic tests validate tool behavior only.
 - Provide explicit verified acquisition for gitignored raw inputs; do not use a legacy fetch path that regenerates historical manifests.
+
+## 2026-11-02 — Footage access evidence and corroborated goaltending pairing
+
+Reason: direct browser checks found activation prompts on all 14 pilot game pages and entitlement prompts on two archived-video players. One official event clip played, but no complete game was obtained. Source-backed triage independently exposed a duplicate grouping boundary in the candidate implementation.
+
+- Preserve the fixed pilot sample. Record discovery, player access and complete-game coverage separately; do not replace randomly selected games with conveniently available highlights.
+- Treat footage access as unresolved until each complete stream is verified. No purchase, account entitlement, full-game availability or independent annotation is assumed.
+- Introduce `canonical_candidate_v2` only for a narrowly corroborated made-basket/goaltending pairing. Keep the violation audit flag, raw source rows and false eligibility.
+- Preserve the v1 triage, reports and empty audit plan as historical development evidence. Generate separate parser-bound v2 diagnostics; never relabel v1 results or completed reviews as v2 evidence.
+- Retain all 85 clock quarantines. Administrative/memo adjacency does not prove a clock rise is harmless or justify sorting by clock.

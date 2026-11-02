@@ -61,6 +61,121 @@ def test_made_basket_and_one_and_terminal_free_throw():
     assert r.possessions[0].counted_foul_action_numbers == (2,)
 
 
+def goaltending_sequence():
+    return [
+        event(0, "period", None, None, "start", "PT12M00S"),
+        event(
+            327,
+            clock="PT03M26S",
+            shotResult="Made",
+            qualifiers=["pointsinthepaint", "defensivegoaltending"],
+        ),
+        event(329, "violation", 200, 100, "defensive goaltending", "PT03M26S"),
+        event(330, "3pt", 200, 200, clock="PT03M17S", shotResult="Made"),
+        end(999),
+    ]
+
+
+@pytest.mark.parametrize(
+    "qualifiers",
+    [
+        ["pointsinthepaint", "defensivegoaltending"],
+        "pointsinthepaint, defensivegoaltending",
+    ],
+)
+def test_corroborated_defensive_goaltending_companion_keeps_made_basket_boundary(
+    qualifiers,
+):
+    actions = goaltending_sequence()
+    actions[1]["qualifiers"] = qualifiers
+    saved = json.dumps(actions)
+    r = parse(actions)
+    assert [p.event_action_numbers for p in r.possessions] == [
+        (327, 329),
+        (330, 999),
+    ]
+    assert r.possessions[0].boundary_reason == "made_field_goal"
+    assert r.possessions[0].foul_indicator is None
+    assert r.possessions[0].audit_flags == ("violation_requires_audit",)
+    assert [(i.code, i.action_number) for i in r.issues if i.action_number] == [
+        ("violation_requires_audit", 329)
+    ]
+    assert not r.eligible
+    assert r.audit_status == "blocked_pending_independent_audit"
+    assert json.dumps(actions) == saved
+    assert [e.source_row for e in r.events] == list(range(len(actions)))
+    assert sorted(
+        [n for p in r.possessions for n in p.event_action_numbers]
+        + list(r.unassigned_action_numbers)
+    ) == [0, 327, 329, 330, 999]
+
+
+@pytest.mark.parametrize(
+    "shot_change, companion_change",
+    [
+        ({"qualifiers": []}, {}),
+        ({"qualifiers": None}, {}),
+        ({"qualifiers": "notdefensivegoaltending"}, {}),
+        ({"qualifiers": {"defensivegoaltending": True}}, {}),
+        ({"qualifiers": ["offensivegoaltending"]}, {}),
+        ({"teamId": 200}, {}),
+        ({}, {"teamId": 100}),
+        ({}, {"teamId": None}),
+        ({}, {"possession": 200}),
+        ({}, {"clock": "PT03M25S"}),
+        ({}, {"period": 2}),
+        ({}, {"subType": "offensive goaltending"}),
+        ({}, {"subType": "defensive 3 seconds"}),
+    ],
+)
+def test_uncorroborated_violation_does_not_pair_with_pending_basket(
+    shot_change, companion_change
+):
+    actions = goaltending_sequence()
+    actions[1].update(shot_change)
+    actions[2].update(companion_change)
+    if "period" in companion_change:
+        for action in actions[3:]:
+            action["period"] = 2
+    r = parse(actions)
+    assert r.possessions[0].event_action_numbers == (327,)
+    assert any(i.code == "violation_requires_audit" for i in r.issues)
+    assert not r.eligible
+
+
+def test_repeated_goaltending_companion_is_not_blindly_merged():
+    actions = goaltending_sequence()
+    actions.insert(3, dict(actions[2], actionNumber=330, orderNumber=330))
+    actions[4].update(actionNumber=331, orderNumber=331)
+    r = parse(actions)
+    assert [p.event_action_numbers for p in r.possessions] == [
+        (327, 329),
+        (330,),
+        (331, 999),
+    ]
+    assert [
+        i.action_number for i in r.issues if i.code == "violation_requires_audit"
+    ] == [
+        329,
+        330,
+    ]
+
+
+def test_goaltending_companion_preserves_subsequent_and_one():
+    actions = goaltending_sequence()
+    actions[3:3] = [
+        event(330, "foul", 200, 100, "shooting", "PT03M26S"),
+        event(331, "freethrow", sub="1 of 1", clock="PT03M26S", shotResult="Made"),
+    ]
+    actions[5].update(actionNumber=332, orderNumber=332)
+    r = parse(actions)
+    assert r.possessions[0].event_action_numbers == (327, 329, 330, 331)
+    assert r.possessions[0].boundary_reason == "final_made_free_throw"
+    assert r.possessions[0].counted_foul_action_numbers == (330,)
+    assert r.possessions[0].foul_indicator is None
+    assert "violation_requires_audit" in r.possessions[0].audit_flags
+
+
 def test_admin_technical_does_not_switch_ownership_and_is_preserved():
     r = parse(
         [

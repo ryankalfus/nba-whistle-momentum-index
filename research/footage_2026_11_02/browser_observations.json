@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-11-02",
+  "method": "Live in-app browser, no authenticated League Pass session. Official search discovery is separate in early_games.json and recent_games.json.",
+  "audit_plan_sha256": "6450642f88493ea7ae172d7961e3eda249753cc7527a0689cc5b09c97e8a4561",
+  "observations": [
+    {
+      "game_id": "0022000181",
+      "url": "https://www.nba.com/game/nyk-vs-cle-0022000181",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000254",
+      "url": "https://www.nba.com/game/atl-vs-mil-0022000254",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000367",
+      "url": "https://www.nba.com/game/hou-vs-cha-0022000367",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000544",
+      "url": "https://www.nba.com/game/atl-vs-orl-0022000544",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000925",
+      "url": "https://www.nba.com/game/mem-vs-den-0022000925",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000997",
+      "url": "https://www.nba.com/game/was-vs-tor-0022000997",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022100226",
+      "url": "https://www.nba.com/game/lac-vs-mem-0022100226",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022200780",
+      "url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022201087",
+      "url": "https://www.nba.com/game/phi-vs-chi-0022201087",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022301101",
+      "url": "https://www.nba.com/game/lac-vs-sac-0022301101",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022301177",
+      "url": "https://www.nba.com/game/lal-vs-mem-0022301177",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022400393",
+      "url": "https://www.nba.com/game/bos-vs-orl-0022400393",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022400481",
+      "url": "https://www.nba.com/game/uta-vs-mia-0022400481",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022400553",
+      "url": "https://www.nba.com/game/mia-vs-lac-0022400553",
+      "surface": "NBA game summary in live browser",
+      "observed_on": "2026-11-02",
+      "observed_message": "Activate NBA League Pass to watch games live and on demand.",
+      "control": "Sign In or Join",
+      "result": "activation_prompt_observed",
+      "full_game_playback_verified": false
+    },
+    {
+      "game_id": "0022000544",
+      "url": "https://www.nba.com/watch/video/hawks-magic-03-03-2021-a",
+      "surface": "NBA archived video player in live browser",
+      "observed_on": "2026-11-02",
+      "title": "Hawks @ Magic 03/03/2021 - a",
+      "observed_message": "Unlock NBA League Pass to watch:",
+      "controls": [
+        "SUBSCRIBE",
+        "SIGN IN",
+        "SELECT TV PROVIDER"
+      ],
+      "result": "player_entitlement_prompt_observed",
+      "full_game_playback_verified": false,
+      "duration_verified": false
+    },
+    {
+      "game_id": "0022100226",
+      "url": "https://www.nba.com/watch/video/clippers-grizzlies-11-18-2021-kiswe",
+      "surface": "NBA archived video player in live browser",
+      "observed_on": "2026-11-02",
+      "title": "Clippers @ Grizzlies 11/18/2021 - kiswe",
+      "observed_message": "Unlock NBA League Pass to watch:",
+      "controls": [
+        "SUBSCRIBE",
+        "SIGN IN",
+        "SELECT TV PROVIDER"
+      ],
+      "result": "player_entitlement_prompt_observed",
+      "full_game_playback_verified": false,
+      "duration_verified": false
+    },
+    {
+      "game_id": "0022200780",
+      "url": "https://official.nba.com/archive/goaltending-basket-interference-heat-knicks/",
+      "surface": "NBA Official event-video player in live browser",
+      "observed_on": "2026-11-02",
+      "game_clock": "Q4 01:22",
+      "result": "event_clip_playback_verified",
+      "verification": "Clicked Play Video; player exposed Pause; progress advanced from 1.03 to 62.74 percent; screenshot showed basketball footage and MIA/NYK broadcast scoreboard.",
+      "event_clip_playback_verified": true,
+      "full_game_playback_verified": false,
+      "coverage": "One selected goaltending review only; not complete-game possession coverage.",
+      "downloaded": false
+    }
+  ],
+  "conclusion": "All 14 game pages prompted activation; two direct archived-video players prompted unlocking League Pass. One public event clip played. No full-game replay was obtained or verified. These observations do not prove other lawful sources are unavailable or that subscription purchase guarantees each historical stream.",
+  "independent_annotations_completed": 0
+}
