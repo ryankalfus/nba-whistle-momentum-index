@@ -1,0 +1,13 @@
+{
+  "confidence": null,
+  "freeze_id": null,
+  "frozen": false,
+  "frozen_at": null,
+  "max_game_error_rate": null,
+  "min_random_games": null,
+  "parser_sha256": "a0fc53a3389002d79affef35300ce76f12a7fe058621d6231d35b0676a45743a",
+  "parser_version": "canonical_candidate_v1",
+  "plan_sha256": "6450642f88493ea7ae172d7961e3eda249753cc7527a0689cc5b09c97e8a4561",
+  "review_data_status_at_freeze": null,
+  "sample_assumption": null
+}

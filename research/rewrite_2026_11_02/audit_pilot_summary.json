@@ -1,0 +1,181 @@
+{
+  "audit_module_sha256": "4352e95bffad7640a10d0539ed562c0b7eef7c3e8b2d567fb1c3703d1a1b157e",
+  "date": "2026-11-02",
+  "enriched_game_ids": [
+    "0022000181",
+    "0022000254",
+    "0022000925",
+    "0022301177"
+  ],
+  "enriched_reasons": {
+    "0022000181": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently.",
+    "0022000254": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently.",
+    "0022000925": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently.",
+    "0022301177": "Historical study quarantined these source games for backward-clock anomalies; inspect source order and event corrections independently."
+  },
+  "footage_access": "not_arranged_user_confirmed",
+  "frame_games": 6084,
+  "frame_sha256": "007a243d5db45e77f083499dce0ee2c951032eb2d1b733129bf574520aeecb73",
+  "games": [
+    {
+      "game_id": "0022000181",
+      "game_type": "regular_season",
+      "inclusion_probability": null,
+      "season": "2020-21",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_member": "cdnnba_2020.csv",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "stratum": "enriched"
+    },
+    {
+      "game_id": "0022000254",
+      "game_type": "regular_season",
+      "inclusion_probability": null,
+      "season": "2020-21",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_member": "cdnnba_2020.csv",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "stratum": "enriched"
+    },
+    {
+      "game_id": "0022000367",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2020-21",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_member": "cdnnba_2020.csv",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022000544",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2020-21",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_member": "cdnnba_2020.csv",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022000925",
+      "game_type": "regular_season",
+      "inclusion_probability": null,
+      "season": "2020-21",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_member": "cdnnba_2020.csv",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "stratum": "enriched"
+    },
+    {
+      "game_id": "0022000997",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2020-21",
+      "source_file": "cdnnba_2020.tar.xz",
+      "source_member": "cdnnba_2020.csv",
+      "source_sha256": "e45e1b4a70a33ce93525c58f04362b6c275f7e514789772d4a8360f22a13f4f2",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022100226",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2021-22",
+      "source_file": "cdnnba_2021.tar.xz",
+      "source_member": "cdnnba_2021.csv",
+      "source_sha256": "0c116aff50b829de70902023f108ee78c0f44bec569521ebf1fa292e01bda28f",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022200780",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2022-23",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_member": "cdnnba_2022.csv",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022201087",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2022-23",
+      "source_file": "cdnnba_2022.tar.xz",
+      "source_member": "cdnnba_2022.csv",
+      "source_sha256": "de895e3474365fc14b028f514eb0f8c9c1503b95d3f1a5aef5a408305ddfb41f",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022301101",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2023-24",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_member": "cdnnba_2023.csv",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022301177",
+      "game_type": "regular_season",
+      "inclusion_probability": null,
+      "season": "2023-24",
+      "source_file": "cdnnba_2023.tar.xz",
+      "source_member": "cdnnba_2023.csv",
+      "source_sha256": "33d49fefc809f73d5d6cbad6d1d6690e0df6c89fe2b5a4d814ecc9ea4df6101b",
+      "stratum": "enriched"
+    },
+    {
+      "game_id": "0022400393",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2024-25",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_member": "cdnnba_2024.csv",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022400481",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2024-25",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_member": "cdnnba_2024.csv",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "stratum": "random"
+    },
+    {
+      "game_id": "0022400553",
+      "game_type": "regular_season",
+      "inclusion_probability": 0.001643655489809336,
+      "season": "2024-25",
+      "source_file": "cdnnba_2024.tar.xz",
+      "source_member": "cdnnba_2024.csv",
+      "source_sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "stratum": "random"
+    }
+  ],
+  "inventory_coverage": {
+    "completeness": "unverified",
+    "games": [],
+    "schedule_evidence": null,
+    "status": "observed_only"
+  },
+  "inventory_sha256": "d6898234c72d9e3bd8812deeac9d6abd1f65828f4e7c0f39110256aedd3cede5",
+  "kind": "full_game_audit_plan",
+  "parser_sha256": "a0fc53a3389002d79affef35300ce76f12a7fe058621d6231d35b0676a45743a",
+  "parser_version": "canonical_candidate_v1",
+  "plan_sha256": "6450642f88493ea7ae172d7961e3eda249753cc7527a0689cc5b09c97e8a4561",
+  "protocol_status": "development_packet_not_locked",
+  "purpose": "unlocked_pilot_packet_not_independent_validation",
+  "review_status": "absent",
+  "reviewers": "not_arranged_user_confirmed",
+  "sample_size": 10,
+  "schema_version": "audit-plan-v1",
+  "seed": 20261102,
+  "selection_method": "simple_random_without_replacement_then_enriched_union",
+  "unit": "full_game_any_material_discrepancy"
+}
