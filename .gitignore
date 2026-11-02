@@ -8,3 +8,14 @@ __pycache__/
 .playwright-cli/
 output/
 scorecard.png
+
+# Local development, packages, private configuration and new research runs
+.venv/
+build/
+dist/
+*.egg-info/
+.env
+.env.*
+!.env.example
+runs/
+whistle-build-*/

@@ -1,4 +1,34 @@
-# NBA Whistle Momentum Index
+# NBA whistle research
+
+The v2 rewrite is in development: a Python package, immutable source ledger, and auditable possession reconstruction support a recorded defensive-foul prediction study. The independent reconstruction audit has not passed; package checks do not establish scientific validity. See [STATUS.md](STATUS.md), [research protocol](docs/RESEARCH_PROTOCOL.md), and [rewrite plan](docs/REWRITE_PLAN.md). The legacy WMI release and explorer below remain the public baseline.
+
+## Development environment
+
+Use CPython 3.14.7 (see `.python-version`) and Node.js 22. The pinned development environment in `requirements.lock` includes transitive scientific, test, lint, and build dependencies. It was resolved on macOS ARM64; CI is configured to check the same pins on Linux x86-64. Other Python minors and platforms are not currently supported. Dependency upgrades require regenerating the lock and rerunning the checks.
+
+Create the project `.venv` and install the local package:
+
+```bash
+bash scripts/bootstrap.sh
+```
+
+If needed, select an existing interpreter with `PYTHON=python3.14 bash scripts/bootstrap.sh`. The bootstrap installs dependencies only inside `.venv` and fails when the requested interpreter version differs. It does not download Python or access NBA data.
+
+Inspect recorded package/environment versions:
+
+```bash
+.venv/bin/python -m whistle_research environment
+```
+
+Run maintained Python lint, all Python tests, website unit checks, a wheel build, and an isolated installed-wheel smoke check:
+
+```bash
+.venv/bin/python scripts/check.py
+```
+
+The check preserves the historical CI lint scope and adds `src/`, `scripts/`, and `tests/v2/`; unrelated archived Python files are not lint targets. Tests remain offline. Use a new directory under `runs/` for exploratory output; never overwrite historical release artifacts. No confirmatory evaluation or new public scientific claim is allowed before the protocol and independent audit gates pass.
+
+## Legacy WMI release
 
 NBA Whistle Momentum Index is a possession-level basketball analytics project that asks a simple question:
 
@@ -52,44 +82,13 @@ Main outputs:
 - `wmi_distribution_2020_21_to_2025_26_failures.csv`
 - `wmi_distribution_2020_21_to_2025_26.png`
 
-## Quick Start
+## Historical reproduction safeguards
 
-Install dependencies:
+Use the development commands at the top of this README for normal work. Legacy runners are preserved for historical comparison; several overwrite tracked release CSVs, plots, or website data by default, even when a small game limit is supplied.
 
-```bash
-python -m pip install -r requirements.txt
-```
+Before a historical reproduction, create a separate disposable checkout or copy containing the required pinned inputs. Keep its output paths physically separate from the preserved checkout: do not share or symlink release directories. Inspect that script's write paths before running it. Distribution/search builders, plotting scripts, and legacy forecast/interval runners without an output override must run only in that isolated copy. A game-limit option does not redirect their output.
 
-Run checks:
-
-```bash
-ruff check .
-pytest -q
-```
-
-Calculate one game:
-
-```bash
-python calculate_wmi_any_game.py --game-id 0022500802
-```
-
-Build a smoke-test distribution:
-
-```bash
-python build_wmi_distribution_2020_2026.py --max-games-per-season 2
-```
-
-Plot the 2025-26 snapshot:
-
-```bash
-python plot_wmi_distribution_2025_26.py
-```
-
-Build the website search dataset:
-
-```bash
-python build_wmi_search_dataset.py
-```
+For legacy validation, explicitly select a new, previously nonexistent output directory with `--output`; use `--max-games` and `--build-only` for a reconstruction smoke run. Keep any historical model evaluation in the isolated copy as well. Preserve original release files and compare newly generated outputs before considering a deliberate replacement.
 
 ## Website
 
@@ -98,7 +97,7 @@ The static Whistle Atlas website is in `index.html`, `styles.css`, and `site.js`
 Preview locally:
 
 ```bash
-python -m http.server 8000
+.venv/bin/python -m http.server 8000
 ```
 
 The 22 October 2026 meeting packet is in `research/meeting_2026_10_22/`: a proposed problem statement and decision gate, the Indigo-format ten-source bibliography draft, an RIS file for Zotero, and a source tracker. Source annotations are preliminary until the full papers are read and page-numbered notes are added.
@@ -131,17 +130,9 @@ This is a v1 research release. The metric is intentionally simple, explainable, 
 
 The shared parser now splits at period changes, ignores administrative ownership changes when starting possessions, and reconstructs time without using future overtime. The WMI formula and global windows are unchanged. Existing CSV snapshots remain archived release data; `site-data/audited_games.csv` overlays recalculated games in search. Each row names its parser version and percentile reference cohort.
 
-Run the reproducible offline study:
+The historical study used `validate_wmi.py`, `forecast_foul_sequences.py`, and `validate_wmi_intervals.py`. Their default paths point at the preserved release, so they are not normal development commands. Apply the historical reproduction safeguards above; the forecast and interval scripts have no output-directory override.
 
-```bash
-python validate_wmi.py
-python forecast_foul_sequences.py
-python validate_wmi_intervals.py
-python -m pytest -q
-node tests/test_site.cjs
-```
-
-The conditional sequence runner executes only when the replication gate passes. The main study needs the commit-pinned inputs listed in `research/hypotheses_2026_09_12/source_manifest.json`; the existing fetch helper acquires those inputs. It verifies SHA256 hashes before use. `python validate_wmi.py --evaluate-only` uses the saved possession partitions. Development builds require `--max-games N --output /tmp/wmi-smoke` so release artifacts are protected.
+The conditional sequence runner executes only when its historical replication gate passes. This does not satisfy the v2 independent audit gate. The main study uses the commit-pinned inputs in `research/hypotheses_2026_09_12/source_manifest.json`; the existing fetch helper verifies SHA256 hashes. Validation's `--evaluate-only` option reads saved possession partitions but still writes evaluation outputs, so it also requires an isolated copy and an explicit new output directory populated with the needed copied inputs.
 
 Outputs live in `research/validation_2026_09_12/`: protocol, report, source/partition manifest, environment versions, parser and source comparisons, held-out predictions, calibration, residuals, and the expansion decision. Compressed possession partitions include model inputs and separately named outcomes. Current-possession shots/free throws are never prediction features. Missing shot-zone coverage is explicit.
 
