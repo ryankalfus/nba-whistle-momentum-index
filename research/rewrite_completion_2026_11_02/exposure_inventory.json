@@ -1,0 +1,193 @@
+{
+  "schema_version": "evaluation-exposure-inventory-v1",
+  "recorded_on": "2026-11-02",
+  "status": "NO_UNUSED_EVALUATION_COHORT_VERIFIED",
+  "scope": "Bounded repository evidence; not exhaustive proof of every prior analysis or private outcome inspection.",
+  "cohorts": [
+    {
+      "season": "2020-21",
+      "game_type": "regular_season",
+      "exposure_status": "DEVELOPMENT_EXPOSED",
+      "unused_confirmatory": false,
+      "evidence": [
+        "hypothesis_inventory",
+        "hypothesis_models",
+        "validation_manifest"
+      ]
+    },
+    {
+      "season": "2021-22",
+      "game_type": "regular_season",
+      "exposure_status": "DEVELOPMENT_EXPOSED",
+      "unused_confirmatory": false,
+      "evidence": [
+        "hypothesis_inventory",
+        "hypothesis_models",
+        "validation_manifest"
+      ]
+    },
+    {
+      "season": "2022-23",
+      "game_type": "regular_season",
+      "exposure_status": "DEVELOPMENT_EXPOSED",
+      "unused_confirmatory": false,
+      "evidence": [
+        "hypothesis_inventory",
+        "hypothesis_models",
+        "validation_manifest",
+        "validation_models"
+      ]
+    },
+    {
+      "season": "2023-24",
+      "game_type": "regular_season",
+      "exposure_status": "DEVELOPMENT_EXPOSED",
+      "unused_confirmatory": false,
+      "evidence": [
+        "hypothesis_inventory",
+        "hypothesis_models",
+        "validation_manifest",
+        "validation_models",
+        "validation_forecasts"
+      ]
+    },
+    {
+      "season": "2024-25",
+      "game_type": "regular_season",
+      "exposure_status": "DEVELOPMENT_EXPOSED",
+      "unused_confirmatory": false,
+      "evidence": [
+        "hypothesis_inventory",
+        "hypothesis_models",
+        "validation_manifest",
+        "validation_models",
+        "validation_forecasts",
+        "expansion_study"
+      ]
+    },
+    {
+      "season": "2024-25",
+      "game_type": "playoffs",
+      "source_games": 84,
+      "exposure_status": "DEVELOPMENT_EXPOSED",
+      "unused_confirmatory": false,
+      "evidence": [
+        "hypothesis_inventory",
+        "hypothesis_playoffs",
+        "validation_manifest",
+        "validation_models"
+      ]
+    },
+    {
+      "season": "2025-26",
+      "game_type": "regular_season_snapshot",
+      "source_games": 1034,
+      "coverage": "stored March 2026 snapshot; not a verified complete season",
+      "exposure_status": "DEVELOPMENT_EXPOSED",
+      "unused_confirmatory": false,
+      "evidence": [
+        "expansion_study",
+        "expansion_snapshot",
+        "snapshot_acquisition",
+        "snapshot_analysis"
+      ]
+    }
+  ],
+  "additional_exposure": {
+    "description": "Hypothesis report also names stored 2019-20 and selected attendance-linked WMI. These are not certified unused.",
+    "evidence": [
+      "hypothesis_inventory"
+    ]
+  },
+  "future_cohort": {
+    "season": "2026-27",
+    "search_observation": "No analysis found in bounded prior search",
+    "unused_verified": false,
+    "designated": false,
+    "reason": "Absence of a saved analysis is not proof of non-exposure."
+  },
+  "protocol": {
+    "locked": false,
+    "freeze_date": null,
+    "meaningful_gain_threshold": null,
+    "unused_cohort": null,
+    "prospective_requirement": "Begin after the actual protocol freeze, with documented date boundary and prior exposure.",
+    "evidence": [
+      "protocol_status",
+      "protocol_exposure",
+      "protocol_lock"
+    ]
+  },
+  "limitations": [
+    "Prior exposure survives parser changes and new reconstruction.",
+    "Retrospective holdout is not untouched prospective evidence.",
+    "Inventory does not validate older scientific claims or pass the independent reconstruction audit."
+  ],
+  "sources": {
+    "hypothesis_inventory": {
+      "path": "research/hypotheses_2026_09_12/full_hypothesis_report.md",
+      "line_start": 11,
+      "line_end": 20
+    },
+    "hypothesis_playoffs": {
+      "path": "research/hypotheses_2026_09_12/full_hypothesis_report.md",
+      "line_start": 161,
+      "line_end": 176
+    },
+    "hypothesis_models": {
+      "path": "research/hypotheses_2026_09_12/full_hypothesis_report.md",
+      "line_start": 327,
+      "line_end": 334
+    },
+    "validation_manifest": {
+      "path": "research/validation_2026_09_12/dataset_manifest.json",
+      "line_start": 43,
+      "line_end": 76
+    },
+    "validation_models": {
+      "path": "research/validation_2026_09_12/report.md",
+      "line_start": 17,
+      "line_end": 28
+    },
+    "validation_forecasts": {
+      "path": "research/validation_2026_09_12/report.md",
+      "line_start": 54,
+      "line_end": 65
+    },
+    "expansion_study": {
+      "path": "wmi_expansion_full_report.md",
+      "line_start": 1,
+      "line_end": 42
+    },
+    "expansion_snapshot": {
+      "path": "wmi_expansion_full_report.md",
+      "line_start": 102,
+      "line_end": 109
+    },
+    "snapshot_acquisition": {
+      "path": "PROJECT/nba-whistle-project-log.md",
+      "line_start": 11,
+      "line_end": 12
+    },
+    "snapshot_analysis": {
+      "path": "PROJECT/nba-whistle-project-log.md",
+      "line_start": 117,
+      "line_end": 117
+    },
+    "protocol_status": {
+      "path": "docs/RESEARCH_PROTOCOL.md",
+      "line_start": 3,
+      "line_end": 3
+    },
+    "protocol_exposure": {
+      "path": "docs/RESEARCH_PROTOCOL.md",
+      "line_start": 41,
+      "line_end": 45
+    },
+    "protocol_lock": {
+      "path": "docs/RESEARCH_PROTOCOL.md",
+      "line_start": 55,
+      "line_end": 60
+    }
+  }
+}

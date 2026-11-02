@@ -4,7 +4,7 @@ Date: 2026-11-02. Status: authorized implementation; scientific gates remain evi
 
 ## Deliverable and dependency order
 
-Produce a reproducible empirical paper and audited data release answering whether foul history adds predictive value beyond known basketball context. The game explorer follows the research release. A negative result is a valid endpoint.
+Produce a reproducible empirical paper and audited data release answering whether foul history adds predictive value beyond known basketball context. The public scientific explorer follows the research release; a separate development notebook may expose explicitly labeled provisional evidence and synthetic diagnostics. A negative result is a valid endpoint.
 
 1. **Foundation:** package and locked environment, project rules, research protocol, offline fixture/check command. Preserve the legacy release.
 2. **Source ledger:** verified immutable files, game inventory, provenance and explicit missingness/failure reasons. Distinguish a source-observed inventory from independently verified schedule completeness.
@@ -31,3 +31,7 @@ Use `codex/research-foundation`, `codex/source-ledger`, `codex/canonical-possess
 ## Work that cannot be substituted with code
 
 Independent footage annotation, an evidence-based scientific tolerance/meaningful-effect choice, and genuine non-exposure to evaluation outcomes require supporting evidence. Do not invent annotations, treat parser agreement as ground truth, or rename a previously explored season as prospective. Implement preparatory tooling while these remain unresolved; do not bypass the gates.
+
+## 2026-11-02 implementation milestone
+
+All eight stages now have executable development tooling; this does not satisfy their scientific completion criteria. See [PIPELINE.md](PIPELINE.md) for a single-command run and [STATUS.md](../STATUS.md) for implemented versus evidence-dependent work. The fixed pilot remains blocked with no independent labels, and the manuscript has no new empirical result. Public replay discovery is recorded separately in `research/rewrite_completion_2026_11_02/public_replays.json` so convenient footage cannot silently change the random sample. Actual final validation requires the evidence described above.

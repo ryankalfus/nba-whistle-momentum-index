@@ -1,0 +1,13 @@
+{
+  "coverage_completeness": "accounted_for",
+  "coverage_states": {
+    "observed": 6084
+  },
+  "coverage_status": "schedule_checked",
+  "games": 6084,
+  "inventory_sha256": "473e0ac45f96ba3c2c78e3cea43b8af4c33cf291ca26ec4ae89099cf7308d2fc",
+  "limitation": "Independent schedule cross-check only; no possession validation or independent audit acceptance.",
+  "ok": true,
+  "schedule_sha256": "c880b3080bff469ea75b075bfb166b7be05330aa96387db18b0fa27179d0c412",
+  "source_failures": 0
+}

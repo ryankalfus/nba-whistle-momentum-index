@@ -28,6 +28,7 @@ def main() -> None:
     run([python, "-m", "ruff", "check", *LEGACY_LINT, "src", "scripts", "tests/v2"])
     run([python, "-m", "pytest", "-q"])
     run(["node", "tests/test_site.cjs"])
+    run(["node", "--test", "tests/test_v2_site.cjs"])
     run([python, "-m", "whistle_research", "environment"])
     # Install the wheel without editable paths or dependencies, outside the source tree.
     # The package's basic diagnostics intentionally need only the standard library.

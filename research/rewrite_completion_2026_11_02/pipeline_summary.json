@@ -1,0 +1,113 @@
+{
+  "audit": {
+    "bound_method": "one_sided_Clopper_Pearson_binomial",
+    "completed_enriched_games": 0,
+    "completed_random_games": 0,
+    "confidence": null,
+    "config_sha256": "69e1def571fb6a65676071eba5cf8551173a1fa6a3f884222a86a0c5d946f6af",
+    "enriched_games": 4,
+    "kind": "independent_audit_gate",
+    "limitations": "Attestations and external evidence are not authenticated. Game-level binomial model is assumed; enriched games are not pooled. Passing is necessary, not sufficient, for scientific release.",
+    "parser_sha256": "6d6b481095e588f5346aeacea8799a7c6984b9f9b07d583c69a5df6a6d80f646",
+    "parser_version": "canonical_candidate_v5",
+    "plan_sha256": "42d3459f138e72ca464f7752c36643b2af8f0244c98b2740c5ab43966ce0898a",
+    "random_games": 10,
+    "random_games_with_material_discrepancy": 0,
+    "reasons": [
+      "missing_or_invalid_tolerances",
+      "missing_selected_game_reviews",
+      "random_error_bound_unavailable",
+      "random_sample_assumption_undeclared",
+      "tolerances_not_frozen_before_review"
+    ],
+    "review_records": 0,
+    "reviews_sha256": "17b27cd1fac5b1b6356bc24f3ebca566f209394735e0f6f714848829ecbf6e73",
+    "sample_assumption": null,
+    "schema_version": "audit-gate-v1",
+    "selected_games": 14,
+    "status": "BLOCKED",
+    "upper_bound": null
+  },
+  "audit_selection_preserved": true,
+  "counts": {
+    "complete_games": 5972,
+    "corrected_schedule_dates": 30,
+    "critical_unresolved_games": 1859,
+    "eligible_games": 0,
+    "expected_games": 6084,
+    "observed_games": 6084,
+    "possession_rows": 1193032,
+    "quarantined_games": 84,
+    "reconstructed_games": 6000,
+    "source_files": 10,
+    "unknown_outcomes": 2221,
+    "unresolved_transfer_flags": 257,
+    "unresolved_violation_flags": 373
+  },
+  "current_promotion_refusal": {
+    "next_step": "Supply passing bound audit evidence, verified sources, eligible rows and a frozen unseen-cohort protocol.",
+    "reasons": [
+      "independent_audit_not_passed",
+      "missing_or_invalid_tolerances",
+      "missing_selected_game_reviews",
+      "random_error_bound_unavailable",
+      "random_sample_assumption_undeclared",
+      "tolerances_not_frozen_before_review"
+    ],
+    "status": "BLOCKED"
+  },
+  "date": "2026-11-02",
+  "draft_paper": {
+    "bytes": 1354,
+    "path": "output/v2/development-pipeline-v5-2026-11-02/draft_paper.md",
+    "sha256": "c256ee36225d26cc1a4d21dc2034446d39e5d1998aa8bb5f42eae73d6adcf082"
+  },
+  "focused_checks": {
+    "command": ".venv/bin/python -m pytest tests/v2/test_modeling.py tests/v2/test_evaluation.py tests/v2/test_pipeline.py tests/v2/test_release.py -q",
+    "passed": 107,
+    "ruff": "All checks passed"
+  },
+  "markdown": {
+    "bytes": 1368,
+    "path": "output/v2/development-pipeline-v5-2026-11-02/report.md",
+    "sha256": "16e3a37c7e6b3c367c0a5b3253f3591cc542b27895379670349674eba1cd6d13"
+  },
+  "output": "output/v2/development-pipeline-v5-2026-11-02",
+  "publication_status": "NOT_AUTHORIZED",
+  "report": {
+    "bytes": 14798,
+    "path": "output/v2/development-pipeline-v5-2026-11-02/report.json",
+    "sha256": "bbf9a02ef48cd41f7002aac55e597d667ac629fff012e2bd13f498940cb4860f"
+  },
+  "schema_version": "pipeline-run-summary-v1",
+  "scientific_status": "BLOCKED",
+  "software_status": "DEVELOPMENT_RUN_COMPLETE",
+  "stream_verification": {
+    "audit_flag_counts": {
+      "event_owner_conflict": 5,
+      "foul_defense_unresolved": 414,
+      "missing_period_end": 20,
+      "offensive_foul_owner_conflict": 52,
+      "partial_start": 8,
+      "provisional_final_possession": 2,
+      "retained_ball_requires_audit": 674,
+      "source_clock_correction_requires_audit": 1,
+      "special_descriptor_requires_audit": 465,
+      "unexplained_control_transfer": 257,
+      "unsupported_free_throw": 2,
+      "unsupported_label": 202,
+      "violation_requires_audit": 342
+    },
+    "flagged_provenance_rows": 2221,
+    "incomplete_provenance_rows": 2,
+    "rows": 1193032,
+    "unknown_outcomes": 2221
+  },
+  "validation": "Final reviewed code. All cataloged file bytes/hashes checked after run; full row/provenance stream verified; original10random4enrichedseed preserved. No archive reparsing or real fitting. Prior v1-v4 runs retained as development history, not current report.",
+  "versions": {
+    "feature_sha256": "8008b45ca51aebefda0dabd6522eb9373dc7b4f2401f8bfa7eb55370809fccc4",
+    "feature_version": "before_event_v1",
+    "parser_sha256": "6d6b481095e588f5346aeacea8799a7c6984b9f9b07d583c69a5df6a6d80f646",
+    "parser_version": "canonical_candidate_v5"
+  }
+}

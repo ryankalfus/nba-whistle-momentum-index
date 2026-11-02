@@ -33,3 +33,16 @@ Reason: direct browser checks found activation prompts on all 14 pilot game page
 - Introduce `canonical_candidate_v2` only for a narrowly corroborated made-basket/goaltending pairing. Keep the violation audit flag, raw source rows and false eligibility.
 - Preserve the v1 triage, reports and empty audit plan as historical development evidence. Generate separate parser-bound v2 diagnostics; never relabel v1 results or completed reviews as v2 evidence.
 - Retain all 85 clock quarantines. Administrative/memo adjacency does not prove a clock rise is harmless or justify sorting by clock.
+
+## 2026-11-02 — Integrated development workflow and evidence boundaries
+
+Reason: the remaining software components can be implemented and checked before external scientific evidence exists. Continuing implementation must not manufacture a validated result.
+
+- Independently account for the declared schedule using ESPN team-season events and exact official NBA date evidence for 30 stale metadata rows. Preserve original CSVs and source snapshots.
+- Use `canonical_candidate_v5` with narrow source-corroborated semantics and one explicitly flagged clock restoration. Keep 84 quarantines, unknown outcomes and unresolved issues visible; count reductions do not prove correctness.
+- Export before-event features with separate nullable targets and row/event provenance. Retrospectively attributed control is not claimed to be verified live availability.
+- Keep exact WMI and simulated ratio behavior separate from predictive evidence. Changing independent rates can inflate WMI. Game bootstrap targets and failure scenarios are explicit; do not reinstate unsupported per-game intervals.
+- Implement functional real fit/evaluation paths with mandatory audit, dataset-provenance and frozen-protocol validation. Conditional promotion creates a separate manifest and cannot discard difficult games or silently flip original eligibility.
+- Treat every already analyzed cohort, including the stored 2025–26 snapshot, as exposed. No unused future cohort, freeze date or effect threshold is invented.
+- Generate a development report, draft manuscript with unavailable empirical results, and `/v2/` notebook. Separate software-run, scientific and publication statuses. Bind displayed synthetic artifacts to the report's exact hashes.
+- Follow the user's public-source-only access choice. Record twelve exact listings and two observed long-broadcast playback checks; distinguish playback, continuous coverage, uploader authorization and independent review. No purchase, download, redistribution or challenge bypass occurred.
