@@ -1,0 +1,585 @@
+{
+  "schema_version": "public-replay-access-v1",
+  "checked_on": "2026-11-02",
+  "scope": "Fixed fourteen-game development pilot; cumulative public-source discovery and live access checks. No independent film annotations.",
+  "sample_unchanged": true,
+  "listing_candidates": 13,
+  "playback_verified_games": 2,
+  "full_coverage_verified_games": 0,
+  "games": [
+    {
+      "game_id": "0022000181",
+      "date": "2021-01-15",
+      "matchup": "NYK @ CLE",
+      "official_url": "https://www.nba.com/game/nyk-vs-cle-0022000181",
+      "source_url": null,
+      "player_url": null,
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": null,
+      "access_status": "not_found",
+      "verification_note": "No full-broadcast listing found in the recorded searches. An exact-date third-party listing links condensed Weibo highlights, explicitly excluded from full-game access. This does not prove a full recording is absent. The official route previously showed an activation prompt.",
+      "previous_search_note": "No exact-date public listing found in the recorded title/date/matchup searches. This is not proof that none exists. Official route previously showed activation prompt."
+    },
+    {
+      "game_id": "0022000254",
+      "date": "2021-01-24",
+      "matchup": "ATL @ MIL",
+      "official_url": "https://www.nba.com/game/atl-vs-mil-0022000254",
+      "source_url": "https://www.724zbw.com/nba/39023.html",
+      "player_url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/t0035px18id.html",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "not_verified_for_this_region",
+      "access_status": "region_restricted",
+      "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record. Tencent itself lists all four Mandarin quarters with VIP labels, extending the third-party Q1/Q2 listing; those quarters remain unplayed.",
+      "previous_access_record": {
+        "game_id": "0022000254",
+        "date": "2021-01-24",
+        "matchup": "ATL @ MIL",
+        "official_url": "https://www.nba.com/game/atl-vs-mil-0022000254",
+        "source_url": null,
+        "player_url": null,
+        "duration_seconds": null,
+        "playback_verified": false,
+        "full_coverage_verified": false,
+        "independent_reviews_completed": 0,
+        "source_authorization": null,
+        "access_status": "not_found",
+        "verification_note": "No exact-date public listing found in the recorded title/date/matchup searches. This is not proof that none exists. Official route previously showed activation prompt."
+      },
+      "alternative_catalog_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/j003578pt8d.html",
+          "observed_label": "[QQ国语]01月25日NBA常规赛 老鹰vs雄鹿 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/l0035yi4oge.html",
+          "observed_label": "[QQ国语]01月25日NBA常规赛 老鹰vs雄鹿 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/t0035px18id.html",
+          "observed_label": "[QQ原声]01月25日NBA常规赛 老鹰vs雄鹿 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/m0035q68d70.html",
+          "observed_label": "[QQ原声]01月25日NBA常规赛 老鹰vs雄鹿 第二节 录像"
+        }
+      ],
+      "third_party_listing_coverage": "Q1_Q2_only",
+      "primary_catalog_coverage": "four_mandarin_quarters_listed_vip"
+    },
+    {
+      "game_id": "0022000367",
+      "date": "2021-02-08",
+      "matchup": "HOU @ CHA",
+      "official_url": "https://www.nba.com/game/hou-vs-cha-0022000367",
+      "source_url": "https://basketball-video.com/videos/nba_full_game_replays/nba_regular_season_2020_21/houston_rockets_vs_charlotte_hornets_full_game_highlights_08_02_2021/5-1-0-707",
+      "player_url": "https://ok.ru/videoembed/1960499743268",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "unverified_third_party",
+      "access_status": "private_or_removed",
+      "verification_note": "Exact listing found; embedded OK player displayed Video unavailable / This video is private."
+    },
+    {
+      "game_id": "0022000544",
+      "date": "2021-03-03",
+      "matchup": "ATL @ ORL",
+      "official_url": "https://www.nba.com/game/atl-vs-orl-0022000544",
+      "source_url": "https://basketball-video.com/videos/nba_full_game_replays/nba_regular_season_2020_21/atlanta_hawks_vs_orlando_magic_full_game_highlights_03_03_2021/5-1-0-872",
+      "player_url": "https://ok.ru/videoembed/2005665384996",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "unverified_third_party",
+      "access_status": "private_or_removed",
+      "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+    },
+    {
+      "game_id": "0022000925",
+      "date": "2021-04-26",
+      "matchup": "MEM @ DEN",
+      "official_url": "https://www.nba.com/game/mem-vs-den-0022000925",
+      "source_url": "https://basketball-video.com/videos/nba_full_game_replays/nba_regular_season_2020_21/memphis_grizzlies_vs_denver_nuggets_full_game_replay_highlights_april_26_2021/5-1-0-1271",
+      "player_url": "https://ok.ru/videoembed/2121803303460",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "unverified_third_party",
+      "access_status": "private_or_removed",
+      "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+    },
+    {
+      "game_id": "0022000997",
+      "date": "2021-05-06",
+      "matchup": "WAS @ TOR",
+      "official_url": "https://www.nba.com/game/was-vs-tor-0022000997",
+      "source_url": "https://basketball-video.com/videos/nba_full_game_replays/nba_regular_season_2020_21/washington_wizards_vs_toronto_raptors_full_game_replay_highlights_may_6_2021/5-1-0-1348",
+      "player_url": "https://ok.ru/videoembed/2142205512260",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "unverified_third_party",
+      "access_status": "private_or_removed",
+      "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+    },
+    {
+      "game_id": "0022100226",
+      "date": "2021-11-18",
+      "matchup": "LAC @ MEM",
+      "official_url": "https://www.nba.com/game/lac-vs-mem-0022100226",
+      "source_url": "https://basketball-video.com/la-clippers-vs-memphis-grizzlies-full-game-replay-nov-18-2021-nba-replay-hd",
+      "player_url": null,
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "unverified_third_party",
+      "access_status": "candidate_unverified",
+      "verification_note": "Exact listing exposes four Watch links with fragment-only URLs. Clicking Part 1 changed only the URL fragment and exposed no playable quarter. Separate YouTube item is labeled highlights and excluded."
+    },
+    {
+      "game_id": "0022200780",
+      "date": "2023-02-02",
+      "matchup": "MIA@NYK",
+      "official_url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+      "source_url": "https://www.724zbw.com/nba/75371.html",
+      "player_url": "https://v.qq.com/x/cover/mzc002009zhkejw/e0045hc6hrf.html",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "not_verified_for_this_region",
+      "access_status": "region_restricted",
+      "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+      "previous_access_record": {
+        "game_id": "0022200780",
+        "date": "2023-02-02",
+        "matchup": "MIA@NYK",
+        "official_url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+        "source_url": "https://basketball-video.com/miami-heat-vs-new-york-knicks-feb-2-2023-nba-full-game-replay-live-free",
+        "player_url": "https://ok.ru/videoembed/5113576491606",
+        "duration_seconds": null,
+        "playback_verified": false,
+        "full_coverage_verified": false,
+        "independent_reviews_completed": 0,
+        "source_authorization": "unverified_third_party",
+        "access_status": "private_or_removed",
+        "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+      },
+      "alternative_catalog_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/a0045t3iec6.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/e0045hc6hrf.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/m0045qcmjvc.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/h00452f7aki.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/o0045b5mlvp.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/a0045fywrlg.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/b0045mnyjhh.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/v00456usp1k.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/z0045bqw4mw.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/z0045nwkroe.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第四节 录像"
+        }
+      ],
+      "listing_coverage": "full_and_four_quarters_listed",
+      "catalog_duration_seconds": 7253
+    },
+    {
+      "game_id": "0022201087",
+      "date": "2023-03-22",
+      "matchup": "PHI@CHI",
+      "official_url": "https://www.nba.com/game/phi-vs-chi-0022201087",
+      "source_url": "https://www.724zbw.com/nba/76393.html",
+      "player_url": "https://v.qq.com/x/cover/mzc002001efqbei/a0045x80ue2.html",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "not_verified_for_this_region",
+      "access_status": "region_restricted",
+      "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+      "previous_access_record": {
+        "game_id": "0022201087",
+        "date": "2023-03-22",
+        "matchup": "PHI@CHI",
+        "official_url": "https://www.nba.com/game/phi-vs-chi-0022201087",
+        "source_url": "https://basketball-video.com/philadelphia-76ers-vs-chicago-bulls-mar-22-2023-nba-full-game-replay",
+        "player_url": null,
+        "duration_seconds": null,
+        "playback_verified": false,
+        "full_coverage_verified": false,
+        "independent_reviews_completed": 0,
+        "source_authorization": "unverified_third_party",
+        "access_status": "private_or_removed",
+        "verification_note": "Exact listing found. Only visible video player was unavailable because its YouTube account was terminated; no full broadcast playback established."
+      },
+      "alternative_catalog_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/o0045h5422y.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/a0045x80ue2.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/r00458xo3bp.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/l0045kthtsp.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/d0045c7zfv8.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/z0045x5y96k.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/d0045x3vzed.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/c0045n3hqne.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/v00451a9o2x.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/c00455ud9xo.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第四节 录像"
+        }
+      ],
+      "listing_coverage": "full_and_four_quarters_listed"
+    },
+    {
+      "game_id": "0022301101",
+      "date": "2024-04-02",
+      "matchup": "LAC@SAC",
+      "official_url": "https://www.nba.com/game/lac-vs-sac-0022301101",
+      "source_url": "https://www.724zbw.com/nba/82957.html",
+      "player_url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048759q40.html",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "not_verified_for_this_region",
+      "access_status": "region_restricted",
+      "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record. The earlier Filemoon route now says Video source is unavailable.",
+      "previous_access_record": {
+        "game_id": "0022301101",
+        "date": "2024-04-02",
+        "matchup": "LAC@SAC",
+        "official_url": "https://www.nba.com/game/lac-vs-sac-0022301101",
+        "source_url": "https://basketball-video.com/la-clippers-vs-sacramento-kings-apr-2-2024-nba-full-game-replay",
+        "player_url": "https://filemoon.sx/e/t9zrjr3p7ca4/NBA_20240402_LAC___SAC_720p60_KTLA.mkvv",
+        "duration_seconds": null,
+        "playback_verified": false,
+        "full_coverage_verified": false,
+        "independent_reviews_completed": 0,
+        "source_authorization": "unverified_third_party",
+        "access_status": "human_verification_required",
+        "verification_note": "Exact listing exposes Filemoon player. Direct player says Click play button in order to verify you are a human. Verification was not completed; no playback or duration established."
+      },
+      "alternative_catalog_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/h3544am8mte.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048759q40.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/h00482sjtru.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048p1vosu.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/c00489m7o4i.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/j0048gmqhav.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/s00481442rw.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/x0048o11w78.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/t0048fpky4b.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/i0048o0gkfg.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第四节 录像"
+        }
+      ],
+      "listing_coverage": "full_and_four_quarters_listed"
+    },
+    {
+      "game_id": "0022301177",
+      "date": "2024-04-12",
+      "matchup": "LAL@MEM",
+      "official_url": "https://www.nba.com/game/lal-vs-mem-0022301177",
+      "source_url": "https://www.724zbw.com/nba/83157.html",
+      "player_url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100o04gtw.html",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "not_verified_for_this_region",
+      "access_status": "region_restricted",
+      "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+      "previous_access_record": {
+        "game_id": "0022301177",
+        "date": "2024-04-12",
+        "matchup": "LAL@MEM",
+        "official_url": "https://www.nba.com/game/lal-vs-mem-0022301177",
+        "source_url": "https://basketball-video.com/los-angeles-lakers-vs-memphis-grizzlies-apr-12-2024-nba-full-game-replay",
+        "player_url": "https://filemoon.sx/e/uyk1x25ajy3g/NBA_20240412_LAL___MEM_720p60_BS-MEM.mkv",
+        "duration_seconds": null,
+        "playback_verified": false,
+        "full_coverage_verified": false,
+        "independent_reviews_completed": 0,
+        "source_authorization": "unverified_third_party",
+        "access_status": "private_or_removed",
+        "verification_note": "Exact listing found; Filemoon player displayed Video source is unavailable."
+      },
+      "alternative_catalog_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/g3546p613dd.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100o04gtw.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/e4100uajfrj.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/q4100idry8j.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/v41005xn9m2.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/o4100w94a1m.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100ijlz3k.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/r4100qeu60f.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/j41006fkh2k.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/v41000h9jmk.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第四节 录像"
+        }
+      ],
+      "listing_coverage": "full_and_four_quarters_listed"
+    },
+    {
+      "game_id": "0022400393",
+      "date": "2024-12-23",
+      "matchup": "BOS@ORL",
+      "official_url": "https://www.nba.com/game/bos-vs-orl-0022400393",
+      "source_url": "https://basketball-video.com/boston-celtics-vs-orlando-magic-full-game-replay-december-23-2024-nba",
+      "player_url": "https://ok.ru/videoembed/9523455461974",
+      "duration_seconds": 6788,
+      "playback_verified": true,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "unverified_third_party",
+      "access_status": "playback_verified",
+      "verification_note": "Followed observed Watch link /2020-0 to OK player. Displayed duration 1:53:08; playback advanced to 00:37 and showed Celtics/Magic starting lineups. End and continuous period coverage were not checked."
+    },
+    {
+      "game_id": "0022400481",
+      "date": "2025-01-04",
+      "matchup": "UTA@MIA",
+      "official_url": "https://www.nba.com/game/uta-vs-mia-0022400481",
+      "source_url": "https://www.724zbw.com/nba/87657.html",
+      "player_url": "https://v.qq.com/x/cover/mzc00200279h4jl/p4100msrnvv.html",
+      "duration_seconds": null,
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "not_verified_for_this_region",
+      "access_status": "region_restricted",
+      "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+      "previous_access_record": {
+        "game_id": "0022400481",
+        "date": "2025-01-04",
+        "matchup": "UTA@MIA",
+        "official_url": "https://www.nba.com/game/uta-vs-mia-0022400481",
+        "source_url": "https://basketball-video.com/utah-jazz-vs-miami-heat-full-game-replay-january-4-2025-nba",
+        "player_url": "https://ok.ru/videoembed/9479717980844",
+        "duration_seconds": null,
+        "playback_verified": false,
+        "full_coverage_verified": false,
+        "independent_reviews_completed": 0,
+        "source_authorization": "unverified_third_party",
+        "access_status": "private_or_removed",
+        "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+      },
+      "alternative_catalog_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/u3575kywlyy.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/p4100msrnvv.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/x4100ksybkn.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/n410062179f.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/v4100ub5pah.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/x4100ce2lyn.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f4100z80hwu.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/h4100s8vimh.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f4100vmbeqz.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f41006o77eh.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第四节 录像"
+        }
+      ],
+      "listing_coverage": "full_and_four_quarters_listed"
+    },
+    {
+      "game_id": "0022400553",
+      "date": "2025-01-13",
+      "matchup": "MIA@LAC",
+      "official_url": "https://www.nba.com/game/mia-vs-lac-0022400553",
+      "source_url": "https://basketball-video.com/miami-heat-vs-la-clippers-full-game-replay-january-13-2025-nba",
+      "player_url": "https://ok.ru/videoembed/9611636902486",
+      "duration_seconds": 6240,
+      "playback_verified": true,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "source_authorization": "unverified_third_party",
+      "access_status": "playback_verified",
+      "verification_note": "Followed observed Watch link /2480-0 to OK player. Displayed duration 1:44:00. Moving opening Heat/Clippers broadcast and seek to 1:39:36 verified; image showed Heat 94, Clippers 107, Q4 1:29. Continuous coverage and all periods were not reviewed."
+    }
+  ],
+  "limitations": [
+    "Public accessibility does not establish uploader authorization. No league/broadcaster authorization evidence was found for these third-party copies.",
+    "Listing titles and duration do not prove continuous full-game coverage. No stream was watched or annotated in full.",
+    "No accounts, purchases, media downloads, redistribution, CAPTCHA completion or access-control bypass occurred.",
+    "Two human reviewers, frozen tolerances and full continuous footage evidence remain absent. These records cannot pass the scientific audit.",
+    "Search coverage is bounded; unsuccessful searches do not prove absence. Exact sample games were not substituted with easier games.",
+    "Thirteen games now have an exact replay listing or multi-quarter catalog lead; this includes blocked listings and does not mean thirteen accessible broadcasts. NYK/CLE still has no accepted full-game candidate."
+  ],
+  "searches": [
+    {
+      "method": "Initial indexed official, broadcaster, Internet Archive and third-party catalog queries",
+      "record": "full_game_access.json"
+    },
+    {
+      "method": "Browser site search using exact dates in title formats across all fourteen games",
+      "site": "https://basketball-video.com/",
+      "result": "Twelve exact-date/matchup listing candidates."
+    },
+    {
+      "method": "Additional site searches for missing oldest games",
+      "queries": [
+        "Knicks Cavaliers 2021",
+        "Hawks Bucks 2021",
+        "15.01.2021",
+        "24.01.2021"
+      ],
+      "result": "No matching January 15 NYK/CLE or January 24 ATL/MIL listing found among inspected results."
+    },
+    {
+      "method": "Additional 64 indexed queries, alternative public catalogs and six live Tencent route checks",
+      "record": "research/parser_followthrough_2026_11_02/public_search.json",
+      "browser_record": "research/parser_followthrough_2026_11_02/browser_observations.json",
+      "result": "Six alternative replay listings; all six tested Tencent routes region-restricted. No additional playback."
+    }
+  ],
+  "previous_evidence": "research/rewrite_completion_2026_11_02/public_replays.json",
+  "new_alternative_listing_games": 6
+}

@@ -1,0 +1,436 @@
+{
+  "schema_version": "memo-export-verification-v1",
+  "checked_on": "2026-11-02",
+  "feature_export": "output/v2/features-v7-reviewed-2026-11-02",
+  "compared_references": 59,
+  "status": "passed",
+  "checks": [
+    "All 59 previously memo-based references match preceding nonmemo action and clock",
+    "Full feature/provenance streams traversed in alignment"
+  ],
+  "references": [
+    {
+      "game_id": "0022000035",
+      "possession_number": 155,
+      "old_memo_reference": 558,
+      "reference_action_number": 556,
+      "clock": 702.0
+    },
+    {
+      "game_id": "0022000109",
+      "possession_number": 129,
+      "old_memo_reference": 403,
+      "reference_action_number": 401,
+      "clock": 484.0
+    },
+    {
+      "game_id": "0022000109",
+      "possession_number": 164,
+      "old_memo_reference": 525,
+      "reference_action_number": 524,
+      "clock": 39.1
+    },
+    {
+      "game_id": "0022000109",
+      "possession_number": 178,
+      "old_memo_reference": 571,
+      "reference_action_number": 570,
+      "clock": 602.0
+    },
+    {
+      "game_id": "0022000261",
+      "possession_number": 181,
+      "old_memo_reference": 637,
+      "reference_action_number": 636,
+      "clock": 239.0
+    },
+    {
+      "game_id": "0022000312",
+      "possession_number": 169,
+      "old_memo_reference": 582,
+      "reference_action_number": 581,
+      "clock": 338.0
+    },
+    {
+      "game_id": "0022000312",
+      "possession_number": 173,
+      "old_memo_reference": 597,
+      "reference_action_number": 596,
+      "clock": 265.0
+    },
+    {
+      "game_id": "0022000317",
+      "possession_number": 109,
+      "old_memo_reference": 396,
+      "reference_action_number": 394,
+      "clock": 618.0
+    },
+    {
+      "game_id": "0022000385",
+      "possession_number": 96,
+      "old_memo_reference": 320,
+      "reference_action_number": 319,
+      "clock": 31.2
+    },
+    {
+      "game_id": "0022000399",
+      "possession_number": 181,
+      "old_memo_reference": 585,
+      "reference_action_number": 583,
+      "clock": 229.0
+    },
+    {
+      "game_id": "0022000435",
+      "possession_number": 161,
+      "old_memo_reference": 557,
+      "reference_action_number": 556,
+      "clock": 443.0
+    },
+    {
+      "game_id": "0022000437",
+      "possession_number": 200,
+      "old_memo_reference": 654,
+      "reference_action_number": 653,
+      "clock": 8.8
+    },
+    {
+      "game_id": "0022000491",
+      "possession_number": 178,
+      "old_memo_reference": 578,
+      "reference_action_number": 577,
+      "clock": 203.0
+    },
+    {
+      "game_id": "0022000563",
+      "possession_number": 156,
+      "old_memo_reference": 494,
+      "reference_action_number": 493,
+      "clock": 543.0
+    },
+    {
+      "game_id": "0022000581",
+      "possession_number": 30,
+      "old_memo_reference": 339,
+      "reference_action_number": 79,
+      "clock": 332.0
+    },
+    {
+      "game_id": "0022000651",
+      "possession_number": 120,
+      "old_memo_reference": 376,
+      "reference_action_number": 375,
+      "clock": 429.0
+    },
+    {
+      "game_id": "0022000687",
+      "possession_number": 132,
+      "old_memo_reference": 465,
+      "reference_action_number": 464,
+      "clock": 298.0
+    },
+    {
+      "game_id": "0022000760",
+      "possession_number": 203,
+      "old_memo_reference": 677,
+      "reference_action_number": 676,
+      "clock": 46.7
+    },
+    {
+      "game_id": "0022000767",
+      "possession_number": 178,
+      "old_memo_reference": 613,
+      "reference_action_number": 608,
+      "clock": 291.0
+    },
+    {
+      "game_id": "0022000794",
+      "possession_number": 132,
+      "old_memo_reference": 444,
+      "reference_action_number": 443,
+      "clock": 387.0
+    },
+    {
+      "game_id": "0022000807",
+      "possession_number": 200,
+      "old_memo_reference": 643,
+      "reference_action_number": 642,
+      "clock": 6.6
+    },
+    {
+      "game_id": "0022000945",
+      "possession_number": 200,
+      "old_memo_reference": 650,
+      "reference_action_number": 649,
+      "clock": 194.0
+    },
+    {
+      "game_id": "0022000960",
+      "possession_number": 182,
+      "old_memo_reference": 583,
+      "reference_action_number": 582,
+      "clock": 42.7
+    },
+    {
+      "game_id": "0022000976",
+      "possession_number": 232,
+      "old_memo_reference": 719,
+      "reference_action_number": 718,
+      "clock": 72.0
+    },
+    {
+      "game_id": "0022000998",
+      "possession_number": 203,
+      "old_memo_reference": 655,
+      "reference_action_number": 650,
+      "clock": 12.0
+    },
+    {
+      "game_id": "0022001044",
+      "possession_number": 189,
+      "old_memo_reference": 607,
+      "reference_action_number": 606,
+      "clock": 97.0
+    },
+    {
+      "game_id": "0022001057",
+      "possession_number": 122,
+      "old_memo_reference": 363,
+      "reference_action_number": 362,
+      "clock": 430.0
+    },
+    {
+      "game_id": "0022100052",
+      "possession_number": 201,
+      "old_memo_reference": 665,
+      "reference_action_number": 664,
+      "clock": 160.0
+    },
+    {
+      "game_id": "0022100145",
+      "possession_number": 141,
+      "old_memo_reference": 485,
+      "reference_action_number": 489,
+      "clock": 248.0
+    },
+    {
+      "game_id": "0022100252",
+      "possession_number": 114,
+      "old_memo_reference": 400,
+      "reference_action_number": 399,
+      "clock": 416.0
+    },
+    {
+      "game_id": "0022100290",
+      "possession_number": 99,
+      "old_memo_reference": 318,
+      "reference_action_number": 317,
+      "clock": 720.0
+    },
+    {
+      "game_id": "0022100295",
+      "possession_number": 163,
+      "old_memo_reference": 546,
+      "reference_action_number": 545,
+      "clock": 469.0
+    },
+    {
+      "game_id": "0022100345",
+      "possession_number": 182,
+      "old_memo_reference": 666,
+      "reference_action_number": 665,
+      "clock": 102.0
+    },
+    {
+      "game_id": "0022100361",
+      "possession_number": 121,
+      "old_memo_reference": 385,
+      "reference_action_number": 384,
+      "clock": 454.0
+    },
+    {
+      "game_id": "0022100393",
+      "possession_number": 169,
+      "old_memo_reference": 565,
+      "reference_action_number": 564,
+      "clock": 626.0
+    },
+    {
+      "game_id": "0022100404",
+      "possession_number": 169,
+      "old_memo_reference": 561,
+      "reference_action_number": 560,
+      "clock": 309.0
+    },
+    {
+      "game_id": "0022100457",
+      "possession_number": 20,
+      "old_memo_reference": 56,
+      "reference_action_number": 55,
+      "clock": 445.0
+    },
+    {
+      "game_id": "0022100514",
+      "possession_number": 107,
+      "old_memo_reference": 355,
+      "reference_action_number": 354,
+      "clock": 516.0
+    },
+    {
+      "game_id": "0022100547",
+      "possession_number": 133,
+      "old_memo_reference": 430,
+      "reference_action_number": 429,
+      "clock": 132.0
+    },
+    {
+      "game_id": "0022100683",
+      "possession_number": 134,
+      "old_memo_reference": 498,
+      "reference_action_number": 496,
+      "clock": 203.0
+    },
+    {
+      "game_id": "0022100776",
+      "possession_number": 204,
+      "old_memo_reference": 709,
+      "reference_action_number": 707,
+      "clock": 31.5
+    },
+    {
+      "game_id": "0022100778",
+      "possession_number": 172,
+      "old_memo_reference": 589,
+      "reference_action_number": 587,
+      "clock": 194.0
+    },
+    {
+      "game_id": "0022100785",
+      "possession_number": 124,
+      "old_memo_reference": 403,
+      "reference_action_number": 401,
+      "clock": 335.0
+    },
+    {
+      "game_id": "0022100835",
+      "possession_number": 169,
+      "old_memo_reference": 584,
+      "reference_action_number": 583,
+      "clock": 279.0
+    },
+    {
+      "game_id": "0022100898",
+      "possession_number": 202,
+      "old_memo_reference": 635,
+      "reference_action_number": 634,
+      "clock": 70.0
+    },
+    {
+      "game_id": "0022100908",
+      "possession_number": 175,
+      "old_memo_reference": 586,
+      "reference_action_number": 585,
+      "clock": 423.0
+    },
+    {
+      "game_id": "0022100917",
+      "possession_number": 108,
+      "old_memo_reference": 357,
+      "reference_action_number": 356,
+      "clock": 635.0
+    },
+    {
+      "game_id": "0022100980",
+      "possession_number": 185,
+      "old_memo_reference": 604,
+      "reference_action_number": 602,
+      "clock": 281.0
+    },
+    {
+      "game_id": "0022101003",
+      "possession_number": 199,
+      "old_memo_reference": 619,
+      "reference_action_number": 618,
+      "clock": 74.0
+    },
+    {
+      "game_id": "0022101019",
+      "possession_number": 134,
+      "old_memo_reference": 407,
+      "reference_action_number": 406,
+      "clock": 435.0
+    },
+    {
+      "game_id": "0022101019",
+      "possession_number": 207,
+      "old_memo_reference": 645,
+      "reference_action_number": 646,
+      "clock": 33.7
+    },
+    {
+      "game_id": "0022101020",
+      "possession_number": 189,
+      "old_memo_reference": 654,
+      "reference_action_number": 652,
+      "clock": 167.0
+    },
+    {
+      "game_id": "0022101049",
+      "possession_number": 187,
+      "old_memo_reference": 627,
+      "reference_action_number": 624,
+      "clock": 101.0
+    },
+    {
+      "game_id": "0022101061",
+      "possession_number": 81,
+      "old_memo_reference": 487,
+      "reference_action_number": 247,
+      "clock": 320.0
+    },
+    {
+      "game_id": "0022101077",
+      "possession_number": 131,
+      "old_memo_reference": 412,
+      "reference_action_number": 411,
+      "clock": 217.0
+    },
+    {
+      "game_id": "0022101123",
+      "possession_number": 190,
+      "old_memo_reference": 576,
+      "reference_action_number": 575,
+      "clock": 145.0
+    },
+    {
+      "game_id": "0022101218",
+      "possession_number": 185,
+      "old_memo_reference": 613,
+      "reference_action_number": 612,
+      "clock": 380.0
+    },
+    {
+      "game_id": "0022101218",
+      "possession_number": 192,
+      "old_memo_reference": 641,
+      "reference_action_number": 637,
+      "clock": 263.0
+    },
+    {
+      "game_id": "0022101218",
+      "possession_number": 201,
+      "old_memo_reference": 673,
+      "reference_action_number": 672,
+      "clock": 124.0
+    }
+  ],
+  "assessment": {
+    "path": "research/parser_followthrough_2026_11_02/memo_clock_assessment.json",
+    "sha256": "02c3a97a300e2bc4a72361b50767381d992897265e1b6937e59fce73ecfaa656",
+    "bytes": 1689265
+  },
+  "feature_manifest": {
+    "path": "output/v2/features-v7-reviewed-2026-11-02/manifest.json",
+    "sha256": "6b2868d4525b22a51fbc99f424bfc9d17748e75daf1c5c24eb9b3315568f73c6",
+    "bytes": 19549091
+  }
+}

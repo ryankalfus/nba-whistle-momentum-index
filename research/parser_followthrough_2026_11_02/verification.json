@@ -1,0 +1,93 @@
+{
+  "checked_on": "2026-11-02",
+  "command": ".venv/bin/python scripts/check.py",
+  "exit_code": 0,
+  "python_tests_passed": 489,
+  "javascript_tests": {
+    "legacy_site": "passed",
+    "v2_site": {
+      "passed": 5,
+      "failed": 0
+    },
+    "repeated_after_final_payload": "passed"
+  },
+  "lint": "passed",
+  "dependency_check": "passed",
+  "wheel_build_and_isolated_install": "passed",
+  "log": {
+    "path": "output/v2/parser-followthrough-v7-checks-2026-11-02.log",
+    "sha256": "baa9a2d96d94d24196992ce9ceb8f0af88223d39db8235fdc2ba9be6b0552c1e",
+    "bytes": 8399
+  },
+  "independent_review": {
+    "model": "Sol",
+    "code_status": "no_open_findings",
+    "focused_python_tests": 161,
+    "additional_adversarial_memo_insertions": 225,
+    "final_integration_status": "passed_no_open_findings",
+    "integration_tests_passed": 22,
+    "artifact_bindings_checked": 24,
+    "memo_export_references_checked": 59
+  },
+  "root_verification": {
+    "focused_python_tests": 161,
+    "artifact_bindings_checked": 24,
+    "previously_memo_based_export_references_checked": 59,
+    "audit_selection_preserved": true,
+    "residual_triage_reproduction": {
+      "command": ".venv/bin/python research/parser_followthrough_2026_11_02/residual_triage.py --check",
+      "exit_code": 0,
+      "exact_packet_match": true,
+      "log": {
+        "path": "output/v2/residual-triage-reproduction-2026-11-02.log",
+        "sha256": "002109efc37d2820d3f092d0fbc9fc2a6c5e51e8c93a48a4a9eb5ded4d530989",
+        "bytes": 701
+      }
+    },
+    "final_focused_python_tests": 172
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8765/v2/",
+    "focused_check": "Reloaded final v7 payload. Observed6036 reconstructed,48 quarantined,1199536 rows,2947 unknown,0 eligible; six regional access barriers and same two playback-only badges. NYK condensed-only exclusion displayed.",
+    "console_errors_or_warnings": 0,
+    "scientific_gate": "BLOCKED",
+    "full_coverage_verified_games": 0
+  },
+  "final_artifacts": [
+    {
+      "path": "v2/data.json",
+      "sha256": "324d802e58f23bc248d00bc8b7a75077bce19bec5ba3c8557e6c224d9a470235",
+      "bytes": 104259
+    },
+    {
+      "path": "research/parser_followthrough_2026_11_02/pipeline_summary.json",
+      "sha256": "f76fc995a8a756d08dcf5581c8a56827489373771d006608a7b70f6b60f6d244",
+      "bytes": 4014
+    },
+    {
+      "path": "research/parser_followthrough_2026_11_02/public_replays.json",
+      "sha256": "302bac4502bd9bb6f3d858e4e7e8c6db43399e0338c6f10d46c5b58a8dd74ad4",
+      "bytes": 29867
+    },
+    {
+      "path": "research/parser_followthrough_2026_11_02/development_report.md",
+      "sha256": "7e3b356d3158744575c0306f0a93671a6296c2823cfb3a6e1dc446711b146267",
+      "bytes": 1368
+    },
+    {
+      "path": "research/parser_followthrough_2026_11_02/draft_paper.md",
+      "sha256": "c256ee36225d26cc1a4d21dc2034446d39e5d1998aa8bb5f42eae73d6adcf082",
+      "bytes": 1354
+    },
+    {
+      "path": "research/parser_followthrough_2026_11_02/memo_export_verification.json",
+      "sha256": "b2c60c3066c01a0048287e0ceed81adee7e67fa14ebfc738d71d03723b91c993",
+      "bytes": 10692
+    }
+  ],
+  "limitations": [
+    "Automated and independent code review are not human full-game annotations.",
+    "Remaining source conflicts require adjudication; no new real model fit or scientific publication.",
+    "Footage access remains incomplete; new catalog leads did not yield playback."
+  ]
+}

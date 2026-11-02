@@ -15,7 +15,7 @@ Without reuse options, this verifies all source bytes, builds the schedule-bound
 Reuse is explicit, with no silent fallback to stale data:
 
 ```sh
-.venv/bin/python -m whistle_research.pipeline --output output/v2/NEW_REUSED_DEVELOPMENT_RUN --reuse-inventory output/v2/source-inventory-independent-2026-11-02/inventory.json --reuse-reconciliation output/v2/reconciliation-semantics-v5-2026-11-02/report.json --reuse-features output/v2/features-candidate-v5-2026-11-02 --reuse-math research/rewrite_completion_2026_11_02/simulation_summary.json --reuse-models research/rewrite_completion_2026_11_02/model_demo_summary.json
+.venv/bin/python -m whistle_research.pipeline --output output/v2/NEW_REUSED_DEVELOPMENT_RUN --reuse-inventory output/v2/source-inventory-independent-2026-11-02/inventory.json --reuse-reconciliation output/v2/reconciliation-v7-reviewed-2026-11-02/report.json --reuse-features output/v2/features-v7-reviewed-2026-11-02 --reuse-math research/rewrite_completion_2026_11_02/simulation_summary.json --reuse-models research/rewrite_completion_2026_11_02/model_demo_summary.json
 ```
 
 Every run rehashes the raw source cache against the pinned manifest, verifies schedule/metadata hashes, complete game frames and current parser/feature hashes, checks reconciliation/source/game identities, and re-reads aligned feature/provenance JSONL streams. It recomputes exact JSONL byte hashes, canonical row-list hash, every per-game row/unknown count and total missing-field counts; group order, row/provenance IDs, metadata and source/action reference structure must agree. Emitted rows and quarantine statuses must also agree with the reconciliation; source-event counts must agree with the inventory. Stream verification uses memory proportional to game count, rather than materializing the million-row export. Synthetic artifacts must match current metric/simulation/model/evaluation source hashes, model specification and the declared seed. A validation failure exits 1 and cannot emit a completed report. Partial new outputs remain diagnostic failure artifacts; existing outputs are never replaced.
@@ -58,23 +58,25 @@ The real fitting API currently materializes supplied rows, so future million-row
 
 ## Actual development result
 
-The dated [pipeline_summary.json](../research/rewrite_completion_2026_11_02/pipeline_summary.json) identifies the actual run and hash-bound generated reports. It used explicit reuse and completed source/stream/accounting verification with:
+The dated [pipeline_summary.json](../research/parser_followthrough_2026_11_02/pipeline_summary.json) identifies the current v7 run and hash-bound generated reports. Fresh full reconciliation and feature export used the frozen v7 parser; the final pipeline explicitly reused those outputs and the unchanged, source-bound synthetic summaries. It completed source/stream/accounting verification with:
 
 | Quantity | Count |
 | --- | ---: |
 | Verified source files | 10 |
 | Expected / observed games | 6,084 / 6,084 |
-| Provisional reconstructed / quarantined games | 6,000 / 84 |
-| Possession rows / unknown outcomes | 1,193,032 / 2,221 |
-| Marker-complete games | 5,972 |
-| Critical-unresolved games | 1,859 |
+| Provisional reconstructed / quarantined games | 6,036 / 48 |
+| Possession rows / unknown outcomes | 1,199,536 / 2,947 |
+| Marker-complete games | 6,033 |
+| Critical-unresolved games | 2,253 |
 | Eligible games | 0 |
 | Documented corrected schedule dates | 30 |
-| Unresolved transfer / violation flags | 257 / 373 |
+| Unresolved transfer / violation flags | 411 / 166 |
 | Random / enriched audit cases | 10 / 4 |
 | Completed independent reviews | 0 |
 
-The scientific gate is **BLOCKED** with empty reviews and unfrozen tolerances; the model/evaluation protocol remains unlocked. Actual current-data promotion was also refused before fitting. Synthetic fixture tests demonstrate the functional positive promotion/fit path using clearly labeled test-only attestations and parameters; they supply no real audit evidence.
+The scientific gate is **BLOCKED** with empty reviews and unfrozen tolerances; the model/evaluation protocol remains unlocked. No actual model was fit. Synthetic fixture tests demonstrate the functional positive promotion/fit path using clearly labeled test-only attestations and parameters; they supply no real audit evidence.
+
+Candidate v7 separates source notes from live-state references without removing raw events. One narrow replay restoration and 35 note-only clock cases explain the newly reconstructed games; two notes that concealed actual non-note clock rises still quarantine. All 59 previously note-based references were checked automatically against their preceding source events in the final export. Increased transfer/unknown counts expose unresolved source conflicts under corrected jump/retained-ball semantics; they are not cleared to improve summary counts. The [run comparison](../research/parser_followthrough_2026_11_02/run_comparison.json) preserves v5, initial v6, reviewed v6 and v7 results. Earlier integration artifacts remain unchanged.
 
 Focused checks:
 
