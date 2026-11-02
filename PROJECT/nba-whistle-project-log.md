@@ -2,6 +2,8 @@
 
 Log all changes here. Short, summarized.
 
+- 11.02.2026: Authorized a research-first v2 rewrite with one source ledger, traceable canonical reconstruction, independent audit gates, and later matched prediction/paper work; preserved the legacy WMI definition and release. Added root working instructions and a dated development protocol; no new scientific results are validated by this authorization.
+
 - 02.17.2026: Chose project idea for Whistle Momentum Index (WMI) focused on whether foul calls have short-term memory.
 - 02.17.2026: Defined early model inputs (time, score margin, recent foul history, timeouts/challenges/momentum shifts).
 - 02.18.2026: Set up Anaconda and Jupyter notebook environment.

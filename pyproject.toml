@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools==84.2.1", "wheel==0.48.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whistle-research"
+version = "0.1.0"
+description = "Traceable NBA recorded-foul research tools (development)"
+readme = "README.md"
+requires-python = ">=3.14,<3.15"
+dependencies = [
+  "matplotlib==3.11.2",
+  "numpy==2.5.4",
+  "pandas==3.1.0",
+  "requests==2.34.2",
+  "scikit-learn==1.9.1",
+  "scipy==1.18.1",
+  "statsmodels==0.15.0",
+]
+
+[project.scripts]
+whistle-research = "whistle_research.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+target-version = "py314"
+
+# Preserve the Ruff 0.12 default checks used by the historical CI.
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

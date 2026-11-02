@@ -1,10 +1,2 @@
-matplotlib
-numpy
-pandas
-pytest
-requests
-ruff==0.12.0
-statsmodels
-
-scikit-learn
-scipy
+# Complete development environment; install before the local package.
+-r requirements.lock

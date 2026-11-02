@@ -27,10 +27,11 @@
 - WMI should show whistle-pattern behavior. It should not be presented as proof of referee intent by itself.
 
 ## Current Project Stage
-- Current stage: game-level `WMI` with a separate audited multi-season validation and prediction study.
-- Current work centers on game-level WMI.
+- Current stage: research-first rewrite authorized on 2026-11-02; the historical game-level `WMI` and separate validation study remain the released baseline.
+- Current work centers on a reproducible source inventory, one traceable possession reconstruction, and independent reconstruction validation before new confirmatory models.
 - League-wide completed-game outputs support game comparison, not pooled season claims.
-- Current priority: audit reconstruction, expose descriptive components, and compare context-only prediction with context plus foul history on later seasons.
+- Primary v2 question: whether past foul history improves held-out recorded-foul prediction beyond the same known pre-possession context. A null or negligible result is a valid research endpoint.
+- The rewrite does not change the legacy WMI equation or authorize new public causal claims. Historical studied seasons are development evidence, not a fresh prospective holdout.
 
 ## Core Project Rules
 - Offensive fouls end possessions.
