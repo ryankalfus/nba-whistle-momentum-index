@@ -1,109 +1,39 @@
-import re
-import requests
+from __future__ import annotations
+
 import pandas as pd
 
-GAME_ID = "0022500789"
+from nba_pbp_utils import (
+    DEFAULT_SINGLE_GAME_ID,
+    EXCLUDED_DEF_FOUL_SUBTYPES,
+    build_valid_possessions,
+    calculate_context_flags,
+    count_defensive_fouls,
+    extract_team_context,
+    format_output_preview,
+    infer_team_score_side,
+    load_game_dataframe,
+    parse_int,
+)
+
 OUT_PATH = "def_foul_context_okc_mil.csv"
-EXCLUDED_DEF_FOUL_SUBTYPES = {"offensive", "technical", "double technical"}
 
 
-def clock_to_seconds(clock_str):
-    if pd.isna(clock_str):
-        return None
-    match = re.match(r"PT(\d+)M(\d+)\.(\d+)S", str(clock_str))
-    if not match:
-        return None
-    minutes = int(match.group(1))
-    seconds = int(match.group(2))
-    hundredths = int(match.group(3))
-    return minutes * 60 + seconds + (hundredths / 100.0)
-
-
-def parse_int(value):
-    if pd.isna(value):
-        return None
-    try:
-        return int(value)
-    except Exception:
-        return None
-
-
-def infer_team_score_side(df, team_ids):
-    # Map each teamId to either "home" (scoreHome) or "away" (scoreAway)
-    mapping = {}
-    prev_home = None
-    prev_away = None
-
-    for _, row in df.iterrows():
-        home = parse_int(row.get("scoreHome"))
-        away = parse_int(row.get("scoreAway"))
-        team_id = parse_int(row.get("teamId"))
-
-        if home is None or away is None:
-            continue
-
-        if prev_home is not None and prev_away is not None and team_id in team_ids:
-            home_changed = home != prev_home
-            away_changed = away != prev_away
-
-            # Only trust rows where exactly one side changed.
-            if home_changed ^ away_changed:
-                side = "home" if home_changed else "away"
-                if team_id not in mapping:
-                    mapping[team_id] = side
-                if len(mapping) == 1:
-                    known_team = next(iter(mapping.keys()))
-                    other_team = [tid for tid in team_ids if tid != known_team][0]
-                    mapping[other_team] = "away" if mapping[known_team] == "home" else "home"
-                    break
-
-        prev_home = home
-        prev_away = away
-
-    return mapping
-
-
-def build_def_foul_context(game_id):
-    url = f"https://cdn.nba.com/static/json/liveData/playbyplay/playbyplay_{game_id}.json"
-    response = requests.get(url, timeout=30)
-    response.raise_for_status()
-    payload = response.json()
-
-    df = pd.DataFrame(payload["game"]["actions"]).sort_values(["orderNumber", "actionNumber"]).reset_index(drop=True)
-    df["seconds_remaining_in_period"] = df["clock"].apply(clock_to_seconds)
-    df["game_seconds_elapsed"] = (df["period"] - 1) * 720 + (720 - df["seconds_remaining_in_period"])
-    df["event_seq_same_clock"] = df.groupby("game_seconds_elapsed").cumcount()
-    df["timeline_time"] = df["game_seconds_elapsed"] + (df["event_seq_same_clock"] * 0.001)
-
-    team_rows = df[df["teamTricode"].notna()][["teamId", "teamTricode"]].dropna().drop_duplicates()
-    team_id_to_tricode = {int(r.teamId): r.teamTricode for _, r in team_rows.iterrows()}
-    team_ids = sorted(team_id_to_tricode.keys())
-    if len(team_ids) != 2:
-        raise ValueError("Expected exactly 2 teams in game.")
-
-    # Possession groups for searching prior/next possessions.
-    valid = df[df["possession"].isin(team_ids)].copy()
-    valid["is_new_possession"] = valid["possession"] != valid["possession"].shift(1)
-    valid["possession_group"] = valid["is_new_possession"].cumsum()
-
-    opponent_id = {team_ids[0]: team_ids[1], team_ids[1]: team_ids[0]}
+def build_def_foul_context(game_id: str) -> pd.DataFrame:
+    df = load_game_dataframe(game_id)
+    team_id_to_tricode, opponent_id, team_ids = extract_team_context(df)
+    valid = build_valid_possessions(df, team_ids)
 
     # Build possession summary with boolean: did defending team commit a defensive foul in this possession?
     possession_summary_rows = []
     for group_id, grp in valid.groupby("possession_group", sort=True):
         offense_team_id = int(grp["possession"].iloc[0])
         defense_team_id = opponent_id[offense_team_id]
-        subtype_lower = grp["subType"].fillna("").astype(str).str.lower()
-        has_def_foul = (
-            (grp["actionType"] == "foul")
-            & (~subtype_lower.isin(EXCLUDED_DEF_FOUL_SUBTYPES))
-            & (grp["teamId"] == defense_team_id)
-        ).any()
+        has_def_foul = int(count_defensive_fouls(grp, defense_team_id) > 0)
         possession_summary_rows.append(
             {
                 "possession_group": int(group_id),
                 "offense_team_id": offense_team_id,
-                "has_def_foul": int(has_def_foul),
+                "has_def_foul": has_def_foul,
             }
         )
     possession_summary = pd.DataFrame(possession_summary_rows)
@@ -120,6 +50,12 @@ def build_def_foul_context(game_id):
     # Infer team -> score side mapping (home/away) from score changes in PBP.
     team_score_side = infer_team_score_side(valid, team_ids)
     total_game_seconds = float(valid["game_seconds_elapsed"].max())
+    possession_flags = possession_summary["has_def_foul"].tolist()
+    prior_flags, next_flags = calculate_context_flags(possession_flags)
+    group_to_index = {
+        int(group_id): index
+        for index, group_id in enumerate(possession_summary["possession_group"].tolist())
+    }
 
     rows = []
     for i, row in def_foul_events.iterrows():
@@ -145,12 +81,9 @@ def build_def_foul_context(game_id):
         if offense_score is not None and defense_score is not None:
             score_difference = offense_score - defense_score
 
-        # Global (team-agnostic) last2/next2 possession foul context.
-        prior2 = possession_summary[possession_summary["possession_group"] < foul_group].tail(2)
-        called_in_last2 = int((prior2["has_def_foul"] == 1).any())
-
-        next2 = possession_summary[possession_summary["possession_group"] > foul_group].head(2)
-        called_in_next2 = int((next2["has_def_foul"] == 1).any())
+        group_index = group_to_index[foul_group]
+        called_in_last2 = prior_flags[group_index]
+        called_in_next2 = next_flags[group_index]
 
         rows.append(
             {
@@ -171,14 +104,10 @@ def build_def_foul_context(game_id):
     return pd.DataFrame(rows)
 
 
-def main():
-    out_df = build_def_foul_context(GAME_ID)
+def main() -> None:
+    out_df = build_def_foul_context(DEFAULT_SINGLE_GAME_ID)
     out_df.to_csv(OUT_PATH, index=False)
-    print("OK")
-    print("game_id", GAME_ID)
-    print("rows", len(out_df))
-    print(out_df.head(20).to_string(index=False))
-    print("saved", OUT_PATH)
+    print(format_output_preview(DEFAULT_SINGLE_GAME_ID, OUT_PATH, out_df))
 
 
 if __name__ == "__main__":
