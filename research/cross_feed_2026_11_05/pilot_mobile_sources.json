@@ -1,0 +1,42 @@
+[
+  {
+    "file": "datanba_2020.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2020.tar.xz",
+    "bytes": 8069236,
+    "sha256": "224aa9b4ed3436d0d98dfbe9933ae9d6994802cee4870e89568a20db2de147b0",
+    "git_blob_sha1": "db00c49ca4da493fe468616c680269542aa91dab",
+    "upstream_commit": "e829d4678be1e075f99e5d41a1c5f97089be446b"
+  },
+  {
+    "file": "datanba_2021.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2021.tar.xz",
+    "bytes": 9196044,
+    "sha256": "f7a900e058b5941456160105bde035240133219354f5b4540b7398760a3a8e4c",
+    "git_blob_sha1": "72f60e461881464c36feec905ed12439c2a78ddd",
+    "upstream_commit": "e829d4678be1e075f99e5d41a1c5f97089be446b"
+  },
+  {
+    "file": "datanba_2022.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2022.tar.xz",
+    "bytes": 11310412,
+    "sha256": "8be05e5ae4b598b115ecfed8d4c9cef5cd324a21d6383bd8dd185401f2ebbf69",
+    "git_blob_sha1": "60737ec0f70c052d17002b19102e6358fabf079e",
+    "upstream_commit": "e829d4678be1e075f99e5d41a1c5f97089be446b"
+  },
+  {
+    "file": "datanba_2023.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2023.tar.xz",
+    "bytes": 11196452,
+    "sha256": "c82be81e532b3cc023a5646ca427e2ca35812f96f1e685ee0b743aba1839bc1e",
+    "git_blob_sha1": "0c789e2715cdda9b3670c7ed70643546654ebd9e",
+    "upstream_commit": "e829d4678be1e075f99e5d41a1c5f97089be446b"
+  },
+  {
+    "file": "datanba_2024.tar.xz",
+    "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2024.tar.xz",
+    "bytes": 11344636,
+    "sha256": "79f698e66439e3e43bdb6299eb4da7897b5e007985193350da280c8a4ec76e60",
+    "git_blob_sha1": "61c324499e13f61f75df6dfa355af975e251b913",
+    "upstream_commit": "e829d4678be1e075f99e5d41a1c5f97089be446b"
+  }
+]

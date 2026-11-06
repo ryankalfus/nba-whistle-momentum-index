@@ -1,0 +1,352 @@
+{
+  "schema_version": "league-pass-access-observations-v1",
+  "checked_on": "2026-11-05",
+  "timezone": "America/New_York",
+  "sample_source": "research/parser_followthrough_2026_11_02/public_replays.json",
+  "sample_source_sha256": "302bac4502bd9bb6f3d858e4e7e8c6db43399e0338c6f10d46c5b58a8dd74ad4",
+  "sample_unchanged": true,
+  "browser": "Codex in-app browser",
+  "source_authorization": "Official NBA League Pass subscription; NBA account displayed active subscription",
+  "summary": {
+    "fixed_games": 14,
+    "full_length_playback_verified_games": 14,
+    "midpoint_seek_verified_games": 3,
+    "full_coverage_verified_games": 0,
+    "independent_reviews_completed": 0
+  },
+  "method": "Live CUA browser UI and read-only HTML video metadata. Each final observation shows a named official stream, finite long runtime, media readyState=4, paused=false, positive playback time and no video error. No stream is inferred from a recap listing alone.",
+  "recovery": {
+    "prior_error": "DRM_FAILED_LICENSE_REQUEST observed on Lakers/Grizzlies; browser interaction timeouts followed",
+    "fresh_attempt": "Condensed replay played; initial full-feed selection stalled browser again",
+    "successful_recovery": "Closed stalled NBA tab with browser API; reopened exact NBA game visibly; selected Start from Beginning and observed Grizzlies full stream playing. Other games reused the recovered player. Desktop viewport temporarily exposed stream selectors and seek controls, then was reset.",
+    "root_cause": "Not established; successful recovery does not identify the cause of the earlier DRM or control failures."
+  },
+  "limits": [
+    "Opening playback is verified for all 14; midpoint seeking is verified only for the three explicitly sampled games.",
+    "No end-to-end stream was watched, no continuous period coverage was attested, and no human review or adjudication was created.",
+    "Long duration and decoded samples do not establish uninterrupted coverage, correct annotations or scientific validity.",
+    "Feed choices differ: retain exact observed labels, including Mobile Broadcast and Kiswe Influencer Broadcast.",
+    "Access is account-, region- and time-dependent. This is a dated observation, not a promise of future availability.",
+    "Only public NBA game URLs and non-secret playback observations are recorded; no credentials, account identifiers, cookies, media URLs or tokens are included."
+  ],
+  "games": [
+    {
+      "game_id": "0022000181",
+      "date": "2021-01-15",
+      "matchup": "NYK @ CLE",
+      "official_url": "https://www.nba.com/game/nyk-vs-cle-0022000181",
+      "stream_label": "Mobile Broadcast",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6185.2958,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 2.427521,
+          "duration_seconds": 6185.2958,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022000254",
+      "date": "2021-01-24",
+      "matchup": "ATL @ MIL",
+      "official_url": "https://www.nba.com/game/atl-vs-mil-0022000254",
+      "stream_label": "Mobile Broadcast",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6351.8455,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 11.192492,
+          "duration_seconds": 6351.8455,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022000367",
+      "date": "2021-02-08",
+      "matchup": "HOU @ CHA",
+      "official_url": "https://www.nba.com/game/hou-vs-cha-0022000367",
+      "stream_label": "Local Home Broadcast",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6485.5791,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 2.549958,
+          "duration_seconds": 6485.5791,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        },
+        {
+          "kind": "midpoint_seek",
+          "current_time_seconds": 3282.36021,
+          "duration_seconds": 6485.5791,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022000544",
+      "date": "2021-03-03",
+      "matchup": "ATL @ ORL",
+      "official_url": "https://www.nba.com/game/atl-vs-orl-0022000544",
+      "stream_label": "Mobile Broadcast",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6802.4122,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 4.013284,
+          "duration_seconds": 6802.4122,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022000925",
+      "date": "2021-04-26",
+      "matchup": "MEM @ DEN",
+      "official_url": "https://www.nba.com/game/mem-vs-den-0022000925",
+      "stream_label": "Local Away Broadcast",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6309.9036,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 3.584961,
+          "duration_seconds": 6309.9036,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022000997",
+      "date": "2021-05-06",
+      "matchup": "WAS @ TOR",
+      "official_url": "https://www.nba.com/game/was-vs-tor-0022000997",
+      "stream_label": "Local Away Broadcast",
+      "full_length_playback_verified": true,
+      "duration_seconds": 8773.5481,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 1.262483,
+          "duration_seconds": 8773.5481,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022100226",
+      "date": "2021-11-18",
+      "matchup": "LAC @ MEM",
+      "official_url": "https://www.nba.com/game/lac-vs-mem-0022100226",
+      "stream_label": "Kiswe Influencer Broadcast",
+      "full_length_playback_verified": true,
+      "duration_seconds": 5823.0338,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 2.580986,
+          "duration_seconds": 5823.0338,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022200780",
+      "date": "2023-02-02",
+      "matchup": "MIA@NYK",
+      "official_url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+      "stream_label": "Knicks",
+      "full_length_playback_verified": true,
+      "duration_seconds": 5771.0856,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 15.557515,
+          "duration_seconds": 5771.0856,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022201087",
+      "date": "2023-03-22",
+      "matchup": "PHI@CHI",
+      "official_url": "https://www.nba.com/game/phi-vs-chi-0022201087",
+      "stream_label": "Bulls",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6698.7921,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 4.7557,
+          "duration_seconds": 6698.7921,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        },
+        {
+          "kind": "midpoint_seek",
+          "current_time_seconds": 3342.261635,
+          "duration_seconds": 6698.7921,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022301101",
+      "date": "2024-04-02",
+      "matchup": "LAC@SAC",
+      "official_url": "https://www.nba.com/game/lac-vs-sac-0022301101",
+      "stream_label": "Clippers",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6793.3364,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 12.971053,
+          "duration_seconds": 6793.3364,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022301177",
+      "date": "2024-04-12",
+      "matchup": "LAL@MEM",
+      "official_url": "https://www.nba.com/game/lal-vs-mem-0022301177",
+      "stream_label": "Grizzlies",
+      "full_length_playback_verified": true,
+      "duration_seconds": 7214.7574,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 35.831069,
+          "duration_seconds": 7214.7574,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022400393",
+      "date": "2024-12-23",
+      "matchup": "BOS@ORL",
+      "official_url": "https://www.nba.com/game/bos-vs-orl-0022400393",
+      "stream_label": "Magic",
+      "full_length_playback_verified": true,
+      "duration_seconds": 7895.1205,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 21.577186,
+          "duration_seconds": 7895.1205,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022400481",
+      "date": "2025-01-04",
+      "matchup": "UTA@MIA",
+      "official_url": "https://www.nba.com/game/uta-vs-mia-0022400481",
+      "stream_label": "Heat",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6837.6142,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 2.992472,
+          "duration_seconds": 6837.6142,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    },
+    {
+      "game_id": "0022400553",
+      "date": "2025-01-13",
+      "matchup": "MIA@LAC",
+      "official_url": "https://www.nba.com/game/mia-vs-lac-0022400553",
+      "stream_label": "Clippers",
+      "full_length_playback_verified": true,
+      "duration_seconds": 6199.5933,
+      "observations": [
+        {
+          "kind": "opening",
+          "current_time_seconds": 2.49733,
+          "duration_seconds": 6199.5933,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        },
+        {
+          "kind": "midpoint_seek",
+          "current_time_seconds": 3113.93326,
+          "duration_seconds": 6199.5933,
+          "paused": false,
+          "ready_state": 4,
+          "media_error": null
+        }
+      ],
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0
+    }
+  ]
+}

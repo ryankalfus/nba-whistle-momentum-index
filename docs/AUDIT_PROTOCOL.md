@@ -32,3 +32,13 @@ Passing this gate is necessary but not sufficient for confirmatory evaluation: f
 ## Current missing evidence
 
 Verified footage access, independent completed annotations, adjudication, and a frozen sample size/error tolerance are not present in the initial rewrite. The repository's hand-reviewed opening fixture is valuable regression evidence, but not a population-level independent audit. Tooling may generate a review packet and explicitly blocked gate report while these requirements remain missing.
+
+## Development comparison of archived feeds (2026-11-05)
+
+The [2024–25 diagnostic](../research/cross_feed_2026_11_05/README.md) compares the pinned CDN and mobile event archives for the games already flagged in the v7 run. For a unique game/event ID, require equal nonempty order number or timestamp before comparing period, clock, event team and offense. A missing team is unknown; an unmatched row stays unmatched. These are different representations of NBA records, potentially with common upstream errors. This targeted comparison cannot estimate the error rate of the fixed random audit or replace independent observation. See the [clock and foul cases](../research/cross_feed_2026_11_05/CASE_NOTES.md) for why isolated matches do not establish a possession boundary.
+
+The [versioned external-parser pilot](../research/cross_feed_2026_11_05/alternative_parser/README.md) retains all fourteen fixed games: thirteen parsed, one explicit missing-source failure. Literal last-assigned event agreement is a diagnostic, with unavailable/uncomparable cases explicit; it is not an adjudicated possession-error rate.
+
+## Subscription footage access (2026-11-05)
+
+The [League Pass access observations](../research/cross_feed_2026_11_05/league_pass_access.json) document official full-length playback for all fourteen fixed games, with midpoint seek observations for three. They retain feed labels and observed player metadata without credentials or session URLs. No entire stream was reviewed or attested continuously; full coverage and independent annotations remain absent. Reviewers must independently check coverage and preserve their own labels under the protocol above. This access milestone leaves the audit gate BLOCKED.
