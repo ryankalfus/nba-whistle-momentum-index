@@ -29,9 +29,35 @@ def promotion_args(fixture, output):
     protocol["protocol_sha256"] = audit.digest(protocol)
     return {"feature_dir": fixture["feature_dir"], "audit_evidence": {
                 "plan": fixture["plan"], "reviews": fixture["reviews"], "config": fixture["config"],
+                "evidence_root": str(fixture["evidence_root"]),
                 "evaluation_started_at": "2031-01-01T00:00:00Z"},
             "protocol": protocol, "output": output, "source_manifest": fixture["source_manifest"],
             "cache": fixture["cache"], "schedule": fixture["schedule"], "metadata": fixture["metadata"]}
+
+
+def test_collected_file_relative_evidence_reaches_strict_promotion_cli(tmp_path):
+    from whistle_research.review_evidence import collect_evidence
+    fixture = synthetic_artifacts(tmp_path / "inputs")
+    config = tmp_path / "config.json"
+    config.write_text(json.dumps(fixture["config"]))
+    collected = tmp_path / "collected"
+    report = collect_evidence(fixture["evidence_root"], config, collected)
+    assert report["status"] != "BLOCKED", report
+    args = promotion_args(fixture, tmp_path / "fit")
+    bundle = release.read_json(collected / "audit_evidence.json")
+    assert bundle["evidence_root_relative_to"] == "audit_evidence_file"
+    bundle["evaluation_started_at"] = args["audit_evidence"]["evaluation_started_at"]
+    ready = collected / "ready-audit-evidence.json"
+    ready.write_text(json.dumps(bundle))
+    protocol = tmp_path / "protocol.json"
+    protocol.write_text(json.dumps(args["protocol"]))
+    assert pipeline.main([
+        "promote", "--features", str(fixture["feature_dir"]), "--audit-evidence", str(ready),
+        "--protocol", str(protocol), "--output", str(tmp_path / "fit"),
+        "--source-manifest", str(fixture["source_manifest"]), "--cache", str(fixture["cache"]),
+        "--schedule", str(fixture["schedule"]), "--metadata", *map(str, fixture["metadata"]),
+    ]) == 0
+    assert (tmp_path / "fit/promoted_dataset.json").is_file()
 
 
 def test_explicit_reuse_completes_diagnostics_with_fresh_blocked_audit_and_bound_files(tmp_path):

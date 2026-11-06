@@ -1,0 +1,43 @@
+{
+  "bound_method": "one_sided_Clopper_Pearson_binomial",
+  "completed_enriched_games": 0,
+  "completed_random_games": 0,
+  "confidence": 0.95,
+  "config_sha256": "61fbfca97a64934f505f3a62ef649b9e4cf5eacd869fc805119ccf9cfa0d8f34",
+  "enriched_games": 4,
+  "enriched_reasons": {
+    "0022000181": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+    "0022000254": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+    "0022000925": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+    "0022301177": "Historical backward-clock quarantine; independently inspect event order and corrected source state."
+  },
+  "full_gate": {
+    "bytes": 2439720,
+    "path": "output/v2/reviewer-handoff-audit-2026-11-06/audit_gate.blocked.json",
+    "sha256": "5a4c907089cf2361a1d3c130dec84c801a5acfadd6debc258ce6fae69e55a61a"
+  },
+  "inventory_coverage": {
+    "completeness": "accounted_for",
+    "schedule_evidence": {
+      "provenance": "Independent ESPN team schedules; all 30 team responses in each of six cohorts verified against preserved raw response SHA256s, duplicate events corroborated by both teams, exact regular-season per-team totals after explicit Cup championship exclusions. Thirty historical dates are explicitly amended through preserved official NBA game-page title/ID/team evidence; original dates and correction-source hashes retained. NBA game IDs are mapped through unique season/type/America-New_York-date/home/away joins to historical metadata; independent ESPN IDs retained. This is a schedule cross-check, not independent possession validation or proof beyond the endpoint's coverage. Report manifest SHA256: 7911aff928cf1630e6af90948e74ec38117f5d4222d15d2beaee6ecc3d559086",
+      "sha256": "c880b3080bff469ea75b075bfb166b7be05330aa96387db18b0fa27179d0c412"
+    },
+    "status": "schedule_checked"
+  },
+  "kind": "summary_not_gate_input",
+  "limitations": "Attestations and external evidence are not authenticated. Game-level binomial model is assumed; enriched games are not pooled. Passing is necessary, not sufficient, for scientific release.",
+  "parser_sha256": "9ee7d5e81b5a99f0b42bf94e617269104bcb90e47f796af02fa4d0bb256d991f",
+  "parser_version": "canonical_candidate_v7",
+  "plan_sha256": "cdcf91dddbdb8137c78a1b7a7da25a5b9799a86c1585f83967ffd55bebdf1e04",
+  "random_games": 299,
+  "random_games_with_material_discrepancy": 0,
+  "reasons": [
+    "missing_selected_game_reviews",
+    "random_error_bound_unavailable"
+  ],
+  "reviews_sha256": "d9327f63940ebd8e344499398bc1709e28e00061cd2f4eda01f89176ab67959c",
+  "sample_assumption": "random_games_represent_declared_cohort",
+  "schema_version": "audit-gate-summary-v1",
+  "status": "BLOCKED",
+  "upper_bound": null
+}

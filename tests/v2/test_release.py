@@ -2,14 +2,18 @@
 
 from collections import Counter
 import copy
+import csv
 from functools import lru_cache
 import hashlib
+import io
 import json
+import tarfile
 
 import pytest
 
 from whistle_research import audit, features, modeling, release, simulations, sources
-from whistle_research.possessions import PARSER_VERSION
+from whistle_research.possessions import PARSER_VERSION, reconstruct
+from whistle_research.review_packet import build_packet
 
 
 @lru_cache
@@ -17,51 +21,162 @@ def _synthetics():
     return simulations.run_study(games=8, trials=2, resamples=5), modeling.synthetic_demo()
 
 
+def _synthetic_annotations(root, plan, reviews, config, source_manifest, cache):
+    """Real files for a synthetic contract; no human or basketball validation."""
+    plan_path, protocol = root / "plan.json", root / "review-protocol.md"
+    release.write_json(plan_path, plan)
+    protocol.write_text("SYNTHETIC review contract only; no real people or footage.\n")
+    evidence_root = root / "review-evidence"
+    manifest = build_packet(plan_path, source_manifest, cache, None, protocol, evidence_root)
+    config.update(packet_manifest_sha256=sources.file_digest(evidence_root / "manifest.json")[1],
+                  protocol_sha256=manifest["protocol_file"]["sha256"])
+    for record in reviews["games"]:
+        gid = record["game_id"]
+        for slot, review in zip(("A", "B"), record["reviewers"], strict=True):
+            path = evidence_root / f"reviewer_{slot}/annotations/{gid}.json"
+            annotation = json.loads(path.read_text())
+            ledger = release.read_json(evidence_root / f"reviewer_{slot}/raw_events/{gid}.json")
+            events = ledger["events"]
+            result = reconstruct([event["raw"] for event in events], gid, 100, 200,
+                                 ledger["source_sha256"])
+            feature_rows = features.build_rows(result, {
+                "game_id": gid, "date": "2030-01-01", "season": "2020-21",
+                "game_type": "regular_season"})
+            by_action = {event["event_id"]: event["ref"] for event in events}
+            positions = {event["ref"]: index for index, event in enumerate(events)}
+            possessions, periods, covered = [], {}, set()
+            def footage(start, end):
+                return {"reference": review["evidence_ref"], "start_seconds": start,
+                        "end_seconds": end}
+            for index, event in enumerate(events):
+                periods.setdefault(int(event["raw"]["period"]), []).append((index, event["ref"]))
+            for possession, row in zip(result.possessions, feature_rows, strict=True):
+                refs = [by_action[action] for action in possession.event_action_numbers]
+                lo, hi = positions[refs[0]], positions[refs[-1]]
+                covered.update(event["ref"] for event in events[lo:hi + 1])
+                context = {key: row[key] for key in (
+                    "period", "clock", "score_margin", "score_difference", "home_defense",
+                    "defense_counted_fouls", "previous_foul_1", "previous_foul_2", "start_type")}
+                context["reference_ref"] = by_action[possession.start_state.reference_action_number]
+                possessions.append({"start_ref": refs[0], "end_ref": refs[-1],
+                                    "offense_team_id": possession.offense_team_id,
+                                    "defense_team_id": possession.defense_team_id,
+                                    "counted_foul_refs": [by_action[action] for action in possession.counted_foul_action_numbers],
+                                    "prediction_start": context,
+                                    "uncertain": False, "material_discrepancy": False,
+                                    "evidence": footage(lo, hi + 1)})
+            coverage = [{"period": period, "start_ref": refs[0][1], "end_ref": refs[-1][1],
+                         "evidence": footage(refs[0][0], refs[-1][0] + 1)}
+                        for period, refs in periods.items()]
+            excluded = [{"ref": event["ref"], "reason": "administrative", "uncertain": False,
+                         "material_discrepancy": False, "evidence": footage(index, index + 1)}
+                        for index, event in enumerate(events) if event["ref"] not in covered]
+            review["reviewer_kind"] = "human"
+            annotation.update({key: review[key] for key in (
+                "reviewer_id", "reviewer_kind", "started_at", "completed_at", "evidence_ref",
+                "full_game_reviewed", "independent", "material_discrepancy", "critical_unresolved")})
+            annotation.update(coverage={"continuous_full_game": True, "periods": coverage},
+                              possessions=possessions, excluded_events=excluded)
+            path.write_text(json.dumps(annotation))
+            size, sha = sources.file_digest(path)
+            review.update(annotation_ref=path.relative_to(evidence_root).as_posix(),
+                          annotation_bytes=size, annotation_sha256=sha)
+    return evidence_root
+
+
 def synthetic_artifacts(root):
     root.mkdir(parents=True, exist_ok=True)
     cache = root / "cache"
     cache.mkdir()
     source = cache / "cdnnba_2020.tar.xz"
-    source.write_bytes(b"SYNTHETIC byte-identity fixture; not a real archive")
+    # Entirely synthetic source, but genuine parser/feature outputs and references.
+    game_ids = [f"002300000{i}" for i in range(6)]
+    actions_by_game, source_rows = {}, {}
+    raw = io.StringIO(newline="")
+    columns = ["gameId", "actionNumber", "orderNumber", "timeActual", "clock", "teamId",
+               "teamTricode", "possession", "period", "actionType", "subType",
+               "scoreHome", "scoreAway", "description"]
+    writer = csv.DictWriter(raw, fieldnames=columns)
+    writer.writeheader()
+    csv_row = 2
+    for gid in game_ids:
+        actions = []
+        def add(kind, period, clock, team=0, owner=0, sub=""):
+            actions.append({"gameId": gid, "actionNumber": len(actions), "orderNumber": len(actions),
+                            "timeActual": "", "clock": clock, "teamId": team,
+                            "teamTricode": "HOM" if team == 100 else "AWY" if team == 200 else "",
+                            "possession": owner, "period": period, "actionType": kind, "subType": sub,
+                            "scoreHome": 12, "scoreAway": 9,
+                            "description": "SYNTHETIC contract fixture, not an NBA event"})
+        for period in range(1, 5):
+            add("period", period, "PT12M00S", sub="start")
+            for index in range(6):
+                offense = 100 if index % 2 == 0 else 200
+                if index % 3 == 0:
+                    add("foul", period, f"PT{11-index:02}M30S", 300 - offense, offense, "personal")
+                add("turnover", period, f"PT{11-index:02}M00S", offense, offense)
+            add("period", period, "PT00M00S", sub="end")
+        add("game", 4, "PT00M00S", sub="end")
+        actions_by_game[gid] = actions
+        for action in actions:
+            source_rows[gid, action["actionNumber"]] = csv_row
+            writer.writerow(action)
+            csv_row += 1
+    raw_bytes = raw.getvalue().encode()
+    with tarfile.open(source, "w:xz") as archive:
+        member = tarfile.TarInfo("synthetic.csv")
+        member.size = len(raw_bytes)
+        archive.addfile(member, io.BytesIO(raw_bytes))
     sha = sources.file_digest(source)[1]
     source_manifest = root / "sources.json"
     release.write_json(source_manifest, [{"file": source.name, "bytes": source.stat().st_size,
                                          "sha256": sha, "url": "synthetic-fixture"}])
     verification = sources.verify_sources(source_manifest, cache)
-    rows = modeling._synthetic_rows(71, games=6, possessions=24)
-    mapping = {gid: f"002300000{i}" for i, gid in enumerate(sorted({r['game_id'] for r in rows}))}
-    for row in rows:
-        row["game_id"] = mapping[row["game_id"]]
+    results = {gid: reconstruct(actions, gid, 100, 200, sha)
+               for gid, actions in actions_by_game.items()}
+    rows = [row for index, gid in enumerate(game_ids) for row in features.build_rows(results[gid], {
+        "game_id": gid, "date": f"2030-01-{index + 1:02}", "season": "2020-21",
+        "game_type": "regular_season"})]
     frame = [{"game_id": gid, "source_file": source.name, "source_sha256": sha,
-              "source_member": "synthetic.csv", "season": "synthetic-2030",
-              "game_type": next(r["game_type"] for r in rows if r["game_id"] == gid)} for gid in mapping.values()]
+              "source_member": "synthetic.csv", "season": "2020-21",
+              "game_type": next(r["game_type"] for r in rows if r["game_id"] == gid)} for gid in game_ids]
     schedule = root / "schedule.json"
-    release.write_json(schedule, {"games": [{"game_id": gid, "season": "synthetic-2030", "game_type": frame[i]["game_type"],
+    release.write_json(schedule, {"games": [{"game_id": gid, "season": "2020-21", "game_type": frame[i]["game_type"],
                                             "date": next(r["date"] for r in rows if r["game_id"] == gid)}
-                                           for i, gid in enumerate(mapping.values())],
+                                           for i, gid in enumerate(game_ids)],
                                   "provenance": "synthetic independent schedule fixture"})
     coverage = {"status": "schedule_checked", "completeness": "accounted_for",
                 "schedule_evidence": {"sha256": sources.file_digest(schedule)[1], "provenance": "synthetic schedule"},
-                "games": [{"game_id": gid, "observation": "observed", "observed": True} for gid in mapping.values()]}
+                "games": [{"game_id": gid, "observation": "observed", "observed": True} for gid in game_ids]}
     inventory = {"kind": "game_inventory", "ok": True, "manifest_sha256": verification["manifest_sha256"],
                  "source_failures": [], "coverage": coverage,
-                 "games": [{**game, "disposition": "observed", "anomalies": [], "event_count": 24} for game in frame]}
+                 "games": [{**game, "disposition": "observed", "anomalies": [], "event_count": len(actions_by_game[game["game_id"]])} for game in frame]}
     inventory_path = root / "inventory.json"
     release.write_json(inventory_path, inventory)
     metadata = root / "metadata.csv"
-    metadata.write_text("synthetic metadata bytes\n")
+    with metadata.open("w", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=["game_id", "home", "away", "date", "season", "game_type"])
+        writer.writeheader()
+        for index, gid in enumerate(game_ids):
+            writer.writerow({"game_id": gid, "home": "HOM", "away": "AWY",
+                             "date": f"2030-01-{index + 1:02}", "season": "2020-21",
+                             "game_type": "regular_season"})
     metadata_binding = [{"file": metadata.name, "sha256": sources.file_digest(metadata)[1]}]
     dataset_dir = root / "features"
     dataset_dir.mkdir()
     raw_rows = [json.dumps(row, sort_keys=True, separators=(",", ":")) + "\n" for row in rows]
     (dataset_dir / "rows.jsonl").write_text("".join(raw_rows))
-    traces = [{"game_id": row["game_id"], "possession_number": row["possession_number"],
-               "event_action_numbers": [row["possession_number"]], "source_rows": [row["possession_number"] + 1],
-               "reference_action_number": None, "complete": True, "audit_flags": []} for row in rows]
+    traces = [{"game_id": gid, "possession_number": possession.possession_number,
+               "event_action_numbers": list(possession.event_action_numbers),
+               "source_rows": [source_rows[gid, action] for action in possession.event_action_numbers],
+               "reference_action_number": possession.start_state.reference_action_number,
+               "complete": possession.complete, "audit_flags": list(possession.audit_flags)}
+              for gid, result in results.items() for possession in result.possessions]
     (dataset_dir / "row_provenance.jsonl").write_text("".join(json.dumps(trace) + "\n" for trace in traces))
     games = [{**game, "date": next(r["date"] for r in rows if r["game_id"] == game["game_id"]),
               "parser_sha256": audit.parser_digest(), "eligible": False, "complete": True,
-              "critical_unresolved": False, "row_count": 24, "source_event_count": 24,
+              "critical_unresolved": False, "row_count": 24,
+              "source_event_count": len(actions_by_game[game["game_id"]]),
               "unknown_outcomes": 0, "status": "provisional_reconstruction",
               "issues": [{"code": "independent_audit_required", "blocking": True}],
               "unassigned_control_events": False} for game in frame]
@@ -98,6 +213,7 @@ def synthetic_artifacts(root):
     config = {**binding, "frozen": True, "freeze_id": "synthetic-only-test", "frozen_at": "2029-01-01T00:00:00Z",
               "review_data_status_at_freeze": "unseen", "confidence": .95, "max_game_error_rate": .999,
               "min_random_games": 2, "sample_assumption": audit.ASSUMPTION}
+    evidence_root = _synthetic_annotations(root, plan, reviews, config, source_manifest, cache)
     math, models = copy.deepcopy(_synthetics())
     math_path, model_path = root / "math.json", root / "models.json"
     release.write_json(math_path, math)
@@ -106,14 +222,44 @@ def synthetic_artifacts(root):
             "schedule": schedule, "metadata": [metadata], "inventory": inventory, "inventory_path": inventory_path,
             "frame": frame, "dataset": dataset, "feature_dir": dataset_dir, "rows": rows,
             "reconciliation": reconciliation, "reconciliation_path": reconciliation_path,
-            "plan": plan, "reviews": reviews, "config": config, "math": math, "models": models,
+            "plan": plan, "reviews": reviews, "config": config, "evidence_root": evidence_root,
+            "math": math, "models": models,
             "math_path": math_path, "model_path": model_path, "enriched": enriched}
 
 
 def promote_args(fixture):
     return {"directory": fixture["feature_dir"], "plan": fixture["plan"], "reviews": fixture["reviews"],
             "config": fixture["config"], "source_manifest": fixture["source_manifest"], "cache": fixture["cache"],
-            "schedule": fixture["schedule"], "metadata": fixture["metadata"]}
+            "schedule": fixture["schedule"], "metadata": fixture["metadata"],
+            "evidence_root": fixture["evidence_root"]}
+
+
+def _rebind_synthetic_plan(fixture):
+    """Adversarial fixture rehashes every review binding, not just metadata."""
+    root, plan = fixture["evidence_root"], fixture["plan"]
+    plan_path = root / "plan.json"
+    plan_path.write_text(json.dumps(plan))
+    manifest_path = root / "manifest.json"
+    manifest = release.read_json(manifest_path)
+    manifest["plan_sha256"] = plan["plan_sha256"]
+    size, sha = sources.file_digest(plan_path)
+    manifest["plan_file"].update(bytes=size, sha256=sha)
+    for game in fixture["reviews"]["games"]:
+        for reviewer in game["reviewers"]:
+            path = root / reviewer["annotation_ref"]
+            annotation = release.read_json(path)
+            annotation["plan_sha256"] = plan["plan_sha256"]
+            path.write_text(json.dumps(annotation))
+            reviewer["annotation_bytes"], reviewer["annotation_sha256"] = sources.file_digest(path)
+    for kit in manifest["reviewer_kits"].values():
+        entry = kit["manifest_file"]
+        path = root / entry["path"]
+        delivered = release.read_json(path)
+        delivered["plan_sha256"] = plan["plan_sha256"]
+        path.write_text(json.dumps(delivered))
+        entry["bytes"], entry["sha256"] = sources.file_digest(path)
+    manifest_path.write_text(json.dumps(manifest))
+    fixture["config"]["packet_manifest_sha256"] = sources.file_digest(manifest_path)[1]
 
 
 def test_full_stream_and_positive_conditional_promotion_preserve_original(tmp_path):
@@ -127,6 +273,78 @@ def test_full_stream_and_positive_conditional_promotion_preserve_original(tmp_pa
     assert promoted["provisional_manifest_sha256"] == hashlib.sha256(original_bytes).hexdigest()
     assert (fixture["feature_dir"] / "manifest.json").read_bytes() == original_bytes
     assert all(game["eligible"] is False for game in fixture["dataset"]["games"])
+
+
+def test_metadata_only_pass_cannot_promote_without_annotation_files(tmp_path):
+    fixture = synthetic_artifacts(tmp_path)
+    assert audit.check_gate(fixture["plan"], fixture["reviews"], fixture["config"])["status"] == "PASS_CONDITIONAL"
+    arguments = promote_args(fixture)
+    arguments.pop("evidence_root")
+    with pytest.raises(modeling.BlockedError, match="annotation_content_evidence_required"):
+        release.prepare_promotion(**arguments)
+
+
+def test_actual_annotation_contents_are_reverified_before_reusing_promotion(tmp_path):
+    fixture = synthetic_artifacts(tmp_path)
+    promoted, _ = release.prepare_promotion(**promote_args(fixture))
+    reviewer = fixture["reviews"]["games"][0]["reviewers"][0]
+    path = fixture["evidence_root"] / reviewer["annotation_ref"]
+    with path.open("a") as stream:
+        stream.write(" ")
+    with pytest.raises(modeling.BlockedError, match="annotation_contents_unverified"):
+        release.validate_promoted_dataset(promoted, plan=fixture["plan"], reviews=fixture["reviews"],
+                                          config=fixture["config"])
+
+
+def test_rehashed_invalid_annotations_cannot_pass_with_summary_flags(tmp_path):
+    fixture = synthetic_artifacts(tmp_path)
+    reviewer = fixture["reviews"]["games"][0]["reviewers"][0]
+    path = fixture["evidence_root"] / reviewer["annotation_ref"]
+    annotation = release.read_json(path)
+    annotation["possessions"] = []
+    path.write_text(json.dumps(annotation))
+    reviewer["annotation_bytes"], reviewer["annotation_sha256"] = sources.file_digest(path)
+    assert audit.check_gate(fixture["plan"], fixture["reviews"], fixture["config"])["status"] == "PASS_CONDITIONAL"
+    with pytest.raises(modeling.BlockedError, match="completed_possessions_required"):
+        release.prepare_promotion(**promote_args(fixture))
+
+
+@pytest.mark.parametrize("change", ["swap_ownership", "missing_start_context"])
+def test_matching_human_files_must_agree_with_actual_candidate_before_promotion(tmp_path, change):
+    fixture = synthetic_artifacts(tmp_path)
+    for record in fixture["reviews"]["games"]:
+        for reviewer in record["reviewers"]:
+            path = fixture["evidence_root"] / reviewer["annotation_ref"]
+            annotation = release.read_json(path)
+            for possession in annotation["possessions"]:
+                if change == "swap_ownership":
+                    possession["offense_team_id"], possession["defense_team_id"] = (
+                        possession["defense_team_id"], possession["offense_team_id"])
+                else:
+                    possession.pop("prediction_start")
+            path.write_text(json.dumps(annotation))
+            reviewer["annotation_bytes"], reviewer["annotation_sha256"] = sources.file_digest(path)
+    assert audit.check_gate(fixture["plan"], fixture["reviews"], fixture["config"])["status"] == "PASS_CONDITIONAL"
+    with pytest.raises(modeling.BlockedError, match="independent_labels_disagree_or_comparison_incomplete"):
+        release.prepare_promotion(**promote_args(fixture))
+
+
+def test_promotion_rejects_implementation_drift_during_comparison(tmp_path, monkeypatch):
+    from whistle_research import review_comparison
+    fixture = synthetic_artifacts(tmp_path)
+    implementation = tmp_path / "release-source-snapshot.py"
+    implementation.write_text("initial source fingerprint")
+    monkeypatch.setattr(release, "__file__", str(implementation))
+    original_compare = review_comparison.compare_annotations
+
+    def drifting_comparison(*args, **kwargs):
+        result = original_compare(*args, **kwargs)
+        implementation.write_text("changed after validation started")
+        return result
+
+    monkeypatch.setattr(review_comparison, "compare_annotations", drifting_comparison)
+    with pytest.raises(modeling.BlockedError, match="promotion_implementation_changed_during_verification"):
+        release.prepare_promotion(**promote_args(fixture))
 
 
 @pytest.mark.parametrize("change", ["stale_parser", "stale_feature", "rows_hash", "provenance_hash", "manual_eligible", "partial", "missing_game", "quarantine", "incomplete", "critical"])
@@ -257,6 +475,7 @@ def test_schedule_hash_alone_cannot_hide_a_missing_expected_game_from_promotion(
     for evidence in (fixture["reviews"], fixture["config"]):
         evidence["plan_sha256"] = fixture["plan"]["plan_sha256"]
     assert audit.check_gate(fixture["plan"], fixture["reviews"], fixture["config"])["status"] == "PASS_CONDITIONAL"
+    _rebind_synthetic_plan(fixture)
     with pytest.raises(modeling.BlockedError, match="actual expected schedule"):
         release.prepare_promotion(**promote_args(fixture))
 
@@ -284,5 +503,6 @@ def test_invalid_nonexpected_schedule_entries_cannot_be_silently_ignored(tmp_pat
     fixture["plan"]["plan_sha256"] = audit.plan_digest(fixture["plan"])
     for evidence in (fixture["reviews"], fixture["config"]):
         evidence["plan_sha256"] = fixture["plan"]["plan_sha256"]
+    _rebind_synthetic_plan(fixture)
     with pytest.raises(modeling.BlockedError, match="invalid declared schedule"):
         release.prepare_promotion(**promote_args(fixture))

@@ -218,16 +218,24 @@ def verify_synthetic(math, models):
         raise ArtifactError("synthetic artifact source/specification is stale")
 
 
-def prepare_promotion(directory, *, plan, reviews, config, source_manifest, cache, schedule, metadata):
+def prepare_promotion(directory, *, plan, reviews, config, source_manifest, cache, schedule, metadata,
+                      evidence_root=None):
     """Create a new in-memory audited adapter manifest; never mutate originals.
 
     Passing external attestations is necessary but not independently authenticated.
     The entire declared frame must have complete, known, noncritical data; no
     quarantine, unknown target or unselected game may be quietly removed.
     """
+    implementation_sha = file_digest(Path(__file__))[1]
     gate = audit.check_gate(plan, reviews, config)
     if gate.get("status") != "PASS_CONDITIONAL":
         raise modeling.BlockedError(["independent_audit_not_passed", *gate.get("reasons", [])])
+    if evidence_root is None:
+        raise modeling.BlockedError(["annotation_content_evidence_required"])
+    from whistle_research.review_evidence import validate_evidence
+    annotation_evidence = validate_evidence(plan, reviews, config, Path(evidence_root))
+    if annotation_evidence.get("ok") is not True:
+        raise modeling.BlockedError(["annotation_contents_unverified", *annotation_evidence.get("reasons", [])])
     verification = verify_sources(Path(source_manifest), Path(cache))
     source_map(verification)
     if (plan.get("inventory_coverage", {}).get("schedule_evidence", {}).get("sha256") != file_digest(Path(schedule))[1]
@@ -254,12 +262,21 @@ def prepare_promotion(directory, *, plan, reviews, config, source_manifest, cach
         reasons.append("promotion_requires_complete_noncritical_full_frame_no_quarantine")
     if reasons:
         raise modeling.BlockedError(reasons)
+    from whistle_research.review_comparison import compare_annotations
+    comparison = compare_annotations(directory, plan, reviews, Path(evidence_root), annotation_evidence,
+                                     metadata=metadata)
+    if comparison.get("ok") is not True:
+        raise modeling.BlockedError(["independent_labels_disagree_or_comparison_incomplete",
+                                     *comparison.get("reasons", [])])
+    if file_digest(Path(__file__))[1] != implementation_sha:
+        raise modeling.BlockedError(["promotion_implementation_changed_during_verification"])
     promotion_inputs = {
         "feature_directory": os.path.relpath(Path(directory), Path.cwd()),
         "source_manifest": os.path.relpath(Path(source_manifest), Path.cwd()),
         "cache": os.path.relpath(Path(cache), Path.cwd()),
         "schedule": os.path.relpath(Path(schedule), Path.cwd()),
         "metadata": [os.path.relpath(Path(path), Path.cwd()) for path in metadata],
+        "evidence_root": os.path.relpath(Path(evidence_root), Path.cwd()),
     }
     promoted = copy.deepcopy(original)
     promoted.update(schema_version="conditionally-audited-feature-dataset-v1",
@@ -267,7 +284,9 @@ def prepare_promotion(directory, *, plan, reviews, config, source_manifest, cach
                     eligible_games=len(original["games"]), promotion_inputs=promotion_inputs,
                     provisional_manifest_sha256=file_digest(Path(directory) / "manifest.json")[1],
                     audit_reviews_sha256=gate["reviews_sha256"], audit_config_sha256=gate["config_sha256"],
-                    promotion_implementation_sha256=file_digest(Path(__file__))[1],
+                    annotation_evidence=annotation_evidence,
+                    annotation_comparison=comparison,
+                    promotion_implementation_sha256=implementation_sha,
                     limitations="Conditional external audit attestations; not authenticated independent truth, protocol lock or publication approval.")
     for game in promoted["games"]:
         game["eligible"] = True
@@ -288,7 +307,8 @@ def validate_promoted_dataset(dataset, *, plan, reviews, config):
         expected, gate = prepare_promotion(
             inputs["feature_directory"], plan=plan, reviews=reviews, config=config,
             source_manifest=inputs["source_manifest"], cache=inputs["cache"],
-            schedule=inputs["schedule"], metadata=inputs["metadata"])
+            schedule=inputs["schedule"], metadata=inputs["metadata"],
+            evidence_root=inputs.get("evidence_root"))
         if audit.digest(dataset) != audit.digest(expected):
             raise modeling.BlockedError(["promoted_manifest_differs_from_reverified_original"])
     except modeling.BlockedError:
