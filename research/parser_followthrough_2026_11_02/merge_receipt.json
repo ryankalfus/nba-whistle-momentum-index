@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-02",
+  "user_authorization": "Merge both PRs and keep going.",
+  "pull_requests": [
+    {
+      "number": 6,
+      "url": "https://github.com/ryankalfus/nba-whistle-momentum-index/pull/6",
+      "reviewed_head": "204309922bea5cd98a69f04852e57ff6f5f55f55",
+      "ci_run": 41491440649,
+      "ci_conclusion": "success",
+      "merge_commit": "177ab569c39cffe4e7bf6201419e20aea7675c2b"
+    },
+    {
+      "number": 7,
+      "url": "https://github.com/ryankalfus/nba-whistle-momentum-index/pull/7",
+      "reviewed_head": "844dc5900a186db18b818c61a8d0ab15d8bc5799",
+      "ci_run": 41502151375,
+      "ci_conclusion": "success",
+      "merge_commit": "89d703a8a8b79abdeb363cea818c04c78891f8d1"
+    }
+  ],
+  "new_branch": "codex/parser-evidence-followthrough",
+  "scientific_status": "BLOCKED"
+}

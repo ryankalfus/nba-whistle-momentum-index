@@ -80,6 +80,22 @@ def test_failed_sources_produce_a_blocked_diagnostic_report(tmp_path):
         reconcile(manifest, tmp_path, [metadata], output)
 
 
+def test_reconciliation_refuses_parser_code_changed_during_run(tmp_path, monkeypatch):
+    import importlib
+
+    module = importlib.import_module("whistle_research.reconcile")
+    manifest = tmp_path / "manifest.json"
+    manifest.write_text("[]")
+    metadata = tmp_path / "metadata.csv"
+    metadata.write_text("game_id,home,away\n")
+    digests = iter([(10, "a" * 64), (10, "b" * 64)])
+    monkeypatch.setattr(module, "file_digest", lambda path: next(digests))
+    output = tmp_path / "out"
+    with pytest.raises(ValueError, match="parser source changed"):
+        reconcile(manifest, tmp_path, [metadata], output)
+    assert not (output / "report.json").exists()
+
+
 def incomplete_or_orphan_actions(orphan=False):
     actions = [event(1, "period", "start", 100, None, "PT12M00S")]
     if orphan:
@@ -104,6 +120,18 @@ def test_game_wmi_requires_complete_coverage_and_no_unassigned_fouls(orphan):
                                     {"home": "HOM", "away": "AWY"}, "a"*64)
     assert diagnostic["wmi"] is None
     assert diagnostic["metric_status"] == "withheld_incomplete_or_ambiguous"
+
+
+@pytest.mark.parametrize("note_period", [4, 7])
+def test_postgame_memo_retains_markers_but_blocks_descriptive_score(note_period):
+    actions = incomplete_or_orphan_actions(orphan=True)
+    actions.append(dict(event(100, "memo", "", None, None, "PT00M00S"),
+                        period=note_period, value="Unresolved source note", scoreHome=99))
+    diagnostic, result = game_diagnostic(actions, "g", {"home": "HOM", "away": "AWY"}, "a" * 64)
+    assert diagnostic["full_game_markers"] is True
+    assert diagnostic["wmi"] is None and diagnostic["eligible"] is False
+    assert diagnostic["issues"]["source_note_requires_audit"] == 1
+    assert result.events[-1].home_score == 99
 
 
 def test_csv_parse_failure_still_writes_failed_diagnostic(tmp_path):

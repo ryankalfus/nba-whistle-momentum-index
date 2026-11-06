@@ -3,8 +3,8 @@
   "input_files": [
     {
       "path": "report.json",
-      "sha256": "bbf9a02ef48cd41f7002aac55e597d667ac629fff012e2bd13f498940cb4860f",
-      "bytes": 14798,
+      "sha256": "31ed644257686112632bfa6a8235c9d00d0664bd0e8c6e90e14cca3f1ab8cbc8",
+      "bytes": 14794,
       "role": "report"
     },
     {
@@ -23,8 +23,8 @@
     },
     {
       "path": "public_replays.json",
-      "sha256": "78e371790766ed0c79ea924ade98ed1246941bd8c86f9c0803f08f2f224d1d43",
-      "bytes": 12764,
+      "sha256": "302bac4502bd9bb6f3d858e4e7e8c6db43399e0338c6f10d46c5b58a8dd74ad4",
+      "bytes": 29867,
       "role": "footage"
     }
   ],
@@ -33,42 +33,42 @@
       "audit_config": {
         "bytes": 432,
         "path": "audit_config.unfrozen.json",
-        "sha256": "62dd619dde0c928cb0e4872424697a0a0bc6a91c89217a5eb0cfb68323000728"
+        "sha256": "f54ef24a31f26a866345f5b211ec789f4b5a12f414eabed59a51c67a30cdc4de"
       },
       "audit_gate": {
         "bytes": 2439853,
         "path": "audit_gate.json",
-        "sha256": "f96c243b8ac1a3704df0bbcb24a8538bf9b8e19e3e91f2e0dcbad889f46d2485"
+        "sha256": "b735f3dc0a75b817fa22b90e65f371304390d410ebc6bca18c0580133648926c"
       },
       "audit_plan": {
         "bytes": 4166254,
         "path": "audit_plan.json",
-        "sha256": "77806b68017130633a8907b7e336eada03c7a8cd66c3d46fe9fba3c26e7976b5"
+        "sha256": "f48cb8c663dfd27f6a0a8f90424f0012edc0196712f170cb6d8bfee14854ac95"
       },
       "audit_readiness": {
         "bytes": 937,
         "path": "audit_readiness.json",
-        "sha256": "cf22a0b6864a059d087fd70356107aefd83cd7a83ea0ca974bcf9db5d3e538dd"
+        "sha256": "14d1882623e303c1d5cf744bcd9e91b486424cba4e3743c67d34f0bc32f8d662"
       },
       "audit_reviews": {
         "bytes": 236,
         "path": "audit_reviews.empty.json",
-        "sha256": "85cf29842c707246411b7190c7b81de4a50e44462f983a37eedb59ce9b494754"
+        "sha256": "cf0d3b09f9c0d0f30bf7dfe6838e5440697422f106d25c3e0897e83d8a20d329"
       },
       "feature_manifest": {
-        "bytes": 11686649,
-        "path": "../features-candidate-v5-2026-11-02/manifest.json",
-        "sha256": "99c3091c4a8742c1a5f65913d1b509b94d8425e213a5f9601a36d4657234d722"
+        "bytes": 19549091,
+        "path": "../features-v7-reviewed-2026-11-02/manifest.json",
+        "sha256": "6b2868d4525b22a51fbc99f424bfc9d17748e75daf1c5c24eb9b3315568f73c6"
       },
       "feature_provenance": {
-        "bytes": 235546918,
-        "path": "../features-candidate-v5-2026-11-02/row_provenance.jsonl",
-        "sha256": "33cb6d91b084da94c9b355b3279a0123c6a0790a59831a0e8ec50919a20c1325"
+        "bytes": 236882047,
+        "path": "../features-v7-reviewed-2026-11-02/row_provenance.jsonl",
+        "sha256": "4bdd2b01cf72c1eb9ba041d0621db616ae2f8603260015eeff930f94c0ea81f5"
       },
       "feature_rows": {
-        "bytes": 440790857,
-        "path": "../features-candidate-v5-2026-11-02/rows.jsonl",
-        "sha256": "83deb21a485f1e217c61970869301ca6942b9d9ee4f617b9bee2eecd5d30e59b"
+        "bytes": 443211606,
+        "path": "../features-v7-reviewed-2026-11-02/rows.jsonl",
+        "sha256": "e4cdd95782d9bf925ce0476e92862e9a95e7cacbfeeadce9fe199004997eae83"
       },
       "historical_metadata_0": {
         "bytes": 109516,
@@ -121,9 +121,9 @@
         "sha256": "97a56d6f91d01272f0223621b5072d656bc6858482fa1786e648eb62dcaf45d3"
       },
       "reconciliation": {
-        "bytes": 4621128,
-        "path": "../reconciliation-semantics-v5-2026-11-02/report.json",
-        "sha256": "00148f9dfb2bc23e4f4400f1fceb62cf9616ac90c9c4f628de71c9fabe045ab8"
+        "bytes": 5017199,
+        "path": "../reconciliation-v7-reviewed-2026-11-02/report.json",
+        "sha256": "ac24aacf33cd382f207ef182d94736221cf52580e7a31959f8f60ea7f8818555"
       },
       "release_code": {
         "bytes": 23747,
@@ -146,9 +146,9 @@
         "sha256": "21a702393d79ef104e05f3890e3673e97485d4f40066186d9d3a88abd0bc0ef2"
       },
       "stream_verification": {
-        "bytes": 627,
+        "bytes": 654,
         "path": "stream_verification.json",
-        "sha256": "9472b62eeddc3e4b2920ef78ca6195c9c259f5fb2b7b593c4567130573973a34"
+        "sha256": "b2a9f7150d8537d7badd191836395a3feb010581fe6bd06b57051045114903b0"
       }
     },
     "audit": {
@@ -156,13 +156,13 @@
       "completed_enriched_games": 0,
       "completed_random_games": 0,
       "confidence": null,
-      "config_sha256": "69e1def571fb6a65676071eba5cf8551173a1fa6a3f884222a86a0c5d946f6af",
+      "config_sha256": "a31e72322f02f211a739e257bbd879df7af22fb18fb7c074f77e1126571f1055",
       "enriched_games": 4,
       "kind": "independent_audit_gate",
       "limitations": "Attestations and external evidence are not authenticated. Game-level binomial model is assumed; enriched games are not pooled. Passing is necessary, not sufficient, for scientific release.",
-      "parser_sha256": "6d6b481095e588f5346aeacea8799a7c6984b9f9b07d583c69a5df6a6d80f646",
-      "parser_version": "canonical_candidate_v5",
-      "plan_sha256": "42d3459f138e72ca464f7752c36643b2af8f0244c98b2740c5ab43966ce0898a",
+      "parser_sha256": "9ee7d5e81b5a99f0b42bf94e617269104bcb90e47f796af02fa4d0bb256d991f",
+      "parser_version": "canonical_candidate_v7",
+      "plan_sha256": "4a3ca4b7e0ad25af20dab3c6b9163ec029a36f3194dad0da88b0f721ab8ee3e3",
       "random_games": 10,
       "random_games_with_material_discrepancy": 0,
       "reasons": [
@@ -173,7 +173,7 @@
         "tolerances_not_frozen_before_review"
       ],
       "review_records": 0,
-      "reviews_sha256": "17b27cd1fac5b1b6356bc24f3ebca566f209394735e0f6f714848829ecbf6e73",
+      "reviews_sha256": "47003fb4497e1eabd2b93d2effc69f79719509a82a26536199cec38258279e61",
       "sample_assumption": null,
       "schema_version": "audit-gate-v1",
       "selected_games": 14,
@@ -181,19 +181,19 @@
       "upper_bound": null
     },
     "counts": {
-      "complete_games": 5972,
+      "complete_games": 6033,
       "corrected_schedule_dates": 30,
-      "critical_unresolved_games": 1859,
+      "critical_unresolved_games": 2253,
       "eligible_games": 0,
       "expected_games": 6084,
       "observed_games": 6084,
-      "possession_rows": 1193032,
-      "quarantined_games": 84,
-      "reconstructed_games": 6000,
+      "possession_rows": 1199536,
+      "quarantined_games": 48,
+      "reconstructed_games": 6036,
       "source_files": 10,
-      "unknown_outcomes": 2221,
-      "unresolved_transfer_flags": 257,
-      "unresolved_violation_flags": 373
+      "unknown_outcomes": 2947,
+      "unresolved_transfer_flags": 411,
+      "unresolved_violation_flags": 166
     },
     "limitations": [
       "Provisional reconstruction, not independently validated live possession opportunities.",
@@ -453,10 +453,10 @@
       "status": "SYNTHETIC_ONLY"
     },
     "versions": {
-      "feature_sha256": "8008b45ca51aebefda0dabd6522eb9373dc7b4f2401f8bfa7eb55370809fccc4",
+      "feature_sha256": "ef6cbda2c504f8ffb64bb9dc40d99431ed3c7067b43a89def316d34a36cddd1e",
       "feature_version": "before_event_v1",
-      "parser_sha256": "6d6b481095e588f5346aeacea8799a7c6984b9f9b07d583c69a5df6a6d80f646",
-      "parser_version": "canonical_candidate_v5"
+      "parser_sha256": "9ee7d5e81b5a99f0b42bf94e617269104bcb90e47f796af02fa4d0bb256d991f",
+      "parser_version": "canonical_candidate_v7"
     }
   },
   "math": {
@@ -2882,9 +2882,9 @@
   "footage": {
     "schema_version": "public-replay-access-v1",
     "checked_on": "2026-11-02",
-    "scope": "Fixed fourteen-game development pilot; public sources only after user declined subscription route. Browser observations, not independent film annotations.",
+    "scope": "Fixed fourteen-game development pilot; cumulative public-source discovery and live access checks. No independent film annotations.",
     "sample_unchanged": true,
-    "listing_candidates": 12,
+    "listing_candidates": 13,
     "playback_verified_games": 2,
     "full_coverage_verified_games": 0,
     "games": [
@@ -2901,22 +2901,58 @@
         "independent_reviews_completed": 0,
         "source_authorization": null,
         "access_status": "not_found",
-        "verification_note": "No exact-date public listing found in the recorded title/date/matchup searches. This is not proof that none exists. Official route previously showed activation prompt."
+        "verification_note": "No full-broadcast listing found in the recorded searches. An exact-date third-party listing links condensed Weibo highlights, explicitly excluded from full-game access. This does not prove a full recording is absent. The official route previously showed an activation prompt.",
+        "previous_search_note": "No exact-date public listing found in the recorded title/date/matchup searches. This is not proof that none exists. Official route previously showed activation prompt."
       },
       {
         "game_id": "0022000254",
         "date": "2021-01-24",
         "matchup": "ATL @ MIL",
         "official_url": "https://www.nba.com/game/atl-vs-mil-0022000254",
-        "source_url": null,
-        "player_url": null,
+        "source_url": "https://www.724zbw.com/nba/39023.html",
+        "player_url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/t0035px18id.html",
         "duration_seconds": null,
         "playback_verified": false,
         "full_coverage_verified": false,
         "independent_reviews_completed": 0,
-        "source_authorization": null,
-        "access_status": "not_found",
-        "verification_note": "No exact-date public listing found in the recorded title/date/matchup searches. This is not proof that none exists. Official route previously showed activation prompt."
+        "source_authorization": "not_verified_for_this_region",
+        "access_status": "region_restricted",
+        "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record. Tencent itself lists all four Mandarin quarters with VIP labels, extending the third-party Q1/Q2 listing; those quarters remain unplayed.",
+        "previous_access_record": {
+          "game_id": "0022000254",
+          "date": "2021-01-24",
+          "matchup": "ATL @ MIL",
+          "official_url": "https://www.nba.com/game/atl-vs-mil-0022000254",
+          "source_url": null,
+          "player_url": null,
+          "duration_seconds": null,
+          "playback_verified": false,
+          "full_coverage_verified": false,
+          "independent_reviews_completed": 0,
+          "source_authorization": null,
+          "access_status": "not_found",
+          "verification_note": "No exact-date public listing found in the recorded title/date/matchup searches. This is not proof that none exists. Official route previously showed activation prompt."
+        },
+        "alternative_catalog_links": [
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/j003578pt8d.html",
+            "observed_label": "[QQ\u56fd\u8bed]01\u670825\u65e5NBA\u5e38\u89c4\u8d5b \u8001\u9e70vs\u96c4\u9e7f \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/l0035yi4oge.html",
+            "observed_label": "[QQ\u56fd\u8bed]01\u670825\u65e5NBA\u5e38\u89c4\u8d5b \u8001\u9e70vs\u96c4\u9e7f \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/t0035px18id.html",
+            "observed_label": "[QQ\u539f\u58f0]01\u670825\u65e5NBA\u5e38\u89c4\u8d5b \u8001\u9e70vs\u96c4\u9e7f \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/m0035q68d70.html",
+            "observed_label": "[QQ\u539f\u58f0]01\u670825\u65e5NBA\u5e38\u89c4\u8d5b \u8001\u9e70vs\u96c4\u9e7f \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          }
+        ],
+        "third_party_listing_coverage": "Q1_Q2_only",
+        "primary_catalog_coverage": "four_mandarin_quarters_listed_vip"
       },
       {
         "game_id": "0022000367",
@@ -2998,60 +3034,293 @@
         "date": "2023-02-02",
         "matchup": "MIA@NYK",
         "official_url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
-        "source_url": "https://basketball-video.com/miami-heat-vs-new-york-knicks-feb-2-2023-nba-full-game-replay-live-free",
-        "player_url": "https://ok.ru/videoembed/5113576491606",
+        "source_url": "https://www.724zbw.com/nba/75371.html",
+        "player_url": "https://v.qq.com/x/cover/mzc002009zhkejw/e0045hc6hrf.html",
         "duration_seconds": null,
         "playback_verified": false,
         "full_coverage_verified": false,
         "independent_reviews_completed": 0,
-        "source_authorization": "unverified_third_party",
-        "access_status": "private_or_removed",
-        "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+        "source_authorization": "not_verified_for_this_region",
+        "access_status": "region_restricted",
+        "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+        "previous_access_record": {
+          "game_id": "0022200780",
+          "date": "2023-02-02",
+          "matchup": "MIA@NYK",
+          "official_url": "https://www.nba.com/game/mia-vs-nyk-0022200780",
+          "source_url": "https://basketball-video.com/miami-heat-vs-new-york-knicks-feb-2-2023-nba-full-game-replay-live-free",
+          "player_url": "https://ok.ru/videoembed/5113576491606",
+          "duration_seconds": null,
+          "playback_verified": false,
+          "full_coverage_verified": false,
+          "independent_reviews_completed": 0,
+          "source_authorization": "unverified_third_party",
+          "access_status": "private_or_removed",
+          "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+        },
+        "alternative_catalog_links": [
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/a0045t3iec6.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/e0045hc6hrf.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/m0045qcmjvc.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/h00452f7aki.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/o0045b5mlvp.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/a0045fywrlg.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u56db\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/b0045mnyjhh.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/v00456usp1k.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/z0045bqw4mw.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002009zhkejw/z0045nwkroe.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u70ed\u706bvs\u5c3c\u514b\u65af \u7b2c\u56db\u8282 \u5f55\u50cf"
+          }
+        ],
+        "listing_coverage": "full_and_four_quarters_listed",
+        "catalog_duration_seconds": 7253
       },
       {
         "game_id": "0022201087",
         "date": "2023-03-22",
         "matchup": "PHI@CHI",
         "official_url": "https://www.nba.com/game/phi-vs-chi-0022201087",
-        "source_url": "https://basketball-video.com/philadelphia-76ers-vs-chicago-bulls-mar-22-2023-nba-full-game-replay",
-        "player_url": null,
+        "source_url": "https://www.724zbw.com/nba/76393.html",
+        "player_url": "https://v.qq.com/x/cover/mzc002001efqbei/a0045x80ue2.html",
         "duration_seconds": null,
         "playback_verified": false,
         "full_coverage_verified": false,
         "independent_reviews_completed": 0,
-        "source_authorization": "unverified_third_party",
-        "access_status": "private_or_removed",
-        "verification_note": "Exact listing found. Only visible video player was unavailable because its YouTube account was terminated; no full broadcast playback established."
+        "source_authorization": "not_verified_for_this_region",
+        "access_status": "region_restricted",
+        "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+        "previous_access_record": {
+          "game_id": "0022201087",
+          "date": "2023-03-22",
+          "matchup": "PHI@CHI",
+          "official_url": "https://www.nba.com/game/phi-vs-chi-0022201087",
+          "source_url": "https://basketball-video.com/philadelphia-76ers-vs-chicago-bulls-mar-22-2023-nba-full-game-replay",
+          "player_url": null,
+          "duration_seconds": null,
+          "playback_verified": false,
+          "full_coverage_verified": false,
+          "independent_reviews_completed": 0,
+          "source_authorization": "unverified_third_party",
+          "access_status": "private_or_removed",
+          "verification_note": "Exact listing found. Only visible video player was unavailable because its YouTube account was terminated; no full broadcast playback established."
+        },
+        "alternative_catalog_links": [
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/o0045h5422y.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/a0045x80ue2.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/r00458xo3bp.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/l0045kthtsp.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/d0045c7zfv8.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/z0045x5y96k.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u56db\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/d0045x3vzed.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/c0045n3hqne.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/v00451a9o2x.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc002001efqbei/c00455ud9xo.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b 76\u4ebavs\u516c\u725b \u7b2c\u56db\u8282 \u5f55\u50cf"
+          }
+        ],
+        "listing_coverage": "full_and_four_quarters_listed"
       },
       {
         "game_id": "0022301101",
         "date": "2024-04-02",
         "matchup": "LAC@SAC",
         "official_url": "https://www.nba.com/game/lac-vs-sac-0022301101",
-        "source_url": "https://basketball-video.com/la-clippers-vs-sacramento-kings-apr-2-2024-nba-full-game-replay",
-        "player_url": "https://filemoon.sx/e/t9zrjr3p7ca4/NBA_20240402_LAC___SAC_720p60_KTLA.mkvv",
+        "source_url": "https://www.724zbw.com/nba/82957.html",
+        "player_url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048759q40.html",
         "duration_seconds": null,
         "playback_verified": false,
         "full_coverage_verified": false,
         "independent_reviews_completed": 0,
-        "source_authorization": "unverified_third_party",
-        "access_status": "human_verification_required",
-        "verification_note": "Exact listing exposes Filemoon player. Direct player says Click play button in order to verify you are a human. Verification was not completed; no playback or duration established."
+        "source_authorization": "not_verified_for_this_region",
+        "access_status": "region_restricted",
+        "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record. The earlier Filemoon route now says Video source is unavailable.",
+        "previous_access_record": {
+          "game_id": "0022301101",
+          "date": "2024-04-02",
+          "matchup": "LAC@SAC",
+          "official_url": "https://www.nba.com/game/lac-vs-sac-0022301101",
+          "source_url": "https://basketball-video.com/la-clippers-vs-sacramento-kings-apr-2-2024-nba-full-game-replay",
+          "player_url": "https://filemoon.sx/e/t9zrjr3p7ca4/NBA_20240402_LAC___SAC_720p60_KTLA.mkvv",
+          "duration_seconds": null,
+          "playback_verified": false,
+          "full_coverage_verified": false,
+          "independent_reviews_completed": 0,
+          "source_authorization": "unverified_third_party",
+          "access_status": "human_verification_required",
+          "verification_note": "Exact listing exposes Filemoon player. Direct player says Click play button in order to verify you are a human. Verification was not completed; no playback or duration established."
+        },
+        "alternative_catalog_links": [
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/h3544am8mte.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048759q40.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/h00482sjtru.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048p1vosu.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/c00489m7o4i.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/j0048gmqhav.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u56db\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/s00481442rw.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/x0048o11w78.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/t0048fpky4b.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/i0048o0gkfg.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u5feb\u8239vs\u56fd\u738b \u7b2c\u56db\u8282 \u5f55\u50cf"
+          }
+        ],
+        "listing_coverage": "full_and_four_quarters_listed"
       },
       {
         "game_id": "0022301177",
         "date": "2024-04-12",
         "matchup": "LAL@MEM",
         "official_url": "https://www.nba.com/game/lal-vs-mem-0022301177",
-        "source_url": "https://basketball-video.com/los-angeles-lakers-vs-memphis-grizzlies-apr-12-2024-nba-full-game-replay",
-        "player_url": "https://filemoon.sx/e/uyk1x25ajy3g/NBA_20240412_LAL___MEM_720p60_BS-MEM.mkv",
+        "source_url": "https://www.724zbw.com/nba/83157.html",
+        "player_url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100o04gtw.html",
         "duration_seconds": null,
         "playback_verified": false,
         "full_coverage_verified": false,
         "independent_reviews_completed": 0,
-        "source_authorization": "unverified_third_party",
-        "access_status": "private_or_removed",
-        "verification_note": "Exact listing found; Filemoon player displayed Video source is unavailable."
+        "source_authorization": "not_verified_for_this_region",
+        "access_status": "region_restricted",
+        "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+        "previous_access_record": {
+          "game_id": "0022301177",
+          "date": "2024-04-12",
+          "matchup": "LAL@MEM",
+          "official_url": "https://www.nba.com/game/lal-vs-mem-0022301177",
+          "source_url": "https://basketball-video.com/los-angeles-lakers-vs-memphis-grizzlies-apr-12-2024-nba-full-game-replay",
+          "player_url": "https://filemoon.sx/e/uyk1x25ajy3g/NBA_20240412_LAL___MEM_720p60_BS-MEM.mkv",
+          "duration_seconds": null,
+          "playback_verified": false,
+          "full_coverage_verified": false,
+          "independent_reviews_completed": 0,
+          "source_authorization": "unverified_third_party",
+          "access_status": "private_or_removed",
+          "verification_note": "Exact listing found; Filemoon player displayed Video source is unavailable."
+        },
+        "alternative_catalog_links": [
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/g3546p613dd.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100o04gtw.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/e4100uajfrj.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/q4100idry8j.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/v41005xn9m2.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/o4100w94a1m.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u56db\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100ijlz3k.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/r4100qeu60f.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/j41006fkh2k.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/v41000h9jmk.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u6e56\u4ebavs\u7070\u718a \u7b2c\u56db\u8282 \u5f55\u50cf"
+          }
+        ],
+        "listing_coverage": "full_and_four_quarters_listed"
       },
       {
         "game_id": "0022400393",
@@ -3073,15 +3342,73 @@
         "date": "2025-01-04",
         "matchup": "UTA@MIA",
         "official_url": "https://www.nba.com/game/uta-vs-mia-0022400481",
-        "source_url": "https://basketball-video.com/utah-jazz-vs-miami-heat-full-game-replay-january-4-2025-nba",
-        "player_url": "https://ok.ru/videoembed/9479717980844",
+        "source_url": "https://www.724zbw.com/nba/87657.html",
+        "player_url": "https://v.qq.com/x/cover/mzc00200279h4jl/p4100msrnvv.html",
         "duration_seconds": null,
         "playback_verified": false,
         "full_coverage_verified": false,
         "independent_reviews_completed": 0,
-        "source_authorization": "unverified_third_party",
-        "access_status": "private_or_removed",
-        "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+        "source_authorization": "not_verified_for_this_region",
+        "access_status": "region_restricted",
+        "verification_note": "Exact-game Tencent replay route found. Live player reports that content rights are unavailable in this region (70013080.1); no playback. Original public-route observations remain in the full record.",
+        "previous_access_record": {
+          "game_id": "0022400481",
+          "date": "2025-01-04",
+          "matchup": "UTA@MIA",
+          "official_url": "https://www.nba.com/game/uta-vs-mia-0022400481",
+          "source_url": "https://basketball-video.com/utah-jazz-vs-miami-heat-full-game-replay-january-4-2025-nba",
+          "player_url": "https://ok.ru/videoembed/9479717980844",
+          "duration_seconds": null,
+          "playback_verified": false,
+          "full_coverage_verified": false,
+          "independent_reviews_completed": 0,
+          "source_authorization": "unverified_third_party",
+          "access_status": "private_or_removed",
+          "verification_note": "Exact listing found. Direct player displayed: Video has been blocked due to author's rights infringement. No bypass attempted."
+        },
+        "alternative_catalog_links": [
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/u3575kywlyy.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/p4100msrnvv.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u5168\u573a\u5f55\u50cf\u56de\u653e"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/x4100ksybkn.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/n410062179f.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/v4100ub5pah.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/x4100ce2lyn.html",
+            "observed_label": "[QQ\u56fd\u8bed]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u56db\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f4100z80hwu.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u4e00\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/h4100s8vimh.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u4e8c\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f4100vmbeqz.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u4e09\u8282 \u5f55\u50cf"
+          },
+          {
+            "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f41006o77eh.html",
+            "observed_label": "[QQ\u539f\u58f0]NBA\u5e38\u89c4\u8d5b \u7235\u58ebvs\u70ed\u706b \u7b2c\u56db\u8282 \u5f55\u50cf"
+          }
+        ],
+        "listing_coverage": "full_and_four_quarters_listed"
       },
       {
         "game_id": "0022400553",
@@ -3104,7 +3431,8 @@
       "Listing titles and duration do not prove continuous full-game coverage. No stream was watched or annotated in full.",
       "No accounts, purchases, media downloads, redistribution, CAPTCHA completion or access-control bypass occurred.",
       "Two human reviewers, frozen tolerances and full continuous footage evidence remain absent. These records cannot pass the scientific audit.",
-      "Search coverage is bounded; unsuccessful searches do not prove absence. Exact sample games were not substituted with easier games."
+      "Search coverage is bounded; unsuccessful searches do not prove absence. Exact sample games were not substituted with easier games.",
+      "Thirteen games now have an exact replay listing or multi-quarter catalog lead; this includes blocked listings and does not mean thirteen accessible broadcasts. NYK/CLE still has no accepted full-game candidate."
     ],
     "searches": [
       {
@@ -3125,7 +3453,15 @@
           "24.01.2021"
         ],
         "result": "No matching January 15 NYK/CLE or January 24 ATL/MIL listing found among inspected results."
+      },
+      {
+        "method": "Additional 64 indexed queries, alternative public catalogs and six live Tencent route checks",
+        "record": "research/parser_followthrough_2026_11_02/public_search.json",
+        "browser_record": "research/parser_followthrough_2026_11_02/browser_observations.json",
+        "result": "Six alternative replay listings; all six tested Tencent routes region-restricted. No additional playback."
       }
-    ]
+    ],
+    "previous_evidence": "research/rewrite_completion_2026_11_02/public_replays.json",
+    "new_alternative_listing_games": 6
   }
 }

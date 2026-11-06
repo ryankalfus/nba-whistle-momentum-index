@@ -1,0 +1,1061 @@
+{
+  "schema_version": "public-search-followthrough-v1",
+  "checked_on": "2026-11-02",
+  "scope": "Additional public-only metadata search for unchanged fourteen-game pilot; no browser controlled by this researcher. Root browser observations are attributed separately.",
+  "sample_unchanged": true,
+  "fixed_game_ids": [
+    "0022000181",
+    "0022000254",
+    "0022000367",
+    "0022000544",
+    "0022000925",
+    "0022000997",
+    "0022100226",
+    "0022200780",
+    "0022201087",
+    "0022301101",
+    "0022301177",
+    "0022400393",
+    "0022400481",
+    "0022400553"
+  ],
+  "new_playback_verified_games": 0,
+  "full_coverage_verified_games": 0,
+  "independent_reviews_completed": 0,
+  "searches": [
+    {
+      "query": "\"Knicks\" \"Cavaliers\" \"January 15, 2021\" \"full game\" -highlights",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 1,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks\" \"Bucks\" \"January 24, 2021\" \"full game\" -highlights",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 1,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers\" \"Grizzlies\" \"April 12, 2024\" \"full game\" -highlights",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 1,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"NBA\" \"2021.01.15\" \"Cleveland\" replay",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 1,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Knicks Cavaliers\" \"15\" \"2021\" \"replay\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 2,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks Bucks\" \"24\" \"2021\" \"replay\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 2,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers Grizzlies\" \"Apr 12 2024\" replay -highlights",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 2,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers\" \"Grizzlies\" \"12.04.2024\" видео",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 2,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"New York Knicks\" \"Cleveland Cavaliers\" \"15.01.2021\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 3,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Atlanta Hawks\" \"Milwaukee Bucks\" \"24.01.2021\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 3,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Los Angeles Lakers\" \"Memphis Grizzlies\" \"April 12\" \"replay\" -site:reddit.com",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 3,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks\" \"Bucks\" \"2021-01-24\" video full",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 3,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Knicks\" \"Cavaliers\" \"Jan 15 2021\" replay",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 4,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks\" \"Bucks\" \"Jan 24 2021\" replay",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 4,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:nbafullhd.com \"Lakers\" \"Grizzlies\" \"April 12, 2024\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 4,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:ok.ru/video \"2024\" \"Lakers\" \"Grizzlies\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 4,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"nba replay\" \"2021\" \"January 15\" Knicks",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 5,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks\" \"Bucks\" \"24-01-2021\" replay",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 5,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Лейкерс\" \"Мемфис\" \"12.04.2024\" запись",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 5,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"尼克斯 骑士\" \"2021年1月16日\" 全场录像",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 5,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "Lakers Grizzlies April 12 2024 full replay video",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 6,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "Knicks Cavaliers January 15 2021 full replay video",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 6,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "Atlanta Milwaukee January 24 2021 full replay video",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 6,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "NBA full game replay free archive 2021",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 6,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:sbs.com.au/ondemand \"Hawks\" \"Bucks\" \"2021\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 7,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers Grizzlies\" \"2024\" \"replay\" \"12\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 7,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Knicks\" \"Cavaliers\" \"2021\" \"full\" site:nbareplay.net",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 7,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks\" \"Bucks\" \"2021\" \"full\" site:nbafullhd.com",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 7,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:nba-replay.org \"Lakers\" \"Grizzlies\" \"2024\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 8,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:nbafullmatch.com \"Hawks\" \"Bucks\" \"2021\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 8,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Knicks Cavaliers\" \"January 15\" \"watch\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 8,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks Bucks\" \"January 24\" \"watch\" \"2021\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 8,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Heat\" \"Knicks\" \"Feb 2 2023\" \"replay\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 9,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"76ers\" \"Bulls\" \"March 22 2023\" \"replay\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 9,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Clippers\" \"Kings\" \"April 2 2024\" \"replay\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 9,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Jazz\" \"Heat\" \"January 4 2025\" \"replay\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 9,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "2021年1月16日 尼克斯 骑士 全场 回放",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 10,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "2021年1月25日 老鹰 雄鹿 全场 回放",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 10,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "2024年4月13日 湖人 灰熊 全场 回放",
+      "status": "exact_listing_catalog_discovered_in_pooled_batch",
+      "observed_results": "Batch 10 exposed an exact Apr13 2024 Chinese-date catalog entry; followed it to nba/83157.html. Individual-query attribution within the four-query batch is unverified.",
+      "search_batch": 10,
+      "observed_title": "灰熊直播_灰熊视频_灰熊比赛视频_灰熊录像集锦 - 【24直播网】",
+      "observed_url": "https://www.724zbw.com/shipin/huixiong/index_3.html"
+    },
+    {
+      "query": "2025年1月5日 爵士 热火 全场 回放",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 10,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"2021\" \"01月16日\" \"尼克斯vs骑士\" \"录像\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 11,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"2021\" \"01月25日\" \"老鹰vs雄鹿\" \"录像\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 11,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"2021\" \"1月16日\" \"尼克斯\" \"骑士\" \"回放\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 11,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"2021\" \"1月25日\" \"老鹰\" \"雄鹿\" \"回放\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 11,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "NBA full games replays archive alternative basketball-video",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 12,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers\" \"Grizzlies\" \"12/04/2024\" \"video\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 12,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Knicks\" \"Cavaliers\" \"15/01/2021\" video",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 12,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks\" \"Bucks\" \"24/01/2021\" full",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 12,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:fishkernba.com \"January 15\" \"2021\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 13,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:fishkernba.com \"January 24\" \"2021\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 13,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "site:fishkernba.com \"April 12\" \"2024\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 13,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers Grizzlies\" \"April 12 2024\" -highlights -reddit -statmuse",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 13,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Никс\" \"Кливленд\" \"16.01.2021\" видео",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 14,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Атланта\" \"Милуоки\" \"25.01.2021\" видео",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 14,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Лейкерс\" \"Мемфис\" \"13.04.2024\" \"запись\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 14,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers\" \"Grizzlies\" \"20240412\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 14,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"New York\" \"Cleveland\" \"01/15/2021\" \"full\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 15,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Atlanta\" \"Milwaukee\" \"01/24/2021\" \"full\"",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 15,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"NBA\" \"NYK CLE\" \"2021\" video",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 15,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"NBA\" \"ATL MIL\" \"2021\" video",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 15,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Lakers\" \"Grizzlies\" \"April 12, 2024\" \"replay\" -highlights -nba.com -reddit.com",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 16,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Knicks\" \"Cavaliers\" \"January 15, 2021\" \"replay\" -nba.com -reddit.com",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 16,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"Hawks\" \"Bucks\" \"January 24, 2021\" \"replay\" -nba.com -reddit.com",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 16,
+      "observed_title": null,
+      "observed_url": null
+    },
+    {
+      "query": "\"NBA\" \"2021\" site:fullmatchtv.com",
+      "status": "bounded_index_search_no_verified_full_broadcast",
+      "observed_results": "No verified full broadcast in pooled batch output. Relevant metadata discoveries and direct follow-through are in observations/routes; search outputs were pooled, so individual-query attribution is not asserted.",
+      "search_batch": 16,
+      "observed_title": null,
+      "observed_url": null
+    }
+  ],
+  "observations": [
+    {
+      "game_id": "0022000181",
+      "game_date": "2021-01-15",
+      "matchup": "NYK @ CLE",
+      "listing_url": "https://www.724zbw.com/nba/37916.html",
+      "observed_title": "01月16日NBA常规赛 尼克斯vs骑士 全场精华回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "06f9167de3c53ff3c75868c7805915f0c397f4bb1f58101f6c4c591cc56e4fe7",
+      "listing_kind": "condensed_highlights_excluded",
+      "candidate_links": [],
+      "excluded_links": [
+        {
+          "url": "https://weibo.com/6292090658/JDqeHFgq3",
+          "observed_label": "[微博] 01月16日NBA常规赛 尼克斯vs骑士 全场精华回放"
+        }
+      ],
+      "listing_coverage": "condensed_only",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022000254",
+      "game_date": "2021-01-24",
+      "matchup": "ATL @ MIL",
+      "listing_url": "https://www.724zbw.com/nba/39023.html",
+      "observed_title": "01月25日NBA常规赛 老鹰vs雄鹿 全场录像 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "cc898a9cb2931f86cdae85a300d4ca510102656fc9934fad2bdfd42453e668e0",
+      "listing_kind": "replay_candidate",
+      "candidate_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/j003578pt8d.html",
+          "observed_label": "[QQ国语]01月25日NBA常规赛 老鹰vs雄鹿 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/l0035yi4oge.html",
+          "observed_label": "[QQ国语]01月25日NBA常规赛 老鹰vs雄鹿 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/t0035px18id.html",
+          "observed_label": "[QQ原声]01月25日NBA常规赛 老鹰vs雄鹿 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/m0035q68d70.html",
+          "observed_label": "[QQ原声]01月25日NBA常规赛 老鹰vs雄鹿 第二节 录像"
+        }
+      ],
+      "excluded_links": [],
+      "listing_coverage": "Q1_Q2_only",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022000367",
+      "game_date": "2021-02-08",
+      "matchup": "HOU @ CHA",
+      "listing_url": "https://www.724zbw.com/nba/41081.html",
+      "observed_title": "02月09日NBA常规赛 火箭vs黄蜂 全场精华回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "c18daefb3865a538b774ee68df039fa189c449a0874fd2c8a69a1dc11075e4cb",
+      "listing_kind": "condensed_highlights_excluded",
+      "candidate_links": [],
+      "excluded_links": [
+        {
+          "url": "https://weibo.com/6292090658/K16JCzf7b",
+          "observed_label": "[微博] 02月09日NBA常规赛 火箭vs黄蜂 全场精华回放"
+        }
+      ],
+      "listing_coverage": "condensed_only",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022000544",
+      "game_date": "2021-03-03",
+      "matchup": "ATL @ ORL",
+      "listing_url": "https://www.724zbw.com/nba/43327.html",
+      "observed_title": "03月04日NBA常规赛 老鹰vs魔术 全场精华回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "6c78d0ad3c641ca4091dd8ace2fed6529967537dd67fbf41256dec3e3f312cae",
+      "listing_kind": "condensed_highlights_excluded",
+      "candidate_links": [],
+      "excluded_links": [
+        {
+          "url": "https://weibo.com/6292090658/K4C1utWEK",
+          "observed_label": "[微博原声]03月04日NBA常规赛 老鹰vs魔术 全场精华回放"
+        }
+      ],
+      "listing_coverage": "condensed_only",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022000925",
+      "game_date": "2021-04-26",
+      "matchup": "MEM @ DEN",
+      "listing_url": "https://www.724zbw.com/nba/48863.html",
+      "observed_title": "04月27日NBA常规赛 灰熊vs掘金 全场精华回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "8c15c72419fd9e7b34066878720d24256e1a6c4f249fdb79d46105c428b7e10b",
+      "listing_kind": "condensed_highlights_excluded",
+      "candidate_links": [],
+      "excluded_links": [
+        {
+          "url": "https://weibo.com/6292090658/KcP2yzEBj",
+          "observed_label": "[微博原声]04月27日NBA常规赛 灰熊vs掘金 全场精华回放"
+        }
+      ],
+      "listing_coverage": "condensed_only",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022000997",
+      "game_date": "2021-05-06",
+      "matchup": "WAS @ TOR",
+      "listing_url": "https://www.724zbw.com/nba/49782.html",
+      "observed_title": "05月07日NBA常规赛 奇才vs猛龙 全场精华回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "f1c314b781781a7950836538e594fee2b27a430edd5a0da56ee58d4deb08ef18",
+      "listing_kind": "condensed_highlights_excluded",
+      "candidate_links": [],
+      "excluded_links": [
+        {
+          "url": "https://weibo.com/6292090658/KekUZiw69",
+          "observed_label": "[微博原声]05月07日NBA常规赛 奇才vs猛龙 全场精华回放"
+        }
+      ],
+      "listing_coverage": "condensed_only",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022200780",
+      "game_date": "2023-02-02",
+      "matchup": "MIA@NYK",
+      "listing_url": "https://www.724zbw.com/nba/75371.html",
+      "observed_title": "02月03日 NBA常规赛 热火vs尼克斯 全场录像回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "2f62b4e740a86adfecf0be1f0123f76097b17ded90948f1d868da0db6f6778d4",
+      "listing_kind": "replay_candidate",
+      "candidate_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/a0045t3iec6.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/e0045hc6hrf.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/m0045qcmjvc.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/h00452f7aki.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/o0045b5mlvp.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/a0045fywrlg.html",
+          "observed_label": "[QQ国语]NBA常规赛 热火vs尼克斯 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/b0045mnyjhh.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/v00456usp1k.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/z0045bqw4mw.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002009zhkejw/z0045nwkroe.html",
+          "observed_label": "[QQ原声]NBA常规赛 热火vs尼克斯 第四节 录像"
+        }
+      ],
+      "excluded_links": [],
+      "listing_coverage": "full_and_four_quarters_listed",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022201087",
+      "game_date": "2023-03-22",
+      "matchup": "PHI@CHI",
+      "listing_url": "https://www.724zbw.com/nba/76393.html",
+      "observed_title": "03月23日 NBA常规赛 76人vs公牛 全场录像回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "2525816849a77be89966caad9f310bb85cbfcc5584f8cdd3544fc4b8f0e17bc5",
+      "listing_kind": "replay_candidate",
+      "candidate_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/o0045h5422y.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/a0045x80ue2.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/r00458xo3bp.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/l0045kthtsp.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/d0045c7zfv8.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/z0045x5y96k.html",
+          "observed_label": "[QQ国语]NBA常规赛 76人vs公牛 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/d0045x3vzed.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/c0045n3hqne.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/v00451a9o2x.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc002001efqbei/c00455ud9xo.html",
+          "observed_label": "[QQ原声]NBA常规赛 76人vs公牛 第四节 录像"
+        }
+      ],
+      "excluded_links": [],
+      "listing_coverage": "full_and_four_quarters_listed",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022301101",
+      "game_date": "2024-04-02",
+      "matchup": "LAC@SAC",
+      "listing_url": "https://www.724zbw.com/nba/82957.html",
+      "observed_title": "04月03日 NBA常规赛 快船vs国王 全场录像回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "a6b0a1de2878d56cff334a787f216e3c23ab4818a24749dd0937bf19383613fa",
+      "listing_kind": "replay_candidate",
+      "candidate_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/h3544am8mte.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048759q40.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/h00482sjtru.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048p1vosu.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/c00489m7o4i.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/j0048gmqhav.html",
+          "observed_label": "[QQ国语]NBA常规赛 快船vs国王 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/s00481442rw.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/x0048o11w78.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/t0048fpky4b.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/i0048o0gkfg.html",
+          "observed_label": "[QQ原声]NBA常规赛 快船vs国王 第四节 录像"
+        }
+      ],
+      "excluded_links": [],
+      "listing_coverage": "full_and_four_quarters_listed",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022301177",
+      "game_date": "2024-04-12",
+      "matchup": "LAL@MEM",
+      "listing_url": "https://www.724zbw.com/nba/83157.html",
+      "observed_title": "04月13日 NBA常规赛 湖人vs灰熊 全场录像回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "e2be602032ebe1781e780e23f4e65333fd68a3d480a7b8cf7d8512237099bc21",
+      "listing_kind": "replay_candidate",
+      "candidate_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/g3546p613dd.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100o04gtw.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/e4100uajfrj.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/q4100idry8j.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/v41005xn9m2.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/o4100w94a1m.html",
+          "observed_label": "[QQ国语]NBA常规赛 湖人vs灰熊 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100ijlz3k.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/r4100qeu60f.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/j41006fkh2k.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/v41000h9jmk.html",
+          "observed_label": "[QQ原声]NBA常规赛 湖人vs灰熊 第四节 录像"
+        }
+      ],
+      "excluded_links": [],
+      "listing_coverage": "full_and_four_quarters_listed",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    },
+    {
+      "game_id": "0022400481",
+      "game_date": "2025-01-04",
+      "matchup": "UTA@MIA",
+      "listing_url": "https://www.724zbw.com/nba/87657.html",
+      "observed_title": "01月05日 NBA常规赛 爵士vs热火 全场录像回放 -【24直播网】",
+      "listing_http_status": 200,
+      "html_sha256": "d24b2c5016558e081e8f378e628952df0d36922315c95fd1ea5a3a078bd6c002",
+      "listing_kind": "replay_candidate",
+      "candidate_links": [
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/u3575kywlyy.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/p4100msrnvv.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 全场录像回放"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/x4100ksybkn.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/n410062179f.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/v4100ub5pah.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/x4100ce2lyn.html",
+          "observed_label": "[QQ国语]NBA常规赛 爵士vs热火 第四节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f4100z80hwu.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第一节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/h4100s8vimh.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第二节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f4100vmbeqz.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第三节 录像"
+        },
+        {
+          "url": "https://v.qq.com/x/cover/mzc00200279h4jl/f41006o77eh.html",
+          "observed_label": "[QQ原声]NBA常规赛 爵士vs热火 第四节 录像"
+        }
+      ],
+      "excluded_links": [],
+      "listing_coverage": "full_and_four_quarters_listed",
+      "source_authorization": "unverified_from_third_party_listing",
+      "researcher_playback_verified": false,
+      "full_coverage_verified": false,
+      "independent_reviews_completed": 0,
+      "note": "Chinese listing date is the day after US game date; matchup and recap/final score checked. No media downloaded."
+    }
+  ],
+  "routes": [
+    {
+      "url": "https://fishkernba.com/",
+      "observed_title": null,
+      "status": "web_fetch_502",
+      "note": "Exact indexed date queries also found no candidate. No bypass."
+    },
+    {
+      "url": "https://nbafullhd.com/",
+      "observed_title": null,
+      "status": "web_inaccessible_root_browser_unsafe_redirect",
+      "observer": "root_browser_report",
+      "note": "Root reported fake MacOS Security Center alert; dismissed/closed. No repeat or further interaction."
+    },
+    {
+      "url": "https://nbareplay.net/",
+      "observed_title": null,
+      "status": "web_inaccessible"
+    },
+    {
+      "url": "https://www.nba-replay.org/page/137/",
+      "observed_title": "Full Game NBA Replays – Page 137 – Latest NBA Videos Regular season and Playoffs",
+      "status": "oldest_exposed_page_after_sample",
+      "note": "Final page shows May1 2025 and newer playoffs. Exact-match search URLs inaccessible; ordinary HTTP403. This does not prove total historical absence."
+    },
+    {
+      "url": "https://basketballreplays.net/",
+      "observed_title": "NBA Full Game Replays Free in HD",
+      "status": "current_catalog_only_no_fixed_match",
+      "note": "2025-26/2026-27 links. Observed final link ?page236= repeats homepage; ?page=236 inaccessible in web tool. Archive coverage not established."
+    },
+    {
+      "url": "https://grindingtape.com/legends",
+      "observed_title": "NBA Full Games Archive: 3,467 Classic Full Games — Grinding Tape",
+      "status": "bounded_catalog_no_fixed_match",
+      "inspected_urls": [
+        "https://grindingtape.com/legends?page=140",
+        "https://grindingtape.com/legends?page=141",
+        "https://grindingtape.com/legends?page=142",
+        "https://grindingtape.com/legends?page=143",
+        "https://grindingtape.com/legends?page=144",
+        "https://grindingtape.com/legends?page=145"
+      ],
+      "note": "Inspected all 130 exposed game-link titles on pages140–145, spanning2011→Nov2025; no exact fixed sample game. Featured earlier pages and inaccurate/incomplete metadata remain a gap."
+    },
+    {
+      "url": "https://www.sbs.com.au/sport/article/how-to-watch-nba-live-on-sbs/mbdx7wa0o",
+      "observed_title": "How to watch NBA LIVE on SBS",
+      "status": "historical_broadcaster_no_exact_surviving_archive",
+      "note": "Official article describes2021-22 live coverage; exact Jan2021 archive not located. Separate historical schedule below proves scheduling only."
+    },
+    {
+      "url": "https://tvtonight.com.au/wp-content/uploads/SBS-VICELAND-GUIDE-Week-5-January-24-January-30-EASTERN-STATES-NSW-VIC-TAS-ACT.pdf",
+      "observed_title": "WEEK 5: Sunday, January 24 - Saturday, January 30 2021 EASTERN STATES",
+      "status": "historic_schedule_only",
+      "note": "Jan25 AEDT ATL/MIL live slot. No playable archive link located."
+    }
+  ],
+  "root_browser_reports": [
+    {
+      "game_id": "0022301177",
+      "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100o04gtw.html",
+      "status": "region_rights_unavailable",
+      "error_code": "70013080.1",
+      "observer": "root_browser_report",
+      "note": "Root reports explicit region copyright restriction; no VPN or geo bypass attempted."
+    }
+  ],
+  "limitations": [
+    "Exact titles and links establish candidates only, not free access, playback, completeness, readability or authorization.",
+    "No media downloads, purchases, account creation, challenge completion, access-control or region bypass, redistribution or messages.",
+    "Chinese condensed/Weibo highlights excluded; ATL/MIL listing exposes only first two quarters, so cannot supply full audit coverage as observed.",
+    "All negative searches are bounded, not proof that footage does not exist.",
+    "No sample substitution, independent review, tolerance freeze, eligibility promotion or scientific finding."
+  ]
+}

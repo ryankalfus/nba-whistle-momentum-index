@@ -174,20 +174,23 @@ def _reconstruct_game(actions, gid, metadata, source_sha256):
 
 def game_status(result):
     """Completeness is observed markers, independent of audit acceptance."""
+    # Source notes retain their raw fields and blocking audit issues, but their
+    # copied clocks/periods are not part of the live game-marker sequence.
+    marker_events = tuple(e for e in result.events if e.kind != "memo")
     starts = Counter(
-        e.period for e in result.events if e.kind == "period" and e.subtype == "start"
+        e.period for e in marker_events if e.kind == "period" and e.subtype == "start"
     )
     ends = Counter(
-        e.period for e in result.events if e.kind == "period" and e.subtype == "end"
+        e.period for e in marker_events if e.kind == "period" and e.subtype == "end"
     )
-    terminal = result.events[-1] if result.events else None
+    terminal = marker_events[-1] if marker_events else None
     complete = bool(
         terminal
         and terminal.kind == "game"
         and terminal.subtype == "end"
         and terminal.period >= 4
         and terminal.clock == 0
-        and {e.period for e in result.events} == set(range(1, terminal.period + 1))
+        and {e.period for e in marker_events} == set(range(1, terminal.period + 1))
         and all(starts[p] == ends[p] == 1 for p in range(1, terminal.period + 1))
         and terminal.home_score is not None
         and terminal.away_score is not None

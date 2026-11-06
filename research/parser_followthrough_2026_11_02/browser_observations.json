@@ -1,0 +1,104 @@
+{
+  "checked_on": "2026-11-02",
+  "observer": "root_browser",
+  "observations": [
+    {
+      "game_id": "0022000254",
+      "url": "https://v.qq.com/x/cover/mzc00200xyvuxgw/t0035px18id.html",
+      "access_status": "region_restricted",
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "visible_message": "您所在区域暂无此内容版权（如设置VPN请关闭后重试）",
+      "translation": "Content rights are not available in the current region.",
+      "error_code": "70013080.1",
+      "observed_on": "2026-11-02",
+      "catalog_note": "The third-party listing links only Q1/Q2, but the Tencent page itself lists all four Mandarin quarters with VIP labels and English Q1-Q3. No quarter played.",
+      "mandarin_quarter_catalog_durations": [
+        "22:52",
+        "26:27",
+        "30:45",
+        "32:07"
+      ]
+    },
+    {
+      "game_id": "0022200780",
+      "url": "https://v.qq.com/x/cover/mzc002009zhkejw/e0045hc6hrf.html",
+      "access_status": "region_restricted",
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "visible_message": "您所在区域暂无此内容版权（如设置VPN请关闭后重试）",
+      "translation": "Content rights are not available in the current region.",
+      "error_code": "70013080.1",
+      "observed_on": "2026-11-02",
+      "catalog_duration_seconds": 7253,
+      "catalog_title": "【回放】热火vs尼克斯英文原声全场回放",
+      "duration_is_playback_verified": false
+    },
+    {
+      "game_id": "0022201087",
+      "url": "https://v.qq.com/x/cover/mzc002001efqbei/a0045x80ue2.html",
+      "access_status": "region_restricted",
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "visible_message": "您所在区域暂无此内容版权（如设置VPN请关闭后重试）",
+      "translation": "Content rights are not available in the current region.",
+      "error_code": "70013080.1",
+      "observed_on": "2026-11-02"
+    },
+    {
+      "game_id": "0022301101",
+      "url": "https://v.qq.com/x/cover/mzc00200zosdhi4/e0048759q40.html",
+      "access_status": "region_restricted",
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "visible_message": "您所在区域暂无此内容版权（如设置VPN请关闭后重试）",
+      "translation": "Content rights are not available in the current region.",
+      "error_code": "70013080.1",
+      "observed_on": "2026-11-02"
+    },
+    {
+      "game_id": "0022301177",
+      "url": "https://v.qq.com/x/cover/mzc00200lfnmesb/i4100o04gtw.html",
+      "access_status": "region_restricted",
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "visible_message": "您所在区域暂无此内容版权（如设置VPN请关闭后重试）",
+      "translation": "Content rights are not available in the current region.",
+      "error_code": "70013080.1",
+      "observed_on": "2026-11-02"
+    },
+    {
+      "game_id": "0022400481",
+      "url": "https://v.qq.com/x/cover/mzc00200279h4jl/p4100msrnvv.html",
+      "access_status": "region_restricted",
+      "playback_verified": false,
+      "full_coverage_verified": false,
+      "visible_message": "您所在区域暂无此内容版权（如设置VPN请关闭后重试）",
+      "translation": "Content rights are not available in the current region.",
+      "error_code": "70013080.1",
+      "observed_on": "2026-11-02"
+    }
+  ],
+  "other_routes": [
+    {
+      "url": "https://filemoon.sx/e/t9zrjr3p7ca4/NBA_20240402_LAC___SAC_720p60_KTLA.mkvv",
+      "game_id": "0022301101",
+      "visible_message": "Video source is unavailable.",
+      "status": "unavailable",
+      "note": "The earlier human-verification prompt is superseded by this new unavailable result. No challenge was completed."
+    },
+    {
+      "url": "https://nbafullhd.com/",
+      "status": "unsafe_advertising_redirect",
+      "redirect_domain": "hubbyworld.com",
+      "visible_title": "MacOS Security Center",
+      "note": "Redirect displayed a fake system-threat alert. Dismissed the browser dialog and closed this task-created tab; no scan, software install or other interaction."
+    }
+  ],
+  "new_playback_verified_games": 0,
+  "full_coverage_verified_games": 0,
+  "limitations": [
+    "Region restrictions were observed, not bypassed. No account, payment, VPN, CAPTCHA, download or independent annotation was used.",
+    "Catalog labels and durations do not establish continuous game coverage."
+  ]
+}
