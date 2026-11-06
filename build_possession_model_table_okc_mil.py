@@ -1,11 +1,13 @@
 from wmi_utils import build_possession_model_table
 
+build_table = build_possession_model_table
+
 GAME_ID = "0022500789"
 OUT_PATH = "possession_model_table_okc_mil.csv"
 
 
 def main():
-    out_df = build_possession_model_table(GAME_ID)
+    out_df = build_table(GAME_ID)
     out_df.to_csv(OUT_PATH, index=False)
     print("OK")
     print("game_id", GAME_ID)
