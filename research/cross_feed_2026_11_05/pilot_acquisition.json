@@ -1,0 +1,11 @@
+{
+  "checked_on": "2026-11-05",
+  "upstream_commit": "e829d4678be1e075f99e5d41a1c5f97089be446b",
+  "upstream_tree": "aab580e7de8a7a8c7584fa1db5152369a73b15f8",
+  "source_commit_url": "https://github.com/shufinskiy/nba_data/commit/e829d4678be1e075f99e5d41a1c5f97089be446b",
+  "ledger_sha256": "2013affc79aa16fad8ca85a7a2c26407e030d4d9e522f9c37dfa56723784b687",
+  "source_count": 5,
+  "new_archives": 4,
+  "reused_archives": 1,
+  "verification": "All five file names, sizes and Git blob IDs matched complete pinned tree; downloaded raw bytes matched their Git blob IDs. 2024 mobile SHA256 also matched original v7 source ledger. Diagnostic inputs only; original ledger unchanged."
+}

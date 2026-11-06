@@ -1,0 +1,5225 @@
+{
+  "bindings": {
+    "comparison_sha256": "67f85c07477407b9eb2113973801556302398238a2ce02499d5a898c4b5a7a2f",
+    "features_sha256": "6b2868d4525b22a51fbc99f424bfc9d17748e75daf1c5c24eb9b3315568f73c6",
+    "parser_sha256": "9ee7d5e81b5a99f0b42bf94e617269104bcb90e47f796af02fa4d0bb256d991f",
+    "reconciliation_sha256": "ac24aacf33cd382f207ef182d94736221cf52580e7a31959f8f60ea7f8818555",
+    "run_report_sha256": "31ed644257686112632bfa6a8235c9d00d0664bd0e8c6e90e14cca3f1ab8cbc8",
+    "source_manifest_sha256": "fd0d6639ef35e84d3d63b1e10035312f2cf5c7bd60973c856278ec54dd27b84a"
+  },
+  "counts": {
+    "agreement": 169030,
+    "different": 30425,
+    "identity_unverified": 1,
+    "incomplete": 3514,
+    "unmatched_id": 41119
+  },
+  "critical_action_counts": {
+    "agreement": 625,
+    "incomplete": 9
+  },
+  "critical_differing_fields": {},
+  "differing_fields": {
+    "clock": 8,
+    "offense": 30419,
+    "team": 1
+  },
+  "eligible_games": 0,
+  "game_type": "regular_season",
+  "games": {
+    "0022400010": {
+      "counts": {
+        "agreement": 376,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400012": {
+      "counts": {
+        "agreement": 433,
+        "different": 83,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400013": {
+      "counts": {
+        "agreement": 393,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400014": {
+      "counts": {
+        "agreement": 380,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 76
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400017": {
+      "counts": {
+        "agreement": 339,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400019": {
+      "counts": {
+        "agreement": 485,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 129
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400022": {
+      "counts": {
+        "agreement": 407,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400023": {
+      "counts": {
+        "agreement": 484,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 125
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400024": {
+      "counts": {
+        "agreement": 375,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400026": {
+      "counts": {
+        "agreement": 380,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400033": {
+      "counts": {
+        "agreement": 431,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400035": {
+      "counts": {
+        "agreement": 406,
+        "different": 85,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400036": {
+      "counts": {
+        "agreement": 347,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 86
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400037": {
+      "counts": {
+        "agreement": 388,
+        "different": 80,
+        "incomplete": 10,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400039": {
+      "counts": {
+        "agreement": 363,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400040": {
+      "counts": {
+        "agreement": 375,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400045": {
+      "counts": {
+        "agreement": 363,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400046": {
+      "counts": {
+        "agreement": 363,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 72
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400048": {
+      "counts": {
+        "agreement": 365,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400050": {
+      "counts": {
+        "agreement": 378,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400054": {
+      "counts": {
+        "agreement": 408,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400063": {
+      "counts": {
+        "agreement": 407,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400064": {
+      "counts": {
+        "agreement": 437,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400068": {
+      "counts": {
+        "agreement": 428,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 115
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400070": {
+      "counts": {
+        "agreement": 466,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 110
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400071": {
+      "counts": {
+        "agreement": 442,
+        "different": 79,
+        "incomplete": 10,
+        "unmatched_id": 128
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400072": {
+      "counts": {
+        "agreement": 441,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400074": {
+      "counts": {
+        "agreement": 409,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 109
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400075": {
+      "counts": {
+        "agreement": 401,
+        "different": 80,
+        "incomplete": 9,
+        "unmatched_id": 110
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400076": {
+      "counts": {
+        "agreement": 380,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400078": {
+      "counts": {
+        "agreement": 486,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 127
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400082": {
+      "counts": {
+        "agreement": 496,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400084": {
+      "counts": {
+        "agreement": 419,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400086": {
+      "counts": {
+        "agreement": 415,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400087": {
+      "counts": {
+        "agreement": 376,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 80
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400088": {
+      "counts": {
+        "agreement": 416,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400089": {
+      "counts": {
+        "agreement": 390,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400091": {
+      "counts": {
+        "agreement": 417,
+        "different": 102,
+        "incomplete": 8,
+        "unmatched_id": 105
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400092": {
+      "counts": {
+        "agreement": 414,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 118
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400095": {
+      "counts": {
+        "agreement": 409,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 105
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400098": {
+      "counts": {
+        "agreement": 381,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400100": {
+      "counts": {
+        "agreement": 441,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 120
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400101": {
+      "counts": {
+        "agreement": 407,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400104": {
+      "counts": {
+        "agreement": 378,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400105": {
+      "counts": {
+        "agreement": 374,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 78
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400106": {
+      "counts": {
+        "agreement": 400,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400107": {
+      "counts": {
+        "agreement": 449,
+        "different": 75,
+        "incomplete": 10,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400108": {
+      "counts": {
+        "agreement": 413,
+        "different": 86,
+        "incomplete": 8,
+        "unmatched_id": 109
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400109": {
+      "counts": {
+        "agreement": 397,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400111": {
+      "counts": {
+        "agreement": 387,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400116": {
+      "counts": {
+        "agreement": 376,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 107
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400118": {
+      "counts": {
+        "agreement": 356,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400119": {
+      "counts": {
+        "agreement": 469,
+        "different": 82,
+        "incomplete": 10,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400121": {
+      "counts": {
+        "agreement": 398,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400124": {
+      "counts": {
+        "agreement": 435,
+        "different": 55,
+        "incomplete": 9,
+        "unmatched_id": 121
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400125": {
+      "counts": {
+        "agreement": 347,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 106
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400128": {
+      "counts": {
+        "agreement": 401,
+        "different": 80,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400132": {
+      "counts": {
+        "agreement": 399,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 5,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400135": {
+      "counts": {
+        "agreement": 384,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400139": {
+      "counts": {
+        "agreement": 385,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400141": {
+      "counts": {
+        "agreement": 369,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400142": {
+      "counts": {
+        "agreement": 387,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 105
+      },
+      "critical_action_count": 5,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400143": {
+      "counts": {
+        "agreement": 466,
+        "different": 76,
+        "incomplete": 10,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400148": {
+      "counts": {
+        "agreement": 416,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400151": {
+      "counts": {
+        "agreement": 393,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400152": {
+      "counts": {
+        "agreement": 383,
+        "different": 58,
+        "incomplete": 10,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400153": {
+      "counts": {
+        "agreement": 406,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400155": {
+      "counts": {
+        "agreement": 417,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400157": {
+      "counts": {
+        "agreement": 358,
+        "different": 83,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400160": {
+      "counts": {
+        "agreement": 405,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400162": {
+      "counts": {
+        "agreement": 374,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400167": {
+      "counts": {
+        "agreement": 370,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400173": {
+      "counts": {
+        "agreement": 353,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400174": {
+      "counts": {
+        "agreement": 396,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400176": {
+      "counts": {
+        "agreement": 391,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400182": {
+      "counts": {
+        "agreement": 364,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400183": {
+      "counts": {
+        "agreement": 372,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400188": {
+      "counts": {
+        "agreement": 387,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400191": {
+      "counts": {
+        "agreement": 426,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 119
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400202": {
+      "counts": {
+        "agreement": 354,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 75
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400204": {
+      "counts": {
+        "agreement": 373,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 76
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400206": {
+      "counts": {
+        "agreement": 385,
+        "different": 72,
+        "incomplete": 9,
+        "unmatched_id": 115
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400207": {
+      "counts": {
+        "agreement": 415,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400209": {
+      "counts": {
+        "agreement": 407,
+        "different": 93,
+        "incomplete": 10,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400215": {
+      "counts": {
+        "agreement": 404,
+        "different": 55,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400217": {
+      "counts": {
+        "agreement": 368,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400218": {
+      "counts": {
+        "agreement": 356,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 79
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400220": {
+      "counts": {
+        "agreement": 339,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400223": {
+      "counts": {
+        "agreement": 400,
+        "different": 77,
+        "incomplete": 10,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400227": {
+      "counts": {
+        "agreement": 378,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400230": {
+      "counts": {
+        "agreement": 402,
+        "different": 68,
+        "incomplete": 10,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400231": {
+      "counts": {
+        "agreement": 390,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 81
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400232": {
+      "counts": {
+        "agreement": 398,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 112
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400234": {
+      "counts": {
+        "agreement": 391,
+        "different": 54,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400238": {
+      "counts": {
+        "agreement": 362,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 122
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400240": {
+      "counts": {
+        "agreement": 367,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 67
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400242": {
+      "counts": {
+        "agreement": 422,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 116
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400243": {
+      "counts": {
+        "agreement": 340,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 71
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400244": {
+      "counts": {
+        "agreement": 381,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400246": {
+      "counts": {
+        "agreement": 343,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 70
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400249": {
+      "counts": {
+        "agreement": 373,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400250": {
+      "counts": {
+        "agreement": 372,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400261": {
+      "counts": {
+        "agreement": 399,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400262": {
+      "counts": {
+        "agreement": 434,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400265": {
+      "counts": {
+        "agreement": 382,
+        "different": 56,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400269": {
+      "counts": {
+        "agreement": 378,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400270": {
+      "counts": {
+        "agreement": 354,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400277": {
+      "counts": {
+        "agreement": 391,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400278": {
+      "counts": {
+        "agreement": 420,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 105
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400279": {
+      "counts": {
+        "agreement": 376,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400284": {
+      "counts": {
+        "agreement": 383,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400285": {
+      "counts": {
+        "agreement": 389,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400288": {
+      "counts": {
+        "agreement": 389,
+        "different": 54,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400289": {
+      "counts": {
+        "agreement": 390,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400290": {
+      "counts": {
+        "agreement": 437,
+        "different": 75,
+        "incomplete": 10,
+        "unmatched_id": 113
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400296": {
+      "counts": {
+        "agreement": 346,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400299": {
+      "counts": {
+        "agreement": 421,
+        "different": 83,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400305": {
+      "counts": {
+        "agreement": 420,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400307": {
+      "counts": {
+        "agreement": 397,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 118
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400310": {
+      "counts": {
+        "agreement": 441,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 5,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400313": {
+      "counts": {
+        "agreement": 405,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400314": {
+      "counts": {
+        "agreement": 375,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 74
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400315": {
+      "counts": {
+        "agreement": 400,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400319": {
+      "counts": {
+        "agreement": 387,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 107
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400322": {
+      "counts": {
+        "agreement": 382,
+        "different": 53,
+        "identity_unverified": 1,
+        "incomplete": 9,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400326": {
+      "counts": {
+        "agreement": 389,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": "clock/period regression at action 585",
+      "status": "quarantined",
+      "unlocated_critical_issues": []
+    },
+    "0022400329": {
+      "counts": {
+        "agreement": 426,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400332": {
+      "counts": {
+        "agreement": 398,
+        "different": 84,
+        "incomplete": 8,
+        "unmatched_id": 117
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400334": {
+      "counts": {
+        "agreement": 419,
+        "different": 78,
+        "incomplete": 10,
+        "unmatched_id": 109
+      },
+      "critical_action_count": 1,
+      "error": "clock/period regression at action 758",
+      "status": "quarantined",
+      "unlocated_critical_issues": []
+    },
+    "0022400337": {
+      "counts": {
+        "agreement": 398,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400345": {
+      "counts": {
+        "agreement": 424,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400346": {
+      "counts": {
+        "agreement": 370,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400350": {
+      "counts": {
+        "agreement": 422,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400353": {
+      "counts": {
+        "agreement": 437,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 106
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400358": {
+      "counts": {
+        "agreement": 365,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400359": {
+      "counts": {
+        "agreement": 361,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400360": {
+      "counts": {
+        "agreement": 425,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400362": {
+      "counts": {
+        "agreement": 424,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400364": {
+      "counts": {
+        "agreement": 402,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400366": {
+      "counts": {
+        "agreement": 398,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400368": {
+      "counts": {
+        "agreement": 371,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400369": {
+      "counts": {
+        "agreement": 380,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400370": {
+      "counts": {
+        "agreement": 434,
+        "different": 84,
+        "incomplete": 10,
+        "unmatched_id": 124
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400373": {
+      "counts": {
+        "agreement": 358,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400384": {
+      "counts": {
+        "agreement": 379,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400386": {
+      "counts": {
+        "agreement": 366,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400390": {
+      "counts": {
+        "agreement": 449,
+        "different": 83,
+        "incomplete": 10,
+        "unmatched_id": 112
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400397": {
+      "counts": {
+        "agreement": 400,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 78
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400400": {
+      "counts": {
+        "agreement": 411,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 115
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400402": {
+      "counts": {
+        "agreement": 347,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400413": {
+      "counts": {
+        "agreement": 381,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400414": {
+      "counts": {
+        "agreement": 455,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400415": {
+      "counts": {
+        "agreement": 368,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400416": {
+      "counts": {
+        "agreement": 400,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400419": {
+      "counts": {
+        "agreement": 385,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 81
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400421": {
+      "counts": {
+        "agreement": 370,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400422": {
+      "counts": {
+        "agreement": 370,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 80
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400424": {
+      "counts": {
+        "agreement": 387,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400430": {
+      "counts": {
+        "agreement": 369,
+        "different": 85,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400431": {
+      "counts": {
+        "agreement": 399,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400432": {
+      "counts": {
+        "agreement": 405,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 79
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400433": {
+      "counts": {
+        "agreement": 419,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400436": {
+      "counts": {
+        "agreement": 392,
+        "different": 58,
+        "incomplete": 8,
+        "unmatched_id": 86
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400439": {
+      "counts": {
+        "agreement": 404,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 81
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400441": {
+      "counts": {
+        "agreement": 397,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 72
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400449": {
+      "counts": {
+        "agreement": 348,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400450": {
+      "counts": {
+        "agreement": 405,
+        "different": 84,
+        "incomplete": 8,
+        "unmatched_id": 79
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400453": {
+      "counts": {
+        "agreement": 453,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 117
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400460": {
+      "counts": {
+        "agreement": 363,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 115
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400461": {
+      "counts": {
+        "agreement": 379,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400464": {
+      "counts": {
+        "agreement": 327,
+        "different": 54,
+        "incomplete": 8,
+        "unmatched_id": 72
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400465": {
+      "counts": {
+        "agreement": 406,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400466": {
+      "counts": {
+        "agreement": 346,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400467": {
+      "counts": {
+        "agreement": 355,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400468": {
+      "counts": {
+        "agreement": 364,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 75
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400475": {
+      "counts": {
+        "agreement": 367,
+        "different": 80,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400476": {
+      "counts": {
+        "agreement": 421,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400481": {
+      "counts": {
+        "agreement": 375,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 78
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400483": {
+      "counts": {
+        "agreement": 327,
+        "different": 84,
+        "incomplete": 8,
+        "unmatched_id": 74
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400484": {
+      "counts": {
+        "agreement": 415,
+        "different": 91,
+        "incomplete": 10,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400485": {
+      "counts": {
+        "agreement": 386,
+        "different": 57,
+        "incomplete": 8,
+        "unmatched_id": 96
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400486": {
+      "counts": {
+        "agreement": 364,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400491": {
+      "counts": {
+        "agreement": 389,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400495": {
+      "counts": {
+        "agreement": 375,
+        "different": 66,
+        "incomplete": 9,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400501": {
+      "counts": {
+        "agreement": 440,
+        "different": 94,
+        "incomplete": 12,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400503": {
+      "counts": {
+        "agreement": 390,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400508": {
+      "counts": {
+        "agreement": 347,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400511": {
+      "counts": {
+        "agreement": 370,
+        "different": 58,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400512": {
+      "counts": {
+        "agreement": 370,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400513": {
+      "counts": {
+        "agreement": 359,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400518": {
+      "counts": {
+        "agreement": 374,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 118
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400520": {
+      "counts": {
+        "agreement": 481,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 133
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400521": {
+      "counts": {
+        "agreement": 409,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 96
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400522": {
+      "counts": {
+        "agreement": 359,
+        "different": 59,
+        "incomplete": 8,
+        "unmatched_id": 109
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400523": {
+      "counts": {
+        "agreement": 356,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400528": {
+      "counts": {
+        "agreement": 367,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400532": {
+      "counts": {
+        "agreement": 378,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400536": {
+      "counts": {
+        "agreement": 391,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400543": {
+      "counts": {
+        "agreement": 372,
+        "different": 85,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400545": {
+      "counts": {
+        "agreement": 416,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400546": {
+      "counts": {
+        "agreement": 419,
+        "different": 83,
+        "incomplete": 10,
+        "unmatched_id": 96
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400551": {
+      "counts": {
+        "agreement": 424,
+        "different": 53,
+        "incomplete": 8,
+        "unmatched_id": 128
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400552": {
+      "counts": {
+        "agreement": 381,
+        "different": 59,
+        "incomplete": 8,
+        "unmatched_id": 110
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400556": {
+      "counts": {
+        "agreement": 403,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400557": {
+      "counts": {
+        "agreement": 396,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400561": {
+      "counts": {
+        "agreement": 369,
+        "different": 57,
+        "incomplete": 10,
+        "unmatched_id": 70
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400567": {
+      "counts": {
+        "agreement": 394,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 112
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400571": {
+      "counts": {
+        "agreement": 382,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 78
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400572": {
+      "counts": {
+        "agreement": 384,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400573": {
+      "counts": {
+        "agreement": 409,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400574": {
+      "counts": {
+        "agreement": 364,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400575": {
+      "counts": {
+        "agreement": 359,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 78
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400576": {
+      "counts": {
+        "agreement": 385,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400583": {
+      "counts": {
+        "agreement": 378,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400584": {
+      "counts": {
+        "agreement": 382,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400586": {
+      "counts": {
+        "agreement": 445,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400588": {
+      "counts": {
+        "agreement": 388,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400592": {
+      "counts": {
+        "agreement": 342,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 77
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400594": {
+      "counts": {
+        "agreement": 362,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 75
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400597": {
+      "counts": {
+        "agreement": 387,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400600": {
+      "counts": {
+        "agreement": 382,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400604": {
+      "counts": {
+        "agreement": 337,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400605": {
+      "counts": {
+        "agreement": 427,
+        "different": 90,
+        "incomplete": 10,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400611": {
+      "counts": {
+        "agreement": 391,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 80
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400615": {
+      "counts": {
+        "agreement": 428,
+        "different": 59,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400616": {
+      "counts": {
+        "agreement": 422,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 110
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400622": {
+      "counts": {
+        "agreement": 398,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 121
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400623": {
+      "counts": {
+        "agreement": 398,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400624": {
+      "counts": {
+        "agreement": 370,
+        "different": 85,
+        "incomplete": 8,
+        "unmatched_id": 73
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400625": {
+      "counts": {
+        "agreement": 420,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 121
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400626": {
+      "counts": {
+        "agreement": 423,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400631": {
+      "counts": {
+        "agreement": 397,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400633": {
+      "counts": {
+        "agreement": 404,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 114
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400634": {
+      "counts": {
+        "agreement": 372,
+        "different": 55,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400636": {
+      "counts": {
+        "agreement": 381,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400638": {
+      "counts": {
+        "agreement": 432,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 109
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400639": {
+      "counts": {
+        "agreement": 408,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400643": {
+      "counts": {
+        "agreement": 408,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400647": {
+      "counts": {
+        "agreement": 397,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400648": {
+      "counts": {
+        "agreement": 380,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400649": {
+      "counts": {
+        "agreement": 378,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400651": {
+      "counts": {
+        "agreement": 403,
+        "different": 59,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400653": {
+      "counts": {
+        "agreement": 416,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 115
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400656": {
+      "counts": {
+        "agreement": 402,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400658": {
+      "counts": {
+        "agreement": 361,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400659": {
+      "counts": {
+        "agreement": 356,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400660": {
+      "counts": {
+        "agreement": 358,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400662": {
+      "counts": {
+        "agreement": 382,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400664": {
+      "counts": {
+        "agreement": 401,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400665": {
+      "counts": {
+        "agreement": 399,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 96
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400668": {
+      "counts": {
+        "agreement": 345,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 57
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400669": {
+      "counts": {
+        "agreement": 350,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 74
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400670": {
+      "counts": {
+        "agreement": 402,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400675": {
+      "counts": {
+        "agreement": 381,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400676": {
+      "counts": {
+        "agreement": 434,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 105
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400678": {
+      "counts": {
+        "agreement": 383,
+        "different": 54,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400680": {
+      "counts": {
+        "agreement": 398,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 114
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400686": {
+      "counts": {
+        "agreement": 416,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400687": {
+      "counts": {
+        "agreement": 394,
+        "different": 84,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400695": {
+      "counts": {
+        "agreement": 374,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400698": {
+      "counts": {
+        "agreement": 332,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 62
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400701": {
+      "counts": {
+        "agreement": 406,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400702": {
+      "counts": {
+        "agreement": 440,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400705": {
+      "counts": {
+        "agreement": 362,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400718": {
+      "counts": {
+        "agreement": 440,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400725": {
+      "counts": {
+        "agreement": 434,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 96
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400726": {
+      "counts": {
+        "agreement": 389,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 115
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400727": {
+      "counts": {
+        "agreement": 375,
+        "different": 53,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400729": {
+      "counts": {
+        "agreement": 402,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400730": {
+      "counts": {
+        "agreement": 381,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400737": {
+      "counts": {
+        "agreement": 387,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400739": {
+      "counts": {
+        "agreement": 392,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400745": {
+      "counts": {
+        "agreement": 410,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400746": {
+      "counts": {
+        "agreement": 437,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 106
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400747": {
+      "counts": {
+        "agreement": 394,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400749": {
+      "counts": {
+        "agreement": 362,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 81
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400752": {
+      "counts": {
+        "agreement": 359,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 81
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400753": {
+      "counts": {
+        "agreement": 382,
+        "different": 91,
+        "incomplete": 8,
+        "unmatched_id": 80
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400755": {
+      "counts": {
+        "agreement": 418,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400756": {
+      "counts": {
+        "agreement": 365,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400758": {
+      "counts": {
+        "agreement": 396,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400768": {
+      "counts": {
+        "agreement": 377,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400769": {
+      "counts": {
+        "agreement": 373,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400772": {
+      "counts": {
+        "agreement": 388,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 132
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400780": {
+      "counts": {
+        "agreement": 393,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400783": {
+      "counts": {
+        "agreement": 393,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 106
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400788": {
+      "counts": {
+        "agreement": 416,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 124
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400789": {
+      "counts": {
+        "agreement": 353,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 80
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400792": {
+      "counts": {
+        "agreement": 392,
+        "different": 92,
+        "incomplete": 10,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400795": {
+      "counts": {
+        "agreement": 369,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400798": {
+      "counts": {
+        "agreement": 428,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400801": {
+      "counts": {
+        "agreement": 408,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400807": {
+      "counts": {
+        "agreement": 366,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400808": {
+      "counts": {
+        "agreement": 394,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400812": {
+      "counts": {
+        "agreement": 386,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400813": {
+      "counts": {
+        "agreement": 391,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400814": {
+      "counts": {
+        "agreement": 448,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 117
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400817": {
+      "counts": {
+        "agreement": 369,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 70
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400819": {
+      "counts": {
+        "agreement": 497,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 124
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400821": {
+      "counts": {
+        "agreement": 404,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400823": {
+      "counts": {
+        "agreement": 422,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400824": {
+      "counts": {
+        "agreement": 413,
+        "different": 54,
+        "incomplete": 8,
+        "unmatched_id": 113
+      },
+      "critical_action_count": 9,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400831": {
+      "counts": {
+        "agreement": 384,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400833": {
+      "counts": {
+        "agreement": 416,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 107
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400834": {
+      "counts": {
+        "agreement": 400,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 110
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400835": {
+      "counts": {
+        "agreement": 371,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 106
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400839": {
+      "counts": {
+        "agreement": 467,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 112
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400842": {
+      "counts": {
+        "agreement": 359,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 86
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400845": {
+      "counts": {
+        "agreement": 407,
+        "different": 58,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400850": {
+      "counts": {
+        "agreement": 401,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400853": {
+      "counts": {
+        "agreement": 412,
+        "different": 57,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400859": {
+      "counts": {
+        "agreement": 385,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400861": {
+      "counts": {
+        "agreement": 434,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 119
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400862": {
+      "counts": {
+        "agreement": 375,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400867": {
+      "counts": {
+        "agreement": 477,
+        "different": 77,
+        "incomplete": 10,
+        "unmatched_id": 107
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400868": {
+      "counts": {
+        "agreement": 367,
+        "different": 66,
+        "incomplete": 9,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400869": {
+      "counts": {
+        "agreement": 365,
+        "different": 69,
+        "incomplete": 10,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400873": {
+      "counts": {
+        "agreement": 370,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 5,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400875": {
+      "counts": {
+        "agreement": 414,
+        "different": 88,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400877": {
+      "counts": {
+        "agreement": 348,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 79
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400878": {
+      "counts": {
+        "agreement": 432,
+        "different": 51,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400880": {
+      "counts": {
+        "agreement": 332,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 81
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400883": {
+      "counts": {
+        "agreement": 419,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400884": {
+      "counts": {
+        "agreement": 390,
+        "different": 83,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400887": {
+      "counts": {
+        "agreement": 365,
+        "different": 61,
+        "incomplete": 9,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400890": {
+      "counts": {
+        "agreement": 391,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400891": {
+      "counts": {
+        "agreement": 358,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 74
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400893": {
+      "counts": {
+        "agreement": 375,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400895": {
+      "counts": {
+        "agreement": 389,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 108
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400900": {
+      "counts": {
+        "agreement": 367,
+        "different": 59,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400902": {
+      "counts": {
+        "agreement": 399,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 100
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400904": {
+      "counts": {
+        "agreement": 445,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 120
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400906": {
+      "counts": {
+        "agreement": 400,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 114
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400908": {
+      "counts": {
+        "agreement": 372,
+        "different": 85,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400909": {
+      "counts": {
+        "agreement": 383,
+        "different": 67,
+        "incomplete": 10,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400910": {
+      "counts": {
+        "agreement": 384,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400912": {
+      "counts": {
+        "agreement": 381,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400914": {
+      "counts": {
+        "agreement": 442,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 113
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400917": {
+      "counts": {
+        "agreement": 344,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 81
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400918": {
+      "counts": {
+        "agreement": 347,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 76
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400919": {
+      "counts": {
+        "agreement": 467,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 119
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400923": {
+      "counts": {
+        "agreement": 425,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 113
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400939": {
+      "counts": {
+        "agreement": 395,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400940": {
+      "counts": {
+        "agreement": 375,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400941": {
+      "counts": {
+        "agreement": 395,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400945": {
+      "counts": {
+        "agreement": 408,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 114
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400954": {
+      "counts": {
+        "agreement": 418,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400956": {
+      "counts": {
+        "agreement": 388,
+        "different": 72,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400957": {
+      "counts": {
+        "agreement": 362,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 96
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400958": {
+      "counts": {
+        "agreement": 331,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 77
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400962": {
+      "counts": {
+        "agreement": 406,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400963": {
+      "counts": {
+        "agreement": 385,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400965": {
+      "counts": {
+        "agreement": 405,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400966": {
+      "counts": {
+        "agreement": 422,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400967": {
+      "counts": {
+        "agreement": 355,
+        "different": 57,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400970": {
+      "counts": {
+        "agreement": 418,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400972": {
+      "counts": {
+        "agreement": 360,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400982": {
+      "counts": {
+        "agreement": 390,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400983": {
+      "counts": {
+        "agreement": 386,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400984": {
+      "counts": {
+        "agreement": 336,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400985": {
+      "counts": {
+        "agreement": 447,
+        "different": 69,
+        "incomplete": 10,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400986": {
+      "counts": {
+        "agreement": 463,
+        "different": 74,
+        "incomplete": 10,
+        "unmatched_id": 117
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400988": {
+      "counts": {
+        "agreement": 355,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400991": {
+      "counts": {
+        "agreement": 366,
+        "different": 74,
+        "incomplete": 10,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400994": {
+      "counts": {
+        "agreement": 343,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 77
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400996": {
+      "counts": {
+        "agreement": 378,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 86
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022400999": {
+      "counts": {
+        "agreement": 390,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401000": {
+      "counts": {
+        "agreement": 371,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401008": {
+      "counts": {
+        "agreement": 422,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 113
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401011": {
+      "counts": {
+        "agreement": 432,
+        "different": 86,
+        "incomplete": 10,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401012": {
+      "counts": {
+        "agreement": 376,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401013": {
+      "counts": {
+        "agreement": 381,
+        "different": 61,
+        "incomplete": 8,
+        "unmatched_id": 80
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401016": {
+      "counts": {
+        "agreement": 364,
+        "different": 55,
+        "incomplete": 8,
+        "unmatched_id": 92
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401022": {
+      "counts": {
+        "agreement": 399,
+        "different": 48,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401023": {
+      "counts": {
+        "agreement": 370,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 114
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401024": {
+      "counts": {
+        "agreement": 389,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 94
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401029": {
+      "counts": {
+        "agreement": 406,
+        "different": 51,
+        "incomplete": 8,
+        "unmatched_id": 83
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401030": {
+      "counts": {
+        "agreement": 403,
+        "different": 81,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401033": {
+      "counts": {
+        "agreement": 388,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401041": {
+      "counts": {
+        "agreement": 370,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 102
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401042": {
+      "counts": {
+        "agreement": 394,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 77
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401043": {
+      "counts": {
+        "agreement": 369,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401044": {
+      "counts": {
+        "agreement": 337,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 79
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401049": {
+      "counts": {
+        "agreement": 421,
+        "different": 71,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401054": {
+      "counts": {
+        "agreement": 407,
+        "different": 86,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401059": {
+      "counts": {
+        "agreement": 406,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401067": {
+      "counts": {
+        "agreement": 440,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401068": {
+      "counts": {
+        "agreement": 373,
+        "different": 79,
+        "incomplete": 8,
+        "unmatched_id": 73
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401091": {
+      "counts": {
+        "agreement": 351,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401092": {
+      "counts": {
+        "agreement": 378,
+        "different": 82,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401093": {
+      "counts": {
+        "agreement": 370,
+        "different": 87,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401094": {
+      "counts": {
+        "agreement": 389,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 90
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401095": {
+      "counts": {
+        "agreement": 396,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 89
+      },
+      "critical_action_count": 4,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401097": {
+      "counts": {
+        "agreement": 442,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 113
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401098": {
+      "counts": {
+        "agreement": 380,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401100": {
+      "counts": {
+        "agreement": 423,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 111
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401103": {
+      "counts": {
+        "agreement": 385,
+        "different": 57,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401112": {
+      "counts": {
+        "agreement": 356,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401121": {
+      "counts": {
+        "agreement": 392,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 98
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401126": {
+      "counts": {
+        "agreement": 385,
+        "different": 57,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401129": {
+      "counts": {
+        "agreement": 418,
+        "different": 86,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401134": {
+      "counts": {
+        "agreement": 393,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 109
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401135": {
+      "counts": {
+        "agreement": 345,
+        "different": 69,
+        "incomplete": 8,
+        "unmatched_id": 84
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401139": {
+      "counts": {
+        "agreement": 409,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 95
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401141": {
+      "counts": {
+        "agreement": 351,
+        "different": 62,
+        "incomplete": 8,
+        "unmatched_id": 91
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401143": {
+      "counts": {
+        "agreement": 405,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 125
+      },
+      "critical_action_count": 3,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401145": {
+      "counts": {
+        "agreement": 372,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 77
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401146": {
+      "counts": {
+        "agreement": 381,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401152": {
+      "counts": {
+        "agreement": 357,
+        "different": 68,
+        "incomplete": 8,
+        "unmatched_id": 65
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401153": {
+      "counts": {
+        "agreement": 434,
+        "different": 65,
+        "incomplete": 8,
+        "unmatched_id": 104
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401156": {
+      "counts": {
+        "agreement": 310,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 71
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401157": {
+      "counts": {
+        "agreement": 418,
+        "different": 76,
+        "incomplete": 8,
+        "unmatched_id": 80
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401159": {
+      "counts": {
+        "agreement": 375,
+        "different": 60,
+        "incomplete": 8,
+        "unmatched_id": 106
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401160": {
+      "counts": {
+        "agreement": 350,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 88
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401171": {
+      "counts": {
+        "agreement": 387,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 87
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401172": {
+      "counts": {
+        "agreement": 413,
+        "different": 59,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401176": {
+      "counts": {
+        "agreement": 370,
+        "different": 78,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401184": {
+      "counts": {
+        "agreement": 347,
+        "different": 67,
+        "incomplete": 8,
+        "unmatched_id": 73
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401187": {
+      "counts": {
+        "agreement": 365,
+        "different": 73,
+        "incomplete": 8,
+        "unmatched_id": 101
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401192": {
+      "counts": {
+        "agreement": 374,
+        "different": 71,
+        "incomplete": 10,
+        "unmatched_id": 74
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401199": {
+      "counts": {
+        "agreement": 385,
+        "different": 63,
+        "incomplete": 8,
+        "unmatched_id": 82
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401206": {
+      "counts": {
+        "agreement": 379,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 86
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401208": {
+      "counts": {
+        "agreement": 401,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 99
+      },
+      "critical_action_count": 2,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401217": {
+      "counts": {
+        "agreement": 395,
+        "different": 80,
+        "incomplete": 8,
+        "unmatched_id": 93
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401219": {
+      "counts": {
+        "agreement": 368,
+        "different": 74,
+        "incomplete": 8,
+        "unmatched_id": 85
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401221": {
+      "counts": {
+        "agreement": 424,
+        "different": 83,
+        "incomplete": 11,
+        "unmatched_id": 127
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401222": {
+      "counts": {
+        "agreement": 403,
+        "different": 66,
+        "incomplete": 8,
+        "unmatched_id": 124
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401223": {
+      "counts": {
+        "agreement": 419,
+        "different": 75,
+        "incomplete": 8,
+        "unmatched_id": 105
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401227": {
+      "counts": {
+        "agreement": 360,
+        "different": 70,
+        "incomplete": 8,
+        "unmatched_id": 79
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401228": {
+      "counts": {
+        "agreement": 389,
+        "different": 64,
+        "incomplete": 8,
+        "unmatched_id": 103
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    },
+    "0022401230": {
+      "counts": {
+        "agreement": 416,
+        "different": 77,
+        "incomplete": 8,
+        "unmatched_id": 97
+      },
+      "critical_action_count": 1,
+      "error": null,
+      "status": "provisional_reconstruction",
+      "unlocated_critical_issues": []
+    }
+  },
+  "limits": "Unique IDs require order or timestamp corroboration. Missing/zero team and offense IDs remain unknown. All selected-game CDN rows compared; mobile-only rows not enumerated. No source correction, independent truth, model eligibility or audit resolution is inferred.",
+  "missing_mobile_games": [],
+  "paired_rows_sha256": "f747ee29cf7861625410c7c847725ec98cefac270d844c155b7dbca47719d1ee",
+  "schema_version": "cross-feed-diagnostic-v1",
+  "season": "2024-25",
+  "selected_critical_games": 431,
+  "sources": {
+    "cdnnba_2024.tar.xz": {
+      "bytes": 18886652,
+      "file": "cdnnba_2024.tar.xz",
+      "sha256": "35a82e6b29821adb22b8474dea8c51e08847d8e00690d1d5ffde7d000e0087d1",
+      "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/cdnnba_2024.tar.xz"
+    },
+    "datanba_2024.tar.xz": {
+      "bytes": 11344636,
+      "file": "datanba_2024.tar.xz",
+      "sha256": "79f698e66439e3e43bdb6299eb4da7897b5e007985193350da280c8a4ec76e60",
+      "url": "https://raw.githubusercontent.com/shufinskiy/nba_data/e829d4678be1e075f99e5d41a1c5f97089be446b/datasets/datanba_2024.tar.xz"
+    }
+  },
+  "status": "DIAGNOSTIC_AUDIT_BLOCKED"
+}
