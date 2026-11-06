@@ -1,0 +1,657 @@
+{
+  "browser": "Codex in-app browser",
+  "capture_method": "Exact JSON exported from CUA observation state and extracted from the matching function-call output; no other transcript content retained",
+  "date": "2026-11-06",
+  "limits": [
+    "Opening playback only; continuous coverage and independent annotation remain unverified",
+    "Account-, region- and time-dependent access; no promise of future playback",
+    "Failed/incomplete initial reads are preserved beside successful followups",
+    "Default stream labels remain unknown where no player header was captured"
+  ],
+  "observations": [
+    {
+      "checked_at": "2026-11-06T17:36:51.976Z",
+      "final_url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000021",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "National Broadcast",
+        "Spanish Broadcast",
+        "Local Home Broadcast",
+        "Mobile Broadcast",
+        "EMEA Primetime Broadcasts",
+        "Portuguese Broadcast",
+        "Local Away Broadcast"
+      ],
+      "official_url": "https://www.nba.com/game/atl-vs-mem-0022000021",
+      "page_title": "Atlanta Hawks vs Memphis Grizzlies Dec 26, 2020 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 3.360074,
+        "duration_seconds": 6437.5811,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "status": "OPENING_PLAYBACK_VERIFIED",
+      "stream_label": null,
+      "stream_label_limit": "Default feed not individually identified; Full Games tab observed"
+    },
+    {
+      "checked_at": "2026-11-06T17:37:06.478Z",
+      "final_url": "https://www.nba.com/game/por-vs-lal-0022000045?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": false,
+      "game_id": "0022000045",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "National Broadcast",
+        "National Broadcast",
+        "Mobile Broadcast",
+        "Portuguese Broadcast",
+        "Korean Broadcast",
+        "Local Away Broadcast",
+        "Sideline Stream Broadcast"
+      ],
+      "official_url": "https://www.nba.com/game/por-vs-lal-0022000045",
+      "page_title": "Portland Trail Blazers vs Los Angeles Lakers Dec 28, 2020 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.076736,
+        "duration_seconds": 6228.0719,
+        "media_error": null,
+        "paused": true,
+        "ready_state": 4
+      },
+      "status": "NOT_VERIFIED",
+      "stream_label": null,
+      "stream_label_limit": "Default feed not individually identified; Full Games tab observed"
+    },
+    {
+      "checked_at": "2026-11-06T17:37:16.605Z",
+      "final_url": "https://www.nba.com/game/chi-vs-was-0022000063?watchFullGame=true",
+      "full_coverage_verified": false,
+      "game_id": "0022000063",
+      "independent_reviews_completed": 0,
+      "official_url": "https://www.nba.com/game/chi-vs-was-0022000063",
+      "page_title": "Chicago Bulls vs Washington Wizards Dec 31, 2020 Game Summary | NBA.com",
+      "reason": "Error: Timed out after 3000ms waiting for selector internal:role=button[name=\"Settings\"s]: Browser U",
+      "status": "NOT_VERIFIED"
+    },
+    {
+      "final_url": "https://www.nba.com/game/chi-vs-was-0022000063?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000063",
+      "independent_reviews_completed": 0,
+      "kind": "followup_after_initial_player_load_timeout",
+      "listed_full_game_feeds": [
+        "Mobile Broadcast",
+        "Portuguese Broadcast",
+        "Local Home Broadcast",
+        "Local Away Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:38:19.016Z",
+      "official_url": "https://www.nba.com/game/chi-vs-was-0022000063",
+      "page_title": "Chicago Bulls vs Washington Wizards Dec 31, 2020 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 53.965365,
+        "duration_seconds": 7114.2405,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "BULLS @ WIZARDS\n\nMobile Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:39:21.517Z",
+      "final_url": "https://www.nba.com/game/por-vs-lal-0022000045?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000045",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "National Broadcast",
+        "National Broadcast",
+        "Mobile Broadcast",
+        "Portuguese Broadcast",
+        "Korean Broadcast",
+        "Local Away Broadcast",
+        "Sideline Stream Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:39:27.468Z",
+      "official_url": "https://www.nba.com/game/por-vs-lal-0022000045",
+      "page_title": "Portland Trail Blazers vs Los Angeles Lakers Dec 28, 2020 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.538076,
+        "duration_seconds": 6228.0719,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "TRAIL BLAZERS @ LAKERS\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:39:58.605Z",
+      "final_url": "https://www.nba.com/game/tor-vs-nop-0022000084?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000084",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Away Broadcast",
+        "Portuguese Broadcast",
+        "Korean Broadcast",
+        "Local Home Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:40:06.473Z",
+      "official_url": "https://www.nba.com/game/tor-vs-nop-0022000084",
+      "page_title": "Toronto Raptors vs New Orleans Pelicans Jan 2, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.485219,
+        "duration_seconds": 6698.692,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "RAPTORS @ PELICANS\n\nLocal Away Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:40:06.474Z",
+      "final_url": "https://www.nba.com/game/lac-vs-phx-0022000091?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000091",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Mobile Broadcast",
+        "Local Away Broadcast",
+        "Local Home Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:40:15.356Z",
+      "official_url": "https://www.nba.com/game/lac-vs-phx-0022000091",
+      "page_title": "LA Clippers vs Phoenix Suns Jan 3, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.608255,
+        "duration_seconds": 6547.6244,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "CLIPPERS @ SUNS\n\nMobile Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:40:15.357Z",
+      "final_url": "https://www.nba.com/game/okc-vs-mia-0022000096?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000096",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Away Broadcast",
+        "Mobile Broadcast",
+        "Local Home Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:40:23.194Z",
+      "official_url": "https://www.nba.com/game/okc-vs-mia-0022000096",
+      "page_title": "Oklahoma City Thunder vs Miami Heat Jan 4, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.780058,
+        "duration_seconds": 6248.242,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "THUNDER @ HEAT\n\nLocal Away Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:40:23.196Z",
+      "final_url": "https://www.nba.com/game/uta-vs-nyk-0022000112?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000112",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Mobile Broadcast",
+        "Local Home Broadcast",
+        "Local Away Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:40:30.371Z",
+      "official_url": "https://www.nba.com/game/uta-vs-nyk-0022000112",
+      "page_title": "Utah Jazz vs New York Knicks Jan 6, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.955069,
+        "duration_seconds": 6350.4274,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "JAZZ @ KNICKS\n\nMobile Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:41:13.055Z",
+      "final_url": "https://www.nba.com/game/cle-vs-mil-0022000137?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000137",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Away Broadcast",
+        "Local Home Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:41:26.789Z",
+      "official_url": "https://www.nba.com/game/cle-vs-mil-0022000137",
+      "page_title": "Cleveland Cavaliers vs Milwaukee Bucks Jan 9, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 2.142483,
+        "duration_seconds": 6078.4223,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "CAVALIERS @ BUCKS\n\nLocal Away Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:41:26.830Z",
+      "final_url": "https://www.nba.com/game/uta-vs-was-0022000166?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000166",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "Local Away Broadcast",
+        "National Broadcast",
+        "Portuguese Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:41:39.451Z",
+      "official_url": "https://www.nba.com/game/uta-vs-was-0022000166",
+      "page_title": "Utah Jazz vs Washington Wizards Mar 18, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 1.073923,
+        "duration_seconds": 6832.1921,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "JAZZ @ WIZARDS\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:41:39.454Z",
+      "final_url": "https://www.nba.com/game/nyk-vs-cle-0022000181?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000181",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Mobile Broadcast",
+        "Local Home Broadcast",
+        "Local Away Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:41:53.911Z",
+      "official_url": "https://www.nba.com/game/nyk-vs-cle-0022000181",
+      "page_title": "New York Knicks vs Cleveland Cavaliers Jan 15, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.085113,
+        "duration_seconds": 6185.2958,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "KNICKS @ CAVALIERS\n\nMobile Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:42:45.597Z",
+      "final_url": "https://www.nba.com/game/phi-vs-okc-0022000199?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000199",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "Mobile Broadcast",
+        "Local Away Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:42:54.054Z",
+      "official_url": "https://www.nba.com/game/phi-vs-okc-0022000199",
+      "page_title": "Philadelphia 76ers vs Oklahoma City Thunder Apr 10, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 1.41003,
+        "duration_seconds": 5761.756,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "76ERS @ THUNDER\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:42:54.061Z",
+      "final_url": "https://www.nba.com/game/nop-vs-sac-0022000201?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000201",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "Local Away Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:43:02.384Z",
+      "official_url": "https://www.nba.com/game/nop-vs-sac-0022000201",
+      "page_title": "New Orleans Pelicans vs Sacramento Kings Jan 17, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 1.665375,
+        "duration_seconds": 6714.9916,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "PELICANS @ KINGS , JAN 17, 2021\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:43:02.385Z",
+      "final_url": "https://www.nba.com/game/min-vs-atl-0022000205?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000205",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Spanish Broadcast",
+        "Local Home Broadcast",
+        "Mobile Broadcast",
+        "Local Away Broadcast",
+        "National Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:43:10.959Z",
+      "official_url": "https://www.nba.com/game/min-vs-atl-0022000205",
+      "page_title": "Minnesota Timberwolves vs Atlanta Hawks Jan 18, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.267402,
+        "duration_seconds": 7599.5753,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "TIMBERWOLVES @ HAWKS\n\nSpanish Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:43:10.959Z",
+      "final_url": "https://www.nba.com/game/bos-vs-phi-0022000233?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": false,
+      "full_length_playback_verified": false,
+      "game_id": "0022000233",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [],
+      "observed_at": "2026-11-06T17:43:17.910Z",
+      "official_url": "https://www.nba.com/game/bos-vs-phi-0022000233",
+      "page_title": "Boston Celtics vs Philadelphia 76ers Jan 22, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.179147,
+        "duration_seconds": 6308.2853,
+        "media_error": null,
+        "paused": true,
+        "ready_state": 4
+      },
+      "player_header_text": "CELTICS @ 76ERS\n\nNational Broadcast",
+      "status": "NOT_VERIFIED"
+    },
+    {
+      "final_url": "https://www.nba.com/game/bos-vs-phi-0022000233?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000233",
+      "independent_reviews_completed": 0,
+      "kind": "followup_after_incomplete_first_read",
+      "listed_full_game_feeds": [
+        "National Broadcast",
+        "Spanish Broadcast",
+        "Portuguese Broadcast",
+        "Local Home Broadcast",
+        "Local Away Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:43:45.483Z",
+      "official_url": "https://www.nba.com/game/bos-vs-phi-0022000233",
+      "page_title": "Boston Celtics vs Philadelphia 76ers Jan 22, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.520578,
+        "duration_seconds": 6308.2853,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "CELTICS @ 76ERS\n\nNational Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:44:48.430Z",
+      "final_url": "https://www.nba.com/game/atl-vs-mil-0022000254?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000254",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Mobile Broadcast",
+        "Local Away Broadcast",
+        "National Broadcast",
+        "Local Home Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:44:55.650Z",
+      "official_url": "https://www.nba.com/game/atl-vs-mil-0022000254",
+      "page_title": "Atlanta Hawks vs Milwaukee Bucks Jan 24, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.553337,
+        "duration_seconds": 6351.8455,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "HAWKS @ BUCKS , JAN 24, 2021\n\nMobile Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:44:55.651Z",
+      "final_url": "https://www.nba.com/game/bos-vs-chi-0022000262?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000262",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "Local Away Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:45:05.072Z",
+      "official_url": "https://www.nba.com/game/bos-vs-chi-0022000262",
+      "page_title": "Boston Celtics vs Chicago Bulls Jan 25, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.651769,
+        "duration_seconds": 5545.2898,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "CELTICS @ BULLS\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:45:05.073Z",
+      "final_url": "https://www.nba.com/game/lac-vs-atl-0022000268?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000268",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "National Broadcast",
+        "Spanish Broadcast",
+        "Portuguese Broadcast",
+        "Mobile Broadcast",
+        "Local Home Broadcast",
+        "Local Away Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:45:14.021Z",
+      "official_url": "https://www.nba.com/game/lac-vs-atl-0022000268",
+      "page_title": "LA Clippers vs Atlanta Hawks Jan 26, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.743787,
+        "duration_seconds": 6034.4618,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "CLIPPERS @ HAWKS\n\nNational Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:45:14.021Z",
+      "final_url": "https://www.nba.com/game/min-vs-okc-0022000359?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000359",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "Local Away Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:45:22.082Z",
+      "official_url": "https://www.nba.com/game/min-vs-okc-0022000359",
+      "page_title": "Minnesota Timberwolves vs Oklahoma City Thunder Feb 6, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.650304,
+        "duration_seconds": 6199.7102,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "TIMBERWOLVES @ THUNDER , FEB 6, 2021\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:45:39.942Z",
+      "final_url": "https://www.nba.com/game/nyk-vs-was-0022000396?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000396",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "Mobile Broadcast",
+        "Local Away Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:45:48.789Z",
+      "official_url": "https://www.nba.com/game/nyk-vs-was-0022000396",
+      "page_title": "New York Knicks vs Washington Wizards Feb 12, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.967581,
+        "duration_seconds": 6190.601,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "KNICKS @ WIZARDS\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:45:48.790Z",
+      "final_url": "https://www.nba.com/game/ind-vs-atl-0022000407?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000407",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Away Broadcast",
+        "Mobile Broadcast",
+        "Local Home Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:45:57.735Z",
+      "official_url": "https://www.nba.com/game/ind-vs-atl-0022000407",
+      "page_title": "Indiana Pacers vs Atlanta Hawks Feb 13, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 1.254133,
+        "duration_seconds": 6164.6918,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "PACERS @ HAWKS\n\nLocal Away Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    },
+    {
+      "checked_at": "2026-11-06T17:45:57.737Z",
+      "final_url": "https://www.nba.com/game/sas-vs-cha-0022000414?watchFullGame=true",
+      "full_coverage_verified": false,
+      "full_games_selected": true,
+      "full_length_playback_verified": true,
+      "game_id": "0022000414",
+      "independent_reviews_completed": 0,
+      "listed_full_game_feeds": [
+        "Local Home Broadcast",
+        "Local Away Broadcast",
+        "Mobile Broadcast"
+      ],
+      "observed_at": "2026-11-06T17:46:05.502Z",
+      "official_url": "https://www.nba.com/game/sas-vs-cha-0022000414",
+      "page_title": "San Antonio Spurs vs Charlotte Hornets Feb 14, 2021 Game Summary | NBA.com",
+      "playback": {
+        "current_time_seconds": 0.715732,
+        "duration_seconds": 6036.0967,
+        "media_error": null,
+        "paused": false,
+        "ready_state": 4
+      },
+      "player_header_text": "SPURS @ HORNETS , FEB 14, 2021\n\nLocal Home Broadcast",
+      "status": "OPENING_PLAYBACK_VERIFIED"
+    }
+  ],
+  "recovery": {
+    "current_time_seconds": 3.848441,
+    "duration_seconds": 6199.5933,
+    "game_id": "0022400553",
+    "media_error": null,
+    "observation": "fresh_tab_visible_poster_playback_recovered",
+    "official_url": "https://www.nba.com/game/mia-vs-lac-0022400553",
+    "paused": false,
+    "ready_state": 4
+  },
+  "schema_version": "nba-access-ui-observations-v1"
+}
