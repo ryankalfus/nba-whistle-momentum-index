@@ -125,7 +125,7 @@ def promote_and_fit(*, feature_dir, audit_evidence, protocol, output, source_man
     promoted, gate = release.prepare_promotion(
         feature_dir, plan=audit_evidence.get("plan"), reviews=audit_evidence.get("reviews"),
         config=audit_evidence.get("config"), source_manifest=source_manifest, cache=cache,
-        schedule=schedule, metadata=metadata)
+        schedule=schedule, metadata=metadata, evidence_root=audit_evidence.get("evidence_root"))
     original = release.read_json(Path(feature_dir) / "manifest.json")
     rows = modeling._read_rows(sources.safe_path(Path(feature_dir), original["rows_file"]))
     evidence = {"plan": audit_evidence["plan"], "reviews": audit_evidence["reviews"],
@@ -151,7 +151,18 @@ def _promotion_main(argv):
     parser.add_argument("--metadata", nargs="+", type=Path, default=METADATA)
     args = parser.parse_args(argv)
     try:
-        result = promote_and_fit(feature_dir=args.features, audit_evidence=release.read_json(args.audit_evidence),
+        audit_evidence = release.read_json(args.audit_evidence)
+        if not isinstance(audit_evidence, dict):
+            raise ValueError("audit evidence object required")
+        path_base = audit_evidence.get("evidence_root_relative_to")
+        if path_base not in (None, "audit_evidence_file"):
+            raise ValueError("unknown annotation evidence path base")
+        if path_base == "audit_evidence_file":
+            root = Path(audit_evidence["evidence_root"])
+            if not root.is_absolute():
+                root = args.audit_evidence.parent / root
+            audit_evidence["evidence_root"] = str(root.resolve())
+        result = promote_and_fit(feature_dir=args.features, audit_evidence=audit_evidence,
                                  protocol=release.read_json(args.protocol), output=args.output,
                                  source_manifest=args.source_manifest, cache=args.cache,
                                  schedule=args.schedule, metadata=args.metadata)

@@ -1,0 +1,122 @@
+{
+  "assumption_limits": "Declared binomial game model; within-game dependence is not converted into independent possessions. No finite-population correction is used.",
+  "audit_gate": "BLOCKED",
+  "bound_method": "one_sided_Clopper_Pearson_binomial",
+  "date": "2026-11-06",
+  "estimand": "Probability a game contains any material reconstruction discrepancy; not per-possession error",
+  "freeze": {
+    "external_preregistration": null,
+    "final_protocol_packet_sha256": null,
+    "freeze_id": null,
+    "frozen": false
+  },
+  "implementation": {
+    "code_sha256": {
+      "audit.py": "4352e95bffad7640a10d0539ed562c0b7eef7c3e8b2d567fb1c3703d1a1b157e",
+      "possessions.py": "9ee7d5e81b5a99f0b42bf94e617269104bcb90e47f796af02fa4d0bb256d991f"
+    },
+    "parser_version": "canonical_candidate_v7",
+    "prepare_design_sha256": "fca8196271fbbe239f84cedd1ada937cb050b219af5ae02faf8e28cde12169b8",
+    "python": "3.14.7"
+  },
+  "inputs": {
+    "audit_plan.json": {
+      "bytes": 4166254,
+      "sha256": "f48cb8c663dfd27f6a0a8f90424f0012edc0196712f170cb6d8bfee14854ac95"
+    },
+    "inventory.json": {
+      "bytes": 5064865,
+      "sha256": "473e0ac45f96ba3c2c78e3cea43b8af4c33cf291ca26ec4ae89099cf7308d2fc"
+    },
+    "report.json": {
+      "bytes": 14794,
+      "sha256": "31ed644257686112632bfa6a8235c9d00d0664bd0e8c6e90e14cca3f1ab8cbc8"
+    }
+  },
+  "outputs": {
+    "audit_plan.json": {
+      "bytes": 4271162,
+      "sha256": "0993697bb897668454f94b27e8fd02f3d7f42683e846ebcbbdab2ef3dde7aff5"
+    },
+    "selected_games.json": {
+      "bytes": 140253,
+      "sha256": "93f984ebf1c67d5b42a279cbd437b956e74ab64fd537742f2feaad0321f854b4"
+    }
+  },
+  "pending": [
+    "Final protocol and packet hash freeze before annotation starts",
+    "Continuous footage coverage for every selected game",
+    "Two independent full-game annotations and required adjudication",
+    "Actual game-error bounds and gate evaluation; no completed annotations or eligibility created"
+  ],
+  "pilot": {
+    "hypothetical_zero_error_upper_bound": 0.2588655508930522,
+    "interpretation": "Original 14-game development pilot preserved; overlap is disclosed, with no claim that this frame is an unseen confirmatory evaluation cohort",
+    "membership_unchanged": true,
+    "overlap_with_new_random_ids": [
+      "0022301101"
+    ],
+    "overlap_with_new_union_ids": [
+      "0022000181",
+      "0022000254",
+      "0022000925",
+      "0022301101",
+      "0022301177"
+    ],
+    "plan_sha256": "4a3ca4b7e0ad25af20dab3c6b9163ec029a36f3194dad0da88b0f721ab8ee3e3",
+    "random_games": 10,
+    "selected_games": 14
+  },
+  "policy": {
+    "authority": "Delegated research-lead policy judgment after user authorized the recommendation",
+    "decision": "1% maximum game-level material-error rate at 95% one-sided confidence",
+    "qualification": "Policy choice, not a mathematical necessity or an external standard",
+    "reason": "Prefer a stricter population game-error tolerance for research credibility"
+  },
+  "reproduce": ".venv/bin/python research/audit_handoff_2026_11_06/prepare_design.py --output output/v2/audit-design-2026-11-06-replay",
+  "schema_version": "audit-design-evidence-v1",
+  "selection": {
+    "enriched_games": 4,
+    "enriched_reasons": {
+      "0022000181": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+      "0022000254": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+      "0022000925": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+      "0022301177": "Historical backward-clock quarantine; independently inspect event order and corrected source state."
+    },
+    "frame_games": 6084,
+    "frame_sha256": "007a243d5db45e77f083499dce0ee2c951032eb2d1b733129bf574520aeecb73",
+    "plan_sha256": "cdcf91dddbdb8137c78a1b7a7da25a5b9799a86c1585f83967ffd55bebdf1e04",
+    "random_denominator": 299,
+    "random_enriched_overlap_ids": [],
+    "random_games": 299,
+    "seed": 20261106,
+    "unique_selected_games": 303
+  },
+  "settings": {
+    "confidence": 0.95,
+    "max_game_error_rate": 0.01,
+    "min_random_games": 299,
+    "sample_assumption": "random_games_represent_declared_cohort"
+  },
+  "status": "DESIGN_SELECTED_FREEZE_PENDING",
+  "zero_error_design_comparisons": [
+    {
+      "max_game_error_rate": 0.01,
+      "minimum_random_games": 299,
+      "upper_bound_one_fewer_zero_errors": 0.010002432437677691,
+      "upper_bound_zero_errors": 0.009969146792899269
+    },
+    {
+      "max_game_error_rate": 0.05,
+      "minimum_random_games": 59,
+      "upper_bound_one_fewer_zero_errors": 0.050339338330420105,
+      "upper_bound_zero_errors": 0.04950760988822693
+    },
+    {
+      "max_game_error_rate": 0.1,
+      "minimum_random_games": 29,
+      "upper_bound_one_fewer_zero_errors": 0.10146573557272467,
+      "upper_bound_zero_errors": 0.0981446276772957
+    }
+  ]
+}

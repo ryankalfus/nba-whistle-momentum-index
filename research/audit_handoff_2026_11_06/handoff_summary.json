@@ -1,0 +1,91 @@
+{
+  "audit_freeze": {
+    "path": "research/audit_handoff_2026_11_06/audit_config.frozen.json",
+    "scope": "audit sampling/tolerance and packet/protocol only; no external preregistration or model-fit authorization",
+    "sha256": "bb250a6b2a875de2994b33ee7217ba325a892e85b3cd422f327ad41c1f3856fd"
+  },
+  "collection": {
+    "completed_game_entries": 0,
+    "failed_submissions": 606,
+    "path": "output/v2/reviewer-handoff-empty-collection-2026-11-06/collection_report.json",
+    "reasons": [
+      "explicit_human_reviewer_required",
+      "metadata_audit_gate_blocked"
+    ],
+    "status": "BLOCKED"
+  },
+  "date": "2026-11-06",
+  "design_receipt_status": "design.json is the earlier pre-freeze selection receipt; audit_config.frozen.json is the later scoped freeze",
+  "eligible_games": 0,
+  "independently_validated_games": 0,
+  "limits": [
+    "Files and structure verified; no reviewer identities or film truth authenticated",
+    "No new parser semantics justified by saved evidence",
+    "Full continuous footage, two independent humans and adjudication remain outstanding",
+    "Full study freeze, meaningful gain and unused evaluation evidence remain separate requirements"
+  ],
+  "metadata_gate_summary": "research/audit_handoff_2026_11_06/audit_gate.blocked.summary.json",
+  "new_plan_games_with_prior_access_observations": 5,
+  "new_plan_other_games_access": "not verified in this handoff",
+  "packets": [
+    {
+      "bound_ledger_bytes_both_reviewers": 30266490,
+      "continuous_coverage": "unverified",
+      "delivered_kit_hashes_verified": true,
+      "empty_annotation_files": 28,
+      "games": 14,
+      "human_completed_games": 0,
+      "manifest_sha256": "dcb66ae2370111854e5e5eb0e528352e5f886502069db1fadb9201a0ee639939",
+      "path": "output/v2/reviewer-handoff-pilot-2026-11-06",
+      "protocol_sha256": "c1457f5722247649933f1c527fa2be7ab67632bc9bcb10fbc6bbdab4b78c5a93",
+      "raw_events_per_reviewer": 7715
+    },
+    {
+      "bound_ledger_bytes_both_reviewers": 670490910,
+      "continuous_coverage": "unverified",
+      "delivered_kit_hashes_verified": true,
+      "empty_annotation_files": 606,
+      "games": 303,
+      "human_completed_games": 0,
+      "manifest_sha256": "0f58343c7346d9c694a72d516fe9a95feed700fcddbcae745fb05e040e9ca833",
+      "path": "output/v2/reviewer-handoff-audit-2026-11-06",
+      "protocol_sha256": "c1457f5722247649933f1c527fa2be7ab67632bc9bcb10fbc6bbdab4b78c5a93",
+      "raw_events_per_reviewer": 169300
+    }
+  ],
+  "real_fit_performed": false,
+  "schema_version": "audit-handoff-summary-v1",
+  "selected_design": {
+    "enriched_games": 4,
+    "enriched_reasons": {
+      "0022000181": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+      "0022000254": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+      "0022000925": "Historical backward-clock quarantine; independently inspect event order and corrected source state.",
+      "0022301177": "Historical backward-clock quarantine; independently inspect event order and corrected source state."
+    },
+    "frame_games": 6084,
+    "frame_sha256": "007a243d5db45e77f083499dce0ee2c951032eb2d1b733129bf574520aeecb73",
+    "plan_sha256": "cdcf91dddbdb8137c78a1b7a7da25a5b9799a86c1585f83967ffd55bebdf1e04",
+    "random_denominator": 299,
+    "random_enriched_overlap_ids": [],
+    "random_games": 299,
+    "seed": 20261106,
+    "unique_selected_games": 303
+  },
+  "status": "PREPARED_NOT_VALIDATED",
+  "verification": {
+    "command": ".venv/bin/python scripts/check.py",
+    "exit_code": 0,
+    "independent_sol_review": "No remaining actionable findings in reviewed scope",
+    "log": {
+      "bytes": 9258,
+      "path": "output/v2/reviewer-handoff-final-checks-2026-11-06.log",
+      "sha256": "6b7b53cce3a87550e5a9c39f983ef1943d3bcb9b5290bc106e65fc05184e795b"
+    },
+    "maintained_lint": "PASS",
+    "python_tests_passed": 634,
+    "separate_design_ruff": "PASS",
+    "website_suites": "PASS",
+    "wheel_and_isolated_install": "PASS"
+  }
+}

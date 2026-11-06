@@ -1,6 +1,6 @@
 # Independent reconstruction audit
 
-Date: 2026-11-02. Status: proposed sampling design; release approval is CLOSED until the specified evidence exists.
+Original date: 2026-11-02. Updated: 2026-11-06. Status: scoped audit design frozen; independent evidence absent and release approval CLOSED.
 
 ## What the audit establishes
 
@@ -25,11 +25,11 @@ Require reviewer identity, evidence reference, full-game coverage attestation an
 
 The automated gate checks completeness and provenance, not the truthfulness of a human attestation. For the random sample, calculate an upper one-sided binomial confidence bound for the fraction of games with any material discrepancy (a full-game cluster outcome), reporting method/confidence/sample count. This design deliberately avoids treating possessions from the same game as independent trials. It assumes the random game sample represents the declared cohort; transfer to another season/source/parser requires new evidence.
 
-The user/research lead must freeze the maximum tolerated game-level material-error rate, confidence level and required random sample size before annotation evaluation. These values remain unset in the initial protocol. No invented threshold or missing review can yield a pass. Enriched cases must all have complete adjudicated reviews and no unresolved critical issue.
+The user/research lead must freeze the maximum tolerated game-level material-error rate, confidence level and required random sample size before annotation evaluation. These values were unset in the initial protocol; the dated decision below supersedes that initial state. No invented threshold or missing review can yield a pass. Enriched cases must all have complete adjudicated reviews and no unresolved critical issue.
 
 Passing this gate is necessary but not sufficient for confirmatory evaluation: feature timing, exposure inventory, model-selection protocol and meaningful-effect thresholds have separate gates.
 
-## Current missing evidence
+## Initial missing evidence (2026-11-02)
 
 Verified footage access, independent completed annotations, adjudication, and a frozen sample size/error tolerance are not present in the initial rewrite. The repository's hand-reviewed opening fixture is valuable regression evidence, but not a population-level independent audit. Tooling may generate a review packet and explicitly blocked gate report while these requirements remain missing.
 
@@ -42,3 +42,15 @@ The [versioned external-parser pilot](../research/cross_feed_2026_11_05/alternat
 ## Subscription footage access (2026-11-05)
 
 The [League Pass access observations](../research/cross_feed_2026_11_05/league_pass_access.json) document official full-length playback for all fourteen fixed games, with midpoint seek observations for three. They retain feed labels and observed player metadata without credentials or session URLs. No entire stream was reviewed or attested continuously; full coverage and independent annotations remain absent. Reviewers must independently check coverage and preserve their own labels under the protocol above. This access milestone leaves the audit gate BLOCKED.
+
+## Frozen audit handoff (2026-11-06)
+
+After the user delegated the recommendation, the research lead selected a maximum 1% game-level material-error rate with 95% one-sided confidence. This is a policy choice for research credibility, not an external standard. With zero observed errors the exact binomial upper bound is `1 - 0.05**(1/n)`: 299 random games give 0.9969%, while 298 give 1.00024%. The [NIST exact-binomial reference](https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/exacbino.htm) describes the confidence-bound method. The declared binomial game model is explicit; no independence of within-game possessions or finite-population correction is claimed.
+
+The deterministic new selection has 299 random games and four separate enriched games from the unchanged 6,084-game frame. Preserve the original fourteen-game development pilot. Five games overlap the larger union; disclose prior exposure rather than presenting it as untouched model-evaluation data. Do not replace unavailable games, add observations after inspecting errors, or change tolerance to obtain a pass.
+
+The [handoff](../research/audit_handoff_2026_11_06/README.md) retains the earlier selection-stage receipt and a later scoped freeze binding the actual plan, packet manifest and [review contract](REVIEWER_GUIDE.md). Both reviewer kits contain source-verified raw rows and empty forms; their delivered instructions/protocol/ledgers are hash checked. Only five of the 303 selected games have earlier playback observations, and continuous coverage is unverified for all games. No reviewer identities or completed human labels exist.
+
+The metadata gate alone is insufficient. Production promotion requires the real evidence directory, structurally complete hash-bound A/B annotations, adjudication of row-level disagreements and a parser-versus-human comparison. The comparison reparses frozen raw rows and verifies that the export matches; it checks opportunity counts, nonadministrative grouping/order, teams, exact counted-foul references, targets and all declared prediction-start fields. Both human files agreeing with each other cannot hide disagreement with the parser. Missing comparison evidence or any mismatch blocks promotion. Structural validation authenticates neither people nor footage truth.
+
+The actual gate remains BLOCKED for missing reviews and an unavailable error bound. Full-study preregistration, meaningful predictive gain and genuinely unused evaluation evidence remain unfrozen separate gates. No empirical model fitting or publication follows from this scoped audit freeze.
