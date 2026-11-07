@@ -1,0 +1,5351 @@
+{
+  "actual_frame_wall_span_seconds": 19.951,
+  "actual_media_metadata_span_seconds": 20.018453000000136,
+  "actual_run_wall_span_seconds": 20.049,
+  "adjacent_metadata_gap_bounds_seconds": [
+    0.5131109999999808,
+    0.4918990000001031,
+    0.547849000000042,
+    0.5239420000000337,
+    0.4334440000000086,
+    0.46674499999994623,
+    0.4999559999998837,
+    0.4396599999997761,
+    0.43981399999984205,
+    0.49400699999978315,
+    0.4741180000000895,
+    0.43439699999998993,
+    0.43588099999988117,
+    0.45138600000018414,
+    0.42494200000010096,
+    0.4084319999997206,
+    0.44967099999985294,
+    0.42233500000020285,
+    0.3919860000000881,
+    0.48249200000009296,
+    0.5346920000001774,
+    0.49905600000010963,
+    0.4708930000001601,
+    0.39846099999977014,
+    0.37230799999997544,
+    0.41522900000018126,
+    0.43817100000023856,
+    0.4350790000003144,
+    0.4163969999999608,
+    0.40718399999968824,
+    0.5480889999998908,
+    0.6209979999998723,
+    0.5245829999998932,
+    0.5269000000002961,
+    0.49256500000001324,
+    0.4370130000002064,
+    0.6578120000003764,
+    0.5758019999998396,
+    0.4149459999998726,
+    0.4317980000000716,
+    0.43006100000002334,
+    0.42435599999998885,
+    0.4128659999996671,
+    0.42015500000024986,
+    0.41559700000016164,
+    0.4151529999999184,
+    0.4163170000001628,
+    0.41447699999980614,
+    0.5446410000004107,
+    0.47895100000005186,
+    0.42140699999981734,
+    0.43541800000002695,
+    0.45520600000008926,
+    0.4233640000002197,
+    0.43301100000007864,
+    0.44887500000004366,
+    0.43793300000015734,
+    0.42178400000011607,
+    0.4289310000003752,
+    0.43404999999984284,
+    0.5466160000000855,
+    0.45130300000028,
+    0.43269499999996697,
+    0.4228670000002239,
+    0.42870499999980893,
+    0.44118799999978364,
+    0.43644300000005387,
+    0.4164720000003399,
+    0.43965399999979127,
+    0.4813410000001568,
+    0.4752530000000661,
+    0.44384900000022753,
+    0.6023890000001302,
+    0.5279570000002423,
+    0.45311199999969176,
+    0.4795760000001792,
+    0.4812030000002778,
+    0.44066899999961606,
+    0.4984739999999874,
+    0.5024070000004031,
+    0.46565800000007584
+  ],
+  "adjacent_midpoint_media_gaps_seconds": [
+    0.27155999999990854,
+    0.2567370000001574,
+    0.2975965000000542,
+    0.27254249999987223,
+    0.2242069999999785,
+    0.24965850000012324,
+    0.2615379999997458,
+    0.22742700000003424,
+    0.23648750000006658,
+    0.25786250000010114,
+    0.2645349999997961,
+    0.23420200000009572,
+    0.22762349999993603,
+    0.25013250000029075,
+    0.2225309999998899,
+    0.21307299999989482,
+    0.25031799999987925,
+    0.21945700000014767,
+    0.20692950000011479,
+    0.2546714999998585,
+    0.2760005000000092,
+    0.26447600000028615,
+    0.24411249999957363,
+    0.20885650000036549,
+    0.19648849999975937,
+    0.21742549999999028,
+    0.22766599999977188,
+    0.230074500000228,
+    0.21920550000004368,
+    0.21247549999998228,
+    0.2839750000002823,
+    0.32465400000000955,
+    0.2747589999999036,
+    0.2748704999999063,
+    0.2557419999998274,
+    0.2270419999999831,
+    0.37397050000026866,
+    0.2974274999996851,
+    0.21512900000016089,
+    0.22964700000011362,
+    0.22331450000001496,
+    0.2188384999999471,
+    0.21373599999969883,
+    0.21898150000015448,
+    0.21479999999974098,
+    0.21586699999988923,
+    0.216265000000476,
+    0.2151634999995622,
+    0.3175670000005084,
+    0.25070099999993545,
+    0.2273389999995743,
+    0.22978950000015175,
+    0.23643950000041514,
+    0.22066099999983635,
+    0.2315920000000915,
+    0.23335099999985687,
+    0.22844349999968472,
+    0.22208250000039698,
+    0.2219875000000684,
+    0.22591000000011263,
+    0.3255524999995032,
+    0.23730500000056054,
+    0.23002299999961906,
+    0.219631500000105,
+    0.22650000000021464,
+    0.22939099999985046,
+    0.22804999999971187,
+    0.21758700000009412,
+    0.23016000000006898,
+    0.2517360000001645,
+    0.24519599999985076,
+    0.23323200000004363,
+    0.3616154999999708,
+    0.2775864999998703,
+    0.23875049999969633,
+    0.25332550000030096,
+    0.24916450000046098,
+    0.22925499999928434,
+    0.27146150000044145,
+    0.2609325000003082,
+    0.2440084999998362
+  ],
+  "audio": false,
+  "captured_public_url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+  "catalog_public_url": "https://www.nba.com/game/atl-vs-mem-0022000021",
+  "complete_possession_verified": false,
+  "consumed_inputs": [
+    {
+      "bytes": 13332,
+      "role": "summarizer_code",
+      "sha256": "d85f260844392f2c91fa538d3c4beee63da1c2e7bb62eb5fa2aec2901ecc9717"
+    },
+    {
+      "bytes": 16611,
+      "role": "provenance_helpers_code",
+      "sha256": "9ef3b28a547899594ebdea5103ba2e4198742d4bb11d4537bcba924a8a92eca4"
+    },
+    {
+      "bytes": 109697,
+      "role": "capture",
+      "sha256": "bc3c01b2ad1dc310a0a062e530f46ed66403e2bea57bd971a2a24ae67d1324d6"
+    },
+    {
+      "bytes": 1001,
+      "role": "declaration",
+      "sha256": "96d249b3c03609815ff111c4ee750ea4b38532f69ceba1a1a0cf7ba3170a7430"
+    },
+    {
+      "bytes": 268405,
+      "role": "selected_game_catalog",
+      "sha256": "06aa44fb27877752a7044acf13a0a8b73b0c792a230236cf2b22017abed4a7b4"
+    },
+    {
+      "bytes": 70732,
+      "role": "frames_jsonl",
+      "sha256": "01d3ce05d01ec669a7a7d8158724f786e9d38594d38645a6e45dc46d7eccd498"
+    },
+    {
+      "bytes": 62942,
+      "role": "frame_0000_image",
+      "sha256": "62dfaa77f654e15a90be6be9d6fd3ad90864d9c6bbf6afce6d7dee1b4270b944"
+    },
+    {
+      "bytes": 63290,
+      "role": "frame_0001_image",
+      "sha256": "f205b0e54382c35b2fed2aedbbcdfc37435955e230e6d4b16e91b978ab08ea5b"
+    },
+    {
+      "bytes": 60217,
+      "role": "frame_0002_image",
+      "sha256": "970b32ad448dfcac3ad52209ff754fd35b47b824139a0b1ebd009392e74e8603"
+    },
+    {
+      "bytes": 60305,
+      "role": "frame_0003_image",
+      "sha256": "92374b6a20022826543e7d79744fd04bcc9c9a430f21e4e39386bcf8d6c7bb9d"
+    },
+    {
+      "bytes": 60830,
+      "role": "frame_0004_image",
+      "sha256": "39467a7dea3898b85945c371d28f1feebdf6d99292314e9ec940b2c3a1f2177e"
+    },
+    {
+      "bytes": 61038,
+      "role": "frame_0005_image",
+      "sha256": "58c5fa04bf5ea4db3b1a77e741aab9013f360c8f9e6291326e7d7f424802408e"
+    },
+    {
+      "bytes": 60482,
+      "role": "frame_0006_image",
+      "sha256": "c1fe848d5c818aa7c47133b10f75f0cb3e8b8a39d05e018efbae405c5f410235"
+    },
+    {
+      "bytes": 58698,
+      "role": "frame_0007_image",
+      "sha256": "8107627add510c96b36091b565c0ee98a145f6a31c7fba49a7922996e22def7d"
+    },
+    {
+      "bytes": 60652,
+      "role": "frame_0008_image",
+      "sha256": "6ad1b95410ed6558008552b0be217e98d03de989805d21d65eedde0b669589e1"
+    },
+    {
+      "bytes": 61300,
+      "role": "frame_0009_image",
+      "sha256": "dff9dd7c474f9e50cf712768302e6e7b573a5dbd03ba2ebf172c324b58290606"
+    },
+    {
+      "bytes": 62491,
+      "role": "frame_0010_image",
+      "sha256": "71fb4c571547477e5fd771225b88faf0fe57d04ab7a9d8f6814a895d3653c2d8"
+    },
+    {
+      "bytes": 62213,
+      "role": "frame_0011_image",
+      "sha256": "77b1b49af7aed7a86c966e01f832f8accaebba1971b13cf6363c8cbb7b4be603"
+    },
+    {
+      "bytes": 62182,
+      "role": "frame_0012_image",
+      "sha256": "44f6db01bfbedbf739f36e332571dbfb837038da3361905d420a90b33454dcb1"
+    },
+    {
+      "bytes": 62127,
+      "role": "frame_0013_image",
+      "sha256": "6a540c6dff57ce37814bb73c8dd899270a58e98f830a7a383c45e4436bf785c7"
+    },
+    {
+      "bytes": 62261,
+      "role": "frame_0014_image",
+      "sha256": "7299f185452317ee540a3f5dceca492872e7658113c22b00067bf96c14b51cfd"
+    },
+    {
+      "bytes": 62383,
+      "role": "frame_0015_image",
+      "sha256": "8fb7dc9cc81585590edf21538e8dc1df1902e673f01c0e37e15e7bd5c5281733"
+    },
+    {
+      "bytes": 61638,
+      "role": "frame_0016_image",
+      "sha256": "109bf3345b0eaf88d7c8deaf55d13d02923fc3160284b091a4b9f437d42364ec"
+    },
+    {
+      "bytes": 60612,
+      "role": "frame_0017_image",
+      "sha256": "0383decc9eb2358919a0f14dcbf44c092859cd6a5b10d19879050b82d245459c"
+    },
+    {
+      "bytes": 60650,
+      "role": "frame_0018_image",
+      "sha256": "ab24c3c570142e7b8c8a3ab35dd2bb1f55b02b611a004577f9e2e34ab71628aa"
+    },
+    {
+      "bytes": 60487,
+      "role": "frame_0019_image",
+      "sha256": "482a12feaacb183709ccdf9aa4dc8ede42a2a3204e6c4e6d0bd41ad26ddd3f9d"
+    },
+    {
+      "bytes": 59384,
+      "role": "frame_0020_image",
+      "sha256": "1e1e053a552211c3aa88f070e24bd5afe61e511f14e1272dbacbd5d6c791958b"
+    },
+    {
+      "bytes": 60040,
+      "role": "frame_0021_image",
+      "sha256": "180c70df7c4475f780266444c0233de6254dc9c4ab2d1b4f9d1890444587cb61"
+    },
+    {
+      "bytes": 60781,
+      "role": "frame_0022_image",
+      "sha256": "685d72b325d1fc7832d8af297124e39c50182583d17f100cb92e1f1cee08706d"
+    },
+    {
+      "bytes": 61023,
+      "role": "frame_0023_image",
+      "sha256": "1cf29e3bb8d61a3bf8a63f726679df4606d00912fdfa0963e9661370a22f79e4"
+    },
+    {
+      "bytes": 60697,
+      "role": "frame_0024_image",
+      "sha256": "1a67a972389f767bd11fb9a8f69e883bab3398c4af42cc76a3a893c7d5bc0a03"
+    },
+    {
+      "bytes": 60873,
+      "role": "frame_0025_image",
+      "sha256": "ba72e8cc27bc22b4d897fb051304f639e7a43c062aa0578d5a403ad8bac26843"
+    },
+    {
+      "bytes": 60342,
+      "role": "frame_0026_image",
+      "sha256": "5179888a923a697323bcd2415d85b003e31858d36115bb0f28fdf920124f2917"
+    },
+    {
+      "bytes": 59964,
+      "role": "frame_0027_image",
+      "sha256": "90161a669970f7577b3be95c959d72a4003e1a3e70bd1555dda6b7d445bcd646"
+    },
+    {
+      "bytes": 58936,
+      "role": "frame_0028_image",
+      "sha256": "e773b8561335c2fd96845808c0fbeab5ddb1b0c5fc86f2d1cb337cde171ed379"
+    },
+    {
+      "bytes": 59417,
+      "role": "frame_0029_image",
+      "sha256": "a584bacc6a276cbba9f74df9ff06363632873eeb0efea4be75072d1c0201e708"
+    },
+    {
+      "bytes": 59960,
+      "role": "frame_0030_image",
+      "sha256": "e16433490e2f8bf0010443606d433d50a2d3ced4b4239c8c6d22d4699d186e83"
+    },
+    {
+      "bytes": 59691,
+      "role": "frame_0031_image",
+      "sha256": "0953064656d4882efe619e9d056ea9d01a0381fccc1c6c4c7d558e4fe129d278"
+    },
+    {
+      "bytes": 61001,
+      "role": "frame_0032_image",
+      "sha256": "b32c3c1aee0b19ede25589fe0b12a0c339c6f5e07d5217b974e1547f0439c8a9"
+    },
+    {
+      "bytes": 61926,
+      "role": "frame_0033_image",
+      "sha256": "47e1e236f32e0d948e03016c73143ec5f59c1ba8e75991e3e03669d3b0a26247"
+    },
+    {
+      "bytes": 61103,
+      "role": "frame_0034_image",
+      "sha256": "113f747806a656268ee3d66436df8251de08c3312aad4090249af7821cdc8398"
+    },
+    {
+      "bytes": 60799,
+      "role": "frame_0035_image",
+      "sha256": "a584d510e1d79922b5a94c944ff4c5c0f159f813f9b0e075b98bff95d08b7973"
+    },
+    {
+      "bytes": 60528,
+      "role": "frame_0036_image",
+      "sha256": "75764bdb6d80c38844ef7c2b72caf8eb84ab1ba7bd0eefa49b1535f480f642a3"
+    },
+    {
+      "bytes": 60492,
+      "role": "frame_0037_image",
+      "sha256": "2cbd56da9e78cf3c57099e2926a8ae8285da45c56f0d92405b108c82e9e31775"
+    },
+    {
+      "bytes": 61148,
+      "role": "frame_0038_image",
+      "sha256": "531cf6b05a9813f7c759f1e743e6b2c77a726c662b459eac8be7546ef6314094"
+    },
+    {
+      "bytes": 60381,
+      "role": "frame_0039_image",
+      "sha256": "eddaaaf0735d3c0ae0f30270ed5200381e6b18ed9b0ffa2c3aad98a411f8b147"
+    },
+    {
+      "bytes": 60923,
+      "role": "frame_0040_image",
+      "sha256": "1eb8d11cc9bc373a1cb381b870ff00caac50d543b2fa5c9e247166130a004048"
+    },
+    {
+      "bytes": 59381,
+      "role": "frame_0041_image",
+      "sha256": "5302ba32cad721f08c9259bb456c04b59cef181cc0795457786f44df22be9b5c"
+    },
+    {
+      "bytes": 59632,
+      "role": "frame_0042_image",
+      "sha256": "1dcfa3f3faea1434f9ad0e61a5681720118332026400283c778cb3794156b42f"
+    },
+    {
+      "bytes": 60793,
+      "role": "frame_0043_image",
+      "sha256": "999a5378908319bccc1a49666211f15b4a738db908b66787fbb7d19c05973e1b"
+    },
+    {
+      "bytes": 60642,
+      "role": "frame_0044_image",
+      "sha256": "fa9f070cfee247b277b38555c097dee60321dbf117ae517cf9cf65c07c4aa939"
+    },
+    {
+      "bytes": 60327,
+      "role": "frame_0045_image",
+      "sha256": "3f2ee4baa25ec5b78a5596e38c7e8b157c81ce211f8cd34f82a199d9b54ad480"
+    },
+    {
+      "bytes": 59202,
+      "role": "frame_0046_image",
+      "sha256": "600a7745c0f63af6528b357a0e5958556a72663e4120cc375f74aade2e54fb30"
+    },
+    {
+      "bytes": 57116,
+      "role": "frame_0047_image",
+      "sha256": "3789ebda99a5a5386ad53b576ea92abbe20caa7bf17134dff31fb99eaeaa63fb"
+    },
+    {
+      "bytes": 55850,
+      "role": "frame_0048_image",
+      "sha256": "a0fb60d83aa300c258a6fb605ea22138ff0cf8ee48f9c8c6f6bff1b3cd85674e"
+    },
+    {
+      "bytes": 52929,
+      "role": "frame_0049_image",
+      "sha256": "7e37e20b7e30d2bfc468360bb3b48f1f8469ed072a911f41d47ab63dd6a4c80e"
+    },
+    {
+      "bytes": 51410,
+      "role": "frame_0050_image",
+      "sha256": "4661e9f61fc60be2ca6db4899a077d8a9ccf0682fad0756b551d3cc1960b7d9b"
+    },
+    {
+      "bytes": 49990,
+      "role": "frame_0051_image",
+      "sha256": "d3af7d2b891425861aee27e98e59ee40c274a39b39f8b039b7f189dc8948bcec"
+    },
+    {
+      "bytes": 50520,
+      "role": "frame_0052_image",
+      "sha256": "0ba0093a7a13d595f38564adca42d2d6210d7a5a2a818e528929b6878111dafb"
+    },
+    {
+      "bytes": 54817,
+      "role": "frame_0053_image",
+      "sha256": "a5a0f066c63bc1e96aab07d70d05c37e55d587250651f75510e4576b63a7c0a0"
+    },
+    {
+      "bytes": 55520,
+      "role": "frame_0054_image",
+      "sha256": "9f36dc184c9358e50c80b87972e7666c7630031dec8ac92a8770a6226419e7e8"
+    },
+    {
+      "bytes": 53125,
+      "role": "frame_0055_image",
+      "sha256": "981aa851db578dbb01d16631d971f2d900e668342a725fada9b06c801f451eb0"
+    },
+    {
+      "bytes": 48112,
+      "role": "frame_0056_image",
+      "sha256": "dfd98de36a65d96c538c512b97183663afa64c98ea620f24e6a5efbdfbe86eea"
+    },
+    {
+      "bytes": 45313,
+      "role": "frame_0057_image",
+      "sha256": "78e3ddf3bc31a41127799820bd22a8387adbda16c1edaf5463f991caef990383"
+    },
+    {
+      "bytes": 43939,
+      "role": "frame_0058_image",
+      "sha256": "fab9c6dd85960b1aab2d57b5cbb8e79a57f6ab22d88bb7783f8bc2f8c58cc362"
+    },
+    {
+      "bytes": 42946,
+      "role": "frame_0059_image",
+      "sha256": "ec664e36e8f1cbd195adc4503ce1efc461666a0c5ca4899317b7bdc22f636e9c"
+    },
+    {
+      "bytes": 42418,
+      "role": "frame_0060_image",
+      "sha256": "28c62d762def43f162de81da22fae15ddbefaf86e484b9e4bd95e86e0131007d"
+    },
+    {
+      "bytes": 42582,
+      "role": "frame_0061_image",
+      "sha256": "344094f7a62b85fe462d14c8a1573db4f328754e092aac1e066e4f369a2a0d8a"
+    },
+    {
+      "bytes": 42277,
+      "role": "frame_0062_image",
+      "sha256": "e32974392e60e01c443e16f015d4209cce6d2622472cf4cfa3a1393581722cc7"
+    },
+    {
+      "bytes": 42354,
+      "role": "frame_0063_image",
+      "sha256": "74300c199a0934cbd15985cc72462bddedc905cbf8fffaadf35b927bd7e7326b"
+    },
+    {
+      "bytes": 42522,
+      "role": "frame_0064_image",
+      "sha256": "5964e54b109d10f3cd876a76c4828756fcd6a687a553d3fa472ab727badc44ce"
+    },
+    {
+      "bytes": 42872,
+      "role": "frame_0065_image",
+      "sha256": "542a971cf830a0b94a916bd6f41ae875d65bf7a33aab0a0d66f194e904d77d04"
+    },
+    {
+      "bytes": 43068,
+      "role": "frame_0066_image",
+      "sha256": "555e3238191bf6b4e34c7b3ee229c47b4299bd3d70282322c93b3be3c2f1d5d2"
+    },
+    {
+      "bytes": 42688,
+      "role": "frame_0067_image",
+      "sha256": "0db23619fce2011986294cc8ef5124221babe40737eaa57cf5dc90faf077481a"
+    },
+    {
+      "bytes": 44223,
+      "role": "frame_0068_image",
+      "sha256": "cc39b420ff0ad6cddd442dc7e5ab1964f76f76839c50bd7efdde1610ee4cf2d1"
+    },
+    {
+      "bytes": 45561,
+      "role": "frame_0069_image",
+      "sha256": "6549327d8b12f24eaf62170bf760ffa3330c7fbb8825e2861f9ecd33d04ca464"
+    },
+    {
+      "bytes": 47518,
+      "role": "frame_0070_image",
+      "sha256": "b10737fbd6ddd174d7a3ea2dcc303b07374e68fd91103dd693c28b71891d47c8"
+    },
+    {
+      "bytes": 49447,
+      "role": "frame_0071_image",
+      "sha256": "5447f66adf4f56af84c2e7f5bc7d24b1dc951e8f863e9a258bf7926ee3177c04"
+    },
+    {
+      "bytes": 49770,
+      "role": "frame_0072_image",
+      "sha256": "084300de8360ffa5dab805f153be86953ebf9552ac38885b377709d41201b898"
+    },
+    {
+      "bytes": 49470,
+      "role": "frame_0073_image",
+      "sha256": "5a313dd99c43949801ea857440e40294c2ad67a81c0b6929fe9c2edecbff4115"
+    },
+    {
+      "bytes": 51022,
+      "role": "frame_0074_image",
+      "sha256": "ec7b80205a8952d85370cb745a9771dc5e0ece52e0817f5bcc98b7c971efcb1b"
+    },
+    {
+      "bytes": 52034,
+      "role": "frame_0075_image",
+      "sha256": "76152a6df349763a384d3bc143146e50aa268de703a2ff7f91b2ce8d35b34ae4"
+    },
+    {
+      "bytes": 52337,
+      "role": "frame_0076_image",
+      "sha256": "718afdd4ccf99a6c4b3a058db597e87825ddf4cc8f283181cef6e90da8ff3f4c"
+    },
+    {
+      "bytes": 54836,
+      "role": "frame_0077_image",
+      "sha256": "7bed8e58d989dd7e22b97ab5e473778acc480788ea560d9647e862dd2975d207"
+    },
+    {
+      "bytes": 56106,
+      "role": "frame_0078_image",
+      "sha256": "f677fb7e80038fb7aa4c7515054fbd48e37a508e60d993065104a84b7bcc9fe2"
+    },
+    {
+      "bytes": 59257,
+      "role": "frame_0079_image",
+      "sha256": "64b208c5330e6d87f3e9af48ee3fa45691dddde0df9be976a362e3d9eab0d0a8"
+    },
+    {
+      "bytes": 60942,
+      "role": "frame_0080_image",
+      "sha256": "c348e84caf21201ae750a652c58b211fff9c3495151cd56f25f6c31185e5aaca"
+    },
+    {
+      "bytes": 61427,
+      "role": "frame_0081_image",
+      "sha256": "947176281d43577b3b1f6e9189a89423b1e3b2da91646feb7149d531536baacc"
+    }
+  ],
+  "continuous_game_coverage_verified": false,
+  "date": "2020-12-26",
+  "distinct_image_hashes": 82,
+  "eligibility_promoted": false,
+  "ended_at": "2026-11-07T05:54:49.901Z",
+  "final_state": {
+    "dom": {
+      "scrollY": 278.5,
+      "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+      "video": {
+        "currentTime": 2065.911745,
+        "duration": 6437.5811,
+        "error_code": null,
+        "height": 720,
+        "paused": true,
+        "readyState": 4,
+        "width": 1280
+      }
+    },
+    "observed_at": "2026-11-07T05:54:50.432Z",
+    "visible_slider_value": "2065.911745"
+  },
+  "final_state_quality_issues": [
+    "nonzero_scroll_alignment_unverified",
+    "paused"
+  ],
+  "frame_count": 82,
+  "frames": [
+    {
+      "bytes": 62942,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0000",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22352799999998751,
+      "media_midpoint_seconds": 2045.855389,
+      "media_post_seconds": 2045.967153,
+      "media_pre_seconds": 2045.743625,
+      "path": "frames/0000.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2045.967153,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.054Z",
+        "visible_slider_value": "2045.47098"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2045.743625,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:29.852Z",
+        "visible_slider_value": "2045.47098"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:29.876Z",
+      "screenshot_returned_at": "2026-11-07T05:54:30.054Z",
+      "sha256": "62dfaa77f654e15a90be6be9d6fd3ad90864d9c6bbf6afce6d7dee1b4270b944",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.49617299999999886,
+        "pre": 0.27264500000001135
+      },
+      "wall_bracket_width_seconds": 0.202
+    },
+    {
+      "bytes": 63290,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0001",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.25957400000015696,
+      "media_midpoint_seconds": 2046.126949,
+      "media_post_seconds": 2046.256736,
+      "media_pre_seconds": 2045.997162,
+      "path": "frames/0001.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2046.256736,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.292Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2045.997162,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.112Z",
+        "visible_slider_value": "2045.47098"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:30.144Z",
+      "screenshot_returned_at": "2026-11-07T05:54:30.292Z",
+      "sha256": "f205b0e54382c35b2fed2aedbbcdfc37435955e230e6d4b16e91b978ab08ea5b",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.0019919999999729043,
+        "pre": 0.5261819999998352
+      },
+      "wall_bracket_width_seconds": 0.18
+    },
+    {
+      "bytes": 60217,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0002",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2107499999999618,
+      "media_midpoint_seconds": 2046.3836860000001,
+      "media_post_seconds": 2046.489061,
+      "media_pre_seconds": 2046.278311,
+      "path": "frames/0002.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2046.489061,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.518Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2046.278311,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.392Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:30.408Z",
+      "screenshot_returned_at": "2026-11-07T05:54:30.518Z",
+      "sha256": "970b32ad448dfcac3ad52209ff754fd35b47b824139a0b1ebd009392e74e8603",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.23431699999991906,
+        "pre": 0.02356699999995726
+      },
+      "wall_bracket_width_seconds": 0.126
+    },
+    {
+      "bytes": 60305,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0003",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.28975500000001375,
+      "media_midpoint_seconds": 2046.6812825000002,
+      "media_post_seconds": 2046.82616,
+      "media_pre_seconds": 2046.536405,
+      "path": "frames/0003.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2046.82616,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.873Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2046.536405,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.633Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:30.669Z",
+      "screenshot_returned_at": "2026-11-07T05:54:30.873Z",
+      "sha256": "92374b6a20022826543e7d79744fd04bcc9c9a430f21e4e39386bcf8d6c7bb9d",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5714159999999993,
+        "pre": 0.2816609999999855
+      },
+      "wall_bracket_width_seconds": 0.24
+    },
+    {
+      "bytes": 60830,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0004",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.21304400000008172,
+      "media_midpoint_seconds": 2046.953825,
+      "media_post_seconds": 2047.060347,
+      "media_pre_seconds": 2046.847303,
+      "path": "frames/0004.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.060347,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.159Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2046.847303,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:30.962Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:30.995Z",
+      "screenshot_returned_at": "2026-11-07T05:54:31.159Z",
+      "sha256": "39467a7dea3898b85945c371d28f1feebdf6d99292314e9ec940b2c3a1f2177e",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.8056030000000192,
+        "pre": 0.5925589999999374
+      },
+      "wall_bracket_width_seconds": 0.197
+    },
+    {
+      "bytes": 61038,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0005",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20542999999997846,
+      "media_midpoint_seconds": 2047.178032,
+      "media_post_seconds": 2047.280747,
+      "media_pre_seconds": 2047.075317,
+      "path": "frames/0005.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.280747,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.385Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.075317,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.190Z",
+        "visible_slider_value": "2046.254744"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:31.203Z",
+      "screenshot_returned_at": "2026-11-07T05:54:31.385Z",
+      "sha256": "58c5fa04bf5ea4db3b1a77e741aab9013f360c8f9e6291326e7d7f424802408e",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.024943000000121174,
+        "pre": 0.8205729999999676
+      },
+      "wall_bracket_width_seconds": 0.195
+    },
+    {
+      "bytes": 60482,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0006",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2287429999998949,
+      "media_midpoint_seconds": 2047.4276905000002,
+      "media_post_seconds": 2047.542062,
+      "media_pre_seconds": 2047.313319,
+      "path": "frames/0006.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.542062,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.594Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.313319,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.416Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:31.443Z",
+      "screenshot_returned_at": "2026-11-07T05:54:31.594Z",
+      "sha256": "c1fe848d5c818aa7c47133b10f75f0cb3e8b8a39d05e018efbae405c5f410235",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.28625800000008894,
+        "pre": 0.05751500000019405
+      },
+      "wall_bracket_width_seconds": 0.178
+    },
+    {
+      "bytes": 58698,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0007",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.24809299999992618,
+      "media_midpoint_seconds": 2047.6892285,
+      "media_post_seconds": 2047.813275,
+      "media_pre_seconds": 2047.565182,
+      "path": "frames/0007.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.813275,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.918Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.565182,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.679Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:31.696Z",
+      "screenshot_returned_at": "2026-11-07T05:54:31.918Z",
+      "sha256": "8107627add510c96b36091b565c0ee98a145f6a31c7fba49a7922996e22def7d",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5574710000000778,
+        "pre": 0.3093780000001516
+      },
+      "wall_bracket_width_seconds": 0.239
+    },
+    {
+      "bytes": 60652,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0008",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.17637299999978495,
+      "media_midpoint_seconds": 2047.9166555,
+      "media_post_seconds": 2048.004842,
+      "media_pre_seconds": 2047.828469,
+      "path": "frames/0008.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.004842,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.104Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2047.828469,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:31.944Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:31.956Z",
+      "screenshot_returned_at": "2026-11-07T05:54:32.104Z",
+      "sha256": "6ad1b95410ed6558008552b0be217e98d03de989805d21d65eedde0b669589e1",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7490379999999277,
+        "pre": 0.5726650000001428
+      },
+      "wall_bracket_width_seconds": 0.16
+    },
+    {
+      "bytes": 61300,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0009",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.230279999999766,
+      "media_midpoint_seconds": 2048.153143,
+      "media_post_seconds": 2048.268283,
+      "media_pre_seconds": 2048.038003,
+      "path": "frames/0009.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.268283,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.322Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.038003,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.150Z",
+        "visible_slider_value": "2047.255804"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:32.179Z",
+      "screenshot_returned_at": "2026-11-07T05:54:32.322Z",
+      "sha256": "dff9dd7c474f9e50cf712768302e6e7b573a5dbd03ba2ebf172c324b58290606",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.02246500000001106,
+        "pre": 0.7821990000002188
+      },
+      "wall_bracket_width_seconds": 0.172
+    },
+    {
+      "bytes": 62491,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0010",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.24200900000005277,
+      "media_midpoint_seconds": 2048.4110055,
+      "media_post_seconds": 2048.53201,
+      "media_pre_seconds": 2048.290001,
+      "path": "frames/0010.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.53201,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.608Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.290001,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.402Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:32.417Z",
+      "screenshot_returned_at": "2026-11-07T05:54:32.608Z",
+      "sha256": "71fb4c571547477e5fd771225b88faf0fe57d04ab7a9d8f6814a895d3653c2d8",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2861920000000282,
+        "pre": 0.044182999999975436
+      },
+      "wall_bracket_width_seconds": 0.206
+    },
+    {
+      "bytes": 62213,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0011",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.17715700000007928,
+      "media_midpoint_seconds": 2048.6755405,
+      "media_post_seconds": 2048.764119,
+      "media_pre_seconds": 2048.586962,
+      "path": "frames/0011.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.764119,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.831Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.586962,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.697Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:32.714Z",
+      "screenshot_returned_at": "2026-11-07T05:54:32.831Z",
+      "sha256": "77b1b49af7aed7a86c966e01f832f8accaebba1971b13cf6363c8cbb7b4be603",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.518301000000065,
+        "pre": 0.3411439999999857
+      },
+      "wall_bracket_width_seconds": 0.134
+    },
+    {
+      "bytes": 62182,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0012",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22323299999970914,
+      "media_midpoint_seconds": 2048.9097425,
+      "media_post_seconds": 2049.021359,
+      "media_pre_seconds": 2048.798126,
+      "path": "frames/0012.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.021359,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.072Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2048.798126,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:32.911Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:32.929Z",
+      "screenshot_returned_at": "2026-11-07T05:54:33.072Z",
+      "sha256": "44f6db01bfbedbf739f36e332571dbfb837038da3361905d420a90b33454dcb1",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7755409999999756,
+        "pre": 0.5523080000002665
+      },
+      "wall_bracket_width_seconds": 0.161
+    },
+    {
+      "bytes": 62127,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0013",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19328200000018114,
+      "media_midpoint_seconds": 2049.137366,
+      "media_post_seconds": 2049.234007,
+      "media_pre_seconds": 2049.040725,
+      "path": "frames/0013.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.234007,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.292Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.040725,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.153Z",
+        "visible_slider_value": "2048.245818"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:33.170Z",
+      "screenshot_returned_at": "2026-11-07T05:54:33.292Z",
+      "sha256": "6a540c6dff57ce37814bb73c8dd899270a58e98f830a7a383c45e4436bf785c7",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.0023439999999936845,
+        "pre": 0.7949069999999665
+      },
+      "wall_bracket_width_seconds": 0.139
+    },
+    {
+      "bytes": 62261,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0014",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2092250000000604,
+      "media_midpoint_seconds": 2049.3874985,
+      "media_post_seconds": 2049.492111,
+      "media_pre_seconds": 2049.282886,
+      "path": "frames/0014.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.492111,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.533Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.282886,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.395Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:33.421Z",
+      "screenshot_returned_at": "2026-11-07T05:54:33.533Z",
+      "sha256": "7299f185452317ee540a3f5dceca492872e7658113c22b00067bf96c14b51cfd",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2604479999999967,
+        "pre": 0.05122299999993629
+      },
+      "wall_bracket_width_seconds": 0.138
+    },
+    {
+      "bytes": 62383,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0015",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19559699999990698,
+      "media_midpoint_seconds": 2049.6100295,
+      "media_post_seconds": 2049.707828,
+      "media_pre_seconds": 2049.512231,
+      "path": "frames/0015.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.707828,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.764Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.512231,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.628Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:33.642Z",
+      "screenshot_returned_at": "2026-11-07T05:54:33.764Z",
+      "sha256": "8fb7dc9cc81585590edf21538e8dc1df1902e673f01c0e37e15e7bd5c5281733",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.47616500000003725,
+        "pre": 0.28056800000013027
+      },
+      "wall_bracket_width_seconds": 0.136
+    },
+    {
+      "bytes": 61638,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0016",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19512099999974453,
+      "media_midpoint_seconds": 2049.8231025,
+      "media_post_seconds": 2049.920663,
+      "media_pre_seconds": 2049.725542,
+      "path": "frames/0016.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.920663,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.970Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.725542,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:33.840Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:33.853Z",
+      "screenshot_returned_at": "2026-11-07T05:54:33.970Z",
+      "sha256": "109bf3345b0eaf88d7c8deaf55d13d02923fc3160284b091a4b9f437d42364ec",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.6889999999998508,
+        "pre": 0.4938790000001063
+      },
+      "wall_bracket_width_seconds": 0.13
+    },
+    {
+      "bytes": 60612,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0017",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20358500000020285,
+      "media_midpoint_seconds": 2050.0734205,
+      "media_post_seconds": 2050.175213,
+      "media_pre_seconds": 2049.971628,
+      "path": "frames/0017.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.175213,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.225Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2049.971628,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.085Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:34.099Z",
+      "screenshot_returned_at": "2026-11-07T05:54:34.225Z",
+      "sha256": "0383decc9eb2358919a0f14dcbf44c092859cd6a5b10d19879050b82d245459c",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.9435499999999593,
+        "pre": 0.7399649999997564
+      },
+      "wall_bracket_width_seconds": 0.14
+    },
+    {
+      "bytes": 60650,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0018",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2021709999999075,
+      "media_midpoint_seconds": 2050.2928775,
+      "media_post_seconds": 2050.393963,
+      "media_pre_seconds": 2050.191792,
+      "path": "frames/0018.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.393963,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.434Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.191792,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.307Z",
+        "visible_slider_value": "2049.231663"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:34.319Z",
+      "screenshot_returned_at": "2026-11-07T05:54:34.434Z",
+      "sha256": "ab24c3c570142e7b8c8a3ab35dd2bb1f55b02b611a004577f9e2e34ab71628aa",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.19572199999993245,
+        "pre": 0.9601290000000517
+      },
+      "wall_bracket_width_seconds": 0.127
+    },
+    {
+      "bytes": 60487,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0019",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.16794200000003912,
+      "media_midpoint_seconds": 2050.499807,
+      "media_post_seconds": 2050.583778,
+      "media_pre_seconds": 2050.415836,
+      "path": "frames/0019.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.583778,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.690Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.415836,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.530Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:34.546Z",
+      "screenshot_returned_at": "2026-11-07T05:54:34.690Z",
+      "sha256": "482a12feaacb183709ccdf9aa4dc8ede42a2a3204e6c4e6d0bd41ad26ddd3f9d",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.38553700000011304,
+        "pre": 0.21759500000007392
+      },
+      "wall_bracket_width_seconds": 0.16
+    },
+    {
+      "bytes": 59384,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0020",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2876990000004298,
+      "media_midpoint_seconds": 2050.7544785,
+      "media_post_seconds": 2050.898328,
+      "media_pre_seconds": 2050.610629,
+      "path": "frames/0020.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.898328,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.979Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.610629,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:34.717Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:34.743Z",
+      "screenshot_returned_at": "2026-11-07T05:54:34.979Z",
+      "sha256": "1e1e053a552211c3aa88f070e24bd5afe61e511f14e1272dbacbd5d6c791958b",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7000870000001669,
+        "pre": 0.4123879999997371
+      },
+      "wall_bracket_width_seconds": 0.262
+    },
+    {
+      "bytes": 60040,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0021",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22968399999990652,
+      "media_midpoint_seconds": 2051.030479,
+      "media_post_seconds": 2051.145321,
+      "media_pre_seconds": 2050.915637,
+      "path": "frames/0021.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.145321,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.215Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2050.915637,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.030Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:35.049Z",
+      "screenshot_returned_at": "2026-11-07T05:54:35.215Z",
+      "sha256": "180c70df7c4475f780266444c0233de6254dc9c4ab2d1b4f9d1890444587cb61",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.9470799999999144,
+        "pre": 0.7173960000000079
+      },
+      "wall_bracket_width_seconds": 0.185
+    },
+    {
+      "bytes": 60781,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0022",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2394760000001952,
+      "media_midpoint_seconds": 2051.2949550000003,
+      "media_post_seconds": 2051.414693,
+      "media_pre_seconds": 2051.175217,
+      "path": "frames/0022.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.414693,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.514Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.175217,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.288Z",
+        "visible_slider_value": "2050.198241"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:35.306Z",
+      "screenshot_returned_at": "2026-11-07T05:54:35.514Z",
+      "sha256": "685d72b325d1fc7832d8af297124e39c50182583d17f100cb92e1f1cee08706d",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.22613900000033027,
+        "pre": 0.9769759999999224
+      },
+      "wall_bracket_width_seconds": 0.226
+    },
+    {
+      "bytes": 61023,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0023",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.21408500000006825,
+      "media_midpoint_seconds": 2051.5390675,
+      "media_post_seconds": 2051.64611,
+      "media_pre_seconds": 2051.432025,
+      "path": "frames/0023.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.64611,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.722Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.432025,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.547Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:35.563Z",
+      "screenshot_returned_at": "2026-11-07T05:54:35.722Z",
+      "sha256": "1cf29e3bb8d61a3bf8a63f726679df4606d00912fdfa0963e9661370a22f79e4",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.45755600000029517,
+        "pre": 0.24347100000022692
+      },
+      "wall_bracket_width_seconds": 0.175
+    },
+    {
+      "bytes": 60697,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0024",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.16512399999965055,
+      "media_midpoint_seconds": 2051.7479240000002,
+      "media_post_seconds": 2051.830486,
+      "media_pre_seconds": 2051.665362,
+      "path": "frames/0024.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.830486,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.897Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.665362,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.778Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:35.795Z",
+      "screenshot_returned_at": "2026-11-07T05:54:35.897Z",
+      "sha256": "1a67a972389f767bd11fb9a8f69e883bab3398c4af42cc76a3a893c7d5bc0a03",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.6419319999999971,
+        "pre": 0.4768080000003465
+      },
+      "wall_bracket_width_seconds": 0.119
+    },
+    {
+      "bytes": 60873,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0025",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.18651500000032684,
+      "media_midpoint_seconds": 2051.9444125,
+      "media_post_seconds": 2052.03767,
+      "media_pre_seconds": 2051.851155,
+      "path": "frames/0025.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.03767,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.084Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2051.851155,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:35.962Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:35.981Z",
+      "screenshot_returned_at": "2026-11-07T05:54:36.084Z",
+      "sha256": "ba72e8cc27bc22b4d897fb051304f639e7a43c062aa0578d5a403ad8bac26843",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.849116000000322,
+        "pre": 0.6626009999999951
+      },
+      "wall_bracket_width_seconds": 0.122
+    },
+    {
+      "bytes": 60342,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0026",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20909200000005512,
+      "media_midpoint_seconds": 2052.161838,
+      "media_post_seconds": 2052.266384,
+      "media_pre_seconds": 2052.057292,
+      "path": "frames/0026.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.266384,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.340Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.057292,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.171Z",
+        "visible_slider_value": "2051.188554"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:36.185Z",
+      "screenshot_returned_at": "2026-11-07T05:54:36.340Z",
+      "sha256": "5179888a923a697323bcd2415d85b003e31858d36115bb0f28fdf920124f2917",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.019842000000153348,
+        "pre": 0.8687380000001212
+      },
+      "wall_bracket_width_seconds": 0.169
+    },
+    {
+      "bytes": 59964,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0027",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2119180000004235,
+      "media_midpoint_seconds": 2052.3895039999998,
+      "media_post_seconds": 2052.495463,
+      "media_pre_seconds": 2052.283545,
+      "path": "frames/0027.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.495463,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.534Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.283545,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.398Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:36.416Z",
+      "screenshot_returned_at": "2026-11-07T05:54:36.534Z",
+      "sha256": "90161a669970f7577b3be95c959d72a4003e1a3e70bd1555dda6b7d445bcd646",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2489210000003368,
+        "pre": 0.0370029999999133
+      },
+      "wall_bracket_width_seconds": 0.136
+    },
+    {
+      "bytes": 58936,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0028",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19809100000020408,
+      "media_midpoint_seconds": 2052.6195785,
+      "media_post_seconds": 2052.718624,
+      "media_pre_seconds": 2052.520533,
+      "path": "frames/0028.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.718624,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.774Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.520533,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.633Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:36.648Z",
+      "screenshot_returned_at": "2026-11-07T05:54:36.774Z",
+      "sha256": "e773b8561335c2fd96845808c0fbeab5ddb1b0c5fc86f2d1cb337cde171ed379",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.4720820000002277,
+        "pre": 0.27399100000002363
+      },
+      "wall_bracket_width_seconds": 0.141
+    },
+    {
+      "bytes": 59417,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0029",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.1962919999996302,
+      "media_midpoint_seconds": 2052.838784,
+      "media_post_seconds": 2052.93693,
+      "media_pre_seconds": 2052.740638,
+      "path": "frames/0029.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.93693,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.984Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.740638,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:36.850Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:36.869Z",
+      "screenshot_returned_at": "2026-11-07T05:54:36.984Z",
+      "sha256": "a584bacc6a276cbba9f74df9ff06363632873eeb0efea4be75072d1c0201e708",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.6903879999999845,
+        "pre": 0.49409600000035425
+      },
+      "wall_bracket_width_seconds": 0.134
+    },
+    {
+      "bytes": 59960,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0030",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19312499999978172,
+      "media_midpoint_seconds": 2053.0512595,
+      "media_post_seconds": 2053.147822,
+      "media_pre_seconds": 2052.954697,
+      "path": "frames/0030.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2053.147822,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:37.240Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2052.954697,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:37.068Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:37.082Z",
+      "screenshot_returned_at": "2026-11-07T05:54:37.240Z",
+      "sha256": "e16433490e2f8bf0010443606d433d50a2d3ced4b4239c8c6d22d4699d186e83",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.9012800000000425,
+        "pre": 0.7081550000002608
+      },
+      "wall_bracket_width_seconds": 0.172
+    },
+    {
+      "bytes": 59691,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0031",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.33510299999989,
+      "media_midpoint_seconds": 2053.3352345000003,
+      "media_post_seconds": 2053.502786,
+      "media_pre_seconds": 2053.167683,
+      "path": "frames/0031.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2053.502786,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:37.515Z",
+        "visible_slider_value": "2053.25458"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2053.167683,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:37.281Z",
+        "visible_slider_value": "2052.246542"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:37.301Z",
+      "screenshot_returned_at": "2026-11-07T05:54:37.515Z",
+      "sha256": "0953064656d4882efe619e9d056ea9d01a0381fccc1c6c4c7d558e4fe129d278",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.24820600000020931,
+        "pre": 0.9211410000002616
+      },
+      "wall_bracket_width_seconds": 0.234
+    },
+    {
+      "bytes": 61001,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0032",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2575849999998354,
+      "media_midpoint_seconds": 2053.6598885000003,
+      "media_post_seconds": 2053.788681,
+      "media_pre_seconds": 2053.531096,
+      "path": "frames/0032.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2053.788681,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:37.836Z",
+        "visible_slider_value": "2053.25458"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2053.531096,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:37.642Z",
+        "visible_slider_value": "2053.25458"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:37.662Z",
+      "screenshot_returned_at": "2026-11-07T05:54:37.836Z",
+      "sha256": "b32c3c1aee0b19ede25589fe0b12a0c339c6f5e07d5217b974e1547f0439c8a9",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5341010000001916,
+        "pre": 0.27651600000035614
+      },
+      "wall_bracket_width_seconds": 0.194
+    },
+    {
+      "bytes": 61926,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0033",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2420630000001438,
+      "media_midpoint_seconds": 2053.9346475,
+      "media_post_seconds": 2054.055679,
+      "media_pre_seconds": 2053.813616,
+      "path": "frames/0033.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.055679,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.084Z",
+        "visible_slider_value": "2053.25458"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2053.813616,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:37.923Z",
+        "visible_slider_value": "2053.25458"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:37.950Z",
+      "screenshot_returned_at": "2026-11-07T05:54:38.084Z",
+      "sha256": "47e1e236f32e0d948e03016c73143ec5f59c1ba8e75991e3e03669d3b0a26247",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.8010990000002494,
+        "pre": 0.5590360000001056
+      },
+      "wall_bracket_width_seconds": 0.161
+    },
+    {
+      "bytes": 61103,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0034",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2619960000001811,
+      "media_midpoint_seconds": 2054.209518,
+      "media_post_seconds": 2054.340516,
+      "media_pre_seconds": 2054.07852,
+      "path": "frames/0034.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.340516,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.398Z",
+        "visible_slider_value": "2054.196265"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.07852,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.191Z",
+        "visible_slider_value": "2053.25458"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:38.224Z",
+      "screenshot_returned_at": "2026-11-07T05:54:38.398Z",
+      "sha256": "113f747806a656268ee3d66436df8251de08c3312aad4090249af7821cdc8398",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.14425100000016755,
+        "pre": 0.8239400000002206
+      },
+      "wall_bracket_width_seconds": 0.207
+    },
+    {
+      "bytes": 60799,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0035",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.21165000000019063,
+      "media_midpoint_seconds": 2054.46526,
+      "media_post_seconds": 2054.571085,
+      "media_pre_seconds": 2054.359435,
+      "path": "frames/0035.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.571085,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.674Z",
+        "visible_slider_value": "2054.196265"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.359435,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.473Z",
+        "visible_slider_value": "2054.196265"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:38.487Z",
+      "screenshot_returned_at": "2026-11-07T05:54:38.674Z",
+      "sha256": "a584d510e1d79922b5a94c944ff4c5c0f159f813f9b0e075b98bff95d08b7973",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.3748199999999997,
+        "pre": 0.16316999999980908
+      },
+      "wall_bracket_width_seconds": 0.201
+    },
+    {
+      "bytes": 60528,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0036",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20829200000025594,
+      "media_midpoint_seconds": 2054.692302,
+      "media_post_seconds": 2054.796448,
+      "media_pre_seconds": 2054.588156,
+      "path": "frames/0036.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.796448,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.840Z",
+        "visible_slider_value": "2054.196265"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.588156,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.701Z",
+        "visible_slider_value": "2054.196265"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:38.718Z",
+      "screenshot_returned_at": "2026-11-07T05:54:38.840Z",
+      "sha256": "75764bdb6d80c38844ef7c2b72caf8eb84ab1ba7bd0eefa49b1535f480f642a3",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.6001830000000155,
+        "pre": 0.3918909999997595
+      },
+      "wall_bracket_width_seconds": 0.139
+    },
+    {
+      "bytes": 60492,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0037",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.3593909999999596,
+      "media_midpoint_seconds": 2055.0662725,
+      "media_post_seconds": 2055.245968,
+      "media_pre_seconds": 2054.886577,
+      "path": "frames/0037.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.245968,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:39.328Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2054.886577,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:38.985Z",
+        "visible_slider_value": "2054.196265"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:39.035Z",
+      "screenshot_returned_at": "2026-11-07T05:54:39.328Z",
+      "sha256": "2cbd56da9e78cf3c57099e2926a8ae8285da45c56f0d92405b108c82e9e31775",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.051613000000088505,
+        "pre": 0.6903120000001763
+      },
+      "wall_bracket_width_seconds": 0.343
+    },
+    {
+      "bytes": 61148,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0038",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19735799999989467,
+      "media_midpoint_seconds": 2055.3637,
+      "media_post_seconds": 2055.462379,
+      "media_pre_seconds": 2055.265021,
+      "path": "frames/0038.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.462379,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:39.529Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.265021,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:39.380Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:39.395Z",
+      "screenshot_returned_at": "2026-11-07T05:54:39.529Z",
+      "sha256": "531cf6b05a9813f7c759f1e743e6b2c77a726c662b459eac8be7546ef6314094",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2680239999999685,
+        "pre": 0.07066600000007384
+      },
+      "wall_bracket_width_seconds": 0.149
+    },
+    {
+      "bytes": 60381,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0039",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20227599999998347,
+      "media_midpoint_seconds": 2055.578829,
+      "media_post_seconds": 2055.679967,
+      "media_pre_seconds": 2055.477691,
+      "path": "frames/0039.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.679967,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:39.735Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.477691,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:39.592Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:39.606Z",
+      "screenshot_returned_at": "2026-11-07T05:54:39.735Z",
+      "sha256": "eddaaaf0735d3c0ae0f30270ed5200381e6b18ed9b0ffa2c3aad98a411f8b147",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.4856119999999464,
+        "pre": 0.28333599999996295
+      },
+      "wall_bracket_width_seconds": 0.143
+    },
+    {
+      "bytes": 60923,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0040",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20202599999993254,
+      "media_midpoint_seconds": 2055.808476,
+      "media_post_seconds": 2055.909489,
+      "media_pre_seconds": 2055.707463,
+      "path": "frames/0040.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.909489,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:39.997Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.707463,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:39.818Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:39.838Z",
+      "screenshot_returned_at": "2026-11-07T05:54:39.997Z",
+      "sha256": "1eb8d11cc9bc373a1cb381b870ff00caac50d543b2fa5c9e247166130a004048",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7151340000000346,
+        "pre": 0.513108000000102
+      },
+      "wall_bracket_width_seconds": 0.179
+    },
+    {
+      "bytes": 59381,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0041",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.21146700000008423,
+      "media_midpoint_seconds": 2056.0317905,
+      "media_post_seconds": 2056.137524,
+      "media_pre_seconds": 2055.926057,
+      "path": "frames/0041.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.137524,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.249Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2055.926057,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.040Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:40.054Z",
+      "screenshot_returned_at": "2026-11-07T05:54:40.249Z",
+      "sha256": "5302ba32cad721f08c9259bb456c04b59cef181cc0795457786f44df22be9b5c",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.9431690000001254,
+        "pre": 0.7317020000000412
+      },
+      "wall_bracket_width_seconds": 0.209
+    },
+    {
+      "bytes": 59632,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0042",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.1995679999999993,
+      "media_midpoint_seconds": 2056.250629,
+      "media_post_seconds": 2056.350413,
+      "media_pre_seconds": 2056.150845,
+      "path": "frames/0042.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.350413,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.457Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.150845,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.265Z",
+        "visible_slider_value": "2055.194355"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:40.279Z",
+      "screenshot_returned_at": "2026-11-07T05:54:40.457Z",
+      "sha256": "1dcfa3f3faea1434f9ad0e61a5681720118332026400283c778cb3794156b42f",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.12453400000003967,
+        "pre": 0.9564900000000307
+      },
+      "wall_bracket_width_seconds": 0.192
+    },
+    {
+      "bytes": 60793,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0043",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19869199999993725,
+      "media_midpoint_seconds": 2056.464365,
+      "media_post_seconds": 2056.563711,
+      "media_pre_seconds": 2056.365019,
+      "path": "frames/0043.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.563711,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.607Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.365019,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.480Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:40.494Z",
+      "screenshot_returned_at": "2026-11-07T05:54:40.607Z",
+      "sha256": "999a5378908319bccc1a49666211f15b4a738db908b66787fbb7d19c05973e1b",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.3378319999997075,
+        "pre": 0.13913999999977023
+      },
+      "wall_bracket_width_seconds": 0.127
+    },
+    {
+      "bytes": 60642,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0044",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2036550000002535,
+      "media_midpoint_seconds": 2056.6833465,
+      "media_post_seconds": 2056.785174,
+      "media_pre_seconds": 2056.581519,
+      "path": "frames/0044.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.785174,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.847Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.581519,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.697Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:40.710Z",
+      "screenshot_returned_at": "2026-11-07T05:54:40.847Z",
+      "sha256": "fa9f070cfee247b277b38555c097dee60321dbf117ae517cf9cf65c07c4aa939",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5592950000000201,
+        "pre": 0.3556399999997666
+      },
+      "wall_bracket_width_seconds": 0.15
+    },
+    {
+      "bytes": 60327,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0045",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.1979390000001331,
+      "media_midpoint_seconds": 2056.8981464999997,
+      "media_post_seconds": 2056.997116,
+      "media_pre_seconds": 2056.799177,
+      "path": "frames/0045.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.997116,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.077Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2056.799177,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:40.914Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:40.927Z",
+      "screenshot_returned_at": "2026-11-07T05:54:41.077Z",
+      "sha256": "3f2ee4baa25ec5b78a5596e38c7e8b157c81ce211f8cd34f82a199d9b54ad480",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7712369999999282,
+        "pre": 0.5732979999997951
+      },
+      "wall_bracket_width_seconds": 0.163
+    },
+    {
+      "bytes": 59202,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0046",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20063299999992523,
+      "media_midpoint_seconds": 2057.1140134999996,
+      "media_post_seconds": 2057.21433,
+      "media_pre_seconds": 2057.013697,
+      "path": "frames/0046.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.21433,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.287Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.013697,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.129Z",
+        "visible_slider_value": "2056.225879"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:41.144Z",
+      "screenshot_returned_at": "2026-11-07T05:54:41.287Z",
+      "sha256": "600a7745c0f63af6528b357a0e5958556a72663e4120cc375f74aade2e54fb30",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.004299999999602733,
+        "pre": 0.7878179999997883
+      },
+      "wall_bracket_width_seconds": 0.158
+    },
+    {
+      "bytes": 57116,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0047",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19947099999990314,
+      "media_midpoint_seconds": 2057.3302785,
+      "media_post_seconds": 2057.430014,
+      "media_pre_seconds": 2057.230543,
+      "path": "frames/0047.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.430014,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.493Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.230543,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.346Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:41.362Z",
+      "screenshot_returned_at": "2026-11-07T05:54:41.493Z",
+      "sha256": "3789ebda99a5a5386ad53b576ea92abbe20caa7bf17134dff31fb99eaeaa63fb",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2199839999998403,
+        "pre": 0.020512999999937165
+      },
+      "wall_bracket_width_seconds": 0.147
+    },
+    {
+      "bytes": 55850,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0048",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19915600000013,
+      "media_midpoint_seconds": 2057.5454419999996,
+      "media_post_seconds": 2057.64502,
+      "media_pre_seconds": 2057.445864,
+      "path": "frames/0048.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.64502,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.687Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.445864,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.561Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:41.574Z",
+      "screenshot_returned_at": "2026-11-07T05:54:41.687Z",
+      "sha256": "a0fb60d83aa300c258a6fb605ea22138ff0cf8ee48f9c8c6f6bff1b3cd85674e",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.4349899999997433,
+        "pre": 0.2358339999996133
+      },
+      "wall_bracket_width_seconds": 0.126
+    },
+    {
+      "bytes": 52929,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0049",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.25499200000012934,
+      "media_midpoint_seconds": 2057.863009,
+      "media_post_seconds": 2057.990505,
+      "media_pre_seconds": 2057.735513,
+      "path": "frames/0049.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.990505,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.102Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2057.735513,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:41.832Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:41.876Z",
+      "screenshot_returned_at": "2026-11-07T05:54:42.101Z",
+      "sha256": "7e37e20b7e30d2bfc468360bb3b48f1f8469ed072a911f41d47ab63dd6a4c80e",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.780475000000024,
+        "pre": 0.5254829999998947
+      },
+      "wall_bracket_width_seconds": 0.27
+    },
+    {
+      "bytes": 51410,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0050",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2015080000001035,
+      "media_midpoint_seconds": 2058.11371,
+      "media_post_seconds": 2058.214464,
+      "media_pre_seconds": 2058.012956,
+      "path": "frames/0050.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.214464,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.303Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.012956,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.119Z",
+        "visible_slider_value": "2057.21003"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:42.143Z",
+      "screenshot_returned_at": "2026-11-07T05:54:42.303Z",
+      "sha256": "4661e9f61fc60be2ca6db4899a077d8a9ccf0682fad0756b551d3cc1960b7d9b",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.013171999999940454,
+        "pre": 0.802925999999843
+      },
+      "wall_bracket_width_seconds": 0.184
+    },
+    {
+      "bytes": 49990,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0051",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.18662799999992785,
+      "media_midpoint_seconds": 2058.3410489999997,
+      "media_post_seconds": 2058.434363,
+      "media_pre_seconds": 2058.247735,
+      "path": "frames/0051.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.434363,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.509Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.247735,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.354Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:42.378Z",
+      "screenshot_returned_at": "2026-11-07T05:54:42.509Z",
+      "sha256": "d3af7d2b891425861aee27e98e59ee40c274a39b39f8b039b7f189dc8948bcec",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2330709999996543,
+        "pre": 0.04644299999972645
+      },
+      "wall_bracket_width_seconds": 0.155
+    },
+    {
+      "bytes": 50520,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0052",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22462899999982255,
+      "media_midpoint_seconds": 2058.5708385,
+      "media_post_seconds": 2058.683153,
+      "media_pre_seconds": 2058.458524,
+      "path": "frames/0052.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.683153,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.747Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.458524,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.565Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:42.595Z",
+      "screenshot_returned_at": "2026-11-07T05:54:42.747Z",
+      "sha256": "0ba0093a7a13d595f38564adca42d2d6210d7a5a2a818e528929b6878111dafb",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.4818609999997534,
+        "pre": 0.25723199999993085
+      },
+      "wall_bracket_width_seconds": 0.182
+    },
+    {
+      "bytes": 54817,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0053",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2129040000004352,
+      "media_midpoint_seconds": 2058.807278,
+      "media_post_seconds": 2058.91373,
+      "media_pre_seconds": 2058.700826,
+      "path": "frames/0053.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.91373,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.962Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.700826,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:42.815Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:42.834Z",
+      "screenshot_returned_at": "2026-11-07T05:54:42.962Z",
+      "sha256": "a5a0f066c63bc1e96aab07d70d05c37e55d587250651f75510e4576b63a7c0a0",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7124380000000201,
+        "pre": 0.4995339999995849
+      },
+      "wall_bracket_width_seconds": 0.147
+    },
+    {
+      "bytes": 55520,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0054",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19250199999987672,
+      "media_midpoint_seconds": 2059.027939,
+      "media_post_seconds": 2059.12419,
+      "media_pre_seconds": 2058.931688,
+      "path": "frames/0054.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.12419,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.168Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2058.931688,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.046Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:43.061Z",
+      "screenshot_returned_at": "2026-11-07T05:54:43.168Z",
+      "sha256": "9f36dc184c9358e50c80b87972e7666c7630031dec8ac92a8770a6226419e7e8",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.9228979999998046,
+        "pre": 0.7303959999999279
+      },
+      "wall_bracket_width_seconds": 0.122
+    },
+    {
+      "bytes": 53125,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0055",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.21033600000009756,
+      "media_midpoint_seconds": 2059.259531,
+      "media_post_seconds": 2059.364699,
+      "media_pre_seconds": 2059.154363,
+      "path": "frames/0055.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.364699,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.428Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.154363,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.266Z",
+        "visible_slider_value": "2058.201292"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:43.283Z",
+      "screenshot_returned_at": "2026-11-07T05:54:43.428Z",
+      "sha256": "981aa851db578dbb01d16631d971f2d900e668342a725fada9b06c801f451eb0",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.11904200000026322,
+        "pre": 0.953070999999909
+      },
+      "wall_bracket_width_seconds": 0.162
+    },
+    {
+      "bytes": 48112,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0056",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22071200000027602,
+      "media_midpoint_seconds": 2059.492882,
+      "media_post_seconds": 2059.603238,
+      "media_pre_seconds": 2059.382526,
+      "path": "frames/0056.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.603238,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.682Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.382526,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.497Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:43.512Z",
+      "screenshot_returned_at": "2026-11-07T05:54:43.682Z",
+      "sha256": "dfd98de36a65d96c538c512b97183663afa64c98ea620f24e6a5efbdfbe86eea",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.3575810000002093,
+        "pre": 0.1368689999999333
+      },
+      "wall_bracket_width_seconds": 0.185
+    },
+    {
+      "bytes": 45313,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0057",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19826700000021447,
+      "media_midpoint_seconds": 2059.7213254999997,
+      "media_post_seconds": 2059.820459,
+      "media_pre_seconds": 2059.622192,
+      "path": "frames/0057.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.820459,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.876Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.622192,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.733Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:43.750Z",
+      "screenshot_returned_at": "2026-11-07T05:54:43.876Z",
+      "sha256": "78e3ddf3bc31a41127799820bd22a8387adbda16c1edaf5463f991caef990383",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5748020000000906,
+        "pre": 0.37653499999987616
+      },
+      "wall_bracket_width_seconds": 0.143
+    },
+    {
+      "bytes": 43939,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0058",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2011360000001332,
+      "media_midpoint_seconds": 2059.943408,
+      "media_post_seconds": 2060.043976,
+      "media_pre_seconds": 2059.84284,
+      "path": "frames/0058.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.043976,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.127Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2059.84284,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:43.958Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:43.971Z",
+      "screenshot_returned_at": "2026-11-07T05:54:44.127Z",
+      "sha256": "fab9c6dd85960b1aab2d57b5cbb8e79a57f6ab22d88bb7783f8bc2f8c58cc362",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7983189999999922,
+        "pre": 0.597182999999859
+      },
+      "wall_bracket_width_seconds": 0.169
+    },
+    {
+      "bytes": 42946,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0059",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.21275100000002567,
+      "media_midpoint_seconds": 2060.1653955,
+      "media_post_seconds": 2060.271771,
+      "media_pre_seconds": 2060.05902,
+      "path": "frames/0059.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.271771,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.352Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.05902,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.174Z",
+        "visible_slider_value": "2059.245657"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:44.187Z",
+      "screenshot_returned_at": "2026-11-07T05:54:44.352Z",
+      "sha256": "ec664e36e8f1cbd195adc4503ce1efc461666a0c5ca4899317b7bdc22f636e9c",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.02470900000025722,
+        "pre": 0.8133630000002086
+      },
+      "wall_bracket_width_seconds": 0.178
+    },
+    {
+      "bytes": 42418,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0060",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2035289999998895,
+      "media_midpoint_seconds": 2060.3913055000003,
+      "media_post_seconds": 2060.49307,
+      "media_pre_seconds": 2060.289541,
+      "path": "frames/0060.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.49307,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.534Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.289541,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.402Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:44.417Z",
+      "screenshot_returned_at": "2026-11-07T05:54:44.534Z",
+      "sha256": "28c62d762def43f162de81da22fae15ddbefaf86e484b9e4bd95e86e0131007d",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2460080000000744,
+        "pre": 0.0424790000001849
+      },
+      "wall_bracket_width_seconds": 0.132
+    },
+    {
+      "bytes": 42582,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0061",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.23859800000036557,
+      "media_midpoint_seconds": 2060.716858,
+      "media_post_seconds": 2060.836157,
+      "media_pre_seconds": 2060.597559,
+      "path": "frames/0061.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.836157,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.889Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.597559,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.688Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:44.742Z",
+      "screenshot_returned_at": "2026-11-07T05:54:44.889Z",
+      "sha256": "344094f7a62b85fe462d14c8a1573db4f328754e092aac1e066e4f369a2a0d8a",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5890950000002704,
+        "pre": 0.3504969999999048
+      },
+      "wall_bracket_width_seconds": 0.201
+    },
+    {
+      "bytes": 42277,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0062",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.18939799999998286,
+      "media_midpoint_seconds": 2060.9541630000003,
+      "media_post_seconds": 2061.048862,
+      "media_pre_seconds": 2060.859464,
+      "path": "frames/0062.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.048862,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.115Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2060.859464,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:44.970Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:44.996Z",
+      "screenshot_returned_at": "2026-11-07T05:54:45.115Z",
+      "sha256": "e32974392e60e01c443e16f015d4209cce6d2622472cf4cfa3a1393581722cc7",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.8018000000001848,
+        "pre": 0.612402000000202
+      },
+      "wall_bracket_width_seconds": 0.145
+    },
+    {
+      "bytes": 42354,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0063",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2159460000002582,
+      "media_midpoint_seconds": 2061.184186,
+      "media_post_seconds": 2061.292159,
+      "media_pre_seconds": 2061.076213,
+      "path": "frames/0063.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.292159,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.379Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.076213,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.191Z",
+        "visible_slider_value": "2060.247062"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:45.205Z",
+      "screenshot_returned_at": "2026-11-07T05:54:45.379Z",
+      "sha256": "74300c199a0934cbd15985cc72462bddedc905cbf8fffaadf35b927bd7e7326b",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.10391100000015285,
+        "pre": 0.8291509999999107
+      },
+      "wall_bracket_width_seconds": 0.188
+    },
+    {
+      "bytes": 42522,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0064",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19052499999997963,
+      "media_midpoint_seconds": 2061.4038175,
+      "media_post_seconds": 2061.49908,
+      "media_pre_seconds": 2061.308555,
+      "path": "frames/0064.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.49908,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.586Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.308555,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.423Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:45.437Z",
+      "screenshot_returned_at": "2026-11-07T05:54:45.586Z",
+      "sha256": "5964e54b109d10f3cd876a76c4828756fcd6a687a553d3fa472ab727badc44ce",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.31083200000011857,
+        "pre": 0.12030700000013894
+      },
+      "wall_bracket_width_seconds": 0.163
+    },
+    {
+      "bytes": 42872,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0065",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2138849999996637,
+      "media_midpoint_seconds": 2061.6303175000003,
+      "media_post_seconds": 2061.73726,
+      "media_pre_seconds": 2061.523375,
+      "path": "frames/0065.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.73726,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.795Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.523375,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.630Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:45.661Z",
+      "screenshot_returned_at": "2026-11-07T05:54:45.795Z",
+      "sha256": "542a971cf830a0b94a916bd6f41ae875d65bf7a33aab0a0d66f194e904d77d04",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5490119999999479,
+        "pre": 0.33512700000028417
+      },
+      "wall_bracket_width_seconds": 0.165
+    },
+    {
+      "bytes": 43068,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0066",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.20970900000020265,
+      "media_midpoint_seconds": 2061.8597085,
+      "media_post_seconds": 2061.964563,
+      "media_pre_seconds": 2061.754854,
+      "path": "frames/0066.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.964563,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.000Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.754854,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:45.868Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:45.882Z",
+      "screenshot_returned_at": "2026-11-07T05:54:46.000Z",
+      "sha256": "555e3238191bf6b4e34c7b3ee229c47b4299bd3d70282322c93b3be3c2f1d5d2",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7763150000000678,
+        "pre": 0.5666059999998652
+      },
+      "wall_bracket_width_seconds": 0.132
+    },
+    {
+      "bytes": 42688,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0067",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2070770000000266,
+      "media_midpoint_seconds": 2062.0877585,
+      "media_post_seconds": 2062.191297,
+      "media_pre_seconds": 2061.98422,
+      "path": "frames/0067.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.191297,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.229Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2061.98422,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.099Z",
+        "visible_slider_value": "2061.188248"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:46.115Z",
+      "screenshot_returned_at": "2026-11-07T05:54:46.229Z",
+      "sha256": "0db23619fce2011986294cc8ef5124221babe40737eaa57cf5dc90faf077481a",
+      "slider_lag_seconds_descriptive": {
+        "post": -0.0009039999999913562,
+        "pre": 0.7959719999998924
+      },
+      "wall_bracket_width_seconds": 0.13
+    },
+    {
+      "bytes": 44223,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0068",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19069300000001022,
+      "media_midpoint_seconds": 2062.3053455,
+      "media_post_seconds": 2062.400692,
+      "media_pre_seconds": 2062.209999,
+      "path": "frames/0068.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.400692,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.450Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.209999,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.325Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:46.339Z",
+      "screenshot_returned_at": "2026-11-07T05:54:46.450Z",
+      "sha256": "cc39b420ff0ad6cddd442dc7e5ab1964f76f76839c50bd7efdde1610ee4cf2d1",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.20849100000032195,
+        "pre": 0.01779800000031173
+      },
+      "wall_bracket_width_seconds": 0.125
+    },
+    {
+      "bytes": 45561,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0069",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22829499999988911,
+      "media_midpoint_seconds": 2062.5355055,
+      "media_post_seconds": 2062.649653,
+      "media_pre_seconds": 2062.421358,
+      "path": "frames/0069.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.649653,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.704Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.421358,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.536Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:46.552Z",
+      "screenshot_returned_at": "2026-11-07T05:54:46.704Z",
+      "sha256": "6549327d8b12f24eaf62170bf760ffa3330c7fbb8825e2861f9ecd33d04ca464",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.457452000000103,
+        "pre": 0.22915700000021388
+      },
+      "wall_bracket_width_seconds": 0.168
+    },
+    {
+      "bytes": 47518,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0070",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.23091500000009546,
+      "media_midpoint_seconds": 2062.7872415,
+      "media_post_seconds": 2062.902699,
+      "media_pre_seconds": 2062.671784,
+      "path": "frames/0070.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.902699,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.014Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.671784,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:46.783Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:46.799Z",
+      "screenshot_returned_at": "2026-11-07T05:54:47.014Z",
+      "sha256": "b10737fbd6ddd174d7a3ea2dcc303b07374e68fd91103dd693c28b71891d47c8",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7104980000003707,
+        "pre": 0.4795830000002752
+      },
+      "wall_bracket_width_seconds": 0.231
+    },
+    {
+      "bytes": 49447,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0071",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22919900000033522,
+      "media_midpoint_seconds": 2063.0324375,
+      "media_post_seconds": 2063.147037,
+      "media_pre_seconds": 2062.917838,
+      "path": "frames/0071.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2063.147037,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.227Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2062.917838,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.032Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:47.047Z",
+      "screenshot_returned_at": "2026-11-07T05:54:47.227Z",
+      "sha256": "5447f66adf4f56af84c2e7f5bc7d24b1dc951e8f863e9a258bf7926ee3177c04",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.9548360000003413,
+        "pre": 0.7256370000000061
+      },
+      "wall_bracket_width_seconds": 0.195
+    },
+    {
+      "bytes": 49770,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0072",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.1920350000000326,
+      "media_midpoint_seconds": 2063.2656695,
+      "media_post_seconds": 2063.361687,
+      "media_pre_seconds": 2063.169652,
+      "path": "frames/0072.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2063.361687,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.417Z",
+        "visible_slider_value": "2063.262168"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2063.169652,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.282Z",
+        "visible_slider_value": "2062.192201"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:47.299Z",
+      "screenshot_returned_at": "2026-11-07T05:54:47.417Z",
+      "sha256": "084300de8360ffa5dab805f153be86953ebf9552ac38885b377709d41201b898",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.0995189999998729,
+        "pre": 0.977451000000201
+      },
+      "wall_bracket_width_seconds": 0.135
+    },
+    {
+      "bytes": 49470,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0073",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2895120000002862,
+      "media_midpoint_seconds": 2063.627285,
+      "media_post_seconds": 2063.772041,
+      "media_pre_seconds": 2063.482529,
+      "path": "frames/0073.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2063.772041,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.852Z",
+        "visible_slider_value": "2063.262168"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2063.482529,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.577Z",
+        "visible_slider_value": "2063.262168"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:47.635Z",
+      "screenshot_returned_at": "2026-11-07T05:54:47.852Z",
+      "sha256": "5a313dd99c43949801ea857440e40294c2ad67a81c0b6929fe9c2edecbff4115",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5098729999999705,
+        "pre": 0.22036099999968428
+      },
+      "wall_bracket_width_seconds": 0.275
+    },
+    {
+      "bytes": 51022,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0074",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.211229000000003,
+      "media_midpoint_seconds": 2063.9048715,
+      "media_post_seconds": 2064.010486,
+      "media_pre_seconds": 2063.799257,
+      "path": "frames/0074.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.010486,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.058Z",
+        "visible_slider_value": "2063.262168"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2063.799257,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:47.910Z",
+        "visible_slider_value": "2063.262168"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:47.932Z",
+      "screenshot_returned_at": "2026-11-07T05:54:48.058Z",
+      "sha256": "ec7b80205a8952d85370cb745a9771dc5e0ece52e0817f5bcc98b7c971efcb1b",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7483179999999265,
+        "pre": 0.5370889999999235
+      },
+      "wall_bracket_width_seconds": 0.148
+    },
+    {
+      "bytes": 52034,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0075",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.21749399999998786,
+      "media_midpoint_seconds": 2064.1436219999996,
+      "media_post_seconds": 2064.252369,
+      "media_pre_seconds": 2064.034875,
+      "path": "frames/0075.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.252369,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.365Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.034875,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.148Z",
+        "visible_slider_value": "2063.262168"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:48.164Z",
+      "screenshot_returned_at": "2026-11-07T05:54:48.365Z",
+      "sha256": "76152a6df349763a384d3bc143146e50aa268de703a2ff7f91b2ce8d35b34ae4",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.013171999999940454,
+        "pre": 0.7727069999996274
+      },
+      "wall_bracket_width_seconds": 0.217
+    },
+    {
+      "bytes": 52337,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0076",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.23500700000022334,
+      "media_midpoint_seconds": 2064.3969475,
+      "media_post_seconds": 2064.514451,
+      "media_pre_seconds": 2064.279444,
+      "path": "frames/0076.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.514451,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.570Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.279444,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.394Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:48.419Z",
+      "screenshot_returned_at": "2026-11-07T05:54:48.570Z",
+      "sha256": "718afdd4ccf99a6c4b3a058db597e87825ddf4cc8f283181cef6e90da8ff3f4c",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2752540000001318,
+        "pre": 0.04024699999990844
+      },
+      "wall_bracket_width_seconds": 0.176
+    },
+    {
+      "bytes": 54836,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0077",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2290699999998651,
+      "media_midpoint_seconds": 2064.6461120000004,
+      "media_post_seconds": 2064.760647,
+      "media_pre_seconds": 2064.531577,
+      "path": "frames/0077.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.760647,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.798Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.531577,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.645Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:48.664Z",
+      "screenshot_returned_at": "2026-11-07T05:54:48.798Z",
+      "sha256": "7bed8e58d989dd7e22b97ab5e473778acc480788ea560d9647e862dd2975d207",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5214500000001863,
+        "pre": 0.29238000000032116
+      },
+      "wall_bracket_width_seconds": 0.153
+    },
+    {
+      "bytes": 56106,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0078",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.19375799999988885,
+      "media_midpoint_seconds": 2064.8753669999996,
+      "media_post_seconds": 2064.972246,
+      "media_pre_seconds": 2064.778488,
+      "path": "frames/0078.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.972246,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:49.017Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2064.778488,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:48.894Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:48.907Z",
+      "screenshot_returned_at": "2026-11-07T05:54:49.017Z",
+      "sha256": "f677fb7e80038fb7aa4c7515054fbd48e37a508e60d993065104a84b7bcc9fe2",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.7330489999999372,
+        "pre": 0.5392910000000484
+      },
+      "wall_bracket_width_seconds": 0.123
+    },
+    {
+      "bytes": 59257,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0079",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2602670000001126,
+      "media_midpoint_seconds": 2065.1468285,
+      "media_post_seconds": 2065.276962,
+      "media_pre_seconds": 2065.016695,
+      "path": "frames/0079.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2065.276962,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:49.385Z",
+        "visible_slider_value": "2065.222665"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2065.016695,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:49.113Z",
+        "visible_slider_value": "2064.239197"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:49.166Z",
+      "screenshot_returned_at": "2026-11-07T05:54:49.385Z",
+      "sha256": "64b208c5330e6d87f3e9af48ee3fa45691dddde0df9be976a362e3d9eab0d0a8",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.054297000000133266,
+        "pre": 0.7774979999999232
+      },
+      "wall_bracket_width_seconds": 0.272
+    },
+    {
+      "bytes": 60942,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0080",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.2226820000000771,
+      "media_midpoint_seconds": 2065.4077610000004,
+      "media_post_seconds": 2065.519102,
+      "media_pre_seconds": 2065.29642,
+      "path": "frames/0080.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2065.519102,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:49.587Z",
+        "visible_slider_value": "2065.222665"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2065.29642,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:49.411Z",
+        "visible_slider_value": "2065.222665"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:49.425Z",
+      "screenshot_returned_at": "2026-11-07T05:54:49.587Z",
+      "sha256": "c348e84caf21201ae750a652c58b211fff9c3495151cd56f25f6c31185e5aaca",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.2964370000004237,
+        "pre": 0.07375500000034663
+      },
+      "wall_bracket_width_seconds": 0.176
+    },
+    {
+      "bytes": 61427,
+      "dimensions": [
+        643,
+        362
+      ],
+      "frame_id": "0081",
+      "image_format": "JPEG",
+      "media_bracket_width_seconds": 0.22061700000040219,
+      "media_midpoint_seconds": 2065.6517695000002,
+      "media_post_seconds": 2065.762078,
+      "media_pre_seconds": 2065.541461,
+      "path": "frames/0081.jpg",
+      "post": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2065.762078,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:49.803Z",
+        "visible_slider_value": "2065.222665"
+      },
+      "pre": {
+        "dom": {
+          "scrollY": 0,
+          "url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+          "video": {
+            "currentTime": 2065.541461,
+            "duration": 6437.5811,
+            "error_code": null,
+            "height": 720,
+            "paused": false,
+            "readyState": 4,
+            "width": 1280
+          }
+        },
+        "observed_at": "2026-11-07T05:54:49.651Z",
+        "visible_slider_value": "2065.222665"
+      },
+      "quality_issues": [],
+      "screenshot_requested_at": "2026-11-07T05:54:49.674Z",
+      "screenshot_returned_at": "2026-11-07T05:54:49.803Z",
+      "sha256": "947176281d43577b3b1f6e9189a89423b1e3b2da91646feb7149d531536baacc",
+      "slider_lag_seconds_descriptive": {
+        "post": 0.5394130000004225,
+        "pre": 0.3187960000000203
+      },
+      "wall_bracket_width_seconds": 0.152
+    }
+  ],
+  "frames_with_quality_issues": 0,
+  "full_game_review_completed": false,
+  "game_id": "0022000021",
+  "limitations": [
+    "Metadata bounds do not verify pixel timing or continuous footage.",
+    "No scientific accuracy, error bound, independent audit or eligibility is established.",
+    "Nonzero scroll is an alignment issue; zero scroll alone does not prove unobstructed pixels."
+  ],
+  "metadata_checks_pass": true,
+  "metadata_gap_bound_definition": "next post media time minus previous pre media time; pixel synchronization unverified",
+  "pixel_to_media_synchronization_verified": false,
+  "post_capture_quality_note": null,
+  "prospective_engineering_criterion": {
+    "all_metadata_bounds_within_target": true,
+    "declared_at": "2026-11-07T05:54:16.352Z",
+    "duration_target_seconds": 20,
+    "frame_limit": 300,
+    "max_adjacent_media_gap_seconds": 1,
+    "required_scrollY": 0,
+    "scientific_error_threshold": false
+  },
+  "public_url": "https://www.nba.com/game/atl-vs-mem-0022000021?watchFullGame=true",
+  "public_url_identity_rule": "Exact catalog URL or exact catalog URL plus ?watchFullGame=true only",
+  "quality_issue_counts": {},
+  "reported_player_obstruction": false,
+  "run_metadata_issues": [],
+  "schema_version": "temporal-probe-receipt-v1",
+  "scientific_approval": false,
+  "scope": "temporal_capture_feasibility",
+  "started_at": "2026-11-07T05:54:29.852Z",
+  "target_duration_met": true
+}
