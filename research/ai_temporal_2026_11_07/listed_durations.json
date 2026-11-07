@@ -1,0 +1,1230 @@
+{
+  "actual_continuous_duration_verified": false,
+  "full_game_ai_reviews_completed": 0,
+  "games": [
+    {
+      "duration_seconds": 6437.5811,
+      "game_id": "0022000021"
+    },
+    {
+      "duration_seconds": 6228.0719,
+      "game_id": "0022000045"
+    },
+    {
+      "duration_seconds": 7114.2405,
+      "game_id": "0022000063"
+    },
+    {
+      "duration_seconds": 6698.692,
+      "game_id": "0022000084"
+    },
+    {
+      "duration_seconds": 6547.6244,
+      "game_id": "0022000091"
+    },
+    {
+      "duration_seconds": 6248.242,
+      "game_id": "0022000096"
+    },
+    {
+      "duration_seconds": 6350.4274,
+      "game_id": "0022000112"
+    },
+    {
+      "duration_seconds": 6078.4223,
+      "game_id": "0022000137"
+    },
+    {
+      "duration_seconds": 6832.1921,
+      "game_id": "0022000166"
+    },
+    {
+      "duration_seconds": 6185.2958,
+      "game_id": "0022000181"
+    },
+    {
+      "duration_seconds": 5761.756,
+      "game_id": "0022000199"
+    },
+    {
+      "duration_seconds": 6714.9916,
+      "game_id": "0022000201"
+    },
+    {
+      "duration_seconds": 7599.5753,
+      "game_id": "0022000205"
+    },
+    {
+      "duration_seconds": 6308.2853,
+      "game_id": "0022000233"
+    },
+    {
+      "duration_seconds": 6351.8455,
+      "game_id": "0022000254"
+    },
+    {
+      "duration_seconds": 5545.2898,
+      "game_id": "0022000262"
+    },
+    {
+      "duration_seconds": 6034.4618,
+      "game_id": "0022000268"
+    },
+    {
+      "duration_seconds": 6199.7102,
+      "game_id": "0022000359"
+    },
+    {
+      "duration_seconds": 6190.601,
+      "game_id": "0022000396"
+    },
+    {
+      "duration_seconds": 6164.6918,
+      "game_id": "0022000407"
+    },
+    {
+      "duration_seconds": 6036.0967,
+      "game_id": "0022000414"
+    },
+    {
+      "duration_seconds": 6301.0614,
+      "game_id": "0022000431"
+    },
+    {
+      "duration_seconds": 5825.8033,
+      "game_id": "0022000451"
+    },
+    {
+      "duration_seconds": 6863.0562,
+      "game_id": "0022000473"
+    },
+    {
+      "duration_seconds": 6994.8212,
+      "game_id": "0022000489"
+    },
+    {
+      "duration_seconds": 7834.9104,
+      "game_id": "0022000534"
+    },
+    {
+      "duration_seconds": 7141.2674,
+      "game_id": "0022000570"
+    },
+    {
+      "duration_seconds": 6607.9346,
+      "game_id": "0022000585"
+    },
+    {
+      "duration_seconds": 7577.253,
+      "game_id": "0022000616"
+    },
+    {
+      "duration_seconds": 5913.8079,
+      "game_id": "0022000635"
+    },
+    {
+      "duration_seconds": 6287.1141,
+      "game_id": "0022000636"
+    },
+    {
+      "duration_seconds": 7722.9152,
+      "game_id": "0022000647"
+    },
+    {
+      "duration_seconds": 6098.2756,
+      "game_id": "0022000673"
+    },
+    {
+      "duration_seconds": 6297.3578,
+      "game_id": "0022000677"
+    },
+    {
+      "duration_seconds": 6018.6293,
+      "game_id": "0022000685"
+    },
+    {
+      "duration_seconds": 6338.0483,
+      "game_id": "0022000724"
+    },
+    {
+      "duration_seconds": 7319.312,
+      "game_id": "0022000734"
+    },
+    {
+      "duration_seconds": 5768.6629,
+      "game_id": "0022000738"
+    },
+    {
+      "duration_seconds": 8064.423,
+      "game_id": "0022000793"
+    },
+    {
+      "duration_seconds": 7489.6989,
+      "game_id": "0022000827"
+    },
+    {
+      "duration_seconds": 7564.1566,
+      "game_id": "0022000840"
+    },
+    {
+      "duration_seconds": 6287.0141,
+      "game_id": "0022000872"
+    },
+    {
+      "duration_seconds": 5712.2065,
+      "game_id": "0022000894"
+    },
+    {
+      "duration_seconds": 6293.1034,
+      "game_id": "0022000895"
+    },
+    {
+      "duration_seconds": 6309.9036,
+      "game_id": "0022000925"
+    },
+    {
+      "duration_seconds": 6235.4625,
+      "game_id": "0022000928"
+    },
+    {
+      "duration_seconds": 6319.4298,
+      "game_id": "0022000945"
+    },
+    {
+      "duration_seconds": 6307.9349,
+      "game_id": "0022000964"
+    },
+    {
+      "duration_seconds": 6144.4883,
+      "game_id": "0022001023"
+    },
+    {
+      "duration_seconds": 6777.7377,
+      "game_id": "0022001080"
+    },
+    {
+      "duration_seconds": 6560.554,
+      "game_id": "0022100013"
+    },
+    {
+      "duration_seconds": 8022.1976,
+      "game_id": "0022100015"
+    },
+    {
+      "duration_seconds": 6375.1354,
+      "game_id": "0022100027"
+    },
+    {
+      "duration_seconds": 7118.3112,
+      "game_id": "0022100041"
+    },
+    {
+      "duration_seconds": 7294.8042,
+      "game_id": "0022100045"
+    },
+    {
+      "duration_seconds": 6302.7798,
+      "game_id": "0022100049"
+    },
+    {
+      "duration_seconds": 6363.7908,
+      "game_id": "0022100058"
+    },
+    {
+      "duration_seconds": 6110.4377,
+      "game_id": "0022100069"
+    },
+    {
+      "duration_seconds": 5715.6433,
+      "game_id": "0022100075"
+    },
+    {
+      "duration_seconds": 6356.5836,
+      "game_id": "0022100143"
+    },
+    {
+      "duration_seconds": 6906.6832,
+      "game_id": "0022100146"
+    },
+    {
+      "duration_seconds": 5244.7228,
+      "game_id": "0022100176"
+    },
+    {
+      "duration_seconds": 7651.911,
+      "game_id": "0022100185"
+    },
+    {
+      "duration_seconds": 6836.0125,
+      "game_id": "0022100201"
+    },
+    {
+      "duration_seconds": 6138.9328,
+      "game_id": "0022100221"
+    },
+    {
+      "duration_seconds": 7422.8321,
+      "game_id": "0022100274"
+    },
+    {
+      "duration_seconds": 5713.1408,
+      "game_id": "0022100285"
+    },
+    {
+      "duration_seconds": 6371.2482,
+      "game_id": "0022100300"
+    },
+    {
+      "duration_seconds": 5536.6478,
+      "game_id": "0022100313"
+    },
+    {
+      "duration_seconds": 7056.6829,
+      "game_id": "0022100317"
+    },
+    {
+      "duration_seconds": 8358.2166,
+      "game_id": "0022100324"
+    },
+    {
+      "duration_seconds": 6226.4536,
+      "game_id": "0022100354"
+    },
+    {
+      "duration_seconds": 6095.7062,
+      "game_id": "0022100367"
+    },
+    {
+      "duration_seconds": 7215.1579,
+      "game_id": "0022100462"
+    },
+    {
+      "duration_seconds": 5812.9071,
+      "game_id": "0022100488"
+    },
+    {
+      "duration_seconds": 7020.2632,
+      "game_id": "0022100510"
+    },
+    {
+      "duration_seconds": 7028.3714,
+      "game_id": "0022100568"
+    },
+    {
+      "duration_seconds": 6386.4634,
+      "game_id": "0022100586"
+    },
+    {
+      "duration_seconds": 5705.8334,
+      "game_id": "0022100597"
+    },
+    {
+      "duration_seconds": 6316.5436,
+      "game_id": "0022100634"
+    },
+    {
+      "duration_seconds": 6132.1427,
+      "game_id": "0022100635"
+    },
+    {
+      "duration_seconds": 5857.2681,
+      "game_id": "0022100654"
+    },
+    {
+      "duration_seconds": 5585.58,
+      "game_id": "0022100664"
+    },
+    {
+      "duration_seconds": 9232.8903,
+      "game_id": "0022100682"
+    },
+    {
+      "duration_seconds": 6876.4862,
+      "game_id": "0022100732"
+    },
+    {
+      "duration_seconds": 5969.1798,
+      "game_id": "0022100747"
+    },
+    {
+      "duration_seconds": 6144.3049,
+      "game_id": "0022100788"
+    },
+    {
+      "duration_seconds": 6346.023,
+      "game_id": "0022100794"
+    },
+    {
+      "duration_seconds": 6693.6537,
+      "game_id": "0022100805"
+    },
+    {
+      "duration_seconds": 5987.8319,
+      "game_id": "0022100818"
+    },
+    {
+      "duration_seconds": 6300.294,
+      "game_id": "0022100821"
+    },
+    {
+      "duration_seconds": 7725.451,
+      "game_id": "0022100846"
+    },
+    {
+      "duration_seconds": 5844.9391,
+      "game_id": "0022100856"
+    },
+    {
+      "duration_seconds": 7038.7818,
+      "game_id": "0022100864"
+    },
+    {
+      "duration_seconds": 5700.7951,
+      "game_id": "0022100874"
+    },
+    {
+      "duration_seconds": 6626.3197,
+      "game_id": "0022100904"
+    },
+    {
+      "duration_seconds": 6786.513,
+      "game_id": "0022100916"
+    },
+    {
+      "duration_seconds": 5365.1765,
+      "game_id": "0022100956"
+    },
+    {
+      "duration_seconds": 6885.0782,
+      "game_id": "0022100966"
+    },
+    {
+      "duration_seconds": 5964.8589,
+      "game_id": "0022100993"
+    },
+    {
+      "duration_seconds": 7519.0282,
+      "game_id": "0022100998"
+    },
+    {
+      "duration_seconds": 6387.6312,
+      "game_id": "0022101028"
+    },
+    {
+      "duration_seconds": 7058.5182,
+      "game_id": "0022101069"
+    },
+    {
+      "duration_seconds": 6617.0104,
+      "game_id": "0022101154"
+    },
+    {
+      "duration_seconds": 5461.0722,
+      "game_id": "0022101202"
+    },
+    {
+      "duration_seconds": 6417.2108,
+      "game_id": "0022101207"
+    },
+    {
+      "duration_seconds": 6685.8291,
+      "game_id": "0022101214"
+    },
+    {
+      "duration_seconds": 8609.3674,
+      "game_id": "0022101220"
+    },
+    {
+      "duration_seconds": 5907.1512,
+      "game_id": "0022101228"
+    },
+    {
+      "duration_seconds": 6113.9117,
+      "game_id": "0022200008"
+    },
+    {
+      "duration_seconds": 5126.1925,
+      "game_id": "0022200022"
+    },
+    {
+      "duration_seconds": 9518.6189,
+      "game_id": "0022200031"
+    },
+    {
+      "duration_seconds": 6517.9862,
+      "game_id": "0022200042"
+    },
+    {
+      "duration_seconds": 5316.0654,
+      "game_id": "0022200053"
+    },
+    {
+      "duration_seconds": 7895.8546,
+      "game_id": "0022200055"
+    },
+    {
+      "duration_seconds": 6353.5465,
+      "game_id": "0022200056"
+    },
+    {
+      "duration_seconds": 6018.2725,
+      "game_id": "0022200096"
+    },
+    {
+      "duration_seconds": 5465.0734,
+      "game_id": "0022200142"
+    },
+    {
+      "duration_seconds": 5509.5961,
+      "game_id": "0022200171"
+    },
+    {
+      "duration_seconds": 6823.6123,
+      "game_id": "0022200186"
+    },
+    {
+      "duration_seconds": 6157.9518,
+      "game_id": "0022200223"
+    },
+    {
+      "duration_seconds": 6049.0505,
+      "game_id": "0022200238"
+    },
+    {
+      "duration_seconds": 6137.9796,
+      "game_id": "0022200249"
+    },
+    {
+      "duration_seconds": 5577.024,
+      "game_id": "0022200254"
+    },
+    {
+      "duration_seconds": 5374.6192,
+      "game_id": "0022200259"
+    },
+    {
+      "duration_seconds": 5628.3909,
+      "game_id": "0022200287"
+    },
+    {
+      "duration_seconds": 5859.6533,
+      "game_id": "0022200292"
+    },
+    {
+      "duration_seconds": 6193.7395,
+      "game_id": "0022200295"
+    },
+    {
+      "duration_seconds": 5885.9857,
+      "game_id": "0022200311"
+    },
+    {
+      "duration_seconds": 5674.8304,
+      "game_id": "0022200351"
+    },
+    {
+      "duration_seconds": 5824.529,
+      "game_id": "0022200353"
+    },
+    {
+      "duration_seconds": 5200.0225,
+      "game_id": "0022200438"
+    },
+    {
+      "duration_seconds": 5688.1668,
+      "game_id": "0022200444"
+    },
+    {
+      "duration_seconds": 5320.7427,
+      "game_id": "0022200467"
+    },
+    {
+      "duration_seconds": 6894.1765,
+      "game_id": "0022200512"
+    },
+    {
+      "duration_seconds": 6571.4202,
+      "game_id": "0022200515"
+    },
+    {
+      "duration_seconds": 5373.4214,
+      "game_id": "0022200521"
+    },
+    {
+      "duration_seconds": 5494.5591,
+      "game_id": "0022200538"
+    },
+    {
+      "duration_seconds": 6463.488,
+      "game_id": "0022200597"
+    },
+    {
+      "duration_seconds": 6335.9165,
+      "game_id": "0022200611"
+    },
+    {
+      "duration_seconds": 4561.5775,
+      "game_id": "0022200621"
+    },
+    {
+      "duration_seconds": 5342.6296,
+      "game_id": "0022200635"
+    },
+    {
+      "duration_seconds": 5376.3799,
+      "game_id": "0022200643"
+    },
+    {
+      "duration_seconds": 5006.0026,
+      "game_id": "0022200644"
+    },
+    {
+      "duration_seconds": 5234.6584,
+      "game_id": "0022200648"
+    },
+    {
+      "duration_seconds": 5769.9707,
+      "game_id": "0022200668"
+    },
+    {
+      "duration_seconds": 5016.9756,
+      "game_id": "0022200670"
+    },
+    {
+      "duration_seconds": 5022.8459,
+      "game_id": "0022200671"
+    },
+    {
+      "duration_seconds": 5965.8479,
+      "game_id": "0022200698"
+    },
+    {
+      "duration_seconds": 5349.287,
+      "game_id": "0022200706"
+    },
+    {
+      "duration_seconds": 4543.2967,
+      "game_id": "0022200708"
+    },
+    {
+      "duration_seconds": 5178.0362,
+      "game_id": "0022200719"
+    },
+    {
+      "duration_seconds": 5910.805,
+      "game_id": "0022200731"
+    },
+    {
+      "duration_seconds": 5470.7625,
+      "game_id": "0022200736"
+    },
+    {
+      "duration_seconds": 4887.6869,
+      "game_id": "0022200762"
+    },
+    {
+      "duration_seconds": 6958.6252,
+      "game_id": "0022200856"
+    },
+    {
+      "duration_seconds": 5847.6639,
+      "game_id": "0022200864"
+    },
+    {
+      "duration_seconds": 5846.3778,
+      "game_id": "0022200879"
+    },
+    {
+      "duration_seconds": 6421.8764,
+      "game_id": "0022200903"
+    },
+    {
+      "duration_seconds": 6560.1372,
+      "game_id": "0022200931"
+    },
+    {
+      "duration_seconds": 6766.8771,
+      "game_id": "0022200940"
+    },
+    {
+      "duration_seconds": 6523.417,
+      "game_id": "0022200973"
+    },
+    {
+      "duration_seconds": 6012.0101,
+      "game_id": "0022200996"
+    },
+    {
+      "duration_seconds": 5779.7242,
+      "game_id": "0022201005"
+    },
+    {
+      "duration_seconds": 6786.897,
+      "game_id": "0022201015"
+    },
+    {
+      "duration_seconds": 5862.3565,
+      "game_id": "0022201018"
+    },
+    {
+      "duration_seconds": 7108.5681,
+      "game_id": "0022201037"
+    },
+    {
+      "duration_seconds": 6970.6805,
+      "game_id": "0022201078"
+    },
+    {
+      "duration_seconds": 6068.0122,
+      "game_id": "0022201083"
+    },
+    {
+      "duration_seconds": 5309.2584,
+      "game_id": "0022201096"
+    },
+    {
+      "duration_seconds": 6461.1715,
+      "game_id": "0022201110"
+    },
+    {
+      "duration_seconds": 5991.9361,
+      "game_id": "0022201123"
+    },
+    {
+      "duration_seconds": 6965.5754,
+      "game_id": "0022201142"
+    },
+    {
+      "duration_seconds": 8309.1512,
+      "game_id": "0022201194"
+    },
+    {
+      "duration_seconds": 5081.554,
+      "game_id": "0022201212"
+    },
+    {
+      "duration_seconds": 5781.6594,
+      "game_id": "0022201221"
+    },
+    {
+      "duration_seconds": 6851.428,
+      "game_id": "0022300009"
+    },
+    {
+      "duration_seconds": 6177.6282,
+      "game_id": "0022300026"
+    },
+    {
+      "duration_seconds": 6468.9125,
+      "game_id": "0022300064"
+    },
+    {
+      "duration_seconds": 7152.7959,
+      "game_id": "0022300078"
+    },
+    {
+      "duration_seconds": 6473.5004,
+      "game_id": "0022300093"
+    },
+    {
+      "duration_seconds": 6058.3855,
+      "game_id": "0022300105"
+    },
+    {
+      "duration_seconds": 7421.6476,
+      "game_id": "0022300125"
+    },
+    {
+      "duration_seconds": 7801.16,
+      "game_id": "0022300133"
+    },
+    {
+      "duration_seconds": 6521.4817,
+      "game_id": "0022300150"
+    },
+    {
+      "duration_seconds": 6875.8688,
+      "game_id": "0022300155"
+    },
+    {
+      "duration_seconds": 6944.9215,
+      "game_id": "0022300163"
+    },
+    {
+      "duration_seconds": 6226.2203,
+      "game_id": "0022300192"
+    },
+    {
+      "duration_seconds": 6326.9706,
+      "game_id": "0022300197"
+    },
+    {
+      "duration_seconds": 7110.4702,
+      "game_id": "0022300203"
+    },
+    {
+      "duration_seconds": 6154.8882,
+      "game_id": "0022300250"
+    },
+    {
+      "duration_seconds": 6635.1953,
+      "game_id": "0022300260"
+    },
+    {
+      "duration_seconds": 5957.6068,
+      "game_id": "0022300266"
+    },
+    {
+      "duration_seconds": 6531.1581,
+      "game_id": "0022300295"
+    },
+    {
+      "duration_seconds": 8219.9118,
+      "game_id": "0022300300"
+    },
+    {
+      "duration_seconds": 6807.1336,
+      "game_id": "0022300316"
+    },
+    {
+      "duration_seconds": 6259.7201,
+      "game_id": "0022300319"
+    },
+    {
+      "duration_seconds": 6706.0327,
+      "game_id": "0022300326"
+    },
+    {
+      "duration_seconds": 6508.5019,
+      "game_id": "0022300327"
+    },
+    {
+      "duration_seconds": 7208.3177,
+      "game_id": "0022300337"
+    },
+    {
+      "duration_seconds": 7099.9429,
+      "game_id": "0022300346"
+    },
+    {
+      "duration_seconds": 6788.5316,
+      "game_id": "0022300358"
+    },
+    {
+      "duration_seconds": 5772.4668,
+      "game_id": "0022300375"
+    },
+    {
+      "duration_seconds": 7191.2674,
+      "game_id": "0022300386"
+    },
+    {
+      "duration_seconds": 7187.23,
+      "game_id": "0022300401"
+    },
+    {
+      "duration_seconds": 7537.0798,
+      "game_id": "0022300406"
+    },
+    {
+      "duration_seconds": 7445.4696,
+      "game_id": "0022300473"
+    },
+    {
+      "duration_seconds": 7615.7748,
+      "game_id": "0022300555"
+    },
+    {
+      "duration_seconds": 6132.8266,
+      "game_id": "0022300565"
+    },
+    {
+      "duration_seconds": 7414.0232,
+      "game_id": "0022300578"
+    },
+    {
+      "duration_seconds": 6702.846,
+      "game_id": "0022300607"
+    },
+    {
+      "duration_seconds": 6517.5276,
+      "game_id": "0022300613"
+    },
+    {
+      "duration_seconds": 6679.1561,
+      "game_id": "0022300614"
+    },
+    {
+      "duration_seconds": 6327.0358,
+      "game_id": "0022300688"
+    },
+    {
+      "duration_seconds": 6810.0366,
+      "game_id": "0022300737"
+    },
+    {
+      "duration_seconds": 8594.0688,
+      "game_id": "0022300741"
+    },
+    {
+      "duration_seconds": 6633.7606,
+      "game_id": "0022300772"
+    },
+    {
+      "duration_seconds": 7085.2114,
+      "game_id": "0022300782"
+    },
+    {
+      "duration_seconds": 7404.8643,
+      "game_id": "0022300825"
+    },
+    {
+      "duration_seconds": 6254.4314,
+      "game_id": "0022300839"
+    },
+    {
+      "duration_seconds": 6411.7885,
+      "game_id": "0022300849"
+    },
+    {
+      "duration_seconds": 6081.3253,
+      "game_id": "0022300884"
+    },
+    {
+      "duration_seconds": 6801.0609,
+      "game_id": "0022300906"
+    },
+    {
+      "duration_seconds": 6974.5678,
+      "game_id": "0022300927"
+    },
+    {
+      "duration_seconds": 6651.2946,
+      "game_id": "0022300963"
+    },
+    {
+      "duration_seconds": 6235.7129,
+      "game_id": "0022300977"
+    },
+    {
+      "duration_seconds": 6260.5711,
+      "game_id": "0022301002"
+    },
+    {
+      "duration_seconds": 6991.3676,
+      "game_id": "0022301044"
+    },
+    {
+      "duration_seconds": 7186.7963,
+      "game_id": "0022301061"
+    },
+    {
+      "duration_seconds": 6925.3519,
+      "game_id": "0022301090"
+    },
+    {
+      "duration_seconds": 6793.3364,
+      "game_id": "0022301101"
+    },
+    {
+      "duration_seconds": 6452.8798,
+      "game_id": "0022301142"
+    },
+    {
+      "duration_seconds": 6564.608,
+      "game_id": "0022301161"
+    },
+    {
+      "duration_seconds": 7105.2315,
+      "game_id": "0022301171"
+    },
+    {
+      "duration_seconds": 7214.7574,
+      "game_id": "0022301177"
+    },
+    {
+      "duration_seconds": 5583.4657,
+      "game_id": "0022301200"
+    },
+    {
+      "duration_seconds": 6779.7398,
+      "game_id": "0022301204"
+    },
+    {
+      "duration_seconds": 7060.7202,
+      "game_id": "0022301228"
+    },
+    {
+      "duration_seconds": 8063.7889,
+      "game_id": "0022400129"
+    },
+    {
+      "duration_seconds": 6533.3101,
+      "game_id": "0022400141"
+    },
+    {
+      "duration_seconds": 6974.6343,
+      "game_id": "0022400152"
+    },
+    {
+      "duration_seconds": 6889.3825,
+      "game_id": "0022400184"
+    },
+    {
+      "duration_seconds": 6873.8169,
+      "game_id": "0022400214"
+    },
+    {
+      "duration_seconds": 6421.9657,
+      "game_id": "0022400232"
+    },
+    {
+      "duration_seconds": 6558.9857,
+      "game_id": "0022400248"
+    },
+    {
+      "duration_seconds": 7102.7624,
+      "game_id": "0022400289"
+    },
+    {
+      "duration_seconds": 8221.4799,
+      "game_id": "0022400305"
+    },
+    {
+      "duration_seconds": 6518.2119,
+      "game_id": "0022400321"
+    },
+    {
+      "duration_seconds": 7072.7153,
+      "game_id": "0022400322"
+    },
+    {
+      "duration_seconds": 7065.9256,
+      "game_id": "0022400345"
+    },
+    {
+      "duration_seconds": 6869.7129,
+      "game_id": "0022400372"
+    },
+    {
+      "duration_seconds": 6385.5458,
+      "game_id": "0022400386"
+    },
+    {
+      "duration_seconds": 6478.7222,
+      "game_id": "0022400458"
+    },
+    {
+      "duration_seconds": 6412.3057,
+      "game_id": "0022400474"
+    },
+    {
+      "duration_seconds": 6415.8427,
+      "game_id": "0022400477"
+    },
+    {
+      "duration_seconds": 6966.1656,
+      "game_id": "0022400510"
+    },
+    {
+      "duration_seconds": 7761.2201,
+      "game_id": "0022400544"
+    },
+    {
+      "duration_seconds": 6857.1505,
+      "game_id": "0022400545"
+    },
+    {
+      "duration_seconds": 8644.0352,
+      "game_id": "0022400546"
+    },
+    {
+      "duration_seconds": 6540.267,
+      "game_id": "0022400559"
+    },
+    {
+      "duration_seconds": 6583.5435,
+      "game_id": "0022400584"
+    },
+    {
+      "duration_seconds": 6816.6264,
+      "game_id": "0022400590"
+    },
+    {
+      "duration_seconds": 6098.4087,
+      "game_id": "0022400595"
+    },
+    {
+      "duration_seconds": 5797.2581,
+      "game_id": "0022400606"
+    },
+    {
+      "duration_seconds": 6745.5053,
+      "game_id": "0022400658"
+    },
+    {
+      "duration_seconds": 7369.0115,
+      "game_id": "0022400673"
+    },
+    {
+      "duration_seconds": 5900.9012,
+      "game_id": "0022400676"
+    },
+    {
+      "duration_seconds": 6754.5811,
+      "game_id": "0022400700"
+    },
+    {
+      "duration_seconds": 7110.2699,
+      "game_id": "0022400719"
+    },
+    {
+      "duration_seconds": 6400.8447,
+      "game_id": "0022400768"
+    },
+    {
+      "duration_seconds": 6459.236,
+      "game_id": "0022400770"
+    },
+    {
+      "duration_seconds": 7244.2704,
+      "game_id": "0022400799"
+    },
+    {
+      "duration_seconds": 8372.9814,
+      "game_id": "0022400819"
+    },
+    {
+      "duration_seconds": 6928.9445,
+      "game_id": "0022400845"
+    },
+    {
+      "duration_seconds": 6311.8722,
+      "game_id": "0022400847"
+    },
+    {
+      "duration_seconds": 6667.4275,
+      "game_id": "0022400874"
+    },
+    {
+      "duration_seconds": 7064.9416,
+      "game_id": "0022400882"
+    },
+    {
+      "duration_seconds": 6318.2619,
+      "game_id": "0022400908"
+    },
+    {
+      "duration_seconds": 7228.0208,
+      "game_id": "0022400916"
+    },
+    {
+      "duration_seconds": 7863.5365,
+      "game_id": "0022400927"
+    },
+    {
+      "duration_seconds": 6674.4844,
+      "game_id": "0022400941"
+    },
+    {
+      "duration_seconds": 6143.4873,
+      "game_id": "0022400952"
+    },
+    {
+      "duration_seconds": 6350.3105,
+      "game_id": "0022400959"
+    },
+    {
+      "duration_seconds": 6855.0148,
+      "game_id": "0022400977"
+    },
+    {
+      "duration_seconds": 7912.3712,
+      "game_id": "0022401012"
+    },
+    {
+      "duration_seconds": 5759.1702,
+      "game_id": "0022401021"
+    },
+    {
+      "duration_seconds": 6580.6573,
+      "game_id": "0022401023"
+    },
+    {
+      "duration_seconds": 6118.9627,
+      "game_id": "0022401041"
+    },
+    {
+      "duration_seconds": 6360.8544,
+      "game_id": "0022401079"
+    },
+    {
+      "duration_seconds": 6386.9146,
+      "game_id": "0022401109"
+    },
+    {
+      "duration_seconds": 6490.1002,
+      "game_id": "0022401122"
+    },
+    {
+      "duration_seconds": 6421.8653,
+      "game_id": "0022401141"
+    },
+    {
+      "duration_seconds": 7301.2273,
+      "game_id": "0022401159"
+    },
+    {
+      "duration_seconds": 6277.371,
+      "game_id": "0022401173"
+    },
+    {
+      "duration_seconds": 5570.1349,
+      "game_id": "0022401195"
+    },
+    {
+      "duration_seconds": 6742.0686,
+      "game_id": "0022401208"
+    },
+    {
+      "duration_seconds": 6480.5242,
+      "game_id": "0022401212"
+    },
+    {
+      "duration_seconds": 7009.3857,
+      "game_id": "0022401224"
+    },
+    {
+      "duration_seconds": 7033.3096,
+      "game_id": "0042400102"
+    },
+    {
+      "duration_seconds": 8452.7776,
+      "game_id": "0042400125"
+    },
+    {
+      "duration_seconds": 8249.9083,
+      "game_id": "0042400165"
+    },
+    {
+      "duration_seconds": 7901.9107,
+      "game_id": "0042400175"
+    },
+    {
+      "duration_seconds": 6144.1526,
+      "game_id": "0042400205"
+    }
+  ],
+  "maximum_listed_duration_minutes": 158.64364833333332,
+  "median_listed_duration_minutes": 107.54799666666666,
+  "method": "first strict successful opening observation per exact selected game, in saved order",
+  "minimum_listed_duration_minutes": 75.72161166666666,
+  "selected_game_count": 303,
+  "source_summary": {
+    "bytes": 225927,
+    "path": "research/audit_access_2026_11_06/playback/summary.json",
+    "sha256": "ea68435244f67f95000854d4925ccdd5f487a58b5c7df6436d3d1b3c25f3aaad"
+  },
+  "total_listed_duration_hours": 549.7220184166666,
+  "total_listed_duration_seconds": 1978999.2663
+}

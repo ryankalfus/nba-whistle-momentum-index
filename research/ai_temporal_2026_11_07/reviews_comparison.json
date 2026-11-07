@@ -1,0 +1,1043 @@
+{
+  "by_field": {
+    "away_score": {
+      "same": 80,
+      "unknown": 2
+    },
+    "ball_control": {
+      "discordant": 20,
+      "same": 52,
+      "unknown": 10
+    },
+    "game_clock": {
+      "same": 82
+    },
+    "home_score": {
+      "same": 81,
+      "unknown": 1
+    },
+    "period": {
+      "same": 82
+    }
+  },
+  "complete_possession_verified": false,
+  "continuous_game_coverage_verified": false,
+  "fields": [
+    "period",
+    "game_clock",
+    "away_score",
+    "home_score",
+    "ball_control"
+  ],
+  "frame_count": 82,
+  "full_game_review_completed": false,
+  "limitations": [
+    "Literal agreement is not truth or an accuracy estimate.",
+    "Different same-model agents may share errors.",
+    "Free-text action and sequence judgments are retained in original submissions, not automatically adjudicated.",
+    "The two sequence reports differ in whether a coarse possession can be reconstructed; neither establishes a complete formal audit.",
+    "No audio or authenticated atomic pixel timestamp is available."
+  ],
+  "literal_field_counts": {
+    "discordant": 20,
+    "same": 377,
+    "unknown": 13
+  },
+  "packet_sha256": "9ad37d48b72cd049fababb283b8b8310e283db1a24298c6434f4c1a2d2d83eca",
+  "paired_frame_observations": 164,
+  "review_count": 2,
+  "rows": [
+    {
+      "fields": {
+        "away_score": "unknown",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0000",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "unknown",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0001",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0002",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0003",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0004",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0005",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0006",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0007",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0008",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0009",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0010",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0011",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0012",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0013",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0014",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0015",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0016",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0017",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0018",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0019",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0020",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0021",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0022",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0023",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0024",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0025",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0026",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0027",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0028",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0029",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0030",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0031",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0032",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0033",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0034",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0035",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0036",
+      "review_A_uncertain": true,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0037",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0038",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0039",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0040",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0041",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0042",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0043",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0044",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0045",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0046",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "discordant",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0047",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0048",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0049",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0050",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0051",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0052",
+      "review_A_uncertain": false,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "unknown",
+        "period": "same"
+      },
+      "frame_id": "0053",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0054",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "unknown",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0055",
+      "review_A_uncertain": true,
+      "review_B_uncertain": true
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0056",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0057",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0058",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0059",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0060",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0061",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0062",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0063",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0064",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0065",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0066",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0067",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0068",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0069",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0070",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0071",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0072",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0073",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0074",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0075",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0076",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0077",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0078",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0079",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0080",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    },
+    {
+      "fields": {
+        "away_score": "same",
+        "ball_control": "same",
+        "game_clock": "same",
+        "home_score": "same",
+        "period": "same"
+      },
+      "frame_id": "0081",
+      "review_A_uncertain": false,
+      "review_B_uncertain": false
+    }
+  ],
+  "schema_version": "temporal-feasibility-literal-comparison-v1",
+  "scientific_approval": false,
+  "scope": "20-second sequence; not full-game review",
+  "sequence_verdicts_automatically_compared": false,
+  "uncertain_frame_counts": {
+    "A": 19,
+    "B": 37
+  }
+}
