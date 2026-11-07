@@ -127,3 +127,12 @@ Reason: the user requested another footage route, suggested Claude, then explici
 - Recognize only the exact pinned game URL and the literal `?watchFullGame=true` suffix used by the observed player. Preserve both URLs and reject any other identity/query change. This does not revise the catalog or substitute an assignment.
 - Preserve both original Sol submissions and all 20 apparent-control disagreements. Literal matches are not truth; a short baseline-inbound sequence is not a complete formal possession or full game. Inspect source labels only after original visual labels are fixed, and keep that comparison explicitly diagnostic.
 - Keep the original frozen human route, parser v7, raw sources and all scientific gates unchanged. An AI-only full-game method still needs actual complete observation and defensible reference evidence. Do not manufacture reviews to fill the 303-game ledger or inherit the earlier 1% claim from AI agreement. The approximately 549.7 listed broadcast hours are a capacity estimate, not a full-coverage finding.
+
+## 2026-11-07 — Discontinue the large review campaign
+
+Reason: the user asked to drop the 303-game review. The research lead's earlier 1%/95% recommendation created a disproportionate workload for the current development stage; it was a policy choice, not an external requirement.
+
+- Remove completion of 303 games and 606 submissions from the active software-rewrite scope. Preserve the complete unexecuted frozen design, original thresholds, forms, access evidence and blocked result as inactive history. This withdraws the campaign rather than lowering its thresholds to manufacture a pass.
+- Use the original fourteen-game development pool for bounded parser/source/targeted-clip diagnostics when useful, without a new full-game-review quota. Keep observed errors and uncertainties; do not call the pool a new protected validation sample or infer a 1% game-error bound.
+- Separate delivery of runnable software and provisional development evidence from a future audited empirical paper. Eligibility, confirmatory evaluation, unused evaluation data, meaningful-gain specification and public scientific claims retain their existing evidence requirements. Any future validation design is a separate decision and does not automatically resume the 303-game campaign.
+- Change only active planning/protocol documentation. Do not change the parser, raw data, frozen audit/configuration, historical receipts, original AI annotations or production promotion checks.
