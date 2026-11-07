@@ -2,9 +2,17 @@
 
 Date: 2026-11-02. Status: authorized implementation; scientific gates remain evidence-dependent.
 
+## Active scope revision — 2026-11-07
+
+The user discontinued the 303-game review campaign. Its 1% game-error target at 95% confidence was the research lead's recommendation, not a prerequisite imposed by the research question or software. The active rewrite delivers the runnable research software, reproducible development evidence, documented limitations and provisional explorer/manuscript. Completing 303 full-game reviews or 606 submissions is not an acceptance criterion for that software deliverable.
+
+Use the original fourteen-game development pool for bounded parser, cross-feed and targeted footage diagnostics when they answer a concrete question. Do not automatically launch fourteen full-game reviews or treat this smaller pool as a passed population audit. Preserve the larger frozen design, original forms and blocked result as inactive history; do not alter their thresholds or receipts to obtain a pass.
+
+The empirical paper and audited scientific release below remain future goals. Confirmatory evaluation, eligibility and public scientific claims retain their evidence requirements, with any future validation design specified separately and proportionate to its intended claims. No active 1% accuracy claim or automatic return to the 303-game campaign is implied.
+
 ## Deliverable and dependency order
 
-Produce a reproducible empirical paper and audited data release answering whether foul history adds predictive value beyond known basketball context. The public scientific explorer follows the research release; a separate development notebook may expose explicitly labeled provisional evidence and synthetic diagnostics. A negative result is a valid endpoint.
+The eventual scientific goal is a reproducible empirical paper and audited data release answering whether foul history adds predictive value beyond known basketball context. The public scientific explorer follows that research release; the active development notebook may expose explicitly labeled provisional evidence and synthetic diagnostics. A negative result is a valid endpoint. Software completion and that future scientific release are separate deliverables.
 
 1. **Foundation:** package and locked environment, project rules, research protocol, offline fixture/check command. Preserve the legacy release.
 2. **Source ledger:** verified immutable files, game inventory, provenance and explicit missingness/failure reasons. Distinguish a source-observed inventory from independently verified schedule completeness.

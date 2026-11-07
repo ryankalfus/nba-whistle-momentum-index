@@ -1,6 +1,12 @@
 # Independent reconstruction audit
 
-Original date: 2026-11-02. Updated: 2026-11-06. Status: scoped audit design frozen; independent evidence absent and release approval CLOSED.
+Original date: 2026-11-02. Updated: 2026-11-07. Status: larger frozen design INACTIVE at the user's request; independent evidence absent and release approval CLOSED.
+
+## Active scope — 2026-11-07
+
+The user discontinued the 303-game campaign. Do not treat its 606 empty submissions or 1% game-error target as an active software-rewrite checklist. The original fourteen-game pool supports bounded development diagnostics when needed; there is no replacement requirement to review fourteen complete games. These diagnostics carry explicit uncertainty and cannot establish a population error bound or pass the frozen audit.
+
+The design, methods and dated evidence below are preserved for interpretation and reproducibility. Frozen configuration, packet, reviewer protocol, original forms and recorded gate result remain unchanged. Discontinuing the campaign does not turn a blocked audit into a pass or make any game eligible. Any future confirmatory validation needs its own explicitly specified scope and supporting evidence; its sample size is not automatically 303. No such future design is selected here.
 
 ## What the audit establishes
 
