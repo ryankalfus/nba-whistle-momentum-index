@@ -1,0 +1,101 @@
+{
+  "agent_id": "ai-visual-review-b",
+  "completed_at": "2026-11-07T04:24:03.710073+00:00",
+  "model": "gpt-6.1-sol",
+  "observations": [
+    {
+      "away_score": 3,
+      "ball_control": "away",
+      "clock": "10:44",
+      "frame_id": "frame001",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 10:44, Utah 3, Minnesota 2. A white-uniformed Utah player at the left baseline visibly holds the ball near his hip while other players move upcourt. A single still cannot establish whether an inbound is underway or the ball is live.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 5,
+      "ball_control": "unclear",
+      "clock": "10:34",
+      "frame_id": "frame002",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 10:34, Utah 5, Minnesota 2. Close view of a white Utah jersey and a foreground head; no ball or identifiable event is visible. The separate website scores above the video are excluded.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 5,
+      "ball_control": "unclear",
+      "clock": "10:34",
+      "frame_id": "frame003",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 10:34, Utah 5, Minnesota 2. A player close-up is heavily covered by website navigation and score cards; no ball or identifiable action is visible. Same reported video position as the preceding image does not establish continuous coverage.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 5,
+      "ball_control": "unclear",
+      "clock": "10:24",
+      "frame_id": "frame004",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 10:24, Utah 5, Minnesota 2. Wide court view with white jerseys near the left lane, dark jerseys outside, and a referee raising one arm. The ball and signal meaning are not clear; raised arm alone does not establish a foul signal or a shot.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 5,
+      "ball_control": "away",
+      "clock": "10:14",
+      "frame_id": "frame005",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 10:14, Utah 5, Minnesota 2. White jersey 33 at the right sideline has his arms up with the ball near his hands at the image edge; dark defenders occupy the lane. This supports away ball control but does not establish the action or outcome; the upper court is obscured by website cards.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 5,
+      "ball_control": "unclear",
+      "clock": "10:04",
+      "frame_id": "frame006",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 10:04, Utah 5, Minnesota 2. A dark-uniformed player and white defender are elevated with arms raised near the perimeter. Their upper arms and the ball area are covered by website cards, so a shooting-like pose cannot establish release or ball control.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 5,
+      "ball_control": "unclear",
+      "clock": "9:54",
+      "frame_id": "frame007",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 9:54, Utah 5, Minnesota 2. An elevated white-uniformed player is beside a dark defender near the right baseline and basket area. The raised hands and ball area are obscured by website cards; shot, catch, rebound, and outcome cannot be distinguished from this frame.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 8,
+      "ball_control": "home",
+      "clock": "9:44",
+      "frame_id": "frame008",
+      "home_score": 2,
+      "notes": "In-video bottom overlay reads 1ST 9:44, Utah 8, Minnesota 2. Dark jersey 30 at the right side of midcourt appears to carry or dribble the visible ball by his right side as players move upcourt. Home control is supported, but this still does not establish a discrete event or the scoring action that preceded it.",
+      "period": 1,
+      "uncertain": true,
+      "visible_event": "unclear"
+    }
+  ],
+  "packet_sha256": "dfeba649ae29877045c7af8055a4a08d8ee219016eecdc368886953ae29024b5",
+  "reviewer_kind": "ai",
+  "schema_version": "ai-frame-review-v1",
+  "scope": "sampled_frames",
+  "slot": "B",
+  "started_at": "2026-11-07T04:23:14+00:00"
+}

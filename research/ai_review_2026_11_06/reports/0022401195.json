@@ -1,0 +1,375 @@
+{
+  "clock_comparison_normalization": "M:SS or MM:SS with optional .t compared as integer tenths; original labels preserved",
+  "continuous_coverage_verified": false,
+  "counts": {
+    "discordant": 0,
+    "same": 35,
+    "unknown": 13
+  },
+  "coverage_counts": {
+    "frame_count": 8,
+    "unique_image_hashes": 8,
+    "unique_image_position_pairs": 8,
+    "unique_video_positions": 7
+  },
+  "frames": [
+    {
+      "fields": {
+        "away_score": {
+          "a": 3,
+          "b": 3,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "away",
+          "b": "away",
+          "status": "same"
+        },
+        "clock": {
+          "a": "10:44",
+          "b": "10:44",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "other",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame001",
+      "notes": {
+        "a": "White-uniform Utah players are beneath the left basket and an orange ball is visible between two of them. Away control is inferred from that arrangement; a single paused image does not establish the preceding shot, inbound, or pass. In-video overlay reads 1ST, 10:44, Utah 3, Minnesota 2.",
+        "b": "In-video bottom overlay reads 1ST 10:44, Utah 3, Minnesota 2. A white-uniformed Utah player at the left baseline visibly holds the ball near his hip while other players move upcourt. A single still cannot establish whether an inbound is underway or the ball is live."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 5,
+          "b": 5,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "10:34",
+          "b": "10:34",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame002",
+      "notes": {
+        "a": "Close-up of a white Utah jersey, with court and ball out of view. In-video bottom overlay reads 1ST, 10:34, Utah 5, Minnesota 2. Website score cards above the video are unrelated and ignored; no event or ball control can be established.",
+        "b": "In-video bottom overlay reads 1ST 10:34, Utah 5, Minnesota 2. Close view of a white Utah jersey and a foreground head; no ball or identifiable event is visible. The separate website scores above the video are excluded."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 5,
+          "b": 5,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "10:34",
+          "b": "10:34",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame003",
+      "notes": {
+        "a": "Partial player close-up and website navigation/score cards obscure most of the picture. In-video bottom overlay reads 1ST, 10:34, Utah 5, Minnesota 2. Ball and playable court action are not visible. Same supplied approximate media position as frame002 does not provide continuous coverage.",
+        "b": "In-video bottom overlay reads 1ST 10:34, Utah 5, Minnesota 2. A player close-up is heavily covered by website navigation and score cards; no ball or identifiable action is visible. Same reported video position as the preceding image does not establish continuous coverage."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 5,
+          "b": 5,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "10:24",
+          "b": "10:24",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame004",
+      "notes": {
+        "a": "Court view shows navy and white players and an official at lower right with one arm raised. Upper court is covered by website score cards, and the ball is not confidently localized. The raised arm alone does not establish a foul or its correctness. In-video bottom overlay reads 1ST, 10:24, Utah 5, Minnesota 2.",
+        "b": "In-video bottom overlay reads 1ST 10:24, Utah 5, Minnesota 2. Wide court view with white jerseys near the left lane, dark jerseys outside, and a referee raising one arm. The ball and signal meaning are not clear; raised arm alone does not establish a foul signal or a shot."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 5,
+          "b": 5,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "away",
+          "b": "away",
+          "status": "same"
+        },
+        "clock": {
+          "a": "10:14",
+          "b": "10:14",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "other",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame005",
+      "notes": {
+        "a": "White Utah number 33 is at the right baseline/corner with a ball-like orange object near his hands, while white number 11 stands outside the lane and navy defenders face them. Away control is inferred; a pass, shot, or call is not established. Upper court and basket area are covered by website cards. In-video overlay reads 1ST, 10:14, Utah 5, Minnesota 2.",
+        "b": "In-video bottom overlay reads 1ST 10:14, Utah 5, Minnesota 2. White jersey 33 at the right sideline has his arms up with the ball near his hands at the image edge; dark defenders occupy the lane. This supports away ball control but does not establish the action or outcome; the upper court is obscured by website cards."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 5,
+          "b": 5,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "home",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "10:04",
+          "b": "10:04",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame006",
+      "notes": {
+        "a": "Navy Minnesota number 30 has both arms extended upward with a white defender jumping close in front. This resembles a shot attempt but the ball/release area is covered by website cards; home control is a posture-based inference and the discrete event is unclear. Official at right has an arm extended; that alone does not establish a foul. In-video overlay reads 1ST, 10:04, Utah 5, Minnesota 2.",
+        "b": "In-video bottom overlay reads 1ST 10:04, Utah 5, Minnesota 2. A dark-uniformed player and white defender are elevated with arms raised near the perimeter. Their upper arms and the ball area are covered by website cards, so a shooting-like pose cannot establish release or ball control."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 5,
+          "b": 5,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "9:54",
+          "b": "9:54",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame007",
+      "notes": {
+        "a": "A white player beside the right basket has arms extended upward near a navy defender; other navy players stand in the lane. Upper action and hoop/ball are partly hidden by website cards. Cannot distinguish shot, rebound, or other action, or establish control or a foul. In-video overlay reads 1ST, 9:54, Utah 5, Minnesota 2.",
+        "b": "In-video bottom overlay reads 1ST 9:54, Utah 5, Minnesota 2. An elevated white-uniformed player is beside a dark defender near the right baseline and basket area. The raised hands and ball area are obscured by website cards; shot, catch, rebound, and outcome cannot be distinguished from this frame."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 8,
+          "b": 8,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "home",
+          "b": "home",
+          "status": "same"
+        },
+        "clock": {
+          "a": "9:44",
+          "b": "9:44",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "period": {
+          "a": 1,
+          "b": 1,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "other",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame008",
+      "notes": {
+        "a": "Navy Minnesota number 30 advances near the right side of the center-court logo with a brown ball visible near his right hand; other players move up court. This supports home control, but a single paused frame cannot establish an entire dribble, pass, or earlier scoring event. In-video overlay reads 1ST, 9:44, Utah 8, Minnesota 2; website score cards are ignored.",
+        "b": "In-video bottom overlay reads 1ST 9:44, Utah 8, Minnesota 2. Dark jersey 30 at the right side of midcourt appears to carry or dribble the visible ball by his right side as players move upcourt. Home control is supported, but this still does not establish a discrete event or the scoring action that preceded it."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    }
+  ],
+  "game_id": "0022401195",
+  "games_with_two_sampled_frame_reviews": 1,
+  "human_reviews_completed": 0,
+  "limits": [
+    "Matching AI labels are not truth; distinct agent IDs are not statistical independence.",
+    "Same-model errors may be shared.",
+    "Sampled frames lack audio, continuous coverage and complete event coverage.",
+    "Metadata surrounds screenshots; pixel/video-time synchronization is not guaranteed.",
+    "No game material-error rate or 1% bound can be inferred.",
+    "No scientific approval, eligibility or human audit completion is conferred."
+  ],
+  "research_gate_authorized": false,
+  "schema_version": "ai-frame-comparison-v1",
+  "scope": "sampled_frames"
+}

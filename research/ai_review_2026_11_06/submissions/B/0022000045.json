@@ -1,0 +1,101 @@
+{
+  "agent_id": "ai-visual-review-b",
+  "completed_at": "2026-11-07T04:35:31.045133+00:00",
+  "model": "gpt-6.1-sol",
+  "observations": [
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame001",
+      "home_score": null,
+      "notes": "Two masked broadcast presenters hold microphones with players warming up behind them. A lower graphic identifies TRAIL BLAZERS vs LAKERS and STAPLES CENTER - LOS ANGELES. No game scoreboard or game clock is visible; background warmup balls do not establish game ball control.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame002",
+      "home_score": null,
+      "notes": "A full-screen gold holiday graphic with partially obscured Happy Holidays lettering is visible. No court action, game scoreboard, period, clock, or ball control is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "unclear",
+      "clock": "8:19",
+      "frame_id": "frame003",
+      "home_score": 33,
+      "notes": "The small, blurred in-video overlay reads POR 36, LAL 33, 2ND 8:19. Players are spread across the right half court, with yellow jerseys outside and dark defenders between them and the basket. The ball and a discrete action cannot be reliably resolved in this still; scoreboard reading also has blur uncertainty.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "away",
+      "clock": "8:09",
+      "frame_id": "frame004",
+      "home_score": 35,
+      "notes": "In-video overlay reads Portland 36, Lakers 35, 2ND 8:09. A dark-uniformed Portland player near midcourt has the ball by his left side while yellow defenders retreat. This supports away ball control, but no shot, foul, or other discrete event is established. Website scores across the top are excluded.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "unclear",
+      "clock": "7:59",
+      "frame_id": "frame005",
+      "home_score": 35,
+      "notes": "In-video overlay reads Portland 36, Lakers 35, 2ND 7:59. Dark jersey 11 is in the left lane among yellow defenders, with an arm extended near another player. The ball is not sufficiently distinct to establish control or distinguish a drive, pass, or shot; no foul signal is established.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 39,
+      "ball_control": "home",
+      "clock": "7:49",
+      "frame_id": "frame006",
+      "home_score": 35,
+      "notes": "In-video overlay reads Portland 39, Lakers 35, 2ND 7:49. A yellow Lakers player at the upper left has the ball near his hand while dark defenders face him. Home ball control is supported, but a discrete event cannot be established from the still. The Gary Trent Jr points and shooting-stat banner is not an event label.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 39,
+      "ball_control": "unclear",
+      "clock": "7:39",
+      "frame_id": "frame007",
+      "home_score": 35,
+      "notes": "The blurred in-video overlay reads Portland 39, Lakers 35, 2ND 7:39. Yellow players are near the left lane and baseline while a dark player moves out beside the basket support. Ball location, control, and action are not clear enough to classify. Top website scores are excluded.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 39,
+      "ball_control": "unclear",
+      "clock": "7:29",
+      "frame_id": "frame008",
+      "home_score": 35,
+      "notes": "In-video overlay reads Portland 39, Lakers 35, 2ND 7:29. Yellow and dark players cluster near the right lane; a possible ball and hand are partly clipped by the website cards at the top. The holder and action cannot be identified confidently. No foul or possession change is established.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    }
+  ],
+  "packet_sha256": "2502edb3ceab5726e419e91e2bcb58ff34d003b732d78457ba17b9f85b6d96ca",
+  "reviewer_kind": "ai",
+  "schema_version": "ai-frame-review-v1",
+  "scope": "sampled_frames",
+  "slot": "B",
+  "started_at": "2026-11-07T04:34:41+00:00"
+}

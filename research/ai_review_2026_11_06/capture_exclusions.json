@@ -1,0 +1,23 @@
+{
+  "attempts": [
+    {
+      "file": {
+        "bytes": 19995,
+        "path": "output/v2/ai-footage-2026-11-06/0022401195/frames/f0001.png",
+        "sha256": "04cb68882953d92369737b3fade5e7d40dc922a6eb3d6d756700ea77e636a0c1"
+      },
+      "included_in_review_packet": false,
+      "reason": "Wrong viewport/document crop; page header, excluded before packet preparation"
+    },
+    {
+      "file": {
+        "bytes": 67895,
+        "path": "output/v2/ai-footage-2026-11-06/0022401195/frames/f0002.png",
+        "sha256": "4df79e0917fd6d80c19ebf49b9b4c0f874dfd1843b5c3715c263ffb370a15e2a"
+      },
+      "included_in_review_packet": false,
+      "reason": "Crop calibration probe, not an additional sampled position or submitted frame"
+    }
+  ],
+  "schema_version": "ai-capture-exclusions-v1"
+}

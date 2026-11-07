@@ -1,0 +1,101 @@
+{
+  "agent_id": "ai-visual-review-b",
+  "completed_at": "2026-11-07T04:29:52.889541+00:00",
+  "model": "gpt-6.1-sol",
+  "observations": [
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame001",
+      "home_score": null,
+      "notes": "Three studio presenters appear in separate panels with their names below. This is a studio discussion image, not visible game action. No in-video game scoreboard or game clock is shown; the bottom NBA schedule ticker is not this game score.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame002",
+      "home_score": null,
+      "notes": "A pregame graphic reads HAWKS @ GRIZZLIES and YOUNG, JA-DROPPING POINT GUARDS, with player pictures and a WEDNESDAY points comparison. These are comparison statistics, not a live game scoreboard. Website navigation and unrelated game score cards cover much of the lower image.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame003",
+      "home_score": null,
+      "notes": "Pregame player-comparison graphic shows Trae Young and Ja Morant, with FG, 3-PT, and AST statistics. The numbers are player statistics rather than game scores. No period, game clock, or ball control is visible; website score cards and playback controls are excluded.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame004",
+      "home_score": null,
+      "notes": "The visible video is a Trae Young and Ja Morant comparison graphic, including FG, 3-PT, and AST statistics. No game action or in-video game scoreboard appears. Website score cards above and the schedule ticker below do not establish this game score or period.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame005",
+      "home_score": null,
+      "notes": "Only the upper part of a player head and hardwood court are visible above a large website navigation and scores overlay. No ball, action, or in-video scoreboard can be identified. The website FINAL scores are excluded.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame006",
+      "home_score": null,
+      "notes": "A player wears a light-blue Memphis bear-logo warmup top on the court. The in-video banner reads ATLANTA HAWKS vs MEMPHIS GRIZZLIES and COMING UP ON NBA TV. No game scoreboard or ball is visible; elapsed playback time is not a game clock.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame007",
+      "home_score": null,
+      "notes": "Close-up of a light-blue Memphis warmup top on the court, with the in-video COMING UP ON NBA TV matchup banner. No ball or game scoreboard is visible. Website scores, playback elapsed time, and the news ticker are excluded.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame008",
+      "home_score": null,
+      "notes": "A light-blue warmup jacket is visible on the hardwood, above an ATLANTA HAWKS vs MEMPHIS GRIZZLIES / COMING UP ON NBA TV banner. This supports a pregame scene, not a possession event; period, game clock, scores, and ball control are not visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    }
+  ],
+  "packet_sha256": "ea15c8a25ee960214302bc8515614e5ee2aa3fa86f53b76950a6842c1fd513dc",
+  "reviewer_kind": "ai",
+  "schema_version": "ai-frame-review-v1",
+  "scope": "sampled_frames",
+  "slot": "B",
+  "started_at": "2026-11-07T04:29:16+00:00"
+}

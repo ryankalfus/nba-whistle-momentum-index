@@ -1,0 +1,101 @@
+{
+  "agent_id": "ai-visual-review-a",
+  "completed_at": "2026-11-07T04:29:48.199747+00:00",
+  "model": "gpt-6.1-sol",
+  "observations": [
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame001",
+      "home_score": null,
+      "notes": "Three studio presenters appear in separate panels, with their names below. The lower broadcast strip contains schedule/promotional information, not an in-game scoreboard. No court action, possession, period, game clock, or game score is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame002",
+      "home_score": null,
+      "notes": "Broadcast graphic reads HAWKS @ GRIZZLIES and YOUNG, JA-DROPPING POINT GUARDS, with WEDNESDAY and PTS values 37 and 44. These are player comparison statistics, not this game score. Website navigation and unrelated score cards cover much of the video. No in-game scoreboard or actionable ball control is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame003",
+      "home_score": null,
+      "notes": "Player comparison graphic shows Trae Young and Ja Morant with FG, 3-PT and AST statistics; still images of the players include a basketball. A still promotional portrait does not establish live ball control or a basketball event. Website score cards and player controls obscure the video. No in-game period, clock, or score is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame004",
+      "home_score": null,
+      "notes": "Player comparison graphic shows Trae Young and Ja Morant with FG, 3-PT and AST statistics, plus static player pictures. No live court action or in-game scoreboard is visible. The website score cards and broadcast schedule ticker are not game-score evidence.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame005",
+      "home_score": null,
+      "notes": "Partial close-up of a player head against the court floor; website navigation and unrelated score cards obscure the center and lower player image. No ball, basketball event, or in-game scoreboard is visible. The court background alone does not establish that play has begun.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame006",
+      "home_score": null,
+      "notes": "Close-up of a light-blue Grizzlies warmup top on the court. Broadcast banner says ATLANTA HAWKS vs MEMPHIS GRIZZLIES and COMING UP ON NBA TV. No ball or active basketball event is visible. Website score cards and playback time are not game scores or a game clock.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame007",
+      "home_score": null,
+      "notes": "Close-up of a light-blue Grizzlies warmup top on the court, with COMING UP ON NBA TV below. Website cards obscure the upper picture and playback controls cover part of the lower video. No in-game score, period, clock, or ball control is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame008",
+      "home_score": null,
+      "notes": "Player in a light-blue warmup jacket stands on court; lower banner explicitly reads ATLANTA HAWKS vs MEMPHIS GRIZZLIES, COMING UP ON NBA TV. No ball or gameplay event is visible. Website FINAL score cards above and the broadcast news ticker below are unrelated to a current in-game scoreboard.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    }
+  ],
+  "packet_sha256": "ea15c8a25ee960214302bc8515614e5ee2aa3fa86f53b76950a6842c1fd513dc",
+  "reviewer_kind": "ai",
+  "schema_version": "ai-frame-review-v1",
+  "scope": "sampled_frames",
+  "slot": "A",
+  "started_at": "2026-11-07T04:29:07+00:00"
+}

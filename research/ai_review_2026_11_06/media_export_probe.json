@@ -1,0 +1,10 @@
+{
+  "schema_version": "nba-media-export-probe-v1",
+  "checked_at": "2026-11-07T04:43:34.107Z",
+  "game_id": "0022000021",
+  "public_url": "https://www.nba.com/game/atl-vs-mem-0022000021",
+  "observed_video_file_assets": 0,
+  "export_status": "SUPPORTED_EXPORT_UNAVAILABLE",
+  "local_video_file_obtained": false,
+  "error_type": "Error"
+}
