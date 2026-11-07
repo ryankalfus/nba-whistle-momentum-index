@@ -1,0 +1,1911 @@
+{
+  "all_preserved_submissions_including_initial_pregame_pass": 8,
+  "capture_run": {
+    "bytes": 991,
+    "path": "output/v2/ai-footage-2026-11-06/capture_run.json",
+    "sha256": "2e86892472bec1afa7e0ae6a628ba9bc5ed2aef5a8694149dce7d451871dccb1"
+  },
+  "cases": [
+    {
+      "capture": {
+        "bytes": 3807,
+        "path": "output/v2/ai-footage-2026-11-06/0022401195/capture-008.json",
+        "sha256": "b11b724dbf666a102d84f9195384280b6d5765c1f3cc60c3794192e2f231135c"
+      },
+      "comparison_provenance": {
+        "bytes": 2968,
+        "path": "output/v2/ai-footage-2026-11-06/comparisons-final/0022401195/provenance.json",
+        "sha256": "7b04499c9f5016592144b615412d21d3551350e4f1a5767b2cecf4ccaa3fbfd2"
+      },
+      "continuous_coverage_verified": false,
+      "coverage_counts": {
+        "frame_count": 8,
+        "unique_image_hashes": 8,
+        "unique_image_position_pairs": 8,
+        "unique_video_positions": 7
+      },
+      "frame_files": [
+        {
+          "bytes": 67895,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0000.jpg",
+          "sha256": "4df79e0917fd6d80c19ebf49b9b4c0f874dfd1843b5c3715c263ffb370a15e2a"
+        },
+        {
+          "bytes": 37648,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0001.jpg",
+          "sha256": "dc0bcad77dd0cd72565c96ddfa823b1b5393bafc44fde0e913566b0a7bca18a7"
+        },
+        {
+          "bytes": 37714,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0002.jpg",
+          "sha256": "d3eecb7276471462255bf0058674d7e8345b95f5fb7071f43874fdccf0a7608c"
+        },
+        {
+          "bytes": 60357,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0003.jpg",
+          "sha256": "46bd6e5d16fd5f7627afca00023b23b3c54e7bbfdda4f610d5dbe8f569d582c0"
+        },
+        {
+          "bytes": 57375,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0004.jpg",
+          "sha256": "d2127f6f5959b34c65a69258a27fb36e46b41b9f1a8d7e295782784b4c28f039"
+        },
+        {
+          "bytes": 56263,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0005.jpg",
+          "sha256": "b277431dafe78aff07766ffa81f01a1adebde44ac8cf022bf80738fa84ccb726"
+        },
+        {
+          "bytes": 59635,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0006.jpg",
+          "sha256": "9978d1a9947f7cd062b4fa83dba176884f59c18029e42290d59ab410a2e6b7b8"
+        },
+        {
+          "bytes": 56703,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/frames/0007.jpg",
+          "sha256": "dda5a0b3f17062665759cd7423e1fc69ccde7ec428c0a7d587853c50d98e5972"
+        }
+      ],
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401195",
+      "packet": {
+        "bytes": 4013,
+        "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/packet.json",
+        "sha256": "dfeba649ae29877045c7af8055a4a08d8ee219016eecdc368886953ae29024b5"
+      },
+      "packet_provenance": {
+        "bytes": 2309,
+        "path": "output/v2/ai-footage-2026-11-06/packets-final/0022401195/provenance.json",
+        "sha256": "56c129cd8bb4b278c9e7b156e9531e8ffc0a3206a540fadd24caceaae72d8fd4"
+      },
+      "report": {
+        "bytes": 12490,
+        "path": "research/ai_review_2026_11_06/reports/0022401195.json",
+        "sha256": "724022ea01e68ad4f9b894f6b828495cf428b37053abfa93ac0b2510ae1b9300"
+      },
+      "reviews": [
+        {
+          "bytes": 4866,
+          "path": "research/ai_review_2026_11_06/submissions/A/0022401195.json",
+          "sha256": "f27401429eb31b0253ff996d0a933969113897547d97b3dfa58f4b2a012e27c0"
+        },
+        {
+          "bytes": 4554,
+          "path": "research/ai_review_2026_11_06/submissions/B/0022401195.json",
+          "sha256": "48b31aa3a39a1bdce49449fb1cff15b7b53e824ff50049f1655813e4b035b1c7"
+        }
+      ],
+      "scope": "sampled_frames"
+    },
+    {
+      "capture": {
+        "bytes": 7324,
+        "path": "output/v2/ai-footage-2026-11-06/0022000021/capture-016.json",
+        "sha256": "db51e899e67c18c975150b8fdbde17bf7f63e6895342427349c82f9c3fa7e349"
+      },
+      "comparison_provenance": {
+        "bytes": 4650,
+        "path": "output/v2/ai-footage-2026-11-06/comparisons-final/0022000021/provenance.json",
+        "sha256": "559402485792b6369ffa632aa282ad70c8805a4f596178a8397e029e8f205292"
+      },
+      "continuous_coverage_verified": false,
+      "coverage_counts": {
+        "frame_count": 16,
+        "unique_image_hashes": 16,
+        "unique_image_position_pairs": 16,
+        "unique_video_positions": 16
+      },
+      "frame_files": [
+        {
+          "bytes": 46483,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0000.jpg",
+          "sha256": "89ba9babd3d61fea4608010c20cdcb8d9fa023b66585486689bdd43a4d3b2389"
+        },
+        {
+          "bytes": 49550,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0001.jpg",
+          "sha256": "2706224f8d6e5786c31933d3751382838fea4a993734e1ba8ccca568e901f546"
+        },
+        {
+          "bytes": 48516,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0002.jpg",
+          "sha256": "3972d7d31253f368b2ec489f526c025a340b06da9ba493e6baeb86fa7282ca0d"
+        },
+        {
+          "bytes": 42803,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0003.jpg",
+          "sha256": "007fc3814e67dd5308130c0b6498675a7b40dd323d1c4cb979ec6e58038561fd"
+        },
+        {
+          "bytes": 35048,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0004.jpg",
+          "sha256": "fa9eb094419cdab9d563f896b43723a5700c794d702343abba4829013703a2ee"
+        },
+        {
+          "bytes": 44714,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0005.jpg",
+          "sha256": "cafaba05857163b30f6b3de01f067ccd4de55ca398f6832c23aabee79b293c16"
+        },
+        {
+          "bytes": 41145,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0006.jpg",
+          "sha256": "b21887b1d2d70c5b1289b52ebffc2c626871e556183365da53e692d86ff93048"
+        },
+        {
+          "bytes": 43961,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0007.jpg",
+          "sha256": "83e05a2c9944000d44177028eb7b4fdd13ae2280721717ec2f7344b65c500339"
+        },
+        {
+          "bytes": 58552,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0008.jpg",
+          "sha256": "542ea795c90408dcdc5fc637b57b220ef6b2ca2cc8ea5374ecf95d72614b0dbd"
+        },
+        {
+          "bytes": 57082,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0009.jpg",
+          "sha256": "d47a3141e69a3a6f5dfd418a33ce4b29a2c5f5e011625a53ecddaf46ea8cc39b"
+        },
+        {
+          "bytes": 51373,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0010.jpg",
+          "sha256": "e6fdf4cf21368e6c97fe392a00b9972744d964567397dcab9f17d58b893d96a4"
+        },
+        {
+          "bytes": 61063,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0011.jpg",
+          "sha256": "a2c24d73a1853970192fe3f33f0f6bd9b890fc9a610cb3d90fd621abc077f047"
+        },
+        {
+          "bytes": 28000,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0012.jpg",
+          "sha256": "0bdbd11b54ee6edb519938d0cd4a899ba0256b867f23812c662c62d3161d6522"
+        },
+        {
+          "bytes": 34760,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0013.jpg",
+          "sha256": "36db9ade32b454f12d056020dd05e257b103a96edfb00c2b87d6653abd60d446"
+        },
+        {
+          "bytes": 64825,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0014.jpg",
+          "sha256": "304502f315c0eef8c185813f2a491b1c88bbf732bcd91c284d1e75dd85cc90ae"
+        },
+        {
+          "bytes": 45028,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/frames/0015.jpg",
+          "sha256": "9f9f662315696152f2a7f6e33803390aa0853f461929490176956bb924915d38"
+        }
+      ],
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000021",
+      "packet": {
+        "bytes": 7136,
+        "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/packet.json",
+        "sha256": "691f839b7246164757baa65ad40b648d06e3ade318e3180670c795ae47be641c"
+      },
+      "packet_provenance": {
+        "bytes": 3893,
+        "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000021/provenance.json",
+        "sha256": "104375d09c3fa01542327e6e742933c32831d26fdc62469f882c6910090f8caa"
+      },
+      "report": {
+        "bytes": 24426,
+        "path": "research/ai_review_2026_11_06/reports/0022000021.json",
+        "sha256": "936aef771268f0b006d5b13f89c0bfd110bf9fc6f3ff171215092e88a87d8361"
+      },
+      "reviews": [
+        {
+          "bytes": 9204,
+          "path": "research/ai_review_2026_11_06/submissions/A/0022000021.followup.json",
+          "sha256": "7a01e566d5c99b559d405cbbba419e7d9d636a7d85aae36fe69f215d58ebdf9f"
+        },
+        {
+          "bytes": 9318,
+          "path": "research/ai_review_2026_11_06/submissions/B/0022000021.followup.json",
+          "sha256": "56455dcf5c5f690b4b819c7a218c5735a61cb24966871b5a3dd5efdab054a800"
+        }
+      ],
+      "scope": "sampled_frames"
+    },
+    {
+      "capture": {
+        "bytes": 3805,
+        "path": "output/v2/ai-footage-2026-11-06/0022000045/capture-008.json",
+        "sha256": "cabfd0ccece7d3436eaeb06eb81beedb0b1e8d6d33eaf026e4bd315b501f117c"
+      },
+      "comparison_provenance": {
+        "bytes": 2968,
+        "path": "output/v2/ai-footage-2026-11-06/comparisons-final/0022000045/provenance.json",
+        "sha256": "d0594f4ef049446daa2a0474b8304c80693c358bdc1e78aff882d3bfa122ff9b"
+      },
+      "continuous_coverage_verified": false,
+      "coverage_counts": {
+        "frame_count": 8,
+        "unique_image_hashes": 8,
+        "unique_image_position_pairs": 8,
+        "unique_video_positions": 8
+      },
+      "frame_files": [
+        {
+          "bytes": 31605,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0000.jpg",
+          "sha256": "a27e7c7581db468ce9718f97e9fe8e7ce84db77f20fd7d7afb8acc3fbcc17287"
+        },
+        {
+          "bytes": 31741,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0001.jpg",
+          "sha256": "6686d2db7756bf5d8b01cac8d530dedd5f48e6cd1b21c14ad1f1be32d8dc50b8"
+        },
+        {
+          "bytes": 33593,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0002.jpg",
+          "sha256": "26ad407d794cda64fe9828bdd50b1bc63684dcefc9c6db926a4d1fde4556a99f"
+        },
+        {
+          "bytes": 40728,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0003.jpg",
+          "sha256": "0068503f8a191c5e50e2e0f93133097df426c7dfa6edb93aa20fdcf06b0b25c7"
+        },
+        {
+          "bytes": 48067,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0004.jpg",
+          "sha256": "155aa92f43dc4a35b12ced97bc7aba21613158339c29ea1e71bdb06cf22485aa"
+        },
+        {
+          "bytes": 45229,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0005.jpg",
+          "sha256": "cd99cce5f5e2d47987c768cfc7102d26ac864a0b5da57e91ab6786d17f555859"
+        },
+        {
+          "bytes": 36561,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0006.jpg",
+          "sha256": "4c08b74286360a8f5bfbf3c4130690e2efd2a0711ab5062870f3b21e4f1dde19"
+        },
+        {
+          "bytes": 44552,
+          "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/frames/0007.jpg",
+          "sha256": "1d6d704b165f69c6de48d07dcde3acef9c1014b3f5fbf10d1f110d1e14fe43fa"
+        }
+      ],
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000045",
+      "packet": {
+        "bytes": 4021,
+        "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/packet.json",
+        "sha256": "2502edb3ceab5726e419e91e2bcb58ff34d003b732d78457ba17b9f85b6d96ca"
+      },
+      "packet_provenance": {
+        "bytes": 2309,
+        "path": "output/v2/ai-footage-2026-11-06/packets-final/0022000045/provenance.json",
+        "sha256": "5dd430c146cd4669736c32e6d21a9d29c8e390e3efdf4d9ff28428800b86b107"
+      },
+      "report": {
+        "bytes": 12659,
+        "path": "research/ai_review_2026_11_06/reports/0022000045.json",
+        "sha256": "715be6aa5f5db952328163293a72aa74201b0adc31ee465a4bec1409a651214e"
+      },
+      "reviews": [
+        {
+          "bytes": 5009,
+          "path": "research/ai_review_2026_11_06/submissions/A/0022000045.json",
+          "sha256": "aa1f85b6e7dd13971235b94d2ef60425844c72eb26afbe0c779d8640b709d578"
+        },
+        {
+          "bytes": 4559,
+          "path": "research/ai_review_2026_11_06/submissions/B/0022000045.json",
+          "sha256": "9885bc8153dfd251e6742826ad60664f1dadbc8eac21c2b87dfb3890a496695c"
+        }
+      ],
+      "scope": "sampled_frames"
+    }
+  ],
+  "catalog": {
+    "bytes": 268405,
+    "path": "research/audit_access_2026_11_06/catalog.json",
+    "sha256": "06aa44fb27877752a7044acf13a0a8b73b0c792a230236cf2b22017abed4a7b4"
+  },
+  "completed_full_game_ai_reviews": 0,
+  "continuous_coverage_verified": false,
+  "date": "2026-11-06",
+  "environment": {
+    "Pillow": "13.0.0",
+    "implementation": "CPython",
+    "machine": "arm64",
+    "package_version": "0.1.0",
+    "python": "3.14.7",
+    "system": "Darwin"
+  },
+  "games_with_two_sampled_frame_passes": 3,
+  "games_without_ai_frame_review": 300,
+  "games_without_completed_full_game_ai_review": 303,
+  "git_base_commit": "7527bd2d49d3654c2a29cecc39663d28c658a48c",
+  "historical_comparisons_excluded_from_latest_counts": true,
+  "historical_pregame_report": {
+    "bytes": 12051,
+    "path": "research/ai_review_2026_11_06/reports/0022000021.pregame.json",
+    "sha256": "0a43e67f6c6682ee9eb0fe6c5480bb7f03aa8391e98f9ed715b6a49cef2e1d16"
+  },
+  "human_reviews_completed": 0,
+  "implementation": {
+    "bytes": 16611,
+    "path": "src/whistle_research/ai_review.py",
+    "sha256": "9ef3b28a547899594ebdea5103ba2e4198742d4bb11d4537bcba924a8a92eca4"
+  },
+  "latest_packet_frame_records": 32,
+  "latest_paired_submissions": 6,
+  "latest_uncertain_frame_observations": 64,
+  "latest_unique_video_positions_within_games": 31,
+  "limits": [
+    "Not complete game or possession reconstruction; no audio or intervening action observed.",
+    "Matching uncertain AI labels are not ground truth or an accuracy estimate.",
+    "Same-model agents may share errors; distinct IDs are not statistical independence.",
+    "No population material-error bound, 1% claim, eligibility or model authorization.",
+    "Screenshots stay local and ignored; repository contains metadata and AI annotations only.",
+    "Snapshot metadata and pixel timing are not guaranteed synchronized.",
+    "Original nongame/obstructed images and first submissions remain unchanged."
+  ],
+  "literal_field_comparison_counts": {
+    "discordant": 0,
+    "same": 104,
+    "unknown": 88
+  },
+  "media_export_probe": {
+    "bytes": 338,
+    "path": "research/ai_review_2026_11_06/media_export_probe.json",
+    "sha256": "3412aa21efc788f2507634e03158906cc7e1fdcf6ba3c8c72298b0ce1d9743b2"
+  },
+  "model": "gpt-6.1-sol",
+  "protocol": {
+    "bytes": 6073,
+    "path": "docs/AI_REVIEW_PROTOCOL.md",
+    "sha256": "c010439e8e48117481a40c4f5f56ef5bccd8c927802888e3e7f690a5dcc383f6"
+  },
+  "research_gate_authorized": false,
+  "review_agents": [
+    "ai-visual-review-a",
+    "ai-visual-review-b"
+  ],
+  "reviewer_kind": "ai",
+  "roster": [
+    {
+      "ai_frame_status": "TWO_SAMPLED_FRAME_PASSES",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000021"
+    },
+    {
+      "ai_frame_status": "TWO_SAMPLED_FRAME_PASSES",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000045"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000063"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000084"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000091"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000096"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000112"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000137"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000166"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000181"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000199"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000201"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000205"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000233"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000254"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000262"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000268"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000359"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000396"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000407"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000414"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000431"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000451"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000473"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000489"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000534"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000570"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000585"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000616"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000635"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000636"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000647"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000673"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000677"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000685"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000724"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000734"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000738"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000793"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000827"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000840"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000872"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000894"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000895"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000925"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000928"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000945"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022000964"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022001023"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022001080"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100013"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100015"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100027"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100041"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100045"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100049"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100058"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100069"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100075"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100143"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100146"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100176"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100185"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100201"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100221"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100274"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100285"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100300"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100313"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100317"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100324"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100354"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100367"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100462"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100488"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100510"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100568"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100586"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100597"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100634"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100635"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100654"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100664"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100682"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100732"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100747"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100788"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100794"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100805"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100818"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100821"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100846"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100856"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100864"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100874"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100904"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100916"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100956"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100966"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100993"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022100998"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101028"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101069"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101154"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101202"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101207"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101214"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101220"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022101228"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200008"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200022"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200031"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200042"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200053"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200055"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200056"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200096"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200142"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200171"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200186"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200223"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200238"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200249"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200254"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200259"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200287"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200292"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200295"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200311"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200351"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200353"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200438"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200444"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200467"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200512"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200515"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200521"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200538"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200597"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200611"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200621"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200635"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200643"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200644"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200648"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200668"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200670"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200671"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200698"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200706"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200708"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200719"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200731"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200736"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200762"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200856"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200864"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200879"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200903"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200931"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200940"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200973"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022200996"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201005"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201015"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201018"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201037"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201078"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201083"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201096"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201110"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201123"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201142"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201194"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201212"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022201221"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300009"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300026"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300064"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300078"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300093"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300105"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300125"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300133"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300150"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300155"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300163"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300192"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300197"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300203"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300250"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300260"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300266"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300295"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300300"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300316"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300319"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300326"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300327"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300337"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300346"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300358"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300375"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300386"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300401"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300406"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300473"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300555"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300565"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300578"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300607"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300613"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300614"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300688"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300737"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300741"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300772"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300782"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300825"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300839"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300849"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300884"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300906"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300927"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300963"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022300977"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301002"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301044"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301061"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301090"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301101"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301142"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301161"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301171"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301177"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301200"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301204"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022301228"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400129"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400141"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400152"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400184"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400214"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400232"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400248"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400289"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400305"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400321"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400322"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400345"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400372"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400386"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400458"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400474"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400477"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400510"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400544"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400545"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400546"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400559"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400584"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400590"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400595"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400606"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400658"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400673"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400676"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400700"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400719"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400768"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400770"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400799"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400819"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400845"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400847"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400874"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400882"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400908"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400916"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400927"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400941"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400952"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400959"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022400977"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401012"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401021"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401023"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401041"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401079"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401109"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401122"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401141"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401159"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401173"
+    },
+    {
+      "ai_frame_status": "TWO_SAMPLED_FRAME_PASSES",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401195"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401208"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401212"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0022401224"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0042400102"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0042400125"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0042400165"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0042400175"
+    },
+    {
+      "ai_frame_status": "NO_AI_FRAME_REVIEW",
+      "full_game_ai_review_completed": false,
+      "game_id": "0042400205"
+    }
+  ],
+  "schema_version": "ai-visual-pilot-receipt-v1",
+  "selected_audit_games": 303,
+  "selection": "Currently open selected game and first two catalog games; convenience/feasibility sample, not random",
+  "status": "AI_SAMPLED_FRAME_PILOT_ONLY"
+}

@@ -1,0 +1,375 @@
+{
+  "clock_comparison_normalization": "M:SS or MM:SS with optional .t compared as integer tenths; original labels preserved",
+  "continuous_coverage_verified": false,
+  "counts": {
+    "discordant": 0,
+    "same": 28,
+    "unknown": 20
+  },
+  "coverage_counts": {
+    "frame_count": 8,
+    "unique_image_hashes": 8,
+    "unique_image_position_pairs": 8,
+    "unique_video_positions": 8
+  },
+  "frames": [
+    {
+      "fields": {
+        "away_score": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "home_score": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "period": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "visible_event": {
+          "a": "other",
+          "b": "other",
+          "status": "same"
+        }
+      },
+      "frame_id": "frame001",
+      "notes": {
+        "a": "Two masked broadcast presenters hold microphones in front of a court where players appear to be warming up. A banner reads TRAIL BLAZERS vs LAKERS, STAPLES CENTER - LOS ANGELES. No in-game score or period/clock overlay is visible; background warmup action does not establish live game control.",
+        "b": "Two masked broadcast presenters hold microphones with players warming up behind them. A lower graphic identifies TRAIL BLAZERS vs LAKERS and STAPLES CENTER - LOS ANGELES. No game scoreboard or game clock is visible; background warmup balls do not establish game ball control."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "home_score": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "period": {
+          "a": null,
+          "b": null,
+          "status": "unknown"
+        },
+        "visible_event": {
+          "a": "other",
+          "b": "other",
+          "status": "same"
+        }
+      },
+      "frame_id": "frame002",
+      "notes": {
+        "a": "Full-screen gold holiday graphic with diagonal gold shapes and partially visible Happy Holidays lettering. No court action, ball, period, game clock, or in-game score is visible.",
+        "b": "A full-screen gold holiday graphic with partially obscured Happy Holidays lettering is visible. No court action, game scoreboard, period, clock, or ball control is visible."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 36,
+          "b": 36,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "8:19",
+          "b": "8:19",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 33,
+          "b": 33,
+          "status": "same"
+        },
+        "period": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame003",
+      "notes": {
+        "a": "Wide court view shows yellow Lakers and black Portland players around the perimeter, with the basket at right. Low-resolution in-video overlay appears to read POR 36, LAKERS 33, 2ND, 8:19; clock and score are less sharp than later frames. Ball is not confidently localized, so control and discrete event remain unclear. FG THIS QTR statistics are separate from the game score.",
+        "b": "The small, blurred in-video overlay reads POR 36, LAL 33, 2ND 8:19. Players are spread across the right half court, with yellow jerseys outside and dark defenders between them and the basket. The ball and a discrete action cannot be reliably resolved in this still; scoreboard reading also has blur uncertainty."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 36,
+          "b": 36,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "away",
+          "b": "away",
+          "status": "same"
+        },
+        "clock": {
+          "a": "8:09",
+          "b": "8:09",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 35,
+          "b": 35,
+          "status": "same"
+        },
+        "period": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "other",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame004",
+      "notes": {
+        "a": "Black-uniform Portland guard near the center logo appears to advance with the ball near his raised right hand while yellow Lakers defenders retreat. Away control is an inference from the visible posture/ball-like object; no discrete shot, turnover, or foul is established. In-video overlay reads Portland 36, Lakers 35, 2ND, 8:09. Website FINAL score cards above are ignored.",
+        "b": "In-video overlay reads Portland 36, Lakers 35, 2ND 8:09. A dark-uniformed Portland player near midcourt has the ball by his left side while yellow defenders retreat. This supports away ball control, but no shot, foul, or other discrete event is established. Website scores across the top are excluded."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 36,
+          "b": 36,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "7:59",
+          "b": "7:59",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 35,
+          "b": 35,
+          "status": "same"
+        },
+        "period": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame005",
+      "notes": {
+        "a": "Black Portland player at right has arms raised near his head, while players under the left basket face the hoop and one appears to box out. This may depict a shot, but the ball/release and upper basket area are obscured by website cards. Cannot establish possession, shot outcome, rebound, or a foul. In-video overlay reads Portland 36, Lakers 35, 2ND, 7:59.",
+        "b": "In-video overlay reads Portland 36, Lakers 35, 2ND 7:59. Dark jersey 11 is in the left lane among yellow defenders, with an arm extended near another player. The ball is not sufficiently distinct to establish control or distinguish a drive, pass, or shot; no foul signal is established."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 39,
+          "b": 39,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "home",
+          "b": "home",
+          "status": "same"
+        },
+        "clock": {
+          "a": "7:49",
+          "b": "7:49",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 35,
+          "b": 35,
+          "status": "same"
+        },
+        "period": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "other",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame006",
+      "notes": {
+        "a": "Yellow Lakers players advance toward the right basket with black Portland defenders in front; the yellow player at upper left appears to handle the ball. Home control is inferred and the upper action is partly covered by website cards. The GARY TRENT JR. 14 POINTS graphic reports player statistics, not a new event. In-video scoreboard reads Portland 39, Lakers 35, 2ND, 7:49.",
+        "b": "In-video overlay reads Portland 39, Lakers 35, 2ND 7:49. A yellow Lakers player at the upper left has the ball near his hand while dark defenders face him. Home ball control is supported, but a discrete event cannot be established from the still. The Gary Trent Jr points and shooting-stat banner is not an event label."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 39,
+          "b": 39,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "7:39",
+          "b": "7:39",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 35,
+          "b": 35,
+          "status": "same"
+        },
+        "period": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame007",
+      "notes": {
+        "a": "Blurred court image shows yellow Lakers players near the left lane and a black Portland player near the baseline. Ball is not confidently distinguishable and the upper action is covered by website cards, so neither control nor a discrete event can be established. In-video overlay appears to read Portland 39, Lakers 35, 2ND, 7:39; small clock digits are blurred.",
+        "b": "The blurred in-video overlay reads Portland 39, Lakers 35, 2ND 7:39. Yellow players are near the left lane and baseline while a dark player moves out beside the basket support. Ball location, control, and action are not clear enough to classify. Top website scores are excluded."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    },
+    {
+      "fields": {
+        "away_score": {
+          "a": 39,
+          "b": 39,
+          "status": "same"
+        },
+        "ball_control": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        },
+        "clock": {
+          "a": "7:29",
+          "b": "7:29",
+          "status": "same"
+        },
+        "home_score": {
+          "a": 35,
+          "b": 35,
+          "status": "same"
+        },
+        "period": {
+          "a": 2,
+          "b": 2,
+          "status": "same"
+        },
+        "visible_event": {
+          "a": "unclear",
+          "b": "unclear",
+          "status": "unknown"
+        }
+      },
+      "frame_id": "frame008",
+      "notes": {
+        "a": "Yellow Lakers and black Portland players are positioned around the right half court, with a yellow player near the upper-left side of the lane facing a black defender. The ball and upper bodies at the top edge are obscured by website cards; this does not establish actual ball control or a discrete event. In-video overlay reads Portland 39, Lakers 35, 2ND, 7:29.",
+        "b": "In-video overlay reads Portland 39, Lakers 35, 2ND 7:29. Yellow and dark players cluster near the right lane; a possible ball and hand are partly clipped by the website cards at the top. The holder and action cannot be identified confidently. No foul or possession change is established."
+      },
+      "uncertain": {
+        "a": true,
+        "b": true
+      }
+    }
+  ],
+  "game_id": "0022000045",
+  "games_with_two_sampled_frame_reviews": 1,
+  "human_reviews_completed": 0,
+  "limits": [
+    "Matching AI labels are not truth; distinct agent IDs are not statistical independence.",
+    "Same-model errors may be shared.",
+    "Sampled frames lack audio, continuous coverage and complete event coverage.",
+    "Metadata surrounds screenshots; pixel/video-time synchronization is not guaranteed.",
+    "No game material-error rate or 1% bound can be inferred.",
+    "No scientific approval, eligibility or human audit completion is conferred."
+  ],
+  "research_gate_authorized": false,
+  "schema_version": "ai-frame-comparison-v1",
+  "scope": "sampled_frames"
+}

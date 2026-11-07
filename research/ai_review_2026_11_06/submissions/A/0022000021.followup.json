@@ -1,0 +1,189 @@
+{
+  "agent_id": "ai-visual-review-a",
+  "completed_at": "2026-11-07T04:39:19.505371+00:00",
+  "model": "gpt-6.1-sol",
+  "observations": [
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame001",
+      "home_score": null,
+      "notes": "Three studio presenters appear in separate panels, with their names below. The lower broadcast strip contains schedule/promotional information, not an in-game scoreboard. No court action, possession, period, game clock, or game score is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame002",
+      "home_score": null,
+      "notes": "Broadcast graphic reads HAWKS @ GRIZZLIES and YOUNG, JA-DROPPING POINT GUARDS, with WEDNESDAY and PTS values 37 and 44. These are player comparison statistics, not this game score. Website navigation and unrelated score cards cover much of the video. No in-game scoreboard or actionable ball control is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame003",
+      "home_score": null,
+      "notes": "Player comparison graphic shows Trae Young and Ja Morant with FG, 3-PT and AST statistics; still images of the players include a basketball. A still promotional portrait does not establish live ball control or a basketball event. Website score cards and player controls obscure the video. No in-game period, clock, or score is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame004",
+      "home_score": null,
+      "notes": "Player comparison graphic shows Trae Young and Ja Morant with FG, 3-PT and AST statistics, plus static player pictures. No live court action or in-game scoreboard is visible. The website score cards and broadcast schedule ticker are not game-score evidence.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame005",
+      "home_score": null,
+      "notes": "Partial close-up of a player head against the court floor; website navigation and unrelated score cards obscure the center and lower player image. No ball, basketball event, or in-game scoreboard is visible. The court background alone does not establish that play has begun.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame006",
+      "home_score": null,
+      "notes": "Close-up of a light-blue Grizzlies warmup top on the court. Broadcast banner says ATLANTA HAWKS vs MEMPHIS GRIZZLIES and COMING UP ON NBA TV. No ball or active basketball event is visible. Website score cards and playback time are not game scores or a game clock.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame007",
+      "home_score": null,
+      "notes": "Close-up of a light-blue Grizzlies warmup top on the court, with COMING UP ON NBA TV below. Website cards obscure the upper picture and playback controls cover part of the lower video. No in-game score, period, clock, or ball control is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame008",
+      "home_score": null,
+      "notes": "Player in a light-blue warmup jacket stands on court; lower banner explicitly reads ATLANTA HAWKS vs MEMPHIS GRIZZLIES, COMING UP ON NBA TV. No ball or gameplay event is visible. Website FINAL score cards above and the broadcast news ticker below are unrelated to a current in-game scoreboard.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 33,
+      "ball_control": "unclear",
+      "clock": "9:47",
+      "frame_id": "frame009",
+      "home_score": 27,
+      "notes": "White Atlanta number 22 and a navy Memphis player are airborne near the right basket, with other players facing the hoop. Ball is not confidently localized; this single pose cannot distinguish shot, rebound, or another contest, nor establish current control or a foul. In-video overlay reads HAWKS 33, GRIZZLIES 27, 2nd Qtr, 9:47.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 33,
+      "ball_control": "away",
+      "clock": "9:37",
+      "frame_id": "frame010",
+      "home_score": 27,
+      "notes": "White Atlanta ballhandler near the middle-right perimeter visibly carries/dribbles the brown ball near his hip while facing a navy defender. This supports away control; no discrete shot, turnover, or foul is established. In-video overlay reads HAWKS 33, GRIZZLIES 27, 2nd Qtr, 9:37. Lower ticker also contains a different clock, which is not substituted for the main in-video game clock.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "home",
+      "clock": "9:27",
+      "frame_id": "frame011",
+      "home_score": 27,
+      "notes": "Navy Memphis player near the upper-left sideline appears to handle the ball against a white Atlanta defender, with other players spread around the half court. Home control is an inference from the visible ballhandler posture; exact dribble or pass motion cannot be established from one image. In-video overlay reads HAWKS 36, GRIZZLIES 27, 2nd Qtr, 9:27.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "home",
+      "clock": "9:17",
+      "frame_id": "frame012",
+      "home_score": 27,
+      "notes": "Navy Memphis number 12 visibly handles the ball beside his right hand near the left wing while white defenders face him. Main in-video overlay clearly shows GRIZZLIES 27, 2nd Qtr, 9:17. Playback Streams/MultiView controls cover the Hawks score; it remains null rather than copied from another frame. No discrete call or outcome is established.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "unclear",
+      "clock": "9:11",
+      "frame_id": "frame013",
+      "home_score": 27,
+      "notes": "Close-up of white ATLANTA number 18 standing on the court. No ball or official signal is visible; neither control nor the reason for the close-up is established. Small in-video overlay appears to read HAWKS 36, GRIZZLIES 27, 2nd Qtr, 9:11; digits are less sharp than the next image.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "unclear",
+      "clock": "9:11",
+      "frame_id": "frame014",
+      "home_score": 27,
+      "notes": "Close-up of navy Memphis number 17 looking down, with other players partly outside the picture. No ball or action establishing control or a discrete basketball event is visible. In-video overlay reads HAWKS 36, GRIZZLIES 27, 2nd Qtr, 9:11; shot clock 24 is separate from game clock.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "dead_ball",
+      "clock": "9:11",
+      "frame_id": "frame015",
+      "home_score": 27,
+      "notes": "Navy shooter at the free-throw line holds a shooting follow-through, with the ball near the right hoop, players standing in marked lane spaces, and an official beside the lane. This arrangement supports a free-throw attempt/dead-ball setting; result and reason for the attempt are not established. In-video overlay shows GRIZZLIES 27, 2nd Qtr, 9:11. Playback controls obscure the Hawks score, left null.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "free_throw"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": "9:11",
+      "frame_id": "frame016",
+      "home_score": 28,
+      "notes": "Navy Memphis number 15 CLARKE stands near masked staff at the bench/scorer area. No ball or active court action is visible; cannot establish control, substitution completion, or the preceding scoring event. In-video overlay shows GRIZZLIES 28, 2nd Qtr, 9:11. Playback controls obscure the Hawks score, left null.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    }
+  ],
+  "packet_sha256": "691f839b7246164757baa65ad40b648d06e3ade318e3180670c795ae47be641c",
+  "reviewer_kind": "ai",
+  "schema_version": "ai-frame-review-v1",
+  "scope": "sampled_frames",
+  "slot": "A",
+  "started_at": "2026-11-07T04:38:12+00:00"
+}

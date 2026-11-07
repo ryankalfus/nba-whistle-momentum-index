@@ -1,0 +1,101 @@
+{
+  "agent_id": "ai-visual-review-a",
+  "completed_at": "2026-11-07T04:35:23.257261+00:00",
+  "model": "gpt-6.1-sol",
+  "observations": [
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame001",
+      "home_score": null,
+      "notes": "Two masked broadcast presenters hold microphones in front of a court where players appear to be warming up. A banner reads TRAIL BLAZERS vs LAKERS, STAPLES CENTER - LOS ANGELES. No in-game score or period/clock overlay is visible; background warmup action does not establish live game control.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": null,
+      "ball_control": "unclear",
+      "clock": null,
+      "frame_id": "frame002",
+      "home_score": null,
+      "notes": "Full-screen gold holiday graphic with diagonal gold shapes and partially visible Happy Holidays lettering. No court action, ball, period, game clock, or in-game score is visible.",
+      "period": null,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "unclear",
+      "clock": "8:19",
+      "frame_id": "frame003",
+      "home_score": 33,
+      "notes": "Wide court view shows yellow Lakers and black Portland players around the perimeter, with the basket at right. Low-resolution in-video overlay appears to read POR 36, LAKERS 33, 2ND, 8:19; clock and score are less sharp than later frames. Ball is not confidently localized, so control and discrete event remain unclear. FG THIS QTR statistics are separate from the game score.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "away",
+      "clock": "8:09",
+      "frame_id": "frame004",
+      "home_score": 35,
+      "notes": "Black-uniform Portland guard near the center logo appears to advance with the ball near his raised right hand while yellow Lakers defenders retreat. Away control is an inference from the visible posture/ball-like object; no discrete shot, turnover, or foul is established. In-video overlay reads Portland 36, Lakers 35, 2ND, 8:09. Website FINAL score cards above are ignored.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 36,
+      "ball_control": "unclear",
+      "clock": "7:59",
+      "frame_id": "frame005",
+      "home_score": 35,
+      "notes": "Black Portland player at right has arms raised near his head, while players under the left basket face the hoop and one appears to box out. This may depict a shot, but the ball/release and upper basket area are obscured by website cards. Cannot establish possession, shot outcome, rebound, or a foul. In-video overlay reads Portland 36, Lakers 35, 2ND, 7:59.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 39,
+      "ball_control": "home",
+      "clock": "7:49",
+      "frame_id": "frame006",
+      "home_score": 35,
+      "notes": "Yellow Lakers players advance toward the right basket with black Portland defenders in front; the yellow player at upper left appears to handle the ball. Home control is inferred and the upper action is partly covered by website cards. The GARY TRENT JR. 14 POINTS graphic reports player statistics, not a new event. In-video scoreboard reads Portland 39, Lakers 35, 2ND, 7:49.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "other"
+    },
+    {
+      "away_score": 39,
+      "ball_control": "unclear",
+      "clock": "7:39",
+      "frame_id": "frame007",
+      "home_score": 35,
+      "notes": "Blurred court image shows yellow Lakers players near the left lane and a black Portland player near the baseline. Ball is not confidently distinguishable and the upper action is covered by website cards, so neither control nor a discrete event can be established. In-video overlay appears to read Portland 39, Lakers 35, 2ND, 7:39; small clock digits are blurred.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    },
+    {
+      "away_score": 39,
+      "ball_control": "unclear",
+      "clock": "7:29",
+      "frame_id": "frame008",
+      "home_score": 35,
+      "notes": "Yellow Lakers and black Portland players are positioned around the right half court, with a yellow player near the upper-left side of the lane facing a black defender. The ball and upper bodies at the top edge are obscured by website cards; this does not establish actual ball control or a discrete event. In-video overlay reads Portland 39, Lakers 35, 2ND, 7:29.",
+      "period": 2,
+      "uncertain": true,
+      "visible_event": "unclear"
+    }
+  ],
+  "packet_sha256": "2502edb3ceab5726e419e91e2bcb58ff34d003b732d78457ba17b9f85b6d96ca",
+  "reviewer_kind": "ai",
+  "schema_version": "ai-frame-review-v1",
+  "scope": "sampled_frames",
+  "slot": "A",
+  "started_at": "2026-11-07T04:34:34+00:00"
+}
