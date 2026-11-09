@@ -157,3 +157,12 @@ Reason: the user supplied the research meeting's assignment after the rewrite an
 - Exclude game type from predictors because only 2024–25 playoffs are archived and no chronological training partition can contain them; keep game type as a stratified breakdown and treat post-season rows as a separately labeled evaluation.
 - Fit the first `meeting-ab-v1` run on the same already-exposed 2024–25 regular-season cohort, quality policy and partitions as the completed run so that only the specification changes. The result remains retrospective development evidence; no meaningful-gain threshold, unused cohort, independent validation or publication authorization follows.
 - Retain the completed run unchanged as the existing nonlinear comparison and possible paper sensitivity. Keep legacy WMI descriptive; its forward window never enters predictors.
+
+## 2026-11-09 — Implement meeting-ab-v1 without touching the v1 specification
+
+Reason: the user approved the alignment decision. `modeling.specification()` hashes `modeling.py`, `evaluation.py` and `release.py`, so editing them would invalidate the saved first plan.
+
+- Implement the two-model comparison in a new `meeting_ab` module that reuses existing helpers without editing their files, and route it through a new exploratory plan schema `provisional-exploratory-plan-v2`. Refuse mismatched schema and specification pairs.
+- Before any fit, require contiguous possession numbers from 1 within each game and each row's lags to equal the outcomes of the preceding possessions, with null lags only before a game's first rows; withhold the comparison on any mismatch. All 799 games and 158,810 selected rows of the first exploratory cohort satisfy this check. Cohorts with unknown targets are refused upstream rather than partially excluded.
+- Keep a training base rate as a reference model only; the primary endpoint is Model B minus Model A.
+- Leave the notebook exporter v1-only; it refuses v2 output instead of mislabelling it.

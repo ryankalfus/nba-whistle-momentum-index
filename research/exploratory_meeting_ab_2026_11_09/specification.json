@@ -1,0 +1,89 @@
+{
+  "analysis_id": "2024-25-regular-meeting-ab-v1",
+  "cohort": {
+    "game_type": "regular_season",
+    "season": "2024-25"
+  },
+  "cohort_policy": "whole_game_quality_filter_v1",
+  "cohort_policy_details": [
+    "Select exact season/game_type and declared date range; retain every source-frame game in the inclusion/exclusion ledger.",
+    "Exclude an entire candidate game for quarantine/unreconstructed status, incomplete game, critical or unknown reconstruction quality, unknown outcome, flagged/incomplete row provenance, or unassigned live control.",
+    "Retain explicit administrative unassigned references when unassigned_control_events is exactly false; no source rows disappear.",
+    "Preserve all selected game rows, original possession numbers and supplied prior-global histories; never drop individual outcomes or reindex.",
+    "Selection is provisional data availability/quality, not scientific eligibility; conditional selection may bias results.",
+    "Keep context nulls explicit with fixed missing indicators; rows lacking two observed lags are excluded from the primary models at design time and counted; sensitivity S1 keeps them."
+  ],
+  "declared_at": "2026-11-09T19:05:23.745724+00:00",
+  "declared_date": "2026-11-09",
+  "eligible": false,
+  "evaluation_exposure": "retrospective_previously_exposed",
+  "limitations": [
+    "Same already-exposed 2024-25 regular-season cohort, quality policy and partitions as 2024-25-regular-retrospective-v1; only the model specification changes. Not an unused or confirmatory cohort.",
+    "Local plan saved before the first meeting-ab-v1 fit; not an authenticated preregistration.",
+    "Reconstruction and every game remain independently unvalidated; no independent audit or game-error bound is claimed.",
+    "Paired whole-game intervals condition on fitted/development-selected models and selected games, assuming independent identically distributed games; no training/selection/calendar correction or guaranteed coverage.",
+    "History is global-order: F(t-1) is usually a foul by the opposing defense. Only retrospective prediction of recorded counted defensive fouls; no call-correctness, referee-intent or causal conclusion.",
+    "Game type is not a predictor and the cohort has no playoff rows. Actual results stay in ignored local outputs; no deployment or public scientific claim."
+  ],
+  "max_selected_rows": 250000,
+  "meaningful_gain": null,
+  "model_specification": {
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "bootstrap_resamples": 999,
+    "bootstrap_seed": 137,
+    "categorical": [
+      "defense_team_id",
+      "offense_team_id"
+    ],
+    "confidence": 0.95,
+    "context_numeric": [
+      "period",
+      "clock",
+      "score_difference",
+      "score_margin",
+      "home_defense"
+    ],
+    "history": "H = 1 if previous_foul_1 == 1 or previous_foul_2 == 1; H = 0 only if both are observed 0",
+    "history_sources": [
+      "previous_foul_1",
+      "previous_foul_2"
+    ],
+    "lag_integrity": "within each game, possession numbers must be 1, 2, 3, ... with no gaps, and previous_foul_1/2 must equal the outcomes of the preceding one/two rows; lags at the first one/two rows must be null; any mismatch withholds the comparison",
+    "max_iter": 2000,
+    "missing": "context numeric constant zero plus fixed missing indicators; categorical unknown sentinel; history columns never imputed and carry no missing indicator",
+    "models": [
+      "base_rate",
+      "context_a",
+      "history_b",
+      "s1_context_a",
+      "s1_history_b"
+    ],
+    "penalty": "l2",
+    "primary": "history_b_minus_context_a_possession_logloss; negative favors history",
+    "primary_rows": "rows with both lags observed; game-start rows excluded from base_rate, context_a and history_b at design time and counted per partition; unknown outcomes are refused upstream",
+    "probability_clip": 1e-15,
+    "schema": "meeting-ab-v1",
+    "selection": "tune possession logloss; first grid value breaks ties; no train+tune refit",
+    "sensitivity_s1": "all rows; H = 1 if any observed lag is 1 else 0; s1_history_b adds history_incomplete = 1 if either lag is null; s1_context_a is the context design on all rows",
+    "solver": "lbfgs",
+    "sources": {
+      "evaluation.py": "17b8f812d688a15290f8acd8a22959787665d3323cd29c70f6a21df300138368",
+      "meeting_ab.py": "ff38d4df770a8deab85905c25be77252dc0b1f379c09611d10ca41f46bfe0c79",
+      "modeling.py": "a4c9ce4d99fca8b2bd107042361af119f247dbdb4335a2994e2d8f9cc5fa1bc0"
+    }
+  },
+  "model_specification_sha256": "7222c31ffb92bee4a94f9ad7cad9973c2c2e61b9313472cdfc778eb40d184fa7",
+  "publication_authorized": false,
+  "schema_version": "provisional-exploratory-plan-v2",
+  "scientific_approval": false,
+  "split": {
+    "test_end": "2025-04-14",
+    "test_start": "2025-02-15",
+    "train_start": "2024-10-01",
+    "tune_start": "2025-01-01"
+  }
+}
