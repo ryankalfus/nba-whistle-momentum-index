@@ -46,6 +46,17 @@ For evaluation game `g`, let `D_g` be the sum of history-minus-context binary lo
 
 The nominal 95% whole-game percentile interval uses 999 resamples and seed 137, resampling each game's paired loss sum and count together. It conditions on fitted, development-selected models and this selected cohort, assumes independent identically distributed games, omits training/selection uncertainty and calendar/series dependence, and has no demonstrated coverage guarantee here. It is not an independently validated population interval. No meaningful-gain threshold is invented: `meaningful_gain` is null and classification remains `NOT_SPECIFIED`. Neither a negative estimate nor an interval excluding zero establishes usefulness, causality, referee intent or call correctness.
 
+## Meeting-aligned analysis (`meeting-ab-v1`)
+
+Added 2026-11-09. [MEETING_ALIGNMENT.md](MEETING_ALIGNMENT.md) declares the two-model comparison as the primary paper design. `whistle_research.meeting_ab` implements it, and plan schema `provisional-exploratory-plan-v2` routes the same verified loader, cohort ledger, recheck and artifact-binding path to it. A v2 plan must carry exactly `meeting_ab.specification()`; a v1 plan must carry exactly `modeling.specification()`. Mixed schema and specification pairs are refused before any source is read. `modeling.py`, `evaluation.py` and `release.py` are unchanged, so the first plan remains re-runnable.
+
+- **Models:** training base rate (reference only), Model A `context_a` and Model B `history_b`. Context: period, clock, signed score difference, absolute margin, home defense, defense and offense team. Model B adds one column, `recent_defensive_foul` = 1 when either previous global possession has an observed counted defensive foul.
+- **History availability:** before fitting, possession numbers must run 1, 2, 3, ... within each game, every row's two lags must equal the outcomes of the preceding one and two possessions, and lags before a game's first row must be null. Any mismatch withholds the comparison. Unknown targets are refused upstream, so only each game's first two rows can lack history. Those rows are excluded from all primary models at design time and counted per partition as `game_start`. Selected rows, predictions and the ledger keep every row; excluded rows have null primary predictions.
+- **Sensitivity S1:** `s1_context_a` and `s1_history_b` use all rows; S1 Model B adds the history flag over observed lags and a `history_incomplete` indicator.
+- **Endpoint:** possession-weighted paired held-out log loss, Model B minus Model A, with the same conditional 999-draw whole-game bootstrap, equal-game loss, Brier and calibration. The same quantities are reported for S1. Classification stays `NOT_SPECIFIED`.
+
+v2 runs write `provisional-exploratory-result-v2` and `exploratory-research-report-v2` schema labels and also bind digests of the history-complete partitions. The local notebook exporter accepts only v1 exploratory reports and refuses v2 output; notebook support is not part of this change.
+
 ## Reproduce the local run
 
 Use the pinned project environment and a **new** output directory. These explicit inputs reuse the current verified v7 artifacts; there is no parser/cohort fallback or network acquisition.

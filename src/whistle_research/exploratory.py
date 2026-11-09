@@ -12,10 +12,13 @@ import shutil
 import numpy as np
 import sklearn
 
-from whistle_research import audit, evaluation, modeling
+from whistle_research import audit, evaluation, meeting_ab, modeling
 from whistle_research.sources import file_digest
 
 STATUS = "EXPLORATORY_ONLY_NOT_VALIDATED"
+# Plan schema -> specification function. v1 keeps the unchanged matched-model ladder.
+PLAN_SCHEMAS = {"provisional-exploratory-plan-v1": modeling.specification,
+                "provisional-exploratory-plan-v2": meeting_ab.specification}
 EXPOSURE = "retrospective_previously_exposed"
 PLAN_KEYS = {
     "analysis_id", "cohort", "cohort_policy", "cohort_policy_details", "declared_at",
@@ -29,7 +32,7 @@ def _plan(raw):
     plan = modeling._strict_json(raw.decode("utf-8"))
     if not isinstance(plan, dict) or set(plan) != PLAN_KEYS:
         raise ValueError("exact provisional plan fields required")
-    if plan["schema_version"] != "provisional-exploratory-plan-v1":
+    if plan["schema_version"] not in PLAN_SCHEMAS:
         raise ValueError("unsupported exploratory plan schema")
     if any(plan[key] is not False for key in ("eligible", "scientific_approval", "publication_authorized")):
         raise ValueError("exploratory authorization flags must remain false")
@@ -48,7 +51,7 @@ def _plan(raw):
     for key in ("limitations", "cohort_policy_details"):
         if not isinstance(plan[key], list) or not plan[key] or not all(audit.text(v) for v in plan[key]):
             raise ValueError(f"nonempty {key} required")
-    spec = modeling.specification()
+    spec = PLAN_SCHEMAS[plan["schema_version"]]()
     if (plan["model_specification"] != spec or audit.digest(plan["model_specification"]) != audit.digest(spec)
             or plan["model_specification_sha256"] != audit.digest(spec)):
         raise ValueError("predeclared model specification or code hash mismatch")
@@ -84,11 +87,22 @@ def _markdown(report, result):
     for name, metrics in result["evaluation"]["models"].items():
         lines.append(f"| {name} | {metrics['possession_logloss']:.8f} | {metrics['brier']:.8f} |")
     paired = result["evaluation"]["paired_logloss"]
-    lines += ["", f"History minus context log-loss delta: {paired['estimate']:+.8f}; "
+    label = result["evaluation"].get("paired_label", "History minus context")
+    lines += ["", f"{label} log-loss delta: {paired['estimate']:+.8f}; "
               f"conditional 95% interval [{paired['interval'][0]:+.8f}, {paired['interval'][1]:+.8f}].",
               "Negative values favor history on this selected held-out set; this is not a usefulness decision.",
               "Whole-game intervals condition on fitted/development-selected models and selected games.",
-              paired["assumption"] + ". " + paired["limitations"], "", "## Cohort counts", "",
+              paired["assumption"] + ". " + paired["limitations"]]
+    for sensitivity in result["evaluation"].get("sensitivities", {}).values():
+        s = sensitivity["paired_logloss"]
+        lines += ["", f"{sensitivity['label']}: delta {s['estimate']:+.8f}; "
+                  f"conditional 95% interval [{s['interval'][0]:+.8f}, {s['interval'][1]:+.8f}].", "",
+                  "| Model | Test log loss | Test Brier |", "| --- | ---: | ---: |"]
+        lines += [f"| {n} | {m['possession_logloss']:.8f} | {m['brier']:.8f} |" for n, m in sensitivity["models"].items()]
+    if "history_exclusions" in result["evaluation"]:
+        lines += ["", "Rows excluded from primary models for unavailable history, by partition:", "```json",
+                  json.dumps(result["evaluation"]["history_exclusions"], indent=2, sort_keys=True), "```"]
+    lines += ["", "## Cohort counts", "",
               "```json", json.dumps(report["cohort"].get("counts", {}), indent=2, sort_keys=True), "```",
               "", "Exclusion reason counts (nonexclusive):", "```json",
               json.dumps(report["cohort"].get("exclusion_reason_counts", {}), indent=2, sort_keys=True),
@@ -129,10 +143,15 @@ def run_exploratory(*, plan_path, feature_dir, inventory_path, reconciliation_pa
         prepared["recheck"]()
 
     recheck()
-    fitted = modeling._fit(rows, plan["split"])
-    scored = evaluation._evaluate(fitted["subsets"]["test"], fitted["predictions"], meaningful_gain=None)
-    fields = ("game_id", "possession_number", *modeling.NUMERIC, *modeling.STRONG_NUMERIC,
-              *modeling.CATEGORICAL, *modeling.HISTORY)
+    if plan["schema_version"] == "provisional-exploratory-plan-v1":
+        fitted = modeling._fit(rows, plan["split"])
+        scored = evaluation._evaluate(fitted["subsets"]["test"], fitted["predictions"], meaningful_gain=None)
+        fields = ("game_id", "possession_number", *modeling.NUMERIC, *modeling.STRONG_NUMERIC,
+                  *modeling.CATEGORICAL, *modeling.HISTORY)
+    else:
+        fitted = meeting_ab.fit(rows, plan["split"])
+        scored = meeting_ab.evaluate(fitted)
+        fields = meeting_ab.FEATURE_FIELDS
     provenance = {
         "rows_sha256": modeling.row_digest(rows),
         "partition_rows_sha256": {k: modeling.row_digest(v) for k, v in fitted["subsets"].items()},
@@ -148,7 +167,11 @@ def run_exploratory(*, plan_path, feature_dir, inventory_path, reconciliation_pa
                                        "frame_sha256", "source_map")},
     }
     shared = {**_flags(plan), "plan_sha256": hashlib.sha256(raw).hexdigest()}
-    result = {"schema_version": "provisional-exploratory-result-v1", **shared,
+    v1 = plan["schema_version"] == "provisional-exploratory-plan-v1"
+    if not v1:
+        provenance["primary_partition_rows_sha256"] = {k: modeling.row_digest(v) for k, v in fitted["primary"].items()}
+    result = {"schema_version": "provisional-exploratory-result-v1" if v1 else "provisional-exploratory-result-v2",
+              **shared,
               "diagnostics": fitted["diagnostics"], "evaluation": scored, "provenance": provenance}
     predictions = [{"game_id": ids[0], "possession_number": ids[1],
                     "probabilities": {name: values[i] for name, values in fitted["predictions"]["probabilities"].items()}}
@@ -157,7 +180,7 @@ def run_exploratory(*, plan_path, feature_dir, inventory_path, reconciliation_pa
                  "selected_rows": ("rows.selected.jsonl", b"".join(_jsonline(row) for row in rows)),
                  "predictions": ("predictions.jsonl", b"".join(_jsonline(row) for row in predictions)),
                  "model_result": ("model_result.json", _json(result))}
-    report = {"schema_version": "exploratory-research-report-v1", **shared,
+    report = {"schema_version": "exploratory-research-report-v1" if v1 else "exploratory-research-report-v2", **shared,
               "cohort": cohort, "split": {k: {"rows": len(v), "games": len({r['game_id'] for r in v})}
                                            for k, v in fitted["subsets"].items()},
               "limitations": plan["limitations"],
