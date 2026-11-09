@@ -1,0 +1,101 @@
+{
+  "analysis_id": "2024-25-regular-meeting-ab-v1",
+  "checkpoint_recorded_at": "2026-11-09T19:08:44.507294+00:00",
+  "decision_merged_before_fit": {
+    "pr17_merge_commit": "8ec685a2cc5d8cb584d12a0c603f023a7463e31e",
+    "pr18_merge_commit": "b3f14a0135790c1bb994433612ad3326f6fc50fc"
+  },
+  "eligible": false,
+  "evaluation_exposure": "retrospective_previously_exposed",
+  "first_exploratory_run_artifacts_unchanged": true,
+  "git_code_checkpoint_before_first_fit": "b3f14a0135790c1bb994433612ad3326f6fc50fc",
+  "independent_scientific_validation": false,
+  "local_artifacts": [
+    {
+      "bytes": 4678,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/before-first-fit.json",
+      "sha256": "d989d45576f384e1845f397d1079d5fa7246cc6631a12951e0b014f65da7eec8"
+    },
+    {
+      "bytes": 225,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/run.log",
+      "sha256": "b970ed2128bd41505de7dd766fae1aeea9e8be652555b805964093a53e3d6e35"
+    },
+    {
+      "bytes": 7319,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/replay_meeting_ab.py",
+      "sha256": "47642c7e6c479a95be8d3052d552f05cec7b616a90a41649f0b034e27d5f0907"
+    },
+    {
+      "bytes": 877,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/arithmetic-verification.json",
+      "sha256": "df50a6d3c33a6c4ba3d7b2e834fab4316a9121498af798a06156280c158669cc"
+    },
+    {
+      "bytes": 725,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/posthoc-s1-decomposition.json",
+      "sha256": "babdc51aa4897752b3818fa66cbc4f5518d514ff6163799c33bc30422624c3e2"
+    },
+    {
+      "bytes": 730,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/posthoc-v1-decomposition.json",
+      "sha256": "c8ae5b6e2c97f924c575aea21e28412cf22863328a46ac9fe3964f12433d39fa"
+    },
+    {
+      "bytes": 9358547,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/analysis/cohort.json",
+      "sha256": "c316d5d37fa392c6e8c4977059c778a4b811e5aca74843f04c5863a596dff4a7"
+    },
+    {
+      "bytes": 6554832,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/analysis/model_result.json",
+      "sha256": "5c859145e1d9d141b87a3087223db9fe18a7f95ec99b04a678418970a171fdfb"
+    },
+    {
+      "bytes": 4893,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/analysis/plan.snapshot.json",
+      "sha256": "06279406ffb98d6addc2f268e2b6f73cbf710a118332dd221bd8ab1e531f68a3"
+    },
+    {
+      "bytes": 13708962,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/analysis/predictions.jsonl",
+      "sha256": "e7d20750d0271593b09c4a1bc07400dc8a413e5313da061e9b4377f98e48720b"
+    },
+    {
+      "bytes": 10117921,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/analysis/report.json",
+      "sha256": "82425839d7b0fe24c8e265ab36a50c88bf9614ab1a830c4240c9ac8af5346dc6"
+    },
+    {
+      "bytes": 3417,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/analysis/report.md",
+      "sha256": "948e73bee91b8576ff36f5dd4eb93247b9021fcbac6e3f969b0f1fe9d870b65b"
+    },
+    {
+      "bytes": 63927875,
+      "path": "output/v2/exploratory-meeting-ab-2026-11-09/analysis/rows.selected.jsonl",
+      "sha256": "02084ced5ae70b74fe689225312ae16404f7df8d359ccf044bd3533067d65431"
+    }
+  ],
+  "meaningful_gain_classification": "NOT_SPECIFIED",
+  "model_result_values_committed": false,
+  "plan": {
+    "bytes": 4893,
+    "path": "research/exploratory_meeting_ab_2026_11_09/specification.json",
+    "sha256": "06279406ffb98d6addc2f268e2b6f73cbf710a118332dd221bd8ab1e531f68a3"
+  },
+  "posthoc_descriptive_files": "Two post-hoc row-type splits of the test deltas are kept locally and labeled post-hoc; they are not endpoints and are not committed as values.",
+  "protected_inputs_unchanged_after_fit": true,
+  "publication_authorized": false,
+  "schema_version": "exploratory-execution-receipt-v1",
+  "scientific_approval": false,
+  "status": "EXPLORATORY_ONLY_NOT_VALIDATED",
+  "verification": {
+    "all_replay_checks_pass": true,
+    "independent_replay": "Separate script with its own design/preprocessing code, sklearn refit at the run's selected C, recomputed losses, Brier and 999-draw bootstrap; does not import whistle_research.",
+    "lag_integrity_and_contiguity": true,
+    "limits": "Replay is software/arithmetic consistency on the same rows. It does not validate reconstruction, independent of the parser, or interval coverage.",
+    "metrics_within_1e-12": true,
+    "refit_within_1e-6": true
+  }
+}
