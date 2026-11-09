@@ -1,12 +1,14 @@
 # Recorded defensive-foul prediction protocol
 
-Original date: 2026-11-02. Updated: 2026-11-08. Version: `v2-draft-3`. Status: DEVELOPMENT, NOT PREREGISTERED OR LOCKED.
+Original date: 2026-11-02. Updated: 2026-11-09. Version: `v2-draft-4`. Status: DEVELOPMENT, NOT PREREGISTERED OR LOCKED.
 
 ## Current development scope
 
 On 2026-11-07 the user discontinued the 303-game review campaign. The preserved fourteen-game pilot is a development pool for bounded source/parser/clip diagnostics, not a new mandatory quota of full-game reviews or a replacement population-validation sample. The frozen 303-game audit and its 1%/95% policy remain unchanged historical artifacts, with their original blocked result; they are inactive and are not requirements for software completion. No smaller audit is declared passed and no numerical population-accuracy claim follows. The scientific estimand and the confirmatory safeguards below remain unchanged. Any later scientific validation design must be specified separately rather than silently reviving the larger campaign or relaxing its frozen gate.
 
 On 2026-11-08 the user authorized a separate provisional exploratory real-data analysis. Its [versioned contract](EXPLORATORY_ANALYSIS.md) fixes the first retrospective cohort, whole-game quality exclusions, chronological split and existing matched-model specification before fitting. It uses previously exposed data, reports every exclusion/unknown and preserves all original rows/eligibility. Its local output cannot satisfy the strict audit/promotion/confirmatory route. No meaningful-gain threshold, unseen-cohort status, live feature availability, causal effect or public empirical claim is inferred. Actual results remain in ignored local outputs.
+
+On 2026-11-09 the user supplied the research meeting's assignment. [MEETING_ALIGNMENT.md](MEETING_ALIGNMENT.md) declares a separately versioned two-model specification, `meeting-ab-v1` (additive L2 logistic shared context versus the identical design plus one flag for a counted defensive foul in either of the previous two global possessions), as the primary comparison for the intended paper. The four-model ladder below remains the existing `matched-model-v1` comparison and a labeled sensitivity. The estimand, availability rules, exposure requirements and confirmatory safeguards are unchanged.
 
 ## Primary question and target
 

@@ -1,0 +1,76 @@
+# Meeting-assignment alignment decision
+
+Date: 2026-11-09. Status: **decision recorded; specification `meeting-ab-v1` is declared here, not yet implemented, fitted, independently validated or published.** This document reconciles the meeting assignment supplied by the user on 2026-11-09 with the completed rewrite and the first exploratory run. It changes the primary comparison for the intended paper. It does not change the completed run, the legacy WMI definition, the strict confirmatory gates or any historical artifact.
+
+## Inputs reconciled
+
+- Meeting assignment (user-supplied with the 2026-11-09 handoff): predict whether a defensive foul occurs during the current possession; one binary history flag `H_t = 1{F_(t-1)=1 or F_(t-2)=1}`; Model A = shared context, Model B = identical context plus `H_t`; ridge logistic regression; primary metric held-out log loss; examine the mean paired difference `loss(B) - loss(A)` and its interval relative to zero.
+- [Problem statement and objectives](../research/checkpoint3/problem_statement_and_objectives.md) (2026-10-22): same primary question; whole-game chronological evaluation; paired log loss primary, Brier/calibration secondary.
+- [Research protocol](RESEARCH_PROTOCOL.md) `v2-draft-3`, [modeling contract](MODELING_CONTRACT.md) `matched-model-v1`, [feature contract](FEATURE_CONTRACT.md) `before_event_v1`, [exploratory contract](EXPLORATORY_ANALYSIS.md) and the declared [first specification](../research/exploratory_2026_11_08/specification.json) `2024-25-regular-retrospective-v1`.
+- Observed facts from the completed run's local artifacts (`output/v2/exploratory-2026-11-08/analysis/`): 799 included games and 158,810 selected rows; `previous_foul_1` is null in exactly 799 rows and `previous_foul_2` in exactly 1,598 rows, all at the first two global possessions of a game, because the whole-game quality policy excludes any game with an unknown outcome and a lag is otherwise null whenever the prior possession's outcome is unknown; no score or clock values are missing; `start_type` takes a single value in every selected row.
+
+## Assignment versus delivered rewrite
+
+| Element | Meeting assignment | Completed exploratory run | Alignment |
+| --- | --- | --- | --- |
+| Target | `Y_t`: at least one defensive foul during possession `t` | Binary recorded counted defensive foul per reconstructed possession | Aligned. Counting policy is the protocol's: offensive, technical and double-technical fouls do not count; counted fouls require defensive attribution; recorded calls only |
+| History | One flag `H_t = OR(F_(t-1), F_(t-2))` | Two separate lag indicators plus two fixed missingness indicators | **Not aligned.** New specification required |
+| Shared context | Offense and defense team, home status, period, game clock, score margin, regular season versus playoffs | Teams, home defense, period, clock, absolute margin, signed difference, reconstructed counted-foul state, start type, four fixed nonlinear terms; game type excluded from predictors | Partially aligned. See decisions 4–6 |
+| Learner | Ridge logistic regression | L2-penalized logistic regression, `C` grid tuned on the tuning partition, `lbfgs` | Aligned. Ridge means L2 here |
+| Functional form | Additive (implied) | Nonlinear context with prespecified squared and interaction terms | **Not aligned.** The meeting-aligned primary is additive |
+| Primary metric | Held-out log loss; mean paired `loss(B) - loss(A)` and interval versus zero | Possession-weighted paired held-out log loss, history minus context, whole-game percentile bootstrap | Aligned |
+| Possession axis | `F_(t-1)`, `F_(t-2)` in the legacy global notation | Global game order crossing period boundaries | Interpretation declared in decision 3; the assignment says only "previous two possessions" |
+| Game type | Shared-context predictor | Metadata and breakdown only; cohort is regular season only | **Deviation forced by data.** See decision 5 |
+
+## Decisions
+
+1. **The primary comparison for the paper is a separately versioned two-model specification, `meeting-ab-v1`.** Model A uses shared context only. Model B uses exactly the same design matrix plus one column, `H_t`. Both use the same training rows, tuning rows, evaluation rows, preprocessing learned on training rows only, `C` grid `{0.1, 1, 10}`, lowest tuning possession log loss with first-grid-value tie break, `lbfgs`, 2,000-iteration cap and the existing convergence refusal. The completed run's `matched-model-v1` specification, four-model ladder, saved artifacts and recorded hashes stay unchanged; the new specification gets its own identifier, hash and plan schema version. Because `modeling.specification()` embeds the byte hash of `modeling.py`, any edit to that module changes the live `matched-model-v1` hash, so a re-run of the saved v1 plan would need a redeclared plan; implementing `meeting-ab-v1` in a new module avoids that.
+
+2. **History flag and missing-history policy.** `H_t = 1` when `previous_foul_1 = 1` or `previous_foul_2 = 1`; `H_t = 0` when both are observed `0`. When either lag is unavailable, the row is **excluded from training, tuning and evaluation for both models**, and the excluded count is reported per partition. In the completed cohort this is exactly the first two global possessions of each game (1,598 rows, about 1.0%). Exclusion is by history availability, never by the current outcome, and the possession axis and supplied histories are never recomputed. Unavailable history is not coded as observed no-foul. This keeps Model B equal to Model A plus exactly one column, so no missingness indicator enters the attribution. Exclusion happens at design-matrix construction only: the loader, cohort ledger and selected-row file keep every row of each selected game, and the `matched-model-v1` rule that missing histories remain explicit model inputs is specific to that specification. In other cohorts a lag may also be null because the prior possession's outcome is unknown; the same rule applies and the reason is counted separately. The evaluation population is therefore possessions with two observed lags, so paired losses are not row-matched with the completed run's results. Sensitivity **S1** uses all rows, defines `H_t` over whichever lags exist (the legacy game-edge truncation rule) and adds one explicit `history_incomplete` indicator to Model B only; it is reported beside the primary, not instead of it.
+
+3. **Possession axis.** Lags follow global game possession order and cross period boundaries, matching the legacy `L_t` definition and the meeting's notation. Interpretation must be stated plainly in the paper: under global order, possession `t-1` is usually the current defense's own offensive possession, so `F_(t-1)` is typically a foul by the opposing defense, while `F_(t-2)` is typically a foul by the same defense. `H_t` therefore measures whether any defensive foul was called on either team in the previous two possessions, not whether this defense fouled recently. Alternation is not enforced by the reconstruction, since a new group can also start after a terminal event without a change of owner. A same-defense version (previous two defensive possessions of the current defending team) is a different question; it may be declared later as a separately versioned sensitivity **S2** and is not silently substituted.
+
+4. **Score-margin representation.** Both models include the signed before-possession score difference (defense score minus offense score) and the absolute margin, each as a linear term. Both columns are available at the possession start, are shared by A and B, and together give a piecewise-linear margin effect without the nonlinear terms of the completed run. This is the single declared representation for `meeting-ab-v1`.
+
+5. **Game type.** Regular-season versus playoff status is **not** a predictor in `meeting-ab-v1`. The archived frame contains playoff games only for 2024–25, and those games follow every regular-season game chronologically, so no training partition of a whole-game chronological split can contain playoff rows; a predictor that is constant in training is unidentifiable. Game type remains a stratified breakdown, which has a single stratum in the first fit. Playoff rows will be evaluated, once the loader supports a second cohort, as a separately labeled post-season evaluation of models trained on regular-season games. This deviates from the meeting list because of data availability, not preference, and the paper must say so.
+
+6. **Context dropped relative to the completed run.** `defense_counted_fouls`, `start_type` and the four nonlinear terms are not in the `meeting-ab-v1` context. `start_type` is constant in the selected cohort and contributes nothing. Counted-foul state is a legitimate pre-possession variable, but including it changes the question from "beyond basic game context" to "beyond team-foul state"; the protocol notes that controlling foul state asks for information beyond that state. Sensitivity **S3** adds reconstructed counted-foul state to both A and B. The research counted-foul state is not asserted to be official bonus state in any version.
+
+7. **Endpoint and inference.** For evaluation game `g`, `D_g` is the summed per-possession log-loss difference B minus A and `n_g` its scored possessions. The primary estimate is `sum(D_g) / sum(n_g)`; negative favors history. The nominal 95% whole-game percentile bootstrap uses 999 resamples and seed 137 and conditions on the fitted, development-selected models and the selected cohort, assuming independent identically distributed games. Report the equal-game mean, Brier scores and ten-bin calibration as secondary endpoints. This decision frames the null as no improvement in expected held-out log loss, with negative as the direction of interest; the meeting itself asked for the interval relative to zero and did not fix a one- or two-sided test. An interval containing zero does not establish equivalence or a negligible effect. No meaningful-gain threshold is specified by this decision; the classification remains `NOT_SPECIFIED` and must be fixed before any confirmatory evaluation on unused data.
+
+8. **Cohort and split for the first `meeting-ab-v1` fit.** Identical to the completed run: 2024–25 regular season, the same whole-game quality policy, the same left-closed/right-open partitions (training 2024-10-01 to 2025-01-01, tuning to 2025-02-15, evaluation to 2025-04-14). Holding the cohort fixed isolates the effect of the specification change, reuses the verified loader and keeps the exposure status explicit: this is previously exposed retrospective development data and cannot become confirmatory evidence. A multi-season extension (earlier seasons for training and tuning, later seasons for evaluation, as the problem statement proposes) is a separate later specification that needs a multi-cohort loader and a new row ceiling.
+
+9. **Status of the completed run.** `2024-25-regular-retrospective-v1` is retained unchanged and described as the existing nonlinear matched-model comparison with two separate lags and declared missingness indicators. The paper may report it as a sensitivity. It is never relabeled as the meeting's two-model comparison, and its evaluation partition is already exposed.
+
+10. **Legacy WMI.** The descriptive `WMI` equation, its forward window `N_t` and its global truncated windows remain unchanged and retrospective. `N_t` and `M_t` never enter possession-start predictors. The paper frames WMI as the descriptive companion measure and the predictive comparison as the primary scientific endpoint; the alignment problem the meeting raised is resolved by this framing, not by altering historical release mathematics.
+
+## Deliberate deviations from the meeting list
+
+- Game type is a breakdown stratum, not a predictor (decision 5; data availability).
+- Score margin enters as signed difference plus absolute margin rather than one unspecified "margin" column (decision 4).
+- Rows without two observed lags are excluded from both models rather than imputed (decision 2); the all-rows version is sensitivity S1.
+- The learner retains the existing tuned `C` grid rather than one fixed ridge penalty; the meeting did not specify a penalty value.
+- The first fit reuses an already-exposed cohort and split; the meeting discussed an inferential comparison but did not settle exposure, coverage or thresholds.
+
+## Coverage statement
+
+The meeting referred to a site then called Whistle Atlas with open-source-API coverage described as 2021 through March 2026. The rewritten v2 dataset is the verified archive of 6,084 games: 2020–21 through 2024–25 regular seasons plus the 2024–25 playoffs. The stored 2025–26 snapshot is partial (1,034 games), already exposed and not part of the v2 feature export. Any coverage claim in the paper must describe the v2 archive, not the meeting-era site.
+
+## Remaining scientific evidence for a paper
+
+- Independent reconstruction validation proportionate to the claims. None is complete; the fourteen-game pool supplies bounded diagnostics only, and the 303-game campaign is retired.
+- A genuinely unused evaluation cohort or post-freeze data. Every archived season and the 2025–26 snapshot have development exposure, so a paper on existing data must present its results as retrospective development evidence with the exposure history disclosed.
+- A prespecified minimum meaningful gain and decision rules before any confirmatory evaluation.
+- Uncertainty beyond the conditional game bootstrap: training and selection variability, calendar or series dependence, and demonstrated interval coverage.
+- Evidence about live feature availability if any real-time framing is used; the features come from final corrected play-by-play.
+- A null or negligible result under `meeting-ab-v1` is a valid paper outcome.
+
+## Implementation plan for the next change
+
+1. New module (for example `meeting_ab.py`): `meeting-ab-v1` specification with its own hash-bound output, `H_t` derivation, A/B design builders and per-partition excluded-row accounting. Reuse `modeling.py` fitting helpers without editing that file, so the live `matched-model-v1` hash and the saved v1 plan stay re-runnable.
+2. `exploratory.py` and `exploratory_cohort.py`: accept a plan schema that names the specification identifier while continuing to accept the v1 plan; refuse mixed or unknown identifiers.
+3. Declare a new plan file under a new `research/exploratory_meeting_ab_<date>/` directory and run into a new `output/v2/` directory. Save the plan and a code checkpoint before the first fit.
+4. Tests: `H_t` truth table including nulls, identical ordered rows for A and B, B has exactly one more column than A, exclusion counts by partition, no outcome or future field in either design, specification hash stability, S1 indicator behavior.
+5. Report A and B log loss, the paired estimate and interval, equal-game, Brier, calibration and the S1 sensitivity; keep `EXPLORATORY_ONLY_NOT_VALIDATED`, false approval flags and `NOT_SPECIFIED` classification.
+
+No fit is run before the plan is saved and this decision is merged.
