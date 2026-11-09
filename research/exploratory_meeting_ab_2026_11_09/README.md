@@ -7,10 +7,21 @@ This directory declares the first `meeting-ab-v1` fit, the two-model comparison 
 ## State
 
 - Implemented and synthetically tested.
-- Not fitted on real data. The alignment decision states that no fit runs before that decision is merged.
-- Not independently validated and not published.
+- Fitted once on real data on 2026-11-09, after the alignment decision (#17) and implementation (#18) merged at `b3f14a0`, at the user's request. The pre-fit checkpoint was recorded at that commit before fitting.
+- Not independently validated and not published. Results stay in ignored local output.
 
-## Run, once authorized
+## Actual execution
+
+Local evidence, relative to repository root:
+
+- `output/v2/exploratory-meeting-ab-2026-11-09/before-first-fit.json`: commit, plan, environment and protected-input hashes recorded before the fit, including every file of the first exploratory run.
+- `output/v2/exploratory-meeting-ab-2026-11-09/analysis/`: plan snapshot, cohort ledger, selected rows, predictions, model result and reports.
+- `output/v2/exploratory-meeting-ab-2026-11-09/arithmetic-verification.json` and the replay script beside it: a separate script with its own design and preprocessing code refits all four logistic models at the selected penalties and recomputes losses, Brier scores and the bootstrap. It does not import the package.
+- Two labeled post-hoc files split the test deltas of this run's S1 sensitivity and of the first run by game-start versus complete-history rows. They are descriptive, not endpoints, and their values are not committed.
+
+[execution_receipt.json](execution_receipt.json) records artifact hashes and verification flags without model-result values. All protected inputs, including the first run's files, are byte-unchanged after the fit. The replay checks software and arithmetic consistency on the same rows only; it does not validate reconstruction or interval coverage.
+
+## Reproduce
 
 Use a new output directory. Inputs are the same verified v7 artifacts as the first exploratory run.
 
@@ -18,4 +29,4 @@ Use a new output directory. Inputs are the same verified v7 artifacts as the fir
 .venv/bin/python -m whistle_research.exploratory --plan research/exploratory_meeting_ab_2026_11_09/specification.json --features output/v2/features-v7-reviewed-2026-11-02 --inventory output/v2/source-inventory-independent-2026-11-02/inventory.json --reconciliation output/v2/reconciliation-v7-reviewed-2026-11-02/report.json --source-manifest research/hypotheses_2026_09_12/source_manifest.json --cache research/hypotheses_2026_09_12/cache --schedule research/rewrite_completion_2026_11_02/schedule_expected.json --metadata research/hypotheses_2026_09_12/cdnnba_2020_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2021_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2022_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2023_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2024_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_po_2024_games.csv --output output/v2/exploratory-meeting-ab-2026-11-09/analysis
 ```
 
-Actual results stay in ignored local output. A later commit records an execution receipt with artifact hashes and no empirical model values.
+Use a different output directory for any repeat; existing outputs are refused.

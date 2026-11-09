@@ -1,6 +1,6 @@
 # Meeting-assignment alignment decision
 
-Date: 2026-11-09. Status: **decision recorded; `meeting-ab-v1` implemented in `whistle_research.meeting_ab` and synthetically tested (2026-11-09); not yet fitted on real data, independently validated or published.** This document reconciles the meeting assignment supplied by the user on 2026-11-09 with the completed rewrite and the first exploratory run. It changes the primary comparison for the intended paper. It does not change the completed run, the legacy WMI definition, the strict confirmatory gates or any historical artifact.
+Date: 2026-11-09. Status: **decision recorded; `meeting-ab-v1` implemented in `whistle_research.meeting_ab` and synthetically tested (2026-11-09); first real fit executed locally 2026-11-09 after this decision merged ([run record](../research/exploratory_meeting_ab_2026_11_09/README.md)); not independently validated or published.** This document reconciles the meeting assignment supplied by the user on 2026-11-09 with the completed rewrite and the first exploratory run. It changes the primary comparison for the intended paper. It does not change the completed run, the legacy WMI definition, the strict confirmatory gates or any historical artifact.
 
 ## Inputs reconciled
 
