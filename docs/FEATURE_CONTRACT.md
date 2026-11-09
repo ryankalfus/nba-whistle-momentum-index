@@ -1,6 +1,6 @@
 # Recorded before-event feature contract
 
-Date: 2026-11-02. Version: `before_event_v1`. Status: provisional adapter, no independently eligible observations or real model authorization.
+Original date: 2026-11-02. Updated: 2026-11-08. Version: `before_event_v1` (implementation unchanged). Status: provisional adapter, no independently eligible observations. The separately authorized [exploratory route](EXPLORATORY_ANALYSIS.md) does not promote these rows.
 
 `whistle_research.features.build_rows(result, metadata)` returns exactly one row per reconstructed group, including every unknown target. Metadata requires a canonical matching game ID, ISO date, season and explicit regular-season/playoff type. The exporter binds dates to `schedule_expected.json`, including its 30 documented corrections; historical dates are never substituted. The date is a chronology key, not a model predictor.
 
@@ -29,7 +29,7 @@ The CLI verifies the source manifest and snapshots exact archive bytes before pa
 
 `rows_sha256` hashes the canonical JSON **list** of all rows in exact export order: sorted object keys, compact separators, no NaN, UTF-8, opening/closing brackets and commas. This is identical to `modeling.row_digest(rows)` without retaining the full list in memory. `rows_file_sha256` separately binds JSONL file bytes; the provenance file has its own byte hash. `frame` uses the audit module's sorted `SOURCE_KEYS` records and `frame_sha256` hashes that exact list. `source_map` records verified archive digests. Schedule and historical metadata bytes are separately bound. Correction records must match game/team/original-date/corrected-date bindings; this exporter does not reauthenticate the schedule acquisition's external attestations.
 
-Every game entry has `eligible=false`. `complete` records full-game/period markers and complete groups, while `critical_unresolved` records blocking parser/control/outcome gaps. These fields have separate meanings. The manifest has `status=PROVISIONAL_AUDIT_BLOCKED`, `eligible_games=0` and `plan_sha256=null`: an export is not an audit plan or passing review. A real model fit must still refuse this dataset. There is no unvalidated-fit switch, synthetic audit evidence or target filtering.
+Every game entry has `eligible=false`. `complete` records full-game/period markers and complete groups, while `critical_unresolved` records blocking parser/control/outcome gaps. These fields have separate meanings. The manifest has `status=PROVISIONAL_AUDIT_BLOCKED`, `eligible_games=0` and `plan_sha256=null`: an export is not an audit plan or passing review. Strict `modeling.fit_real` and promotion must still refuse this dataset. There is no switch on those APIs, synthetic audit evidence or filtering of the original target stream. The separate exploratory loader may select whole games under its explicit retrospective quality policy, retaining the full exclusion ledger and original histories; selection is not scientific eligibility.
 
 Existing output directories are refused. A small diagnostic defaults to the first three games per archive; `--limit-per-source 0` exports all observed games. New runs use new output directories. Source/feature/parser changes during export are reported as failures.
 

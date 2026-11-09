@@ -2,6 +2,8 @@
 
 Date: 2026-11-02. Version: `matched-model-v1`. State: implemented and synthetically tested; real research remains blocked by independent audit, eligibility and protocol requirements. No real NBA fits or confirmatory evaluation were executed.
 
+Update 2026-11-08: the gate statements below describe the unchanged strict `fit_real`/`evaluate_real` route and historical synthetic evidence. The user separately authorized an explicitly provisional retrospective exploratory route, specified in [EXPLORATORY_ANALYSIS.md](EXPLORATORY_ANALYSIS.md). It reuses the model/evaluation mathematics on a verified, fully accounted selected cohort, keeps every source/game ineligible, and writes local results with no scientific/publication approval or practical-use classification. It does not relax this strict contract or supply its missing evidence.
+
 ## Entry points and scientific gate
 
 `modeling.fit_real(rows, evidence=...)` and `evaluation.evaluate_real(rows, evidence=...)` verify the complete row export before fitting or scoring. They call the existing `audit.check_gate(plan,reviews,config)` and require `PASS_CONDITIONAL`; a caller-supplied passing status is insufficient. Invalid or missing evidence raises `BlockedError` with a machine-readable `BLOCKED` report and next step.
@@ -25,7 +27,7 @@ The CLI defaults to an internally generated synthetic demonstration. Synthetic m
 .venv/bin/python -m whistle_research.modeling real --rows output/AUDITED_EXPORT/rows.jsonl --evidence research/FROZEN_RUN/evidence.json --output research/NEW_REAL_RUN/result.json
 ```
 
-No unvalidated-data override exists. Missing input/evidence, failed gates, malformed files and model-input failures return actionable `BLOCKED` JSON and exit 1. With `--output`, that blocked report is written exclusively to the requested new file; without it, the report goes to stdout. Successful gated results exit 0. Existing outputs are never overwritten; attempted collisions report `BLOCKED` to stdout before reading inputs or fitting. Relative source paths in the evidence resolve under its explicitly supplied runtime `source_root`. Real CLI use does not fabricate audit reviews, freeze the protocol or supply a meaningful-effect threshold.
+No unvalidated-data override exists on the strict real-fit route. Missing input/evidence, failed gates, malformed files and model-input failures return actionable `BLOCKED` JSON and exit 1. With `--output`, that blocked report is written exclusively to the requested new file; without it, the report goes to stdout. Successful gated results exit 0. Existing outputs are never overwritten; attempted collisions report `BLOCKED` to stdout before reading inputs or fitting. Relative source paths in the evidence resolve under its explicitly supplied runtime `source_root`. Strict real CLI use does not fabricate audit reviews, freeze the protocol or supply a meaningful-effect threshold.
 
 ## Row and split contracts
 
