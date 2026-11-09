@@ -9,6 +9,7 @@ import re
 from whistle_research import audit, modeling, release, sources
 
 MAX_ROWS = 250_000
+MAX_PLAN_ROWS = 1_500_000  # list-based learner bound on the 8 GB development machine
 STATUS = "PROVISIONAL_NOT_INDEPENDENTLY_VALIDATED"
 SPLIT_KEYS = ("train_start", "tune_start", "test_start", "test_end")
 
@@ -19,20 +20,27 @@ def _date(value):
     return date.fromisoformat(value)
 
 
+def _cohort_item(item):
+    return (isinstance(item, dict) and set(item) == {"season", "game_type"}
+            and isinstance(item["season"], str)
+            and re.fullmatch(r"\d{4}-\d{2}", item["season"]) is not None
+            and int(item["season"][-2:]) == (int(item["season"][:4]) + 1) % 100
+            and item["game_type"] in {"regular_season", "playoffs"})
+
+
 def _selection(plan):
+    """One exact season/game_type dict, or a nonempty duplicate-free list of them."""
     cohort, split = plan.get("cohort"), plan.get("split")
-    if (not isinstance(cohort, dict) or set(cohort) != {"season", "game_type"}
-            or not isinstance(cohort["season"], str)
-            or not re.fullmatch(r"\d{4}-\d{2}", cohort["season"])
-            or int(cohort["season"][-2:]) != (int(cohort["season"][:4]) + 1) % 100
-            or cohort["game_type"] not in {"regular_season", "playoffs"}):
+    items = cohort if isinstance(cohort, list) else [cohort]
+    if (not items or not all(_cohort_item(item) for item in items)
+            or len({(item["season"], item["game_type"]) for item in items}) != len(items)):
         raise ValueError("exact season/game_type cohort required")
     if not isinstance(split, dict) or set(split) != set(SPLIT_KEYS):
         raise ValueError("four exact split dates required")
     dates = [_date(split[key]) for key in SPLIT_KEYS]
     if not all(a < b for a, b in zip(dates, dates[1:])):
         raise ValueError("split dates must be strictly increasing")
-    return dict(cohort), dict(split)
+    return ([dict(item) for item in cohort] if isinstance(cohort, list) else dict(cohort)), dict(split)
 
 
 def _partition(game, cohort, split):
@@ -44,7 +52,8 @@ def _partition(game, cohort, split):
     if (not isinstance(season, str) or not re.fullmatch(r"\d{4}-\d{2}", season)
             or int(season[-2:]) != (int(season[:4]) + 1) % 100):
         raise release.ArtifactError("unknown game season")
-    if any(game[key] != value for key, value in cohort.items()):
+    allowed = cohort if isinstance(cohort, list) else [cohort]
+    if not any(all(game[key] == value for key, value in item.items()) for item in allowed):
         return None, "outside_cohort"
     if not split["train_start"] <= game["date"] < split["test_end"]:
         return None, "outside_date_range"
@@ -116,6 +125,9 @@ def prepare_cohort(*, feature_dir, inventory_path, reconciliation_path,
     Split intervals are left-closed and right-open, including test_end.
     """
     cohort, split = _selection(plan)
+    limit = plan.get("max_selected_rows", MAX_ROWS)
+    if type(limit) is not int or not 0 < limit <= MAX_PLAN_ROWS:
+        raise ValueError("positive integer selected-row ceiling required")
     feature_dir, cache = Path(feature_dir), Path(cache)
     metadata = [Path(path) for path in metadata]
     if len({path.name for path in metadata}) != len(metadata):
@@ -226,7 +238,7 @@ def prepare_cohort(*, feature_dir, inventory_path, reconciliation_path,
                 retained -= len(selected.pop(row["game_id"], []))
             else:
                 retained += 1
-                if retained > MAX_ROWS:
+                if retained > limit:
                     raise release.ArtifactError("exploratory row capacity exceeded; never truncated")
                 selected.setdefault(row["game_id"], []).append(row)
     result_rows = sorted((row for block in selected.values() for row in block),

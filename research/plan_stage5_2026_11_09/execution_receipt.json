@@ -1,0 +1,105 @@
+{
+  "analysis_id": "2020-25-plan-stage5-v1",
+  "checkpoint_pushed_before_fit": true,
+  "checkpoint_recorded_at": "2026-11-09T19:46:25.525391+00:00",
+  "eligible": false,
+  "evaluation_exposure": "retrospective_previously_exposed",
+  "git_code_checkpoint_before_first_fit": "fd2290712450c7721ef80ec460683daa187d8874",
+  "independent_scientific_validation": false,
+  "local_artifacts": [
+    {
+      "bytes": 7521,
+      "path": "output/v2/plan-stage5-2026-11-09/before-first-fit.json",
+      "sha256": "86c32ff7c2d0ae77eb4fdd1c37a1fdea0d188515a93144da583a1e14e353d16d"
+    },
+    {
+      "bytes": 870,
+      "path": "output/v2/plan-stage5-2026-11-09/run.log",
+      "sha256": "ab7445b23d5f6f561900a856f4402f3388a8dfe18155ff265864623d260215b4"
+    },
+    {
+      "bytes": 9480,
+      "path": "output/v2/plan-stage5-2026-11-09/replay_plan_stage5.py",
+      "sha256": "6a7eb16b1b0059dca367b7d4e1e9f19d23e3ce7c23a2abf69be4ab4f806eeda3"
+    },
+    {
+      "bytes": 1387,
+      "path": "output/v2/plan-stage5-2026-11-09/replay.log",
+      "sha256": "1617dd2bade8a18f589a014587a435528eebe558afb66b4419c339f0ca461551"
+    },
+    {
+      "bytes": 952,
+      "path": "output/v2/plan-stage5-2026-11-09/arithmetic-verification.json",
+      "sha256": "3d2ef2cb11000e05a005e2533f0496754b7262055cb148702e8df054b43d689d"
+    },
+    {
+      "bytes": 9119914,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/cohort.json",
+      "sha256": "6dcb4dc93ff6b030b60ad65af6eacdacf7a5b4ffb671ebee5798747bc5805087"
+    },
+    {
+      "bytes": 24008617,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/model_result.json",
+      "sha256": "a990fd88d0db9c370d1ee40e1dcacbe86356045419e7cf754907770269ef699c"
+    },
+    {
+      "bytes": 8292,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/plan.snapshot.json",
+      "sha256": "6bc5bfc8a3670a860d885b14fcf5971b3f15e8793d9cbbeb3196ea38c91249be"
+    },
+    {
+      "bytes": 90109879,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/predictions.jsonl",
+      "sha256": "dd001efef6c47ba9f7a0dca691fb2c19174d5d1844927e2f3c78566b9782f1b4"
+    },
+    {
+      "bytes": 9854231,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/report.json",
+      "sha256": "0e5b4e0467a73ef64a0341f59b3bc22ca720e7d2670d5c95de3446490d076c36"
+    },
+    {
+      "bytes": 4572,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/report.md",
+      "sha256": "56a516b5807ef0d48ddde11ee31ddfdc07645083478533beb185bd75477d403f"
+    },
+    {
+      "bytes": 305618249,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/rows.selected.jsonl",
+      "sha256": "20e3140b93025a8c37e63993eea5b11d1976635b59141cf9980384768b54a2e5"
+    },
+    {
+      "bytes": 134755822,
+      "path": "output/v2/plan-stage5-2026-11-09/analysis/team_foul_states.jsonl",
+      "sha256": "8811bd42195858d650f4be018eda79706c2eac999353c2b85b31d6af6cc091e6"
+    },
+    {
+      "bytes": 2867,
+      "path": "output/v2/plan-stage5-preflight-2026-11-09/preflight.json",
+      "sha256": "1c51609758b5889faf2129fa82014015e6bdf87321e8aea3568c0d82c5844f53"
+    }
+  ],
+  "meaningful_gain_classification": "NOT_SPECIFIED",
+  "model_result_values_committed": false,
+  "plan": {
+    "bytes": 8292,
+    "path": "research/plan_stage5_2026_11_09/specification.json",
+    "sha256": "6bc5bfc8a3670a860d885b14fcf5971b3f15e8793d9cbbeb3196ea38c91249be"
+  },
+  "preflight_without_fit": "Full cohort loaded and team fouls derived before declaring the plan; defense counts matched the parser on every row; no model fitted.",
+  "protected_inputs_unchanged_after_fit": true,
+  "publication_authorized": false,
+  "schema_version": "exploratory-execution-receipt-v1",
+  "scientific_approval": false,
+  "status": "EXPLORATORY_ONLY_NOT_VALIDATED",
+  "verification": {
+    "all_pass": true,
+    "defense_fouls_equal_parser_counts": true,
+    "independent_replay": "Separate script with its own context, imputation, scaling and one-hot code; sklearn refits of the validation grid and all three test folds; recomputed losses, Brier, equal-game and stratified bootstrap. Does not import whistle_research.",
+    "lags_equal_prior_outcomes_and_contiguous": true,
+    "limits": "Software and arithmetic consistency on the same rows; not reconstruction validation, live bonus truth or interval coverage.",
+    "metrics_within_1e-12": true,
+    "penalty_consistent_with_counts_and_clock": true,
+    "refit_within_1e-6": true,
+    "shared_C_reproduced": true
+  }
+}

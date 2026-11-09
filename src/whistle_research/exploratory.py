@@ -12,13 +12,16 @@ import shutil
 import numpy as np
 import sklearn
 
-from whistle_research import audit, evaluation, meeting_ab, modeling
+from whistle_research import audit, evaluation, meeting_ab, modeling, plan_stage5, team_fouls
 from whistle_research.sources import file_digest
 
 STATUS = "EXPLORATORY_ONLY_NOT_VALIDATED"
 # Plan schema -> specification function. v1 keeps the unchanged matched-model ladder.
 PLAN_SCHEMAS = {"provisional-exploratory-plan-v1": modeling.specification,
-                "provisional-exploratory-plan-v2": meeting_ab.specification}
+                "provisional-exploratory-plan-v2": meeting_ab.specification,
+                "provisional-exploratory-plan-v3": plan_stage5.specification}
+V3 = "provisional-exploratory-plan-v3"
+V3_MAX_ROWS = 1_000_000
 EXPOSURE = "retrospective_previously_exposed"
 PLAN_KEYS = {
     "analysis_id", "cohort", "cohort_policy", "cohort_policy_details", "declared_at",
@@ -38,12 +41,15 @@ def _plan(raw):
         raise ValueError("exploratory authorization flags must remain false")
     if plan["evaluation_exposure"] != EXPOSURE or plan["meaningful_gain"] is not None:
         raise ValueError("retrospective exposure and no meaningful-gain threshold required")
-    if type(plan["max_selected_rows"]) is not int or plan["max_selected_rows"] != 250000:
-        raise ValueError("predeclared 250000 row ceiling required")
+    ceiling = V3_MAX_ROWS if plan["schema_version"] == V3 else 250000
+    if type(plan["max_selected_rows"]) is not int or plan["max_selected_rows"] != ceiling:
+        raise ValueError(f"predeclared {ceiling} row ceiling required")
     if plan["cohort_policy"] != "whole_game_quality_filter_v1":
         raise ValueError("unsupported whole-game cohort policy")
-    if (not isinstance(plan["cohort"], dict) or set(plan["cohort"]) != {"season", "game_type"}
-            or not all(audit.text(value) for value in plan["cohort"].values())):
+    cohorts = plan["cohort"] if plan["schema_version"] == V3 else [plan["cohort"]]
+    if (not isinstance(cohorts, list) or not cohorts
+            or any(not isinstance(item, dict) or set(item) != {"season", "game_type"}
+                   or not all(audit.text(value) for value in item.values()) for item in cohorts)):
         raise ValueError("explicit season and game_type required")
     for key in ("analysis_id",):
         if not audit.text(plan[key]):
@@ -80,6 +86,8 @@ def _json(value):
 
 
 def _markdown(report, result):
+    if "seasons" in result["evaluation"]:
+        return _markdown_v3(report, result)
     lines = ["# PROVISIONAL retrospective exploratory fit", "", STATUS, "",
              "Real recorded-call data; reconstruction and scientific validity remain unvalidated.",
              "No publication authorization or meaningful-gain classification.", "",
@@ -104,6 +112,21 @@ def _markdown(report, result):
                   json.dumps(result["evaluation"]["history_exclusions"], indent=2, sort_keys=True), "```"]
     lines += ["", "## Cohort counts", "",
               "```json", json.dumps(report["cohort"].get("counts", {}), indent=2, sort_keys=True), "```",
+              "", "Exclusion reason counts (nonexclusive):", "```json",
+              json.dumps(report["cohort"].get("exclusion_reason_counts", {}), indent=2, sort_keys=True),
+              "```", "", "## Limitations", ""]
+    lines.extend(f"- {item}" for item in report["limitations"])
+    return ("\n".join(lines) + "\n").encode()
+
+
+def _markdown_v3(report, result):
+    lines = plan_stage5.markdown_lines(result)
+    lines += ["", "Rows excluded from the paired sample (first two possessions of each game), by season:", "```json",
+              json.dumps(result["evaluation"]["history_exclusions"], indent=2, sort_keys=True), "```",
+              "", "Clipped predictions by test season and model:", "```json",
+              json.dumps(result["evaluation"]["clipped_predictions"], indent=2, sort_keys=True), "```",
+              "", "## Cohort counts", "", "```json",
+              json.dumps(report["cohort"].get("counts", {}), indent=2, sort_keys=True), "```",
               "", "Exclusion reason counts (nonexclusive):", "```json",
               json.dumps(report["cohort"].get("exclusion_reason_counts", {}), indent=2, sort_keys=True),
               "```", "", "## Limitations", ""]
@@ -148,6 +171,14 @@ def run_exploratory(*, plan_path, feature_dir, inventory_path, reconciliation_pa
         scored = evaluation._evaluate(fitted["subsets"]["test"], fitted["predictions"], meaningful_gain=None)
         fields = ("game_id", "possession_number", *modeling.NUMERIC, *modeling.STRONG_NUMERIC,
                   *modeling.CATEGORICAL, *modeling.HISTORY)
+    elif plan["schema_version"] == V3:
+        supplement = team_fouls.supplement_for_games(
+            {row["game_id"] for row in rows}, source_manifest=Path(source_manifest), cache=Path(cache),
+            metadata=[Path(p) for p in metadata])
+        fitted = plan_stage5.fit(rows, supplement, plan["split"])
+        del supplement  # joined states live in fitted["states"]
+        scored = plan_stage5.evaluate(fitted)
+        fields = plan_stage5.FEATURE_FIELDS
     else:
         fitted = meeting_ab.fit(rows, plan["split"])
         scored = meeting_ab.evaluate(fitted)
@@ -168,19 +199,31 @@ def run_exploratory(*, plan_path, feature_dir, inventory_path, reconciliation_pa
     }
     shared = {**_flags(plan), "plan_sha256": hashlib.sha256(raw).hexdigest()}
     v1 = plan["schema_version"] == "provisional-exploratory-plan-v1"
+    version = {"provisional-exploratory-plan-v1": "v1", "provisional-exploratory-plan-v2": "v2", V3: "v3"}[
+        plan["schema_version"]]
     if not v1:
         provenance["primary_partition_rows_sha256"] = {k: modeling.row_digest(v) for k, v in fitted["primary"].items()}
-    result = {"schema_version": "provisional-exploratory-result-v1" if v1 else "provisional-exploratory-result-v2",
+    state_bytes = b""
+    if version == "v3":
+        state_bytes = b"".join(_jsonline({"game_id": r["game_id"], "possession_number": r["possession_number"], **s})
+                               for r, s in zip(rows, fitted["states"], strict=True))
+        provenance["team_foul_states_file_sha256"] = hashlib.sha256(state_bytes).hexdigest()
+    result = {"schema_version": f"provisional-exploratory-result-{version}",
               **shared,
               "diagnostics": fitted["diagnostics"], "evaluation": scored, "provenance": provenance}
     predictions = [{"game_id": ids[0], "possession_number": ids[1],
                     "probabilities": {name: values[i] for name, values in fitted["predictions"]["probabilities"].items()}}
                    for i, ids in enumerate(fitted["predictions"]["row_ids"])]
+    if "fold" in fitted["predictions"]:
+        for item, fold in zip(predictions, fitted["predictions"]["fold"], strict=True):
+            item["fold"] = fold
     artifacts = {"plan": ("plan.snapshot.json", raw), "cohort": ("cohort.json", _json(cohort)),
                  "selected_rows": ("rows.selected.jsonl", b"".join(_jsonline(row) for row in rows)),
                  "predictions": ("predictions.jsonl", b"".join(_jsonline(row) for row in predictions)),
                  "model_result": ("model_result.json", _json(result))}
-    report = {"schema_version": "exploratory-research-report-v1" if v1 else "exploratory-research-report-v2", **shared,
+    if state_bytes:
+        artifacts["team_foul_states"] = ("team_foul_states.jsonl", state_bytes)
+    report = {"schema_version": f"exploratory-research-report-{version}", **shared,
               "cohort": cohort, "split": {k: {"rows": len(v), "games": len({r['game_id'] for r in v})}
                                            for k, v in fitted["subsets"].items()},
               "limitations": plan["limitations"],
