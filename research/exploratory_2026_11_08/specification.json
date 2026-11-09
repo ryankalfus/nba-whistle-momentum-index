@@ -1,0 +1,88 @@
+{
+  "analysis_id": "2024-25-regular-retrospective-v1",
+  "cohort": {
+    "game_type": "regular_season",
+    "season": "2024-25"
+  },
+  "cohort_policy": "whole_game_quality_filter_v1",
+  "cohort_policy_details": [
+    "Select exact season/game_type and declared date range; retain every source-frame game in the inclusion/exclusion ledger.",
+    "Exclude an entire candidate game for quarantine/unreconstructed status, incomplete game, critical or unknown reconstruction quality, unknown outcome, flagged/incomplete row provenance, or unassigned live control.",
+    "Retain explicit administrative unassigned references when unassigned_control_events is exactly false; no source rows disappear.",
+    "Preserve all selected game rows, original possession numbers and supplied prior-global histories; never drop individual outcomes or reindex.",
+    "Keep numeric/history nulls explicit; the model uses the existing fixed missing indicators and training-only imputation.",
+    "Selection is provisional data availability/quality, not scientific eligibility; conditional selection may bias results."
+  ],
+  "declared_at": "2026-11-09T01:40:50.935544+00:00",
+  "declared_date": "2026-11-08",
+  "eligible": false,
+  "evaluation_exposure": "retrospective_previously_exposed",
+  "limitations": [
+    "Local plan saved before the first fit; not an authenticated preregistration or an unused confirmatory cohort.",
+    "Reconstruction and every game remain independently unvalidated; no independent audit or 1% game-error bound is claimed.",
+    "Paired whole-game intervals condition on fitted/development-selected models and selected games, assuming independent identically distributed games; no training/selection/calendar correction or guaranteed coverage.",
+    "Only retrospective prediction of recorded counted defensive fouls; no call-correctness, referee-intent or causal conclusion.",
+    "Actual model results and generated explorer stay in ignored local outputs; no deployment or public scientific claim."
+  ],
+  "max_selected_rows": 250000,
+  "meaningful_gain": null,
+  "model_specification": {
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "bootstrap_resamples": 999,
+    "bootstrap_seed": 137,
+    "categorical": [
+      "defense_team_id",
+      "offense_team_id",
+      "start_type"
+    ],
+    "confidence": 0.95,
+    "history": [
+      "previous_foul_1",
+      "previous_foul_2"
+    ],
+    "max_iter": 2000,
+    "missing": "numeric constant zero plus fixed missing indicators; categorical unknown sentinel",
+    "models": [
+      "base_rate",
+      "additive_context",
+      "nonlinear_context",
+      "nonlinear_history"
+    ],
+    "nonlinear": "clock/720 squared; margin/30 squared; margin/30 times clock/720; home times margin/30",
+    "numeric": [
+      "period",
+      "clock",
+      "score_margin",
+      "home_defense",
+      "defense_counted_fouls"
+    ],
+    "penalty": "l2",
+    "primary": "history_minus_context_possession_logloss",
+    "probability_clip": 1e-15,
+    "schema": "matched-model-v1",
+    "selection": "tune possession logloss; first grid value breaks ties; no train+tune refit",
+    "solver": "lbfgs",
+    "sources": {
+      "evaluation.py": "17b8f812d688a15290f8acd8a22959787665d3323cd29c70f6a21df300138368",
+      "modeling.py": "a4c9ce4d99fca8b2bd107042361af119f247dbdb4335a2994e2d8f9cc5fa1bc0",
+      "release.py": "11c3bff48bf79cbc0ce8af1dd7a81d5e2889d92a0c7d552193aca768dd734fba"
+    },
+    "strong_numeric": [
+      "score_difference"
+    ]
+  },
+  "model_specification_sha256": "1cea164f7b166451cd0388ace93d3e8ee19f32296547b7b39e034efaa9fcf97d",
+  "publication_authorized": false,
+  "schema_version": "provisional-exploratory-plan-v1",
+  "scientific_approval": false,
+  "split": {
+    "test_end": "2025-04-14",
+    "test_start": "2025-02-15",
+    "train_start": "2024-10-01",
+    "tune_start": "2025-01-01"
+  }
+}

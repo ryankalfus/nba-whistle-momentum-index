@@ -29,3 +29,81 @@ test('schema rejection prevents plausible-looking fallback metrics', () => {
   const data = {schema_version: 'research-explorer-v1', report: {schema_version:'development-research-report-v1',counts:{}},math:{scenarios:{}},models:{evaluation:{models:{}}}};
   assert.equal(ui.validate(data), data);
 });
+
+function exploratoryFixture() {
+  const flags = {eligible: false, scientific_approval: false, publication_authorized: false, evaluation_exposure: 'retrospective_previously_exposed'};
+  const cohort = {schema_version: 'provisional-exploratory-cohort-v1', ...flags, status: 'PROVISIONAL_NOT_INDEPENDENTLY_VALIDATED', counts: {}, partitions: {}};
+  const report = {schema_version: 'exploratory-research-report-v1', ...flags, status: 'EXPLORATORY_ONLY_NOT_VALIDATED', analysis_id: '<img src=x onerror=alert(1)>', plan_sha256: 'a'.repeat(64), cohort, limitations: ['No independent validation']};
+  const result = {schema_version: 'provisional-exploratory-result-v1', ...flags, status: report.status, analysis_id: report.analysis_id, plan_sha256: report.plan_sha256, evaluation: {models: Object.fromEntries(['base_rate', 'additive_context', 'nonlinear_context', 'nonlinear_history'].map(name => [name, {possession_logloss: .5, brier: .2}])), paired_logloss: {estimate: -.001, interval: [-.002, .001], conditions_on_fitted_models: true}, decision: {classification: 'NOT_SPECIFIED'}}};
+  return {report, cohort, result};
+}
+
+test('provisional results preserve blocked gate and signed paired differences', () => {
+  const evidence = exploratoryFixture();
+  assert.equal(ui.validateExploratory(evidence), evidence);
+  assert.match(ui.exploratorySummary(evidence), /scientific gate blocked/);
+  assert.equal(ui.gate(evidence.report), 'Scientific gate blocked');
+  assert.equal(ui.signed(-.001), '-0.001000');
+  assert.equal(ui.signed(.001), '+0.001000');
+  assert.equal(ui.signed(null), 'Not available');
+});
+
+test('provisional schema, flags, identities, metrics and decision fail closed', () => {
+  const mutations = [
+    e => { e.report.schema_version = 'unknown'; },
+    e => { e.cohort.status = 'PASSED'; },
+    e => { e.result.analysis_id = 'other'; },
+    e => { e.result.plan_sha256 = 'b'.repeat(64); },
+    e => { e.report.plan_sha256 = 'invalid'; e.result.plan_sha256 = 'invalid'; },
+    e => { e.result.evaluation.models.base_rate.brier = Infinity; },
+    e => { e.result.evaluation.models.base_rate.possession_logloss = null; },
+    e => { e.result.evaluation.paired_logloss.interval = [0, NaN]; },
+    e => { e.result.evaluation.paired_logloss.conditions_on_fitted_models = false; },
+    e => { e.result.evaluation.decision.classification = 'USEFUL'; },
+    e => { delete e.result.evaluation.models.nonlinear_history; },
+  ];
+  for (const role of ['report', 'cohort', 'result']) for (const flag of ['eligible', 'scientific_approval', 'publication_authorized']) mutations.push(e => { e[role][flag] = true; });
+  for (const mutate of mutations) { const e = exploratoryFixture(); mutate(e); assert.throws(() => ui.validateExploratory(e), /Invalid provisional/); }
+});
+
+test('no result has an honest generated-data-only empty state', () => {
+  assert.match(ui.exploratorySummary(), /No provisional real-data result was included/);
+  assert.match(ui.exploratorySummary(), /Synthetic demonstrations above are generated data only/);
+});
+
+async function renderedEvidence(exploratory) {
+  const nodes = new Map();
+  function node() {
+    return {children: [], textContent: '', append(...items) { this.children.push(...items); }, replaceChildren(...items) { this.children = items; }, setAttribute() {}, addEventListener() {}, get firstChild() { return this.children[0]; }, set innerHTML(value) { throw new Error(`Unsafe HTML insertion: ${value}`); }};
+  }
+  const document = {createElement: node, getElementById(id) { if (!nodes.has(id)) nodes.set(id, node()); return nodes.get(id); }};
+  const data = {schema_version: 'research-explorer-v1', report: {schema_version: 'development-research-report-v1', counts: {}}, math: {scenarios: {}}, models: {evaluation: {models: {}}}};
+  if (exploratory !== undefined) data.exploratory = exploratory;
+  require('node:vm').runInNewContext(require('node:fs').readFileSync(require.resolve('../v2/app.js'), 'utf8'), {document, fetch: async () => ({ok: true, json: async () => data})});
+  await new Promise(resolve => setImmediate(resolve));
+  const text = n => [n.textContent, ...n.children.map(text)].join(' ');
+  return {nodes, text};
+}
+
+test('rendered provisional section uses text only and leaves unavailable counts missing', async () => {
+  const evidence = exploratoryFixture();
+  const {nodes, text} = await renderedEvidence(evidence);
+  const content = text(nodes.get('exploratory-content'));
+  assert.match(content, /<img src=x onerror=alert\(1\)>/);
+  assert.match(content, /Not available/);
+  assert.match(content, /Conditional whole-game bootstrap interval/);
+  assert.match(content, /no meaningful-gain decision was specified/);
+  assert.match(text(nodes.get('load-status')), /Scientific gate blocked/);
+  assert.equal(nodes.get('notebook').hidden, false);
+});
+
+test('rendered empty state and malformed evidence do not display real-data losses', async () => {
+  const empty = await renderedEvidence();
+  assert.match(empty.text(empty.nodes.get('exploratory-content')), /No provisional real-data result was included/);
+  assert.doesNotMatch(empty.text(empty.nodes.get('exploratory-content')), /0\.500000/);
+  const evidence = exploratoryFixture(); evidence.result.scientific_approval = true;
+  const invalid = await renderedEvidence(evidence);
+  assert.equal(invalid.nodes.get('notebook').hidden, true);
+  assert.match(invalid.text(invalid.nodes.get('load-status')), /could not load/);
+  assert.equal(invalid.nodes.has('exploratory-content'), false);
+});

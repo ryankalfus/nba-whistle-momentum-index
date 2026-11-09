@@ -2,6 +2,8 @@
 
 Date: 2026-11-02. Version: `development-research-report-v1`. A completed diagnostic run is **not** a completed research rewrite, independent reconstruction validation or publication approval.
 
+Update 2026-11-08: the user authorized a separate [provisional exploratory analysis](EXPLORATORY_ANALYSIS.md) and local notebook bundle. It verifies the existing full source/export frame, records explicit whole-game exclusions and fits a retrospective matched comparison without promoting any game or changing the strict route below. Its `exploratory-research-report-v1` schema is separate from this development report. The 303-game campaign remains inactive; the annotation collection section below documents a historical/conditional scientific route, not a current review task.
+
 ## One-command development run
 
 The project environment runs the entire development workflow. Paths default to the pinned source manifest/cache, six historical metadata files, and independently cross-checked `research/rewrite_completion_2026_11_02/schedule_expected.json`. No network acquisition or tolerance selection occurs. Output must be a new directory.

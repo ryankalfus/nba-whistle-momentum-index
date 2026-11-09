@@ -4,6 +4,8 @@ The v2 software provides a reproducible recorded-foul prediction workflow: immut
 
 Start with [current status](STATUS.md), [one-command pipeline](docs/PIPELINE.md), [research protocol](docs/RESEARCH_PROTOCOL.md) and [exposure inventory](docs/EXPOSURE_INVENTORY.md). Serve the repository and open **`/v2/`** for the generated development explorer. Its synthetic demonstrations and provisional data are explicitly labeled; no new empirical result or publication approval is implied.
 
+The separately authorized [exploratory analysis](docs/EXPLORATORY_ANALYSIS.md) runs a source-bound retrospective comparison on an explicitly selected provisional cohort and generates a local report/notebook. Actual results stay in ignored output; the strict scientific-release checks and zero eligible games remain unchanged. The large film-review campaign is inactive.
+
 ## Development environment
 
 Use CPython 3.14.7 (see `.python-version`) and Node.js 22. The pinned development environment in `requirements.lock` includes transitive scientific, test, lint, and build dependencies. It was resolved on macOS ARM64; CI is configured to check the same pins on Linux x86-64. Other Python minors and platforms are not currently supported. Dependency upgrades require regenerating the lock and rerunning the checks.

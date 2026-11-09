@@ -6,6 +6,8 @@ The v2 software now connects verified inputs, independent schedule accounting, v
 
 Active scope, 2026-11-07: the user dropped the 303-game review campaign. It is **not a requirement for completing the software rewrite**. Use the preserved 14-game development pilot for bounded parser/source/clip diagnostics when useful; this is not a replacement quota of fourteen complete film reviews. The frozen 303-game design, 606 empty forms and access records remain historical, inactive evidence. No review count or validation claim is reset to manufacture a pass. Any later confirmatory study needs a separately specified validation design; it does not automatically inherit the 303-game workload or 1% target.
 
+Exploratory scope, 2026-11-08: the user authorized a separate [provisional real-data analysis](docs/EXPLORATORY_ANALYSIS.md), explicit whole-game cohort accounting, and a local report/notebook. This route uses already-exposed data and preserves every original eligibility flag and strict scientific-release check. Actual empirical results stay in ignored local output. Its execution/verification is recorded in [the exploratory handoff](research/exploratory_2026_11_08/README.md); the original dataset is not promoted and no independent audit or public finding is claimed.
+
 | Stage | Implementation state | Remaining scientific evidence |
 | --- | --- | --- |
 | 1. Protocol and environment | Pinned package, checks and development protocol; separate audit tolerance/packet freeze recorded | Full-study protocol freeze and meaningful-gain threshold |
@@ -13,7 +15,7 @@ Active scope, 2026-11-07: the user dropped the 303-game review campaign. It is *
 | 3. Canonical reconstruction | Candidate v7; 6,036 reconstructed, 48 quarantined; event provenance retained | 411 transfer flags, 166 violation flags and other ambiguity; zero eligible games |
 | 4. Reconstruction diagnostics / future validation | Active bounded 14-game development pool; comparison/intake tooling implemented; larger frozen audit and AI feasibility evidence preserved as inactive history | No independent audit has passed; future scientific validation needs a separately specified design. Completing 303 games or 606 submissions is not an active rewrite task |
 | 5. Descriptive mathematics | Exact references, seven process simulations, uncertainty stress tests implemented and reproduced | Synthetic behavior is not an NBA finding; no per-game WMI intervals asserted |
-| 6. Stronger matched models | Before-event adapter, additive/nonlinear context and matched history models, gated real fit/evaluation paths implemented | Actual data remain ineligible; no real fit authorized |
+| 6. Stronger matched models | Before-event adapter, additive/nonlinear context and matched history models, strict gated paths plus a separately authorized provisional exploratory route | Original data remain ineligible; strict scientific evaluation stays blocked; exploratory results cannot establish validation or authorize publication |
 | 7. Locked evaluation | Chronological splits, matched losses, calibration, conditional game bootstrap and exposure inventory implemented | No unused cohort or protocol freeze established; 2025–26 snapshot already exposed |
 | 8. Paper and explorer | One-command development pipeline, generated draft and local v2 notebook implemented | Empirical paper results and public scientific release remain blocked |
 
