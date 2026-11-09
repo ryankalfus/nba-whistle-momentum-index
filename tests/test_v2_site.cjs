@@ -71,13 +71,13 @@ test('no result has an honest generated-data-only empty state', () => {
   assert.match(ui.exploratorySummary(), /Synthetic demonstrations above are generated data only/);
 });
 
-async function renderedEvidence(exploratory) {
+async function renderedEvidence(exploratory, counts = {}) {
   const nodes = new Map();
-  function node() {
-    return {children: [], textContent: '', append(...items) { this.children.push(...items); }, replaceChildren(...items) { this.children = items; }, setAttribute() {}, addEventListener() {}, get firstChild() { return this.children[0]; }, set innerHTML(value) { throw new Error(`Unsafe HTML insertion: ${value}`); }};
+  function node(tagName) {
+    return {tagName, children: [], textContent: '', append(...items) { this.children.push(...items); }, replaceChildren(...items) { this.children = items; }, setAttribute() {}, addEventListener() {}, get firstChild() { return this.children[0]; }, set innerHTML(value) { throw new Error(`Unsafe HTML insertion: ${value}`); }};
   }
   const document = {createElement: node, getElementById(id) { if (!nodes.has(id)) nodes.set(id, node()); return nodes.get(id); }};
-  const data = {schema_version: 'research-explorer-v1', report: {schema_version: 'development-research-report-v1', counts: {}}, math: {scenarios: {}}, models: {evaluation: {models: {}}}};
+  const data = {schema_version: 'research-explorer-v1', report: {schema_version: 'development-research-report-v1', counts}, math: {scenarios: {}}, models: {evaluation: {models: {}}}};
   if (exploratory !== undefined) data.exploratory = exploratory;
   require('node:vm').runInNewContext(require('node:fs').readFileSync(require.resolve('../v2/app.js'), 'utf8'), {document, fetch: async () => ({ok: true, json: async () => data})});
   await new Promise(resolve => setImmediate(resolve));
@@ -106,4 +106,38 @@ test('rendered empty state and malformed evidence do not display real-data losse
   assert.equal(invalid.nodes.get('notebook').hidden, true);
   assert.match(invalid.text(invalid.nodes.get('load-status')), /could not load/);
   assert.equal(invalid.nodes.has('exploratory-content'), false);
+});
+
+
+test('provisional model table precedes the complete detailed cohort accounting', async () => {
+  const evidence = exploratoryFixture();
+  evidence.cohort.cohort = {season: 'fixture-season', game_type: 'fixture-type'};
+  evidence.cohort.counts = {full_frame_games: 101, full_frame_rows: 102, candidate_games: 103, included_games: 104, excluded_games: 105, included_rows: 106, out_of_cohort_games: 107, full_frame_unknown_outcomes: 108};
+  evidence.report.split = {train: {rows: 201, games: 202}, tune: {rows: 203, games: 204}, test: {rows: 205, games: 206}};
+  evidence.cohort.partitions = {train: {excluded_games: 301}, tune: {excluded_games: 302}, test: {excluded_games: 303}};
+  evidence.cohort.exclusion_reason_counts = Object.fromEntries(Array.from({length: 10}, (_, i) => [`fixture_reason_${i}`, i + 401]));
+  const {nodes, text} = await renderedEvidence(evidence);
+  const box = nodes.get('exploratory-content');
+  const tableIndex = box.children.findIndex(n => n.className === 'table-wrap');
+  const detailsIndex = box.children.findIndex(n => n.tagName === 'details' && text(n).includes('Chosen cohort, chronological split and exclusions'));
+  assert.ok(tableIndex >= 0 && detailsIndex > tableIndex);
+  const beforeTable = box.children.slice(0, tableIndex).map(text).join(' ');
+  assert.match(beforeTable, /fixture-season · fixture-type/);
+  assert.match(beforeTable, /Included 104 of 103 candidate games; 105 excluded/);
+  assert.match(beforeTable, /Selected 106 rows; evaluation 205 rows \/ 206 games/);
+  assert.doesNotMatch(beforeTable, /Full frame games|fixture reason/);
+  const details = text(box.children[detailsIndex]);
+  for (const key of Object.keys(evidence.cohort.counts)) assert.ok(details.includes(`"${key}"`));
+  for (const [reason, count] of Object.entries(evidence.cohort.exclusion_reason_counts)) assert.ok(details.includes(`${reason.replaceAll('_', ' ')}: ${count}`));
+  for (const partition of Object.values(evidence.report.split)) assert.ok(details.includes(`${partition.rows} rows / ${partition.games} games included`));
+  assert.equal(box.children[detailsIndex].open, undefined);
+});
+
+test('zero eligibility is labeled scientific release for old and provisional payloads', async () => {
+  for (const evidence of [undefined, exploratoryFixture()]) {
+    const rendered = await renderedEvidence(evidence, {eligible_games: 0});
+    assert.match(rendered.text(rendered.nodes.get('evidence-flow')), /Validated modeling 0 scientific-release eligible games/);
+    assert.match(rendered.text(rendered.nodes.get('counts')), /Scientific-release eligible games 0/);
+    assert.match(rendered.text(rendered.nodes.get('load-status')), /Scientific gate blocked/);
+  }
 });

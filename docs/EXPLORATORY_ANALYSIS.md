@@ -59,9 +59,9 @@ The run writes a byte-preserved plan snapshot, full cohort ledger, selected-row 
 Generate a local notebook with the existing development/synthetic evidence and the new exploratory result. This does not replace repository `v2/data.json` or publish results:
 
 ```sh
-.venv/bin/python scripts/export_v2_site.py --report output/v2/development-pipeline-v7-2026-11-02/report.json --math research/rewrite_completion_2026_11_02/simulation_summary.json --models research/rewrite_completion_2026_11_02/model_demo_summary.json --exploratory output/v2/NEW_EXPLORATORY_RUN/report.json --output output/v2/NEW_EXPLORATORY_NOTEBOOK --bundle
+.venv/bin/python scripts/export_v2_site.py --report output/v2/development-pipeline-v7-2026-11-02/report.json --math output/v2/development-pipeline-v7-2026-11-02/synthetic_math.json --models output/v2/development-pipeline-v7-2026-11-02/synthetic_models.json --exploratory output/v2/NEW_EXPLORATORY_RUN/report.json --output output/v2/NEW_EXPLORATORY_NOTEBOOK --bundle
 ```
 
-The exporter verifies exploratory artifact bytes, roles, schemas, plan identity and false approval flags before compaction. The notebook labels the real-data section provisional and retains the separate synthetic demonstration and closed scientific-release gate. The local bundle includes the notebook assets and linked methods documents. Serve the repository over HTTP and open the generated notebook directory; do not deploy it as a scientific release.
+The exporter verifies exploratory artifact bytes, roles, schemas, plan identity and false approval flags before compaction. Supply the exact raw files named by the base report's artifact bindings; a JSON-equivalent file with different serialization is refused. The notebook labels the real-data section provisional and retains the separate synthetic demonstration and closed scientific-release gate. The local bundle includes the notebook assets and linked methods documents. Serve the repository over HTTP and open the generated notebook directory; do not deploy it as a scientific release.
 
 Actual execution paths, opaque artifact hashes and software/browser verification are recorded in [the run handoff](../research/exploratory_2026_11_08/README.md). A clone without the ignored source cache/exports cannot reproduce or independently inspect the real-data result until those verified inputs are supplied.

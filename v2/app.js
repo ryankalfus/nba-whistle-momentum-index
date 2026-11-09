@@ -60,21 +60,18 @@
     const box = target('exploratory-content'); box.append(element('p', exploratorySummary(value)));
     if (!value) return;
     const {report, cohort, result} = value;
-    box.append(element('p', `Chosen cohort: ${cohort.cohort?.season || 'Not available'} · ${cohort.cohort?.game_type || 'Not available'}.`));
+    box.append(element('p', `Chosen cohort: ${cohort.cohort?.season || 'Not available'} · ${cohort.cohort?.game_type || 'Not available'}. Included ${number(cohort.counts.included_games)} of ${number(cohort.counts.candidate_games)} candidate games; ${number(cohort.counts.excluded_games)} excluded. Selected ${number(cohort.counts.included_rows)} rows; evaluation ${number(report.split?.test?.rows)} rows / ${number(report.split?.test?.games)} games.`));
     const counts = element('dl', undefined, 'ledger');
     for (const [key, label] of Object.entries({full_frame_games: 'Full frame games', full_frame_rows: 'Full frame rows', candidate_games: 'Candidate games', included_games: 'Included games', excluded_games: 'Excluded games', included_rows: 'Selected rows', out_of_cohort_games: 'Outside chosen cohort'})) appendStat(counts, label, number(cohort.counts[key]));
-    box.append(counts);
     const splits = element('dl', undefined, 'ledger');
     for (const name of ['train', 'tune', 'test']) {
       const part = cohort.partitions[name] || {}, selected = report.split?.[name] || {};
       appendStat(splits, `${name[0].toUpperCase()}${name.slice(1)}`, `${number(selected.rows)} rows / ${number(selected.games)} games included; ${number(part.excluded_games)} games excluded`);
     }
-    box.append(splits, element('h3', 'Exclusion reasons (nonexclusive)'));
     const reasons = element('ul');
     for (const [reason, count] of Object.entries(cohort.exclusion_reason_counts || {})) reasons.append(element('li', `${reason.replaceAll('_', ' ')}: ${number(count)}`));
     if (!reasons.firstChild) reasons.append(element('li', 'No exclusion reason counts supplied.'));
-    box.append(reasons);
-    const details = element('details'); details.append(element('summary', 'Chosen cohort, chronological split and exclusions'), element('pre', JSON.stringify({cohort: cohort.cohort, split: report.split, partitions: cohort.partitions, exclusion_reason_counts_nonexclusive: cohort.exclusion_reason_counts, primary_exclusion_reason_counts: cohort.primary_exclusion_reason_counts}, null, 2))); box.append(details);
+    const details = element('details'); details.append(element('summary', 'Chosen cohort, chronological split and exclusions'), counts, splits, element('h3', 'Exclusion reasons (nonexclusive)'), reasons, element('pre', JSON.stringify({cohort: cohort.cohort, counts: cohort.counts, split: report.split, partitions: cohort.partitions, exclusion_reason_counts_nonexclusive: cohort.exclusion_reason_counts, primary_exclusion_reason_counts: cohort.primary_exclusion_reason_counts}, null, 2)));
     const wrap = element('div', undefined, 'table-wrap'), table = element('table'), head = element('thead'), header = element('tr');
     table.append(element('caption', 'Provisional selected held-out possessions; recorded-call prediction losses'));
     for (const text of ['Algorithm', 'Log loss', 'Brier score', 'Rows / games']) { const th = element('th', text); th.scope = 'col'; header.append(th); } head.append(header); table.append(head);
@@ -85,7 +82,7 @@
     box.append(element('p', `History minus identical context log-loss delta: ${signed(paired.estimate)}. Conditional whole-game bootstrap interval (${percent(paired.confidence)}): ${paired.interval.map(signed).join(' to ')}. Negative values favor history on this selected set; no meaningful-gain decision was specified.`, 'annotation'));
     box.append(element('p', `History minus context Brier delta: ${signed(result.evaluation.paired_brier)}.`));
     box.append(element('p', 'The interval conditions on fixed fitted models and development selection. It assumes independent identically distributed games, omits training/selection uncertainty and calendar/series dependence, and has no guaranteed percentile coverage.'));
-    const limits = element('ul'); for (const note of report.limitations || []) limits.append(element('li', note)); box.append(limits);
+    const limits = element('ul'); for (const note of report.limitations || []) limits.append(element('li', note)); box.append(limits, details);
     const provenance = element('details'); provenance.append(element('summary', 'Provisional diagnostics, calibration and hash receipts'), element('pre', JSON.stringify({diagnostics: result.diagnostics, evaluation: result.evaluation, provenance: result.provenance, artifacts: report.artifacts}, null, 2))); box.append(provenance);
   }
   function element(tag, text, className) { const e = document.createElement(tag); if (text !== undefined) e.textContent = String(text); if (className) e.className = className; return e; }
@@ -123,9 +120,9 @@
   function render(data) {
     validate(data); const r = data.report, c = r.counts;
     const status = target('load-status'); status.className = 'status'; status.replaceChildren(element('strong', gate(r)), element('p', `Software: ${String(r.software_status || 'not available').replaceAll('_', ' ').toLowerCase()}. Publication: ${String(r.publication_status || 'not available').replaceAll('_', ' ').toLowerCase()}.`), element('p', 'Development diagnostics are available. Confirmatory evaluation and a new scientific release remain blocked pending independent evidence.'));
-    const flow = [['Saved sources', `${number(c.source_files)} input files`], ['Candidate possessions', `${number(c.reconstructed_games)} reconstructed games`], ['Independent audit', r.audit?.status || 'Evidence missing'], ['Empirical models', `${number(c.eligible_games)} eligible games`]];
+    const flow = [['Saved sources', `${number(c.source_files)} input files`], ['Candidate possessions', `${number(c.reconstructed_games)} reconstructed games`], ['Independent audit', r.audit?.status || 'Evidence missing'], ['Validated modeling', `${number(c.eligible_games)} scientific-release eligible games`]];
     flow.forEach(([label, value], i) => { const li = element('li', undefined, i > 1 ? 'blocked' : ''); li.append(element('strong', label), element('span', value)); target('evidence-flow').append(li); });
-    const countLabels = {expected_games:'Independent expected games',observed_games:'Observed games',reconstructed_games:'Reconstructed games',quarantined_games:'Quarantined games',possession_rows:'Candidate possession rows',unknown_outcomes:'Unknown possession outcomes',complete_games:'Complete reconstructed games',critical_unresolved_games:'Games with unresolved critical issues',eligible_games:'Eligible for empirical modeling',unresolved_transfer_flags:'Unresolved transfer flags',unresolved_violation_flags:'Unresolved violation flags'};
+    const countLabels = {expected_games:'Independent expected games',observed_games:'Observed games',reconstructed_games:'Reconstructed games',quarantined_games:'Quarantined games',possession_rows:'Candidate possession rows',unknown_outcomes:'Unknown possession outcomes',complete_games:'Complete reconstructed games',critical_unresolved_games:'Games with unresolved critical issues',eligible_games:'Scientific-release eligible games',unresolved_transfer_flags:'Unresolved transfer flags',unresolved_violation_flags:'Unresolved violation flags'};
     for (const [key, label] of Object.entries(countLabels)) appendStat(target('counts'), label, number(c[key]));
     for (const [key, value] of Object.entries(r.versions || {})) target('versions').append(element('p', `${key.replaceAll('_', ' ')}: ${value}`, 'version'));
     const select = target('scenario'); for (const key of Object.keys(data.math.scenarios)) { const option = element('option', scenarioLabels[key] || key); option.value = key; select.append(option); }
