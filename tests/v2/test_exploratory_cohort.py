@@ -222,3 +222,28 @@ def test_missing_source_bytes_refused(artifacts):
     next(artifacts["cache"].glob("*.xz")).unlink()
     with pytest.raises(FileNotFoundError):
         prepare(artifacts)
+
+
+def test_plan_declared_row_ceiling_is_enforced(artifacts):
+    artifacts["plan"]["max_selected_rows"] = 25
+    with pytest.raises(release.ArtifactError, match="capacity exceeded"):
+        prepare(artifacts)
+    artifacts["plan"]["max_selected_rows"] = 300_000
+    assert prepare(artifacts)["report"]["counts"]["included_rows"] > 25
+
+
+@pytest.mark.parametrize("limit", [0, -1, True, 1.5, 1_500_001])
+def test_invalid_row_ceiling_refused_before_input_reads(artifacts, limit):
+    artifacts["plan"]["max_selected_rows"] = limit
+    artifacts["source_manifest"].unlink()
+    with pytest.raises(ValueError, match="row ceiling"):
+        prepare(artifacts)
+
+
+def test_list_cohort_selects_multiple_cohorts(artifacts):
+    single = prepare(artifacts)["report"]["counts"]["included_games"]
+    artifacts["plan"]["cohort"] = [{"season": "2020-21", "game_type": "regular_season"},
+                                   {"season": "2021-22", "game_type": "regular_season"}]
+    report = prepare(artifacts)["report"]
+    assert report["counts"]["included_games"] == single
+    assert report["cohort"] == artifacts["plan"]["cohort"]

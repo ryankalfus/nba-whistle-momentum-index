@@ -1,0 +1,190 @@
+{
+  "analysis_id": "2020-25-plan-stage5-v1",
+  "cohort": [
+    {
+      "game_type": "regular_season",
+      "season": "2020-21"
+    },
+    {
+      "game_type": "regular_season",
+      "season": "2021-22"
+    },
+    {
+      "game_type": "regular_season",
+      "season": "2022-23"
+    },
+    {
+      "game_type": "regular_season",
+      "season": "2023-24"
+    },
+    {
+      "game_type": "regular_season",
+      "season": "2024-25"
+    },
+    {
+      "game_type": "playoffs",
+      "season": "2024-25"
+    }
+  ],
+  "cohort_policy": "whole_game_quality_filter_v1",
+  "cohort_policy_details": [
+    "Select every listed season/game_type cohort and the declared date range; retain every source-frame game in the inclusion/exclusion ledger.",
+    "Exclude an entire candidate game for quarantine/unreconstructed status, incomplete game, critical or unknown reconstruction quality, unknown outcome, flagged/incomplete row provenance, or unassigned live control.",
+    "Retain explicit administrative unassigned references when unassigned_control_events is exactly false; no source rows disappear.",
+    "Preserve all selected game rows, original possession numbers and supplied prior-global histories; never drop individual outcomes or reindex.",
+    "Selection is provisional data availability/quality, not scientific eligibility; conditional selection may bias results.",
+    "Keep context nulls explicit with fixed missing indicators and training-only median imputation; the first two possessions of each game are excluded from both models at design time and counted per season.",
+    "Team fouls and penalty state are derived during the run from the re-verified raw archives with the unchanged parser; the fit is withheld unless the derived defense count equals the exported research count on every selected row."
+  ],
+  "declared_at": "2026-11-09T19:45:38.982391+00:00",
+  "declared_date": "2026-11-09",
+  "eligible": false,
+  "evaluation_exposure": "retrospective_previously_exposed",
+  "limitations": [
+    "Follows the agreed project_plan Stage 5 on the archived 2020-21 to 2024-25 seasons; every season was analyzed in earlier project work, so this is retrospective development evidence, not an unused or confirmatory cohort.",
+    "Local plan saved and pushed before the first plan-stage5-v1 fit; not an authenticated preregistration.",
+    "Reconstruction and every game remain independently unvalidated; no independent audit or game-error bound is claimed. Quality selection keeps about 63% of games and may bias results.",
+    "Team fouls and penalty state are reconstructed from final play-by-play under NBA Rule 12, not official live bonus flags.",
+    "Paired whole-game intervals condition on the fitted models and assume independent games within each test season; no refitting, selection or calendar/series correction and no guaranteed coverage.",
+    "The playoff indicator cannot be learned because no training fold contains playoff games; only 2024-25 playoffs are archived.",
+    "Only retrospective prediction of recorded counted defensive fouls; no call-correctness, referee-intent or causal conclusion. Actual results stay in ignored local outputs; no deployment or public scientific claim."
+  ],
+  "max_selected_rows": 1000000,
+  "meaningful_gain": null,
+  "model_specification": {
+    "C_grid": [
+      0.1,
+      1.0,
+      10.0
+    ],
+    "bootstrap": {
+      "confidence": 0.95,
+      "interval": "percentile",
+      "pooled": "rng = numpy default_rng(seed); for each test season in fold order, one call rng.integers(n_games, size=(resamples, n_games)) on that season's games sorted by game_id; per draw, sum of resampled paired game loss sums over all seasons divided by sum of resampled game possession counts; numpy quantile (linear) at 0.025, 0.975",
+      "resamples": 2000,
+      "season": "same procedure on one season with rng = numpy default_rng([seed, k]) for test fold k = 1, 2, 3",
+      "seed": 137
+    },
+    "categorical": [
+      "offense_team_id",
+      "defense_team_id"
+    ],
+    "class_weight": null,
+    "context_definitions": {
+      "clock_squared": "clock seconds squared",
+      "late_close": "period >= 4 and clock <= 120.0 and abs(offense_margin) <= 10",
+      "margin_squared": "offense_margin squared",
+      "offense_home": "1 - home_defense",
+      "offense_margin": "-score_difference (offense score minus defense score)",
+      "playoff": "1 if game_type == playoffs",
+      "team_fouls_and_penalty": "team_fouls.states: NBA Rule 12 B.V quota 4 regulation / 3 overtime, one free foul in the last two minutes, parser event order"
+    },
+    "context_numeric": [
+      "offense_home",
+      "period",
+      "clock",
+      "offense_margin",
+      "clock_squared",
+      "margin_squared",
+      "playoff",
+      "defense_team_fouls",
+      "offense_team_fouls",
+      "defense_in_penalty",
+      "offense_in_penalty",
+      "late_close"
+    ],
+    "folds": {
+      "test": [
+        {
+          "evaluate": "2022-23",
+          "train": [
+            "2020-21",
+            "2021-22"
+          ]
+        },
+        {
+          "evaluate": "2023-24",
+          "train": [
+            "2020-21",
+            "2021-22",
+            "2022-23"
+          ]
+        },
+        {
+          "evaluate": "2024-25",
+          "train": [
+            "2020-21",
+            "2021-22",
+            "2022-23",
+            "2023-24"
+          ]
+        }
+      ],
+      "validation": {
+        "evaluate": "2021-22",
+        "train": [
+          "2020-21"
+        ]
+      }
+    },
+    "history": "recent_defensive_foul = 1 if previous_foul_1 == 1 or previous_foul_2 == 1 else 0",
+    "max_iter": 2000,
+    "meaningful_gain": null,
+    "models": [
+      "base_rate",
+      "context_a",
+      "history_b"
+    ],
+    "paired_rows": "first two possessions of each game excluded from both models (meeting_ab.check_lags)",
+    "penalty": "l2",
+    "preprocessing": "training-only median imputation with fixed missing indicators for every numeric context column; standardize all numeric columns; one-hot teams, unseen teams all zeros",
+    "primary": "pooled possession-weighted mean of logloss(history_b) - logloss(context_a); negative favors history",
+    "probability_clip": [
+      1e-06,
+      0.999999
+    ],
+    "schema": "plan-stage5-v1",
+    "season_partition": {
+      "2020-21": "train",
+      "2021-22": "tune",
+      "2022-23": "test",
+      "2023-24": "test",
+      "2024-25": "test"
+    },
+    "secondary": [
+      "model log loss",
+      "relative reduction",
+      "paired Brier",
+      "equal-game difference",
+      "ten fixed calibration bins",
+      "calibration intercept with logit offset",
+      "calibration slope",
+      "games, possessions, counted foul events, prevalence",
+      "game-type breakdown"
+    ],
+    "shared_C": "Model A trained on validation train seasons; lowest validation log loss; first grid value breaks ties; applied unchanged to both models in every test fold",
+    "solver": "lbfgs",
+    "source_document": "Google Doc project_plan (Crimson Indigo workspace), sections 3 and 5, last edited 2026-10-23",
+    "sources": {
+      "evaluation.py": "17b8f812d688a15290f8acd8a22959787665d3323cd29c70f6a21df300138368",
+      "features.py": "ef6cbda2c504f8ffb64bb9dc40d99431ed3c7067b43a89def316d34a36cddd1e",
+      "meeting_ab.py": "ff38d4df770a8deab85905c25be77252dc0b1f379c09611d10ca41f46bfe0c79",
+      "modeling.py": "a4c9ce4d99fca8b2bd107042361af119f247dbdb4335a2994e2d8f9cc5fa1bc0",
+      "plan_stage5.py": "93534387c3ea699c6690024fec883fd99fb95537a0922fc1f7008b3c9eada7d2",
+      "possessions.py": "9ee7d5e81b5a99f0b42bf94e617269104bcb90e47f796af02fa4d0bb256d991f",
+      "reconcile.py": "140396aa2fdf2638975ba1346562390200b6d74e30901036883a83ad3ac99320",
+      "sources.py": "a87001bd724eb427ee4d6bc2a86509420fc9edaa26bdf9865c753cada15cfa7e",
+      "team_fouls.py": "4bfbce616c38b2e38296a937411d91c5266c0703fb04cd4b239b87b09920ff01"
+    }
+  },
+  "model_specification_sha256": "fc67526c6d88dcc8d6f7a27c889414f417acbff5c67f7d4b806be89ebfb1ed19",
+  "publication_authorized": false,
+  "schema_version": "provisional-exploratory-plan-v3",
+  "scientific_approval": false,
+  "split": {
+    "test_end": "2025-07-01",
+    "test_start": "2022-07-01",
+    "train_start": "2020-12-01",
+    "tune_start": "2021-07-01"
+  }
+}

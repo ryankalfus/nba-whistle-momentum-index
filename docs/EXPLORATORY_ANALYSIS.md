@@ -57,6 +57,10 @@ Added 2026-11-09. [MEETING_ALIGNMENT.md](MEETING_ALIGNMENT.md) declares the two-
 
 v2 runs write `provisional-exploratory-result-v2` and `exploratory-research-report-v2` schema labels and also bind digests of the history-complete partitions. The local notebook exporter accepts only v1 exploratory reports and refuses v2 output; notebook support is not part of this change.
 
+## Plan-faithful Stage 5 (`plan-stage5-v1`)
+
+Added 2026-11-09. Plan schema `provisional-exploratory-plan-v3` routes the verified loader to `whistle_research.plan_stage5`; the specification is [PLAN_STAGE5.md](PLAN_STAGE5.md). A v3 plan lists several season/game-type cohorts and declares a 1,000,000-row ceiling; v1 and v2 plans keep one cohort and 250,000 rows. During the run, `team_fouls.supplement_for_games` re-verifies the raw archives, reconstructs only the selected games with the unchanged parser and derives both teams' team fouls and penalty state. The run fails closed unless the derived defense count equals the exported research count on every row. v3 output adds `team_foul_states.jsonl`, a fold label per prediction, per-fold coefficients and preprocessing state, and a split manifest; the notebook exporter refuses it.
+
 ## Reproduce the local run
 
 Use the pinned project environment and a **new** output directory. These explicit inputs reuse the current verified v7 artifacts; there is no parser/cohort fallback or network acquisition.

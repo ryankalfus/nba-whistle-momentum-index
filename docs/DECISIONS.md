@@ -166,3 +166,15 @@ Reason: the user approved the alignment decision. `modeling.specification()` has
 - Before any fit, require contiguous possession numbers from 1 within each game and each row's lags to equal the outcomes of the preceding possessions, with null lags only before a game's first rows; withhold the comparison on any mismatch. All 799 games and 158,810 selected rows of the first exploratory cohort satisfy this check. Cohorts with unknown targets are refused upstream rather than partially excluded.
 - Keep a training base rate as a reference model only; the primary endpoint is Model B minus Model A.
 - Leave the notebook exporter v1-only; it refuses v2 output instead of mislabelling it.
+
+## 2026-11-09 — Follow the project plan for Stage 5 (`plan-stage5-v1`)
+
+Reason: after `meeting-ab-v1` ran, the user shared the Google Doc `project_plan` agreed in the 2026-10-22 session, whose assignment was to finish Stage 5. That plan specifies a richer shared context, one shared penalty chosen with Model A, and season-by-season chronological evaluation. `meeting-ab-v1` was built from a shorter handoff summary and departs from it. The user asked for the plan-faithful version. Full specification: [PLAN_STAGE5.md](PLAN_STAGE5.md).
+
+- Make `plan-stage5-v1` the primary Stage 5 specification for the paper. Keep `meeting-ab-v1` and the first nonlinear run unchanged as earlier, labeled analyses.
+- Use the plan's context: both teams' period team fouls and penalty state, offense home, period, clock, offense-perspective margin, clock and margin squared, a playoff indicator and the plan's late close-game indicator, with teams one-hot. Model B adds only `L_t`.
+- Derive team fouls and penalty state in a new `team_fouls` module from the existing parser's events under NBA Rule 12 B.V, mirroring the parser's before-possession timing. Require the derived defense count to equal the parser's research count on every selected row; a mismatch withholds the fit. This leaves the hash-bound parser and feature export unchanged.
+- Choose one shared `C` with Model A on 2021–22 after training on 2020–21, then refit both models for each test season 2022–23, 2023–24 and 2024–25 on all earlier seasons. The archive starts in 2020–21, so the plan's 2018–19 start is unavailable; the plan allows a declared contiguous span.
+- Keep the playoff indicator although no training fold contains playoff games; report the 2024–25 playoffs separately.
+- Use 2,000 whole-game bootstrap resamples stratified by test season, clip probabilities to `[1e-6, 1 - 1e-6]`, and report calibration intercept and slope. No meaningful-gain threshold is set.
+- Extend the exploratory loader to a list of season/game-type cohorts and a plan-declared row ceiling (1,000,000 for this plan, enforced at 1,500,000 overall); v1 and v2 plans keep their behavior. Commit and push the plan and code before the first fit. Every season remains previously exposed, so results are retrospective development evidence only.
