@@ -14,4 +14,10 @@ Use a new output directory. Inputs are the same verified v7 artifacts as the ear
 .venv/bin/python -m whistle_research.exploratory --plan research/plan_stage5_2026_11_09/specification.json --features output/v2/features-v7-reviewed-2026-11-02 --inventory output/v2/source-inventory-independent-2026-11-02/inventory.json --reconciliation output/v2/reconciliation-v7-reviewed-2026-11-02/report.json --source-manifest research/hypotheses_2026_09_12/source_manifest.json --cache research/hypotheses_2026_09_12/cache --schedule research/rewrite_completion_2026_11_02/schedule_expected.json --metadata research/hypotheses_2026_09_12/cdnnba_2020_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2021_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2022_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2023_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_2024_games.csv --metadata research/hypotheses_2026_09_12/cdnnba_po_2024_games.csv --output output/v2/plan-stage5-2026-11-09/analysis
 ```
 
-Actual results stay in ignored local output. An execution receipt with artifact hashes and no model values is added after the run.
+Actual results stay in ignored local output.
+
+## Actual execution
+
+The plan and code were committed and pushed at `fd22907` before the fit, and a pre-fit checkpoint hashed the plan, code and every protected input. The fit ran once on 2026-11-09 into `output/v2/plan-stage5-2026-11-09/analysis/`, which holds the plan snapshot, cohort ledger, selected rows, team-foul states, fold-labelled predictions, model result with per-fold coefficients and preprocessing state, and reports.
+
+A separate replay script beside it uses its own context, imputation, scaling and one-hot code. It reproduced the shared penalty choice, refit all three test folds to within a few trillionths in probability, and recomputed every pooled and per-season metric and bootstrap interval exactly. All protected inputs, including both earlier runs, are byte-unchanged after the fit. [execution_receipt.json](execution_receipt.json) records artifact hashes and verification flags without model values. The replay checks software and arithmetic consistency only.

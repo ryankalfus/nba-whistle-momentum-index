@@ -1,6 +1,6 @@
 # Plan-faithful Stage 5 specification (`plan-stage5-v1`)
 
-Date: 2026-11-09. Status: **declared before fitting; implementation and first fit pending in this change.** Not independently validated, not a confirmatory evaluation, not published.
+Date: 2026-11-09. Status: **implemented, declared before fitting, and fitted once locally on 2026-11-09 ([run record](../research/plan_stage5_2026_11_09/README.md)).** Not independently validated, not a confirmatory evaluation, not published.
 
 ## Why this exists
 
